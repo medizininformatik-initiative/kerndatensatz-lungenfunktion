@@ -1,11 +1,10 @@
-## Medizininformatik-Initiative - Kerndatensatz - Modul Diagnostik: Befunde bildgebender Verfahren 
+## Medizininformatik-Initiative - Kerndatensatz - Modul Lungenfunktion 
 
 ### Übersicht
 
-LINKS NOCH NICHT AKTUELL
+[![FHIR Project on GitHub.com](https://img.shields.io/badge/FHIR_project_on_GitHub.com-kerndatensatzmodul--lungenfunktion-green)](https://github.com/medizininformatik-initiative/kerndatensatz-lungenfunktion)
 
-[![FHIR Project on GitHub.com](https://img.shields.io/badge/FHIR_project_on_GitHub.com-kerndatensatzmodul--bildgebung-green)](https://github.com/medizininformatik-initiative/kerndatensatz-bildgebung)
-
+CI NOCH NICHT EINGERICHTET
 [![CI (FHIR Validation)](https://github.com/medizininformatik-initiative/kerndatensatz-bildgebung/actions/workflows/main.yml/badge.svg)](https://github.com/medizininformatik-initiative/kerndatensatz-bildgebung/actions/workflows/main.yml)
 
 Das vorliegende Projekt beschreibt die FHIR-Spezifikation des Erweiterungsmoduls 'Lungenfunktion', welches einen zentralen Teil des Kerndatensatzes der Medizininformatik-Initiative darstellt. Die hier veröffentlichten FHIR-Profile und ImplemenationGuides dienen als zentrale und verbindliche Spezifikation für die syntaktische und semantische Kodierung der Modulinhalte
@@ -37,7 +36,7 @@ Was ist drin im Modul
 
 #### Leitung des Moduls:
 
-* NN
+* Lena Raber, Universitätsklinikum Erlangen
 
 #### Technische Umsetzung:
 
