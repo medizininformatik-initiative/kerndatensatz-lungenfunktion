@@ -5,7 +5,7 @@ subject: https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunkti
 ---
 
 ## DiagnosticReport
-
+//TODO
 Der Diagnostic Report für Bildgebende verfahren richtet sich an die Dokumentation von radiologischen Befundungsergebnissen. Unterschiedliche Systeme (RIS Befundungsmodule, AI Integrationen dedizierte Systeme zur strukturieren Befundung) lieferen in unterschiedlichem Detailgrad Informationen. Dieses Profil addressiert diese unterschiedlichen Detailgrade und bietet modulare aufeinander aufbauende Stufen. Jede Stufe fügt weitere Konzepte hinzu und ermöglicht so neue Anwendungsmöglichkeiten von der Routine bis hin zu wissenschaftlichen Auswertungen.
 
 @```

@@ -1,3 +1,4 @@
+//EXAMPLE Profile
 //Head
 Profile: MII_PR_Bildgebung_Radiologischer_Befund
 Parent: DiagnosticReport
