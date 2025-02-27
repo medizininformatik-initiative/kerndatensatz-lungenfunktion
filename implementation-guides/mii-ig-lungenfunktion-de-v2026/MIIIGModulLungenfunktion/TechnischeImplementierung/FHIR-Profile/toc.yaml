@@ -1,0 +1,6 @@
+- name: Index
+  filename: Index.page.md
+- name: DiagnosticReport
+  filename: DiagnosticReport.page.md
+- name: Observation
+  filename: Observation
