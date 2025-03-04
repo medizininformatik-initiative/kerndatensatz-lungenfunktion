@@ -1,0 +1,96 @@
+@startuml Lungenfunktion
+class Bodyplethysmographie <<DiagnosticReport or Procedure>>{
+    {field} Spirometrie 0..1 Reference(DiagnosticReport)
+    R_tot
+    sR_tot
+    sR_eff
+    sG_tot
+    FRCpleth
+    ERV
+    RV
+    TLC
+    RV/TLC
+    TGV
+    ITGV
+}
+class Spirometrie <<DiagnosticReport or Procedure>>{
+    BF
+    FVC
+    SVC
+    FIVC
+    IVC
+    IC
+    {field} FEV 0..* Reference(Observation)
+    FIV
+    TV
+    ERV
+    IRV
+    MVV
+    PEFR
+    PIFR
+    FEF
+    FIF
+    MEP
+    MIP
+    SNIP
+    FEV1/FVC_Ratio
+    FEV1/SVC_Ratio
+    FEV1/FEV6_Ratio
+    FEV1/IVC_Ratio
+}
+
+class Diffusion_single_breath <<DiagnosticReport>> {
+    TLCO_SB
+    KCO_SB
+    VA_SB
+    {field} Hb(Referenz, zur Interpretation wichtig)
+    DLCOcSB
+    KCOcSb
+    TA
+    VIN_SB
+    TLC_SB
+    FRC_SB
+    ERV_SB
+    RV_SB
+    RV%TLC_SB
+}
+
+class Blutgase_ateriell <<DiagnosticReport>> {
+    alles als Referenzen
+    pHa
+    PaCO2
+    PaO2
+    SaO2
+    Hb
+    CoHb
+    STB
+    BE
+    Glu
+    Lac
+}
+
+class Provokationstestung <<Observation>> {
+    Sequenznummer
+    Durchführungstyp
+    Substanz
+    Kumulierte Dosis
+    Dosis
+    FEV 1 Wert
+    Threshold Dose Wert erreicht
+}
+
+class FENO <<Observation>>
+
+class Prozedur <<Procedure>>
+
+class Vitalparameter/Körpermaße <<Observation from ISIK/ICU>>
+
+class Fragebögen <<Questionnaire>>
+
+class DemografischeDaten <<plus Modul Patient>> {
+    Ethnie
+    Biologisches Geschlecht
+}
+
+class Risikofaktoren <<Observation>>
+@enduml
