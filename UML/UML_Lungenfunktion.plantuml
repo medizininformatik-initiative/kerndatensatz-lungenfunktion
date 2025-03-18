@@ -1,5 +1,22 @@
-@startuml Lungenfunktion
-class Bodyplethysmographie <<DiagnosticReport or Procedure>>{
+@startuml UML Modul Lungenfunktion
+skinparam Linetype ortho
+skinparam Nodesep 150
+skinparam Ranksep 80
+skinparam legendBackgroundColor #white
+
+class Lungenfunktionstestung{
+    kann enthalten:
+    Referenz(Bodyplethysmographie)
+    Referenz(Spirometrie)
+    Referenz(Blutgase_ateriell)
+    Referenz(Diffusion_single_breath)
+    Referenz(Provationstestung)
+    Referenz(Vitalparameter_Körpermaße)
+    Referenz(Risikofaktoren)
+    Referenz(Demografische Daten)
+}
+
+class Bodyplethysmographie <<DiagnosticReport and Procedure>>{
     {field} Spirometrie 0..1 Reference(DiagnosticReport)
     R_tot
     sR_tot
@@ -13,7 +30,7 @@ class Bodyplethysmographie <<DiagnosticReport or Procedure>>{
     TGV
     ITGV
 }
-class Spirometrie <<DiagnosticReport or Procedure>>{
+class Spirometrie <<DiagnosticReport and Procedure>>{
     BF
     FVC
     SVC
@@ -39,7 +56,7 @@ class Spirometrie <<DiagnosticReport or Procedure>>{
     FEV1/IVC_Ratio
 }
 
-class Diffusion_single_breath <<DiagnosticReport>> {
+class Diffusion_single_breath <<DiagnosticReport and Procedure>> {
     TLCO_SB
     KCO_SB
     VA_SB
@@ -55,8 +72,7 @@ class Diffusion_single_breath <<DiagnosticReport>> {
     RV%TLC_SB
 }
 
-class Blutgase_ateriell <<DiagnosticReport>> {
-    alles als Referenzen
+class Blutgase_ateriell <<Observation from KDS_Labor>> {
     pHa
     PaCO2
     PaO2
@@ -69,7 +85,7 @@ class Blutgase_ateriell <<DiagnosticReport>> {
     Lac
 }
 
-class Provokationstestung <<Observation>> {
+class Provokationstestung <<DiagnosticReport and Procedure>> {
     Sequenznummer
     Durchführungstyp
     Substanz
@@ -79,18 +95,24 @@ class Provokationstestung <<Observation>> {
     Threshold Dose Wert erreicht
 }
 
-class FENO <<Observation>>
-
-class Prozedur <<Procedure>>
-
-class Vitalparameter/Körpermaße <<Observation from ISIK/ICU>>
-
-class Fragebögen <<Questionnaire>>
+class Vitalparameter_Körpermaße <<Observation from ISIK/ICU>>
 
 class DemografischeDaten <<plus Modul Patient>> {
     Ethnie
     Biologisches Geschlecht
 }
 
-class Risikofaktoren <<Observation>>
+class Risikofaktoren <<Observation>> {
+    Raucher
+    Allergie
+}
+
+Lungenfunktionstestung -d- Bodyplethysmographie
+Lungenfunktionstestung -u- Spirometrie
+Lungenfunktionstestung -u- Diffusion_single_breath
+Lungenfunktionstestung -u- Blutgase_ateriell
+Lungenfunktionstestung -d- Provokationstestung
+Lungenfunktionstestung -r- DemografischeDaten
+Lungenfunktionstestung -l- Vitalparameter_Körpermaße
+Lungenfunktionstestung -d- Risikofaktoren
 @enduml
