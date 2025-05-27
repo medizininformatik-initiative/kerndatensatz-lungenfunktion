@@ -18,44 +18,33 @@ package "Funktionstest" {
         {field} Observation(sR_eff)
         {field} Observation(sG_tot)
         {field} Observation(FRCpleth)
-        {field} Observation(ERV)
         {field} Observation(RV)
         {field} Observation(TLC)
         {field} Observation(RV/TLC)
-        {field} Observation(TGV)
-        {field} Observation(ITGV)
     }
     class Spirometrie <<DiagnosticReport and Procedure>>{
         {field} Procedure(Spirometrie)
         {field} DiagnosticReport(Spirometrie)
-        {field} Observation(BF)
+        {field} Observation(VC_IN)
         {field} Observation(FVC)
-        {field} Observation(SVC)
-        {field} Observation(FIVC)
-        {field} Observation(IVC)
-        {field} Observation(IC)
-        {field} Observation(FEV)
-        {field} Observation(FIV)
-        {field} Observation(TV)
-        {field} Observation(ERV)
+        {field} Observation(VC_MAX)
+        {field} Observation(FEV_1)
+        {field} Observation(PEF)
+        {field} Observation(MEF_25)
+        {field} Observation(MEF_50)
+        {field} Observation(MEF_75)
+        {field} Observation(FIV_1)
+        {field} Observation(BF)
         {field} Observation(IRV)
-        {field} Observation(MVV)
-        {field} Observation(PEFR)
-        {field} Observation(PIFR)
-        {field} Observation(FEF)
-        {field} Observation(FIF)
-        {field} Observation(MEP)
-        {field} Observation(MIP)
-        {field} Observation(SNIP)
+        {field} Observation(ERV)
+        {field} Observation(FEV1/VC_IN_Ratio)
         {field} Observation(FEV1/FVC_Ratio)
-        {field} Observation(FEV1/SVC_Ratio)
-        {field} Observation(FEV1/FEV6_Ratio)
-        {field} Observation(FEV1/IVC_Ratio)
+        {field} Observation(FEV1/VC_MAX_Ratio)
     }
     class Diffusion_single_breath <<DiagnosticReport and Procedure>> {
         {field} Procedure(Diffusion SB)
         {field} DiagnosticReport(Diffusion SB)
-        {field} Observation(TLCO_SB)
+        {field} Observation(DLCO_SB)
         {field} Observation(KCO_SB)
         {field} Observation(VA_SB)
         {field} Observation(Hb)(Referenz, zur Interpretation wichtig)
@@ -110,10 +99,9 @@ package "Anamese"{
 
 Lungenfunktionstest -- "0..1" Lungenfunktionsmessung
 Lungenfunktionstest -- "0..*" Lungenfunktions_Messergebnis
-Lungenfunktionsmessung -[hidden]d- Vitalparameter_Körpermaße
-Lungenfunktions_Messergebnis -[hidden]r- Diffusion_single_breath
 Vitalparameter_Körpermaße -[hidden]d- Risikofaktoren
 DemografischeDaten -[hidden]d- Blutgase_ateriell
 Spirometrie -[hidden]d- Diffusion_single_breath
 Bodyplethysmographie -[hidden]d- Provokationstestung
+Lungenfunktionsmessung -[hidden]d- Spirometrie
 @enduml
