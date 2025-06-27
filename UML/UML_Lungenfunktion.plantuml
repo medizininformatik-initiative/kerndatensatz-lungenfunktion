@@ -1,7 +1,7 @@
 @startuml
 package "Grundstruktur"{
     class Lungenfunktionstest <<DiagnosticReport>>{
-        {field} Referenz(Anamese/Patient)
+        {field} Referenz(Anamnese/Patient)
         {field} Referenz(Procedure)
         {field} Referenz(Observation)
     }
@@ -47,7 +47,7 @@ package "Funktionstest" {
         {field} Observation(DLCO_SB)
         {field} Observation(KCO_SB)
         {field} Observation(VA_SB)
-        {field} Observation(Hb)(Referenz, zur Interpretation wichtig)
+        {field} Observation(Hb)
         {field} Observation(DLCOcSB)
         {field} Observation(KCOcSb)
         {field} Observation(TA)
@@ -71,7 +71,7 @@ package "Funktionstest" {
     }
 }
 
-package "Anamese"{
+package "Anamnese"{
     class Vitalparameter_Körpermaße <<Observation from ISIK/ICU>>
 
     class DemografischeDaten <<plus Modul Patient>> {
@@ -83,7 +83,7 @@ package "Anamese"{
         {field} Observation(Raucher)
         {field} Observation(Allergie)
     }
-    class Blutgase_ateriell <<Observation from KDS_Labor>> {
+    class Blutgase_arteriell <<Observation from KDS_Labor>> {
         {field} Observation(pHa)
         {field} Observation(PaCO2)
         {field} Observation(PaO2)
@@ -100,7 +100,7 @@ package "Anamese"{
 Lungenfunktionstest -- "0..1" Lungenfunktionsmessung
 Lungenfunktionstest -- "0..*" Lungenfunktions_Messergebnis
 Vitalparameter_Körpermaße -[hidden]d- Risikofaktoren
-DemografischeDaten -[hidden]d- Blutgase_ateriell
+DemografischeDaten -[hidden]d- Blutgase_arteriell
 Spirometrie -[hidden]d- Diffusion_single_breath
 Bodyplethysmographie -[hidden]d- Provokationstestung
 Lungenfunktionsmessung -[hidden]d- Spirometrie
