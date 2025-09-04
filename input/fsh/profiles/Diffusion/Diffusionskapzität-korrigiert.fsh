@@ -1,15 +1,15 @@
 //EXAMPLE Profile
 //Head
-Profile: MII_PR_Bildgebung_Radiologische_Beobachtung
+Profile: MII_PR_Lungenfunktion_DLCOc
 Parent: Observation
-Id: mii-pr-bildgebung-radiologische-beobachtung
-Title: "MII PR Bildgebung Radiologische Beobachtung"
-Description: "Dieses Profil beschreibt den Befund/eine Beobachtung in der radiologischer Bildgebung. Es bietet die Möglichkeit strukturiert Beobachtungen abzubilden und den Befundbericht zu ergänzen."
-* ^url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-pr-bildgebung-radiologische-beobachtung"
+Id: mii-pr-lungenfunktion-dlcoc
+Title: "MII PR Lungenfunktion DLCOc"
+Description: "Dieses Profil beschreibt die Messung der korrigierten Diffusionskapazität für Kohlenstoffmonoxid."
+* ^url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-dlcoc"
 //Translation Meta
-* insert Translation(^name, en-US, MII_PR_Imaging_Radiological_Observation)
-* insert Translation(^title, en-US, MII PR Imaging Radiological Observation)
-* insert Translation(^description, en-US, The profile describes a observation for radiological images.)
+* insert Translation(^name, en-US, MII_PR_Lungfunction_DLCOc)
+* insert Translation(^title, en-US, MII PR Lungenfunktion DLCOc)
+* insert Translation(^description, en-US, The profile describes the corrected diffusioncapacity carbon monoxid.)
 //Meta
 * insert PR_CS_VS_Version
 * insert PR_CS_VS_Date
@@ -20,19 +20,7 @@ Description: "Dieses Profil beschreibt den Befund/eine Beobachtung in der radiol
 * meta.source MS
 * meta.profile MS
 //Profile
-* extension contains
-  MII_EX_Bildgebung_Serie_UID named SeriesUID 0..1 and
-  MII_EX_Bildgebung_SOP_Instanz_UID named SOPInstanzUID 0..1 and
-  http://hl7.org/fhir/5.0/StructureDefinition/extension-Observation.bodyStructure named bodyStructure 0..* MS
-* extension[bodyStructure].valueReference only Reference(MII_PR_Bildgebung_Koerperstruktur)
-* extension[SeriesUID] ^short = "Serien UID"
-* extension[SeriesUID] ^definition = "UID einer DICOM-Serie"
-* extension[SOPInstanzUID] ^short = "SOP Instanz UID"
-* extension[SOPInstanzUID] ^definition = "UID einer SOP Instanz"
-* extension[bodyStructure] ^short = "Körperstruktur"
-* extension[bodyStructure] ^definition = "Referenz auf eine Körperstruktur"
 * partOf MS
-* partOf only Reference (MII_PR_Bildgebung_Radiologische_Befundungsprozedur)
 * partOf ^short = "Teil von"
 * partOf ^definition = "Teil einer Befundungprozedur"
 * status MS
@@ -69,18 +57,6 @@ Description: "Dieses Profil beschreibt den Befund/eine Beobachtung in der radiol
 * component ^definition = "detailierte Bestandteile der Beobachtung"
 
 //Translation Profile
-* insert Translation(extension[SeriesUID] ^short, de-DE, Serien UID)
-* insert Translation(extension[SeriesUID] ^short, en-US, Series UID)
-* insert Translation(extension[SeriesUID] ^definition, de-DE, UID einer DICOM-Serie)
-* insert Translation(extension[SeriesUID] ^definition, en-US, UID of a series)
-* insert Translation(extension[SOPInstanzUID] ^short, de-DE, SOP Instanz UID)
-* insert Translation(extension[SOPInstanzUID] ^short, en-US, SOP Instance UID)
-* insert Translation(extension[SOPInstanzUID] ^definition, de-DE, UID einer SOP Instanz)
-* insert Translation(extension[SOPInstanzUID] ^definition, en-US, UID of a SOP instance)
-* insert Translation(extension[bodyStructure] ^short, de-DE, Körperstruktur)
-* insert Translation(extension[bodyStructure] ^short, en-US, body structure)
-* insert Translation(extension[bodyStructure] ^definition, de-DE, Referenz auf eine Körperstruktur)
-* insert Translation(extension[bodyStructure] ^definition, en-US, reference on a body structure)
 * insert Translation(partOf ^short, de-DE, Teil von)
 * insert Translation(partOf ^short, en-US, part of)
 * insert Translation(partOf ^definition, de-DE, Teil einer Befundungprozedur)
