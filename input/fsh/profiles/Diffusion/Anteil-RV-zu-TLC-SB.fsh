@@ -3,7 +3,7 @@
 Profile: MII_PR_Lungenfunktion_RV_TLC_SB
 Parent: Observation
 Id: mii-pr-lungenfunktion-rv-tlc-sb
-Title: "MII PR Lungenfunktion Anteil Residualvolumen an Lungenkapazität im Single-Breath-Verfahren"
+Title: "MII PR Lungenfunktion RV TLC SB"
 Description: "Dieses Beobachtung beschreibt den prozentualen Anteil des Residualvolumen an der totalen Lungenkapazität im Single-Breath-Verfahren."
 * ^url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-rv-tlc-sb"
 //Translation Meta

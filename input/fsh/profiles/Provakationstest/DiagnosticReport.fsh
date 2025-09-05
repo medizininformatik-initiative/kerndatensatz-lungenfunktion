@@ -1,15 +1,15 @@
 //EXAMPLE Profile
 //Head
-Profile: MII_PR_Bildgebung_Radiologischer_Befund
+Profile: MII_PR_Lungenfunktion_Provokationstest
 Parent: DiagnosticReport
-Id: mii-pr-bildgebung-radiologischer-befund
-Title: "MII PR Bildgebung Radiologischer Befund"
-Description: "Diese Ressource beschreibt einen radiologischen Befund"
-* ^url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-pr-bildgebung-radiologischer-befund"
+Id: mii-pr-lungenfunktion-provokationstest
+Title: "MII PR Lungenfunktion Provokationstest"
+Description: "Diese Ressource beschreibt einen Befunde des Provokationstest"
+* ^url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-provokationstest"
 //Translation Meta
-* insert Translation(^name, en-US, MII_PR_Imaging_Diagnostic_Report)
-* insert Translation(^title, en-US, MII PR Imaging Diagnostic Report)
-* insert Translation(^description, en-US, The profile describes a diagnostic report for a radiological image.)
+* insert Translation(^name, en-US, MII_PR_Lungfunction_Provokationtest)
+* insert Translation(^title, en-US, MII PR Lungfunction Provokationtest)
+* insert Translation(^description, en-US, The profile describes a diagnostic report for a provokation test.)
 //Meta
 * insert PR_CS_VS_Version
 * insert PR_CS_VS_Date
@@ -20,15 +20,7 @@ Description: "Diese Ressource beschreibt einen radiologischen Befund"
 * meta.source MS
 * meta.profile MS
 //Profile
-* extension contains
-  http://hl7.org/fhir/5.0/StructureDefinition/extension-DiagnosticReport.supportingInfo named supportingInfo 0..* MS
-* extension[supportingInfo].extension[reference] 1..1 MS
-* extension[supportingInfo].extension[type] 1..1 MS
-* extension[supportingInfo].extension[reference].valueReference only Reference(DiagnosticReport or Procedure)
-* extension[supportingInfo] ^short = "Zusatzinformation"
-* extension[supportingInfo] ^definition = "Zusatzinformation zum Befundbericht"
 * basedOn MS
-* basedOn only Reference(MII_PR_Bildgebung_Anforderung_Bildgebung or CarePlan)
 * basedOn ^short = "Anforderung"
 * basedOn ^definition = "Anforderung, die den Befundbericht ausgelöst hat"
 * status MS
@@ -79,7 +71,6 @@ Description: "Diese Ressource beschreibt einen radiologischen Befund"
 * result ^short = "Ergebnis"
 * result ^definition = "Ergebnis einer Beobachtung"
 * imagingStudy 1.. MS
-* imagingStudy only Reference(MII_PR_Bildgebung_Bildgebungsstudie)
 * imagingStudy ^short = "Bildgebungsstudie"
 * imagingStudy ^definition = "Studie, die die vollständige Bildgebung umfasst"
 * conclusion MS
@@ -103,10 +94,6 @@ Description: "Diese Ressource beschreibt einen radiologischen Befund"
 * presentedForm ^definition = "zusätzlicher wichtiger Anhang"
 
 //Translation Profile
-* insert Translation(extension[supportingInfo] ^short, de-DE, Zusatzinformation)
-* insert Translation(extension[supportingInfo] ^short, en-US, additional information)
-* insert Translation(extension[supportingInfo] ^definition, de-DE, Zusatzinformation zum Befundbericht)
-* insert Translation(extension[supportingInfo] ^definition, en-US, additional information for the report)
 * insert Translation(basedOn ^short, de-DE, Anforderung)
 * insert Translation(basedOn ^short, en-US, request)
 * insert Translation(basedOn ^definition, de-DE, Anforderung\, die den Befundbericht ausgelöst hat)
