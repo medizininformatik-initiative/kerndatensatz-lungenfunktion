@@ -1,11 +1,11 @@
 ## Beschreibung von Szenarien für die Anwendung der Module
 //TODO
-<!-- In diesem Abschnitt werden spezifische Anwendungsfälle und Beispiele für das Modul Bildgebung beschrieben.  -->
+<!-- In diesem Abschnitt werden spezifische Anwendungsfälle und Beispiele für das Modul Lungenfunktion beschrieben.  -->
 
 
 Konkrete Beispiele:
 
-**Angabe und Dokumentation einer Bildgebung zur Diagnosestellung:**
+** Klinische Versorgung und Verlaufskontrolle:**
 
 Beispiel: Eine Patientin mit Verdacht auf Axiale Spondyloarthritis mit Morbus Bechterew kommt stationär zur Diagnoseevaluation. Hierbei wird eine native MRT zur Diagnosestellung durchgeführt.
 
