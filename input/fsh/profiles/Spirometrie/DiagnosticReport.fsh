@@ -20,9 +20,6 @@ Description: "Diese Ressource beschreibt einen Befunde der Spirometrie"
 * meta.source MS
 * meta.profile MS
 //Profile
-* basedOn MS
-* basedOn ^short = "Anforderung"
-* basedOn ^definition = "Anforderung, die den Befundbericht ausgelöst hat"
 * status MS
 * status ^short = "Status"
 * status ^definition = "angemeldet | unvollständig | vorläufig | endgültig | geändert | korrigiert | angefügt | abgebrochen | fehlerhafte Eingabe | unbekannt"
@@ -37,9 +34,9 @@ Description: "Diese Ressource beschreibt einen Befunde der Spirometrie"
     loinc 0..* MS and
     diagnostic-service-sections 0..* MS and 
     sct 1..1 MS
-* category.coding[loinc] = $loinc#18748-4
-* category.coding[diagnostic-service-sections] = $DSS#RAD
-* category.coding[sct] = $SCT#4201000179104
+* category.coding[loinc] = $loinc#TODO
+* category.coding[diagnostic-service-sections] = $DSS#PF
+* category.coding[sct] = $SCT#TODO
 * code MS
 * code ^short = "Code"
 * code ^definition = "Code des Befundberichts"
@@ -60,19 +57,15 @@ Description: "Diese Ressource beschreibt einen Befunde der Spirometrie"
 * encounter ^definition = "Fall-Referenz auf den Versorgungssstellenkontakt"
 * effective[x] MS
 * effective[x] ^short = "Erstellungsdatum"
-* effective[x] ^definition = "Zeitpunkt der Erstellung"
+* effective[x] ^definition = "Zeitpunkt der klinischen Untersuchung"
 * effectiveDateTime MS
 * effectivePeriod MS
 * issued MS
 * issued ^short = "Erstellungszeitpunkt"
 * issued ^definition = "Zeit an der der Bericht erstellt wurde"
 * result MS
-* result only Reference(Observation)
 * result ^short = "Ergebnis"
 * result ^definition = "Ergebnis einer Beobachtung"
-* imagingStudy 1.. MS
-* imagingStudy ^short = "Bildgebungsstudie"
-* imagingStudy ^definition = "Studie, die die vollständige Bildgebung umfasst"
 * conclusion MS
 * conclusion ^short = "Fazit"
 * conclusion ^definition = "Fazit zur aktuellen Befundung"
@@ -88,7 +81,6 @@ Description: "Diese Ressource beschreibt einen Befunde der Spirometrie"
     sct 0..* MS
 * conclusionCode.coding[icd10-gm] ^patternCoding.system = $icd10-gm
 * conclusionCode.coding[sct] ^patternCoding.system = $SCT
-* conclusionCode.coding[sct].code from MII_VS_Bildgebung_Diagnostic_Report_Coding (preferred)
 * presentedForm MS
 * presentedForm ^short = "Anhang"
 * presentedForm ^definition = "zusätzlicher wichtiger Anhang"
@@ -130,10 +122,6 @@ Description: "Diese Ressource beschreibt einen Befunde der Spirometrie"
 * insert Translation(result ^short, en-US, result)
 * insert Translation(result ^definition, de-DE, Ergebnis einer Beobachtung)
 * insert Translation(result ^definition, en-US, result of an observation)
-* insert Translation(imagingStudy ^short, de-DE, Bildgebungsstudie)
-* insert Translation(imagingStudy ^short, en-US, imaging study)
-* insert Translation(imagingStudy ^definition, de-DE, Studie\, die die vollständige Bildgebung umfasst)
-* insert Translation(imagingStudy ^definition, en-US, study with all images)
 * insert Translation(conclusion ^short, de-DE, Fazit)
 * insert Translation(conclusion ^short, en-US, conclusion)
 * insert Translation(conclusion ^definition, de-DE, Fazit zur aktuellen Befundung)

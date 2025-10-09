@@ -19,9 +19,6 @@ Description: "Beschreibt die Tätigkeiten, wie eine Spirometrie durchgeführt wi
 * meta.source MS
 * meta.profile MS
 //Profile
-* basedOn 1..* MS
-* basedOn ^short = "Basiert auf"
-* basedOn ^definition = "Basiert auf einem Anforderung"
 * status MS
 * status ^short = "Status"
 * status ^definition = "Vorbereitung | in Arbeit | nicht durchgeführt | pausiert | abgebrochen | abgeschlossen | Eingabe fehlerhaft | unbekannt"
@@ -29,8 +26,8 @@ Description: "Beschreibt die Tätigkeiten, wie eine Spirometrie durchgeführt wi
 * category ^short = "Kategorie"
 * category ^definition = "Diagnostische Maßnahmen | Bildgebende Diagnostik | Operationen | Medikamente | Nichtoperative therapeutische Maßnahmen | Ergänzende Maßnahmen"
 * category.coding 1.. MS
-* category.coding[sct] = $SCT#363679005
-* category.coding[sct].display = "Imaging (procedure)"
+* category.coding[sct] = $SCT#323426006 
+* category.coding[sct].display = "Measurement of respiratory function (procedure)"
 * category.coding.system 1.. MS
 * category.coding.code 1.. MS
 * code MS
@@ -43,8 +40,8 @@ Description: "Beschreibt die Tätigkeiten, wie eine Spirometrie durchgeführt wi
 * code.coding contains
     loinc 0..1 MS
 * code.coding[loinc] ^patternCoding.system = $loinc
-* code.coding[loinc] from $VS-loinc-rsna (required)
-* code.coding[sct] from MII_VS_Bildgebung_ImagingProcedure_Code_SCT (required)
+* code.coding[loinc] = $loinc#TODO
+* code.coding[sct] = $SCT#127783003
 * code.coding.system 1.. MS
 * code.coding.code 1.. MS
 * subject MS
@@ -54,6 +51,10 @@ Description: "Beschreibt die Tätigkeiten, wie eine Spirometrie durchgeführt wi
 * performed[x] MS
 * performed[x] ^short = "Durchführungsdatum"
 * performed[x] ^definition = "Durchführungsdatum oder -zeitraum der Prozedur."
+* outcome MS
+* outcome from http://hl7.org/fhir/ValueSet/procedure-outcome (preferred)
+* report MS
+* report only Reference(MII_PR_Lungenfunktion_Spirometrie)
 
 //Translation Profile
 * insert Translation(basedOn ^short, de-DE, Basiert auf)

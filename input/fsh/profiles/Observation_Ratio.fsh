@@ -1,15 +1,15 @@
 //EXAMPLE Profile
 //Head
-Profile: MII_PR_Lungenfunktion_FEF
+Profile: MII_PR_Lungenfunktion_Ratio
 Parent: Observation
-Id: mii-pr-lungenfunktion-fef
-Title: "MII PR Lungenfunktion FEF"
-Description: "Dieses Profil beschreibt die Messung des forcierten, exspiratorischen Fluss."
-* ^url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-fef"
+Id: mii-pr-lungenfunktion-ratio
+Title: "MII PR Lungenfunktion Ratio"
+Description: "Dieses Beobachtung beschreibt einen prozentualen Anteil."
+* ^url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-ratio"
 //Translation Meta
-* insert Translation(^name, en-US, MII_PR_Lungfunction_FEF)
-* insert Translation(^title, en-US, MII PR Lungfunction FEF)
-* insert Translation(^description, en-US, The profile describes a observation for the forced exspiratory flow.)
+* insert Translation(^name, en-US, MII_PR_Lungfunction_Ratio)
+* insert Translation(^title, en-US, MII PR Lungfunction Ratio)
+* insert Translation(^description, en-US, The profile describes a observation for testing of lungfunction.)
 //Meta
 * insert PR_CS_VS_Version
 * insert PR_CS_VS_Date
@@ -31,7 +31,7 @@ Description: "Dieses Profil beschreibt die Messung des forcierten, exspiratorisc
 * category ^definition = "Klassifikation in diagnostischen Fachbereich und Gruppe"
 * code MS
 * code ^short = "Code"
-* code ^definition = "Ein Code für die zu befundende Beobachtung"
+* code ^definition = "Ein Code für die zu befundende Beoabchtung"
 * subject 1..1 MS
 * subject only Reference(Patient)
 * subject ^short = "Person"

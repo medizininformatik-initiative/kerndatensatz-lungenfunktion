@@ -1,6 +1,6 @@
 {
   "resourceType": "StructureDefinition",
-  "id": "mii-pr-lungenfunktion-fef",
+  "id": "mii-pr-lungenfunktion-fluss",
   "extension": [
     {
       "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-ex-meta-license-codeable",
@@ -15,9 +15,9 @@
       }
     }
   ],
-  "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-fef",
+  "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-fluss",
   "version": "2025.0.0",
-  "name": "MII_PR_Lungenfunktion_FEF",
+  "name": "MII_PR_Lungenfunktion_Fluss",
   "_name": {
     "extension": [
       {
@@ -29,13 +29,13 @@
           },
           {
             "url": "content",
-            "valueString": "MII_PR_Lungfunction_FEF"
+            "valueString": "MII_PR_Lungfunction_Fluss"
           }
         ]
       }
     ]
   },
-  "title": "MII PR Lungenfunktion FEF",
+  "title": "MII PR Lungenfunktion Fluss",
   "_title": {
     "extension": [
       {
@@ -47,7 +47,7 @@
           },
           {
             "url": "content",
-            "valueString": "MII PR Lungfunction FEF"
+            "valueString": "MII PR Lungfunction Fluss"
           }
         ]
       }
@@ -66,7 +66,7 @@
       ]
     }
   ],
-  "description": "Dieses Profil beschreibt die Messung des forcierten, exspiratorischen Fluss.",
+  "description": "Dieses Beobachtung beschreibt eine Flussmessung.",
   "_description": {
     "extension": [
       {
@@ -78,7 +78,7 @@
           },
           {
             "url": "content",
-            "valueString": "The profile describes a observation for the forced exspiratory flow."
+            "valueString": "The profile describes a observation for testing of lungfunction."
           }
         ]
       }
@@ -347,7 +347,7 @@
             }
           ]
         },
-        "definition": "Ein Code für die zu befundende Beobachtung",
+        "definition": "Ein Code für die zu befundende Beoabchtung",
         "_definition": {
           "extension": [
             {
@@ -588,6 +588,11 @@
             }
           ]
         },
+        "type": [
+          {
+            "code": "Quantity"
+          }
+        ],
         "mustSupport": true
       },
       {
