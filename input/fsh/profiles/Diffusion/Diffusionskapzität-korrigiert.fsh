@@ -7,9 +7,9 @@ Title: "MII PR Lungenfunktion DLCOc"
 Description: "Dieses Profil beschreibt die Messung der korrigierten Diffusionskapazität für Kohlenstoffmonoxid."
 * ^url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-dlcoc"
 //Translation Meta
-* insert Translation(^name, en-US, MII_PR_Lungfunction_DLCOc)
-* insert Translation(^title, en-US, MII PR Lungenfunktion DLCOc)
-* insert Translation(^description, en-US, The profile describes the corrected diffusioncapacity carbon monoxid.)
+* insert Translation(^name, en-US, MII PR Lung function DLCOc)
+* insert Translation(^title, en-US, MII PR Lungen function DLCOc)
+* insert Translation(^description, en-US, The profile describes the corrected diffusion capacity carbon monoxid.)
 //Meta
 * insert PR_CS_VS_Version
 * insert PR_CS_VS_Date
@@ -22,7 +22,7 @@ Description: "Dieses Profil beschreibt die Messung der korrigierten Diffusionska
 //Profile
 * partOf MS
 * partOf ^short = "Teil von"
-* partOf ^definition = "Teil einer Befundungprozedur"
+* partOf ^definition = "Teil einer Befundungsprozedur"
 * status MS
 * status ^short = "Status"
 * status ^definition = "angemeldet | vorläufig | endgültig | geändert | korrigiert | abgebrochen | fehlerhafte Eingabe | unbekannt"
@@ -31,7 +31,7 @@ Description: "Dieses Profil beschreibt die Messung der korrigierten Diffusionska
 * category ^definition = "Klassifikation in diagnostischen Fachbereich und Gruppe"
 * code MS
 * code ^short = "Code"
-* code ^definition = "Ein Code für die zu befundende Beoabchtung"
+* code ^definition = "Ein Code für die zu befundende Beobachtung"
 * subject 1..1 MS
 * subject only Reference(Patient)
 * subject ^short = "Person"
@@ -54,12 +54,12 @@ Description: "Dieses Profil beschreibt die Messung der korrigierten Diffusionska
 * derivedFrom ^definition = "Abgeleitet von ImagingStudy, ect."
 * component MS
 * component ^short = "Bestandteile"
-* component ^definition = "detailierte Bestandteile der Beobachtung"
+* component ^definition = "detaillierte Bestandteile der Beobachtung"
 
 //Translation Profile
 * insert Translation(partOf ^short, de-DE, Teil von)
 * insert Translation(partOf ^short, en-US, part of)
-* insert Translation(partOf ^definition, de-DE, Teil einer Befundungprozedur)
+* insert Translation(partOf ^definition, de-DE, Teil einer Befundungsprozedur)
 * insert Translation(partOf ^definition, en-US, part of a read procedure)
 * insert Translation(status ^short, de-DE, Status)
 * insert Translation(status ^short, en-US, status)

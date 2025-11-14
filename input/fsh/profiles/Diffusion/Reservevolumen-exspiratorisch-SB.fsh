@@ -7,8 +7,8 @@ Title: "MII PR Lungenfunktion ERV SB"
 Description: "Dieses Profil beschreibt die Messung des exspiratorischen Reservevolumen im Single-Breath-Verfahren."
 * ^url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-erv-sb"
 //Translation Meta
-* insert Translation(^name, en-US, MII_PR_Lungfunction_ERV_SB)
-* insert Translation(^title, en-US, MII PR Lungfunction ERV SB)
+* insert Translation(^name, en-US, MII PR Lung function ERV_SB)
+* insert Translation(^title, en-US, MII PR Lung function ERV_SB)
 * insert Translation(^description, en-US, The profile describes a observation for the exspiratory reserve-volume in single-breath-procedure.)
 //Meta
 * insert PR_CS_VS_Version
@@ -54,7 +54,7 @@ Description: "Dieses Profil beschreibt die Messung des exspiratorischen Reservev
 * derivedFrom ^definition = "Abgeleitet von ImagingStudy, ect."
 * component MS
 * component ^short = "Bestandteile"
-* component ^definition = "detailierte Bestandteile der Beobachtung"
+* component ^definition = "detaillierte Bestandteile der Beobachtung"
 
 //Translation Profile
 * insert Translation(partOf ^short, de-DE, Teil von)
@@ -71,7 +71,7 @@ Description: "Dieses Profil beschreibt die Messung des exspiratorischen Reservev
 * insert Translation(category ^definition, en-US, Classification of the diagnostic service section)
 * insert Translation(code ^short, de-DE, Code)
 * insert Translation(code ^short, en-US, Code)
-* insert Translation(code ^definition, de-DE, Ein Code für die zu befundende Beoabchtung)
+* insert Translation(code ^definition, de-DE, Ein Code für die zu befundende Beobachtung)
 * insert Translation(code ^definition, en-US, A code identifying the inspected observation)
 * insert Translation(subject ^short, de-DE, Person)
 * insert Translation(subject ^short, en-US, person)
@@ -99,5 +99,5 @@ Description: "Dieses Profil beschreibt die Messung des exspiratorischen Reservev
 * insert Translation(derivedFrom ^definition, en-US, derived from an imagingStud\, etc.)
 * insert Translation(component ^short, de-DE, Bestandteile)
 * insert Translation(component ^short, en-US, components)
-* insert Translation(component ^definition, de-DE, detailierte Bestandteile der Beobachtung)
+* insert Translation(component ^definition, de-DE, detaillierte Bestandteile der Beobachtung)
 * insert Translation(component ^definition, en-US, detailed components of this observation)

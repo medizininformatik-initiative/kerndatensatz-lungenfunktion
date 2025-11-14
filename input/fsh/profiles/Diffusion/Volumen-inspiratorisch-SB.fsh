@@ -7,8 +7,8 @@ Title: "MII PR Lungenfunktion VIN SB"
 Description: "Dieses Profil beschreibt die Messung des inspiratorischen Volumen im Single-Breath-Verfahren."
 * ^url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-vin-sb"
 //Translation Meta
-* insert Translation(^name, en-US, MII_PR_Lungfunction_VIN_SB)
-* insert Translation(^title, en-US, MII PR Lungfunction VIN SB)
+* insert Translation(^name, en-US, MII PR Lung function VIN_SB)
+* insert Translation(^title, en-US, MII PR Lung function VIN_SB)
 * insert Translation(^description, en-US, The profile describes a observation for the inspiratory volume in single-breath-procedure.)
 //Meta
 * insert PR_CS_VS_Version
@@ -22,7 +22,7 @@ Description: "Dieses Profil beschreibt die Messung des inspiratorischen Volumen 
 //Profile
 * partOf MS
 * partOf ^short = "Teil von"
-* partOf ^definition = "Teil einer Befundungprozedur"
+* partOf ^definition = "Teil einer Befundungsprozedur"
 * status MS
 * status ^short = "Status"
 * status ^definition = "angemeldet | vorläufig | endgültig | geändert | korrigiert | abgebrochen | fehlerhafte Eingabe | unbekannt"
@@ -31,7 +31,7 @@ Description: "Dieses Profil beschreibt die Messung des inspiratorischen Volumen 
 * category ^definition = "Klassifikation in diagnostischen Fachbereich und Gruppe"
 * code MS
 * code ^short = "Code"
-* code ^definition = "Ein Code für die zu befundende Beoabchtung"
+* code ^definition = "Ein Code für die zu befundende Beobachtung"
 * subject 1..1 MS
 * subject only Reference(Patient)
 * subject ^short = "Person"
@@ -54,12 +54,12 @@ Description: "Dieses Profil beschreibt die Messung des inspiratorischen Volumen 
 * derivedFrom ^definition = "Abgeleitet von ImagingStudy, ect."
 * component MS
 * component ^short = "Bestandteile"
-* component ^definition = "detailierte Bestandteile der Beobachtung"
+* component ^definition = "detaillierte Bestandteile der Beobachtung"
 
 //Translation Profile
 * insert Translation(partOf ^short, de-DE, Teil von)
 * insert Translation(partOf ^short, en-US, part of)
-* insert Translation(partOf ^definition, de-DE, Teil einer Befundungprozedur)
+* insert Translation(partOf ^definition, de-DE, Teil einer Befundungsprozedur)
 * insert Translation(partOf ^definition, en-US, part of a read procedure)
 * insert Translation(status ^short, de-DE, Status)
 * insert Translation(status ^short, en-US, status)
@@ -71,7 +71,7 @@ Description: "Dieses Profil beschreibt die Messung des inspiratorischen Volumen 
 * insert Translation(category ^definition, en-US, Classification of the diagnostic service section)
 * insert Translation(code ^short, de-DE, Code)
 * insert Translation(code ^short, en-US, Code)
-* insert Translation(code ^definition, de-DE, Ein Code für die zu befundende Beoabchtung)
+* insert Translation(code ^definition, de-DE, Ein Code für die zu befundende Beobachtung)
 * insert Translation(code ^definition, en-US, A code identifying the inspected observation)
 * insert Translation(subject ^short, de-DE, Person)
 * insert Translation(subject ^short, en-US, person)
@@ -99,5 +99,5 @@ Description: "Dieses Profil beschreibt die Messung des inspiratorischen Volumen 
 * insert Translation(derivedFrom ^definition, en-US, derived from an imagingStud\, etc.)
 * insert Translation(component ^short, de-DE, Bestandteile)
 * insert Translation(component ^short, en-US, components)
-* insert Translation(component ^definition, de-DE, detailierte Bestandteile der Beobachtung)
+* insert Translation(component ^definition, de-DE, detaillierte Bestandteile der Beobachtung)
 * insert Translation(component ^definition, en-US, detailed components of this observation)

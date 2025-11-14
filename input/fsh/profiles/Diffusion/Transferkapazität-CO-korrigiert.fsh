@@ -7,9 +7,9 @@ Title: "MII PR Lungenfunktion KCOc SB"
 Description: "Dieses Profil beschreibt die Messung der korrigierten Transferkapzität von Kohlenstoffmonoxid im Single-Breath-Verfahren."
 * ^url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-kcoc-sb"
 //Translation Meta
-* insert Translation(^name, en-US, MII_PR_Lungfunction_KCOc_SB)
-* insert Translation(^title, en-US, MII PR Lungfunction KCOc SB)
-* insert Translation(^description, en-US, The profile describes a observation for the corrected transfercapacity of carbon monoxid in single-breath-procedure.)
+* insert Translation(^name, en-US, MII PR Lung function_KCOc_SB)
+* insert Translation(^title, en-US, MII PR Lung function KCOc_SB)
+* insert Translation(^description, en-US, The profile describes a observation for the corrected transfer capacity of carbon monoxid in single-breath-procedure.)
 //Meta
 * insert PR_CS_VS_Version
 * insert PR_CS_VS_Date
@@ -31,7 +31,7 @@ Description: "Dieses Profil beschreibt die Messung der korrigierten Transferkapz
 * category ^definition = "Klassifikation in diagnostischen Fachbereich und Gruppe"
 * code MS
 * code ^short = "Code"
-* code ^definition = "Ein Code für die zu befundende Beoabchtung"
+* code ^definition = "Ein Code für die zu befundende Beobachtung"
 * subject 1..1 MS
 * subject only Reference(Patient)
 * subject ^short = "Person"
@@ -54,7 +54,7 @@ Description: "Dieses Profil beschreibt die Messung der korrigierten Transferkapz
 * derivedFrom ^definition = "Abgeleitet von ImagingStudy, ect."
 * component MS
 * component ^short = "Bestandteile"
-* component ^definition = "detailierte Bestandteile der Beobachtung"
+* component ^definition = "detaillierte Bestandteile der Beobachtung"
 
 //Translation Profile
 * insert Translation(partOf ^short, de-DE, Teil von)
@@ -99,5 +99,5 @@ Description: "Dieses Profil beschreibt die Messung der korrigierten Transferkapz
 * insert Translation(derivedFrom ^definition, en-US, derived from an imagingStud\, etc.)
 * insert Translation(component ^short, de-DE, Bestandteile)
 * insert Translation(component ^short, en-US, components)
-* insert Translation(component ^definition, de-DE, detailierte Bestandteile der Beobachtung)
+* insert Translation(component ^definition, de-DE, detaillierte Bestandteile der Beobachtung)
 * insert Translation(component ^definition, en-US, detailed components of this observation)
