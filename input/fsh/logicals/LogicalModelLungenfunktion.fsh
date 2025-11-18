@@ -29,7 +29,7 @@ Wo wird die Atemfrequenz gemessen? Ggf. nicht in der Spirometrie?
   * Befund 1..1 BackboneElement "Befund" ""Bericht der Spirometrieuntersuchung"
   * Volumen 1..* BackboneElement "Volumen" "Testergebnis wird als gemessenes Volumen oder berechnete Kapazität dargestellt."
     * Ergebnis 0..1 "Ergebnis" "Gemessenes Volumen"
-    * Vorhergesagtes Ergebnis 0..1 "Vorhergesagtes Ergebnis" "Vorhergesagtes Ergebnis"
+    * Vorhergesagtes Ergebnis 0..1 "Vorhergesagtes Ergebnis" "Vorhergesagtes Volumen"
     * Gemessenes/vorhergesagtes Verhältnis 0..1 "Gemessenes/vorhergesagtes Verhältnis" "Verhältnis der gemessenen zu den vorhergesagten Testergebnissen"
     * Werte 1..1 
       * IVC 0..1 "VC IN" "Forcierte inspiratorische Vitalkapazität" -> VC_IN
@@ -141,6 +141,39 @@ Wo wird die Atemfrequenz gemessen? Ggf. nicht in der Spirometrie?
   * Atemfrequenz 1..1 BackboneElement "Atemfrequenz" "Messung der Atemfrequenz" -> Wird er bei der Spirometrie gemessen?
     * Code 1..1 Coding "" ""
     * Wert 1..1 Quantity "" ""
+  * Befund 1..1 BackboneElement "Befund" ""Bericht der Spirometrieuntersuchung"
+  * Volumen 1..* BackboneElement "Volumen" "Testergebnis wird als gemessenes Volumen oder berechnete Kapazität dargestellt."
+    * Ergebnis 0..1 "Ergebnis" "Gemessenes Volumen"
+    * Vorhergesagtes Ergebnis 0..1 "Vorhergesagtes Ergebnis" "Vorhergesagtes Volumen"
+    * Gemessenes/vorhergesagtes Verhältnis 0..1 "Gemessenes/vorhergesagtes Verhältnis" "Verhältnis der gemessenen zu den vorhergesagten Testergebnissen"
+    * Werte 1..1 
+      * TLC 0..1 "TLC" "Totale Lungenkapazität"
+      * RV 0..1 "RV" "Residualvolumen"
+      * FRC 0..1 "FRC" "Funktionelle Residualkapazität" -> FRCpleth
+
+// Zusätzliche Werte in openEHR
+      * TGV 0..1 "TGV" "Thorakales Gasvolumen"        
+      * ITGV 0..1 "ITGV" "Intrathorakales Gasvolumen"
+
+  * Atemwegswiderstand 1..* BackboneElement "Atemwegswiderstand" "Das Testergebnis wird als gemessener Atemwiderstand dargestellt."
+    * Ergebnis 0..1 "Ergebnis" "Gemessener Atemwegswiderstand"
+    * Vorhergesagtes Ergebnis 0..1 "Vorhergesagtes Ergebnis" "Vorhergesagtes Atemwegswiderstand"
+    * Gemessenes/vorhergesagtes Verhältnis 0..1 "Gemessenes/vorhergesagtes Verhältnis" "Verhältnis der gemessenen zu den vorhergesagten Testergebnissen"
+    * Werte 1..1 
+      * R_tot 0..1 "RAWtot" "Totaler Atemwegswiderstand" -> RAWtot
+      * sR_tot 0..1 "sRAWtot" "Spezifischer totaler Atemwegswiderstand" -> sRAWtot
+      * sR_ess 0..1 "sR_ess" "spezifischer effektiver Atemwegswiderstand"
+      * sG_tot -> Tippfehler? SR_tot
+
+// Zusätzliche Werte in openEHR
+      * RAW-ex 0..1 "RAW-ex" "Exspiratorischer Atemwegswiderstand"
+
+ * Ratio 1..* BackboneElement "Ratio" "Berechnetes Testergebnis ausgedrückt als Verhältnis."
+    * Ergebnis 0..1 "Ergebnis" "Berechnetes Verhältnis"
+    * Vorhergesagtes Ergebnis 0..1 "Vorhergesagtes Ergebnis" "Vorhergesagtes Verhältnis"  
+    * Werte 1..1 
+      * RV/TLC 0..1 "RV/TLC-B" "Verhältnis von Residualvolumen zu totaler Lungenkapazität" -> RV/TLC-B
+     
 
 * Befundbericht 1..1 BackboneElement "Befundbericht" "Bericht einer Lungenfunktion"
   * AnforderndeMassnahme 0..* Reference(ServiceRequest) "Anfordernde Maßnahme" "Basiert auf einer ServiceRequest-Anfrage."
