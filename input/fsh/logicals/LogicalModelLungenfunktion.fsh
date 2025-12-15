@@ -19,14 +19,24 @@ Description: "MII LogicalModel Modul Lungenfunktion"
 * . ^short = "Das Erweiterungsmodul Lungenfunktion enthält Datenelemente zur Dokumentation von Lungenfunktionsuntersuchungen (Spirometrie, Bodyplethysmographie, Diffusionskapazität, Provokationstestung) und zugehörigen Befundberichten."
 
 Offene Fragen: 
-Wo wird die Atemfrequenz gemessen? Ggf. nicht in der Spirometrie?
-// BF 0..1 "BF" "Atemfrequenz, Atemzüge pro Minute (Breathing Frequency)" 
-// Atemfrequenz 1..1 BackboneElement "Atemfrequenz" "Messung der Atemfrequenz" 
+Wo wird die Atemfrequenz gemessen? Abgebildet in Bodyplethysmographie
+Provakationstest: Erweiterung der Spirometrie?
+
 
 
 //LM
 * Spirometrie 1..1 BackboneElement "Spirometrie" "Lungenfunktionstests, der mit einem Spirometer oder Peak-Flow-Meter durchgeführt wird."
   * Befund 1..1 BackboneElement "Befund" ""Bericht der Spirometrieuntersuchung"
+  * Provakationstest 0..1 BackboneElement "Provokationstest" "Bronchialer Provokationstest zur Prüfung der bronchialen Hyperreagibilität"
+     * Durchführungstyp 1..1 code "Durchführungstyp" "Art des Provokationstests (z. B. Methacholin-Test, Mannitol-Test, Belastungstest)"
+     * Substanz 1..1 CodeableConcept "Provokationssubstanz" "Art des Provokationsreizes z. B. Methacholin, Mannitol, Belastung"
+     * Dosis / Konzentration pro Stufe
+    * stufe 1..* BackboneElement "Provokationsstufe" "Eine einzelne Dosisstufe innerhalb des Provokationstests"
+      * sequenznummer 1..1 integer "Sequenznummer" "Reihenfolge der Dosisstufe"
+      * Dosis 1..1 Quantity "Dosis / Konzentration" "Verabreichte Dosis oder Konzentration dieser Stufe"
+      * kumulativeDosis 0..1 Quantity "Kumulative Dosis" "Bis zu dieser Stufe insgesamt verabreichte Dosis"
+      * Applikationszeitpunkt 0..1 Duration "Zeitpunkt nach Applikation" "Zeitintervall zwischen Applikation und Messung"
+      * thresholdDoseWert 0..1 Quantity "Threshold-Dosis" "Dosis, bei der der definierte Schwellenwert (z. B. 20 % FEV1-Abfall) erreicht wird (PD20 / PC20)"
   * Volumen 1..* BackboneElement "Volumen" "Testergebnis wird als gemessenes Volumen oder berechnete Kapazität dargestellt."
     * Ergebnis 0..1 "Ergebnis" "Gemessenes Volumen"
     * Vorhergesagtes Ergebnis 0..1 "Vorhergesagtes Ergebnis" "Vorhergesagtes Volumen"
@@ -121,7 +131,7 @@ Wo wird die Atemfrequenz gemessen? Ggf. nicht in der Spirometrie?
 
 
 * Diffusionskapazität 0..1 BackboneElement "Diffusionskapazität (DLCO)" "Ganzkörper- oder Single-Breath DLCO"
-  * Befund 1..1 BackboneElement "" ""
+  * Befund 1..1 BackboneElement "Bericht" "Bericht der Diffusionskapazitätsuntersuchung"
   * Diffusionskapazität 0..1 BackboneElement "Diffusionskapazität (DLCO)" "Ganzkörper- oder Single-Breath DLCO"
     * Ergebnis 0..1 "Ergebnis" "Gemessenes Diffusionskapazität"
     * Vorhergesagtes Ergebnis 0..1 "Vorhergesagtes Ergebnis" "Vorhergesagte Diffusionskapazität"
@@ -134,14 +144,12 @@ Wo wird die Atemfrequenz gemessen? Ggf. nicht in der Spirometrie?
       * VA 0..1 "VA" "Alveolarvolumen ist das Volumen der Lunge, das aktiv am Gasaustausch beteiligt ist."
 
 
-* Provakationstest 0..1 BackboneElement "" ""
-
 
 * Bodyplethysmographie 0..1 BackboneElement "" ""
-  * Atemfrequenz 1..1 BackboneElement "Atemfrequenz" "Messung der Atemfrequenz" -> Wird er bei der Spirometrie gemessen?
+  * Befund 1..1 BackboneElement "Befund" ""Bericht der Bodyplethysmographieuntersuchung"
+  * Atemfrequenz 1..1 BackboneElement "Atemfrequenz" "Messung der Atemfrequenz"
     * Code 1..1 Coding "" ""
     * Wert 1..1 Quantity "" ""
-  * Befund 1..1 BackboneElement "Befund" ""Bericht der Spirometrieuntersuchung"
   * Volumen 1..* BackboneElement "Volumen" "Testergebnis wird als gemessenes Volumen oder berechnete Kapazität dargestellt."
     * Ergebnis 0..1 "Ergebnis" "Gemessenes Volumen"
     * Vorhergesagtes Ergebnis 0..1 "Vorhergesagtes Ergebnis" "Vorhergesagtes Volumen"
@@ -191,21 +199,7 @@ Wo wird die Atemfrequenz gemessen? Ggf. nicht in der Spirometrie?
   * StrukturierteInterpretation 0..* http://hl7.org/fhir/StructureDefinition/CodeableConcept "Strukturierte Interpretation" "Strukturierte Interpretation der Beobachtung."
   * Zusatzinformation 0..* Reference(DiagnosticReport or Procedure) "Zusatzinformation" "Referenz auf weitere Befundberichte zum Patienten. Backport aus FHIR R5"
   * Dokumentenanhang 0..* http://hl7.org/fhir/StructureDefinition/Attachment "Dokumentenanhang" "Anhang der Dokumente und Bilder."
-* GenerischeBeobachtung 0..* BackboneElement "Befundabschnitt" "Befundabschnitt des semistrukturierten Befunddokuments."
-  * Bildnummer 0..1 http://hl7.org/fhir/StructureDefinition/string "Bildnummer" "DICOM Series UID der zugehörigen Serie."
-  * Schichtposition 0..1 http://hl7.org/fhir/StructureDefinition/string "Schichtposition" "DICOM Instance UID der zugehörigen SOP Instance."
-  * ErweiterteKoerperstruktur 0..* Reference(BodyStructure) "Erweiterte Körperstruktur" "Backport der R5 Referenz auf das BodyStructure-Profil."
-  * TeilEinerBefundungsprozedur 0..* Reference(Procedure) "Teil einer Befundungsprozedur" "Hier soll auf das MII KDS-Modul Prozedur referenziert werden"
-  * Status 1..1 http://hl7.org/fhir/StructureDefinition/Coding "Status" "Status der Beobachtung."
-  * Beobachtungsklassifizierung 0..* http://hl7.org/fhir/StructureDefinition/CodeableConcept "Beobachtungsklassifizierung" "Klassifiziert eine Beobachtung"
-  * Beobachtungstyp 1..1 http://hl7.org/fhir/StructureDefinition/CodeableConcept "Beobachtungstyp" "Typ der Beobachtung."
-  * Person 1..1 Reference(Patient) "Person" "Person, auf die sich die Beobachtung bezieht. Hier soll das MII KDS-Modul Person verwendet werden."
-  * Beobachtungszeitpunkt 0..1 http://hl7.org/fhir/StructureDefinition/dateTime "Beobachtungszeitpunkt" "Zeitpunkt an dem die Beobachtung gemacht wird."
-  * Beschreibung 0..1 BackboneElement "Beschreibung" "Detaillierte Beschreibung der Beobachtung mit value[x]."
-  * Koerperregion 0..1 http://hl7.org/fhir/StructureDefinition/CodeableConcept "Körperregion" "Codierte Körperregion der Beobachtung"
-  * WeitereBeobachtung 0..* Reference(Observation) "Weitere Beobachtung(en)" "Weitere Beobachtung(en) als Referenz auf weitere Observation(s)."
-  * Studienbezug 0..* Reference(ImagingStudy) "Studienbezug" "Bezug auf die zugehörige(n) Bildgebungsstudie(n)."
-  * ErweiterteBeschreibung 0..* BackboneElement "Erweiterte Beschreibung" "Kann mehrere Beschreibungen strukturiert abbilden."
+
 * Befundungsprozedur 0..1 BackboneElement "Befundungsprozedur" ""
   * Status 1..1 http://hl7.org/fhir/StructureDefinition/Coding "Status" "Status der Befundungsprozedur"
   * Kategorie 1..1 http://hl7.org/fhir/StructureDefinition/CodeableConcept "Kategorie" "Kategoriesierung der Befundungsprozedur"
@@ -235,48 +229,6 @@ Source: MII_LM_Bildgebung
   * StrukturierteInterpretation -> "DiagnosticReport.conclusionCode"
   * Zusatzinformation -> "DiagnosticReport.supportingInfo.reference"
   * Dokumentenanhang -> "DiagnosticReport.presentedForm"
-* GenerischeBeobachtung -> "Observation"
-  * Bildnummer -> "Observation.extension(https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-serie-uid)"
-  * Schichtposition -> "Observation.extension(https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-sop-instanz-uid)"
-  * ErweiterteKoerperstruktur -> "Observation.extension(https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-observation-imaging)" //Backport
-  * TeilEinerBefundungsprozedur -> "Observation.partOf"
-  * Status -> "Observation.status"
-  * Beobachtungsklassifizierung -> "Observation.category"
-  * Beobachtungstyp -> "Observation.code"
-  * Person -> "Observation.subject"
-  * Beobachtungszeitpunkt -> "Observation.issued"
-  * Beschreibung -> "Observation.value[x]"
-  * Koerperregion -> "Observation.bodySite"
-  * WeitereBeobachtung -> "Observation.hasMember"
-  * Studienbezug -> "Obervation.derivedFrom"
-  * ErweiterteBeschreibung -> "Observation.component"
-* Kontrastmittelgabe -> "MedicationAdministration"
-  * TeilVon -> "MedicationAdministration.partOf"
-  * Status -> "MedicationAdministration.status"
-  * Medikament -> "MedicationAdministration.medication[x]"
-  * Person -> "MedicationAdministration.subject"
-  * Medikationsdauer -> "MedicationAdministration.effectivePeriod"
-  * Dosierung -> "MedicationAdministration.dosage"
-    * Dosis -> "MedicatinAdministration.dosage.dose"
-* Befundungsprozedur -> "Procedure"
-  * Status -> "Procedure.status"
-  * Kategorie -> "Procedure.category"
-  * Code -> "Procedure.code"
-  * Person -> "Procedure.subject"
-  * Befundungszeit -> "Procedure.peformed[x]"
-  * Bericht -> "Procedure.report"
-* Anforderung -> "ServiceRequest"
-  * Status -> "ServiceRequest.status"
-  * Anforderungsabsicht -> "ServiceRequest.intent"
-  * Anforderungsklassifizierung -> "ServiceRequest.category"
-  * ArtAnfrage -> "ServiceRequest.code"
-  * Person -> "ServiceRequest.subject"
-  * Versorgungsstellenkontakt -> "ServiceRequest.encounter"
-  * Zeitpunkt -> "ServiceRequest.authoredOn"
-  * Anforderer -> "ServiceRequest.requester"
-  * Anforderungsgrund -> "ServiceRequest.reasonCode"
-  * Anforderungsbezug -> "ServiceRequest.reasonReference"
-  * Zusatzinformation -> "ServiceRequest.supportingInfo"
 
 //Mapping KDS
 Mapping: Bildgebung-LogicalModel-Profile
