@@ -1,6 +1,7 @@
 //Head
 Profile: MII_PR_Lungenfunktion_Spirometrie_Messung
-Parent: $miiProcedure
+//Parent: $miiProcedure
+Parent: Procedure
 Id: mii-pr-lungenfunktion-spirometrie-messung
 Title: "MII PR Lungenfunktion Spirometire Messung"
 Description: "Beschreibt die Tätigkeiten, wie eine Spirometrie durchgeführt wird."
@@ -8,7 +9,7 @@ Description: "Beschreibt die Tätigkeiten, wie eine Spirometrie durchgeführt wi
 //Translation Meta
 * insert Translation(^name, en-US, MII_PR_Lungfunction_Spirometry_Measurement)
 * insert Translation(^title, en-US, MII PR Lungfunction Spirometry Measurement)
-* insert Translation(^description, en-US, The profile describes a advisory for medical care.)
+* insert Translation(^description, en-US, The profile describes a advisory for medical care)
 //Meta
 * insert PR_CS_VS_Version
 * insert PR_CS_VS_Date
@@ -22,40 +23,36 @@ Description: "Beschreibt die Tätigkeiten, wie eine Spirometrie durchgeführt wi
 * status MS
 * status ^short = "Status"
 * status ^definition = "Vorbereitung | in Arbeit | nicht durchgeführt | pausiert | abgebrochen | abgeschlossen | Eingabe fehlerhaft | unbekannt"
-* category 1.. MS
-* category ^short = "Kategorie"
-* category ^definition = "Diagnostische Maßnahmen | Bildgebende Diagnostik | Operationen | Medikamente | Nichtoperative therapeutische Maßnahmen | Ergänzende Maßnahmen"
-* category.coding 1.. MS
-* category.coding[sct] = $SCT#323426006 
-* category.coding[sct].display = "Measurement of respiratory function (procedure)"
-* category.coding.system 1.. MS
-* category.coding.code 1.. MS
+* category.coding.system = $SCT (exactly)
+* category.coding.code = #323426006 (exactly)
+* category.coding.display = "Measurement of respiratory function (procedure)" (exactly)
+* category MS
 * code MS
 * code ^short = "Code"
-* code ^definition = "Code aus LOINC"
 * code.coding MS
-* code.coding ^slicing.discriminator.type = #pattern
-* code.coding ^slicing.discriminator.path = "$this"
+* code.coding ^slicing.discriminator.type = #value
+* code.coding ^slicing.discriminator.path = "system"
 * code.coding ^slicing.rules = #open
 * code.coding contains
+    sct 0..1 MS
+* code.coding contains
     loinc 0..1 MS
-* code.coding[loinc] ^patternCoding.system = $loinc
-* code.coding[loinc] = $loinc#TODO
-* code.coding[sct] = $SCT#127783003
-* code.coding.system 1.. MS
-* code.coding.code 1.. MS
+* code.coding[loinc].system = $loinc
+//* code.coding[loinc] = #TODO
+* code.coding[sct].system = $SCT
+* code.coding[sct].code = #127783003
+
 * subject MS
 * subject only Reference(Patient)
 * subject ^short = "Person"
 * subject ^definition = "Person, auf die sich die Prozedur bezieht"
 * performed[x] MS
 * performed[x] ^short = "Durchführungsdatum"
-* performed[x] ^definition = "Durchführungsdatum oder -zeitraum der Prozedur."
+* performed[x] ^definition = "Durchführungsdatum oder -zeitraum der Prozedur"
 * outcome MS
 * outcome from http://hl7.org/fhir/ValueSet/procedure-outcome (preferred)
 * report MS
 * report only Reference(MII_PR_Lungenfunktion_Spirometrie)
-
 //Translation Profile
 * insert Translation(basedOn ^short, de-DE, Basiert auf)
 * insert Translation(basedOn ^short, en-US, based on)
@@ -69,18 +66,18 @@ Description: "Beschreibt die Tätigkeiten, wie eine Spirometrie durchgeführt wi
 * insert Translation(category ^short, en-US, Category)
 * insert Translation(category ^definition, de-DE, Diagnostische Maßnahmen | Bildgebende Diagnostik | Operationen | Medikamente | Nichtoperative therapeutische Maßnahmen | Ergänzende Maßnahmen)
 * insert Translation(category ^definition, en-US, Diagnostic procedures | Imaging procedures | Operations | Medications | Non-operative therapeutic procedures | Other procedures)
-* insert AddSnomedCodingTranslation(category.coding[sct])
+//* insert AddSnomedCodingTranslation(category.coding[sct])
 * insert Translation(code ^short, de-DE, Code)
 * insert Translation(code ^short, en-US, Code)
 * insert Translation(code ^definition, de-DE, Code aus LOINC)
 * insert Translation(code ^definition, en-US, Code from LOINC)
-* insert AddLoincCodingTranslation(code.coding[loinc])
-* insert AddSnomedCodingTranslation(code.coding[sct])
+//* insert AddLoincCodingTranslation(code.coding[loinc])
+//* insert AddSnomedCodingTranslation(code.coding[sct])
 * insert Translation(subject ^short, de-DE, Person)
 * insert Translation(subject ^short, en-US, person)
 * insert Translation(subject ^definition, de-DE, Person\, auf die sich die Prozedur bezieht)
 * insert Translation(subject ^definition, en-US, person\, which this procedure is about)
 * insert Translation(performed[x] ^short, de-DE, Durchführungsdatum)
 * insert Translation(performed[x] ^short, en-US, Performed date)
-* insert Translation(performed[x] ^definition, de-DE, Durchführungsdatum oder -zeitraum der Prozedur.)
-* insert Translation(performed[x] ^definition, en-US, The date or period of time the procedure was performed.)
+* insert Translation(performed[x] ^definition, de-DE, Durchführungsdatum oder -zeitraum der Prozedur)
+* insert Translation(performed[x] ^definition, en-US, The date or period of time the procedure was performed)

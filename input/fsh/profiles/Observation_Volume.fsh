@@ -43,9 +43,11 @@ Description: "Dieses Beobachtung beschreibt eine Volumenmessung."
 * value[x] ^short = "Messwert"
 * value[x] ^definition = "Wert der Analyse"
 * value[x] only Quantity
-* value[x].Quantity.unit = "L"
-* value[x].valueQuantity.system = $ucum
-* value[x].valueQuantity.code = $ucum#L
+* valueQuantity = $ucum#L
+* valueQuantity.value MS
+* valueQuantity.unit MS
+* valueQuantity.system MS
+
 * bodySite MS
 * bodySite ^short = "Anatomie"
 * bodySite ^definition = "betrachtete Anatomie der Beobachtung"

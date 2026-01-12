@@ -4,12 +4,12 @@ Profile: MII_PR_Lungenfunktion_FEV_Provokation
 Parent: Observation
 Id: mii-pr-lungenfunktion-fev-provokation
 Title: "MII PR Lungenfunktion FEV Provokation"
-Description: "Dieses Profil beschreibt die Messung der forcierten, expiratorischen Volumen."
+Description: "Dieses Profil beschreibt die Messung der forcierten, expiratorischen Volumen"
 * ^url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-fev-provokation"
 //Translation Meta
 * insert Translation(^name, en-US, MII_PR_Lungfunction_FEV_Provokation)
 * insert Translation(^title, en-US, MII PR Lungfunction FEV Provokation)
-* insert Translation(^description, en-US, The profile describes a observation for the forced, exspiratory volume in one second.)
+* insert Translation(^description, en-US, The profile describes a observation for the forced\, exspiratory volume in one second)
 //Meta
 * insert PR_CS_VS_Version
 * insert PR_CS_VS_Date

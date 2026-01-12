@@ -29,7 +29,7 @@
           },
           {
             "url": "content",
-            "valueString": "MII_PR_Lungfunction_Diffusion"
+            "valueString": "MII PR Lung function Diffusion"
           }
         ]
       }
@@ -47,7 +47,7 @@
           },
           {
             "url": "content",
-            "valueString": "MII PR Lungfunction Diffusion"
+            "valueString": "MII PR Lung function Diffusion"
           }
         ]
       }
@@ -249,7 +249,7 @@
       {
         "id": "DiagnosticReport.category",
         "path": "DiagnosticReport.category",
-        "short": "Kategorie",
+        "mustSupport": true,
         "_short": {
           "extension": [
             {
@@ -280,7 +280,6 @@
             }
           ]
         },
-        "definition": "Kategorie des Befundberichts",
         "_definition": {
           "extension": [
             {
@@ -310,65 +309,20 @@
               ]
             }
           ]
-        },
-        "min": 1,
-        "mustSupport": true
+        }
       },
       {
         "id": "DiagnosticReport.category.coding",
         "path": "DiagnosticReport.category.coding",
-        "slicing": {
-          "discriminator": [
-            {
-              "type": "pattern",
-              "path": "$this"
-            }
-          ],
-          "rules": "open"
-        },
-        "min": 1,
-        "mustSupport": true
-      },
-      {
-        "id": "DiagnosticReport.category.coding:loinc",
-        "path": "DiagnosticReport.category.coding",
-        "sliceName": "loinc",
-        "min": 0,
-        "max": "*",
-        "patternCoding": {
-          "code": "18748-4",
-          "system": "http://loinc.org"
-        },
-        "mustSupport": true
-      },
-      {
-        "id": "DiagnosticReport.category.coding:diagnostic-service-sections",
-        "path": "DiagnosticReport.category.coding",
-        "sliceName": "diagnostic-service-sections",
-        "min": 0,
-        "max": "*",
-        "patternCoding": {
-          "code": "RAD",
+        "fixedCoding": {
+          "code": "PF",
           "system": "http://terminology.hl7.org/CodeSystem/v2-0074"
-        },
-        "mustSupport": true
-      },
-      {
-        "id": "DiagnosticReport.category.coding:sct",
-        "path": "DiagnosticReport.category.coding",
-        "sliceName": "sct",
-        "min": 1,
-        "max": "1",
-        "patternCoding": {
-          "code": "4201000179104",
-          "system": "http://snomed.info/sct"
-        },
-        "mustSupport": true
+        }
       },
       {
         "id": "DiagnosticReport.code",
         "path": "DiagnosticReport.code",
-        "short": "Code",
+        "mustSupport": true,
         "_short": {
           "extension": [
             {
@@ -399,7 +353,6 @@
             }
           ]
         },
-        "definition": "Code des Befundberichts",
         "_definition": {
           "extension": [
             {
@@ -429,8 +382,7 @@
               ]
             }
           ]
-        },
-        "mustSupport": true
+        }
       },
       {
         "id": "DiagnosticReport.code.coding",
@@ -443,7 +395,9 @@
             }
           ],
           "rules": "open"
-        }
+        },
+        "min": 1,
+        "mustSupport": true
       },
       {
         "id": "DiagnosticReport.code.coding:sct",
@@ -451,10 +405,17 @@
         "sliceName": "sct",
         "min": 0,
         "max": "1",
-        "patternCoding": {
-          "system": "http://snomed.info/sct"
-        },
         "mustSupport": true
+      },
+      {
+        "id": "DiagnosticReport.code.coding:sct.system",
+        "path": "DiagnosticReport.code.coding.system",
+        "patternUri": "$SCT#36421003"
+      },
+      {
+        "id": "DiagnosticReport.code.coding:sct.display",
+        "path": "DiagnosticReport.code.coding.display",
+        "patternString": "Carbon monoxide transfer factor test"
       },
       {
         "id": "DiagnosticReport.code.coding:loinc",
@@ -463,7 +424,7 @@
         "min": 0,
         "max": "1",
         "patternCoding": {
-          "system": "http://loinc.org"
+          "system": "$loinc"
         },
         "mustSupport": true
       },
@@ -845,74 +806,6 @@
             }
           ]
         },
-        "mustSupport": true
-      },
-      {
-        "id": "DiagnosticReport.imagingStudy",
-        "path": "DiagnosticReport.imagingStudy",
-        "short": "Bildgebungsstudie",
-        "_short": {
-          "extension": [
-            {
-              "url": "http://hl7.org/fhir/StructureDefinition/translation",
-              "extension": [
-                {
-                  "url": "lang",
-                  "valueCode": "de-DE"
-                },
-                {
-                  "url": "content",
-                  "valueString": "Bildgebungsstudie"
-                }
-              ]
-            },
-            {
-              "url": "http://hl7.org/fhir/StructureDefinition/translation",
-              "extension": [
-                {
-                  "url": "lang",
-                  "valueCode": "en-US"
-                },
-                {
-                  "url": "content",
-                  "valueString": "imaging study"
-                }
-              ]
-            }
-          ]
-        },
-        "definition": "Studie, die die vollständige Bildgebung umfasst",
-        "_definition": {
-          "extension": [
-            {
-              "url": "http://hl7.org/fhir/StructureDefinition/translation",
-              "extension": [
-                {
-                  "url": "lang",
-                  "valueCode": "de-DE"
-                },
-                {
-                  "url": "content",
-                  "valueString": "Studie, die die vollständige Bildgebung umfasst"
-                }
-              ]
-            },
-            {
-              "url": "http://hl7.org/fhir/StructureDefinition/translation",
-              "extension": [
-                {
-                  "url": "lang",
-                  "valueCode": "en-US"
-                },
-                {
-                  "url": "content",
-                  "valueString": "study with all images"
-                }
-              ]
-            }
-          ]
-        },
-        "min": 1,
         "mustSupport": true
       },
       {

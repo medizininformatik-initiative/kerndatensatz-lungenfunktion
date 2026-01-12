@@ -29,7 +29,7 @@
           },
           {
             "url": "content",
-            "valueString": "MII_PR_Lungfunction_ERV_SB"
+            "valueString": "MII PR Lung function ERV_SB"
           }
         ]
       }
@@ -47,7 +47,7 @@
           },
           {
             "url": "content",
-            "valueString": "MII PR Lungfunction ERV SB"
+            "valueString": "MII PR Lung function ERV_SB"
           }
         ]
       }
@@ -347,7 +347,7 @@
             }
           ]
         },
-        "definition": "Ein Code für die zu befundende Beoabchtung",
+        "definition": "Ein Code für die zu befundende Beobachtung",
         "_definition": {
           "extension": [
             {
@@ -359,7 +359,7 @@
                 },
                 {
                   "url": "content",
-                  "valueString": "Ein Code für die zu befundende Beoabchtung"
+                  "valueString": "Ein Code für die zu befundende Beobachtung"
                 }
               ]
             },
@@ -833,7 +833,7 @@
             }
           ]
         },
-        "definition": "detailierte Bestandteile der Beobachtung",
+        "definition": "detaillierte Bestandteile der Beobachtung",
         "_definition": {
           "extension": [
             {
@@ -845,7 +845,7 @@
                 },
                 {
                   "url": "content",
-                  "valueString": "detailierte Bestandteile der Beobachtung"
+                  "valueString": "detaillierte Bestandteile der Beobachtung"
                 }
               ]
             },

@@ -6,10 +6,12 @@ Id: mii-pr-lungenfunktion-dlco
 Title: "MII PR Lungenfunktion DLCO"
 Description: "Dieses Profil beschreibt die Messung der Diffusionskapazität von Kohlenstoffmonoxid."
 * ^url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-dlco"
+
 //Translation Meta
 * insert Translation(^name, en-US, MII PR Lung function DLCO)
 * insert Translation(^title, en-US, MII PR Lungenfunktion DLCO)
 * insert Translation(^description, en-US, The profile describes the diffusion capacity of carbon monoxid.)
+
 //Meta
 * insert PR_CS_VS_Version
 * insert PR_CS_VS_Date
@@ -19,6 +21,7 @@ Description: "Dieses Profil beschreibt die Messung der Diffusionskapazität von 
 * meta MS
 * meta.source MS
 * meta.profile MS
+
 //Profile
 * partOf MS
 * partOf ^short = "Teil von"
@@ -39,9 +42,19 @@ Description: "Dieses Profil beschreibt die Messung der Diffusionskapazität von 
 * issued MS
 * issued ^short = "Dokumentationsdatum"
 * issued ^definition = "Zeitpunkt, an dem das Ergebnis der Laboruntersuchung dokumentiert wurde"
+
 * value[x] MS
 * value[x] ^short = "Messwert"
 * value[x] ^definition = "Wert der Analyse"
+* value[x] MS
+* value[x] ^short = "Messwert"
+* value[x] ^definition = "Wert der Analyse"
+* value[x] only Quantity
+* valueQuantity = $ucum#mmol/(min.kPa)
+* valueQuantity.value MS
+* valueQuantity.unit MS
+* valueQuantity.system MS
+
 * bodySite MS
 * bodySite ^short = "Anatomie"
 * bodySite ^definition = "betrachtete Anatomie der Beobachtung"

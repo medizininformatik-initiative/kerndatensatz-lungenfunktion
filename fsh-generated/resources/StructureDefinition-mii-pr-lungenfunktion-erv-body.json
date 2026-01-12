@@ -1,6 +1,6 @@
 {
   "resourceType": "StructureDefinition",
-  "id": "mii-pr-lungenfunktion-sequenznummer",
+  "id": "mii-pr-lungenfunktion-erv-body",
   "extension": [
     {
       "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-ex-meta-license-codeable",
@@ -15,9 +15,9 @@
       }
     }
   ],
-  "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-sequenznummer",
+  "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-erv-body",
   "version": "2025.0.0",
-  "name": "MII_PR_Lungenfunktion_Sequenznummer",
+  "name": "MII_PR_Lungenfunktion_ERV_BODY",
   "_name": {
     "extension": [
       {
@@ -29,13 +29,13 @@
           },
           {
             "url": "content",
-            "valueString": "MII_PR_Lungfunction_Sequencenumber"
+            "valueString": "MII_PR_Lungfunction_ERV"
           }
         ]
       }
     ]
   },
-  "title": "MII PR Lungenfunktion Sequenznummer",
+  "title": "MII PR Lungenfunktion ERV Body",
   "_title": {
     "extension": [
       {
@@ -47,7 +47,7 @@
           },
           {
             "url": "content",
-            "valueString": "MII PR Lungfunction Sequencenumber"
+            "valueString": "MII PR Lungfunction ERV"
           }
         ]
       }
@@ -66,7 +66,7 @@
       ]
     }
   ],
-  "description": "Dieses Profil beschreibt die Messung der Sequenznummer.",
+  "description": "Dieses Profil beschreibt die Messung des exspiratorischen Reservevolumen.",
   "_description": {
     "extension": [
       {
@@ -78,7 +78,7 @@
           },
           {
             "url": "content",
-            "valueString": "The profile describes a observation for the sequencenumber."
+            "valueString": "The profile describes a observation for the exspiratory reserve-volume."
           }
         ]
       }

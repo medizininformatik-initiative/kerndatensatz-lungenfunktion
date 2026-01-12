@@ -6,10 +6,12 @@ Id: mii-pr-lungenfunktion-frc-sb
 Title: "MII PR Lungenfunktion FRC SB"
 Description: "Dieses Profil beschreibt die Messung der funktionellen Residualkapazität im Single-Breath-Verfahren."
 * ^url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-frc-sb"
+
 //Translation Meta
 * insert Translation(^name, en-US, MII_PR_Lung function FRC_SB)
 * insert Translation(^title, en-US, MII PR Lung function FRC_SB)
 * insert Translation(^description, en-US, The profile describes a observation for the functional residual capacity in single-breath-procedure.)
+
 //Meta
 * insert PR_CS_VS_Version
 * insert PR_CS_VS_Date
@@ -19,6 +21,7 @@ Description: "Dieses Profil beschreibt die Messung der funktionellen Residualkap
 * meta MS
 * meta.source MS
 * meta.profile MS
+
 //Profile
 * partOf MS
 * partOf ^short = "Teil von"

@@ -1,6 +1,6 @@
 {
   "resourceType": "StructureDefinition",
-  "id": "mii-pr-lungenfunktion-sequenznummer",
+  "id": "mii-pr-lungenfunktion-diffusion-messung",
   "extension": [
     {
       "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-ex-meta-license-codeable",
@@ -15,9 +15,9 @@
       }
     }
   ],
-  "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-sequenznummer",
+  "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-diffusion-messung",
   "version": "2025.0.0",
-  "name": "MII_PR_Lungenfunktion_Sequenznummer",
+  "name": "MII_PR_Lungenfunktion_Diffusion_Messung",
   "_name": {
     "extension": [
       {
@@ -29,13 +29,13 @@
           },
           {
             "url": "content",
-            "valueString": "MII_PR_Lungfunction_Sequencenumber"
+            "valueString": "MII PR Lung function_Diffusion_Measurement"
           }
         ]
       }
     ]
   },
-  "title": "MII PR Lungenfunktion Sequenznummer",
+  "title": "MII PR Lungenfunktion Diffusion Messung",
   "_title": {
     "extension": [
       {
@@ -47,7 +47,7 @@
           },
           {
             "url": "content",
-            "valueString": "MII PR Lungfunction Sequencenumber"
+            "valueString": "MII PR Lung function Diffusion Measurement"
           }
         ]
       }
@@ -66,7 +66,7 @@
       ]
     }
   ],
-  "description": "Dieses Profil beschreibt die Messung der Sequenznummer.",
+  "description": "Beschreibt die Tätigkeiten, wie eine Diffusion durchgeführt wird",
   "_description": {
     "extension": [
       {
@@ -78,7 +78,7 @@
           },
           {
             "url": "content",
-            "valueString": "The profile describes a observation for the sequencenumber."
+            "valueString": "The profile describes a advisory for medical care"
           }
         ]
       }
@@ -87,35 +87,35 @@
   "fhirVersion": "4.0.1",
   "kind": "resource",
   "abstract": false,
-  "type": "Observation",
-  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Observation",
+  "type": "Procedure",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Procedure",
   "derivation": "constraint",
   "differential": {
     "element": [
       {
-        "id": "Observation.id",
-        "path": "Observation.id",
+        "id": "Procedure.id",
+        "path": "Procedure.id",
         "mustSupport": true
       },
       {
-        "id": "Observation.meta",
-        "path": "Observation.meta",
+        "id": "Procedure.meta",
+        "path": "Procedure.meta",
         "mustSupport": true
       },
       {
-        "id": "Observation.meta.source",
-        "path": "Observation.meta.source",
+        "id": "Procedure.meta.source",
+        "path": "Procedure.meta.source",
         "mustSupport": true
       },
       {
-        "id": "Observation.meta.profile",
-        "path": "Observation.meta.profile",
+        "id": "Procedure.meta.profile",
+        "path": "Procedure.meta.profile",
         "mustSupport": true
       },
       {
-        "id": "Observation.partOf",
-        "path": "Observation.partOf",
-        "short": "Teil von",
+        "id": "Procedure.basedOn",
+        "path": "Procedure.basedOn",
+        "short": "Basiert auf",
         "_short": {
           "extension": [
             {
@@ -127,7 +127,7 @@
                 },
                 {
                   "url": "content",
-                  "valueString": "Teil von"
+                  "valueString": "Basiert auf"
                 }
               ]
             },
@@ -140,13 +140,13 @@
                 },
                 {
                   "url": "content",
-                  "valueString": "part of"
+                  "valueString": "based on"
                 }
               ]
             }
           ]
         },
-        "definition": "Teil einer Befundungprozedur",
+        "definition": "Basiert auf einem Anforderung",
         "_definition": {
           "extension": [
             {
@@ -158,7 +158,7 @@
                 },
                 {
                   "url": "content",
-                  "valueString": "Teil einer Befundungprozedur"
+                  "valueString": "Basiert auf einem Anforderung"
                 }
               ]
             },
@@ -171,17 +171,18 @@
                 },
                 {
                   "url": "content",
-                  "valueString": "part of a read procedure"
+                  "valueString": "based on an service request"
                 }
               ]
             }
           ]
         },
+        "min": 1,
         "mustSupport": true
       },
       {
-        "id": "Observation.status",
-        "path": "Observation.status",
+        "id": "Procedure.status",
+        "path": "Procedure.status",
         "short": "Status",
         "_short": {
           "extension": [
@@ -207,13 +208,13 @@
                 },
                 {
                   "url": "content",
-                  "valueString": "status"
+                  "valueString": "Status"
                 }
               ]
             }
           ]
         },
-        "definition": "angemeldet | vorläufig | endgültig | geändert | korrigiert | abgebrochen | fehlerhafte Eingabe | unbekannt",
+        "definition": "Vorbereitung | in Arbeit | nicht durchgeführt | pausiert | abgebrochen | abgeschlossen | Eingabe fehlerhaft | unbekannt",
         "_definition": {
           "extension": [
             {
@@ -225,7 +226,7 @@
                 },
                 {
                   "url": "content",
-                  "valueString": "angemeldet | vorläufig | endgültig | geändert | korrigiert | abgebrochen | fehlerhafte Eingabe | unbekannt"
+                  "valueString": "Vorbereitung | in Arbeit | nicht durchgeführt | pausiert | abgebrochen | abgeschlossen | Eingabe fehlerhaft | unbekannt"
                 }
               ]
             },
@@ -238,7 +239,7 @@
                 },
                 {
                   "url": "content",
-                  "valueString": "registered | preliminary | final | amended | corrected | cancelled | entered-in-error | unknown"
+                  "valueString": "preparation | in-progress | not-done | on-hold | stopped | completed | entered-in-error | unknown"
                 }
               ]
             }
@@ -247,9 +248,9 @@
         "mustSupport": true
       },
       {
-        "id": "Observation.category",
-        "path": "Observation.category",
-        "short": "Kategorie",
+        "id": "Procedure.category",
+        "path": "Procedure.category",
+        "mustSupport": true,
         "_short": {
           "extension": [
             {
@@ -280,7 +281,6 @@
             }
           ]
         },
-        "definition": "Klassifikation in diagnostischen Fachbereich und Gruppe",
         "_definition": {
           "extension": [
             {
@@ -292,7 +292,7 @@
                 },
                 {
                   "url": "content",
-                  "valueString": "Klassifikation in diagnostischen Fachbereich und Gruppe"
+                  "valueString": "Diagnostische Maßnahmen | Bildgebende Diagnostik | Operationen | Medikamente | Nichtoperative therapeutische Maßnahmen | Ergänzende Maßnahmen"
                 }
               ]
             },
@@ -305,17 +305,31 @@
                 },
                 {
                   "url": "content",
-                  "valueString": "Classification of the diagnostic service section"
+                  "valueString": "Diagnostic procedures | Imaging procedures | Operations | Medications | Non-operative therapeutic procedures | Other procedures"
                 }
               ]
             }
           ]
-        },
-        "mustSupport": true
+        }
       },
       {
-        "id": "Observation.code",
-        "path": "Observation.code",
+        "id": "Procedure.category.coding.system",
+        "path": "Procedure.category.coding.system",
+        "fixedUri": "http://snomed.info/sct"
+      },
+      {
+        "id": "Procedure.category.coding.code",
+        "path": "Procedure.category.coding.code",
+        "fixedCode": "323426006"
+      },
+      {
+        "id": "Procedure.category.coding.display",
+        "path": "Procedure.category.coding.display",
+        "fixedString": "Measurement of respiratory function (procedure)"
+      },
+      {
+        "id": "Procedure.code",
+        "path": "Procedure.code",
         "short": "Code",
         "_short": {
           "extension": [
@@ -347,7 +361,7 @@
             }
           ]
         },
-        "definition": "Ein Code für die zu befundende Beobachtung",
+        "definition": "Code des Messung",
         "_definition": {
           "extension": [
             {
@@ -359,7 +373,7 @@
                 },
                 {
                   "url": "content",
-                  "valueString": "Ein Code für die zu befundende Beobachtung"
+                  "valueString": "Code aus LOINC"
                 }
               ]
             },
@@ -372,7 +386,7 @@
                 },
                 {
                   "url": "content",
-                  "valueString": "A code identifying the inspected observation"
+                  "valueString": "Code from LOINC"
                 }
               ]
             }
@@ -381,8 +395,191 @@
         "mustSupport": true
       },
       {
-        "id": "Observation.subject",
-        "path": "Observation.subject",
+        "id": "Procedure.code.coding",
+        "path": "Procedure.code.coding",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "pattern",
+              "path": "$this"
+            }
+          ],
+          "rules": "open"
+        },
+        "min": 1
+      },
+      {
+        "id": "Procedure.code.coding.code",
+        "path": "Procedure.code.coding.code",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Procedure.code.coding:sct",
+        "path": "Procedure.code.coding",
+        "sliceName": "sct",
+        "short": "SNOMED CT Code",
+        "_short": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "de-DE"
+                },
+                {
+                  "url": "content",
+                  "valueString": "SNOMED CT Code"
+                }
+              ]
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "en-US"
+                },
+                {
+                  "url": "content",
+                  "valueString": "SNOMED CT code"
+                }
+              ]
+            }
+          ]
+        },
+        "definition": "Ein Verweis auf einen von SNOMED CT definierten Code",
+        "_definition": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "de-DE"
+                },
+                {
+                  "url": "content",
+                  "valueString": "Ein Verweis auf einen von SNOMED CT definierten Code"
+                }
+              ]
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "en-US"
+                },
+                {
+                  "url": "content",
+                  "valueString": "A reference to a code defined by SNOMED CT"
+                }
+              ]
+            }
+          ]
+        },
+        "min": 1,
+        "max": "1",
+        "patternCoding": {
+          "system": "$SCT"
+        },
+        "mustSupport": true
+      },
+      {
+        "id": "Procedure.code.coding:sct.system",
+        "path": "Procedure.code.coding.system",
+        "patternUri": "$SCT"
+      },
+      {
+        "id": "Procedure.code.coding:sct.code",
+        "path": "Procedure.code.coding.code",
+        "min": 1,
+        "patternCode": "36421003",
+        "mustSupport": true
+      },
+      {
+        "id": "Procedure.code.coding:sct.display",
+        "path": "Procedure.code.coding.display",
+        "patternString": "Carbon monoxide transfer factor test"
+      },
+      {
+        "id": "Procedure.code.coding:loinc",
+        "path": "Procedure.code.coding",
+        "sliceName": "loinc",
+        "short": "LOINC Code",
+        "_short": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "de-DE"
+                },
+                {
+                  "url": "content",
+                  "valueString": "LOINC Code"
+                }
+              ]
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "en-US"
+                },
+                {
+                  "url": "content",
+                  "valueString": "LOINC code"
+                }
+              ]
+            }
+          ]
+        },
+        "definition": "Ein Verweis auf einen vom LOINC definierten Code",
+        "_definition": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "de-DE"
+                },
+                {
+                  "url": "content",
+                  "valueString": "Ein Verweis auf einen von LOINC definierten Code"
+                }
+              ]
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "en-US"
+                },
+                {
+                  "url": "content",
+                  "valueString": "A reference to a code defined by LOINC"
+                }
+              ]
+            }
+          ]
+        },
+        "min": 0,
+        "max": "1",
+        "patternCoding": {
+          "system": "$loinc"
+        },
+        "mustSupport": true
+      },
+      {
+        "id": "Procedure.subject",
+        "path": "Procedure.subject",
         "short": "Person",
         "_short": {
           "extension": [
@@ -414,7 +611,7 @@
             }
           ]
         },
-        "definition": "Person, auf die sich die Beobachtung bezieht",
+        "definition": "Person, auf die sich die Prozedur bezieht",
         "_definition": {
           "extension": [
             {
@@ -426,7 +623,7 @@
                 },
                 {
                   "url": "content",
-                  "valueString": "Person, auf die sich die Beobachtung bezieht"
+                  "valueString": "Person, auf die sich die Prozedur bezieht"
                 }
               ]
             },
@@ -439,13 +636,12 @@
                 },
                 {
                   "url": "content",
-                  "valueString": "person, which this observation is about"
+                  "valueString": "person, which this procedure is about"
                 }
               ]
             }
           ]
         },
-        "min": 1,
         "type": [
           {
             "code": "Reference",
@@ -457,9 +653,9 @@
         "mustSupport": true
       },
       {
-        "id": "Observation.issued",
-        "path": "Observation.issued",
-        "short": "Dokumentationsdatum",
+        "id": "Procedure.performed[x]",
+        "path": "Procedure.performed[x]",
+        "short": "Durchführungsdatum",
         "_short": {
           "extension": [
             {
@@ -471,7 +667,7 @@
                 },
                 {
                   "url": "content",
-                  "valueString": "Dokumentationsdatum"
+                  "valueString": "Durchführungsdatum"
                 }
               ]
             },
@@ -484,13 +680,13 @@
                 },
                 {
                   "url": "content",
-                  "valueString": "Issued"
+                  "valueString": "Performed date"
                 }
               ]
             }
           ]
         },
-        "definition": "Zeitpunkt, an dem das Ergebnis der Laboruntersuchung dokumentiert wurde",
+        "definition": "Durchführungsdatum oder -zeitraum der Prozedur",
         "_definition": {
           "extension": [
             {
@@ -502,7 +698,7 @@
                 },
                 {
                   "url": "content",
-                  "valueString": "Zeitpunkt, an dem das Ergebnis der Laboruntersuchung dokumentiert wurde"
+                  "valueString": "Durchführungsdatum oder -zeitraum der Prozedur."
                 }
               ]
             },
@@ -515,350 +711,7 @@
                 },
                 {
                   "url": "content",
-                  "valueString": "The point in time when the laboratory result was documented"
-                }
-              ]
-            }
-          ]
-        },
-        "mustSupport": true
-      },
-      {
-        "id": "Observation.value[x]",
-        "path": "Observation.value[x]",
-        "short": "Messwert",
-        "_short": {
-          "extension": [
-            {
-              "url": "http://hl7.org/fhir/StructureDefinition/translation",
-              "extension": [
-                {
-                  "url": "lang",
-                  "valueCode": "de-DE"
-                },
-                {
-                  "url": "content",
-                  "valueString": "Messwert"
-                }
-              ]
-            },
-            {
-              "url": "http://hl7.org/fhir/StructureDefinition/translation",
-              "extension": [
-                {
-                  "url": "lang",
-                  "valueCode": "en-US"
-                },
-                {
-                  "url": "content",
-                  "valueString": "Value"
-                }
-              ]
-            }
-          ]
-        },
-        "definition": "Wert der Analyse",
-        "_definition": {
-          "extension": [
-            {
-              "url": "http://hl7.org/fhir/StructureDefinition/translation",
-              "extension": [
-                {
-                  "url": "lang",
-                  "valueCode": "de-DE"
-                },
-                {
-                  "url": "content",
-                  "valueString": "Wert der Analyse"
-                }
-              ]
-            },
-            {
-              "url": "http://hl7.org/fhir/StructureDefinition/translation",
-              "extension": [
-                {
-                  "url": "lang",
-                  "valueCode": "en-US"
-                },
-                {
-                  "url": "content",
-                  "valueString": "Value of the analysis"
-                }
-              ]
-            }
-          ]
-        },
-        "mustSupport": true
-      },
-      {
-        "id": "Observation.bodySite",
-        "path": "Observation.bodySite",
-        "short": "Anatomie",
-        "_short": {
-          "extension": [
-            {
-              "url": "http://hl7.org/fhir/StructureDefinition/translation",
-              "extension": [
-                {
-                  "url": "lang",
-                  "valueCode": "de-DE"
-                },
-                {
-                  "url": "content",
-                  "valueString": "Anatomie"
-                }
-              ]
-            },
-            {
-              "url": "http://hl7.org/fhir/StructureDefinition/translation",
-              "extension": [
-                {
-                  "url": "lang",
-                  "valueCode": "en-US"
-                },
-                {
-                  "url": "content",
-                  "valueString": "body site"
-                }
-              ]
-            }
-          ]
-        },
-        "definition": "betrachtete Anatomie der Beobachtung",
-        "_definition": {
-          "extension": [
-            {
-              "url": "http://hl7.org/fhir/StructureDefinition/translation",
-              "extension": [
-                {
-                  "url": "lang",
-                  "valueCode": "de-DE"
-                },
-                {
-                  "url": "content",
-                  "valueString": "betrachtete Anatomie der Beobachtung"
-                }
-              ]
-            },
-            {
-              "url": "http://hl7.org/fhir/StructureDefinition/translation",
-              "extension": [
-                {
-                  "url": "lang",
-                  "valueCode": "en-US"
-                },
-                {
-                  "url": "content",
-                  "valueString": "inspected body site in this observation"
-                }
-              ]
-            }
-          ]
-        },
-        "mustSupport": true
-      },
-      {
-        "id": "Observation.hasMember",
-        "path": "Observation.hasMember",
-        "short": "weitere Beobachtungen",
-        "_short": {
-          "extension": [
-            {
-              "url": "http://hl7.org/fhir/StructureDefinition/translation",
-              "extension": [
-                {
-                  "url": "lang",
-                  "valueCode": "de-DE"
-                },
-                {
-                  "url": "content",
-                  "valueString": "weitere Beobachtungen"
-                }
-              ]
-            },
-            {
-              "url": "http://hl7.org/fhir/StructureDefinition/translation",
-              "extension": [
-                {
-                  "url": "lang",
-                  "valueCode": "en-US"
-                },
-                {
-                  "url": "content",
-                  "valueString": "additional observation"
-                }
-              ]
-            }
-          ]
-        },
-        "definition": "Referenzierung weiterer Beobachtungen",
-        "_definition": {
-          "extension": [
-            {
-              "url": "http://hl7.org/fhir/StructureDefinition/translation",
-              "extension": [
-                {
-                  "url": "lang",
-                  "valueCode": "de-DE"
-                },
-                {
-                  "url": "content",
-                  "valueString": "Referenzierung weiterer Beobachtungen"
-                }
-              ]
-            },
-            {
-              "url": "http://hl7.org/fhir/StructureDefinition/translation",
-              "extension": [
-                {
-                  "url": "lang",
-                  "valueCode": "en-US"
-                },
-                {
-                  "url": "content",
-                  "valueString": "reference on additional observations"
-                }
-              ]
-            }
-          ]
-        },
-        "type": [
-          {
-            "code": "Reference",
-            "targetProfile": [
-              "http://hl7.org/fhir/StructureDefinition/Observation"
-            ]
-          }
-        ],
-        "mustSupport": true
-      },
-      {
-        "id": "Observation.derivedFrom",
-        "path": "Observation.derivedFrom",
-        "short": "abgeleitet",
-        "_short": {
-          "extension": [
-            {
-              "url": "http://hl7.org/fhir/StructureDefinition/translation",
-              "extension": [
-                {
-                  "url": "lang",
-                  "valueCode": "de-DE"
-                },
-                {
-                  "url": "content",
-                  "valueString": "abgeleitet"
-                }
-              ]
-            },
-            {
-              "url": "http://hl7.org/fhir/StructureDefinition/translation",
-              "extension": [
-                {
-                  "url": "lang",
-                  "valueCode": "en-US"
-                },
-                {
-                  "url": "content",
-                  "valueString": "derived from"
-                }
-              ]
-            }
-          ]
-        },
-        "definition": "Abgeleitet von ImagingStudy, ect.",
-        "_definition": {
-          "extension": [
-            {
-              "url": "http://hl7.org/fhir/StructureDefinition/translation",
-              "extension": [
-                {
-                  "url": "lang",
-                  "valueCode": "de-DE"
-                },
-                {
-                  "url": "content",
-                  "valueString": "Abgeleitet von ImagingStudy, ect."
-                }
-              ]
-            },
-            {
-              "url": "http://hl7.org/fhir/StructureDefinition/translation",
-              "extension": [
-                {
-                  "url": "lang",
-                  "valueCode": "en-US"
-                },
-                {
-                  "url": "content",
-                  "valueString": "derived from an imagingStud, etc."
-                }
-              ]
-            }
-          ]
-        },
-        "mustSupport": true
-      },
-      {
-        "id": "Observation.component",
-        "path": "Observation.component",
-        "short": "Bestandteile",
-        "_short": {
-          "extension": [
-            {
-              "url": "http://hl7.org/fhir/StructureDefinition/translation",
-              "extension": [
-                {
-                  "url": "lang",
-                  "valueCode": "de-DE"
-                },
-                {
-                  "url": "content",
-                  "valueString": "Bestandteile"
-                }
-              ]
-            },
-            {
-              "url": "http://hl7.org/fhir/StructureDefinition/translation",
-              "extension": [
-                {
-                  "url": "lang",
-                  "valueCode": "en-US"
-                },
-                {
-                  "url": "content",
-                  "valueString": "components"
-                }
-              ]
-            }
-          ]
-        },
-        "definition": "detailierte Bestandteile der Beobachtung",
-        "_definition": {
-          "extension": [
-            {
-              "url": "http://hl7.org/fhir/StructureDefinition/translation",
-              "extension": [
-                {
-                  "url": "lang",
-                  "valueCode": "de-DE"
-                },
-                {
-                  "url": "content",
-                  "valueString": "detailierte Bestandteile der Beobachtung"
-                }
-              ]
-            },
-            {
-              "url": "http://hl7.org/fhir/StructureDefinition/translation",
-              "extension": [
-                {
-                  "url": "lang",
-                  "valueCode": "en-US"
-                },
-                {
-                  "url": "content",
-                  "valueString": "detailed components of this observation"
+                  "valueString": "The date or period of time the procedure was performed"
                 }
               ]
             }

@@ -78,7 +78,7 @@
           },
           {
             "url": "content",
-            "valueString": "The profile describes a observation for the exspiratory reserve-volume."
+            "valueString": "The profile describes a observation for the exspiratory reserve volume."
           }
         ]
       }
@@ -347,7 +347,7 @@
             }
           ]
         },
-        "definition": "Ein Code für die zu befundende Beoabchtung",
+        "definition": "Ein Code für die zu befundende Beobachtung",
         "_definition": {
           "extension": [
             {
@@ -359,7 +359,7 @@
                 },
                 {
                   "url": "content",
-                  "valueString": "Ein Code für die zu befundende Beoabchtung"
+                  "valueString": "Ein Code für die zu befundende Beobachtung"
                 }
               ]
             },

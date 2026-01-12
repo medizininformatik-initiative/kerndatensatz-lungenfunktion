@@ -6,10 +6,12 @@ Id: mii-pr-lungenfunktion-ta
 Title: "MII PR Lungenfunktion TA"
 Description: "Dieses Profil beschreibt die Messung der Transitzeit."
 * ^url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-ta"
+
 //Translation Meta
 * insert Translation(^name, en-US, MII_PR Lung function TA)
 * insert Translation(^title, en-US, MII PR Lung function TA)
 * insert Translation(^description, en-US, The profile describes a observation for the transittime.)
+
 //Meta
 * insert PR_CS_VS_Version
 * insert PR_CS_VS_Date
@@ -19,6 +21,7 @@ Description: "Dieses Profil beschreibt die Messung der Transitzeit."
 * meta MS
 * meta.source MS
 * meta.profile MS
+
 //Profile
 * partOf MS
 * partOf ^short = "Teil von"

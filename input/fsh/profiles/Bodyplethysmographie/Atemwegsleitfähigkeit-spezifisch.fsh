@@ -9,7 +9,7 @@ Description: "Dieses Profil beschreibt die Messung der spezifischen, totalen Ate
 //Translation Meta
 * insert Translation(^name, en-US, MII_PR_Lungfunction_sG_Total)
 * insert Translation(^title, en-US, MII PR Lungenfunktion sG Total)
-* insert Translation(^description, en-US, The profile describes the specific, total airway conductivity.)
+* insert Translation(^description, en-US, The profile describes the specific total airway conductivity)
 //Meta
 * insert PR_CS_VS_Version
 * insert PR_CS_VS_Date

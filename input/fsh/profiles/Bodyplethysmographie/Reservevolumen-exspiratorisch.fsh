@@ -1,11 +1,11 @@
 //EXAMPLE Profile
 //Head
-Profile: MII_PR_Lungenfunktion_ERV
+Profile: MII_PR_Lungenfunktion_ERV_BODY
 Parent: Observation
-Id: mii-pr-lungenfunktion-erv
-Title: "MII PR Lungenfunktion ERV"
+Id: mii-pr-lungenfunktion-erv-body
+Title: "MII PR Lungenfunktion ERV Body"
 Description: "Dieses Profil beschreibt die Messung des exspiratorischen Reservevolumen."
-* ^url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-erv"
+* ^url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-erv-body"
 //Translation Meta
 * insert Translation(^name, en-US, MII_PR_Lungfunction_ERV)
 * insert Translation(^title, en-US, MII PR Lungfunction ERV)

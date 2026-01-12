@@ -38,7 +38,7 @@ Description: "Diese Ressource beschreibt einen Befunde des Provokationstest"
     diagnostic-service-sections 0..* MS and 
     sct 1..1 MS
 * category.coding[loinc] = $loinc#18748-4
-* category.coding[diagnostic-service-sections] = $DSS#RAD
+* category.coding[diagnostic-service-sections] = $v2-0074#RAD
 * category.coding[sct] = $SCT#4201000179104
 * code MS
 * code ^short = "Code"
@@ -88,7 +88,6 @@ Description: "Diese Ressource beschreibt einen Befunde des Provokationstest"
     sct 0..* MS
 * conclusionCode.coding[icd10-gm] ^patternCoding.system = $icd10-gm
 * conclusionCode.coding[sct] ^patternCoding.system = $SCT
-* conclusionCode.coding[sct].code from MII_VS_Bildgebung_Diagnostic_Report_Coding (preferred)
 * presentedForm MS
 * presentedForm ^short = "Anhang"
 * presentedForm ^definition = "zusätzlicher wichtiger Anhang"
