@@ -490,7 +490,7 @@
             }
           ]
         },
-        "definition": "Zeitpunkt, an dem das Ergebnis der Laboruntersuchung dokumentiert wurde",
+        "definition": "Zeitpunkt, an dem das Ergebnis der Untersuchung dokumentiert wurde",
         "_definition": {
           "extension": [
             {
