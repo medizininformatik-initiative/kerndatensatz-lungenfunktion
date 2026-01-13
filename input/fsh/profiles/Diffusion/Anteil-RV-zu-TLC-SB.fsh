@@ -41,7 +41,7 @@ Description: "Dieses Beobachtung beschreibt den prozentualen Anteil des Residual
 * subject ^definition = "Person, auf die sich die Beobachtung bezieht"
 * issued MS
 * issued ^short = "Dokumentationsdatum"
-* issued ^definition = "Zeitpunkt, an dem das Ergebnis der Laboruntersuchung dokumentiert wurde"
+* issued ^definition = "Zeitpunkt, an dem das Ergebnis der Untersuchung dokumentiert wurde"
 * value[x] MS
 * value[x] ^short = "RV%TLC_SB"
 * value[x] ^definition = "prozentuale Anteil des Residualvolumens (RV) an der Totalen Lungenkapazität (TLC)"

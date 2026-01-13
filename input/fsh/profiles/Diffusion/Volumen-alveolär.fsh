@@ -41,7 +41,7 @@ Description: "Dieses Profil beschreibt die Messung des alveolärer Volumen."
 * subject ^definition = "Person, auf die sich die Beobachtung bezieht"
 * issued MS
 * issued ^short = "Dokumentationsdatum"
-* issued ^definition = "Zeitpunkt, an dem das Ergebnis der Laboruntersuchung dokumentiert wurde"
+* issued ^definition = "Zeitpunkt, an dem das Ergebnis der Untersuchung dokumentiert wurde"
 * value[x] MS
 * value[x] ^short = "VA"
 * value[x] ^definition = "alveoläre Volumen im Single-Breath-Verfahren (Alveolar Volume)"

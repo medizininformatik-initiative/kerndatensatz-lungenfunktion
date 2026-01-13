@@ -41,7 +41,7 @@ Description: "Dieses Profil beschreibt die Messung der korrigierten Diffusionska
 * subject ^definition = "Person, auf die sich die Beobachtung bezieht"
 * issued MS
 * issued ^short = "Dokumentationsdatum"
-* issued ^definition = "Zeitpunkt, an dem das Ergebnis der Laboruntersuchung dokumentiert wurde"
+* issued ^definition = "Zeitpunkt, an dem das Ergebnis der Untersuchung dokumentiert wurde"
 * value[x] MS
 * value[x] ^short = "DLCOc"
 * value[x] ^definition = "korrigierte Diffusionskapazität der Lunge für Kohlenmonoxid im Single-Breath-Verfahren"
