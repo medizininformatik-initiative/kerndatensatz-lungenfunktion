@@ -6,10 +6,12 @@ Id: mii-pr-lungenfunktion-diffusion
 Title: "MII PR Lungenfunktion Diffusion"
 Description: "Diese Ressource beschreibt einen Befunde der Diffusions-Messung"
 * ^url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-diffusion"
+
 //Translation Meta
-* insert Translation(^name, en-US, MII_PR_Lungfunction_Diffusion)
-* insert Translation(^title, en-US, MII PR Lungfunction Diffusion)
+* insert Translation(^name, en-US, MII PR Lung function Diffusion)
+* insert Translation(^title, en-US, MII PR Lung function Diffusion)
 * insert Translation(^description, en-US, The profile describes a diagnostic report for a diffusion.)
+
 //Meta
 * insert PR_CS_VS_Version
 * insert PR_CS_VS_Date
@@ -19,6 +21,7 @@ Description: "Diese Ressource beschreibt einen Befunde der Diffusions-Messung"
 * meta MS
 * meta.source MS
 * meta.profile MS
+
 //Profile
 * basedOn MS
 * basedOn ^short = "Anforderung"
@@ -26,35 +29,28 @@ Description: "Diese Ressource beschreibt einen Befunde der Diffusions-Messung"
 * status MS
 * status ^short = "Status"
 * status ^definition = "angemeldet | unvollständig | vorläufig | endgültig | geändert | korrigiert | angefügt | abgebrochen | fehlerhafte Eingabe | unbekannt"
-* category 1.. MS
-* category ^short = "Kategorie"
-* category ^definition = "Kategorie des Befundberichts"
-* category.coding 1.. MS
-* category.coding ^slicing.discriminator.type = #pattern
-* category.coding ^slicing.discriminator.path = "$this"
-* category.coding ^slicing.rules = #open
-* category.coding contains
-    loinc 0..* MS and
-    diagnostic-service-sections 0..* MS and 
-    sct 1..1 MS
-* category.coding[loinc] = $loinc#18748-4
-* category.coding[diagnostic-service-sections] = $DSS#RAD
-* category.coding[sct] = $SCT#4201000179104
+
+* category MS
+* category.coding = $v2-0074#PF (exactly)
+
 * code MS
-* code ^short = "Code"
-* code ^definition = "Code des Befundberichts"
+* code.coding 1.. MS
 * code.coding ^slicing.discriminator.type = #pattern
 * code.coding ^slicing.discriminator.path = "$this"
 * code.coding ^slicing.rules = #open
 * code.coding contains
     sct 0..1 MS and
     loinc 0..1 MS
-* code.coding[loinc] ^patternCoding.system = $loinc
-* code.coding[sct] ^patternCoding.system = $SCT
+
+* code.coding[sct].system = "$SCT#36421003"
+* code.coding[sct].display = "Carbon monoxide transfer factor test"
+* code.coding[loinc] ^patternCoding.system = "$loinc"
+
 * subject 1..1 MS
 * subject only Reference(Patient)
 * subject ^short = "Person"
 * subject ^definition = "Person, auf die sich die Befundbericht bezieht"
+
 * encounter MS
 * encounter ^short = "Versorgungssstellenkontakt"
 * encounter ^definition = "Fall-Referenz auf den Versorgungssstellenkontakt"
@@ -70,9 +66,6 @@ Description: "Diese Ressource beschreibt einen Befunde der Diffusions-Messung"
 * result only Reference(Observation)
 * result ^short = "Ergebnis"
 * result ^definition = "Ergebnis einer Beobachtung"
-* imagingStudy 1.. MS
-* imagingStudy ^short = "Bildgebungsstudie"
-* imagingStudy ^definition = "Studie, die die vollständige Bildgebung umfasst"
 * conclusion MS
 * conclusion ^short = "Fazit"
 * conclusion ^definition = "Fazit zur aktuellen Befundung"
@@ -88,7 +81,6 @@ Description: "Diese Ressource beschreibt einen Befunde der Diffusions-Messung"
     sct 0..* MS
 * conclusionCode.coding[icd10-gm] ^patternCoding.system = $icd10-gm
 * conclusionCode.coding[sct] ^patternCoding.system = $SCT
-* conclusionCode.coding[sct].code from MII_VS_Bildgebung_Diagnostic_Report_Coding (preferred)
 * presentedForm MS
 * presentedForm ^short = "Anhang"
 * presentedForm ^definition = "zusätzlicher wichtiger Anhang"
@@ -130,10 +122,6 @@ Description: "Diese Ressource beschreibt einen Befunde der Diffusions-Messung"
 * insert Translation(result ^short, en-US, result)
 * insert Translation(result ^definition, de-DE, Ergebnis einer Beobachtung)
 * insert Translation(result ^definition, en-US, result of an observation)
-* insert Translation(imagingStudy ^short, de-DE, Bildgebungsstudie)
-* insert Translation(imagingStudy ^short, en-US, imaging study)
-* insert Translation(imagingStudy ^definition, de-DE, Studie\, die die vollständige Bildgebung umfasst)
-* insert Translation(imagingStudy ^definition, en-US, study with all images)
 * insert Translation(conclusion ^short, de-DE, Fazit)
 * insert Translation(conclusion ^short, en-US, conclusion)
 * insert Translation(conclusion ^definition, de-DE, Fazit zur aktuellen Befundung)

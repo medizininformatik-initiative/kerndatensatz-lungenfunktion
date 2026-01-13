@@ -1,11 +1,11 @@
 //EXAMPLE Profile
 //Head
-Profile: MII_PR_Lungenfunktion_Fluss
+Profile: MII_PR_Lungenfunktion_Frequency
 Parent: Observation
-Id: mii-pr-lungenfunktion-fluss
+Id: mii-pr-lungenfunktion-frequency
 Title: "MII PR Lungenfunktion Fluss"
 Description: "Dieses Beobachtung beschreibt eine Flussmessung."
-* ^url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-fluss"
+* ^url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-frequency"
 //Translation Meta
 * insert Translation(^name, en-US, MII_PR_Lungfunction_Fluss)
 * insert Translation(^title, en-US, MII PR Lungfunction Fluss)
@@ -31,7 +31,7 @@ Description: "Dieses Beobachtung beschreibt eine Flussmessung."
 * category ^definition = "Klassifikation in diagnostischen Fachbereich und Gruppe"
 * code MS
 * code ^short = "Code"
-* code ^definition = "Ein Code für die zu befundende Beoabchtung"
+* code ^definition = "Ein Code für die zu befundende Beobachtung"
 * subject 1..1 MS
 * subject only Reference(Patient)
 * subject ^short = "Person"
@@ -72,7 +72,7 @@ Description: "Dieses Beobachtung beschreibt eine Flussmessung."
 * insert Translation(category ^definition, en-US, Classification of the diagnostic service section)
 * insert Translation(code ^short, de-DE, Code)
 * insert Translation(code ^short, en-US, Code)
-* insert Translation(code ^definition, de-DE, Ein Code für die zu befundende Beoabchtung)
+* insert Translation(code ^definition, de-DE, Ein Code für die zu befundende Beobachtung)
 * insert Translation(code ^definition, en-US, A code identifying the inspected observation)
 * insert Translation(subject ^short, de-DE, Person)
 * insert Translation(subject ^short, en-US, person)

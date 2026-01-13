@@ -9,7 +9,7 @@ Description: "Dieses Profil beschreibt die Messung der spezifischen, totalen Ate
 //Translation Meta
 * insert Translation(^name, en-US, MII_PR_Lungfunction_sG_Total)
 * insert Translation(^title, en-US, MII PR Lungenfunktion sG Total)
-* insert Translation(^description, en-US, The profile describes the specific, total airway conductivity.)
+* insert Translation(^description, en-US, The profile describes the specific total airway conductivity)
 //Meta
 * insert PR_CS_VS_Version
 * insert PR_CS_VS_Date
@@ -31,7 +31,7 @@ Description: "Dieses Profil beschreibt die Messung der spezifischen, totalen Ate
 * category ^definition = "Klassifikation in diagnostischen Fachbereich und Gruppe"
 * code MS
 * code ^short = "Code"
-* code ^definition = "Ein Code für die zu befundende Beoabchtung"
+* code ^definition = "Ein Code für die zu befundende Beobachtung"
 * subject 1..1 MS
 * subject only Reference(Patient)
 * subject ^short = "Person"
@@ -71,7 +71,7 @@ Description: "Dieses Profil beschreibt die Messung der spezifischen, totalen Ate
 * insert Translation(category ^definition, en-US, Classification of the diagnostic service section)
 * insert Translation(code ^short, de-DE, Code)
 * insert Translation(code ^short, en-US, Code)
-* insert Translation(code ^definition, de-DE, Ein Code für die zu befundende Beoabchtung)
+* insert Translation(code ^definition, de-DE, Ein Code für die zu befundende Beobachtung)
 * insert Translation(code ^definition, en-US, A code identifying the inspected observation)
 * insert Translation(subject ^short, de-DE, Person)
 * insert Translation(subject ^short, en-US, person)

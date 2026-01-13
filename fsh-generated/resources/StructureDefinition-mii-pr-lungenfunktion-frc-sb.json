@@ -29,7 +29,7 @@
           },
           {
             "url": "content",
-            "valueString": "MII_PR_Lungfunction_FRC_SB"
+            "valueString": "MII_PR_Lung function FRC_SB"
           }
         ]
       }
@@ -47,7 +47,7 @@
           },
           {
             "url": "content",
-            "valueString": "MII PR Lungfunction FRC SB"
+            "valueString": "MII PR Lung function FRC_SB"
           }
         ]
       }
@@ -78,7 +78,7 @@
           },
           {
             "url": "content",
-            "valueString": "The profile describes a observation for the functional residualcapacity in single-breath-procedure."
+            "valueString": "The profile describes a observation for the functional residual capacity in single-breath-procedure."
           }
         ]
       }
@@ -146,7 +146,7 @@
             }
           ]
         },
-        "definition": "Teil einer Befundungprozedur",
+        "definition": "Teil einer Befundungsprozedur",
         "_definition": {
           "extension": [
             {
@@ -158,7 +158,7 @@
                 },
                 {
                   "url": "content",
-                  "valueString": "Teil einer Befundungprozedur"
+                  "valueString": "Teil einer Befundungsprozedur"
                 }
               ]
             },
@@ -347,7 +347,7 @@
             }
           ]
         },
-        "definition": "Ein Code für die zu befundende Beoabchtung",
+        "definition": "Ein Code für die zu befundende Beobachtung",
         "_definition": {
           "extension": [
             {
@@ -359,7 +359,7 @@
                 },
                 {
                   "url": "content",
-                  "valueString": "Ein Code für die zu befundende Beoabchtung"
+                  "valueString": "Ein Code für die zu befundende Beobachtung"
                 }
               ]
             },
@@ -490,7 +490,7 @@
             }
           ]
         },
-        "definition": "Zeitpunkt, an dem das Ergebnis der Laboruntersuchung dokumentiert wurde",
+        "definition": "Zeitpunkt, an dem das Ergebnis der Untersuchung dokumentiert wurde",
         "_definition": {
           "extension": [
             {
@@ -526,7 +526,7 @@
       {
         "id": "Observation.value[x]",
         "path": "Observation.value[x]",
-        "short": "Messwert",
+        "short": "FRC",
         "_short": {
           "extension": [
             {
@@ -557,7 +557,7 @@
             }
           ]
         },
-        "definition": "Wert der Analyse",
+        "definition": "Funktionelle Residualkapazität",
         "_definition": {
           "extension": [
             {
@@ -588,12 +588,35 @@
             }
           ]
         },
+        "type": [
+          {
+            "code": "Quantity"
+          }
+        ],
+        "patternQuantity": {
+          "code": "L",
+          "system": "http://unitsofmeasure.org"
+        },
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.value[x].value",
+        "path": "Observation.value[x].value",
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.value[x].unit",
+        "path": "Observation.value[x].unit",
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.value[x].system",
+        "path": "Observation.value[x].system",
         "mustSupport": true
       },
       {
         "id": "Observation.bodySite",
         "path": "Observation.bodySite",
-        "short": "Anatomie",
         "_short": {
           "extension": [
             {
@@ -624,7 +647,6 @@
             }
           ]
         },
-        "definition": "betrachtete Anatomie der Beobachtung",
         "_definition": {
           "extension": [
             {
@@ -654,13 +676,11 @@
               ]
             }
           ]
-        },
-        "mustSupport": true
+        }
       },
       {
         "id": "Observation.hasMember",
         "path": "Observation.hasMember",
-        "short": "weitere Beobachtungen",
         "_short": {
           "extension": [
             {
@@ -691,7 +711,6 @@
             }
           ]
         },
-        "definition": "Referenzierung weiterer Beobachtungen",
         "_definition": {
           "extension": [
             {
@@ -721,21 +740,11 @@
               ]
             }
           ]
-        },
-        "type": [
-          {
-            "code": "Reference",
-            "targetProfile": [
-              "http://hl7.org/fhir/StructureDefinition/Observation"
-            ]
-          }
-        ],
-        "mustSupport": true
+        }
       },
       {
         "id": "Observation.derivedFrom",
         "path": "Observation.derivedFrom",
-        "short": "abgeleitet",
         "_short": {
           "extension": [
             {
@@ -766,7 +775,6 @@
             }
           ]
         },
-        "definition": "Abgeleitet von ImagingStudy, ect.",
         "_definition": {
           "extension": [
             {
@@ -796,13 +804,11 @@
               ]
             }
           ]
-        },
-        "mustSupport": true
+        }
       },
       {
         "id": "Observation.component",
         "path": "Observation.component",
-        "short": "Bestandteile",
         "_short": {
           "extension": [
             {
@@ -833,7 +839,6 @@
             }
           ]
         },
-        "definition": "detailierte Bestandteile der Beobachtung",
         "_definition": {
           "extension": [
             {
@@ -845,7 +850,7 @@
                 },
                 {
                   "url": "content",
-                  "valueString": "detailierte Bestandteile der Beobachtung"
+                  "valueString": "detaillierte Bestandteile der Beobachtung"
                 }
               ]
             },
@@ -863,8 +868,7 @@
               ]
             }
           ]
-        },
-        "mustSupport": true
+        }
       }
     ]
   }

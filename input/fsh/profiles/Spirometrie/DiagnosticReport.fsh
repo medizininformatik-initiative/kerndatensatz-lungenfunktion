@@ -35,7 +35,7 @@ Description: "Diese Ressource beschreibt einen Befunde der Spirometrie"
     diagnostic-service-sections 0..* MS and 
     sct 1..1 MS
 * category.coding[loinc] = $loinc#TODO
-* category.coding[diagnostic-service-sections] = $DSS#PF
+* category.coding[diagnostic-service-sections] = $v2-0074#PF
 * category.coding[sct] = $SCT#TODO
 * code MS
 * code ^short = "Code"

@@ -66,7 +66,24 @@
       ]
     }
   ],
-  "description": "Dieses Profil beschreibt die Messung der forcierten, expiratorischen Volumen.",
+  "description": "Dieses Profil beschreibt die Messung der forcierten, expiratorischen Volumen",
+  "_description": {
+    "extension": [
+      {
+        "url": "http://hl7.org/fhir/StructureDefinition/translation",
+        "extension": [
+          {
+            "url": "lang",
+            "valueCode": "en-US"
+          },
+          {
+            "url": "content",
+            "valueString": "The profile describes a observation for the forced, exspiratory volume in one second"
+          }
+        ]
+      }
+    ]
+  },
   "fhirVersion": "4.0.1",
   "kind": "resource",
   "abstract": false,
@@ -330,7 +347,7 @@
             }
           ]
         },
-        "definition": "Ein Code für die zu befundende Beoabchtung",
+        "definition": "Ein Code für die zu befundende Beobachtung",
         "_definition": {
           "extension": [
             {
@@ -342,7 +359,7 @@
                 },
                 {
                   "url": "content",
-                  "valueString": "Ein Code für die zu befundende Beoabchtung"
+                  "valueString": "Ein Code für die zu befundende Beobachtung"
                 }
               ]
             },

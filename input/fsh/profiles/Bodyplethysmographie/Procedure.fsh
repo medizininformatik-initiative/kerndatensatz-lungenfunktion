@@ -1,6 +1,7 @@
 //Head
 Profile: MII_PR_Lungenfunktion_Bodyplethysmographie_Messung
-Parent: $miiProcedure
+//Parent: $miiProcedure
+Parent: Procedure
 Id: mii-pr-lungenfunktion-bodyplethysmographie-messung
 Title: "MII PR Lungenfunktion Bodyplethysmographie Messung"
 Description: "Beschreibt die Tätigkeiten, wie eine Bodyplethysmographie durchgeführt wird."
@@ -25,14 +26,10 @@ Description: "Beschreibt die Tätigkeiten, wie eine Bodyplethysmographie durchge
 * status MS
 * status ^short = "Status"
 * status ^definition = "Vorbereitung | in Arbeit | nicht durchgeführt | pausiert | abgebrochen | abgeschlossen | Eingabe fehlerhaft | unbekannt"
-* category 1.. MS
-* category ^short = "Kategorie"
-* category ^definition = "Diagnostische Maßnahmen | Bildgebende Diagnostik | Operationen | Medikamente | Nichtoperative therapeutische Maßnahmen | Ergänzende Maßnahmen"
-* category.coding 1.. MS
-* category.coding[sct] = $SCT#363679005
-* category.coding[sct].display = "Imaging (procedure)"
-* category.coding.system 1.. MS
-* category.coding.code 1.. MS
+* category.coding.system = $SCT (exactly)
+* category.coding.code = #323426006 (exactly)
+* category.coding.display = "Measurement of respiratory function (procedure)" (exactly)
+* category MS
 * code MS
 * code ^short = "Code"
 * code ^definition = "Code aus LOINC"
@@ -43,8 +40,6 @@ Description: "Beschreibt die Tätigkeiten, wie eine Bodyplethysmographie durchge
 * code.coding contains
     loinc 0..1 MS
 * code.coding[loinc] ^patternCoding.system = $loinc
-* code.coding[loinc] from $VS-loinc-rsna (required)
-* code.coding[sct] from MII_VS_Bildgebung_ImagingProcedure_Code_SCT (required)
 * code.coding.system 1.. MS
 * code.coding.code 1.. MS
 * subject MS
@@ -54,7 +49,6 @@ Description: "Beschreibt die Tätigkeiten, wie eine Bodyplethysmographie durchge
 * performed[x] MS
 * performed[x] ^short = "Durchführungsdatum"
 * performed[x] ^definition = "Durchführungsdatum oder -zeitraum der Prozedur."
-
 //Translation Profile
 * insert Translation(basedOn ^short, de-DE, Basiert auf)
 * insert Translation(basedOn ^short, en-US, based on)
@@ -68,13 +62,13 @@ Description: "Beschreibt die Tätigkeiten, wie eine Bodyplethysmographie durchge
 * insert Translation(category ^short, en-US, Category)
 * insert Translation(category ^definition, de-DE, Diagnostische Maßnahmen | Bildgebende Diagnostik | Operationen | Medikamente | Nichtoperative therapeutische Maßnahmen | Ergänzende Maßnahmen)
 * insert Translation(category ^definition, en-US, Diagnostic procedures | Imaging procedures | Operations | Medications | Non-operative therapeutic procedures | Other procedures)
-* insert AddSnomedCodingTranslation(category.coding[sct])
+//* insert AddSnomedCodingTranslation(category.coding[sct])
 * insert Translation(code ^short, de-DE, Code)
 * insert Translation(code ^short, en-US, Code)
 * insert Translation(code ^definition, de-DE, Code aus LOINC)
 * insert Translation(code ^definition, en-US, Code from LOINC)
-* insert AddLoincCodingTranslation(code.coding[loinc])
-* insert AddSnomedCodingTranslation(code.coding[sct])
+//* insert AddLoincCodingTranslation(code.coding[loinc])
+//* insert AddSnomedCodingTranslation(code.coding[sct])
 * insert Translation(subject ^short, de-DE, Person)
 * insert Translation(subject ^short, en-US, person)
 * insert Translation(subject ^definition, de-DE, Person\, auf die sich die Prozedur bezieht)

@@ -31,7 +31,7 @@ Description: "Dieses Beobachtung beschreibt eine Volumenmessung."
 * category ^definition = "Klassifikation in diagnostischen Fachbereich und Gruppe"
 * code MS
 * code ^short = "Code"
-* code ^definition = "Ein Code für die zu befundende Beoabchtung"
+* code ^definition = "Ein Code für die zu befundende Beobachtung"
 * subject 1..1 MS
 * subject only Reference(Patient)
 * subject ^short = "Person"
@@ -43,9 +43,11 @@ Description: "Dieses Beobachtung beschreibt eine Volumenmessung."
 * value[x] ^short = "Messwert"
 * value[x] ^definition = "Wert der Analyse"
 * value[x] only Quantity
-* value[x].Quantity.unit = "L"
-* value[x].valueQuantity.system = $ucum
-* value[x].valueQuantity.code = $ucum#L
+* valueQuantity = $ucum#L
+* valueQuantity.value MS
+* valueQuantity.unit MS
+* valueQuantity.system MS
+
 * bodySite MS
 * bodySite ^short = "Anatomie"
 * bodySite ^definition = "betrachtete Anatomie der Beobachtung"
@@ -75,7 +77,7 @@ Description: "Dieses Beobachtung beschreibt eine Volumenmessung."
 * insert Translation(category ^definition, en-US, Classification of the diagnostic service section)
 * insert Translation(code ^short, de-DE, Code)
 * insert Translation(code ^short, en-US, Code)
-* insert Translation(code ^definition, de-DE, Ein Code für die zu befundende Beoabchtung)
+* insert Translation(code ^definition, de-DE, Ein Code für die zu befundende Beobachtung)
 * insert Translation(code ^definition, en-US, A code identifying the inspected observation)
 * insert Translation(subject ^short, de-DE, Person)
 * insert Translation(subject ^short, en-US, person)

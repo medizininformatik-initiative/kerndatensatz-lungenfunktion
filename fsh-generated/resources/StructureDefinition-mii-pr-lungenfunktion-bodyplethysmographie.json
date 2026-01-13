@@ -348,7 +348,7 @@
         "min": 0,
         "max": "*",
         "patternCoding": {
-          "code": "RAD",
+          "code": "PF",
           "system": "http://terminology.hl7.org/CodeSystem/v2-0074"
         },
         "mustSupport": true

@@ -18,9 +18,9 @@ Description: "MII LogicalModel Modul Lungenfunktion"
 //TODO
 * . ^short = "Das Erweiterungsmodul Lungenfunktion enthält Datenelemente zur Dokumentation von Lungenfunktionsuntersuchungen (Spirometrie, Bodyplethysmographie, Diffusionskapazität, Provokationstestung) und zugehörigen Befundberichten."
 
-Offene Fragen: 
-Wo wird die Atemfrequenz gemessen? Abgebildet in Bodyplethysmographie
-Provakationstest: Erweiterung der Spirometrie?
+//Offene Fragen: 
+//Wo wird die Atemfrequenz gemessen? Abgebildet in Bodyplethysmographie
+//Provakationstest: Erweiterung der Spirometrie?
 
 
 
