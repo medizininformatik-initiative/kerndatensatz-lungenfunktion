@@ -43,21 +43,13 @@ Description: "Dieses Profil beschreibt die Messung des exspiratorischen Reservev
 * issued ^short = "Dokumentationsdatum"
 * issued ^definition = "Zeitpunkt, an dem das Ergebnis der Laboruntersuchung dokumentiert wurde"
 * value[x] MS
-* value[x] ^short = "Messwert"
-* value[x] ^definition = "Wert der Analyse"
-* bodySite MS
-* bodySite ^short = "Anatomie"
-* bodySite ^definition = "betrachtete Anatomie der Beobachtung"
-* hasMember MS
-* hasMember only Reference(Observation)
-* hasMember ^short = "weitere Beobachtungen"
-* hasMember ^definition = "Referenzierung weiterer Beobachtungen"
-* derivedFrom MS
-* derivedFrom ^short = "abgeleitet"
-* derivedFrom ^definition = "Abgeleitet von ImagingStudy, ect."
-* component MS
-* component ^short = "Bestandteile"
-* component ^definition = "detaillierte Bestandteile der Beobachtung"
+* value[x] ^short = "ERV"
+* value[x] ^definition = "Exspiratorisches Reservevolumen"
+* value[x] only Quantity
+* valueQuantity = $ucum#L
+* valueQuantity.value MS
+* valueQuantity.unit MS
+* valueQuantity.system MS
 
 //Translation Profile
 * insert Translation(partOf ^short, de-DE, Teil von)

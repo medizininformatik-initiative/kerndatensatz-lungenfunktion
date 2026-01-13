@@ -43,21 +43,8 @@ Description: "Dieses Beobachtung beschreibt den prozentualen Anteil des Residual
 * issued ^short = "Dokumentationsdatum"
 * issued ^definition = "Zeitpunkt, an dem das Ergebnis der Laboruntersuchung dokumentiert wurde"
 * value[x] MS
-* value[x] ^short = "Messwert"
-* value[x] ^definition = "Wert der Analyse"
-* bodySite MS
-* bodySite ^short = "Anatomie"
-* bodySite ^definition = "betrachtete Anatomie der Beobachtung"
-* hasMember MS
-* hasMember only Reference(Observation)
-* hasMember ^short = "weitere Beobachtungen"
-* hasMember ^definition = "Referenzierung weiterer Beobachtungen"
-* derivedFrom MS
-* derivedFrom ^short = "abgeleitet"
-* derivedFrom ^definition = "Abgeleitet von ImagingStudy, ect."
-* component MS
-* component ^short = "Bestandteile"
-* component ^definition = "detaillierte Bestandteile der Beobachtung"
+* value[x] ^short = "RV%TLC_SB"
+* value[x] ^definition = "prozentuale Anteil des Residualvolumens (RV) an der Totalen Lungenkapazität (TLC)"
 
 //Translation Profile
 * insert Translation(partOf ^short, de-DE, Teil von)

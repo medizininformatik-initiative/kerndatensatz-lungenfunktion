@@ -526,7 +526,7 @@
       {
         "id": "Observation.value[x]",
         "path": "Observation.value[x]",
-        "short": "Messwert",
+        "short": "DLCO",
         "_short": {
           "extension": [
             {
@@ -557,7 +557,7 @@
             }
           ]
         },
-        "definition": "Wert der Analyse",
+        "definition": "Diffusionskapazität der Lunge für Kohlenmonoxid im Single-Breath-Verfahren",
         "_definition": {
           "extension": [
             {
@@ -684,7 +684,6 @@
       {
         "id": "Observation.hasMember",
         "path": "Observation.hasMember",
-        "short": "weitere Beobachtungen",
         "_short": {
           "extension": [
             {
@@ -715,7 +714,6 @@
             }
           ]
         },
-        "definition": "Referenzierung weiterer Beobachtungen",
         "_definition": {
           "extension": [
             {
@@ -745,21 +743,11 @@
               ]
             }
           ]
-        },
-        "type": [
-          {
-            "code": "Reference",
-            "targetProfile": [
-              "http://hl7.org/fhir/StructureDefinition/Observation"
-            ]
-          }
-        ],
-        "mustSupport": true
+        }
       },
       {
         "id": "Observation.derivedFrom",
         "path": "Observation.derivedFrom",
-        "short": "abgeleitet",
         "_short": {
           "extension": [
             {
@@ -790,7 +778,6 @@
             }
           ]
         },
-        "definition": "Abgeleitet von ImagingStudy, ect.",
         "_definition": {
           "extension": [
             {
@@ -820,13 +807,11 @@
               ]
             }
           ]
-        },
-        "mustSupport": true
+        }
       },
       {
         "id": "Observation.component",
         "path": "Observation.component",
-        "short": "Bestandteile",
         "_short": {
           "extension": [
             {
@@ -857,7 +842,6 @@
             }
           ]
         },
-        "definition": "detaillierte Bestandteile der Beobachtung",
         "_definition": {
           "extension": [
             {
@@ -887,8 +871,7 @@
               ]
             }
           ]
-        },
-        "mustSupport": true
+        }
       }
     ]
   }

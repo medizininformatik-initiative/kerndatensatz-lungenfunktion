@@ -526,7 +526,7 @@
       {
         "id": "Observation.value[x]",
         "path": "Observation.value[x]",
-        "short": "Messwert",
+        "short": "KCOc",
         "_short": {
           "extension": [
             {
@@ -557,7 +557,7 @@
             }
           ]
         },
-        "definition": "Wert der Analyse",
+        "definition": "korrigierten Kohlenmonoxid-Transfer-Koeffizienten im Single-Breath-Verfahren",
         "_definition": {
           "extension": [
             {
@@ -588,12 +588,35 @@
             }
           ]
         },
+        "type": [
+          {
+            "code": "Quantity"
+          }
+        ],
+        "patternQuantity": {
+          "code": "mmol/(min.kPa.L)",
+          "system": "http://unitsofmeasure.org"
+        },
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.value[x].value",
+        "path": "Observation.value[x].value",
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.value[x].unit",
+        "path": "Observation.value[x].unit",
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.value[x].system",
+        "path": "Observation.value[x].system",
         "mustSupport": true
       },
       {
         "id": "Observation.bodySite",
         "path": "Observation.bodySite",
-        "short": "Anatomie",
         "_short": {
           "extension": [
             {
@@ -624,7 +647,6 @@
             }
           ]
         },
-        "definition": "betrachtete Anatomie der Beobachtung",
         "_definition": {
           "extension": [
             {
@@ -654,13 +676,11 @@
               ]
             }
           ]
-        },
-        "mustSupport": true
+        }
       },
       {
         "id": "Observation.hasMember",
         "path": "Observation.hasMember",
-        "short": "weitere Beobachtungen",
         "_short": {
           "extension": [
             {
@@ -691,7 +711,6 @@
             }
           ]
         },
-        "definition": "Referenzierung weiterer Beobachtungen",
         "_definition": {
           "extension": [
             {
@@ -721,21 +740,11 @@
               ]
             }
           ]
-        },
-        "type": [
-          {
-            "code": "Reference",
-            "targetProfile": [
-              "http://hl7.org/fhir/StructureDefinition/Observation"
-            ]
-          }
-        ],
-        "mustSupport": true
+        }
       },
       {
         "id": "Observation.derivedFrom",
         "path": "Observation.derivedFrom",
-        "short": "abgeleitet",
         "_short": {
           "extension": [
             {
@@ -766,7 +775,6 @@
             }
           ]
         },
-        "definition": "Abgeleitet von ImagingStudy, ect.",
         "_definition": {
           "extension": [
             {
@@ -796,13 +804,11 @@
               ]
             }
           ]
-        },
-        "mustSupport": true
+        }
       },
       {
         "id": "Observation.component",
         "path": "Observation.component",
-        "short": "Bestandteile",
         "_short": {
           "extension": [
             {
@@ -833,7 +839,6 @@
             }
           ]
         },
-        "definition": "detaillierte Bestandteile der Beobachtung",
         "_definition": {
           "extension": [
             {
@@ -863,8 +868,7 @@
               ]
             }
           ]
-        },
-        "mustSupport": true
+        }
       }
     ]
   }

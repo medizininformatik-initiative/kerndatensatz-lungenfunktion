@@ -47,8 +47,8 @@ Description: "Dieses Profil beschreibt die Messung der Diffusionskapazität von 
 * value[x] ^short = "Messwert"
 * value[x] ^definition = "Wert der Analyse"
 * value[x] MS
-* value[x] ^short = "Messwert"
-* value[x] ^definition = "Wert der Analyse"
+* value[x] ^short = "DLCO"
+* value[x] ^definition = "Diffusionskapazität der Lunge für Kohlenmonoxid im Single-Breath-Verfahren"
 * value[x] only Quantity
 * valueQuantity = $ucum#mmol/(min.kPa)
 * valueQuantity.value MS
@@ -58,16 +58,6 @@ Description: "Dieses Profil beschreibt die Messung der Diffusionskapazität von 
 * bodySite MS
 * bodySite ^short = "Anatomie"
 * bodySite ^definition = "betrachtete Anatomie der Beobachtung"
-* hasMember MS
-* hasMember only Reference(Observation)
-* hasMember ^short = "weitere Beobachtungen"
-* hasMember ^definition = "Referenzierung weiterer Beobachtungen"
-* derivedFrom MS
-* derivedFrom ^short = "abgeleitet"
-* derivedFrom ^definition = "Abgeleitet von ImagingStudy, ect."
-* component MS
-* component ^short = "Bestandteile"
-* component ^definition = "detaillierte Bestandteile der Beobachtung"
 
 //Translation Profile
 * insert Translation(partOf ^short, de-DE, Teil von)
