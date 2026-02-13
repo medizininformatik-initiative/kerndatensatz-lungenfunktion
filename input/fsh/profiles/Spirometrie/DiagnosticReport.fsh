@@ -34,9 +34,9 @@ Description: "Diese Ressource beschreibt einen Befunde der Spirometrie"
     loinc 0..* MS and
     diagnostic-service-sections 0..* MS and 
     sct 1..1 MS
-* category.coding[loinc] = $loinc#TODO
+* category.coding[loinc] = $loinc#58477-1 "Pulmonary function study"
 * category.coding[diagnostic-service-sections] = $v2-0074#PF
-* category.coding[sct] = $SCT#TODO
+* category.coding[sct] = $SCT#720449003 "Pulmonary function report (record artifact)"
 * code MS
 * code ^short = "Code"
 * code ^definition = "Code des Befundberichts"
@@ -47,6 +47,7 @@ Description: "Diese Ressource beschreibt einen Befunde der Spirometrie"
     sct 0..1 MS and
     loinc 0..1 MS
 * code.coding[loinc] ^patternCoding.system = $loinc
+* code.coding[loinc] = $loinc#18759-1 "Spirometry study"
 * code.coding[sct] ^patternCoding.system = $SCT
 * subject 1..1 MS
 * subject only Reference(Patient)
@@ -66,6 +67,40 @@ Description: "Diese Ressource beschreibt einen Befunde der Spirometrie"
 * result MS
 * result ^short = "Ergebnis"
 * result ^definition = "Ergebnis einer Beobachtung"
+* result ^slicing.discriminator.type = #pattern
+* result ^slicing.discriminator.path = "$this"
+* result ^slicing.rules = #open
+* result contains
+    IVC 0..1 MS and
+    EVC 0..1 MS and
+    FVC 0..1 MS and
+    IC 0..1 MS and
+    IRV 0..1 MS and
+    ERV 0..1 MS and
+    FEV1 0..1 MS and
+    FIV1 0..1 MS and
+    BF 0..1 MS and
+    PEF 0..1 MS and
+    MEF25 0..1 MS and
+    MEF50 0..1 MS and
+    MEF75 0..1 MS and
+    FEV1_FVC 0..1 MS and
+    FEV1_VC 0..1
+* result[IVC] only Reference(MII_PR_Lungenfunktion_IVC)
+* result[EVC] only Reference(MII_PR_Lungenfunktion_EVC)
+* result[FVC] only Reference(MII_PR_Lungenfunktion_FVC)
+* result[IC] only Reference(MII_PR_Lungenfunktion_IC)
+* result[IRV] only Reference(MII_PR_Lungenfunktion_IRV)
+* result[ERV] only Reference(MII_PR_Lungenfunktion_ERV)
+* result[FEV1] only Reference(MII_PR_Lungenfunktion_FEV)
+* result[FIV1] only Reference(MII_PR_Lungenfunktion_FIV)
+* result[BF] only Reference(MII_PR_Lungenfunktion_BF)
+* result[PEF] only Reference(MII_PR_Lungenfunktion_PEF)
+* result[MEF25] only Reference(MII_PR_Lungenfunktion_MEF25)
+* result[MEF50] only Reference(MII_PR_Lungenfunktion_MEF50)
+* result[MEF75] only Reference(MII_PR_Lungenfunktion_MEF75)
+* result[FEV1_FVC] only Reference(MII_PR_Lungenfunktion_FEV1_FVC)
+* result[FEV1_VC] only Reference(MII_PR_Lungenfunktion_FEV1_VC)
 * conclusion MS
 * conclusion ^short = "Fazit"
 * conclusion ^definition = "Fazit zur aktuellen Befundung"

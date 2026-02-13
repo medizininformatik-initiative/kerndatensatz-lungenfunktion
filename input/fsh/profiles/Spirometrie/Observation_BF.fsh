@@ -1,15 +1,15 @@
 //EXAMPLE Profile
 //Head
-Profile: MII_PR_Lungenfunktion_Fluss
-Parent: Observation
-Id: mii-pr-lungenfunktion-fluss
-Title: "MII PR Lungenfunktion Fluss"
-Description: "Dieses Beobachtung beschreibt eine Flussmessung."
-* ^url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-fluss"
+Profile: MII_PR_Lungenfunktion_BF
+Parent: http://fhir.de/StructureDefinition/observation-de-vitalsign-atemfrequenz
+Id: mii-pr-lungenfunktion-bf
+Title: "MII PR Lungenfunktion BF"
+Description: "Dieses Profil beschreibt die Messung der Atemfrequenz."
+* ^url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-bf"
 //Translation Meta
-* insert Translation(^name, en-US, MII_PR_Lungfunction_Fluss)
-* insert Translation(^title, en-US, MII PR Lungfunction Fluss)
-* insert Translation(^description, en-US, The profile describes a observation for testing of lungfunction.)
+* insert Translation(^name, en-US, MII_PR_Lungfunction_BF)
+* insert Translation(^title, en-US, MII PR Lungfunction BF)
+* insert Translation(^description, en-US, The profile describes a observation for the breathing frequency.)
 //Meta
 * insert PR_CS_VS_Version
 * insert PR_CS_VS_Date
@@ -22,32 +22,23 @@ Description: "Dieses Beobachtung beschreibt eine Flussmessung."
 //Profile
 * partOf MS
 * partOf ^short = "Teil von"
-* partOf ^definition = "Teil einer Befundungprozedur"
+* partOf ^definition = "Teil einer Lungenfunktionsmessung"
 * status MS
 * status ^short = "Status"
 * status ^definition = "angemeldet | vorläufig | endgültig | geändert | korrigiert | abgebrochen | fehlerhafte Eingabe | unbekannt"
-* category MS
+* category 1.. MS
 * category ^short = "Kategorie"
 * category ^definition = "Klassifikation in diagnostischen Fachbereich und Gruppe"
 * category.coding = $obs-category#procedure
 * code MS
 * code ^short = "Code"
 * code ^definition = "Ein Code für die zu befundende Beobachtung"
-* code.coding ^slicing.discriminator.type = #pattern
-* code.coding ^slicing.discriminator.path = "$this"
-* code.coding ^slicing.rules = #open
-* code.coding contains
-    sct 0..1 and
-    loinc 0..1
-* code.coding[loinc] ^patternCoding.system = "$loinc"
-* code.coding[loinc].code from MII_VS_Lufu_LNC (required)
-* code.coding[sct] ^patternCoding.system = "$SCT"
-* code.coding[sct].code from MII_VS_Lufu_SCT (required)
+* code.coding[loinc] MS
+* code.coding[snomed] = $SCT-version#271625008 "Rate of spontaneous respiration (observable entity)"
 * code.coding.system 1.. MS
 * code.coding.code 1.. MS
 * code.coding.display MS
-* subject 1..1 MS
-* subject only Reference(Patient)
+* subject 1.. MS
 * subject ^short = "Person"
 * subject ^definition = "Person, auf die sich die Beobachtung bezieht"
 * issued MS
@@ -59,11 +50,8 @@ Description: "Dieses Beobachtung beschreibt eine Flussmessung."
 * value[x] only Quantity
 * valueQuantity.value MS
 * valueQuantity.unit MS
-* valueQuantity.unit = "L/s"
 * valueQuantity.system MS
-* valueQuantity.system = $ucum
 * valueQuantity.code MS
-* valueQuantity.code = $ucum#L/s
 * interpretation MS
 * interpretation ^short = "Interpretation"
 * interpretation ^definition = "Interpretation des Messergebnisses"
@@ -88,7 +76,7 @@ Description: "Dieses Beobachtung beschreibt eine Flussmessung."
 * hasMember ^definition = "Referenzierung weiterer Beobachtungen"
 * derivedFrom MS
 * derivedFrom ^short = "abgeleitet"
-* derivedFrom ^definition = "Abgeleitet von Messwerten, ect."
+* derivedFrom ^definition = "Abgeleitet von Messwerten, etc."
 * component MS
 * component ^short = "Bestandteile"
 * component ^definition = "detailierte Bestandteile der Beobachtung"
@@ -107,7 +95,7 @@ Description: "Dieses Beobachtung beschreibt eine Flussmessung."
 * component[predicted] ^definition = "vorhergesagtes Messergebnis"
 * component[predicted].valueQuantity.unit = "L"
 * component[predicted].valueQuantity.system = $ucum
-* component[predicted].valueQuantity.code = $ucum#L/s
+* component[predicted].valueQuantity.code = $ucum#L
 * component[ratio] ^short = "Verhältnis"
 * component[ratio] ^definition = "Verhältnis von Messwert zu vorhergesagtem Ergebnis"
 * component[ratio].valueQuantity.unit = "%"
@@ -116,7 +104,6 @@ Description: "Dieses Beobachtung beschreibt eine Flussmessung."
 * component[z-score] ^short = "Z-Score"
 * component[z-score] ^definition = "Z-Score mit GLI-Referenztabellen"
 * component[z-score].code = $SCT-version#1078210003 "Z-score calculation technique (qualifier value)"
-
 //Translation Profile
 * insert Translation(partOf ^short, de-DE, Teil von)
 * insert Translation(partOf ^short, en-US, part of)

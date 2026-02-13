@@ -1,14 +1,14 @@
 //EXAMPLE Profile
 //Head
-Profile: MII_PR_Lungenfunktion_Fluss
+Profile: MII_PR_Lungenfunktion_Percent
 Parent: Observation
-Id: mii-pr-lungenfunktion-fluss
-Title: "MII PR Lungenfunktion Fluss"
-Description: "Dieses Beobachtung beschreibt eine Flussmessung."
-* ^url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-fluss"
+Id: mii-pr-lungenfunktion-percent
+Title: "MII PR Lungenfunktion percent"
+Description: "Dieses Beobachtung beschreibt einen prozentualen Anteil."
+* ^url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-percent"
 //Translation Meta
-* insert Translation(^name, en-US, MII_PR_Lungfunction_Fluss)
-* insert Translation(^title, en-US, MII PR Lungfunction Fluss)
+* insert Translation(^name, en-US, MII_PR_Lungfunction_Percent)
+* insert Translation(^title, en-US, MII PR Lungfunction Percent)
 * insert Translation(^description, en-US, The profile describes a observation for testing of lungfunction.)
 //Meta
 * insert PR_CS_VS_Version
@@ -59,11 +59,11 @@ Description: "Dieses Beobachtung beschreibt eine Flussmessung."
 * value[x] only Quantity
 * valueQuantity.value MS
 * valueQuantity.unit MS
-* valueQuantity.unit = "L/s"
+* valueQuantity.unit = "%"
 * valueQuantity.system MS
 * valueQuantity.system = $ucum
 * valueQuantity.code MS
-* valueQuantity.code = $ucum#L/s
+* valueQuantity.code = $ucum#%
 * interpretation MS
 * interpretation ^short = "Interpretation"
 * interpretation ^definition = "Interpretation des Messergebnisses"
@@ -107,7 +107,7 @@ Description: "Dieses Beobachtung beschreibt eine Flussmessung."
 * component[predicted] ^definition = "vorhergesagtes Messergebnis"
 * component[predicted].valueQuantity.unit = "L"
 * component[predicted].valueQuantity.system = $ucum
-* component[predicted].valueQuantity.code = $ucum#L/s
+* component[predicted].valueQuantity.code = $ucum#L
 * component[ratio] ^short = "Verhältnis"
 * component[ratio] ^definition = "Verhältnis von Messwert zu vorhergesagtem Ergebnis"
 * component[ratio].valueQuantity.unit = "%"
