@@ -29,39 +29,98 @@ Description: "Dieses Beobachtung beschreibt eine Wiederstandsmessung."
 * category MS
 * category ^short = "Kategorie"
 * category ^definition = "Klassifikation in diagnostischen Fachbereich und Gruppe"
+* category.coding.system = $obs-category (exactly)
+* category.coding.code = $obs-category#procedure (exactly)
 * code MS
 * code ^short = "Code"
 * code ^definition = "Ein Code für die zu befundende Beobachtung"
+* code.coding ^slicing.discriminator.type = #pattern
+* code.coding ^slicing.discriminator.path = "$this"
+* code.coding ^slicing.rules = #open
+* code.coding contains
+    sct 0..1 and
+    loinc 0..1
+* code.coding[loinc] ^patternCoding.system = "$loinc"
+* code.coding[sct] ^patternCoding.system = "$SCT"
+* code.coding.system 1.. MS
+* code.coding.code 1.. MS
+* code.coding.display MS
 * subject 1..1 MS
 * subject only Reference(Patient)
 * subject ^short = "Person"
 * subject ^definition = "Person, auf die sich die Beobachtung bezieht"
 * issued MS
 * issued ^short = "Dokumentationsdatum"
-* issued ^definition = "Zeitpunkt, an dem das Ergebnis der Laboruntersuchung dokumentiert wurde"
+* issued ^definition = "Zeitpunkt, an dem das Ergebnis der Untersuchung dokumentiert wurde"
 * value[x] MS
 * value[x] ^short = "Messwert"
 * value[x] ^definition = "Wert der Analyse"
 * value[x] only Quantity
-* bodySite MS
-* bodySite ^short = "Anatomie"
-* bodySite ^definition = "betrachtete Anatomie der Beobachtung"
+* valueQuantity.value MS
+* valueQuantity.unit MS
+* valueQuantity.unit = "L"
+* valueQuantity.system MS
+* valueQuantity.system = $ucum
+* valueQuantity.code MS
+* valueQuantity.code = $ucum#L
+* interpretation MS
+* interpretation ^short = "Interpretation"
+* interpretation ^definition = "Interpretation des Messergebnisses"
+* method MS
+* method ^short = "Methode"
+* method ^definition = "Methode, mit der der Messwert erfasst wurde"
+* referenceRange MS
+* referenceRange ^short = "Referenzintervall"
+* referenceRange ^definition = "Intervall zur Interpretation des Messwertes"
+* referenceRange.low 1.. MS
+* referenceRange.low ^short = "LLN"
+* referenceRange.low ^definition = "untere Normgrenze"
+* referenceRange.high 1.. MS
+* referenceRange.high ^short = "ULN"
+* referenceRange.high ^definition = "obere Normgrenze"
+* referenceRange.age 1.. MS
+* referenceRange.age ^short = "Altersbezug"
+* referenceRange.age ^definition = "Altersbezug der Normgrenzen"
 * hasMember MS
 * hasMember only Reference(Observation)
 * hasMember ^short = "weitere Beobachtungen"
 * hasMember ^definition = "Referenzierung weiterer Beobachtungen"
 * derivedFrom MS
 * derivedFrom ^short = "abgeleitet"
-* derivedFrom ^definition = "Abgeleitet von ImagingStudy, ect."
+* derivedFrom ^definition = "Abgeleitet von Messwerten, ect."
 * component MS
 * component ^short = "Bestandteile"
 * component ^definition = "detailierte Bestandteile der Beobachtung"
+* component ^slicing.discriminator.type = #pattern
+* component ^slicing.discriminator.path = "$this"
+* component ^slicing.rules = #open
+* component contains
+    predicted 0..1 and
+    ratio 0..1 and
+    z-score 0..1
+* component.valueQuantity.value MS
+* component.valueQuantity.unit MS
+* component.valueQuantity.system MS
+* component.valueQuantity.code MS
+* component[predicted] ^short = "Vorhersage"
+* component[predicted] ^definition = "vorhergesagtes Messergebnis"
+* component[predicted].valueQuantity.unit = "L"
+* component[predicted].valueQuantity.system = $ucum
+* component[predicted].valueQuantity.code = $ucum#L
+* component[ratio] ^short = "Verhältnis"
+* component[ratio] ^definition = "Verhältnis von Messwert zu vorhergesagtem Ergebnis"
+* component[ratio].valueQuantity.unit = "%"
+* component[ratio].valueQuantity.system = $ucum
+* component[ratio].valueQuantity.code = $ucum#%
+* component[z-score] ^short = "Z-Score"
+* component[z-score] ^definition = "Z-Score mit GLI-Referenztabellen"
+* component[z-score].code = $SCT-version#1078210003 "Z-score calculation technique (qualifier value)"
 
 //Translation Profile
 * insert Translation(partOf ^short, de-DE, Teil von)
 * insert Translation(partOf ^short, en-US, part of)
-* insert Translation(partOf ^definition, de-DE, Teil einer Befundungprozedur)
-* insert Translation(partOf ^definition, en-US, part of a read procedure)
+* insert Translation(partOf ^definition, de-DE, Teil einer Lungenfunktionsuntersuchungen)
+* insert Translation(partOf ^definition, en-US, part of a respiratory procedure)
 * insert Translation(status ^short, de-DE, Status)
 * insert Translation(status ^short, en-US, status)
 * insert Translation(status ^definition, de-DE, angemeldet | vorläufig | endgültig | geändert | korrigiert | abgebrochen | fehlerhafte Eingabe | unbekannt)
@@ -80,25 +139,57 @@ Description: "Dieses Beobachtung beschreibt eine Wiederstandsmessung."
 * insert Translation(subject ^definition, en-US, person\, which this observation is about)
 * insert Translation(issued ^short, de-DE, Dokumentationsdatum)
 * insert Translation(issued ^short, en-US, Issued)
-* insert Translation(issued ^definition, de-DE, Zeitpunkt\, an dem das Ergebnis der Laboruntersuchung dokumentiert wurde)
-* insert Translation(issued ^definition, en-US, The point in time when the laboratory result was documented)
+* insert Translation(issued ^definition, de-DE, Zeitpunkt\, an dem das Ergebnis der Untersuchung dokumentiert wurde)
+* insert Translation(issued ^definition, en-US, The point in time when the result was documented)
 * insert Translation(value[x] ^short, de-DE, Messwert)
 * insert Translation(value[x] ^short, en-US, Value)
 * insert Translation(value[x] ^definition, de-DE, Wert der Analyse)
 * insert Translation(value[x] ^definition, en-US, Value of the analysis)
-* insert Translation(bodySite ^short, de-DE, Anatomie)
-* insert Translation(bodySite ^short, en-US, body site)
-* insert Translation(bodySite ^definition, de-DE, betrachtete Anatomie der Beobachtung)
-* insert Translation(bodySite ^definition, en-US, inspected body site in this observation)
+* insert Translation(interpretation ^short, de-DE, Interpretation)
+* insert Translation(interpretation ^short, en-US, interpretation)
+* insert Translation(interpretation ^definition, de-DE, Interpretation des Messergebnisses)
+* insert Translation(interpretation ^definition, en-US, interpretation of the result)
+* insert Translation(method ^short, de-DE, Methode)
+* insert Translation(method ^short, en-US, method)
+* insert Translation(method ^definition, de-DE, Methode\, mit der der Messwert erfasst wurde)
+* insert Translation(method ^definition, en-US, method of examination)
+* insert Translation(referenceRange ^short, de-DE, Referenzintervall)
+* insert Translation(referenceRange ^short, en-US, referenceRange)
+* insert Translation(referenceRange ^definition, de-DE, Intervall zur Interpretation des Messwertes)
+* insert Translation(referenceRange ^definition, en-US, Range for result-interpretation)
+* insert Translation(referenceRange.low ^short, de-DE, LLN)
+* insert Translation(referenceRange.low ^short, en-US, LLN)
+* insert Translation(referenceRange.low ^definition, de-DE, untere Normgrenze)
+* insert Translation(referenceRange.low ^definition, en-US, lower limit of normal)
+* insert Translation(referenceRange.high ^short, de-DE, ULN)
+* insert Translation(referenceRange.high ^short, en-US, ULN)
+* insert Translation(referenceRange.high ^definition, de-DE, obere Normgrenze)
+* insert Translation(referenceRange.high ^definition, en-US, upper limit of normal)
+* insert Translation(referenceRange.age ^short, de-DE, Altersbezug)
+* insert Translation(referenceRange.age ^short, en-US, reference age)
+* insert Translation(referenceRange.age ^definition, de-DE, Altersbezug der Normgrenzen)
+* insert Translation(referenceRange.age ^definition, en-US, reference age of normal)
 * insert Translation(hasMember ^short, de-DE, weitere Beobachtungen)
 * insert Translation(hasMember ^short, en-US, additional observation)
 * insert Translation(hasMember ^definition, de-DE, Referenzierung weiterer Beobachtungen)
 * insert Translation(hasMember ^definition, en-US, reference on additional observations)
 * insert Translation(derivedFrom ^short, de-DE, abgeleitet)
 * insert Translation(derivedFrom ^short, en-US, derived from)
-* insert Translation(derivedFrom ^definition, de-DE, Abgeleitet von ImagingStudy\, ect.)
-* insert Translation(derivedFrom ^definition, en-US, derived from an imagingStud\, etc.)
+* insert Translation(derivedFrom ^definition, de-DE, Abgeleitet von Messwerten\, ect.)
+* insert Translation(derivedFrom ^definition, en-US, derived from measured values\, etc.)
 * insert Translation(component ^short, de-DE, Bestandteile)
 * insert Translation(component ^short, en-US, components)
 * insert Translation(component ^definition, de-DE, detailierte Bestandteile der Beobachtung)
 * insert Translation(component ^definition, en-US, detailed components of this observation)
+* insert Translation(component[predicted] ^short, de-DE, Vorhersage)
+* insert Translation(component[predicted] ^short, en-US, prediction)
+* insert Translation(component[predicted] ^definition, de-DE, vorhergesagtes Messergebnis)
+* insert Translation(component[predicted] ^definition, en-US, predicted measured value)
+* insert Translation(component[ratio] ^short, de-DE, Verhältnis)
+* insert Translation(component[ratio] ^short, en-US, ratio)
+* insert Translation(component[ratio] ^definition, de-DE, Verhältnis von Messwert zu vorhergesagtem Ergebnis)
+* insert Translation(component[ratio] ^definition, en-US, ratio of measured value to prediction)
+* insert Translation(component[z-score] ^short, de-DE, z-Score)
+* insert Translation(component[z-score] ^short, en-US, z-score)
+* insert Translation(component[z-score] ^definition, de-DE, z-Score der Messung)
+* insert Translation(component[z-score] ^definition, en-US, z-score of measurement)
