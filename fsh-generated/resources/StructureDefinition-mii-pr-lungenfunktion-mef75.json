@@ -1,6 +1,6 @@
 {
   "resourceType": "StructureDefinition",
-  "id": "mii-pr-lungenfunktion-pef",
+  "id": "mii-pr-lungenfunktion-mef75",
   "extension": [
     {
       "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-ex-meta-license-codeable",
@@ -15,9 +15,9 @@
       }
     }
   ],
-  "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-pef",
+  "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-mef75",
   "version": "2025.0.0",
-  "name": "MII_PR_Lungenfunktion_PEF",
+  "name": "MII_PR_Lungenfunktion_MEF75",
   "_name": {
     "extension": [
       {
@@ -29,13 +29,13 @@
           },
           {
             "url": "content",
-            "valueString": "MII_PR_Lungfunction_PEF"
+            "valueString": "MII_PR_Lungfunction_MEF75"
           }
         ]
       }
     ]
   },
-  "title": "MII PR Lungenfunktion PEF",
+  "title": "MII PR Lungenfunktion MEF 75",
   "_title": {
     "extension": [
       {
@@ -47,7 +47,7 @@
           },
           {
             "url": "content",
-            "valueString": "MII PR Lungfunction PEF"
+            "valueString": "MII PR Lungfunction MEF 75"
           }
         ]
       }
@@ -66,7 +66,7 @@
       ]
     }
   ],
-  "description": "Dieses Profil beschreibt die Messung des exspiratorischen Spitzenfluss.",
+  "description": "Dieses Profil beschreibt die Messung des maximalen exspiratorischen Fluss bei 75% forcierten exspiratorischen Vitalkapazität.",
   "_description": {
     "extension": [
       {
@@ -78,7 +78,7 @@
           },
           {
             "url": "content",
-            "valueString": "The profile describes a observation for the rpeak exspiratory flow."
+            "valueString": "The profile describes a observation for the maximum exspiratory flow at 75% of forced exspiratory capacity."
           }
         ]
       }
@@ -112,12 +112,12 @@
       {
         "id": "Observation.code.coding:sct.code",
         "path": "Observation.code.coding.code",
-        "patternCode": "18491006"
+        "patternCode": "251921003"
       },
       {
         "id": "Observation.code.coding:sct.display",
         "path": "Observation.code.coding.display",
-        "patternString": "Peak expiratory flow rate (observable entity)"
+        "patternString": "Maximum expiratory flow rate at 75 percent of vital capacity (observable entity)"
       },
       {
         "id": "Observation.component:predicted",
@@ -130,10 +130,9 @@
         "patternCodeableConcept": {
           "coding": [
             {
-              "code": "313192007",
+              "code": "TODO",
               "system": "http://snomed.info/sct",
-              "version": "http://snomed.info/sct/900000000000207008/version/20240701",
-              "display": "Expected peak expiratory flow rate (observable entity)"
+              "version": "http://snomed.info/sct/900000000000207008/version/20240701"
             }
           ]
         }
@@ -149,10 +148,9 @@
         "patternCodeableConcept": {
           "coding": [
             {
-              "code": "401163005",
+              "code": "TODO",
               "system": "http://snomed.info/sct",
-              "version": "http://snomed.info/sct/900000000000207008/version/20240701",
-              "display": "Percentage of best ever peak expiratory flow rate (observable entity)"
+              "version": "http://snomed.info/sct/900000000000207008/version/20240701"
             }
           ]
         }

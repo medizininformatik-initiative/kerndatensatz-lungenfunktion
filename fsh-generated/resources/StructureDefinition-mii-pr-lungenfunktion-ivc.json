@@ -1,6 +1,6 @@
 {
   "resourceType": "StructureDefinition",
-  "id": "mii-pr-lungenfunktion-pef",
+  "id": "mii-pr-lungenfunktion-ivc",
   "extension": [
     {
       "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-ex-meta-license-codeable",
@@ -15,9 +15,9 @@
       }
     }
   ],
-  "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-pef",
+  "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-ivc",
   "version": "2025.0.0",
-  "name": "MII_PR_Lungenfunktion_PEF",
+  "name": "MII_PR_Lungenfunktion_IVC",
   "_name": {
     "extension": [
       {
@@ -29,13 +29,13 @@
           },
           {
             "url": "content",
-            "valueString": "MII_PR_Lungfunction_PEF"
+            "valueString": "MII_PR_Lungfunction_IVC"
           }
         ]
       }
     ]
   },
-  "title": "MII PR Lungenfunktion PEF",
+  "title": "MII PR Lungenfunktion IVC",
   "_title": {
     "extension": [
       {
@@ -47,7 +47,7 @@
           },
           {
             "url": "content",
-            "valueString": "MII PR Lungfunction PEF"
+            "valueString": "MII PR Lungfunction IVC"
           }
         ]
       }
@@ -66,7 +66,7 @@
       ]
     }
   ],
-  "description": "Dieses Profil beschreibt die Messung des exspiratorischen Spitzenfluss.",
+  "description": "Dieses Profil beschreibt die Messung der inspiratorischen Vitalkapzität.",
   "_description": {
     "extension": [
       {
@@ -78,7 +78,7 @@
           },
           {
             "url": "content",
-            "valueString": "The profile describes a observation for the rpeak exspiratory flow."
+            "valueString": "The profile describes a observation for the inspiratory vital capacity."
           }
         ]
       }
@@ -88,7 +88,7 @@
   "kind": "resource",
   "abstract": false,
   "type": "Observation",
-  "baseDefinition": "https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-fluss",
+  "baseDefinition": "https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-volumen",
   "derivation": "constraint",
   "differential": {
     "element": [
@@ -112,12 +112,12 @@
       {
         "id": "Observation.code.coding:sct.code",
         "path": "Observation.code.coding.code",
-        "patternCode": "18491006"
+        "patternCode": "251913009"
       },
       {
         "id": "Observation.code.coding:sct.display",
         "path": "Observation.code.coding.display",
-        "patternString": "Peak expiratory flow rate (observable entity)"
+        "patternString": "Inspiratory vital capacity (observable entity)"
       },
       {
         "id": "Observation.component:predicted",
@@ -130,10 +130,9 @@
         "patternCodeableConcept": {
           "coding": [
             {
-              "code": "313192007",
+              "code": "TODO",
               "system": "http://snomed.info/sct",
-              "version": "http://snomed.info/sct/900000000000207008/version/20240701",
-              "display": "Expected peak expiratory flow rate (observable entity)"
+              "version": "http://snomed.info/sct/900000000000207008/version/20240701"
             }
           ]
         }
@@ -149,10 +148,10 @@
         "patternCodeableConcept": {
           "coding": [
             {
-              "code": "401163005",
+              "code": "445389005",
               "system": "http://snomed.info/sct",
               "version": "http://snomed.info/sct/900000000000207008/version/20240701",
-              "display": "Percentage of best ever peak expiratory flow rate (observable entity)"
+              "display": "Percentage of predicted vital capacity (observable entity)"
             }
           ]
         }

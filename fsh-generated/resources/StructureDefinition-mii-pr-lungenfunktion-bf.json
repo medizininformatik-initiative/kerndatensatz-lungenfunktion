@@ -1,6 +1,6 @@
 {
   "resourceType": "StructureDefinition",
-  "id": "mii-pr-lungenfunktion-viscosity",
+  "id": "mii-pr-lungenfunktion-bf",
   "extension": [
     {
       "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-ex-meta-license-codeable",
@@ -15,9 +15,9 @@
       }
     }
   ],
-  "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-viscosity",
+  "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-bf",
   "version": "2025.0.0",
-  "name": "MII_PR_Lungenfunktion_Viscosity",
+  "name": "MII_PR_Lungenfunktion_BF",
   "_name": {
     "extension": [
       {
@@ -29,13 +29,13 @@
           },
           {
             "url": "content",
-            "valueString": "MII_PR_Lungfunction_Fluss"
+            "valueString": "MII_PR_Lungfunction_BF"
           }
         ]
       }
     ]
   },
-  "title": "MII PR Lungenfunktion Fluss",
+  "title": "MII PR Lungenfunktion BF",
   "_title": {
     "extension": [
       {
@@ -47,7 +47,7 @@
           },
           {
             "url": "content",
-            "valueString": "MII PR Lungfunction Fluss"
+            "valueString": "MII PR Lungfunction BF"
           }
         ]
       }
@@ -66,7 +66,7 @@
       ]
     }
   ],
-  "description": "Dieses Beobachtung beschreibt eine Flussmessung.",
+  "description": "Dieses Profil beschreibt die Messung der Atemfrequenz.",
   "_description": {
     "extension": [
       {
@@ -78,7 +78,7 @@
           },
           {
             "url": "content",
-            "valueString": "The profile describes a observation for testing of lungfunction."
+            "valueString": "The profile describes a observation for the breathing frequency."
           }
         ]
       }
@@ -88,7 +88,7 @@
   "kind": "resource",
   "abstract": false,
   "type": "Observation",
-  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Observation",
+  "baseDefinition": "http://fhir.de/StructureDefinition/observation-de-vitalsign-atemfrequenz",
   "derivation": "constraint",
   "differential": {
     "element": [
@@ -146,7 +146,7 @@
             }
           ]
         },
-        "definition": "Teil einer Befundungprozedur",
+        "definition": "Teil einer Lungenfunktionsmessung",
         "_definition": {
           "extension": [
             {
@@ -314,14 +314,12 @@
         "mustSupport": true
       },
       {
-        "id": "Observation.category.coding.system",
-        "path": "Observation.category.coding.system",
-        "fixedUri": "http://terminology.hl7.org/CodeSystem/observation-category"
-      },
-      {
-        "id": "Observation.category.coding.code",
-        "path": "Observation.category.coding.code",
-        "fixedCode": "procedure"
+        "id": "Observation.category.coding",
+        "path": "Observation.category.coding",
+        "patternCoding": {
+          "code": "procedure",
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category"
+        }
       },
       {
         "id": "Observation.code",
@@ -392,27 +390,16 @@
       },
       {
         "id": "Observation.code.coding",
-        "path": "Observation.code.coding",
-        "slicing": {
-          "discriminator": [
-            {
-              "type": "pattern",
-              "path": "$this"
-            }
-          ],
-          "rules": "open"
-        }
+        "path": "Observation.code.coding"
       },
       {
         "id": "Observation.code.coding.system",
         "path": "Observation.code.coding.system",
-        "min": 1,
         "mustSupport": true
       },
       {
         "id": "Observation.code.coding.code",
         "path": "Observation.code.coding.code",
-        "min": 1,
         "mustSupport": true
       },
       {
@@ -421,24 +408,51 @@
         "mustSupport": true
       },
       {
-        "id": "Observation.code.coding:sct",
-        "path": "Observation.code.coding",
-        "sliceName": "sct",
-        "min": 0,
-        "max": "1",
-        "patternCoding": {
-          "system": "$SCT"
-        }
-      },
-      {
         "id": "Observation.code.coding:loinc",
         "path": "Observation.code.coding",
         "sliceName": "loinc",
-        "min": 0,
-        "max": "1",
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.code.coding:loinc.system",
+        "path": "Observation.code.coding.system",
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.code.coding:loinc.code",
+        "path": "Observation.code.coding.code",
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.code.coding:loinc.display",
+        "path": "Observation.code.coding.display",
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.code.coding:snomed",
+        "path": "Observation.code.coding",
+        "sliceName": "snomed",
         "patternCoding": {
-          "system": "$loinc"
+          "code": "271625008",
+          "system": "http://snomed.info/sct",
+          "version": "http://snomed.info/sct/900000000000207008/version/20240701",
+          "display": "Rate of spontaneous respiration (observable entity)"
         }
+      },
+      {
+        "id": "Observation.code.coding:snomed.system",
+        "path": "Observation.code.coding.system",
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.code.coding:snomed.code",
+        "path": "Observation.code.coding.code",
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.code.coding:snomed.display",
+        "path": "Observation.code.coding.display",
+        "mustSupport": true
       },
       {
         "id": "Observation.subject",
@@ -505,15 +519,6 @@
             }
           ]
         },
-        "min": 1,
-        "type": [
-          {
-            "code": "Reference",
-            "targetProfile": [
-              "http://hl7.org/fhir/StructureDefinition/Patient"
-            ]
-          }
-        ],
         "mustSupport": true
       },
       {
@@ -656,26 +661,33 @@
         "mustSupport": true
       },
       {
-        "id": "Observation.value[x].value",
+        "id": "Observation.value[x]:valueQuantity",
+        "path": "Observation.value[x]",
+        "sliceName": "valueQuantity",
+        "type": [
+          {
+            "code": "Quantity"
+          }
+        ]
+      },
+      {
+        "id": "Observation.value[x]:valueQuantity.value",
         "path": "Observation.value[x].value",
         "mustSupport": true
       },
       {
-        "id": "Observation.value[x].unit",
+        "id": "Observation.value[x]:valueQuantity.unit",
         "path": "Observation.value[x].unit",
-        "patternString": "L",
         "mustSupport": true
       },
       {
-        "id": "Observation.value[x].system",
+        "id": "Observation.value[x]:valueQuantity.system",
         "path": "Observation.value[x].system",
-        "patternUri": "http://unitsofmeasure.org",
         "mustSupport": true
       },
       {
-        "id": "Observation.value[x].code",
+        "id": "Observation.value[x]:valueQuantity.code",
         "path": "Observation.value[x].code",
-        "patternCode": "L",
         "mustSupport": true
       },
       {
@@ -1192,7 +1204,7 @@
             }
           ]
         },
-        "definition": "Abgeleitet von Messwerten, ect.",
+        "definition": "Abgeleitet von Messwerten, etc.",
         "_definition": {
           "extension": [
             {
@@ -1302,25 +1314,9 @@
         "mustSupport": true
       },
       {
-        "id": "Observation.component.value[x]",
-        "path": "Observation.component.value[x]",
-        "slicing": {
-          "discriminator": [
-            {
-              "type": "type",
-              "path": "$this"
-            }
-          ],
-          "ordered": false,
-          "rules": "open"
-        }
-      },
-      {
         "id": "Observation.component.value[x]:valueQuantity",
         "path": "Observation.component.value[x]",
         "sliceName": "valueQuantity",
-        "min": 0,
-        "max": "1",
         "type": [
           {
             "code": "Quantity"
@@ -1432,11 +1428,6 @@
         "patternString": "L"
       },
       {
-        "id": "Observation.component:predicted.value[x]:valueQuantity.system",
-        "path": "Observation.component.value[x].system",
-        "patternUri": "http://unitsofmeasure.org"
-      },
-      {
         "id": "Observation.component:predicted.value[x]:valueQuantity.code",
         "path": "Observation.component.value[x].code",
         "patternCode": "L"
@@ -1524,11 +1515,6 @@
         "id": "Observation.component:ratio.value[x]:valueQuantity.unit",
         "path": "Observation.component.value[x].unit",
         "patternString": "%"
-      },
-      {
-        "id": "Observation.component:ratio.value[x]:valueQuantity.system",
-        "path": "Observation.component.value[x].system",
-        "patternUri": "http://unitsofmeasure.org"
       },
       {
         "id": "Observation.component:ratio.value[x]:valueQuantity.code",

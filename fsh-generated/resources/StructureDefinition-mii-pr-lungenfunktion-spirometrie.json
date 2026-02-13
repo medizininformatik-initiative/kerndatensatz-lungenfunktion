@@ -333,8 +333,9 @@
         "min": 0,
         "max": "*",
         "patternCoding": {
-          "code": "TODO",
-          "system": "http://loinc.org"
+          "code": "58477-1",
+          "system": "http://loinc.org",
+          "display": "Pulmonary function study"
         },
         "mustSupport": true
       },
@@ -357,8 +358,9 @@
         "min": 1,
         "max": "1",
         "patternCoding": {
-          "code": "TODO",
-          "system": "http://snomed.info/sct"
+          "code": "720449003",
+          "system": "http://snomed.info/sct",
+          "display": "Pulmonary function report (record artifact)"
         },
         "mustSupport": true
       },
@@ -460,7 +462,9 @@
         "min": 0,
         "max": "1",
         "patternCoding": {
-          "system": "http://loinc.org"
+          "code": "18759-1",
+          "system": "http://loinc.org",
+          "display": "Spirometry study"
         },
         "mustSupport": true
       },
@@ -780,6 +784,15 @@
       {
         "id": "DiagnosticReport.result",
         "path": "DiagnosticReport.result",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "pattern",
+              "path": "$this"
+            }
+          ],
+          "rules": "open"
+        },
         "short": "Ergebnis",
         "_short": {
           "extension": [
@@ -843,6 +856,245 @@
           ]
         },
         "mustSupport": true
+      },
+      {
+        "id": "DiagnosticReport.result:IVC",
+        "path": "DiagnosticReport.result",
+        "sliceName": "IVC",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-ivc"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "DiagnosticReport.result:EVC",
+        "path": "DiagnosticReport.result",
+        "sliceName": "EVC",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-evc"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "DiagnosticReport.result:FVC",
+        "path": "DiagnosticReport.result",
+        "sliceName": "FVC",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-fvc"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "DiagnosticReport.result:IC",
+        "path": "DiagnosticReport.result",
+        "sliceName": "IC",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-ic"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "DiagnosticReport.result:IRV",
+        "path": "DiagnosticReport.result",
+        "sliceName": "IRV",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-irv"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "DiagnosticReport.result:ERV",
+        "path": "DiagnosticReport.result",
+        "sliceName": "ERV",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-erv"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "DiagnosticReport.result:FEV1",
+        "path": "DiagnosticReport.result",
+        "sliceName": "FEV1",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-fev"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "DiagnosticReport.result:FIV1",
+        "path": "DiagnosticReport.result",
+        "sliceName": "FIV1",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-fiv"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "DiagnosticReport.result:BF",
+        "path": "DiagnosticReport.result",
+        "sliceName": "BF",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-bf"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "DiagnosticReport.result:PEF",
+        "path": "DiagnosticReport.result",
+        "sliceName": "PEF",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-pef"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "DiagnosticReport.result:MEF25",
+        "path": "DiagnosticReport.result",
+        "sliceName": "MEF25",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-mef25"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "DiagnosticReport.result:MEF50",
+        "path": "DiagnosticReport.result",
+        "sliceName": "MEF50",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-mef50"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "DiagnosticReport.result:MEF75",
+        "path": "DiagnosticReport.result",
+        "sliceName": "MEF75",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-mef75"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "DiagnosticReport.result:FEV1_FVC",
+        "path": "DiagnosticReport.result",
+        "sliceName": "FEV1_FVC",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-fev1-fvc"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "DiagnosticReport.result:FEV1_VC",
+        "path": "DiagnosticReport.result",
+        "sliceName": "FEV1_VC",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-fev1-vc"
+            ]
+          }
+        ]
       },
       {
         "id": "DiagnosticReport.conclusion",

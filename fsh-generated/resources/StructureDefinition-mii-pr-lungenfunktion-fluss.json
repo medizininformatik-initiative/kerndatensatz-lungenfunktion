@@ -158,7 +158,7 @@
                 },
                 {
                   "url": "content",
-                  "valueString": "Teil einer Befundungprozedur"
+                  "valueString": "Teil einer Lungenfunktionsuntersuchungen"
                 }
               ]
             },
@@ -171,7 +171,7 @@
                 },
                 {
                   "url": "content",
-                  "valueString": "part of a read procedure"
+                  "valueString": "part of a respiratory procedure"
                 }
               ]
             }
@@ -314,6 +314,14 @@
         "mustSupport": true
       },
       {
+        "id": "Observation.category.coding",
+        "path": "Observation.category.coding",
+        "patternCoding": {
+          "code": "procedure",
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category"
+        }
+      },
+      {
         "id": "Observation.code",
         "path": "Observation.code",
         "short": "Code",
@@ -378,6 +386,98 @@
             }
           ]
         },
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.code.coding",
+        "path": "Observation.code.coding",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "pattern",
+              "path": "$this"
+            }
+          ],
+          "rules": "open"
+        }
+      },
+      {
+        "id": "Observation.code.coding.system",
+        "path": "Observation.code.coding.system",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.code.coding.code",
+        "path": "Observation.code.coding.code",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.code.coding.display",
+        "path": "Observation.code.coding.display",
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.code.coding:sct",
+        "path": "Observation.code.coding",
+        "sliceName": "sct",
+        "min": 0,
+        "max": "1",
+        "patternCoding": {
+          "system": "$SCT"
+        }
+      },
+      {
+        "id": "Observation.code.coding:sct.system",
+        "path": "Observation.code.coding.system",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.code.coding:sct.code",
+        "path": "Observation.code.coding.code",
+        "min": 1,
+        "mustSupport": true,
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/ValueSet/mii-vs-lufu-sct"
+        }
+      },
+      {
+        "id": "Observation.code.coding:sct.display",
+        "path": "Observation.code.coding.display",
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.code.coding:loinc",
+        "path": "Observation.code.coding",
+        "sliceName": "loinc",
+        "min": 0,
+        "max": "1",
+        "patternCoding": {
+          "system": "$loinc"
+        }
+      },
+      {
+        "id": "Observation.code.coding:loinc.system",
+        "path": "Observation.code.coding.system",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.code.coding:loinc.code",
+        "path": "Observation.code.coding.code",
+        "min": 1,
+        "mustSupport": true,
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/ValueSet/mii-vs-lufu-spirometry-lnc"
+        }
+      },
+      {
+        "id": "Observation.code.coding:loinc.display",
+        "path": "Observation.code.coding.display",
         "mustSupport": true
       },
       {
@@ -490,7 +590,7 @@
             }
           ]
         },
-        "definition": "Zeitpunkt, an dem das Ergebnis der Laboruntersuchung dokumentiert wurde",
+        "definition": "Zeitpunkt, an dem das Ergebnis der Untersuchung dokumentiert wurde",
         "_definition": {
           "extension": [
             {
@@ -502,7 +602,7 @@
                 },
                 {
                   "url": "content",
-                  "valueString": "Zeitpunkt, an dem das Ergebnis der Laboruntersuchung dokumentiert wurde"
+                  "valueString": "Zeitpunkt, an dem das Ergebnis der Untersuchung dokumentiert wurde"
                 }
               ]
             },
@@ -515,7 +615,7 @@
                 },
                 {
                   "url": "content",
-                  "valueString": "The point in time when the laboratory result was documented"
+                  "valueString": "The point in time when the result was documented"
                 }
               ]
             }
@@ -596,9 +696,32 @@
         "mustSupport": true
       },
       {
-        "id": "Observation.bodySite",
-        "path": "Observation.bodySite",
-        "short": "Anatomie",
+        "id": "Observation.value[x].value",
+        "path": "Observation.value[x].value",
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.value[x].unit",
+        "path": "Observation.value[x].unit",
+        "patternString": "L/s",
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.value[x].system",
+        "path": "Observation.value[x].system",
+        "patternUri": "http://unitsofmeasure.org",
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.value[x].code",
+        "path": "Observation.value[x].code",
+        "patternCode": "L/s",
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.interpretation",
+        "path": "Observation.interpretation",
+        "short": "Interpretation",
         "_short": {
           "extension": [
             {
@@ -610,7 +733,7 @@
                 },
                 {
                   "url": "content",
-                  "valueString": "Anatomie"
+                  "valueString": "Interpretation"
                 }
               ]
             },
@@ -623,13 +746,13 @@
                 },
                 {
                   "url": "content",
-                  "valueString": "body site"
+                  "valueString": "interpretation"
                 }
               ]
             }
           ]
         },
-        "definition": "betrachtete Anatomie der Beobachtung",
+        "definition": "Interpretation des Messergebnisses",
         "_definition": {
           "extension": [
             {
@@ -641,7 +764,7 @@
                 },
                 {
                   "url": "content",
-                  "valueString": "betrachtete Anatomie der Beobachtung"
+                  "valueString": "Interpretation des Messergebnisses"
                 }
               ]
             },
@@ -654,12 +777,350 @@
                 },
                 {
                   "url": "content",
-                  "valueString": "inspected body site in this observation"
+                  "valueString": "interpretation of the result"
                 }
               ]
             }
           ]
         },
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.method",
+        "path": "Observation.method",
+        "short": "Methode",
+        "_short": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "de-DE"
+                },
+                {
+                  "url": "content",
+                  "valueString": "Methode"
+                }
+              ]
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "en-US"
+                },
+                {
+                  "url": "content",
+                  "valueString": "method"
+                }
+              ]
+            }
+          ]
+        },
+        "definition": "Methode, mit der der Messwert erfasst wurde",
+        "_definition": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "de-DE"
+                },
+                {
+                  "url": "content",
+                  "valueString": "Methode, mit der der Messwert erfasst wurde"
+                }
+              ]
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "en-US"
+                },
+                {
+                  "url": "content",
+                  "valueString": "method of examination"
+                }
+              ]
+            }
+          ]
+        },
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.referenceRange",
+        "path": "Observation.referenceRange",
+        "short": "Referenzintervall",
+        "_short": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "de-DE"
+                },
+                {
+                  "url": "content",
+                  "valueString": "Referenzintervall"
+                }
+              ]
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "en-US"
+                },
+                {
+                  "url": "content",
+                  "valueString": "referenceRange"
+                }
+              ]
+            }
+          ]
+        },
+        "definition": "Intervall zur Interpretation des Messwertes",
+        "_definition": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "de-DE"
+                },
+                {
+                  "url": "content",
+                  "valueString": "Intervall zur Interpretation des Messwertes"
+                }
+              ]
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "en-US"
+                },
+                {
+                  "url": "content",
+                  "valueString": "Range for result-interpretation"
+                }
+              ]
+            }
+          ]
+        },
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.referenceRange.low",
+        "path": "Observation.referenceRange.low",
+        "short": "LLN",
+        "_short": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "de-DE"
+                },
+                {
+                  "url": "content",
+                  "valueString": "LLN"
+                }
+              ]
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "en-US"
+                },
+                {
+                  "url": "content",
+                  "valueString": "LLN"
+                }
+              ]
+            }
+          ]
+        },
+        "definition": "untere Normgrenze",
+        "_definition": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "de-DE"
+                },
+                {
+                  "url": "content",
+                  "valueString": "untere Normgrenze"
+                }
+              ]
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "en-US"
+                },
+                {
+                  "url": "content",
+                  "valueString": "lower limit of normal"
+                }
+              ]
+            }
+          ]
+        },
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.referenceRange.high",
+        "path": "Observation.referenceRange.high",
+        "short": "ULN",
+        "_short": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "de-DE"
+                },
+                {
+                  "url": "content",
+                  "valueString": "ULN"
+                }
+              ]
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "en-US"
+                },
+                {
+                  "url": "content",
+                  "valueString": "ULN"
+                }
+              ]
+            }
+          ]
+        },
+        "definition": "obere Normgrenze",
+        "_definition": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "de-DE"
+                },
+                {
+                  "url": "content",
+                  "valueString": "obere Normgrenze"
+                }
+              ]
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "en-US"
+                },
+                {
+                  "url": "content",
+                  "valueString": "upper limit of normal"
+                }
+              ]
+            }
+          ]
+        },
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.referenceRange.age",
+        "path": "Observation.referenceRange.age",
+        "short": "Altersbezug",
+        "_short": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "de-DE"
+                },
+                {
+                  "url": "content",
+                  "valueString": "Altersbezug"
+                }
+              ]
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "en-US"
+                },
+                {
+                  "url": "content",
+                  "valueString": "reference age"
+                }
+              ]
+            }
+          ]
+        },
+        "definition": "Altersbezug der Normgrenzen",
+        "_definition": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "de-DE"
+                },
+                {
+                  "url": "content",
+                  "valueString": "Altersbezug der Normgrenzen"
+                }
+              ]
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "en-US"
+                },
+                {
+                  "url": "content",
+                  "valueString": "reference age of normal"
+                }
+              ]
+            }
+          ]
+        },
+        "min": 1,
         "mustSupport": true
       },
       {
@@ -771,7 +1232,7 @@
             }
           ]
         },
-        "definition": "Abgeleitet von ImagingStudy, ect.",
+        "definition": "Abgeleitet von Messwerten, ect.",
         "_definition": {
           "extension": [
             {
@@ -783,7 +1244,7 @@
                 },
                 {
                   "url": "content",
-                  "valueString": "Abgeleitet von ImagingStudy, ect."
+                  "valueString": "Abgeleitet von Messwerten, ect."
                 }
               ]
             },
@@ -796,7 +1257,7 @@
                 },
                 {
                   "url": "content",
-                  "valueString": "derived from an imagingStud, etc."
+                  "valueString": "derived from measured values, etc."
                 }
               ]
             }
@@ -807,6 +1268,15 @@
       {
         "id": "Observation.component",
         "path": "Observation.component",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "pattern",
+              "path": "$this"
+            }
+          ],
+          "rules": "open"
+        },
         "short": "Bestandteile",
         "_short": {
           "extension": [
@@ -870,6 +1340,323 @@
           ]
         },
         "mustSupport": true
+      },
+      {
+        "id": "Observation.component.value[x]",
+        "path": "Observation.component.value[x]",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "type",
+              "path": "$this"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        }
+      },
+      {
+        "id": "Observation.component.value[x]:valueQuantity",
+        "path": "Observation.component.value[x]",
+        "sliceName": "valueQuantity",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Quantity"
+          }
+        ]
+      },
+      {
+        "id": "Observation.component.value[x]:valueQuantity.value",
+        "path": "Observation.component.value[x].value",
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.component.value[x]:valueQuantity.unit",
+        "path": "Observation.component.value[x].unit",
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.component.value[x]:valueQuantity.system",
+        "path": "Observation.component.value[x].system",
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.component.value[x]:valueQuantity.code",
+        "path": "Observation.component.value[x].code",
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.component:predicted",
+        "path": "Observation.component",
+        "sliceName": "predicted",
+        "short": "Vorhersage",
+        "_short": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "de-DE"
+                },
+                {
+                  "url": "content",
+                  "valueString": "Vorhersage"
+                }
+              ]
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "en-US"
+                },
+                {
+                  "url": "content",
+                  "valueString": "prediction"
+                }
+              ]
+            }
+          ]
+        },
+        "definition": "vorhergesagtes Messergebnis",
+        "_definition": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "de-DE"
+                },
+                {
+                  "url": "content",
+                  "valueString": "vorhergesagtes Messergebnis"
+                }
+              ]
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "en-US"
+                },
+                {
+                  "url": "content",
+                  "valueString": "predicted measured value"
+                }
+              ]
+            }
+          ]
+        },
+        "min": 0,
+        "max": "1"
+      },
+      {
+        "id": "Observation.component:predicted.value[x]:valueQuantity",
+        "path": "Observation.component.value[x]",
+        "sliceName": "valueQuantity",
+        "type": [
+          {
+            "code": "Quantity"
+          }
+        ]
+      },
+      {
+        "id": "Observation.component:predicted.value[x]:valueQuantity.unit",
+        "path": "Observation.component.value[x].unit",
+        "patternString": "L"
+      },
+      {
+        "id": "Observation.component:predicted.value[x]:valueQuantity.system",
+        "path": "Observation.component.value[x].system",
+        "patternUri": "http://unitsofmeasure.org"
+      },
+      {
+        "id": "Observation.component:predicted.value[x]:valueQuantity.code",
+        "path": "Observation.component.value[x].code",
+        "patternCode": "L/s"
+      },
+      {
+        "id": "Observation.component:ratio",
+        "path": "Observation.component",
+        "sliceName": "ratio",
+        "short": "Verhältnis",
+        "_short": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "de-DE"
+                },
+                {
+                  "url": "content",
+                  "valueString": "Verhältnis"
+                }
+              ]
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "en-US"
+                },
+                {
+                  "url": "content",
+                  "valueString": "ratio"
+                }
+              ]
+            }
+          ]
+        },
+        "definition": "Verhältnis von Messwert zu vorhergesagtem Ergebnis",
+        "_definition": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "de-DE"
+                },
+                {
+                  "url": "content",
+                  "valueString": "Verhältnis von Messwert zu vorhergesagtem Ergebnis"
+                }
+              ]
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "en-US"
+                },
+                {
+                  "url": "content",
+                  "valueString": "ratio of measured value to prediction"
+                }
+              ]
+            }
+          ]
+        },
+        "min": 0,
+        "max": "1"
+      },
+      {
+        "id": "Observation.component:ratio.value[x]:valueQuantity",
+        "path": "Observation.component.value[x]",
+        "sliceName": "valueQuantity",
+        "type": [
+          {
+            "code": "Quantity"
+          }
+        ]
+      },
+      {
+        "id": "Observation.component:ratio.value[x]:valueQuantity.unit",
+        "path": "Observation.component.value[x].unit",
+        "patternString": "%"
+      },
+      {
+        "id": "Observation.component:ratio.value[x]:valueQuantity.system",
+        "path": "Observation.component.value[x].system",
+        "patternUri": "http://unitsofmeasure.org"
+      },
+      {
+        "id": "Observation.component:ratio.value[x]:valueQuantity.code",
+        "path": "Observation.component.value[x].code",
+        "patternCode": "%"
+      },
+      {
+        "id": "Observation.component:z-score",
+        "path": "Observation.component",
+        "sliceName": "z-score",
+        "short": "Z-Score",
+        "_short": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "de-DE"
+                },
+                {
+                  "url": "content",
+                  "valueString": "z-Score"
+                }
+              ]
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "en-US"
+                },
+                {
+                  "url": "content",
+                  "valueString": "z-score"
+                }
+              ]
+            }
+          ]
+        },
+        "definition": "Z-Score mit GLI-Referenztabellen",
+        "_definition": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "de-DE"
+                },
+                {
+                  "url": "content",
+                  "valueString": "z-Score der Messung"
+                }
+              ]
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "en-US"
+                },
+                {
+                  "url": "content",
+                  "valueString": "z-score of measurement"
+                }
+              ]
+            }
+          ]
+        },
+        "min": 0,
+        "max": "1"
+      },
+      {
+        "id": "Observation.component:z-score.code",
+        "path": "Observation.component.code",
+        "patternCodeableConcept": {
+          "coding": [
+            {
+              "code": "1078210003",
+              "system": "http://snomed.info/sct",
+              "version": "http://snomed.info/sct/900000000000207008/version/20240701",
+              "display": "Z-score calculation technique (qualifier value)"
+            }
+          ]
+        }
       }
     ]
   }
