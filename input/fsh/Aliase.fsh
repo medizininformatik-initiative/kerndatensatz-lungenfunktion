@@ -1,7 +1,7 @@
 //HL7 PR
 Alias: $exp = http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation
 //HL7 VS
-
+Alias: $obs-category = http://terminology.hl7.org/CodeSystem/observation-category
 //MII-Profile
 Alias: $miiProcedure = https://www.medizininformatik-initiative.de/fhir/core/modul-prozedur/StructureDefinition/Procedure
 //Terminologien
