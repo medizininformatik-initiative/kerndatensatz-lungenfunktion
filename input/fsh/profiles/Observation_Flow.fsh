@@ -40,9 +40,9 @@ Description: "Dieses Beobachtung beschreibt eine Flussmessung."
     sct 0..1 and
     loinc 0..1
 * code.coding[loinc] ^patternCoding.system = "$loinc"
-* code.coding[loinc].code from MII_VS_Lufu_LNC (required)
+* code.coding[loinc].code from MII_VS_Lufu_LNC_Observable (required)
 * code.coding[sct] ^patternCoding.system = "$SCT"
-* code.coding[sct].code from MII_VS_Lufu_SCT (required)
+* code.coding[sct].code from MII_VS_Lufu_SCT_Observable (required)
 * code.coding.system 1.. MS
 * code.coding.code 1.. MS
 * code.coding.display MS
