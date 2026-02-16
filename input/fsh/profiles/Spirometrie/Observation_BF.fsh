@@ -33,7 +33,6 @@ Description: "Dieses Profil beschreibt die Messung der Atemfrequenz."
 * code MS
 * code ^short = "Code"
 * code ^definition = "Ein Code für die zu befundende Beobachtung"
-* code.coding[loinc] MS
 * code.coding[snomed] = $SCT-version#271625008 "Rate of spontaneous respiration (observable entity)"
 * code.coding.system 1.. MS
 * code.coding.code 1.. MS
