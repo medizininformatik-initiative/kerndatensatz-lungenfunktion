@@ -410,8 +410,7 @@
       {
         "id": "Observation.code.coding:loinc",
         "path": "Observation.code.coding",
-        "sliceName": "loinc",
-        "mustSupport": true
+        "sliceName": "loinc"
       },
       {
         "id": "Observation.code.coding:loinc.system",

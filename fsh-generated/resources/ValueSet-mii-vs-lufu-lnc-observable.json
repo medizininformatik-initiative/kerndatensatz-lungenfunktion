@@ -1,11 +1,11 @@
 {
   "resourceType": "ValueSet",
   "status": "active",
-  "name": "MII_VS_Lufu_LNC",
-  "id": "mii-vs-lufu-spirometry-lnc",
-  "title": "MII VS Lufu SCT",
+  "name": "MII_VS_Lufu_LNC_Observable",
+  "id": "mii-vs-lufu-lnc-observable",
+  "title": "MII VS Lufu SCT Observable",
   "description": "Import the ValueSet for lungfunction",
-  "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/ValueSet/mii-vs-lufu-spirometry-lnc",
+  "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/ValueSet/mii-vs-lufu-lnc-observable",
   "publisher": "Medizininformatik Initiative",
   "contact": [
     {

@@ -120,6 +120,21 @@
         "patternString": "Exspiratory vital capacity (observable entity)"
       },
       {
+        "id": "Observation.code.coding:loinc",
+        "path": "Observation.code.coding",
+        "sliceName": "loinc"
+      },
+      {
+        "id": "Observation.code.coding:loinc.code",
+        "path": "Observation.code.coding.code",
+        "patternCode": "19866-3"
+      },
+      {
+        "id": "Observation.code.coding:loinc.display",
+        "path": "Observation.code.coding.display",
+        "patternString": "VC Vol Respiratory Spirometry"
+      },
+      {
         "id": "Observation.component:predicted",
         "path": "Observation.component",
         "sliceName": "predicted"

@@ -120,6 +120,21 @@
         "patternString": "Inspiratory capacity (observable entity)"
       },
       {
+        "id": "Observation.code.coding:loinc",
+        "path": "Observation.code.coding",
+        "sliceName": "loinc"
+      },
+      {
+        "id": "Observation.code.coding:loinc.code",
+        "path": "Observation.code.coding.code",
+        "patternCode": "19852-3"
+      },
+      {
+        "id": "Observation.code.coding:loinc.display",
+        "path": "Observation.code.coding.display",
+        "patternString": "IC Spirometry"
+      },
+      {
         "id": "Observation.component:predicted",
         "path": "Observation.component",
         "sliceName": "predicted"
@@ -130,9 +145,9 @@
         "patternCodeableConcept": {
           "coding": [
             {
-              "code": "TODO",
-              "system": "http://snomed.info/sct",
-              "version": "http://snomed.info/sct/900000000000207008/version/20240701"
+              "code": "19855-6",
+              "system": "http://loinc.org",
+              "display": "IC meas/pred Spirometry"
             }
           ]
         }
