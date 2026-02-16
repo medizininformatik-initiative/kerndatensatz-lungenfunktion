@@ -1,6 +1,6 @@
-ValueSet: MII_VS_Lufu_LNC
-Id: mii-vs-lufu-spirometry-lnc
-Title: "MII VS Lufu SCT"
+ValueSet: MII_VS_Lufu_LNC_Observable
+Id: mii-vs-lufu-lnc-observable
+Title: "MII VS Lufu SCT Observable"
 Description: "Import the ValueSet for lungfunction"
 * insert Publisher
 * insert PR_CS_VS_Version
