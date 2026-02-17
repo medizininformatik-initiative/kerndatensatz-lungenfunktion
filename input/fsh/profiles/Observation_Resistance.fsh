@@ -1,13 +1,13 @@
 //EXAMPLE Profile
 //Head
-Profile: MII_PR_Lungenfunktion_Resistence
+Profile: MII_PR_Lungenfunktion_Widerstand
 Parent: Observation
-Id: mii-pr-lungenfunktion-resistence
-Title: "MII PR Lungenfunktion Resistence"
-Description: "Dieses Beobachtung beschreibt eine Wiederstandsmessung."
-* ^url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-resistence"
+Id: mii-pr-lungenfunktion-widerstand
+Title: "MII PR Lungenfunktion Widerstand"
+Description: "Dieses Beobachtung beschreibt eine Widerstandsmessung."
+* ^url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-widerstand"
 //Translation Meta
-* insert Translation(^name, en-US, MII_PR_Lungenfunktion_Resistence)
+* insert Translation(^name, en-US, MII_PR_Lungfunction_Resistence)
 * insert Translation(^title, en-US, MII PR Lungfunction Resistence)
 * insert Translation(^description, en-US, The profile describes a observation for testing of lungfunction.)
 //Meta
@@ -58,11 +58,11 @@ Description: "Dieses Beobachtung beschreibt eine Wiederstandsmessung."
 * value[x] only Quantity
 * valueQuantity.value MS
 * valueQuantity.unit MS
-* valueQuantity.unit = "L"
+* valueQuantity.unit = "kPa/(L/s)"
 * valueQuantity.system MS
 * valueQuantity.system = $ucum
 * valueQuantity.code MS
-* valueQuantity.code = $ucum#L
+* valueQuantity.code = $ucum#kPa/(L/s)
 * interpretation MS
 * interpretation ^short = "Interpretation"
 * interpretation ^definition = "Interpretation des Messergebnisses"

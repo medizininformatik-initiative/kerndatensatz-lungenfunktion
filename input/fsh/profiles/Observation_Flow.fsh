@@ -7,8 +7,8 @@ Title: "MII PR Lungenfunktion Fluss"
 Description: "Dieses Beobachtung beschreibt eine Flussmessung."
 * ^url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-fluss"
 //Translation Meta
-* insert Translation(^name, en-US, MII_PR_Lungfunction_Fluss)
-* insert Translation(^title, en-US, MII PR Lungfunction Fluss)
+* insert Translation(^name, en-US, MII_PR_Lungfunction_Flow)
+* insert Translation(^title, en-US, MII PR Lungfunction Flow)
 * insert Translation(^description, en-US, The profile describes a observation for testing of lungfunction.)
 //Meta
 * insert PR_CS_VS_Version

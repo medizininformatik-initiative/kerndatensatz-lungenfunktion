@@ -1,14 +1,14 @@
 //EXAMPLE Profile
 //Head
-Profile: MII_PR_Lungenfunktion_Viscosity
+Profile: MII_PR_Lungenfunktion_Viskositaet
 Parent: Observation
-Id: mii-pr-lungenfunktion-viscosity
+Id: mii-pr-lungenfunktion-viskositaet
 Title: "MII PR Lungenfunktion Fluss"
 Description: "Dieses Beobachtung beschreibt eine Flussmessung."
-* ^url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-viscosity"
+* ^url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-viskositaet"
 //Translation Meta
-* insert Translation(^name, en-US, MII_PR_Lungfunction_Fluss)
-* insert Translation(^title, en-US, MII PR Lungfunction Fluss)
+* insert Translation(^name, en-US, MII_PR_Lungfunction_Viscosity)
+* insert Translation(^title, en-US, MII PR Lungfunction Viscosity)
 * insert Translation(^description, en-US, The profile describes a observation for testing of lungfunction.)
 //Meta
 * insert PR_CS_VS_Version
@@ -58,11 +58,11 @@ Description: "Dieses Beobachtung beschreibt eine Flussmessung."
 * value[x] only Quantity
 * valueQuantity.value MS
 * valueQuantity.unit MS
-* valueQuantity.unit = "L"
+* valueQuantity.unit = "kPa*s"
 * valueQuantity.system MS
 * valueQuantity.system = $ucum
 * valueQuantity.code MS
-* valueQuantity.code = $ucum#L
+* valueQuantity.code = $ucum#kPa.s
 * interpretation MS
 * interpretation ^short = "Interpretation"
 * interpretation ^definition = "Interpretation des Messergebnisses"

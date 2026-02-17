@@ -1,14 +1,14 @@
 //EXAMPLE Profile
 //Head
-Profile: MII_PR_Lungenfunktion
+Profile: MII_PR_Lungenfunktion_Befund
 Parent: DiagnosticReport
-Id: mii-pr-lungenfunktion
+Id: mii-pr-lungenfunktion-befund
 Title: "MII PR Lungenfunktion Template"
 Description: "Diese Ressource beschreibt einen Befunde eines Lungenfunktionstest"
-* ^url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion"
+* ^url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-befund"
 //Translation Meta
-* insert Translation(^name, en-US, MII_PR_Lungfunction)
-* insert Translation(^title, en-US, MII PR Lungfunction)
+* insert Translation(^name, en-US, MII_PR_Lungfunction_Report)
+* insert Translation(^title, en-US, MII PR Lungfunction Report)
 * insert Translation(^description, en-US, The profile describes a diagnostic report for a lung functiontesting.)
 //Meta
 * insert PR_CS_VS_Version
