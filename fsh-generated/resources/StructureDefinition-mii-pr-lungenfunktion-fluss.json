@@ -29,7 +29,7 @@
           },
           {
             "url": "content",
-            "valueString": "MII_PR_Lungfunction_Fluss"
+            "valueString": "MII_PR_Lungfunction_Flow"
           }
         ]
       }
@@ -47,7 +47,7 @@
           },
           {
             "url": "content",
-            "valueString": "MII PR Lungfunction Fluss"
+            "valueString": "MII PR Lungfunction Flow"
           }
         ]
       }

@@ -1,6 +1,6 @@
 {
   "resourceType": "StructureDefinition",
-  "id": "mii-pr-lungenfunktion-viscosity",
+  "id": "mii-pr-lungenfunktion-viskositaet",
   "extension": [
     {
       "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-ex-meta-license-codeable",
@@ -15,9 +15,9 @@
       }
     }
   ],
-  "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-viscosity",
+  "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-viskositaet",
   "version": "2025.0.0",
-  "name": "MII_PR_Lungenfunktion_Viscosity",
+  "name": "MII_PR_Lungenfunktion_Viskositaet",
   "_name": {
     "extension": [
       {
@@ -29,7 +29,7 @@
           },
           {
             "url": "content",
-            "valueString": "MII_PR_Lungfunction_Fluss"
+            "valueString": "MII_PR_Lungfunction_Viscosity"
           }
         ]
       }
@@ -47,7 +47,7 @@
           },
           {
             "url": "content",
-            "valueString": "MII PR Lungfunction Fluss"
+            "valueString": "MII PR Lungfunction Viscosity"
           }
         ]
       }
@@ -663,7 +663,7 @@
       {
         "id": "Observation.value[x].unit",
         "path": "Observation.value[x].unit",
-        "patternString": "L",
+        "patternString": "kPa*s",
         "mustSupport": true
       },
       {
@@ -675,7 +675,7 @@
       {
         "id": "Observation.value[x].code",
         "path": "Observation.value[x].code",
-        "patternCode": "L",
+        "patternCode": "kPa.s",
         "mustSupport": true
       },
       {

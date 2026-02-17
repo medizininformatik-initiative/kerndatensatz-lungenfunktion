@@ -88,7 +88,7 @@
   "kind": "resource",
   "abstract": false,
   "type": "DiagnosticReport",
-  "baseDefinition": "https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion",
+  "baseDefinition": "https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-befund",
   "derivation": "constraint",
   "differential": {
     "element": [
@@ -363,7 +363,8 @@
               "https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-fev1-vc"
             ]
           }
-        ]
+        ],
+        "mustSupport": true
       }
     ]
   }

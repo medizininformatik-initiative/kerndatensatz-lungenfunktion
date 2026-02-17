@@ -169,8 +169,8 @@
             "system": "http://snomed.info/sct"
           }
         ],
-        "short": "VC IN",
-        "definition": "Forcierte inspiratorische Vitalkapazität",
+        "short": "IVC",
+        "definition": "inspiratorische Vitalkapazität",
         "min": 0,
         "max": "1",
         "type": [
@@ -192,7 +192,7 @@
           }
         ],
         "short": "FVC",
-        "definition": "Forcierte Vitalkapazität (FVC)",
+        "definition": "Forcierte Vitalkapazität",
         "min": 0,
         "max": "1",
         "type": [
@@ -205,10 +205,10 @@
         ]
       },
       {
-        "id": "Lungenfunktion.Spirometrie.Spiromeriewerte.VCMAX",
-        "path": "Lungenfunktion.Spirometrie.Spiromeriewerte.VCMAX",
-        "short": "VC max",
-        "definition": "Maximale Vitalkapazität (VC max)",
+        "id": "Lungenfunktion.Spirometrie.Spiromeriewerte.EVC",
+        "path": "Lungenfunktion.Spirometrie.Spiromeriewerte.EVC",
+        "short": "EVC",
+        "definition": "inspiratorische Vitalkapazität",
         "min": 0,
         "max": "1",
         "type": [
@@ -230,7 +230,7 @@
           }
         ],
         "short": "IC",
-        "definition": "Inspirationskapazität (IC)",
+        "definition": "Inspirationskapazität",
         "min": 0,
         "max": "1",
         "type": [
@@ -252,7 +252,7 @@
           }
         ],
         "short": "FEV1",
-        "definition": "Forcierte Exspirationsvolumen bei 1 Sekunde (FEV1)",
+        "definition": "Forcierte Exspirationsvolumen bei 1 Sekunde",
         "min": 0,
         "max": "1",
         "type": [
@@ -274,7 +274,7 @@
           }
         ],
         "short": "FIV1",
-        "definition": "Forcierte Inspirationsvolumen bei 1 Sekunde (FIV1)",
+        "definition": "Forcierte Inspirationsvolumen bei 1 Sekunde",
         "min": 0,
         "max": "1",
         "type": [
@@ -296,7 +296,7 @@
           }
         ],
         "short": "ERV",
-        "definition": "exspiratorische Reservevolumen (ERV)",
+        "definition": "exspiratorisches Reservevolumen",
         "min": 0,
         "max": "1",
         "type": [
@@ -318,7 +318,7 @@
           }
         ],
         "short": "IRV",
-        "definition": "inspiratorische Reservevolumen (IRV)",
+        "definition": "inspiratorisches Reservevolumen",
         "min": 0,
         "max": "1",
         "type": [
@@ -340,7 +340,7 @@
           }
         ],
         "short": "PEF",
-        "definition": "Maximale exspiratorische Flussrate (Peak Expiratory Flow - PEF)",
+        "definition": "Maximale exspiratorische Spitzenfluss",
         "min": 0,
         "max": "1",
         "type": [
@@ -362,7 +362,7 @@
           }
         ],
         "short": "MEF25",
-        "definition": "Maximaler exspiratorischer Fluss bei einem Restvolumen von 25 % der ausgeatmeten forcierten Vitalkapazität (FVC)",
+        "definition": "Maximaler exspiratorischer Fluss bei einem Restvolumen von 25 % der ausgeatmeten forcierten Vitalkapazität",
         "min": 0,
         "max": "1",
         "type": [
@@ -384,7 +384,7 @@
           }
         ],
         "short": "MEF50",
-        "definition": "Maximaler exspiratorischer Fluss bei einem Restvolumen von 50 % der ausgeatmeten forcierten Vitalkapazität (FVC)",
+        "definition": "Maximaler exspiratorischer Fluss bei einem Restvolumen von 50 % der ausgeatmeten forcierten Vitalkapazität",
         "min": 0,
         "max": "1",
         "type": [
@@ -406,7 +406,7 @@
           }
         ],
         "short": "MEF75",
-        "definition": "Maximaler exspiratorischer Fluss bei einem Restvolumen von 75 % der ausgeatmeten forcierten Vitalkapazität (FVC)",
+        "definition": "Maximaler exspiratorischer Fluss bei einem Restvolumen von 75 % der ausgeatmeten forcierten Vitalkapazität",
         "min": 0,
         "max": "1",
         "type": [
@@ -459,8 +459,8 @@
       {
         "id": "Lungenfunktion.Spirometrie.Spiromeriewerte.FEV1IVC",
         "path": "Lungenfunktion.Spirometrie.Spiromeriewerte.FEV1IVC",
-        "short": "FEV1/IVC Verhältnis",
-        "definition": "Verhältnis von „Forciertes Exspirationsvolumen in 1 Sekunde (FEV1)“ zu inspiratorische Vitalkapazität (IVC)",
+        "short": "FEV1/VC Verhältnis",
+        "definition": "Verhältnis von Forciertes Exspirationsvolumen in 1 Sekunde zur Vitalkapazität",
         "min": 0,
         "max": "1",
         "type": [
@@ -481,24 +481,8 @@
             "system": "http://snomed.info/sct"
           }
         ],
-        "short": "FEV1/FVC Ratio",
-        "definition": "Verhältnis von „Forciertes Exspirationsvolumen in 1 Sekunde (FEV1)“ zu  „Forcierter Vitalkapazität (FVC)",
-        "min": 0,
-        "max": "1",
-        "type": [
-          {
-            "code": "Quantity",
-            "profile": [
-              "http://hl7.org/fhir/StructureDefinition/SimpleQuantity"
-            ]
-          }
-        ]
-      },
-      {
-        "id": "Lungenfunktion.Spirometrie.Spiromeriewerte.FEV1VCMAX",
-        "path": "Lungenfunktion.Spirometrie.Spiromeriewerte.FEV1VCMAX",
-        "short": "FEV1/VC max Ratio",
-        "definition": "Verhältnis von Forcierte Exspirationsvolumen bei 1 Sekunde (FEV1) zu Maximale Vitalkapazität (VC max)",
+        "short": "FEV1/FVC Verhältnis",
+        "definition": "Verhältnis von Forciertes Exspirationsvolumen in 1 Sekunde zu  Forcierter Vitalkapazität",
         "min": 0,
         "max": "1",
         "type": [
@@ -515,6 +499,186 @@
         "path": "Lungenfunktion.Spirometrie.Spiromeriewerte.BF",
         "short": "Atemfrequenz",
         "definition": "Messung der Atemfrequenz",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Quantity",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/SimpleQuantity"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Lungenfunktion.Bodyplethysmographie",
+        "path": "Lungenfunktion.Bodyplethysmographie",
+        "short": "Bodyplethysmographie",
+        "definition": "Lungenfunktionstests, der in einer geschlossen Box durchgeführt wird.",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "Lungenfunktion.Bodyplethysmographie.Befund",
+        "path": "Lungenfunktion.Bodyplethysmographie.Befund",
+        "short": "Befund",
+        "definition": "Bericht der Bodyplethysmographieuntersuchung",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "Lungenfunktion.Bodyplethysmographie.Prozedure",
+        "path": "Lungenfunktion.Bodyplethysmographie.Prozedure",
+        "short": "Prozedur",
+        "definition": "Prozedur zur Bodyplethysmographieuntersuchung",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "Lungenfunktion.Bodyplethysmographie.Bodyplethysmographiewerte",
+        "path": "Lungenfunktion.Bodyplethysmographie.Bodyplethysmographiewerte",
+        "short": "Bodyplethysmographiewerte",
+        "definition": "Werte einer Bodyplethysmographieuntersuchung ausgestaltet als Observation",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "Lungenfunktion.Bodyplethysmographie.Bodyplethysmographiewerte.FRC",
+        "path": "Lungenfunktion.Bodyplethysmographie.Bodyplethysmographiewerte.FRC",
+        "short": "FRC",
+        "definition": "funktionelle Residualkapazität",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Quantity",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/SimpleQuantity"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Lungenfunktion.Bodyplethysmographie.Bodyplethysmographiewerte.Rtot",
+        "path": "Lungenfunktion.Bodyplethysmographie.Bodyplethysmographiewerte.Rtot",
+        "short": "R tot",
+        "definition": "totaler Atemwegswiderstand",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Quantity",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/SimpleQuantity"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Lungenfunktion.Bodyplethysmographie.Bodyplethysmographiewerte.sGtot",
+        "path": "Lungenfunktion.Bodyplethysmographie.Bodyplethysmographiewerte.sGtot",
+        "short": "sG tot",
+        "definition": "totale, spezifische Atemwegsleitfähigkeit",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Quantity",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/SimpleQuantity"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Lungenfunktion.Bodyplethysmographie.Bodyplethysmographiewerte.sRtot",
+        "path": "Lungenfunktion.Bodyplethysmographie.Bodyplethysmographiewerte.sRtot",
+        "short": "sR tot",
+        "definition": "totaler, spezifischer Atemwegswiderstand",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Quantity",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/SimpleQuantity"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Lungenfunktion.Bodyplethysmographie.Bodyplethysmographiewerte.sReff",
+        "path": "Lungenfunktion.Bodyplethysmographie.Bodyplethysmographiewerte.sReff",
+        "short": "sR eff",
+        "definition": "effektiver, spezifischer Atemwegswiderstand",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Quantity",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/SimpleQuantity"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Lungenfunktion.Bodyplethysmographie.Bodyplethysmographiewerte.RV",
+        "path": "Lungenfunktion.Bodyplethysmographie.Bodyplethysmographiewerte.RV",
+        "short": "RV",
+        "definition": "Residualvolumen",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Quantity",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/SimpleQuantity"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Lungenfunktion.Bodyplethysmographie.Bodyplethysmographiewerte.TLC",
+        "path": "Lungenfunktion.Bodyplethysmographie.Bodyplethysmographiewerte.TLC",
+        "short": "TLC",
+        "definition": "totale Lungenkapazität",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Quantity",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/SimpleQuantity"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Lungenfunktion.Bodyplethysmographie.Bodyplethysmographiewerte.RVTLC",
+        "path": "Lungenfunktion.Bodyplethysmographie.Bodyplethysmographiewerte.RVTLC",
+        "short": "RV/TLC Verhältnis",
+        "definition": "prozentuale Anteil des Residualvolumens an der Totalen Lungenkapazität.",
         "min": 0,
         "max": "1",
         "type": [
@@ -1280,32 +1444,8 @@
         ]
       },
       {
-        "id": "Lungenfunktion.Bodyplethysmographie",
-        "path": "Lungenfunktion.Bodyplethysmographie",
-        "min": 0,
-        "max": "1",
-        "type": [
-          {
-            "code": "BackboneElement"
-          }
-        ]
-      },
-      {
-        "id": "Lungenfunktion.Bodyplethysmographie.Befund",
-        "path": "Lungenfunktion.Bodyplethysmographie.Befund",
-        "short": "Befund",
-        "definition": "Bericht der Bodyplethysmographieuntersuchung",
-        "min": 1,
-        "max": "1",
-        "type": [
-          {
-            "code": "BackboneElement"
-          }
-        ]
-      },
-      {
-        "id": "Lungenfunktion.Bodyplethysmographie.Atemfrequenz",
-        "path": "Lungenfunktion.Bodyplethysmographie.Atemfrequenz",
+        "id": "Lungenfunktion.Diffusionskapazitaet.Atemfrequenz",
+        "path": "Lungenfunktion.Diffusionskapazitaet.Atemfrequenz",
         "short": "Atemfrequenz",
         "definition": "Messung der Atemfrequenz",
         "min": 1,
@@ -1317,8 +1457,8 @@
         ]
       },
       {
-        "id": "Lungenfunktion.Bodyplethysmographie.Atemfrequenz.Code",
-        "path": "Lungenfunktion.Bodyplethysmographie.Atemfrequenz.Code",
+        "id": "Lungenfunktion.Diffusionskapazitaet.Atemfrequenz.Code",
+        "path": "Lungenfunktion.Diffusionskapazitaet.Atemfrequenz.Code",
         "min": 1,
         "max": "1",
         "type": [
@@ -1328,8 +1468,8 @@
         ]
       },
       {
-        "id": "Lungenfunktion.Bodyplethysmographie.Atemfrequenz.Wert",
-        "path": "Lungenfunktion.Bodyplethysmographie.Atemfrequenz.Wert",
+        "id": "Lungenfunktion.Diffusionskapazitaet.Atemfrequenz.Wert",
+        "path": "Lungenfunktion.Diffusionskapazitaet.Atemfrequenz.Wert",
         "min": 1,
         "max": "1",
         "type": [
@@ -1339,8 +1479,8 @@
         ]
       },
       {
-        "id": "Lungenfunktion.Bodyplethysmographie.Volumen",
-        "path": "Lungenfunktion.Bodyplethysmographie.Volumen",
+        "id": "Lungenfunktion.Diffusionskapazitaet.Volumen",
+        "path": "Lungenfunktion.Diffusionskapazitaet.Volumen",
         "short": "Volumen",
         "definition": "Testergebnis wird als gemessenes Volumen oder berechnete Kapazität dargestellt.",
         "min": 1,
@@ -1352,8 +1492,8 @@
         ]
       },
       {
-        "id": "Lungenfunktion.Bodyplethysmographie.Volumen.Ergebnis",
-        "path": "Lungenfunktion.Bodyplethysmographie.Volumen.Ergebnis",
+        "id": "Lungenfunktion.Diffusionskapazitaet.Volumen.Ergebnis",
+        "path": "Lungenfunktion.Diffusionskapazitaet.Volumen.Ergebnis",
         "short": "Ergebnis",
         "definition": "Gemessenes Volumen",
         "min": 0,
@@ -1365,8 +1505,8 @@
         ]
       },
       {
-        "id": "Lungenfunktion.Bodyplethysmographie.Volumen.VorhergesagtesErgebnis",
-        "path": "Lungenfunktion.Bodyplethysmographie.Volumen.VorhergesagtesErgebnis",
+        "id": "Lungenfunktion.Diffusionskapazitaet.Volumen.VorhergesagtesErgebnis",
+        "path": "Lungenfunktion.Diffusionskapazitaet.Volumen.VorhergesagtesErgebnis",
         "short": "Vorhergesagtes Ergebnis",
         "definition": "Vorhergesagtes Volumen",
         "min": 0,
@@ -1378,8 +1518,8 @@
         ]
       },
       {
-        "id": "Lungenfunktion.Bodyplethysmographie.Volumen.GemessenesVorhergesagtesVerhaeltnis",
-        "path": "Lungenfunktion.Bodyplethysmographie.Volumen.GemessenesVorhergesagtesVerhaeltnis",
+        "id": "Lungenfunktion.Diffusionskapazitaet.Volumen.GemessenesVorhergesagtesVerhaeltnis",
+        "path": "Lungenfunktion.Diffusionskapazitaet.Volumen.GemessenesVorhergesagtesVerhaeltnis",
         "short": "Gemessenes/vorhergesagtes Verhältnis",
         "definition": "Verhältnis der gemessenen zu den vorhergesagten Testergebnissen",
         "min": 0,
@@ -1391,8 +1531,8 @@
         ]
       },
       {
-        "id": "Lungenfunktion.Bodyplethysmographie.Volumen.Werte",
-        "path": "Lungenfunktion.Bodyplethysmographie.Volumen.Werte",
+        "id": "Lungenfunktion.Diffusionskapazitaet.Volumen.Werte",
+        "path": "Lungenfunktion.Diffusionskapazitaet.Volumen.Werte",
         "min": 1,
         "max": "1",
         "type": [
@@ -1402,8 +1542,8 @@
         ]
       },
       {
-        "id": "Lungenfunktion.Bodyplethysmographie.Volumen.Werte.TLC",
-        "path": "Lungenfunktion.Bodyplethysmographie.Volumen.Werte.TLC",
+        "id": "Lungenfunktion.Diffusionskapazitaet.Volumen.Werte.TLC",
+        "path": "Lungenfunktion.Diffusionskapazitaet.Volumen.Werte.TLC",
         "short": "TLC",
         "definition": "Totale Lungenkapazität",
         "min": 0,
@@ -1415,8 +1555,8 @@
         ]
       },
       {
-        "id": "Lungenfunktion.Bodyplethysmographie.Volumen.Werte.RV",
-        "path": "Lungenfunktion.Bodyplethysmographie.Volumen.Werte.RV",
+        "id": "Lungenfunktion.Diffusionskapazitaet.Volumen.Werte.RV",
+        "path": "Lungenfunktion.Diffusionskapazitaet.Volumen.Werte.RV",
         "short": "RV",
         "definition": "Residualvolumen",
         "min": 0,
@@ -1428,8 +1568,8 @@
         ]
       },
       {
-        "id": "Lungenfunktion.Bodyplethysmographie.Volumen.Werte.FRC",
-        "path": "Lungenfunktion.Bodyplethysmographie.Volumen.Werte.FRC",
+        "id": "Lungenfunktion.Diffusionskapazitaet.Volumen.Werte.FRC",
+        "path": "Lungenfunktion.Diffusionskapazitaet.Volumen.Werte.FRC",
         "short": "FRC",
         "definition": "Funktionelle Residualkapazität",
         "min": 0,
@@ -1441,8 +1581,8 @@
         ]
       },
       {
-        "id": "Lungenfunktion.Bodyplethysmographie.Volumen.Werte.TGV",
-        "path": "Lungenfunktion.Bodyplethysmographie.Volumen.Werte.TGV",
+        "id": "Lungenfunktion.Diffusionskapazitaet.Volumen.Werte.TGV",
+        "path": "Lungenfunktion.Diffusionskapazitaet.Volumen.Werte.TGV",
         "short": "TGV",
         "definition": "Thorakales Gasvolumen",
         "min": 0,
@@ -1454,8 +1594,8 @@
         ]
       },
       {
-        "id": "Lungenfunktion.Bodyplethysmographie.Volumen.Werte.ITGV",
-        "path": "Lungenfunktion.Bodyplethysmographie.Volumen.Werte.ITGV",
+        "id": "Lungenfunktion.Diffusionskapazitaet.Volumen.Werte.ITGV",
+        "path": "Lungenfunktion.Diffusionskapazitaet.Volumen.Werte.ITGV",
         "short": "ITGV",
         "definition": "Intrathorakales Gasvolumen",
         "min": 0,
@@ -1467,8 +1607,8 @@
         ]
       },
       {
-        "id": "Lungenfunktion.Bodyplethysmographie.Atemwegswiderstand",
-        "path": "Lungenfunktion.Bodyplethysmographie.Atemwegswiderstand",
+        "id": "Lungenfunktion.Diffusionskapazitaet.Atemwegswiderstand",
+        "path": "Lungenfunktion.Diffusionskapazitaet.Atemwegswiderstand",
         "short": "Atemwegswiderstand",
         "definition": "Das Testergebnis wird als gemessener Atemwiderstand dargestellt.",
         "min": 1,
@@ -1480,8 +1620,8 @@
         ]
       },
       {
-        "id": "Lungenfunktion.Bodyplethysmographie.Atemwegswiderstand.Ergebnis",
-        "path": "Lungenfunktion.Bodyplethysmographie.Atemwegswiderstand.Ergebnis",
+        "id": "Lungenfunktion.Diffusionskapazitaet.Atemwegswiderstand.Ergebnis",
+        "path": "Lungenfunktion.Diffusionskapazitaet.Atemwegswiderstand.Ergebnis",
         "short": "Ergebnis",
         "definition": "Gemessener Atemwegswiderstand",
         "min": 0,
@@ -1493,8 +1633,8 @@
         ]
       },
       {
-        "id": "Lungenfunktion.Bodyplethysmographie.Atemwegswiderstand.VorhergesagtesErgebnis",
-        "path": "Lungenfunktion.Bodyplethysmographie.Atemwegswiderstand.VorhergesagtesErgebnis",
+        "id": "Lungenfunktion.Diffusionskapazitaet.Atemwegswiderstand.VorhergesagtesErgebnis",
+        "path": "Lungenfunktion.Diffusionskapazitaet.Atemwegswiderstand.VorhergesagtesErgebnis",
         "short": "Vorhergesagtes Ergebnis",
         "definition": "Vorhergesagtes Atemwegswiderstand",
         "min": 0,
@@ -1506,8 +1646,8 @@
         ]
       },
       {
-        "id": "Lungenfunktion.Bodyplethysmographie.Atemwegswiderstand.GemessenesVorhergesagtesVerhaeltnis",
-        "path": "Lungenfunktion.Bodyplethysmographie.Atemwegswiderstand.GemessenesVorhergesagtesVerhaeltnis",
+        "id": "Lungenfunktion.Diffusionskapazitaet.Atemwegswiderstand.GemessenesVorhergesagtesVerhaeltnis",
+        "path": "Lungenfunktion.Diffusionskapazitaet.Atemwegswiderstand.GemessenesVorhergesagtesVerhaeltnis",
         "short": "Gemessenes/vorhergesagtes Verhältnis",
         "definition": "Verhältnis der gemessenen zu den vorhergesagten Testergebnissen",
         "min": 0,
@@ -1519,8 +1659,8 @@
         ]
       },
       {
-        "id": "Lungenfunktion.Bodyplethysmographie.Atemwegswiderstand.Werte",
-        "path": "Lungenfunktion.Bodyplethysmographie.Atemwegswiderstand.Werte",
+        "id": "Lungenfunktion.Diffusionskapazitaet.Atemwegswiderstand.Werte",
+        "path": "Lungenfunktion.Diffusionskapazitaet.Atemwegswiderstand.Werte",
         "min": 1,
         "max": "1",
         "type": [
@@ -1530,8 +1670,8 @@
         ]
       },
       {
-        "id": "Lungenfunktion.Bodyplethysmographie.Atemwegswiderstand.Werte.Rtot",
-        "path": "Lungenfunktion.Bodyplethysmographie.Atemwegswiderstand.Werte.Rtot",
+        "id": "Lungenfunktion.Diffusionskapazitaet.Atemwegswiderstand.Werte.Rtot",
+        "path": "Lungenfunktion.Diffusionskapazitaet.Atemwegswiderstand.Werte.Rtot",
         "short": "RAWtot",
         "definition": "Totaler Atemwegswiderstand",
         "min": 0,
@@ -1543,8 +1683,8 @@
         ]
       },
       {
-        "id": "Lungenfunktion.Bodyplethysmographie.Atemwegswiderstand.Werte.sRtot",
-        "path": "Lungenfunktion.Bodyplethysmographie.Atemwegswiderstand.Werte.sRtot",
+        "id": "Lungenfunktion.Diffusionskapazitaet.Atemwegswiderstand.Werte.sRtot",
+        "path": "Lungenfunktion.Diffusionskapazitaet.Atemwegswiderstand.Werte.sRtot",
         "short": "sRAWtot",
         "definition": "Spezifischer totaler Atemwegswiderstand",
         "min": 0,
@@ -1556,8 +1696,8 @@
         ]
       },
       {
-        "id": "Lungenfunktion.Bodyplethysmographie.Atemwegswiderstand.Werte.sRess",
-        "path": "Lungenfunktion.Bodyplethysmographie.Atemwegswiderstand.Werte.sRess",
+        "id": "Lungenfunktion.Diffusionskapazitaet.Atemwegswiderstand.Werte.sRess",
+        "path": "Lungenfunktion.Diffusionskapazitaet.Atemwegswiderstand.Werte.sRess",
         "short": "sR_ess",
         "definition": "spezifischer effektiver Atemwegswiderstand",
         "min": 0,
@@ -1569,8 +1709,8 @@
         ]
       },
       {
-        "id": "Lungenfunktion.Bodyplethysmographie.Atemwegswiderstand.Werte.sGtot",
-        "path": "Lungenfunktion.Bodyplethysmographie.Atemwegswiderstand.Werte.sGtot",
+        "id": "Lungenfunktion.Diffusionskapazitaet.Atemwegswiderstand.Werte.sGtot",
+        "path": "Lungenfunktion.Diffusionskapazitaet.Atemwegswiderstand.Werte.sGtot",
         "min": 0,
         "max": "1",
         "type": [
@@ -1580,8 +1720,8 @@
         ]
       },
       {
-        "id": "Lungenfunktion.Bodyplethysmographie.Atemwegswiderstand.Werte.RAWex",
-        "path": "Lungenfunktion.Bodyplethysmographie.Atemwegswiderstand.Werte.RAWex",
+        "id": "Lungenfunktion.Diffusionskapazitaet.Atemwegswiderstand.Werte.RAWex",
+        "path": "Lungenfunktion.Diffusionskapazitaet.Atemwegswiderstand.Werte.RAWex",
         "short": "RAW-ex",
         "definition": "Exspiratorischer Atemwegswiderstand",
         "min": 0,
@@ -1593,8 +1733,8 @@
         ]
       },
       {
-        "id": "Lungenfunktion.Bodyplethysmographie.Ratio",
-        "path": "Lungenfunktion.Bodyplethysmographie.Ratio",
+        "id": "Lungenfunktion.Diffusionskapazitaet.Ratio",
+        "path": "Lungenfunktion.Diffusionskapazitaet.Ratio",
         "short": "Ratio",
         "definition": "Berechnetes Testergebnis ausgedrückt als Verhältnis.",
         "min": 1,
@@ -1606,8 +1746,8 @@
         ]
       },
       {
-        "id": "Lungenfunktion.Bodyplethysmographie.Ratio.Ergebnis",
-        "path": "Lungenfunktion.Bodyplethysmographie.Ratio.Ergebnis",
+        "id": "Lungenfunktion.Diffusionskapazitaet.Ratio.Ergebnis",
+        "path": "Lungenfunktion.Diffusionskapazitaet.Ratio.Ergebnis",
         "short": "Ergebnis",
         "definition": "Berechnetes Verhältnis",
         "min": 0,
@@ -1619,8 +1759,8 @@
         ]
       },
       {
-        "id": "Lungenfunktion.Bodyplethysmographie.Ratio.VorhergesagtesErgebnis",
-        "path": "Lungenfunktion.Bodyplethysmographie.Ratio.VorhergesagtesErgebnis",
+        "id": "Lungenfunktion.Diffusionskapazitaet.Ratio.VorhergesagtesErgebnis",
+        "path": "Lungenfunktion.Diffusionskapazitaet.Ratio.VorhergesagtesErgebnis",
         "short": "Vorhergesagtes Ergebnis",
         "definition": "Vorhergesagtes Verhältnis",
         "min": 0,
@@ -1632,8 +1772,8 @@
         ]
       },
       {
-        "id": "Lungenfunktion.Bodyplethysmographie.Ratio.Werte",
-        "path": "Lungenfunktion.Bodyplethysmographie.Ratio.Werte",
+        "id": "Lungenfunktion.Diffusionskapazitaet.Ratio.Werte",
+        "path": "Lungenfunktion.Diffusionskapazitaet.Ratio.Werte",
         "min": 1,
         "max": "1",
         "type": [
@@ -1643,8 +1783,8 @@
         ]
       },
       {
-        "id": "Lungenfunktion.Bodyplethysmographie.Ratio.Werte.RVTLC",
-        "path": "Lungenfunktion.Bodyplethysmographie.Ratio.Werte.RVTLC",
+        "id": "Lungenfunktion.Diffusionskapazitaet.Ratio.Werte.RVTLC",
+        "path": "Lungenfunktion.Diffusionskapazitaet.Ratio.Werte.RVTLC",
         "short": "RV/TLC-B",
         "definition": "Verhältnis von Residualvolumen zu totaler Lungenkapazität",
         "min": 0,

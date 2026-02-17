@@ -96,9 +96,9 @@
         "id": "Procedure.category.coding",
         "path": "Procedure.category.coding",
         "patternCoding": {
-          "code": "165197003",
+          "code": "23426006",
           "system": "http://snomed.info/sct",
-          "display": "Diagnostic assessment (procedure)"
+          "display": "Measurement of respiratory function (procedure)"
         }
       },
       {

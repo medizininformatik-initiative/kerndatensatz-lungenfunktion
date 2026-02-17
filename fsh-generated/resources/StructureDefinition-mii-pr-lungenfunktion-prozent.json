@@ -1,6 +1,6 @@
 {
   "resourceType": "StructureDefinition",
-  "id": "mii-pr-lungenfunktion-percent",
+  "id": "mii-pr-lungenfunktion-prozent",
   "extension": [
     {
       "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-ex-meta-license-codeable",
@@ -15,9 +15,9 @@
       }
     }
   ],
-  "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-percent",
+  "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-prozent",
   "version": "2025.0.0",
-  "name": "MII_PR_Lungenfunktion_Percent",
+  "name": "MII_PR_Lungenfunktion_Prozent",
   "_name": {
     "extension": [
       {
@@ -35,7 +35,7 @@
       }
     ]
   },
-  "title": "MII PR Lungenfunktion percent",
+  "title": "MII PR Lungenfunktion Prozent",
   "_title": {
     "extension": [
       {

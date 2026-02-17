@@ -1,6 +1,6 @@
 {
   "resourceType": "StructureDefinition",
-  "id": "mii-pr-lungenfunktion-pressure",
+  "id": "mii-pr-lungenfunktion-widerstand",
   "extension": [
     {
       "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-ex-meta-license-codeable",
@@ -15,9 +15,9 @@
       }
     }
   ],
-  "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-pressure",
+  "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-widerstand",
   "version": "2025.0.0",
-  "name": "MII_PR_Lungenfunktion_Pressure",
+  "name": "MII_PR_Lungenfunktion_Widerstand",
   "_name": {
     "extension": [
       {
@@ -29,13 +29,13 @@
           },
           {
             "url": "content",
-            "valueString": "MII_PR_Lungenfunktion_Pressure"
+            "valueString": "MII_PR_Lungfunction_Resistence"
           }
         ]
       }
     ]
   },
-  "title": "MII PR Lungenfunktion Fluss",
+  "title": "MII PR Lungenfunktion Widerstand",
   "_title": {
     "extension": [
       {
@@ -47,7 +47,7 @@
           },
           {
             "url": "content",
-            "valueString": "MII PR Lungenfunktion Pressure"
+            "valueString": "MII PR Lungfunction Resistence"
           }
         ]
       }
@@ -66,7 +66,7 @@
       ]
     }
   ],
-  "description": "Dieses Beobachtung beschreibt eine Flussmessung.",
+  "description": "Dieses Beobachtung beschreibt eine Widerstandsmessung.",
   "_description": {
     "extension": [
       {
@@ -663,7 +663,7 @@
       {
         "id": "Observation.value[x].unit",
         "path": "Observation.value[x].unit",
-        "patternString": "L",
+        "patternString": "kPa/(L/s)",
         "mustSupport": true
       },
       {
@@ -675,7 +675,7 @@
       {
         "id": "Observation.value[x].code",
         "path": "Observation.value[x].code",
-        "patternCode": "L",
+        "patternCode": "kPa/(L/s)",
         "mustSupport": true
       },
       {
