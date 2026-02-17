@@ -1,7 +1,7 @@
 //EXAMPLE Profile
 //Head
 Profile: MII_PR_Lungenfunktion_FEV1_VC
-Parent: MII_PR_Lungenfunktion_Percent
+Parent: MII_PR_Lungenfunktion_Prozent
 Id: mii-pr-lungenfunktion-fev1-vc
 Title: "MII PR Lungenfunktion FEV1 VC"
 Description: "Dieses Beobachtung beschreibt den prozentualen Anteil der maximalen Vitalkapzität am forcierten, exspiratorischen Einsekundenvolumen."

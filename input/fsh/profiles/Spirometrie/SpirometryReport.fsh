@@ -1,7 +1,7 @@
 //EXAMPLE Profile
 //Head
 Profile: MII_PR_Lungenfunktion_Spirometrie
-Parent: MII_PR_Lungenfunktion
+Parent: MII_PR_Lungenfunktion_Befund
 Id: mii-pr-lungenfunktion-spirometrie
 Title: "MII PR Lungenfunktion Spirometrie"
 Description: "Diese Ressource beschreibt einen Befunde der Spirometrie"
@@ -36,7 +36,7 @@ Description: "Diese Ressource beschreibt einen Befunde der Spirometrie"
     MEF50 0..1 MS and
     MEF75 0..1 MS and
     FEV1_FVC 0..1 MS and
-    FEV1_VC 0..1
+    FEV1_VC 0..1 MS
 * result[IVC] only Reference(MII_PR_Lungenfunktion_IVC)
 * result[EVC] only Reference(MII_PR_Lungenfunktion_EVC)
 * result[FVC] only Reference(MII_PR_Lungenfunktion_FVC)

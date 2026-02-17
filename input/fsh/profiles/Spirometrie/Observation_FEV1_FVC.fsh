@@ -1,7 +1,7 @@
 //EXAMPLE Profile
 //Head
 Profile: MII_PR_Lungenfunktion_FEV1_FVC
-Parent: MII_PR_Lungenfunktion_Percent
+Parent: MII_PR_Lungenfunktion_Prozent
 Id: mii-pr-lungenfunktion-fev1-fvc
 Title: "MII PR Lungenfunktion Tiffeneau(FEV1/FVC)"
 Description: "Dieses Profil beschreibt die Messung des Tiffeneau-Index."
