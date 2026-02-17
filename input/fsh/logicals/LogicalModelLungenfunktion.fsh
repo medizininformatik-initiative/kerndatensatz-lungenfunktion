@@ -26,41 +26,48 @@ Description: "MII LogicalModel Modul Lungenfunktion"
   * Befund 1..1 BackboneElement "Befund" "Bericht der Spirometrieuntersuchung"
   * Prozedure 1..1 BackboneElement "Prozedur" "Prozedur zur Spirometrieuntersuchung"
   * Spiromeriewerte 1..1 BackboneElement "Spirometriewerte" "Werte einer Spirometrieuntersuchung ausgestaltet als Observation"
-    * IVC 0..1 http://hl7.org/fhir/StructureDefinition/SimpleQuantity "VC IN" "Forcierte inspiratorische Vitalkapazität"
+    * IVC 0..1 http://hl7.org/fhir/StructureDefinition/SimpleQuantity "IVC" "inspiratorische Vitalkapazität"
       * ^code = $SCT#251913009
-    * FVC 0..1 http://hl7.org/fhir/StructureDefinition/SimpleQuantity "FVC" "Forcierte Vitalkapazität (FVC)"
+    * FVC 0..1 http://hl7.org/fhir/StructureDefinition/SimpleQuantity "FVC" "Forcierte Vitalkapazität"
       * ^code = $SCT#50834005
-    * VCMAX 0..1 http://hl7.org/fhir/StructureDefinition/SimpleQuantity "VC max" "Maximale Vitalkapazität (VC max)"
-    * IC 0..1 http://hl7.org/fhir/StructureDefinition/SimpleQuantity "IC" "Inspirationskapazität (IC)"
+    * EVC 0..1 http://hl7.org/fhir/StructureDefinition/SimpleQuantity "EVC" "inspiratorische Vitalkapazität"
+    * IC 0..1 http://hl7.org/fhir/StructureDefinition/SimpleQuantity "IC" "Inspirationskapazität"
       * ^code = $SCT#29533001
-    * FEV1 0..1 http://hl7.org/fhir/StructureDefinition/SimpleQuantity "FEV1" "Forcierte Exspirationsvolumen bei 1 Sekunde (FEV1)"
+    * FEV1 0..1 http://hl7.org/fhir/StructureDefinition/SimpleQuantity "FEV1" "Forcierte Exspirationsvolumen bei 1 Sekunde"
       * ^code = $SCT#59328004
-    * FIV1 0..1 http://hl7.org/fhir/StructureDefinition/SimpleQuantity "FIV1" "Forcierte Inspirationsvolumen bei 1 Sekunde (FIV1)"    
+    * FIV1 0..1 http://hl7.org/fhir/StructureDefinition/SimpleQuantity "FIV1" "Forcierte Inspirationsvolumen bei 1 Sekunde"    
       * ^code = $SCT#251912004
-    * ERV 0..1 http://hl7.org/fhir/StructureDefinition/SimpleQuantity "ERV" "exspiratorische Reservevolumen (ERV)"  
+    * ERV 0..1 http://hl7.org/fhir/StructureDefinition/SimpleQuantity "ERV" "exspiratorisches Reservevolumen"  
       * ^code = $SCT#55532004
-    * IRV 0..1 http://hl7.org/fhir/StructureDefinition/SimpleQuantity "IRV" "inspiratorische Reservevolumen (IRV)"
+    * IRV 0..1 http://hl7.org/fhir/StructureDefinition/SimpleQuantity "IRV" "inspiratorisches Reservevolumen"
       * ^code = $SCT#55562005
-    * PEF 0..1 http://hl7.org/fhir/StructureDefinition/SimpleQuantity "PEF" "Maximale exspiratorische Flussrate (Peak Expiratory Flow - PEF)"
+    * PEF 0..1 http://hl7.org/fhir/StructureDefinition/SimpleQuantity "PEF" "Maximale exspiratorische Spitzenfluss"
       * ^code = $SCT#18491006
-    * MEF25 0..1 http://hl7.org/fhir/StructureDefinition/SimpleQuantity "MEF25" "Maximaler exspiratorischer Fluss bei einem Restvolumen von 25 % der ausgeatmeten forcierten Vitalkapazität (FVC)"
+    * MEF25 0..1 http://hl7.org/fhir/StructureDefinition/SimpleQuantity "MEF25" "Maximaler exspiratorischer Fluss bei einem Restvolumen von 25 % der ausgeatmeten forcierten Vitalkapazität"
       * ^code = $SCT#251919008  
-    * MEF50 0..1 http://hl7.org/fhir/StructureDefinition/SimpleQuantity "MEF50" "Maximaler exspiratorischer Fluss bei einem Restvolumen von 50 % der ausgeatmeten forcierten Vitalkapazität (FVC)"
+    * MEF50 0..1 http://hl7.org/fhir/StructureDefinition/SimpleQuantity "MEF50" "Maximaler exspiratorischer Fluss bei einem Restvolumen von 50 % der ausgeatmeten forcierten Vitalkapazität"
       * ^code = $SCT#251920002
-    * MEF75 0..1 http://hl7.org/fhir/StructureDefinition/SimpleQuantity "MEF75" "Maximaler exspiratorischer Fluss bei einem Restvolumen von 75 % der ausgeatmeten forcierten Vitalkapazität (FVC)"
+    * MEF75 0..1 http://hl7.org/fhir/StructureDefinition/SimpleQuantity "MEF75" "Maximaler exspiratorischer Fluss bei einem Restvolumen von 75 % der ausgeatmeten forcierten Vitalkapazität"
       * ^code = $SCT#251921003
     * FEF2575 0..1 http://hl7.org/fhir/StructureDefinition/SimpleQuantity "FEF25–75%" "Mittlerer forcierter exspiratorischer Flow zwischen 25 % und 75 % der FVC"
       * ^code = $SCT#251932003
     * FEF2550 0..1 http://hl7.org/fhir/StructureDefinition/SimpleQuantity "FEF25–50%" "Mittlerer forcierter exspiratorischer Flow zwischen 25 % und 50 % der FVC"
-    * FEV1IVC 0..1 http://hl7.org/fhir/StructureDefinition/SimpleQuantity "FEV1/IVC Verhältnis" "Verhältnis von „Forciertes Exspirationsvolumen in 1 Sekunde (FEV1)“ zu inspiratorische Vitalkapazität (IVC)"
-    * FEV1FVC 0..1 http://hl7.org/fhir/StructureDefinition/SimpleQuantity "FEV1/FVC Ratio" "Verhältnis von „Forciertes Exspirationsvolumen in 1 Sekunde (FEV1)“ zu  „Forcierter Vitalkapazität (FVC)"
+    * FEV1IVC 0..1 http://hl7.org/fhir/StructureDefinition/SimpleQuantity "FEV1/VC Verhältnis" "Verhältnis von Forciertes Exspirationsvolumen in 1 Sekunde zur Vitalkapazität"
+    * FEV1FVC 0..1 http://hl7.org/fhir/StructureDefinition/SimpleQuantity "FEV1/FVC Verhältnis" "Verhältnis von Forciertes Exspirationsvolumen in 1 Sekunde zu  Forcierter Vitalkapazität"
       * ^code = $SCT#251944000
-    * FEV1VCMAX 0..1 http://hl7.org/fhir/StructureDefinition/SimpleQuantity "FEV1/VC max Ratio" "Verhältnis von Forcierte Exspirationsvolumen bei 1 Sekunde (FEV1) zu Maximale Vitalkapazität (VC max)"
     * BF 0..1 http://hl7.org/fhir/StructureDefinition/SimpleQuantity "Atemfrequenz" "Messung der Atemfrequenz"
-    
-
-
-
+* Bodyplethysmographie 0..1 BackboneElement "Bodyplethysmographie" "Lungenfunktionstests, der in einer geschlossen Box durchgeführt wird."
+  * Befund 1..1 BackboneElement "Befund" "Bericht der Bodyplethysmographieuntersuchung"
+  * Prozedure 1..1 BackboneElement "Prozedur" "Prozedur zur Bodyplethysmographieuntersuchung"
+  * Bodyplethysmographiewerte 1..1 BackboneElement "Bodyplethysmographiewerte" "Werte einer Bodyplethysmographieuntersuchung ausgestaltet als Observation"    
+    * FRC 0..1 http://hl7.org/fhir/StructureDefinition/SimpleQuantity "FRC" "funktionelle Residualkapazität"
+    * Rtot 0..1 http://hl7.org/fhir/StructureDefinition/SimpleQuantity "R tot" "totaler Atemwegswiderstand"
+    * sGtot 0..1 http://hl7.org/fhir/StructureDefinition/SimpleQuantity "sG tot" "totale, spezifische Atemwegsleitfähigkeit"
+    * sRtot 0..1 http://hl7.org/fhir/StructureDefinition/SimpleQuantity "sR tot" "totaler, spezifischer Atemwegswiderstand"
+    * sReff 0..1 http://hl7.org/fhir/StructureDefinition/SimpleQuantity "sR eff" "effektiver, spezifischer Atemwegswiderstand"
+    * RV 0..1 http://hl7.org/fhir/StructureDefinition/SimpleQuantity "RV" "Residualvolumen"
+    * TLC 0..1 http://hl7.org/fhir/StructureDefinition/SimpleQuantity "TLC" "totale Lungenkapazität"
+    * RVTLC 0..1 http://hl7.org/fhir/StructureDefinition/SimpleQuantity "RV/TLC Verhältnis" "prozentuale Anteil des Residualvolumens an der Totalen Lungenkapazität."
 * Provakationstest 0..1 BackboneElement "Provokationstest" "Bronchialer Provokationstest zur Prüfung der bronchialen Hyperreagibilität"
   * Durchfuehrungstyp 1..1 code "Durchführungstyp" "Art des Provokationstests (z. B. Methacholin-Test, Mannitol-Test, Belastungstest)"
   * Substanz 1..1 CodeableConcept "Provokationssubstanz" "Art des Provokationsreizes z. B. Methacholin, Mannitol, Belastung"
@@ -177,8 +184,7 @@ Description: "MII LogicalModel Modul Lungenfunktion"
 
 
 
-* Bodyplethysmographie 0..1 BackboneElement "" ""
-  * Befund 1..1 BackboneElement "Befund" "Bericht der Bodyplethysmographieuntersuchung"
+
   * Atemfrequenz 1..1 BackboneElement "Atemfrequenz" "Messung der Atemfrequenz"
     * Code 1..1 Coding "" ""
     * Wert 1..1 Quantity "" ""
