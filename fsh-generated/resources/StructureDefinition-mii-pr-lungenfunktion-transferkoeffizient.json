@@ -1,6 +1,6 @@
 {
   "resourceType": "StructureDefinition",
-  "id": "mii-pr-lungenfunktion-widerstand",
+  "id": "mii-pr-lungenfunktion-transferkoeffizient",
   "extension": [
     {
       "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-ex-meta-license-codeable",
@@ -15,9 +15,9 @@
       }
     }
   ],
-  "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-widerstand",
+  "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-transferkoeffizient",
   "version": "2025.0.0",
-  "name": "MII_PR_Lungenfunktion_Widerstand",
+  "name": "MII_PR_Lungenfunktion_Transferkoeffizient",
   "_name": {
     "extension": [
       {
@@ -29,13 +29,13 @@
           },
           {
             "url": "content",
-            "valueString": "MII_PR_Lungfunction_Resistence"
+            "valueString": "MII_PR_Lungfunction_Transfercoefficient"
           }
         ]
       }
     ]
   },
-  "title": "MII PR Lungenfunktion Widerstand",
+  "title": "MII PR Lungenfunktion Transferkoeffizient",
   "_title": {
     "extension": [
       {
@@ -47,7 +47,7 @@
           },
           {
             "url": "content",
-            "valueString": "MII PR Lungfunction Resistence"
+            "valueString": "MII PR Lungfunction Transfercoefficient"
           }
         ]
       }
@@ -66,7 +66,7 @@
       ]
     }
   ],
-  "description": "Dieses Beobachtung beschreibt eine Widerstandsmessung.",
+  "description": "Dieses Beobachtung beschreibt ein Transferkoeffizient.",
   "_description": {
     "extension": [
       {
@@ -704,7 +704,7 @@
       {
         "id": "Observation.value[x].unit",
         "path": "Observation.value[x].unit",
-        "patternString": "kPa/(L/s)",
+        "patternString": "mmol/(min*kPa*L)",
         "mustSupport": true
       },
       {
@@ -716,7 +716,7 @@
       {
         "id": "Observation.value[x].code",
         "path": "Observation.value[x].code",
-        "patternCode": "kPa/(L/s)",
+        "patternCode": "mmol/(min.kPa.L)",
         "mustSupport": true
       },
       {

@@ -1,6 +1,6 @@
 {
   "resourceType": "StructureDefinition",
-  "id": "mii-pr-lungenfunktion-dlco",
+  "id": "mii-pr-lungenfunktion-ivc-sb",
   "extension": [
     {
       "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-ex-meta-license-codeable",
@@ -15,9 +15,9 @@
       }
     }
   ],
-  "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-dlco",
+  "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-ivc-sb",
   "version": "2025.0.0",
-  "name": "MII_PR_Lungenfunktion_DLCO",
+  "name": "MII_PR_Lungenfunktion_IVC_SB",
   "_name": {
     "extension": [
       {
@@ -29,13 +29,13 @@
           },
           {
             "url": "content",
-            "valueString": "MII PR Lung function DLCO"
+            "valueString": "MII PR Lung function IVC_SB"
           }
         ]
       }
     ]
   },
-  "title": "MII PR Lungenfunktion DLCO",
+  "title": "MII PR Lungenfunktion VIN SB",
   "_title": {
     "extension": [
       {
@@ -47,7 +47,7 @@
           },
           {
             "url": "content",
-            "valueString": "MII PR Lungenfunktion DLCO"
+            "valueString": "MII PR Lung function IVC_SB"
           }
         ]
       }
@@ -66,7 +66,7 @@
       ]
     }
   ],
-  "description": "Dieses Profil beschreibt die Messung der Diffusionskapazität von Kohlenstoffmonoxid.",
+  "description": "Dieses Profil beschreibt die Messung des inspiratorischen Volumen im Single-Breath-Verfahren.",
   "_description": {
     "extension": [
       {
@@ -78,7 +78,7 @@
           },
           {
             "url": "content",
-            "valueString": "The profile describes the diffusion capacity of carbon monoxid."
+            "valueString": "The profile describes a observation for the inspiratory volume in single-breath-procedure."
           }
         ]
       }
@@ -88,7 +88,7 @@
   "kind": "resource",
   "abstract": false,
   "type": "Observation",
-  "baseDefinition": "https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-diffusionskapazitaet",
+  "baseDefinition": "https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-volumen",
   "derivation": "constraint",
   "differential": {
     "element": [
@@ -112,12 +112,12 @@
       {
         "id": "Observation.code.coding:sct.code",
         "path": "Observation.code.coding.code",
-        "patternCode": "1366665001"
+        "patternCode": "251913009"
       },
       {
         "id": "Observation.code.coding:sct.display",
         "path": "Observation.code.coding.display",
-        "patternString": "Single breath carbon monoxide diffusing capacity (observable entity)"
+        "patternString": "Inspiratory vital capacity (observable entity)"
       },
       {
         "id": "Observation.method",

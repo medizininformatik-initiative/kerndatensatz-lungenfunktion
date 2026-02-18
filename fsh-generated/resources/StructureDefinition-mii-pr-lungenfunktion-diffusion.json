@@ -88,305 +88,33 @@
   "kind": "resource",
   "abstract": false,
   "type": "DiagnosticReport",
-  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/DiagnosticReport",
+  "baseDefinition": "https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-befund",
   "derivation": "constraint",
   "differential": {
     "element": [
       {
-        "id": "DiagnosticReport.id",
-        "path": "DiagnosticReport.id",
-        "mustSupport": true
-      },
-      {
-        "id": "DiagnosticReport.meta",
-        "path": "DiagnosticReport.meta",
-        "mustSupport": true
-      },
-      {
-        "id": "DiagnosticReport.meta.source",
-        "path": "DiagnosticReport.meta.source",
-        "mustSupport": true
-      },
-      {
-        "id": "DiagnosticReport.meta.profile",
-        "path": "DiagnosticReport.meta.profile",
-        "mustSupport": true
-      },
-      {
-        "id": "DiagnosticReport.basedOn",
-        "path": "DiagnosticReport.basedOn",
-        "short": "Anforderung",
-        "_short": {
-          "extension": [
-            {
-              "url": "http://hl7.org/fhir/StructureDefinition/translation",
-              "extension": [
-                {
-                  "url": "lang",
-                  "valueCode": "de-DE"
-                },
-                {
-                  "url": "content",
-                  "valueString": "Anforderung"
-                }
-              ]
-            },
-            {
-              "url": "http://hl7.org/fhir/StructureDefinition/translation",
-              "extension": [
-                {
-                  "url": "lang",
-                  "valueCode": "en-US"
-                },
-                {
-                  "url": "content",
-                  "valueString": "request"
-                }
-              ]
-            }
-          ]
-        },
-        "definition": "Anforderung, die den Befundbericht ausgelöst hat",
-        "_definition": {
-          "extension": [
-            {
-              "url": "http://hl7.org/fhir/StructureDefinition/translation",
-              "extension": [
-                {
-                  "url": "lang",
-                  "valueCode": "de-DE"
-                },
-                {
-                  "url": "content",
-                  "valueString": "Anforderung, die den Befundbericht ausgelöst hat"
-                }
-              ]
-            },
-            {
-              "url": "http://hl7.org/fhir/StructureDefinition/translation",
-              "extension": [
-                {
-                  "url": "lang",
-                  "valueCode": "en-US"
-                },
-                {
-                  "url": "content",
-                  "valueString": "request, which triggered the report"
-                }
-              ]
-            }
-          ]
-        },
-        "mustSupport": true
-      },
-      {
-        "id": "DiagnosticReport.status",
-        "path": "DiagnosticReport.status",
-        "short": "Status",
-        "_short": {
-          "extension": [
-            {
-              "url": "http://hl7.org/fhir/StructureDefinition/translation",
-              "extension": [
-                {
-                  "url": "lang",
-                  "valueCode": "de-DE"
-                },
-                {
-                  "url": "content",
-                  "valueString": "Status"
-                }
-              ]
-            },
-            {
-              "url": "http://hl7.org/fhir/StructureDefinition/translation",
-              "extension": [
-                {
-                  "url": "lang",
-                  "valueCode": "en-US"
-                },
-                {
-                  "url": "content",
-                  "valueString": "status"
-                }
-              ]
-            }
-          ]
-        },
-        "definition": "angemeldet | unvollständig | vorläufig | endgültig | geändert | korrigiert | angefügt | abgebrochen | fehlerhafte Eingabe | unbekannt",
-        "_definition": {
-          "extension": [
-            {
-              "url": "http://hl7.org/fhir/StructureDefinition/translation",
-              "extension": [
-                {
-                  "url": "lang",
-                  "valueCode": "de-DE"
-                },
-                {
-                  "url": "content",
-                  "valueString": "angemeldet | unvollständig | vorläufig | endgültig | geändert | korrigiert | angefügt | abgebrochen | fehlerhafte Eingabe | unbekannt"
-                }
-              ]
-            },
-            {
-              "url": "http://hl7.org/fhir/StructureDefinition/translation",
-              "extension": [
-                {
-                  "url": "lang",
-                  "valueCode": "en-US"
-                },
-                {
-                  "url": "content",
-                  "valueString": "registered | partial | preliminary | final | amended | corrected | appended | cancelled | entered-in-error | unknown"
-                }
-              ]
-            }
-          ]
-        },
-        "mustSupport": true
-      },
-      {
-        "id": "DiagnosticReport.category",
-        "path": "DiagnosticReport.category",
-        "mustSupport": true,
-        "_short": {
-          "extension": [
-            {
-              "url": "http://hl7.org/fhir/StructureDefinition/translation",
-              "extension": [
-                {
-                  "url": "lang",
-                  "valueCode": "de-DE"
-                },
-                {
-                  "url": "content",
-                  "valueString": "Kategorie"
-                }
-              ]
-            },
-            {
-              "url": "http://hl7.org/fhir/StructureDefinition/translation",
-              "extension": [
-                {
-                  "url": "lang",
-                  "valueCode": "en-US"
-                },
-                {
-                  "url": "content",
-                  "valueString": "category"
-                }
-              ]
-            }
-          ]
-        },
-        "_definition": {
-          "extension": [
-            {
-              "url": "http://hl7.org/fhir/StructureDefinition/translation",
-              "extension": [
-                {
-                  "url": "lang",
-                  "valueCode": "de-DE"
-                },
-                {
-                  "url": "content",
-                  "valueString": "Kategorie des Befundberichts"
-                }
-              ]
-            },
-            {
-              "url": "http://hl7.org/fhir/StructureDefinition/translation",
-              "extension": [
-                {
-                  "url": "lang",
-                  "valueCode": "en-US"
-                },
-                {
-                  "url": "content",
-                  "valueString": "category of the diagnostic report"
-                }
-              ]
-            }
-          ]
-        }
-      },
-      {
-        "id": "DiagnosticReport.category.coding",
-        "path": "DiagnosticReport.category.coding",
-        "fixedCoding": {
-          "code": "PF",
-          "system": "http://terminology.hl7.org/CodeSystem/v2-0074"
-        }
-      },
-      {
-        "id": "DiagnosticReport.code",
-        "path": "DiagnosticReport.code",
-        "mustSupport": true,
-        "_short": {
-          "extension": [
-            {
-              "url": "http://hl7.org/fhir/StructureDefinition/translation",
-              "extension": [
-                {
-                  "url": "lang",
-                  "valueCode": "de-DE"
-                },
-                {
-                  "url": "content",
-                  "valueString": "Code"
-                }
-              ]
-            },
-            {
-              "url": "http://hl7.org/fhir/StructureDefinition/translation",
-              "extension": [
-                {
-                  "url": "lang",
-                  "valueCode": "en-US"
-                },
-                {
-                  "url": "content",
-                  "valueString": "code"
-                }
-              ]
-            }
-          ]
-        },
-        "_definition": {
-          "extension": [
-            {
-              "url": "http://hl7.org/fhir/StructureDefinition/translation",
-              "extension": [
-                {
-                  "url": "lang",
-                  "valueCode": "de-DE"
-                },
-                {
-                  "url": "content",
-                  "valueString": "Code des Befundberichts"
-                }
-              ]
-            },
-            {
-              "url": "http://hl7.org/fhir/StructureDefinition/translation",
-              "extension": [
-                {
-                  "url": "lang",
-                  "valueCode": "en-US"
-                },
-                {
-                  "url": "content",
-                  "valueString": "code of the diagnostic report"
-                }
-              ]
-            }
-          ]
-        }
-      },
-      {
-        "id": "DiagnosticReport.code.coding",
+        "id": "DiagnosticReport.code.coding:sct",
         "path": "DiagnosticReport.code.coding",
+        "sliceName": "sct",
+        "patternCoding": {
+          "code": "36421003",
+          "system": "http://snomed.info/sct",
+          "version": "http://snomed.info/sct/900000000000207008/version/20240701",
+          "display": "Carbon monoxide diffusing capacity measurement (procedure)"
+        }
+      },
+      {
+        "id": "DiagnosticReport.code.coding:loinc",
+        "path": "DiagnosticReport.code.coding",
+        "sliceName": "loinc",
+        "patternCoding": {
+          "code": "TODO",
+          "system": "http://loinc.org"
+        }
+      },
+      {
+        "id": "DiagnosticReport.result",
+        "path": "DiagnosticReport.result",
         "slicing": {
           "discriminator": [
             {
@@ -395,654 +123,214 @@
             }
           ],
           "rules": "open"
-        },
-        "min": 1,
-        "mustSupport": true
+        }
       },
       {
-        "id": "DiagnosticReport.code.coding:sct",
-        "path": "DiagnosticReport.code.coding",
-        "sliceName": "sct",
+        "id": "DiagnosticReport.result:DLCO",
+        "path": "DiagnosticReport.result",
+        "sliceName": "DLCO",
         "min": 0,
         "max": "1",
-        "mustSupport": true
-      },
-      {
-        "id": "DiagnosticReport.code.coding:sct.system",
-        "path": "DiagnosticReport.code.coding.system",
-        "patternUri": "$SCT#36421003"
-      },
-      {
-        "id": "DiagnosticReport.code.coding:sct.display",
-        "path": "DiagnosticReport.code.coding.display",
-        "patternString": "Carbon monoxide transfer factor test"
-      },
-      {
-        "id": "DiagnosticReport.code.coding:loinc",
-        "path": "DiagnosticReport.code.coding",
-        "sliceName": "loinc",
-        "min": 0,
-        "max": "1",
-        "patternCoding": {
-          "system": "$loinc"
-        },
-        "mustSupport": true
-      },
-      {
-        "id": "DiagnosticReport.subject",
-        "path": "DiagnosticReport.subject",
-        "short": "Person",
-        "_short": {
-          "extension": [
-            {
-              "url": "http://hl7.org/fhir/StructureDefinition/translation",
-              "extension": [
-                {
-                  "url": "lang",
-                  "valueCode": "de-DE"
-                },
-                {
-                  "url": "content",
-                  "valueString": "Person"
-                }
-              ]
-            },
-            {
-              "url": "http://hl7.org/fhir/StructureDefinition/translation",
-              "extension": [
-                {
-                  "url": "lang",
-                  "valueCode": "en-US"
-                },
-                {
-                  "url": "content",
-                  "valueString": "person"
-                }
-              ]
-            }
-          ]
-        },
-        "definition": "Person, auf die sich die Befundbericht bezieht",
-        "_definition": {
-          "extension": [
-            {
-              "url": "http://hl7.org/fhir/StructureDefinition/translation",
-              "extension": [
-                {
-                  "url": "lang",
-                  "valueCode": "de-DE"
-                },
-                {
-                  "url": "content",
-                  "valueString": "Person, auf die sich die Befundbericht bezieht"
-                }
-              ]
-            },
-            {
-              "url": "http://hl7.org/fhir/StructureDefinition/translation",
-              "extension": [
-                {
-                  "url": "lang",
-                  "valueCode": "en-US"
-                },
-                {
-                  "url": "content",
-                  "valueString": "person, which this report is about"
-                }
-              ]
-            }
-          ]
-        },
-        "min": 1,
         "type": [
           {
             "code": "Reference",
             "targetProfile": [
-              "http://hl7.org/fhir/StructureDefinition/Patient"
+              "https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-dlco"
             ]
           }
         ],
         "mustSupport": true
       },
       {
-        "id": "DiagnosticReport.encounter",
-        "path": "DiagnosticReport.encounter",
-        "short": "Versorgungssstellenkontakt",
-        "_short": {
-          "extension": [
-            {
-              "url": "http://hl7.org/fhir/StructureDefinition/translation",
-              "extension": [
-                {
-                  "url": "lang",
-                  "valueCode": "de-DE"
-                },
-                {
-                  "url": "content",
-                  "valueString": "Versorgungssstellenkontakt"
-                }
-              ]
-            },
-            {
-              "url": "http://hl7.org/fhir/StructureDefinition/translation",
-              "extension": [
-                {
-                  "url": "lang",
-                  "valueCode": "en-US"
-                },
-                {
-                  "url": "content",
-                  "valueString": "Encounter"
-                }
-              ]
-            }
-          ]
-        },
-        "definition": "Fall-Referenz auf den Versorgungssstellenkontakt",
-        "_definition": {
-          "extension": [
-            {
-              "url": "http://hl7.org/fhir/StructureDefinition/translation",
-              "extension": [
-                {
-                  "url": "lang",
-                  "valueCode": "de-DE"
-                },
-                {
-                  "url": "content",
-                  "valueString": "Fall-Referenz auf den Versorgungssstellenkontakt"
-                }
-              ]
-            },
-            {
-              "url": "http://hl7.org/fhir/StructureDefinition/translation",
-              "extension": [
-                {
-                  "url": "lang",
-                  "valueCode": "en-US"
-                },
-                {
-                  "url": "content",
-                  "valueString": "encounter reference"
-                }
-              ]
-            }
-          ]
-        },
-        "mustSupport": true
-      },
-      {
-        "id": "DiagnosticReport.effective[x]",
-        "path": "DiagnosticReport.effective[x]",
-        "slicing": {
-          "discriminator": [
-            {
-              "type": "type",
-              "path": "$this"
-            }
-          ],
-          "ordered": false,
-          "rules": "open"
-        },
-        "short": "Erstellungsdatum",
-        "_short": {
-          "extension": [
-            {
-              "url": "http://hl7.org/fhir/StructureDefinition/translation",
-              "extension": [
-                {
-                  "url": "lang",
-                  "valueCode": "de-DE"
-                },
-                {
-                  "url": "content",
-                  "valueString": "Erstellungsdatum"
-                }
-              ]
-            },
-            {
-              "url": "http://hl7.org/fhir/StructureDefinition/translation",
-              "extension": [
-                {
-                  "url": "lang",
-                  "valueCode": "en-US"
-                },
-                {
-                  "url": "content",
-                  "valueString": "effective[x]"
-                }
-              ]
-            }
-          ]
-        },
-        "definition": "Zeitpunkt der Erstellung",
-        "_definition": {
-          "extension": [
-            {
-              "url": "http://hl7.org/fhir/StructureDefinition/translation",
-              "extension": [
-                {
-                  "url": "lang",
-                  "valueCode": "de-DE"
-                },
-                {
-                  "url": "content",
-                  "valueString": "Zeitpunkt der Erstellung"
-                }
-              ]
-            },
-            {
-              "url": "http://hl7.org/fhir/StructureDefinition/translation",
-              "extension": [
-                {
-                  "url": "lang",
-                  "valueCode": "en-US"
-                },
-                {
-                  "url": "content",
-                  "valueString": "date of creation"
-                }
-              ]
-            }
-          ]
-        },
-        "mustSupport": true
-      },
-      {
-        "id": "DiagnosticReport.effective[x]:effectiveDateTime",
-        "path": "DiagnosticReport.effective[x]",
-        "sliceName": "effectiveDateTime",
-        "min": 0,
-        "max": "1",
-        "type": [
-          {
-            "code": "dateTime"
-          }
-        ],
-        "mustSupport": true
-      },
-      {
-        "id": "DiagnosticReport.effective[x]:effectivePeriod",
-        "path": "DiagnosticReport.effective[x]",
-        "sliceName": "effectivePeriod",
-        "min": 0,
-        "max": "1",
-        "type": [
-          {
-            "code": "Period"
-          }
-        ],
-        "mustSupport": true
-      },
-      {
-        "id": "DiagnosticReport.issued",
-        "path": "DiagnosticReport.issued",
-        "short": "Erstellungszeitpunkt",
-        "_short": {
-          "extension": [
-            {
-              "url": "http://hl7.org/fhir/StructureDefinition/translation",
-              "extension": [
-                {
-                  "url": "lang",
-                  "valueCode": "de-DE"
-                },
-                {
-                  "url": "content",
-                  "valueString": "Erstellungszeitpunkt"
-                }
-              ]
-            },
-            {
-              "url": "http://hl7.org/fhir/StructureDefinition/translation",
-              "extension": [
-                {
-                  "url": "lang",
-                  "valueCode": "en-US"
-                },
-                {
-                  "url": "content",
-                  "valueString": "time of creation"
-                }
-              ]
-            }
-          ]
-        },
-        "definition": "Zeit an der der Bericht erstellt wurde",
-        "_definition": {
-          "extension": [
-            {
-              "url": "http://hl7.org/fhir/StructureDefinition/translation",
-              "extension": [
-                {
-                  "url": "lang",
-                  "valueCode": "de-DE"
-                },
-                {
-                  "url": "content",
-                  "valueString": "Zeit an der der Bericht erstellt wurde"
-                }
-              ]
-            },
-            {
-              "url": "http://hl7.org/fhir/StructureDefinition/translation",
-              "extension": [
-                {
-                  "url": "lang",
-                  "valueCode": "en-US"
-                },
-                {
-                  "url": "content",
-                  "valueString": "timestamp of creation of the report"
-                }
-              ]
-            }
-          ]
-        },
-        "mustSupport": true
-      },
-      {
-        "id": "DiagnosticReport.result",
+        "id": "DiagnosticReport.result:DLCOc",
         "path": "DiagnosticReport.result",
-        "short": "Ergebnis",
-        "_short": {
-          "extension": [
-            {
-              "url": "http://hl7.org/fhir/StructureDefinition/translation",
-              "extension": [
-                {
-                  "url": "lang",
-                  "valueCode": "de-DE"
-                },
-                {
-                  "url": "content",
-                  "valueString": "Ergebnis"
-                }
-              ]
-            },
-            {
-              "url": "http://hl7.org/fhir/StructureDefinition/translation",
-              "extension": [
-                {
-                  "url": "lang",
-                  "valueCode": "en-US"
-                },
-                {
-                  "url": "content",
-                  "valueString": "result"
-                }
-              ]
-            }
-          ]
-        },
-        "definition": "Ergebnis einer Beobachtung",
-        "_definition": {
-          "extension": [
-            {
-              "url": "http://hl7.org/fhir/StructureDefinition/translation",
-              "extension": [
-                {
-                  "url": "lang",
-                  "valueCode": "de-DE"
-                },
-                {
-                  "url": "content",
-                  "valueString": "Ergebnis einer Beobachtung"
-                }
-              ]
-            },
-            {
-              "url": "http://hl7.org/fhir/StructureDefinition/translation",
-              "extension": [
-                {
-                  "url": "lang",
-                  "valueCode": "en-US"
-                },
-                {
-                  "url": "content",
-                  "valueString": "result of an observation"
-                }
-              ]
-            }
-          ]
-        },
-        "mustSupport": true
-      },
-      {
-        "id": "DiagnosticReport.conclusion",
-        "path": "DiagnosticReport.conclusion",
-        "short": "Fazit",
-        "_short": {
-          "extension": [
-            {
-              "url": "http://hl7.org/fhir/StructureDefinition/translation",
-              "extension": [
-                {
-                  "url": "lang",
-                  "valueCode": "de-DE"
-                },
-                {
-                  "url": "content",
-                  "valueString": "Fazit"
-                }
-              ]
-            },
-            {
-              "url": "http://hl7.org/fhir/StructureDefinition/translation",
-              "extension": [
-                {
-                  "url": "lang",
-                  "valueCode": "en-US"
-                },
-                {
-                  "url": "content",
-                  "valueString": "conclusion"
-                }
-              ]
-            }
-          ]
-        },
-        "definition": "Fazit zur aktuellen Befundung",
-        "_definition": {
-          "extension": [
-            {
-              "url": "http://hl7.org/fhir/StructureDefinition/translation",
-              "extension": [
-                {
-                  "url": "lang",
-                  "valueCode": "de-DE"
-                },
-                {
-                  "url": "content",
-                  "valueString": "Fazit zur aktuellen Befundung"
-                }
-              ]
-            },
-            {
-              "url": "http://hl7.org/fhir/StructureDefinition/translation",
-              "extension": [
-                {
-                  "url": "lang",
-                  "valueCode": "en-US"
-                },
-                {
-                  "url": "content",
-                  "valueString": "conclusion of the actual report"
-                }
-              ]
-            }
-          ]
-        },
-        "mustSupport": true
-      },
-      {
-        "id": "DiagnosticReport.conclusionCode",
-        "path": "DiagnosticReport.conclusionCode",
-        "short": "Strukturiertes Fazit",
-        "_short": {
-          "extension": [
-            {
-              "url": "http://hl7.org/fhir/StructureDefinition/translation",
-              "extension": [
-                {
-                  "url": "lang",
-                  "valueCode": "de-DE"
-                },
-                {
-                  "url": "content",
-                  "valueString": "Strukturiertes Fazit"
-                }
-              ]
-            },
-            {
-              "url": "http://hl7.org/fhir/StructureDefinition/translation",
-              "extension": [
-                {
-                  "url": "lang",
-                  "valueCode": "en-US"
-                },
-                {
-                  "url": "content",
-                  "valueString": "structured conclusion"
-                }
-              ]
-            }
-          ]
-        },
-        "definition": "Fazit, welches strukturiert über Codes dargestellt wird",
-        "_definition": {
-          "extension": [
-            {
-              "url": "http://hl7.org/fhir/StructureDefinition/translation",
-              "extension": [
-                {
-                  "url": "lang",
-                  "valueCode": "de-DE"
-                },
-                {
-                  "url": "content",
-                  "valueString": "Fazit, welches strukturiert über Codes dargestellt wird"
-                }
-              ]
-            },
-            {
-              "url": "http://hl7.org/fhir/StructureDefinition/translation",
-              "extension": [
-                {
-                  "url": "lang",
-                  "valueCode": "en-US"
-                },
-                {
-                  "url": "content",
-                  "valueString": "conclusion presented with structured codes"
-                }
-              ]
-            }
-          ]
-        },
-        "mustSupport": true
-      },
-      {
-        "id": "DiagnosticReport.conclusionCode.coding",
-        "path": "DiagnosticReport.conclusionCode.coding",
-        "slicing": {
-          "discriminator": [
-            {
-              "type": "pattern",
-              "path": "$this"
-            }
-          ],
-          "rules": "open"
-        },
-        "mustSupport": true
-      },
-      {
-        "id": "DiagnosticReport.conclusionCode.coding:icd10-gm",
-        "path": "DiagnosticReport.conclusionCode.coding",
-        "sliceName": "icd10-gm",
+        "sliceName": "DLCOc",
         "min": 0,
-        "max": "*",
-        "patternCoding": {
-          "system": "http://fhir.de/CodeSystem/bfarm/icd-10-gm"
-        },
+        "max": "1",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-dlcoc"
+            ]
+          }
+        ],
         "mustSupport": true
       },
       {
-        "id": "DiagnosticReport.conclusionCode.coding:sct",
-        "path": "DiagnosticReport.conclusionCode.coding",
-        "sliceName": "sct",
+        "id": "DiagnosticReport.result:KCO",
+        "path": "DiagnosticReport.result",
+        "sliceName": "KCO",
         "min": 0,
-        "max": "*",
-        "patternCoding": {
-          "system": "http://snomed.info/sct"
-        },
+        "max": "1",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-kco-sb"
+            ]
+          }
+        ],
         "mustSupport": true
       },
       {
-        "id": "DiagnosticReport.presentedForm",
-        "path": "DiagnosticReport.presentedForm",
-        "short": "Anhang",
-        "_short": {
-          "extension": [
-            {
-              "url": "http://hl7.org/fhir/StructureDefinition/translation",
-              "extension": [
-                {
-                  "url": "lang",
-                  "valueCode": "de-DE"
-                },
-                {
-                  "url": "content",
-                  "valueString": "Anhang"
-                }
-              ]
-            },
-            {
-              "url": "http://hl7.org/fhir/StructureDefinition/translation",
-              "extension": [
-                {
-                  "url": "lang",
-                  "valueCode": "en-US"
-                },
-                {
-                  "url": "content",
-                  "valueString": "Attachment"
-                }
-              ]
-            }
-          ]
-        },
-        "definition": "zusätzlicher wichtiger Anhang",
-        "_definition": {
-          "extension": [
-            {
-              "url": "http://hl7.org/fhir/StructureDefinition/translation",
-              "extension": [
-                {
-                  "url": "lang",
-                  "valueCode": "de-DE"
-                },
-                {
-                  "url": "content",
-                  "valueString": "zusätzlicher wichtiger Anhang"
-                }
-              ]
-            },
-            {
-              "url": "http://hl7.org/fhir/StructureDefinition/translation",
-              "extension": [
-                {
-                  "url": "lang",
-                  "valueCode": "en-US"
-                },
-                {
-                  "url": "content",
-                  "valueString": "additional attachment to the report"
-                }
-              ]
-            }
-          ]
-        },
+        "id": "DiagnosticReport.result:KCOc",
+        "path": "DiagnosticReport.result",
+        "sliceName": "KCOc",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-kcoc-sb"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "DiagnosticReport.result:ERV_SB",
+        "path": "DiagnosticReport.result",
+        "sliceName": "ERV_SB",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-erv-sb"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "DiagnosticReport.result:TLC_SB",
+        "path": "DiagnosticReport.result",
+        "sliceName": "TLC_SB",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-tlc-sb"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "DiagnosticReport.result:RV_SB",
+        "path": "DiagnosticReport.result",
+        "sliceName": "RV_SB",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-rv-sb"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "DiagnosticReport.result:RV_TLC_SB",
+        "path": "DiagnosticReport.result",
+        "sliceName": "RV_TLC_SB",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-rv-tlc-sb"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "DiagnosticReport.result:FRC_SB",
+        "path": "DiagnosticReport.result",
+        "sliceName": "FRC_SB",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-frc-sb"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "DiagnosticReport.result:TA",
+        "path": "DiagnosticReport.result",
+        "sliceName": "TA",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-ta"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "DiagnosticReport.result:VA",
+        "path": "DiagnosticReport.result",
+        "sliceName": "VA",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-va-sb"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "DiagnosticReport.result:IVC_SB",
+        "path": "DiagnosticReport.result",
+        "sliceName": "IVC_SB",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-ivc-sb"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "DiagnosticReport.result:Hb",
+        "path": "DiagnosticReport.result",
+        "sliceName": "Hb",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-hb"
+            ]
+          }
+        ],
         "mustSupport": true
       }
     ]

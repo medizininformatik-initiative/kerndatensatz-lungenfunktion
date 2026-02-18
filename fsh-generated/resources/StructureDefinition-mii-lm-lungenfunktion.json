@@ -207,6 +207,12 @@
       {
         "id": "Lungenfunktion.Spirometrie.Spiromeriewerte.EVC",
         "path": "Lungenfunktion.Spirometrie.Spiromeriewerte.EVC",
+        "code": [
+          {
+            "code": "251914003",
+            "system": "http://snomed.info/sct"
+          }
+        ],
         "short": "EVC",
         "definition": "inspiratorische Vitalkapazität",
         "min": 0,
@@ -419,46 +425,14 @@
         ]
       },
       {
-        "id": "Lungenfunktion.Spirometrie.Spiromeriewerte.FEF2575",
-        "path": "Lungenfunktion.Spirometrie.Spiromeriewerte.FEF2575",
+        "id": "Lungenfunktion.Spirometrie.Spiromeriewerte.FEV1VC",
+        "path": "Lungenfunktion.Spirometrie.Spiromeriewerte.FEV1VC",
         "code": [
           {
-            "code": "251932003",
+            "code": "251943006",
             "system": "http://snomed.info/sct"
           }
         ],
-        "short": "FEF25–75%",
-        "definition": "Mittlerer forcierter exspiratorischer Flow zwischen 25 % und 75 % der FVC",
-        "min": 0,
-        "max": "1",
-        "type": [
-          {
-            "code": "Quantity",
-            "profile": [
-              "http://hl7.org/fhir/StructureDefinition/SimpleQuantity"
-            ]
-          }
-        ]
-      },
-      {
-        "id": "Lungenfunktion.Spirometrie.Spiromeriewerte.FEF2550",
-        "path": "Lungenfunktion.Spirometrie.Spiromeriewerte.FEF2550",
-        "short": "FEF25–50%",
-        "definition": "Mittlerer forcierter exspiratorischer Flow zwischen 25 % und 50 % der FVC",
-        "min": 0,
-        "max": "1",
-        "type": [
-          {
-            "code": "Quantity",
-            "profile": [
-              "http://hl7.org/fhir/StructureDefinition/SimpleQuantity"
-            ]
-          }
-        ]
-      },
-      {
-        "id": "Lungenfunktion.Spirometrie.Spiromeriewerte.FEV1IVC",
-        "path": "Lungenfunktion.Spirometrie.Spiromeriewerte.FEV1IVC",
         "short": "FEV1/VC Verhältnis",
         "definition": "Verhältnis von Forciertes Exspirationsvolumen in 1 Sekunde zur Vitalkapazität",
         "min": 0,
@@ -497,6 +471,12 @@
       {
         "id": "Lungenfunktion.Spirometrie.Spiromeriewerte.BF",
         "path": "Lungenfunktion.Spirometrie.Spiromeriewerte.BF",
+        "code": [
+          {
+            "code": "271625008",
+            "system": "http://snomed.info/sct"
+          }
+        ],
         "short": "Atemfrequenz",
         "definition": "Messung der Atemfrequenz",
         "min": 0,
@@ -565,6 +545,12 @@
       {
         "id": "Lungenfunktion.Bodyplethysmographie.Bodyplethysmographiewerte.FRC",
         "path": "Lungenfunktion.Bodyplethysmographie.Bodyplethysmographiewerte.FRC",
+        "code": [
+          {
+            "code": "65825000",
+            "system": "http://snomed.info/sct"
+          }
+        ],
         "short": "FRC",
         "definition": "funktionelle Residualkapazität",
         "min": 0,
@@ -581,6 +567,12 @@
       {
         "id": "Lungenfunktion.Bodyplethysmographie.Bodyplethysmographiewerte.Rtot",
         "path": "Lungenfunktion.Bodyplethysmographie.Bodyplethysmographiewerte.Rtot",
+        "code": [
+          {
+            "code": "16162007",
+            "system": "http://snomed.info/sct"
+          }
+        ],
         "short": "R tot",
         "definition": "totaler Atemwegswiderstand",
         "min": 0,
@@ -597,6 +589,12 @@
       {
         "id": "Lungenfunktion.Bodyplethysmographie.Bodyplethysmographiewerte.sGtot",
         "path": "Lungenfunktion.Bodyplethysmographie.Bodyplethysmographiewerte.sGtot",
+        "code": [
+          {
+            "code": "79412009",
+            "system": "http://snomed.info/sct"
+          }
+        ],
         "short": "sG tot",
         "definition": "totale, spezifische Atemwegsleitfähigkeit",
         "min": 0,
@@ -613,6 +611,12 @@
       {
         "id": "Lungenfunktion.Bodyplethysmographie.Bodyplethysmographiewerte.sRtot",
         "path": "Lungenfunktion.Bodyplethysmographie.Bodyplethysmographiewerte.sRtot",
+        "code": [
+          {
+            "code": "1366667009",
+            "system": "http://snomed.info/sct"
+          }
+        ],
         "short": "sR tot",
         "definition": "totaler, spezifischer Atemwegswiderstand",
         "min": 0,
@@ -629,6 +633,12 @@
       {
         "id": "Lungenfunktion.Bodyplethysmographie.Bodyplethysmographiewerte.sReff",
         "path": "Lungenfunktion.Bodyplethysmographie.Bodyplethysmographiewerte.sReff",
+        "code": [
+          {
+            "code": "1366667009",
+            "system": "http://snomed.info/sct"
+          }
+        ],
         "short": "sR eff",
         "definition": "effektiver, spezifischer Atemwegswiderstand",
         "min": 0,
@@ -645,6 +655,12 @@
       {
         "id": "Lungenfunktion.Bodyplethysmographie.Bodyplethysmographiewerte.RV",
         "path": "Lungenfunktion.Bodyplethysmographie.Bodyplethysmographiewerte.RV",
+        "code": [
+          {
+            "code": "42457008",
+            "system": "http://snomed.info/sct"
+          }
+        ],
         "short": "RV",
         "definition": "Residualvolumen",
         "min": 0,
@@ -661,6 +677,12 @@
       {
         "id": "Lungenfunktion.Bodyplethysmographie.Bodyplethysmographiewerte.TLC",
         "path": "Lungenfunktion.Bodyplethysmographie.Bodyplethysmographiewerte.TLC",
+        "code": [
+          {
+            "code": "57566009",
+            "system": "http://snomed.info/sct"
+          }
+        ],
         "short": "TLC",
         "definition": "totale Lungenkapazität",
         "min": 0,
@@ -677,6 +699,12 @@
       {
         "id": "Lungenfunktion.Bodyplethysmographie.Bodyplethysmographiewerte.RVTLC",
         "path": "Lungenfunktion.Bodyplethysmographie.Bodyplethysmographiewerte.RVTLC",
+        "code": [
+          {
+            "code": "1366666000",
+            "system": "http://snomed.info/sct"
+          }
+        ],
         "short": "RV/TLC Verhältnis",
         "definition": "prozentuale Anteil des Residualvolumens an der Totalen Lungenkapazität.",
         "min": 0,

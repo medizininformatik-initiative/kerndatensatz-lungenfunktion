@@ -311,17 +311,16 @@
             }
           ]
         },
+        "min": 1,
         "mustSupport": true
       },
       {
-        "id": "Observation.category.coding.system",
-        "path": "Observation.category.coding.system",
-        "fixedUri": "http://terminology.hl7.org/CodeSystem/observation-category"
-      },
-      {
-        "id": "Observation.category.coding.code",
-        "path": "Observation.category.coding.code",
-        "fixedCode": "procedure"
+        "id": "Observation.category.coding",
+        "path": "Observation.category.coding",
+        "patternCoding": {
+          "code": "procedure",
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category"
+        }
       },
       {
         "id": "Observation.code",
@@ -431,6 +430,27 @@
         }
       },
       {
+        "id": "Observation.code.coding:sct.system",
+        "path": "Observation.code.coding.system",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.code.coding:sct.code",
+        "path": "Observation.code.coding.code",
+        "min": 1,
+        "mustSupport": true,
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/ValueSet/mii-vs-lufu-sct-observable"
+        }
+      },
+      {
+        "id": "Observation.code.coding:sct.display",
+        "path": "Observation.code.coding.display",
+        "mustSupport": true
+      },
+      {
         "id": "Observation.code.coding:loinc",
         "path": "Observation.code.coding",
         "sliceName": "loinc",
@@ -439,6 +459,27 @@
         "patternCoding": {
           "system": "$loinc"
         }
+      },
+      {
+        "id": "Observation.code.coding:loinc.system",
+        "path": "Observation.code.coding.system",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.code.coding:loinc.code",
+        "path": "Observation.code.coding.code",
+        "min": 1,
+        "mustSupport": true,
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/ValueSet/mii-vs-lufu-lnc-observable"
+        }
+      },
+      {
+        "id": "Observation.code.coding:loinc.display",
+        "path": "Observation.code.coding.display",
+        "mustSupport": true
       },
       {
         "id": "Observation.subject",
