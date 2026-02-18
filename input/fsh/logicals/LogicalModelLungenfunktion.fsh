@@ -31,6 +31,7 @@ Description: "MII LogicalModel Modul Lungenfunktion"
     * FVC 0..1 http://hl7.org/fhir/StructureDefinition/SimpleQuantity "FVC" "Forcierte Vitalkapazität"
       * ^code = $SCT#50834005
     * EVC 0..1 http://hl7.org/fhir/StructureDefinition/SimpleQuantity "EVC" "inspiratorische Vitalkapazität"
+      * ^code = $SCT#251914003
     * IC 0..1 http://hl7.org/fhir/StructureDefinition/SimpleQuantity "IC" "Inspirationskapazität"
       * ^code = $SCT#29533001
     * FEV1 0..1 http://hl7.org/fhir/StructureDefinition/SimpleQuantity "FEV1" "Forcierte Exspirationsvolumen bei 1 Sekunde"
@@ -49,25 +50,32 @@ Description: "MII LogicalModel Modul Lungenfunktion"
       * ^code = $SCT#251920002
     * MEF75 0..1 http://hl7.org/fhir/StructureDefinition/SimpleQuantity "MEF75" "Maximaler exspiratorischer Fluss bei einem Restvolumen von 75 % der ausgeatmeten forcierten Vitalkapazität"
       * ^code = $SCT#251921003
-    * FEF2575 0..1 http://hl7.org/fhir/StructureDefinition/SimpleQuantity "FEF25–75%" "Mittlerer forcierter exspiratorischer Flow zwischen 25 % und 75 % der FVC"
-      * ^code = $SCT#251932003
-    * FEF2550 0..1 http://hl7.org/fhir/StructureDefinition/SimpleQuantity "FEF25–50%" "Mittlerer forcierter exspiratorischer Flow zwischen 25 % und 50 % der FVC"
-    * FEV1IVC 0..1 http://hl7.org/fhir/StructureDefinition/SimpleQuantity "FEV1/VC Verhältnis" "Verhältnis von Forciertes Exspirationsvolumen in 1 Sekunde zur Vitalkapazität"
+    * FEV1VC 0..1 http://hl7.org/fhir/StructureDefinition/SimpleQuantity "FEV1/VC Verhältnis" "Verhältnis von Forciertes Exspirationsvolumen in 1 Sekunde zur Vitalkapazität"
+      * ^code = $SCT#251943006
     * FEV1FVC 0..1 http://hl7.org/fhir/StructureDefinition/SimpleQuantity "FEV1/FVC Verhältnis" "Verhältnis von Forciertes Exspirationsvolumen in 1 Sekunde zu  Forcierter Vitalkapazität"
       * ^code = $SCT#251944000
     * BF 0..1 http://hl7.org/fhir/StructureDefinition/SimpleQuantity "Atemfrequenz" "Messung der Atemfrequenz"
+      * ^code = $SCT#271625008
 * Bodyplethysmographie 0..1 BackboneElement "Bodyplethysmographie" "Lungenfunktionstests, der in einer geschlossen Box durchgeführt wird."
   * Befund 1..1 BackboneElement "Befund" "Bericht der Bodyplethysmographieuntersuchung"
   * Prozedure 1..1 BackboneElement "Prozedur" "Prozedur zur Bodyplethysmographieuntersuchung"
   * Bodyplethysmographiewerte 1..1 BackboneElement "Bodyplethysmographiewerte" "Werte einer Bodyplethysmographieuntersuchung ausgestaltet als Observation"    
     * FRC 0..1 http://hl7.org/fhir/StructureDefinition/SimpleQuantity "FRC" "funktionelle Residualkapazität"
+      * ^code = $SCT#65825000
     * Rtot 0..1 http://hl7.org/fhir/StructureDefinition/SimpleQuantity "R tot" "totaler Atemwegswiderstand"
+      * ^code = $SCT#16162007
     * sGtot 0..1 http://hl7.org/fhir/StructureDefinition/SimpleQuantity "sG tot" "totale, spezifische Atemwegsleitfähigkeit"
+      * ^code = $SCT#79412009
     * sRtot 0..1 http://hl7.org/fhir/StructureDefinition/SimpleQuantity "sR tot" "totaler, spezifischer Atemwegswiderstand"
+      * ^code = $SCT#1366667009
     * sReff 0..1 http://hl7.org/fhir/StructureDefinition/SimpleQuantity "sR eff" "effektiver, spezifischer Atemwegswiderstand"
+      * ^code = $SCT#1366667009
     * RV 0..1 http://hl7.org/fhir/StructureDefinition/SimpleQuantity "RV" "Residualvolumen"
+      * ^code = $SCT#42457008
     * TLC 0..1 http://hl7.org/fhir/StructureDefinition/SimpleQuantity "TLC" "totale Lungenkapazität"
+      * ^code = $SCT#57566009
     * RVTLC 0..1 http://hl7.org/fhir/StructureDefinition/SimpleQuantity "RV/TLC Verhältnis" "prozentuale Anteil des Residualvolumens an der Totalen Lungenkapazität."
+      * ^code = $SCT#1366666000
 * Provakationstest 0..1 BackboneElement "Provokationstest" "Bronchialer Provokationstest zur Prüfung der bronchialen Hyperreagibilität"
   * Durchfuehrungstyp 1..1 code "Durchführungstyp" "Art des Provokationstests (z. B. Methacholin-Test, Mannitol-Test, Belastungstest)"
   * Substanz 1..1 CodeableConcept "Provokationssubstanz" "Art des Provokationsreizes z. B. Methacholin, Mannitol, Belastung"
