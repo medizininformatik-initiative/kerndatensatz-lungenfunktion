@@ -1,14 +1,14 @@
 //EXAMPLE Profile
 //Head
-Profile: MII_PR_Lungenfunktion_1_Viskositaet
+Profile: MII_PR_Lungenfunktion_Diffusionskapzitaet
 Parent: Observation
-Id: mii-pr-lungenfunktion-1-viskositaet
-Title: "MII PR Lungenfunktion 1/Viscosity"
-Description: "Dieses Beobachtung beschreibt eine spezifische totale Atemwegsleitfähigkeit."
-* ^url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-1-viskositaet"
+Id: mii-pr-lungenfunktion-diffusionskapazitaet
+Title: "MII PR Lungenfunktion Fluss"
+Description: "Dieses Beobachtung beschreibt eine Flussmessung."
+* ^url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-diffusionskapazitaet"
 //Translation Meta
-* insert Translation(^name, en-US, MII_PR_Lungfunction_1_Viscosity)
-* insert Translation(^title, en-US, MII PR Lungfunction 1/Viscosity)
+* insert Translation(^name, en-US, MII_PR_Lungfunction_Diffusioncapacity)
+* insert Translation(^title, en-US, MII PR Lungfunction Diffusioncapacity)
 * insert Translation(^description, en-US, The profile describes a observation for testing of lungfunction.)
 //Meta
 * insert PR_CS_VS_Version
@@ -59,15 +59,16 @@ Description: "Dieses Beobachtung beschreibt eine spezifische totale Atemwegsleit
 * value[x] only Quantity
 * valueQuantity.value MS
 * valueQuantity.unit MS
-* valueQuantity.unit = "/kPA*s"
+* valueQuantity.unit = "mmol/(min*kPa)"
 * valueQuantity.system MS
 * valueQuantity.system = $ucum
 * valueQuantity.code MS
-* valueQuantity.code = $ucum#/kPA.s
+* valueQuantity.code = $ucum#mmol/(min.kPa)
 * interpretation MS
 * interpretation ^short = "Interpretation"
 * interpretation ^definition = "Interpretation des Messergebnisses"
 * method MS
+* method from $obs-methods (required)
 * method ^short = "Methode"
 * method ^definition = "Methode, mit der der Messwert erfasst wurde"
 * referenceRange MS
