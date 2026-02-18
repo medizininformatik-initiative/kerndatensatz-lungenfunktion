@@ -1,27 +1,20 @@
 //EXAMPLE Profile
 //Head
-Profile: MII_PR_Lungenfunktion_DLCOc
+Profile: MII_PR_Lungenfunktion_Hb
 Parent: Observation
-Id: mii-pr-lungenfunktion-dlcoc
-Title: "MII PR Lungenfunktion DLCOc"
-Description: "Dieses Profil beschreibt die Messung der korrigierten Diffusionskapazität für Kohlenstoffmonoxid."
-* ^url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-dlcoc"
-
+Id: mii-pr-lungenfunktion-hb
+Title: "MII PR Lungenfunktion Hb"
+Description: "Dieses Profil beschreibt die Messung des Hämoglobin."
+* ^url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-hb"
 //Translation Meta
-* insert Translation(^name, en-US, MII PR Lung function DLCOc)
-* insert Translation(^title, en-US, MII PR Lungen function DLCOc)
-* insert Translation(^description, en-US, The profile describes the corrected diffusion capacity carbon monoxid.)
-
+* insert Translation(^name, en-US, MII PR Lung function Hb)
+* insert Translation(^title, en-US, MII PR Lungen funktion Hb)
+* insert Translation(^description, en-US, The profile describes the hemoglobin.)
 //Meta
 * insert PR_CS_VS_Version
 * insert PR_CS_VS_Date
 * insert Publisher
 * insert LicenseCodeableCCBY40
-* id MS
-* meta MS
-* meta.source MS
-* meta.profile MS
-
 //Profile
 * partOf MS
 * partOf ^short = "Teil von"
@@ -43,10 +36,10 @@ Description: "Dieses Profil beschreibt die Messung der korrigierten Diffusionska
 * issued ^short = "Dokumentationsdatum"
 * issued ^definition = "Zeitpunkt, an dem das Ergebnis der Untersuchung dokumentiert wurde"
 * value[x] MS
-* value[x] ^short = "DLCOc"
-* value[x] ^definition = "korrigierte Diffusionskapazität der Lunge für Kohlenmonoxid im Single-Breath-Verfahren"
+* value[x] ^short = "Hemoglobin"
+* value[x] ^definition = "Wert der Analyse"
 * value[x] only Quantity
-* valueQuantity = $ucum#mmol/(min*kPa*L)
+* valueQuantity = $ucum#g{Hemoglobin}/dL
 * valueQuantity.value MS
 * valueQuantity.unit MS
 * valueQuantity.system MS
@@ -94,5 +87,5 @@ Description: "Dieses Profil beschreibt die Messung der korrigierten Diffusionska
 * insert Translation(derivedFrom ^definition, en-US, derived from an imagingStud\, etc.)
 * insert Translation(component ^short, de-DE, Bestandteile)
 * insert Translation(component ^short, en-US, components)
-* insert Translation(component ^definition, de-DE, detailierte Bestandteile der Beobachtung)
+* insert Translation(component ^definition, de-DE, detaillierte Bestandteile der Beobachtung)
 * insert Translation(component ^definition, en-US, detailed components of this observation)
