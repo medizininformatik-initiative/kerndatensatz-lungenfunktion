@@ -107,32 +107,23 @@
       {
         "id": "Observation.code.coding:sct",
         "path": "Observation.code.coding",
-        "sliceName": "sct"
-      },
-      {
-        "id": "Observation.code.coding:sct.code",
-        "path": "Observation.code.coding.code",
-        "patternCode": "251914003"
-      },
-      {
-        "id": "Observation.code.coding:sct.display",
-        "path": "Observation.code.coding.display",
-        "patternString": "Exspiratory vital capacity (observable entity)"
+        "sliceName": "sct",
+        "patternCoding": {
+          "code": "251914003",
+          "system": "http://snomed.info/sct",
+          "version": "http://snomed.info/sct/900000000000207008/version/20240701",
+          "display": "Exspiratory vital capacity (observable entity)"
+        }
       },
       {
         "id": "Observation.code.coding:loinc",
         "path": "Observation.code.coding",
-        "sliceName": "loinc"
-      },
-      {
-        "id": "Observation.code.coding:loinc.code",
-        "path": "Observation.code.coding.code",
-        "patternCode": "19866-3"
-      },
-      {
-        "id": "Observation.code.coding:loinc.display",
-        "path": "Observation.code.coding.display",
-        "patternString": "VC Vol Respiratory Spirometry"
+        "sliceName": "loinc",
+        "patternCoding": {
+          "code": "19866-3",
+          "system": "http://loinc.org",
+          "display": "VC Vol Respiratory Spirometry"
+        }
       },
       {
         "id": "Observation.component:predicted",
@@ -140,16 +131,22 @@
         "sliceName": "predicted"
       },
       {
-        "id": "Observation.component:predicted.code",
-        "path": "Observation.component.code",
-        "patternCodeableConcept": {
-          "coding": [
-            {
-              "code": "TODO",
-              "system": "http://snomed.info/sct",
-              "version": "http://snomed.info/sct/900000000000207008/version/20240701"
-            }
-          ]
+        "id": "Observation.component:predicted.code.coding:sct",
+        "path": "Observation.component.code.coding",
+        "sliceName": "sct",
+        "patternCoding": {
+          "code": "TODO",
+          "system": "http://snomed.info/sct",
+          "version": "http://snomed.info/sct/900000000000207008/version/20240701"
+        }
+      },
+      {
+        "id": "Observation.component:predicted.code.coding:loinc",
+        "path": "Observation.component.code.coding",
+        "sliceName": "loinc",
+        "patternCoding": {
+          "code": "TODO",
+          "system": "http://loinc.org"
         }
       },
       {
@@ -158,17 +155,24 @@
         "sliceName": "ratio"
       },
       {
-        "id": "Observation.component:ratio.code",
-        "path": "Observation.component.code",
-        "patternCodeableConcept": {
-          "coding": [
-            {
-              "code": "445389005",
-              "system": "http://snomed.info/sct",
-              "version": "http://snomed.info/sct/900000000000207008/version/20240701",
-              "display": "Percentage of predicted vital capacity (observable entity)"
-            }
-          ]
+        "id": "Observation.component:ratio.code.coding:sct",
+        "path": "Observation.component.code.coding",
+        "sliceName": "sct",
+        "patternCoding": {
+          "code": "445389005",
+          "system": "http://snomed.info/sct",
+          "version": "http://snomed.info/sct/900000000000207008/version/20240701",
+          "display": "Percentage of predicted vital capacity (observable entity)"
+        }
+      },
+      {
+        "id": "Observation.component:ratio.code.coding:loinc",
+        "path": "Observation.component.code.coding",
+        "sliceName": "loinc",
+        "patternCoding": {
+          "code": "98088-8",
+          "system": "http://loinc.org",
+          "display": "VC/predicted VC Respiratory Spirometry"
         }
       }
     ]

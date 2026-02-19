@@ -115,24 +115,14 @@
         "patternCode": "29533001"
       },
       {
-        "id": "Observation.code.coding:sct.display",
-        "path": "Observation.code.coding.display",
-        "patternString": "Inspiratory capacity (observable entity)"
-      },
-      {
         "id": "Observation.code.coding:loinc",
         "path": "Observation.code.coding",
-        "sliceName": "loinc"
-      },
-      {
-        "id": "Observation.code.coding:loinc.code",
-        "path": "Observation.code.coding.code",
-        "patternCode": "19852-3"
-      },
-      {
-        "id": "Observation.code.coding:loinc.display",
-        "path": "Observation.code.coding.display",
-        "patternString": "IC Spirometry"
+        "sliceName": "loinc",
+        "patternCoding": {
+          "code": "19852-3",
+          "system": "http://loinc.org",
+          "display": "Inspiratory capacity by Spirometry"
+        }
       },
       {
         "id": "Observation.component:predicted",
@@ -140,16 +130,23 @@
         "sliceName": "predicted"
       },
       {
-        "id": "Observation.component:predicted.code",
-        "path": "Observation.component.code",
-        "patternCodeableConcept": {
-          "coding": [
-            {
-              "code": "19855-6",
-              "system": "http://loinc.org",
-              "display": "IC meas/pred Spirometry"
-            }
-          ]
+        "id": "Observation.component:predicted.code.coding:sct",
+        "path": "Observation.component.code.coding",
+        "sliceName": "sct",
+        "patternCoding": {
+          "code": "TODO",
+          "system": "http://snomed.info/sct",
+          "version": "http://snomed.info/sct/900000000000207008/version/20240701"
+        }
+      },
+      {
+        "id": "Observation.component:predicted.code.coding:loinc",
+        "path": "Observation.component.code.coding",
+        "sliceName": "loinc",
+        "patternCoding": {
+          "code": "19851-5",
+          "system": "http://loinc.org",
+          "display": "Inspiratory capacity Predicted"
         }
       },
       {
@@ -158,16 +155,23 @@
         "sliceName": "ratio"
       },
       {
-        "id": "Observation.component:ratio.code",
-        "path": "Observation.component.code",
-        "patternCodeableConcept": {
-          "coding": [
-            {
-              "code": "TODO",
-              "system": "http://snomed.info/sct",
-              "version": "http://snomed.info/sct/900000000000207008/version/20240701"
-            }
-          ]
+        "id": "Observation.component:ratio.code.coding:sct",
+        "path": "Observation.component.code.coding",
+        "sliceName": "sct",
+        "patternCoding": {
+          "code": "TODO",
+          "system": "http://snomed.info/sct",
+          "version": "http://snomed.info/sct/900000000000207008/version/20240701"
+        }
+      },
+      {
+        "id": "Observation.component:ratio.code.coding:loinc",
+        "path": "Observation.component.code.coding",
+        "sliceName": "loinc",
+        "patternCoding": {
+          "code": "19855-6",
+          "system": "http://loinc.org",
+          "display": "Inspiratory capacity measured/predicted by Spirometry"
         }
       }
     ]

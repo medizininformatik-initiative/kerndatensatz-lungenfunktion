@@ -115,9 +115,14 @@
         "patternCode": "55532004"
       },
       {
-        "id": "Observation.code.coding:sct.display",
-        "path": "Observation.code.coding.display",
-        "patternString": "Expiratory reserve volume (observable entity)"
+        "id": "Observation.code.coding:loinc",
+        "path": "Observation.code.coding",
+        "sliceName": "loinc",
+        "patternCoding": {
+          "code": "19924-0",
+          "system": "http://loinc.org",
+          "display": "Expiratory reserve"
+        }
       },
       {
         "id": "Observation.component:predicted",
@@ -125,16 +130,23 @@
         "sliceName": "predicted"
       },
       {
-        "id": "Observation.component:predicted.code",
-        "path": "Observation.component.code",
-        "patternCodeableConcept": {
-          "coding": [
-            {
-              "code": "TODO",
-              "system": "http://snomed.info/sct",
-              "version": "http://snomed.info/sct/900000000000207008/version/20240701"
-            }
-          ]
+        "id": "Observation.component:predicted.code.coding:sct",
+        "path": "Observation.component.code.coding",
+        "sliceName": "sct",
+        "patternCoding": {
+          "code": "TODO",
+          "system": "http://snomed.info/sct",
+          "version": "http://snomed.info/sct/900000000000207008/version/20240701"
+        }
+      },
+      {
+        "id": "Observation.component:predicted.code.coding:loinc",
+        "path": "Observation.component.code.coding",
+        "sliceName": "loinc",
+        "patternCoding": {
+          "code": "19923-2",
+          "system": "http://loinc.org",
+          "display": "Expiratory reserve Predicted"
         }
       },
       {
@@ -143,16 +155,23 @@
         "sliceName": "ratio"
       },
       {
-        "id": "Observation.component:ratio.code",
-        "path": "Observation.component.code",
-        "patternCodeableConcept": {
-          "coding": [
-            {
-              "code": "TODO",
-              "system": "http://snomed.info/sct",
-              "version": "http://snomed.info/sct/900000000000207008/version/20240701"
-            }
-          ]
+        "id": "Observation.component:ratio.code.coding:sct",
+        "path": "Observation.component.code.coding",
+        "sliceName": "sct",
+        "patternCoding": {
+          "code": "TODO",
+          "system": "http://snomed.info/sct",
+          "version": "http://snomed.info/sct/900000000000207008/version/20240701"
+        }
+      },
+      {
+        "id": "Observation.component:ratio.code.coding:loinc",
+        "path": "Observation.component.code.coding",
+        "sliceName": "loinc",
+        "patternCoding": {
+          "code": "TODO",
+          "system": "http://snomed.info/sct",
+          "version": "http://snomed.info/sct/900000000000207008/version/20240701"
         }
       }
     ]

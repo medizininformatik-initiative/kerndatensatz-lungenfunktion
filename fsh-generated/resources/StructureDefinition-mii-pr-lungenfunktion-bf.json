@@ -1313,6 +1313,51 @@
         "mustSupport": true
       },
       {
+        "id": "Observation.component.code.coding",
+        "path": "Observation.component.code.coding",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "pattern",
+              "path": "$this"
+            }
+          ],
+          "rules": "open"
+        }
+      },
+      {
+        "id": "Observation.component.code.coding:sct",
+        "path": "Observation.component.code.coding",
+        "sliceName": "sct",
+        "min": 0,
+        "max": "1",
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.component.code.coding:sct.code",
+        "path": "Observation.component.code.coding.code",
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/ValueSet/mii-vs-lufu-sct-observable"
+        }
+      },
+      {
+        "id": "Observation.component.code.coding:loinc",
+        "path": "Observation.component.code.coding",
+        "sliceName": "loinc",
+        "min": 0,
+        "max": "1",
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.component.code.coding:loinc.code",
+        "path": "Observation.component.code.coding.code",
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/ValueSet/mii-vs-lufu-lnc-observable"
+        }
+      },
+      {
         "id": "Observation.component.value[x]:valueQuantity",
         "path": "Observation.component.value[x]",
         "sliceName": "valueQuantity",
@@ -1409,7 +1454,8 @@
           ]
         },
         "min": 0,
-        "max": "1"
+        "max": "1",
+        "mustSupport": true
       },
       {
         "id": "Observation.component:predicted.value[x]:valueQuantity",
@@ -1498,7 +1544,8 @@
           ]
         },
         "min": 0,
-        "max": "1"
+        "max": "1",
+        "mustSupport": true
       },
       {
         "id": "Observation.component:ratio.value[x]:valueQuantity",
@@ -1587,7 +1634,8 @@
           ]
         },
         "min": 0,
-        "max": "1"
+        "max": "1",
+        "mustSupport": true
       },
       {
         "id": "Observation.component:z-score.code",
