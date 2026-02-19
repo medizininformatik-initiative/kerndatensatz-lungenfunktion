@@ -17,8 +17,10 @@ Description: "Dieses Profil beschreibt die Messung des maximalen exspiratorische
 * insert LicenseCodeableCCBY40
 //Profile
 * partOf only Reference(MII_PR_Lungenfunktion_Spirometrie_Messung)
-* code.coding[sct].code = $SCT-version#251921003
-* code.coding[sct].display = "Maximum expiratory flow rate at 75 percent of vital capacity (observable entity)"
-* component[predicted].code = $SCT-version#TODO
-* component[ratio].code = $SCT-version#TODO
+* code.coding[loinc] = $loinc#TODO
+* code.coding[sct] = $SCT-version#251921003 "Maximum expiratory flow rate at 75 percent of vital capacity (observable entity)"
+* component[predicted].code.coding[sct] = $SCT-version#TODO
+* component[predicted].code.coding[loinc] = $loinc#TODO
+* component[ratio].code.coding[sct] = $SCT-version#TODO
+* component[ratio].code.coding[loinc] = $loinc#TODO
 

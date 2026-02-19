@@ -17,7 +17,9 @@ Description: "Dieses Profil beschreibt die Messung des forcierten, exspiratorisc
 * insert LicenseCodeableCCBY40
 //Profile
 * partOf only Reference(MII_PR_Lungenfunktion_Spirometrie_Messung)
-* code.coding[sct].code = $SCT-version#251912004
-* code.coding[sct].display = "Forced inspired volume in 1 second (observable entity)"
-* component[predicted].code = $SCT-version#TODO
-* component[ratio].code = $SCT-version#TODO
+* code.coding[loinc] = $loinc#TODO "TODO"
+* code.coding[sct] = $SCT-version#251912004 "Forced inspired volume in 1 second (observable entity)"
+* component[predicted].code.coding[sct] = $SCT-version#TODO
+* component[predicted].code.coding[loinc] = $loinc#43251-8 "FIV1 Predicted"
+* component[ratio].code.coding[sct] = $SCT-version#TODO
+* component[ratio].code.coding[loinc] = $loinc#69984-3 "FEV1/FVC percent change"

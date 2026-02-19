@@ -17,8 +17,10 @@ Description: "Dieses Beobachtung beschreibt den prozentualen Anteil der maximale
 * insert LicenseCodeableCCBY40
 //Profile
 * partOf only Reference(MII_PR_Lungenfunktion_Spirometrie_Messung)
-* code.coding[sct].code = $SCT-version#251943006
-* code.coding[sct].display = "Forced expired volume in one second/vital capacity ratio (observable entity)"
+* code.coding[loinc] = $loinc#19926-5 "FEV1/FVC"
+* code.coding[sct] = $SCT-version#251943006 "Forced expired volume in one second/vital capacity ratio (observable entity)"
 * derivedFrom only Reference(MII_PR_Lungenfunktion_FEV or MII_PR_Lungenfunktion_IVC or MII_PR_Lungenfunktion_EVC)
-* component[predicted].code = $SCT-version#TODO
-* component[ratio].code = $SCT-version#TODO
+* component[predicted].code.coding[sct] = $SCT-version#TODO
+* component[predicted].code.coding[loinc] = $loinc#19925-7 "FEV1/FVC Predicted"
+* component[ratio].code.coding[sct] = $SCT-version#TODO
+* component[ratio].code.coding[loinc] = $loinc#69984-3 "Volume expired during 1.0 s of forced expiration/Forced vital capacity percent change"

@@ -17,10 +17,9 @@ Description: "Dieses Profil beschreibt die Messung der maximalen Vitalkapazität
 * insert LicenseCodeableCCBY40
 //Profile
 * partOf only Reference(MII_PR_Lungenfunktion_Spirometrie_Messung)
-* code.coding[loinc].code = $loinc#19866-3
-* code.coding[loinc].display = "VC Vol Respiratory Spirometry"
-* code.coding[sct].code = $SCT-version#251914003
-* code.coding[sct].display = "Exspiratory vital capacity (observable entity)"
-* component[predicted].code = $SCT-version#TODO
-* component[ratio].code = $SCT-version#445389005 "Percentage of predicted vital capacity (observable entity)"
-//* component[ratio].code = $loinc#98088-8 "VC/predicted VC Respiratory Spirometry"
+* code.coding[loinc] = $loinc#19866-3 "VC Vol Respiratory Spirometry"
+* code.coding[sct] = $SCT-version#251914003 "Exspiratory vital capacity (observable entity)"
+* component[predicted].code.coding[sct] = $SCT-version#TODO
+* component[predicted].code.coding[loinc] = $loinc#TODO
+* component[ratio].code.coding[sct] = $SCT-version#445389005 "Percentage of predicted vital capacity (observable entity)"
+* component[ratio].code.coding[loinc] = $loinc#98088-8 "VC/predicted VC Respiratory Spirometry"

@@ -17,8 +17,9 @@ Description: "Dieses Profil beschreibt die Messung der inspiratorischen Vitalkap
 * insert LicenseCodeableCCBY40
 //Profile
 * partOf only Reference(MII_PR_Lungenfunktion_Spirometrie_Messung)
-* code.coding[sct].code = $SCT-version#251913009
-* code.coding[sct].display = "Inspiratory vital capacity (observable entity)"
-* component[predicted].code = $SCT-version#TODO
-* component[ratio].code = $SCT-version#445389005 "Percentage of predicted vital capacity (observable entity)"
-
+* code.coding[loinc] = $loinc#TODO
+* code.coding[sct] = $SCT-version#251913009 "Inspiratory vital capacity (observable entity)"
+* component[predicted].code.coding[sct] = $SCT-version#TODO
+* component[predicted].code.coding[loinc] = $loinc#TODO
+* component[ratio].code.coding[sct] = $SCT-version#445389005 "Percentage of predicted vital capacity (observable entity)"
+* component[ratio].code.coding[loinc] = $loinc#TODO

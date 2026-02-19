@@ -17,8 +17,10 @@ Description: "Dieses Profil beschreibt die Messung des Tiffeneau-Index."
 * insert LicenseCodeableCCBY40
 //Profile
 * partOf only Reference(MII_PR_Lungenfunktion_Spirometrie_Messung)
-* code.coding[sct].code = $SCT-version#251944000
-* code.coding[sct].display = "Forced expired volume in one second/forced vital capacity ratio (observable entity)"
+* code.coding[loinc] = $loinc#19866-3 "VC Vol Respiratory Spirometry"
+* code.coding[sct] = $SCT-version#251944000 "Forced expired volume in one second/forced vital capacity ratio (observable entity)"
 * derivedFrom only Reference(MII_PR_Lungenfunktion_FEV or MII_PR_Lungenfunktion_FVC)
-* component[predicted].code = $SCT-version#TODO
-* component[ratio].code = $SCT-version#TODO
+* component[predicted].code.coding[sct] = $SCT-version#TODO
+* component[predicted].code.coding[loinc] = $loinc#TODO
+* component[ratio].code.coding[sct] = $SCT-version#TODO
+* component[ratio].code.coding[loinc] = $loinc#TODO

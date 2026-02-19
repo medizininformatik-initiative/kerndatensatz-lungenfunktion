@@ -83,9 +83,17 @@ Description: "Dieses Profil beschreibt die Messung der Atemfrequenz."
 * component ^slicing.discriminator.path = "$this"
 * component ^slicing.rules = #open
 * component contains
-    predicted 0..1 and
-    ratio 0..1 and
-    z-score 0..1
+    predicted 0..1 MS and
+    ratio 0..1 MS and
+    z-score 0..1 MS
+* component.code.coding ^slicing.discriminator.type = #pattern
+* component.code.coding ^slicing.discriminator.path = "$this"
+* component.code.coding ^slicing.rules = #open
+* component.code.coding contains
+    sct 0..1 MS and
+    loinc 0..1 MS
+* component.code.coding[loinc].code from MII_VS_Lufu_LNC_Observable (required)
+* component.code.coding[sct].code from MII_VS_Lufu_SCT_Observable (required)
 * component.valueQuantity.value MS
 * component.valueQuantity.unit MS
 * component.valueQuantity.system MS

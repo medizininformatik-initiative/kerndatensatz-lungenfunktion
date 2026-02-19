@@ -17,7 +17,9 @@ Description: "Dieses Profil beschreibt die Messung des exspiratorischen Reservev
 * insert LicenseCodeableCCBY40
 //Profile
 * partOf only Reference(MII_PR_Lungenfunktion_Spirometrie_Messung)
-* code.coding[sct].code = $SCT-version#55532004
-* code.coding[sct].display = "Expiratory reserve volume (observable entity)"
-* component[predicted].code = $SCT-version#TODO
-* component[ratio].code = $SCT-version#TODO
+* code.coding[loinc] = $loinc#19924-0 "Expiratory reserve"
+* code.coding[sct].code = $SCT-version#55532004 "Expiratory reserve volume (observable entity)"
+* component[predicted].code.coding[sct] = $SCT-version#TODO
+* component[predicted].code.coding[loinc] = $loinc#19923-2 "Expiratory reserve Predicted"
+* component[ratio].code.coding[sct] = $SCT-version#TODO
+* component[ratio].code.coding[loinc] = $SCT-version#TODO

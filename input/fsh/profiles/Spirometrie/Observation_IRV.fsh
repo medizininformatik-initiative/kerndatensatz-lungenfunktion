@@ -17,9 +17,9 @@ Description: "Dieses Profil beschreibt die Messung des inspiratorischen Reservev
 * insert LicenseCodeableCCBY40
 //Profile
 * partOf only Reference(MII_PR_Lungenfunktion_Spirometrie_Messung)
-* code.coding[loinc].code = $loinc#100759-0 "Inspiratory reserve vol spirometry"
-* code.coding[loinc].display = "FVC Vol Respiratory Spirometry"
-* code.coding[sct].code = $SCT-version#55562005
-* code.coding[sct].display = "Inspiratory reserve volume (observable entity)"
-* component[predicted].code = $SCT-version#TODO
-* component[ratio].code = $SCT-version#TODO
+* code.coding[loinc] = $loinc#100759-0 "Inspiratory reserve [Volume] Respiratory system by Spirometry"
+* code.coding[sct] = $SCT-version#55562005 "Inspiratory reserve volume (observable entity)"
+* component[predicted].code.coding[sct] = $SCT-version#TODO
+* component[predicted].code.coding[loinc] = $loinc#TODO
+* component[ratio].code.coding[sct] = $SCT-version#TODO
+* component[ratio].code.coding[loinc] = $loinc#TODO
