@@ -39,9 +39,7 @@ Description: "Dieses Beobachtung beschreibt eine Flussmessung."
 * code.coding contains
     sct 0..1 and
     loinc 0..1
-* code.coding[loinc] ^patternCoding.system = "$loinc"
 * code.coding[loinc].code from MII_VS_Lufu_LNC_Observable (required)
-* code.coding[sct] ^patternCoding.system = "$SCT"
 * code.coding[sct].code from MII_VS_Lufu_SCT_Observable (required)
 * code.coding.system 1.. MS
 * code.coding.code 1.. MS
@@ -97,9 +95,17 @@ Description: "Dieses Beobachtung beschreibt eine Flussmessung."
 * component ^slicing.discriminator.path = "$this"
 * component ^slicing.rules = #open
 * component contains
-    predicted 0..1 and
-    ratio 0..1 and
-    z-score 0..1
+    predicted 0..1 MS and
+    ratio 0..1 MS and
+    z-score 0..1 MS
+* component.code.coding ^slicing.discriminator.type = #pattern
+* component.code.coding ^slicing.discriminator.path = "$this"
+* component.code.coding ^slicing.rules = #open
+* component.code.coding contains
+    sct 0..1 MS and
+    loinc 0..1 MS
+* component.code.coding[loinc].code from MII_VS_Lufu_LNC_Observable (required)
+* component.code.coding[sct].code from MII_VS_Lufu_SCT_Observable (required)
 * component.valueQuantity.value MS
 * component.valueQuantity.unit MS
 * component.valueQuantity.system MS
@@ -116,7 +122,7 @@ Description: "Dieses Beobachtung beschreibt eine Flussmessung."
 * component[ratio].valueQuantity.code = $ucum#%
 * component[z-score] ^short = "Z-Score"
 * component[z-score] ^definition = "Z-Score mit GLI-Referenztabellen"
-* component[z-score].code = $SCT-version#1078210003 "Z-score calculation technique (qualifier value)"
+* component[z-score].code.coding[sct] = $SCT-version#1078210003 "Z-score calculation technique (qualifier value)"
 
 //Translation Profile
 * insert Translation(partOf ^short, de-DE, Teil von)
