@@ -19,8 +19,8 @@ Description: "Dieses Profil beschreibt die Messung der Transitzeit."
 * insert LicenseCodeableCCBY40
 //Profile
 * partOf only Reference(MII_PR_Lungenfunktion_Diffusion_Messung)
-* code.coding[sct].code = $SCT-version#55532004
-* code.coding[sct].display = "Expiratory reserve volume (observable entity)"
-* method = $SCT-version#264284001 "Single-breath technique (qualifier value)"
-* component[predicted].code = $SCT-version#TODO
-* component[ratio].code = $SCT-version#TODO
+//* code.coding[sct].code = $SCT-version#TODO
+//* code.coding[sct].display = "Expiratory reserve volume (observable entity)"
+//* method = $SCT-version#264284001 "TODO"
+//* component[predicted].code = $SCT-version#TODO
+//* component[ratio].code = $SCT-version#TODO
