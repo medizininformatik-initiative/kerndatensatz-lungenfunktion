@@ -17,7 +17,9 @@ Description: "Dieses Profil beschreibt die Messung der spezifischen, totalen Ate
 * insert LicenseCodeableCCBY40
 //Profile
 * partOf only Reference(MII_PR_Lungenfunktion_Bodyplethysmographie_Messung)
-* code.coding[sct].code = $SCT-version#79412009
-* code.coding[sct].display = "Specific airway conductance (observable entity)"
-* component[predicted].code = $SCT-version#TODO
-* component[ratio].code = $SCT-version#TODO
+* code.coding[loinc] = $loinc#TODO
+* code.coding[sct] = $SCT-version#79412009 "Specific airway conductance (observable entity)"
+* component[predicted].code.coding[sct] = $SCT-version#TODO
+* component[predicted].code.coding[loinc] = $loinc#TODO
+* component[ratio].code.coding[sct] = $SCT-version#TODO
+* component[ratio].code.coding[loinc] = $loinc#TODO

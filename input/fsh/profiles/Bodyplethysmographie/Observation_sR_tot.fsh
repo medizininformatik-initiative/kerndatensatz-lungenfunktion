@@ -17,7 +17,9 @@ Description: "Dieses Profil beschreibt die Messung des spezifischen Atemwegswide
 * insert LicenseCodeableCCBY40
 //Profile
 * partOf only Reference(MII_PR_Lungenfunktion_Bodyplethysmographie_Messung)
-* code.coding[sct].code = $SCT-version#1366667009
-* code.coding[sct].display = "Specific airway resistance (observable entity)"
-* component[predicted].code = $SCT-version#TODO
-* component[ratio].code = $SCT-version#TODO
+* code.coding[loinc] = $loinc#91980-3 "Specific airway resistance by Plethysmograph body box"
+* code.coding[sct] = $SCT-version#1366667009 "Specific airway resistance (observable entity)"
+* component[predicted].code.coding[sct] = $SCT-version#TODO
+* component[predicted].code.coding[loinc] = $loinc#TODO
+* component[ratio].code.coding[sct] = $SCT-version#TODO
+* component[ratio].code.coding[loinc] = $loinc#91982-9 "Specific airway resistance measured/predicted by Plethysmograph body box"

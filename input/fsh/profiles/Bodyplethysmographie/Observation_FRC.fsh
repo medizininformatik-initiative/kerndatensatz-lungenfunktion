@@ -17,7 +17,9 @@ Description: "Dieses Profil beschreibt die Messung der funktionellen Residualkap
 * insert LicenseCodeableCCBY40
 //Profile
 * partOf only Reference(MII_PR_Lungenfunktion_Bodyplethysmographie_Messung)
-* code.coding[sct].code = $SCT-version#65825000
-* code.coding[sct].display = "Functional residual capacity (observable entity)"
-* component[predicted].code = $SCT-version#TODO
-* component[ratio].code = $SCT-version#TODO
+* code.coding[loinc] = $loinc#19843-2 "Functional residual capacity"
+* code.coding[sct] = $SCT-version#65825000 "Functional residual capacity (observable entity)"
+* component[predicted].code.coding[sct] = $SCT-version#TODO
+* component[predicted].code.coding[loinc] = $loinc#19847-3 "Functional residual capacity Predicted"
+* component[ratio].code.coding[sct] = $SCT-version#TODO
+* component[ratio].code.coding[loinc] = $loinc#TODO

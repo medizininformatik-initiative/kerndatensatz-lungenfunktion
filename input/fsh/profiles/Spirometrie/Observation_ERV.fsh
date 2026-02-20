@@ -22,4 +22,4 @@ Description: "Dieses Profil beschreibt die Messung des exspiratorischen Reservev
 * component[predicted].code.coding[sct] = $SCT-version#TODO
 * component[predicted].code.coding[loinc] = $loinc#19923-2 "Expiratory reserve Predicted"
 * component[ratio].code.coding[sct] = $SCT-version#TODO
-* component[ratio].code.coding[loinc] = $SCT-version#TODO
+* component[ratio].code.coding[loinc] = $loinc#TODO
