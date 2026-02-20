@@ -1,0 +1,58 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "MII_VS_Lufu_SCT_Technique",
+  "id": "mii-vs-lufu-sct-technique",
+  "title": "MII VS Lufu SCT Technique",
+  "description": "Import the ValueSet for lungfunction",
+  "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/ValueSet/mii-vs-lufu-sct-technique",
+  "publisher": "Medizininformatik Initiative",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://www.medizininformatik-initiative.de"
+        }
+      ]
+    }
+  ],
+  "version": "2025.0.0",
+  "copyright": "This value set includes content from SNOMED CT, which is copyright © 2002+ International Health Terminology Standards Development Organisation (IHTSDO), and distributed by agreement between IHTSDO and HL7. Implementer use of SNOMED CT is not covered by this agreement",
+  "date": "2025-01-01",
+  "meta": {
+    "profile": [
+      "http://hl7.org/fhir/StructureDefinition/shareablevalueset"
+    ]
+  },
+  "experimental": false,
+  "compose": {
+    "include": [
+      {
+        "system": "http://snomed.info/sct",
+        "concept": [
+          {
+            "code": "264284001",
+            "display": "Single-breath technique (qualifier value)"
+          },
+          {
+            "code": "264283007",
+            "display": "Multiple-breath technique (qualifier value)"
+          },
+          {
+            "code": "258071007",
+            "display": "Rebreathing method (qualifier value)"
+          },
+          {
+            "code": "258031002",
+            "display": "Helium single breath technique (qualifier value)"
+          },
+          {
+            "code": "258033004",
+            "display": "Helium steady state technique (qualifier value)"
+          }
+        ]
+      }
+    ]
+  }
+}

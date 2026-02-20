@@ -107,17 +107,23 @@
       {
         "id": "Observation.code.coding:sct",
         "path": "Observation.code.coding",
-        "sliceName": "sct"
+        "sliceName": "sct",
+        "patternCoding": {
+          "code": "42457008",
+          "system": "http://snomed.info/sct",
+          "version": "http://snomed.info/sct/900000000000207008/version/20240701",
+          "display": "Residual respiratory volume (observable entity)"
+        }
       },
       {
-        "id": "Observation.code.coding:sct.code",
-        "path": "Observation.code.coding.code",
-        "patternCode": "42457008"
-      },
-      {
-        "id": "Observation.code.coding:sct.display",
-        "path": "Observation.code.coding.display",
-        "patternString": "Residual respiratory volume (observable entity)"
+        "id": "Observation.code.coding:loinc",
+        "path": "Observation.code.coding",
+        "sliceName": "loinc",
+        "patternCoding": {
+          "code": "20146-7",
+          "system": "http://loinc.org",
+          "display": "Residual volume"
+        }
       },
       {
         "id": "Observation.component:predicted",
@@ -125,16 +131,23 @@
         "sliceName": "predicted"
       },
       {
-        "id": "Observation.component:predicted.code",
-        "path": "Observation.component.code",
-        "patternCodeableConcept": {
-          "coding": [
-            {
-              "code": "TODO",
-              "system": "http://snomed.info/sct",
-              "version": "http://snomed.info/sct/900000000000207008/version/20240701"
-            }
-          ]
+        "id": "Observation.component:predicted.code.coding:sct",
+        "path": "Observation.component.code.coding",
+        "sliceName": "sct",
+        "patternCoding": {
+          "code": "TODO",
+          "system": "http://snomed.info/sct",
+          "version": "http://snomed.info/sct/900000000000207008/version/20240701"
+        }
+      },
+      {
+        "id": "Observation.component:predicted.code.coding:loinc",
+        "path": "Observation.component.code.coding",
+        "sliceName": "loinc",
+        "patternCoding": {
+          "code": "20145-9",
+          "system": "http://loinc.org",
+          "display": "Residual volume Predicted"
         }
       },
       {
@@ -143,16 +156,23 @@
         "sliceName": "ratio"
       },
       {
-        "id": "Observation.component:ratio.code",
-        "path": "Observation.component.code",
-        "patternCodeableConcept": {
-          "coding": [
-            {
-              "code": "TODO",
-              "system": "http://snomed.info/sct",
-              "version": "http://snomed.info/sct/900000000000207008/version/20240701"
-            }
-          ]
+        "id": "Observation.component:ratio.code.coding:sct",
+        "path": "Observation.component.code.coding",
+        "sliceName": "sct",
+        "patternCoding": {
+          "code": "TODO",
+          "system": "http://snomed.info/sct",
+          "version": "http://snomed.info/sct/900000000000207008/version/20240701"
+        }
+      },
+      {
+        "id": "Observation.component:ratio.code.coding:loinc",
+        "path": "Observation.component.code.coding",
+        "sliceName": "loinc",
+        "patternCoding": {
+          "code": "94125-2",
+          "system": "http://loinc.org",
+          "display": "Residual volume/Predicted by Plethysmograph body box"
         }
       }
     ]

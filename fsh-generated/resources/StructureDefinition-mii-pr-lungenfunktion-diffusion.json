@@ -167,7 +167,7 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-kco-sb"
+              "https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-kco"
             ]
           }
         ],
@@ -183,87 +183,87 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-kcoc-sb"
+              "https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-kcoc"
             ]
           }
         ],
         "mustSupport": true
       },
       {
-        "id": "DiagnosticReport.result:ERV_SB",
+        "id": "DiagnosticReport.result:ERV",
         "path": "DiagnosticReport.result",
-        "sliceName": "ERV_SB",
+        "sliceName": "ERV",
         "min": 0,
         "max": "1",
         "type": [
           {
             "code": "Reference",
             "targetProfile": [
-              "https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-erv-sb"
+              "https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-erv"
             ]
           }
         ],
         "mustSupport": true
       },
       {
-        "id": "DiagnosticReport.result:TLC_SB",
+        "id": "DiagnosticReport.result:TLC",
         "path": "DiagnosticReport.result",
-        "sliceName": "TLC_SB",
+        "sliceName": "TLC",
         "min": 0,
         "max": "1",
         "type": [
           {
             "code": "Reference",
             "targetProfile": [
-              "https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-tlc-sb"
+              "https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-tlc"
             ]
           }
         ],
         "mustSupport": true
       },
       {
-        "id": "DiagnosticReport.result:RV_SB",
+        "id": "DiagnosticReport.result:RV",
         "path": "DiagnosticReport.result",
-        "sliceName": "RV_SB",
+        "sliceName": "RV",
         "min": 0,
         "max": "1",
         "type": [
           {
             "code": "Reference",
             "targetProfile": [
-              "https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-rv-sb"
+              "https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-rv"
             ]
           }
         ],
         "mustSupport": true
       },
       {
-        "id": "DiagnosticReport.result:RV_TLC_SB",
+        "id": "DiagnosticReport.result:RV_TLC",
         "path": "DiagnosticReport.result",
-        "sliceName": "RV_TLC_SB",
+        "sliceName": "RV_TLC",
         "min": 0,
         "max": "1",
         "type": [
           {
             "code": "Reference",
             "targetProfile": [
-              "https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-rv-tlc-sb"
+              "https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-rv-tlc"
             ]
           }
         ],
         "mustSupport": true
       },
       {
-        "id": "DiagnosticReport.result:FRC_SB",
+        "id": "DiagnosticReport.result:FRC",
         "path": "DiagnosticReport.result",
-        "sliceName": "FRC_SB",
+        "sliceName": "FRC",
         "min": 0,
         "max": "1",
         "type": [
           {
             "code": "Reference",
             "targetProfile": [
-              "https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-frc-sb"
+              "https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-frc"
             ]
           }
         ],
@@ -295,23 +295,23 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-va-sb"
+              "https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-va"
             ]
           }
         ],
         "mustSupport": true
       },
       {
-        "id": "DiagnosticReport.result:IVC_SB",
+        "id": "DiagnosticReport.result:IVC",
         "path": "DiagnosticReport.result",
-        "sliceName": "IVC_SB",
+        "sliceName": "IVC",
         "min": 0,
         "max": "1",
         "type": [
           {
             "code": "Reference",
             "targetProfile": [
-              "https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-ivc-sb"
+              "https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-ivc"
             ]
           }
         ],

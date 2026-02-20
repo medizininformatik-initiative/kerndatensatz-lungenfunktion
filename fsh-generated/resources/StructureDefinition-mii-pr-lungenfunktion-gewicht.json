@@ -1,6 +1,6 @@
 {
   "resourceType": "StructureDefinition",
-  "id": "mii-pr-lungenfunktion-ta",
+  "id": "mii-pr-lungenfunktion-gewicht",
   "extension": [
     {
       "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-ex-meta-license-codeable",
@@ -15,9 +15,9 @@
       }
     }
   ],
-  "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-ta",
+  "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-gewicht",
   "version": "2025.0.0",
-  "name": "MII_PR_Lungenfunktion_TA",
+  "name": "MII_PR_Lungenfunktion_Gewicht",
   "_name": {
     "extension": [
       {
@@ -29,13 +29,13 @@
           },
           {
             "url": "content",
-            "valueString": "MII_PR Lung function TA"
+            "valueString": "MII_PR_Lungfunction_Weight"
           }
         ]
       }
     ]
   },
-  "title": "MII PR Lungenfunktion TA",
+  "title": "MII PR Lungenfunktion Gewicht",
   "_title": {
     "extension": [
       {
@@ -47,7 +47,7 @@
           },
           {
             "url": "content",
-            "valueString": "MII PR Lung function TA"
+            "valueString": "MII PR Lungfunction Weight"
           }
         ]
       }
@@ -66,7 +66,7 @@
       ]
     }
   ],
-  "description": "Dieses Profil beschreibt die Messung der Transitzeit.",
+  "description": "Dieses Beobachtung beschreibt eine Gewichtsressource.",
   "_description": {
     "extension": [
       {
@@ -78,7 +78,7 @@
           },
           {
             "url": "content",
-            "valueString": "The profile describes a observation for the transittime."
+            "valueString": "The profile describes a observation for testing of lungfunction."
           }
         ]
       }
@@ -177,14 +177,6 @@
             }
           ]
         },
-        "type": [
-          {
-            "code": "Reference",
-            "targetProfile": [
-              "https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-diffusion-messung"
-            ]
-          }
-        ],
         "mustSupport": true
       },
       {
@@ -319,7 +311,6 @@
             }
           ]
         },
-        "min": 1,
         "mustSupport": true
       },
       {
@@ -432,24 +423,56 @@
         "path": "Observation.code.coding",
         "sliceName": "sct",
         "min": 0,
-        "max": "1",
-        "patternCoding": {
-          "code": "TODO",
-          "system": "http://snomed.info/sct",
-          "version": "http://snomed.info/sct/900000000000207008/version/20240701"
+        "max": "1"
+      },
+      {
+        "id": "Observation.code.coding:sct.system",
+        "path": "Observation.code.coding.system",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.code.coding:sct.code",
+        "path": "Observation.code.coding.code",
+        "min": 1,
+        "mustSupport": true,
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/ValueSet/mii-vs-lufu-sct-observable"
         }
+      },
+      {
+        "id": "Observation.code.coding:sct.display",
+        "path": "Observation.code.coding.display",
+        "mustSupport": true
       },
       {
         "id": "Observation.code.coding:loinc",
         "path": "Observation.code.coding",
         "sliceName": "loinc",
         "min": 0,
-        "max": "1",
-        "patternCoding": {
-          "code": "60821-6",
-          "system": "http://loinc.org",
-          "display": "Apnea duration"
+        "max": "1"
+      },
+      {
+        "id": "Observation.code.coding:loinc.system",
+        "path": "Observation.code.coding.system",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.code.coding:loinc.code",
+        "path": "Observation.code.coding.code",
+        "min": 1,
+        "mustSupport": true,
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/ValueSet/mii-vs-lufu-lnc-observable"
         }
+      },
+      {
+        "id": "Observation.code.coding:loinc.display",
+        "path": "Observation.code.coding.display",
+        "mustSupport": true
       },
       {
         "id": "Observation.subject",
@@ -674,7 +697,7 @@
       {
         "id": "Observation.value[x].unit",
         "path": "Observation.value[x].unit",
-        "patternString": "s",
+        "patternString": "ug",
         "mustSupport": true
       },
       {
@@ -686,7 +709,7 @@
       {
         "id": "Observation.value[x].code",
         "path": "Observation.value[x].code",
-        "patternCode": "s",
+        "patternCode": "ug",
         "mustSupport": true
       },
       {
@@ -1313,6 +1336,51 @@
         "mustSupport": true
       },
       {
+        "id": "Observation.component.code.coding",
+        "path": "Observation.component.code.coding",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "pattern",
+              "path": "$this"
+            }
+          ],
+          "rules": "open"
+        }
+      },
+      {
+        "id": "Observation.component.code.coding:sct",
+        "path": "Observation.component.code.coding",
+        "sliceName": "sct",
+        "min": 0,
+        "max": "1",
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.component.code.coding:sct.code",
+        "path": "Observation.component.code.coding.code",
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/ValueSet/mii-vs-lufu-sct-observable"
+        }
+      },
+      {
+        "id": "Observation.component.code.coding:loinc",
+        "path": "Observation.component.code.coding",
+        "sliceName": "loinc",
+        "min": 0,
+        "max": "1",
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.component.code.coding:loinc.code",
+        "path": "Observation.component.code.coding.code",
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/ValueSet/mii-vs-lufu-lnc-observable"
+        }
+      },
+      {
         "id": "Observation.component.value[x]",
         "path": "Observation.component.value[x]",
         "slicing": {
@@ -1425,7 +1493,8 @@
           ]
         },
         "min": 0,
-        "max": "1"
+        "max": "1",
+        "mustSupport": true
       },
       {
         "id": "Observation.component:predicted.value[x]:valueQuantity",
@@ -1440,7 +1509,7 @@
       {
         "id": "Observation.component:predicted.value[x]:valueQuantity.unit",
         "path": "Observation.component.value[x].unit",
-        "patternString": "L"
+        "patternString": "ug"
       },
       {
         "id": "Observation.component:predicted.value[x]:valueQuantity.system",
@@ -1450,7 +1519,7 @@
       {
         "id": "Observation.component:predicted.value[x]:valueQuantity.code",
         "path": "Observation.component.value[x].code",
-        "patternCode": "L"
+        "patternCode": "ug"
       },
       {
         "id": "Observation.component:ratio",
@@ -1519,7 +1588,8 @@
           ]
         },
         "min": 0,
-        "max": "1"
+        "max": "1",
+        "mustSupport": true
       },
       {
         "id": "Observation.component:ratio.value[x]:valueQuantity",
@@ -1613,20 +1683,18 @@
           ]
         },
         "min": 0,
-        "max": "1"
+        "max": "1",
+        "mustSupport": true
       },
       {
-        "id": "Observation.component:z-score.code",
-        "path": "Observation.component.code",
-        "patternCodeableConcept": {
-          "coding": [
-            {
-              "code": "1078210003",
-              "system": "http://snomed.info/sct",
-              "version": "http://snomed.info/sct/900000000000207008/version/20240701",
-              "display": "Z-score calculation technique (qualifier value)"
-            }
-          ]
+        "id": "Observation.component:z-score.code.coding:sct",
+        "path": "Observation.component.code.coding",
+        "sliceName": "sct",
+        "patternCoding": {
+          "code": "1078210003",
+          "system": "http://snomed.info/sct",
+          "version": "http://snomed.info/sct/900000000000207008/version/20240701",
+          "display": "Z-score calculation technique (qualifier value)"
         }
       }
     ]

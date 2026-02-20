@@ -1,6 +1,6 @@
 {
   "resourceType": "StructureDefinition",
-  "id": "mii-pr-lungenfunktion-dosis",
+  "id": "mii-pr-lungenfunktion-kco",
   "extension": [
     {
       "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-ex-meta-license-codeable",
@@ -15,9 +15,9 @@
       }
     }
   ],
-  "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-dosis",
+  "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-kco",
   "version": "2025.0.0",
-  "name": "MII_PR_Lungenfunktion_Dosis",
+  "name": "MII_PR_Lungenfunktion_KCO",
   "_name": {
     "extension": [
       {
@@ -29,13 +29,13 @@
           },
           {
             "url": "content",
-            "valueString": "MII_PR_Lungfunction_Dose"
+            "valueString": "MII PR Lung function KCO"
           }
         ]
       }
     ]
   },
-  "title": "MII PR Lungenfunktion Dosis",
+  "title": "MII PR Lungenfunktion KCO",
   "_title": {
     "extension": [
       {
@@ -47,7 +47,7 @@
           },
           {
             "url": "content",
-            "valueString": "MII PR Lungfunction Dose"
+            "valueString": "MII PR Lung function KCO"
           }
         ]
       }
@@ -66,7 +66,7 @@
       ]
     }
   ],
-  "description": "Dieses Profil beschreibt die Messung der Dosis.",
+  "description": "Dieses Profil beschreibt die Messung der Transferkapzität von Kohlenstoffmonoxid.",
   "_description": {
     "extension": [
       {
@@ -78,7 +78,7 @@
           },
           {
             "url": "content",
-            "valueString": "The profile describes a observation for the dose."
+            "valueString": "The profile describes a observation for the transfer capacity of carbon monoxid."
           }
         ]
       }
@@ -88,7 +88,7 @@
   "kind": "resource",
   "abstract": false,
   "type": "Observation",
-  "baseDefinition": "https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-gewicht",
+  "baseDefinition": "https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-transferkoeffizient",
   "derivation": "constraint",
   "differential": {
     "element": [
@@ -99,7 +99,7 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-provokationstest-messung"
+              "https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-diffusion-messung"
             ]
           }
         ]
@@ -109,10 +109,10 @@
         "path": "Observation.code.coding",
         "sliceName": "sct",
         "patternCoding": {
-          "code": "1366665001",
+          "code": "251952002",
           "system": "http://snomed.info/sct",
           "version": "http://snomed.info/sct/900000000000207008/version/20240701",
-          "display": "Single breath carbon monoxide diffusing capacity (observable entity)"
+          "display": "Transfer coefficient (respiratory measure) (observable entity)"
         }
       },
       {
@@ -120,9 +120,9 @@
         "path": "Observation.code.coding",
         "sliceName": "loinc",
         "patternCoding": {
-          "code": "19911-7",
+          "code": "19916-6",
           "system": "http://loinc.org",
-          "display": "Diffusion capacity.carbon monoxide"
+          "display": "Diffusion capacity/Alveolar volume"
         }
       },
       {
@@ -132,6 +132,19 @@
           "strength": "required",
           "valueSet": "https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/ValueSet/mii-vs-lufu-sct-technique"
         }
+      },
+      {
+        "id": "Observation.derivedFrom",
+        "path": "Observation.derivedFrom",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-dlco",
+              "https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-va"
+            ]
+          }
+        ]
       },
       {
         "id": "Observation.component:predicted",
@@ -153,9 +166,9 @@
         "path": "Observation.component.code.coding",
         "sliceName": "loinc",
         "patternCoding": {
-          "code": "19910-9",
+          "code": "19915-8",
           "system": "http://loinc.org",
-          "display": "Diffusion capacity.carbon monoxide Predicted"
+          "display": "Diffusion capacity/Alveolar volume Predicted"
         }
       },
       {
@@ -178,9 +191,9 @@
         "path": "Observation.component.code.coding",
         "sliceName": "loinc",
         "patternCoding": {
-          "code": "98130-8",
+          "code": "98203-3",
           "system": "http://loinc.org",
-          "display": "Diffusion capacity.carbon monoxide/Predicted"
+          "display": "(Diffusion capacity/Alveolar volume)/predicted"
         }
       }
     ]
