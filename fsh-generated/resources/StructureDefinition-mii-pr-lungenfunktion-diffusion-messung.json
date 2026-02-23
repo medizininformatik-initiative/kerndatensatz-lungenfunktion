@@ -107,10 +107,10 @@
         "path": "Procedure.code.coding",
         "sliceName": "sct",
         "patternCoding": {
-          "code": "127783003",
+          "code": "36421003",
           "system": "http://snomed.info/sct",
           "version": "http://snomed.info/sct/900000000000207008/version/20240701",
-          "display": "Spirometry (procedure)"
+          "display": "Carbon monoxide diffusing capacity measurement (procedure)"
         }
       },
       {
@@ -124,20 +124,6 @@
             ]
           }
         ]
-      },
-      {
-        "id": "Procedure.bodySite",
-        "path": "Procedure.bodySite",
-        "patternCodeableConcept": {
-          "coding": [
-            {
-              "code": "39607008",
-              "system": "http://snomed.info/sct",
-              "version": "http://snomed.info/sct/900000000000207008/version/20240701",
-              "display": "Lung structure (body structure)"
-            }
-          ]
-        }
       },
       {
         "id": "Procedure.outcome",

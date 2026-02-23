@@ -125,20 +125,6 @@
         ]
       },
       {
-        "id": "Procedure.bodySite",
-        "path": "Procedure.bodySite",
-        "patternCodeableConcept": {
-          "coding": [
-            {
-              "code": "39607008",
-              "system": "http://snomed.info/sct",
-              "version": "http://snomed.info/sct/900000000000207008/version/20240701",
-              "display": "Lung structure (body structure)"
-            }
-          ]
-        }
-      },
-      {
         "id": "Procedure.outcome",
         "path": "Procedure.outcome",
         "mustSupport": true,
