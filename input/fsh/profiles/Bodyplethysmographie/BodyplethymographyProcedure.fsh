@@ -18,7 +18,6 @@ Description: "Beschreibt die Tätigkeiten, wie eine Bodyplethysmographie durchge
 * category.coding = $SCT-version#23426006 "Measurement of respiratory function (procedure)"
 * code.coding[sct] = $SCT-version#28275007 "Total body plethysmography (procedure)"
 * subject only Reference(Patient)
-* bodySite = $SCT-version#39607008 "Lung structure (body structure)"
 * outcome MS
 * outcome from http://hl7.org/fhir/ValueSet/procedure-outcome (preferred)
 * report MS

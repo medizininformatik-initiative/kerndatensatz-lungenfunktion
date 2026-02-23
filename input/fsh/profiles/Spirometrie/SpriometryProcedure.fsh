@@ -22,7 +22,6 @@ Description: "Beschreibt die Tätigkeiten, wie eine Spirometrie durchgeführt wi
 * category.coding = $SCT-version#23426006 "Measurement of respiratory function (procedure)"
 * code.coding[sct] = $SCT-version#127783003 "Spirometry (procedure)"
 * subject only Reference(Patient)
-* bodySite = $SCT#39607008 "Lung structure (body structure)"
 * outcome MS
 * outcome from http://hl7.org/fhir/ValueSet/procedure-outcome (preferred)
 * report MS

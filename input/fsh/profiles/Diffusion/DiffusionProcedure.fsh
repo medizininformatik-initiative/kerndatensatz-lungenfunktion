@@ -16,9 +16,8 @@ Description: "Beschreibt die Tätigkeiten, wie eine Diffusion durchgeführt wird
 * insert LicenseCodeableCCBY40
 //Profile
 * category.coding = $SCT-version#23426006 "Measurement of respiratory function (procedure)"
-* code.coding[sct] = $SCT-version#127783003 "Spirometry (procedure)"
+* code.coding[sct] = $SCT-version#36421003 "Carbon monoxide diffusing capacity measurement (procedure)"
 * subject only Reference(Patient)
-* bodySite = $SCT-version#39607008 "Lung structure (body structure)"
 * outcome MS
 * outcome from http://hl7.org/fhir/ValueSet/procedure-outcome (preferred)
 * report MS
