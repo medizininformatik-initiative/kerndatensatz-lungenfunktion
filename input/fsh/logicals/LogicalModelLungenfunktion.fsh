@@ -19,7 +19,6 @@ Description: "MII LogicalModel Modul Lungenfunktion"
 * . ^short = "Das Erweiterungsmodul Lungenfunktion enthält Datenelemente zur Dokumentation von Lungenfunktionsuntersuchungen (Spirometrie, Bodyplethysmographie, Diffusionskapazität, Provokationstestung) und zugehörigen Befundberichten."
 
 //Offene Fragen: 
-//Wo wird die Atemfrequenz gemessen? Abgebildet in Bodyplethysmographie
 //Provakationstest: Erweiterung der Spirometrie?
 //LM
 * Lungenfunktionsprozedur 0..1 BackboneElement "Lungenfunktionsprozedur" "Generische Prozedur einer Lungenfunktionmessung. Hier soll das MII KDS-Profil Prozedur verwendet werden."
@@ -69,6 +68,7 @@ Description: "MII LogicalModel Modul Lungenfunktion"
       * MEF25 0..1 http://hl7.org/fhir/StructureDefinition/CodeableConcept "MEF25" "Maximaler exspiratorischer Fluss bei einem Restvolumen von 25 % der ausgeatmeten forcierten Vitalkapazität; SNOMED-CT: 251919008; LOINC: "
       * MEF50 0..1 http://hl7.org/fhir/StructureDefinition/CodeableConcept "MEF50" "Maximaler exspiratorischer Fluss bei einem Restvolumen von 50 % der ausgeatmeten forcierten Vitalkapazität; SNOMED-CT: 251920002; LOINC: "
       * MEF75 0..1 http://hl7.org/fhir/StructureDefinition/CodeableConcept "MEF75" "Maximaler exspiratorischer Fluss bei einem Restvolumen von 75 % der ausgeatmeten forcierten Vitalkapazität; SNOMED-CT: 251921003; LOINC: "
+      * MEF7525 0..1 http://hl7.org/fhir/StructureDefinition/CodeableConcept "MEF75-25" "Maximaler exspiratorischer Fluss bei einem Restvolumen von 75 % - 25 % der ausgeatmeten forcierten Vitalkapazität; SNOMED-CT: 251930006; LOINC: 69972-8"
       * FEV1VC 0..1 http://hl7.org/fhir/StructureDefinition/CodeableConcept "FEV1/VC Verhältnis" "Verhältnis von Forciertes Exspirationsvolumen in 1 Sekunde zur Vitalkapazität; SNOMED-CT: 251943006; LOINC: 19926-5"
       * FEV1FVC 0..1 http://hl7.org/fhir/StructureDefinition/CodeableConcept "FEV1/FVC Verhältnis" "Verhältnis von Forciertes Exspirationsvolumen in 1 Sekunde zu  Forcierter Vitalkapazität; SNOMED-CT: 251944000; LOINC: "
       * BF 0..1 http://hl7.org/fhir/StructureDefinition/CodeableConcept "Atemfrequenz" "Messung der Atemfrequenz; SNOMED-CT: 271625008; LOINC: "
@@ -158,8 +158,15 @@ Mapping: Lungenfunktion-LogicalModel
 Id: FHIR
 Title: "Bildgebung LogicalModel FHIR Mapping"
 Source: MII_LM_Lungenfunktion
-/** Befundbericht -> "DiagnosticReport"
-  * AnforderndeMassnahme -> "DiagnosticReport.basedOn"
+* Lungenfunktionsprozedur -> "Procedure"
+  * Status -> "Procedure.status"
+  * Kategorie -> "Procedure.category"
+  * Code -> "Procedure.code"
+  * Person -> "Procedure.subject"
+  * Befundungszeit -> "Procedure.performed[x]"
+  * Messresultat -> "Procedure.outcome"
+  * Bericht -> "Procedure.report"
+* Lungenfunktionsbefund -> "DiagnosticReport"
   * Status -> "DiagnosticReport.status"
   * Kategorie -> "DiagnosticReport.category"
   * Code -> "DiagnosticReport.code"
@@ -169,24 +176,29 @@ Source: MII_LM_Lungenfunktion
   * Periode -> "DiagnosticReport.effectivePeriod"
   * ZeitpunktErstellung -> "DiagnosticReport.issued"
   * Beobachtung -> "DiagnosticReport.result"
-  * Studienbezug -> "DiagnosticReport.study"
   * InterpretationBeobachtung -> "DiagnosticReport.conclusion"
   * StrukturierteInterpretation -> "DiagnosticReport.conclusionCode"
-  * Zusatzinformation -> "DiagnosticReport.supportingInfo.reference"
-  * Dokumentenanhang -> "DiagnosticReport.presentedForm"*/
+  * Dokumentenanhang -> "DiagnosticReport.presentedForm"
+* Lungenfunktionsmesswerte -> "Observation"
+  * Prozedur -> "Observation.partOf"
+  * Status -> "Observation.status"
+  * Kategorie -> "Observation.category"
+  * Code -> "Observation.code"
+  * Person -> "Observation.subject"
+  * ZeitpunktErstellung -> "Observation.issued"
+  * Messergebnis -> "Observation.value[x]"
+  * Interpretation -> "Observation.interpretation"
+  * Messverfahren -> "Observation.method"
+  * UntererReferenzwert -> "Observation.referenceRange.low"
+  * ObererReferenzwert -> "Observation.referenceRange.high"
+  * Referenzalter -> "Observation.referenceRange.age"
+  * WeitereMesswerte -> "Observation.hasMember"
+  * Bezugsmesswerte -> "Observation.derivedFrom"
+  * Bewertungsmesswerte -> "Observation.component"
 
 //Mapping KDS
 Mapping: Lungenfunktion-LogicalModel-Profile
 Id: KDS-Profile
 Title: "Lungenfunktion LogicalModel KDS-Profile Mapping"
 Source: MII_LM_Lungenfunktion
-/** Koerperstruktur -> "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-pr-bildgebung-koerperstruktur"
-* Empfehlung -> "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-pr-bildgebung-behandlungsempfehlung"
-* SemistrukturiertesBefunddokument -> "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-pr-bildgebung-semistrukt-befundbericht"
-* Befundbericht -> "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-pr-bildgebung-radiologischer-befund"
-* Bildgebungsprozedur -> "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-pr-bildgebung-bildgebungsprozedur"
-* Studie -> "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-pr-bildgebung-bildgebungsstudie"
-* GenerischeBeobachtung -> "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-pr-bildgebung-radiologische-beobachtung"
-* Kontrastmittelgabe -> "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-pr-bildgebung-kontrastmittelgabe"
-* Befundungsprozedur -> "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-pr-bildgebung-radiologische-befundungsprozedur"
-* Anforderung -> "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-pr-bildgebung-anforderung-bildgebung"*/
+
