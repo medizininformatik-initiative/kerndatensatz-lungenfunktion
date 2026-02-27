@@ -40,7 +40,7 @@ Description: "Dieses Profil beschreibt die Messung der Transitzeit."
 * code.coding contains
     sct 0..1 and
     loinc 0..1
-* code.coding[loinc] = $loinc#60821-6 "Apnea duration"
+* code.coding[loinc] = $loinc#TODO
 * code.coding[sct] = $SCT-version#TODO
 * code.coding.system 1.. MS
 * code.coding.code 1.. MS
