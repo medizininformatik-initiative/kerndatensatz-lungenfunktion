@@ -146,7 +146,7 @@
             }
           ]
         },
-        "definition": "Teil einer Befundungprozedur",
+        "definition": "Teil von einer Lungenfunktionsprozedur",
         "_definition": {
           "extension": [
             {
@@ -158,7 +158,7 @@
                 },
                 {
                   "url": "content",
-                  "valueString": "Teil einer Lungenfunktionsuntersuchungen"
+                  "valueString": "Teil von einer Lungenfunktionsprozedur"
                 }
               ]
             },
@@ -395,7 +395,7 @@
         "slicing": {
           "discriminator": [
             {
-              "type": "pattern",
+              "type": "value",
               "path": "$this"
             }
           ],
@@ -423,6 +423,68 @@
         "id": "Observation.code.coding:sct",
         "path": "Observation.code.coding",
         "sliceName": "sct",
+        "short": "SNOMED CT Code",
+        "_short": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "de-DE"
+                },
+                {
+                  "url": "content",
+                  "valueString": "SNOMED CT Code"
+                }
+              ]
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "en-US"
+                },
+                {
+                  "url": "content",
+                  "valueString": "SNOMED CT code"
+                }
+              ]
+            }
+          ]
+        },
+        "definition": "Ein Verweis auf einen von SNOMED CT definierten Code",
+        "_definition": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "de-DE"
+                },
+                {
+                  "url": "content",
+                  "valueString": "Ein Verweis auf einen von SNOMED CT definierten Code"
+                }
+              ]
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "en-US"
+                },
+                {
+                  "url": "content",
+                  "valueString": "A reference to a code defined by SNOMED CT"
+                }
+              ]
+            }
+          ]
+        },
         "min": 0,
         "max": "1"
       },
@@ -451,6 +513,68 @@
         "id": "Observation.code.coding:loinc",
         "path": "Observation.code.coding",
         "sliceName": "loinc",
+        "short": "LOINC Code",
+        "_short": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "de-DE"
+                },
+                {
+                  "url": "content",
+                  "valueString": "LOINC Code"
+                }
+              ]
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "en-US"
+                },
+                {
+                  "url": "content",
+                  "valueString": "LOINC code"
+                }
+              ]
+            }
+          ]
+        },
+        "definition": "Ein Verweis auf einen vom LOINC definierten Code",
+        "_definition": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "de-DE"
+                },
+                {
+                  "url": "content",
+                  "valueString": "Ein Verweis auf einen von LOINC definierten Code"
+                }
+              ]
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "en-US"
+                },
+                {
+                  "url": "content",
+                  "valueString": "A reference to a code defined by LOINC"
+                }
+              ]
+            }
+          ]
+        },
         "min": 0,
         "max": "1"
       },
@@ -585,7 +709,7 @@
             }
           ]
         },
-        "definition": "Zeitpunkt, an dem das Ergebnis der Untersuchung dokumentiert wurde",
+        "definition": "Zeitpunkt, an dem die Beobachtung der Untersuchung dokumentiert wurde",
         "_definition": {
           "extension": [
             {
@@ -652,7 +776,7 @@
             }
           ]
         },
-        "definition": "Wert der Analyse",
+        "definition": "Messwert der Beobachtung",
         "_definition": {
           "extension": [
             {
@@ -664,7 +788,7 @@
                 },
                 {
                   "url": "content",
-                  "valueString": "Wert der Analyse"
+                  "valueString": "Messwert der Beobachtung"
                 }
               ]
             },
@@ -677,7 +801,7 @@
                 },
                 {
                   "url": "content",
-                  "valueString": "Value of the analysis"
+                  "valueString": "Value of the observation"
                 }
               ]
             }
@@ -747,7 +871,7 @@
             }
           ]
         },
-        "definition": "Interpretation des Messergebnisses",
+        "definition": "Interpretation des Messwertes",
         "_definition": {
           "extension": [
             {
@@ -759,7 +883,7 @@
                 },
                 {
                   "url": "content",
-                  "valueString": "Interpretation des Messergebnisses"
+                  "valueString": "Interpretation des Messwertes"
                 }
               ]
             },
@@ -814,7 +938,7 @@
             }
           ]
         },
-        "definition": "Methode, mit der der Messwert erfasst wurde",
+        "definition": "Methode, mit der dieser Messwert erfasst wurde",
         "_definition": {
           "extension": [
             {
@@ -826,7 +950,7 @@
                 },
                 {
                   "url": "content",
-                  "valueString": "Methode, mit der der Messwert erfasst wurde"
+                  "valueString": "Methode, mit der dieser Messwert erfasst wurde"
                 }
               ]
             },
@@ -1266,7 +1390,7 @@
         "slicing": {
           "discriminator": [
             {
-              "type": "pattern",
+              "type": "value",
               "path": "$this"
             }
           ],
@@ -1342,7 +1466,7 @@
         "slicing": {
           "discriminator": [
             {
-              "type": "pattern",
+              "type": "value",
               "path": "$this"
             }
           ],
@@ -1353,6 +1477,68 @@
         "id": "Observation.component.code.coding:sct",
         "path": "Observation.component.code.coding",
         "sliceName": "sct",
+        "short": "SNOMED CT Code",
+        "_short": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "de-DE"
+                },
+                {
+                  "url": "content",
+                  "valueString": "SNOMED CT Code"
+                }
+              ]
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "en-US"
+                },
+                {
+                  "url": "content",
+                  "valueString": "SNOMED CT code"
+                }
+              ]
+            }
+          ]
+        },
+        "definition": "Ein Verweis auf einen von SNOMED CT definierten Code",
+        "_definition": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "de-DE"
+                },
+                {
+                  "url": "content",
+                  "valueString": "Ein Verweis auf einen von SNOMED CT definierten Code"
+                }
+              ]
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "en-US"
+                },
+                {
+                  "url": "content",
+                  "valueString": "A reference to a code defined by SNOMED CT"
+                }
+              ]
+            }
+          ]
+        },
         "min": 0,
         "max": "1",
         "mustSupport": true
@@ -1369,6 +1555,68 @@
         "id": "Observation.component.code.coding:loinc",
         "path": "Observation.component.code.coding",
         "sliceName": "loinc",
+        "short": "LOINC Code",
+        "_short": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "de-DE"
+                },
+                {
+                  "url": "content",
+                  "valueString": "LOINC Code"
+                }
+              ]
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "en-US"
+                },
+                {
+                  "url": "content",
+                  "valueString": "LOINC code"
+                }
+              ]
+            }
+          ]
+        },
+        "definition": "Ein Verweis auf einen vom LOINC definierten Code",
+        "_definition": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "de-DE"
+                },
+                {
+                  "url": "content",
+                  "valueString": "Ein Verweis auf einen von LOINC definierten Code"
+                }
+              ]
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "en-US"
+                },
+                {
+                  "url": "content",
+                  "valueString": "A reference to a code defined by LOINC"
+                }
+              ]
+            }
+          ]
+        },
         "min": 0,
         "max": "1",
         "mustSupport": true
@@ -1510,7 +1758,7 @@
       {
         "id": "Observation.component:predicted.value[x]:valueQuantity.unit",
         "path": "Observation.component.value[x].unit",
-        "patternString": "L"
+        "patternString": "kPa/(L/s)"
       },
       {
         "id": "Observation.component:predicted.value[x]:valueQuantity.system",
@@ -1520,7 +1768,7 @@
       {
         "id": "Observation.component:predicted.value[x]:valueQuantity.code",
         "path": "Observation.component.value[x].code",
-        "patternCode": "L"
+        "patternCode": "kPa/(L/s)"
       },
       {
         "id": "Observation.component:ratio",

@@ -50,6 +50,30 @@
           {
             "code": "258033004",
             "display": "Helium steady state technique (qualifier value)"
+          },
+          {
+            "code": "246506007",
+            "display": "Provocation technique (qualifier value)"
+          },
+          {
+            "code": "789733000",
+            "display": "Standing unsupported (qualifier value)"
+          },
+          {
+            "code": "404926001",
+            "display": "Unsupported sitting position (finding)"
+          },
+          {
+            "code": "271606005",
+            "display": "Sitting propped up (finding)"
+          },
+          {
+            "code": "249862003",
+            "display": "Sitting upright (finding)"
+          },
+          {
+            "code": "40199007",
+            "display": "Supine body position (finding)"
           }
         ]
       }

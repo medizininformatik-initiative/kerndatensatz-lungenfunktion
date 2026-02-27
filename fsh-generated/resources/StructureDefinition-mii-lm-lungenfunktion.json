@@ -119,6 +119,12 @@
           {
             "code": "BackboneElement"
           }
+        ],
+        "mapping": [
+          {
+            "identity": "FHIR",
+            "map": "Procedure"
+          }
         ]
       },
       {
@@ -131,6 +137,12 @@
         "type": [
           {
             "code": "Coding"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "FHIR",
+            "map": "Procedure.status"
           }
         ]
       },
@@ -145,6 +157,12 @@
           {
             "code": "CodeableConcept"
           }
+        ],
+        "mapping": [
+          {
+            "identity": "FHIR",
+            "map": "Procedure.category"
+          }
         ]
       },
       {
@@ -157,6 +175,12 @@
         "type": [
           {
             "code": "BackboneElement"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "FHIR",
+            "map": "Procedure.code"
           }
         ]
       },
@@ -226,6 +250,12 @@
               "http://hl7.org/fhir/StructureDefinition/Patient"
             ]
           }
+        ],
+        "mapping": [
+          {
+            "identity": "FHIR",
+            "map": "Procedure.subject"
+          }
         ]
       },
       {
@@ -239,6 +269,12 @@
           {
             "code": "dateTime"
           }
+        ],
+        "mapping": [
+          {
+            "identity": "FHIR",
+            "map": "Procedure.performed[x]"
+          }
         ]
       },
       {
@@ -251,6 +287,12 @@
         "type": [
           {
             "code": "CodeableConcept"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "FHIR",
+            "map": "Procedure.outcome"
           }
         ]
       },
@@ -270,6 +312,12 @@
               "http://hl7.org/fhir/StructureDefinition/DocumentReference"
             ]
           }
+        ],
+        "mapping": [
+          {
+            "identity": "FHIR",
+            "map": "Procedure.report"
+          }
         ]
       },
       {
@@ -282,6 +330,12 @@
         "type": [
           {
             "code": "BackboneElement"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "FHIR",
+            "map": "DiagnosticReport"
           }
         ]
       },
@@ -296,6 +350,12 @@
           {
             "code": "Coding"
           }
+        ],
+        "mapping": [
+          {
+            "identity": "FHIR",
+            "map": "DiagnosticReport.status"
+          }
         ]
       },
       {
@@ -309,6 +369,12 @@
           {
             "code": "CodeableConcept"
           }
+        ],
+        "mapping": [
+          {
+            "identity": "FHIR",
+            "map": "DiagnosticReport.category"
+          }
         ]
       },
       {
@@ -321,6 +387,12 @@
         "type": [
           {
             "code": "Coding"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "FHIR",
+            "map": "DiagnosticReport.code"
           }
         ]
       },
@@ -390,6 +462,12 @@
               "http://hl7.org/fhir/StructureDefinition/Patient"
             ]
           }
+        ],
+        "mapping": [
+          {
+            "identity": "FHIR",
+            "map": "DiagnosticReport.subject"
+          }
         ]
       },
       {
@@ -406,6 +484,12 @@
               "http://hl7.org/fhir/StructureDefinition/Encounter"
             ]
           }
+        ],
+        "mapping": [
+          {
+            "identity": "FHIR",
+            "map": "DiagnosticReport.encounter"
+          }
         ]
       },
       {
@@ -418,6 +502,12 @@
         "type": [
           {
             "code": "dateTime"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "FHIR",
+            "map": "DiagnosticReport.effectiveDateTime"
           }
         ]
       },
@@ -432,6 +522,12 @@
           {
             "code": "Period"
           }
+        ],
+        "mapping": [
+          {
+            "identity": "FHIR",
+            "map": "DiagnosticReport.effectivePeriod"
+          }
         ]
       },
       {
@@ -444,6 +540,12 @@
         "type": [
           {
             "code": "dateTime"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "FHIR",
+            "map": "DiagnosticReport.issued"
           }
         ]
       },
@@ -461,6 +563,12 @@
               "http://hl7.org/fhir/StructureDefinition/Observation"
             ]
           }
+        ],
+        "mapping": [
+          {
+            "identity": "FHIR",
+            "map": "DiagnosticReport.result"
+          }
         ]
       },
       {
@@ -473,6 +581,12 @@
         "type": [
           {
             "code": "markdown"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "FHIR",
+            "map": "DiagnosticReport.conclusion"
           }
         ]
       },
@@ -487,6 +601,12 @@
           {
             "code": "CodeableConcept"
           }
+        ],
+        "mapping": [
+          {
+            "identity": "FHIR",
+            "map": "DiagnosticReport.conclusionCode"
+          }
         ]
       },
       {
@@ -500,6 +620,12 @@
           {
             "code": "Attachment"
           }
+        ],
+        "mapping": [
+          {
+            "identity": "FHIR",
+            "map": "DiagnosticReport.presentedForm"
+          }
         ]
       },
       {
@@ -512,6 +638,12 @@
         "type": [
           {
             "code": "BackboneElement"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "FHIR",
+            "map": "Observation"
           }
         ]
       },
@@ -529,6 +661,12 @@
               "http://hl7.org/fhir/StructureDefinition/Procedure"
             ]
           }
+        ],
+        "mapping": [
+          {
+            "identity": "FHIR",
+            "map": "Observation.partOf"
+          }
         ]
       },
       {
@@ -541,6 +679,12 @@
         "type": [
           {
             "code": "Coding"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "FHIR",
+            "map": "Observation.status"
           }
         ]
       },
@@ -555,6 +699,12 @@
           {
             "code": "CodeableConcept"
           }
+        ],
+        "mapping": [
+          {
+            "identity": "FHIR",
+            "map": "Observation.category"
+          }
         ]
       },
       {
@@ -567,6 +717,12 @@
         "type": [
           {
             "code": "Coding"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "FHIR",
+            "map": "Observation.code"
           }
         ]
       },
@@ -731,6 +887,19 @@
         "path": "Lungenfunktion.Lungenfunktionsmesswerte.Code.Spirometrie.MEF75",
         "short": "MEF75",
         "definition": "Maximaler exspiratorischer Fluss bei einem Restvolumen von 75 % der ausgeatmeten forcierten Vitalkapazität; SNOMED-CT: 251921003; LOINC: ",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ]
+      },
+      {
+        "id": "Lungenfunktion.Lungenfunktionsmesswerte.Code.Spirometrie.MEF7525",
+        "path": "Lungenfunktion.Lungenfunktionsmesswerte.Code.Spirometrie.MEF7525",
+        "short": "MEF75-25",
+        "definition": "Maximaler exspiratorischer Fluss bei einem Restvolumen von 75 % - 25 % der ausgeatmeten forcierten Vitalkapazität; SNOMED-CT: 251930006; LOINC: 69972-8",
         "min": 0,
         "max": "1",
         "type": [
@@ -1129,6 +1298,12 @@
               "http://hl7.org/fhir/StructureDefinition/Patient"
             ]
           }
+        ],
+        "mapping": [
+          {
+            "identity": "FHIR",
+            "map": "Observation.subject"
+          }
         ]
       },
       {
@@ -1141,6 +1316,12 @@
         "type": [
           {
             "code": "dateTime"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "FHIR",
+            "map": "Observation.issued"
           }
         ]
       },
@@ -1158,6 +1339,12 @@
               "http://hl7.org/fhir/StructureDefinition/SimpleQuantity"
             ]
           }
+        ],
+        "mapping": [
+          {
+            "identity": "FHIR",
+            "map": "Observation.value[x]"
+          }
         ]
       },
       {
@@ -1171,6 +1358,12 @@
           {
             "code": "CodeableConcept"
           }
+        ],
+        "mapping": [
+          {
+            "identity": "FHIR",
+            "map": "Observation.interpretation"
+          }
         ]
       },
       {
@@ -1183,6 +1376,12 @@
         "type": [
           {
             "code": "CodeableConcept"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "FHIR",
+            "map": "Observation.method"
           }
         ]
       },
@@ -1200,6 +1399,12 @@
               "http://hl7.org/fhir/StructureDefinition/SimpleQuantity"
             ]
           }
+        ],
+        "mapping": [
+          {
+            "identity": "FHIR",
+            "map": "Observation.referenceRange.low"
+          }
         ]
       },
       {
@@ -1215,6 +1420,12 @@
             "profile": [
               "http://hl7.org/fhir/StructureDefinition/SimpleQuantity"
             ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "FHIR",
+            "map": "Observation.referenceRange.high"
           }
         ]
       },
@@ -1232,6 +1443,12 @@
               "http://hl7.org/fhir/StructureDefinition/SimpleQuantity"
             ]
           }
+        ],
+        "mapping": [
+          {
+            "identity": "FHIR",
+            "map": "Observation.referenceRange.age"
+          }
         ]
       },
       {
@@ -1247,6 +1464,12 @@
             "targetProfile": [
               "http://hl7.org/fhir/StructureDefinition/Observation"
             ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "FHIR",
+            "map": "Observation.hasMember"
           }
         ]
       },
@@ -1264,6 +1487,12 @@
               "http://hl7.org/fhir/StructureDefinition/Observation"
             ]
           }
+        ],
+        "mapping": [
+          {
+            "identity": "FHIR",
+            "map": "Observation.derivedFrom"
+          }
         ]
       },
       {
@@ -1276,6 +1505,12 @@
         "type": [
           {
             "code": "BackboneElement"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "FHIR",
+            "map": "Observation.component"
           }
         ]
       },

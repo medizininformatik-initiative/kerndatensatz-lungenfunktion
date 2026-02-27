@@ -113,70 +113,6 @@
         "mustSupport": true
       },
       {
-        "id": "DiagnosticReport.basedOn",
-        "path": "DiagnosticReport.basedOn",
-        "_short": {
-          "extension": [
-            {
-              "url": "http://hl7.org/fhir/StructureDefinition/translation",
-              "extension": [
-                {
-                  "url": "lang",
-                  "valueCode": "de-DE"
-                },
-                {
-                  "url": "content",
-                  "valueString": "Anforderung"
-                }
-              ]
-            },
-            {
-              "url": "http://hl7.org/fhir/StructureDefinition/translation",
-              "extension": [
-                {
-                  "url": "lang",
-                  "valueCode": "en-US"
-                },
-                {
-                  "url": "content",
-                  "valueString": "request"
-                }
-              ]
-            }
-          ]
-        },
-        "_definition": {
-          "extension": [
-            {
-              "url": "http://hl7.org/fhir/StructureDefinition/translation",
-              "extension": [
-                {
-                  "url": "lang",
-                  "valueCode": "de-DE"
-                },
-                {
-                  "url": "content",
-                  "valueString": "Anforderung, die den Befundbericht ausgelöst hat"
-                }
-              ]
-            },
-            {
-              "url": "http://hl7.org/fhir/StructureDefinition/translation",
-              "extension": [
-                {
-                  "url": "lang",
-                  "valueCode": "en-US"
-                },
-                {
-                  "url": "content",
-                  "valueString": "request, which triggered the report"
-                }
-              ]
-            }
-          ]
-        }
-      },
-      {
         "id": "DiagnosticReport.status",
         "path": "DiagnosticReport.status",
         "short": "Status",
@@ -277,7 +213,7 @@
             }
           ]
         },
-        "definition": "Kategorie des Befundberichts",
+        "definition": "Klassifikation in diagnostischen Fachbereich und Gruppe",
         "_definition": {
           "extension": [
             {
@@ -289,7 +225,7 @@
                 },
                 {
                   "url": "content",
-                  "valueString": "Kategorie des Befundberichts"
+                  "valueString": "Klassifikation in diagnostischen Fachbereich und Gruppe"
                 }
               ]
             },
@@ -302,7 +238,7 @@
                 },
                 {
                   "url": "content",
-                  "valueString": "category of the diagnostic report"
+                  "valueString": "Classification of the diagnostic service section"
                 }
               ]
             }
@@ -330,6 +266,68 @@
         "id": "DiagnosticReport.category.coding:loinc",
         "path": "DiagnosticReport.category.coding",
         "sliceName": "loinc",
+        "short": "LOINC Code",
+        "_short": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "de-DE"
+                },
+                {
+                  "url": "content",
+                  "valueString": "LOINC Code"
+                }
+              ]
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "en-US"
+                },
+                {
+                  "url": "content",
+                  "valueString": "LOINC code"
+                }
+              ]
+            }
+          ]
+        },
+        "definition": "Ein Verweis auf einen vom LOINC definierten Code",
+        "_definition": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "de-DE"
+                },
+                {
+                  "url": "content",
+                  "valueString": "Ein Verweis auf einen von LOINC definierten Code"
+                }
+              ]
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "en-US"
+                },
+                {
+                  "url": "content",
+                  "valueString": "A reference to a code defined by LOINC"
+                }
+              ]
+            }
+          ]
+        },
         "min": 0,
         "max": "*",
         "patternCoding": {
@@ -355,6 +353,68 @@
         "id": "DiagnosticReport.category.coding:sct",
         "path": "DiagnosticReport.category.coding",
         "sliceName": "sct",
+        "short": "SNOMED CT Code",
+        "_short": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "de-DE"
+                },
+                {
+                  "url": "content",
+                  "valueString": "SNOMED CT Code"
+                }
+              ]
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "en-US"
+                },
+                {
+                  "url": "content",
+                  "valueString": "SNOMED CT code"
+                }
+              ]
+            }
+          ]
+        },
+        "definition": "Ein Verweis auf einen von SNOMED CT definierten Code",
+        "_definition": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "de-DE"
+                },
+                {
+                  "url": "content",
+                  "valueString": "Ein Verweis auf einen von SNOMED CT definierten Code"
+                }
+              ]
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "en-US"
+                },
+                {
+                  "url": "content",
+                  "valueString": "A reference to a code defined by SNOMED CT"
+                }
+              ]
+            }
+          ]
+        },
         "min": 1,
         "max": "1",
         "patternCoding": {
@@ -398,7 +458,7 @@
             }
           ]
         },
-        "definition": "Code des Befundberichts",
+        "definition": "Ein Code des Berichts",
         "_definition": {
           "extension": [
             {
@@ -410,7 +470,7 @@
                 },
                 {
                   "url": "content",
-                  "valueString": "Code des Befundberichts"
+                  "valueString": "Code des Berichts"
                 }
               ]
             },
@@ -437,7 +497,7 @@
         "slicing": {
           "discriminator": [
             {
-              "type": "pattern",
+              "type": "value",
               "path": "$this"
             }
           ],
@@ -448,11 +508,70 @@
         "id": "DiagnosticReport.code.coding:sct",
         "path": "DiagnosticReport.code.coding",
         "sliceName": "sct",
+        "short": "SNOMED CT Code",
+        "_short": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "de-DE"
+                },
+                {
+                  "url": "content",
+                  "valueString": "SNOMED CT Code"
+                }
+              ]
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "en-US"
+                },
+                {
+                  "url": "content",
+                  "valueString": "SNOMED CT code"
+                }
+              ]
+            }
+          ]
+        },
+        "definition": "Ein Verweis auf einen von SNOMED CT definierten Code",
+        "_definition": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "de-DE"
+                },
+                {
+                  "url": "content",
+                  "valueString": "Ein Verweis auf einen von SNOMED CT definierten Code"
+                }
+              ]
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "en-US"
+                },
+                {
+                  "url": "content",
+                  "valueString": "A reference to a code defined by SNOMED CT"
+                }
+              ]
+            }
+          ]
+        },
         "min": 0,
         "max": "1",
-        "patternCoding": {
-          "system": "http://snomed.info/sct"
-        },
         "mustSupport": true,
         "binding": {
           "strength": "required",
@@ -463,11 +582,70 @@
         "id": "DiagnosticReport.code.coding:loinc",
         "path": "DiagnosticReport.code.coding",
         "sliceName": "loinc",
+        "short": "LOINC Code",
+        "_short": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "de-DE"
+                },
+                {
+                  "url": "content",
+                  "valueString": "LOINC Code"
+                }
+              ]
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "en-US"
+                },
+                {
+                  "url": "content",
+                  "valueString": "LOINC code"
+                }
+              ]
+            }
+          ]
+        },
+        "definition": "Ein Verweis auf einen vom LOINC definierten Code",
+        "_definition": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "de-DE"
+                },
+                {
+                  "url": "content",
+                  "valueString": "Ein Verweis auf einen von LOINC definierten Code"
+                }
+              ]
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "en-US"
+                },
+                {
+                  "url": "content",
+                  "valueString": "A reference to a code defined by LOINC"
+                }
+              ]
+            }
+          ]
+        },
         "min": 0,
         "max": "1",
-        "patternCoding": {
-          "system": "http://loinc.org"
-        },
         "mustSupport": true,
         "binding": {
           "strength": "required",
@@ -508,7 +686,7 @@
             }
           ]
         },
-        "definition": "Person, auf die sich die Befundbericht bezieht",
+        "definition": "Person, auf die sich die Bericht bezieht",
         "_definition": {
           "extension": [
             {
@@ -630,7 +808,7 @@
           "ordered": false,
           "rules": "open"
         },
-        "short": "Erstellungsdatum",
+        "short": "Untersuchungszeitpunkt",
         "_short": {
           "extension": [
             {
@@ -642,7 +820,7 @@
                 },
                 {
                   "url": "content",
-                  "valueString": "Erstellungsdatum"
+                  "valueString": "Untersuchungszeitpunkt"
                 }
               ]
             },
@@ -655,7 +833,7 @@
                 },
                 {
                   "url": "content",
-                  "valueString": "effective[x]"
+                  "valueString": "examinationtime"
                 }
               ]
             }
@@ -673,7 +851,7 @@
                 },
                 {
                   "url": "content",
-                  "valueString": "Zeitpunkt der Erstellung"
+                  "valueString": "Zeitpunkt der klinischen Untersuchung"
                 }
               ]
             },
@@ -686,7 +864,7 @@
                 },
                 {
                   "url": "content",
-                  "valueString": "date of creation"
+                  "valueString": "time of the clinical examination"
                 }
               ]
             }
@@ -698,6 +876,68 @@
         "id": "DiagnosticReport.effective[x]:effectiveDateTime",
         "path": "DiagnosticReport.effective[x]",
         "sliceName": "effectiveDateTime",
+        "short": "Durchführungsdatum",
+        "_short": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "de-DE"
+                },
+                {
+                  "url": "content",
+                  "valueString": "Durchführungsdatum"
+                }
+              ]
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "en-US"
+                },
+                {
+                  "url": "content",
+                  "valueString": "examination date"
+                }
+              ]
+            }
+          ]
+        },
+        "definition": "Durchführungsdatum der Untersuchung.",
+        "_definition": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "de-DE"
+                },
+                {
+                  "url": "content",
+                  "valueString": "Durchführungsdatum der Untersuchung."
+                }
+              ]
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "en-US"
+                },
+                {
+                  "url": "content",
+                  "valueString": "The date the examination was performed."
+                }
+              ]
+            }
+          ]
+        },
         "min": 0,
         "max": "1",
         "type": [
@@ -711,6 +951,68 @@
         "id": "DiagnosticReport.effective[x]:effectivePeriod",
         "path": "DiagnosticReport.effective[x]",
         "sliceName": "effectivePeriod",
+        "short": "Durchführungszeitraum",
+        "_short": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "de-DE"
+                },
+                {
+                  "url": "content",
+                  "valueString": "Durchführungszeitraum"
+                }
+              ]
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "en-US"
+                },
+                {
+                  "url": "content",
+                  "valueString": "examination period"
+                }
+              ]
+            }
+          ]
+        },
+        "definition": "Zeitraum, in dem die Untersuchung durchgeführt wurde.",
+        "_definition": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "de-DE"
+                },
+                {
+                  "url": "content",
+                  "valueString": "Zeitraum, in dem die Untersuchung durchgeführt wurde."
+                }
+              ]
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "en-US"
+                },
+                {
+                  "url": "content",
+                  "valueString": "The period of time the examination was performed."
+                }
+              ]
+            }
+          ]
+        },
         "min": 0,
         "max": "1",
         "type": [
@@ -1017,6 +1319,68 @@
         "id": "DiagnosticReport.conclusionCode.coding:sct",
         "path": "DiagnosticReport.conclusionCode.coding",
         "sliceName": "sct",
+        "short": "SNOMED CT Code",
+        "_short": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "de-DE"
+                },
+                {
+                  "url": "content",
+                  "valueString": "SNOMED CT Code"
+                }
+              ]
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "en-US"
+                },
+                {
+                  "url": "content",
+                  "valueString": "SNOMED CT code"
+                }
+              ]
+            }
+          ]
+        },
+        "definition": "Ein Verweis auf einen von SNOMED CT definierten Code",
+        "_definition": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "de-DE"
+                },
+                {
+                  "url": "content",
+                  "valueString": "Ein Verweis auf einen von SNOMED CT definierten Code"
+                }
+              ]
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "en-US"
+                },
+                {
+                  "url": "content",
+                  "valueString": "A reference to a code defined by SNOMED CT"
+                }
+              ]
+            }
+          ]
+        },
         "min": 0,
         "max": "*",
         "patternCoding": {

@@ -446,9 +446,8 @@
         "min": 0,
         "max": "1",
         "patternCoding": {
-          "code": "60821-6",
-          "system": "http://loinc.org",
-          "display": "Apnea duration"
+          "code": "TODO",
+          "system": "http://loinc.org"
         }
       },
       {
