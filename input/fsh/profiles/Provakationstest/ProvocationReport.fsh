@@ -22,5 +22,5 @@ Description: "Diese Ressource beschreibt einen Befunde des Provokationstest"
 * result ^slicing.discriminator.path = "$this"
 * result ^slicing.rules = #open
 * result contains
-    IVC 0..1 MS
-* result[IVC] only Reference(MII_PR_Lungenfunktion_IVC)
+    Schwellwert 0..1 MS
+* result[Schwellwert] only Reference(MII_PR_Lungenfunktion_Dosis_Schwellwert)
