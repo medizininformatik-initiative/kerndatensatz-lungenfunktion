@@ -273,15 +273,15 @@
         "mapping": [
           {
             "identity": "FHIR",
-            "map": "Procedure.performed[x]"
+            "map": "Procedure.performedDateTime"
           }
         ]
       },
       {
-        "id": "Lungenfunktion.Lungenfunktionsprozedur.Messresultat",
-        "path": "Lungenfunktion.Lungenfunktionsprozedur.Messresultat",
-        "short": "Messresultat",
-        "definition": "Messresultat der Lungenfunktionsmessung",
+        "id": "Lungenfunktion.Lungenfunktionsprozedur.Durchfuehrungserfolg",
+        "path": "Lungenfunktion.Lungenfunktionsprozedur.Durchfuehrungserfolg",
+        "short": "Durchführungserfolg",
+        "definition": "Durchführungserfolg der Lungenfunktionsmessung: Erfolgreich | nicht Erfolgreich | teilweise Erfolgreich",
         "min": 0,
         "max": "1",
         "type": [
@@ -307,9 +307,7 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "http://hl7.org/fhir/StructureDefinition/DiagnosticReport",
-              "http://hl7.org/fhir/StructureDefinition/Composition",
-              "http://hl7.org/fhir/StructureDefinition/DocumentReference"
+              "http://hl7.org/fhir/StructureDefinition/DiagnosticReport"
             ]
           }
         ],
@@ -693,7 +691,7 @@
         "path": "Lungenfunktion.Lungenfunktionsmesswerte.Kategorie",
         "short": "Kategorie",
         "definition": "Kategorisierung des Messwerts zur Lungenfunktion.",
-        "min": 0,
+        "min": 1,
         "max": "*",
         "type": [
           {
@@ -1307,10 +1305,10 @@
         ]
       },
       {
-        "id": "Lungenfunktion.Lungenfunktionsmesswerte.ZeitpunktErstellung",
-        "path": "Lungenfunktion.Lungenfunktionsmesswerte.ZeitpunktErstellung",
-        "short": "Zeitpunkt der Erstellung",
-        "definition": "Zeitpunkt der Erstellung des Berichts.",
+        "id": "Lungenfunktion.Lungenfunktionsmesswerte.Dokumentationszeitpunkt",
+        "path": "Lungenfunktion.Lungenfunktionsmesswerte.Dokumentationszeitpunkt",
+        "short": "Dokumentationszeitpunkt ",
+        "definition": "Zeitpunkt an dem der Messwert dokumentiert wurde.",
         "min": 0,
         "max": "1",
         "type": [
@@ -1386,8 +1384,27 @@
         ]
       },
       {
-        "id": "Lungenfunktion.Lungenfunktionsmesswerte.UntererReferenzwert",
-        "path": "Lungenfunktion.Lungenfunktionsmesswerte.UntererReferenzwert",
+        "id": "Lungenfunktion.Lungenfunktionsmesswerte.Referenzintervall",
+        "path": "Lungenfunktion.Lungenfunktionsmesswerte.Referenzintervall",
+        "short": "Referenzintervall",
+        "definition": "Intervall zur Auswertung des Messwertes",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "FHIR",
+            "map": "Observation.referenceRange"
+          }
+        ]
+      },
+      {
+        "id": "Lungenfunktion.Lungenfunktionsmesswerte.Referenzintervall.UntererReferenzwert",
+        "path": "Lungenfunktion.Lungenfunktionsmesswerte.Referenzintervall.UntererReferenzwert",
         "short": "Unterer Referenzwert",
         "definition": "Unter Referenzwert, oder auch LLN",
         "min": 0,
@@ -1408,8 +1425,8 @@
         ]
       },
       {
-        "id": "Lungenfunktion.Lungenfunktionsmesswerte.ObererReferenzwert",
-        "path": "Lungenfunktion.Lungenfunktionsmesswerte.ObererReferenzwert",
+        "id": "Lungenfunktion.Lungenfunktionsmesswerte.Referenzintervall.ObererReferenzwert",
+        "path": "Lungenfunktion.Lungenfunktionsmesswerte.Referenzintervall.ObererReferenzwert",
         "short": "Oberer Referenzwert",
         "definition": "Oberer Refernzwert, oder auch ULN",
         "min": 0,
@@ -1430,8 +1447,8 @@
         ]
       },
       {
-        "id": "Lungenfunktion.Lungenfunktionsmesswerte.Referenzalter",
-        "path": "Lungenfunktion.Lungenfunktionsmesswerte.Referenzalter",
+        "id": "Lungenfunktion.Lungenfunktionsmesswerte.Referenzintervall.Referenzalter",
+        "path": "Lungenfunktion.Lungenfunktionsmesswerte.Referenzintervall.Referenzalter",
         "short": "Referenzalter",
         "definition": "Alter, auf welchen sich das Referenzintervall bezieht.",
         "min": 0,
@@ -1528,6 +1545,12 @@
               "http://hl7.org/fhir/StructureDefinition/SimpleQuantity"
             ]
           }
+        ],
+        "mapping": [
+          {
+            "identity": "FHIR",
+            "map": "Observation.component[predicted]"
+          }
         ]
       },
       {
@@ -1543,6 +1566,12 @@
             "profile": [
               "http://hl7.org/fhir/StructureDefinition/SimpleQuantity"
             ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "FHIR",
+            "map": "Observation.component[ratio]"
           }
         ]
       },
@@ -1560,11 +1589,28 @@
               "http://hl7.org/fhir/StructureDefinition/SimpleQuantity"
             ]
           }
+        ],
+        "mapping": [
+          {
+            "identity": "FHIR",
+            "map": "Observation.component[z-score]"
+          }
         ]
       },
       {
-        "id": "Lungenfunktion.SVC",
-        "path": "Lungenfunktion.SVC",
+        "id": "Lungenfunktion.Optional",
+        "path": "Lungenfunktion.Optional",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "Lungenfunktion.Optional.SVC",
+        "path": "Lungenfunktion.Optional.SVC",
         "code": [
           {
             "code": "83411002",
@@ -1582,8 +1628,8 @@
         ]
       },
       {
-        "id": "Lungenfunktion.FIVC",
-        "path": "Lungenfunktion.FIVC",
+        "id": "Lungenfunktion.Optional.FIVC",
+        "path": "Lungenfunktion.Optional.FIVC",
         "short": "FIVC",
         "definition": "Forcierte inspiratorische Vitalkapazität (FIVC)",
         "min": 0,
@@ -1595,8 +1641,8 @@
         ]
       },
       {
-        "id": "Lungenfunktion.FEV05",
-        "path": "Lungenfunktion.FEV05",
+        "id": "Lungenfunktion.Optional.FEV05",
+        "path": "Lungenfunktion.Optional.FEV05",
         "short": "FEV0.5",
         "definition": "Forcierte Exspirationsvolumen bei 0.5 Sekunden (FEV0.5)",
         "min": 0,
@@ -1608,8 +1654,8 @@
         ]
       },
       {
-        "id": "Lungenfunktion.FEV075",
-        "path": "Lungenfunktion.FEV075",
+        "id": "Lungenfunktion.Optional.FEV075",
+        "path": "Lungenfunktion.Optional.FEV075",
         "code": [
           {
             "code": "251910007",
@@ -1627,8 +1673,8 @@
         ]
       },
       {
-        "id": "Lungenfunktion.FEV2",
-        "path": "Lungenfunktion.FEV2",
+        "id": "Lungenfunktion.Optional.FEV2",
+        "path": "Lungenfunktion.Optional.FEV2",
         "short": "FEV2",
         "definition": "Forcierte Exspirationsvolumen bei 2 Sekunden (FEV2)",
         "min": 0,
@@ -1640,8 +1686,8 @@
         ]
       },
       {
-        "id": "Lungenfunktion.FEV3",
-        "path": "Lungenfunktion.FEV3",
+        "id": "Lungenfunktion.Optional.FEV3",
+        "path": "Lungenfunktion.Optional.FEV3",
         "short": "FEV3",
         "definition": "Forcierte Exspirationsvolumen bei 3 Sekunden (FEV3)",
         "min": 0,
@@ -1653,8 +1699,8 @@
         ]
       },
       {
-        "id": "Lungenfunktion.FEV6",
-        "path": "Lungenfunktion.FEV6",
+        "id": "Lungenfunktion.Optional.FEV6",
+        "path": "Lungenfunktion.Optional.FEV6",
         "code": [
           {
             "code": "878869001",
@@ -1672,8 +1718,8 @@
         ]
       },
       {
-        "id": "Lungenfunktion.TV",
-        "path": "Lungenfunktion.TV",
+        "id": "Lungenfunktion.Optional.TV",
+        "path": "Lungenfunktion.Optional.TV",
         "code": [
           {
             "code": "13621006",
@@ -1691,8 +1737,8 @@
         ]
       },
       {
-        "id": "Lungenfunktion.MVV",
-        "path": "Lungenfunktion.MVV",
+        "id": "Lungenfunktion.Optional.MVV",
+        "path": "Lungenfunktion.Optional.MVV",
         "short": "MVV",
         "definition": "maximale freiwillige Ventilation (MVV)",
         "min": 0,
@@ -1704,8 +1750,8 @@
         ]
       },
       {
-        "id": "Lungenfunktion.PIFR",
-        "path": "Lungenfunktion.PIFR",
+        "id": "Lungenfunktion.Optional.PIFR",
+        "path": "Lungenfunktion.Optional.PIFR",
         "code": [
           {
             "code": "251923000",
@@ -1723,8 +1769,8 @@
         ]
       },
       {
-        "id": "Lungenfunktion.FIF2575",
-        "path": "Lungenfunktion.FIF2575",
+        "id": "Lungenfunktion.Optional.FIF2575",
+        "path": "Lungenfunktion.Optional.FIF2575",
         "short": "FIF25–75%",
         "definition": "Mittlerer forcierter inspiratorischer Flow zwischen 25 % und 75 % der FIVC",
         "min": 0,
@@ -1736,8 +1782,8 @@
         ]
       },
       {
-        "id": "Lungenfunktion.FIF2550",
-        "path": "Lungenfunktion.FIF2550",
+        "id": "Lungenfunktion.Optional.FIF2550",
+        "path": "Lungenfunktion.Optional.FIF2550",
         "short": "FIF25–50%",
         "definition": "Mittlerer forcierter inspiratorischer Flow zwischen 25 % und 50 % der FIVC",
         "min": 0,
@@ -1749,8 +1795,8 @@
         ]
       },
       {
-        "id": "Lungenfunktion.FIF25",
-        "path": "Lungenfunktion.FIF25",
+        "id": "Lungenfunktion.Optional.FIF25",
+        "path": "Lungenfunktion.Optional.FIF25",
         "code": [
           {
             "code": "251927004",
@@ -1768,8 +1814,8 @@
         ]
       },
       {
-        "id": "Lungenfunktion.FIF50",
-        "path": "Lungenfunktion.FIF50",
+        "id": "Lungenfunktion.Optional.FIF50",
+        "path": "Lungenfunktion.Optional.FIF50",
         "code": [
           {
             "code": "251926008",
@@ -1787,8 +1833,8 @@
         ]
       },
       {
-        "id": "Lungenfunktion.FIF75",
-        "path": "Lungenfunktion.FIF75",
+        "id": "Lungenfunktion.Optional.FIF75",
+        "path": "Lungenfunktion.Optional.FIF75",
         "short": "FIF75%",
         "definition": "Maximaler inspiratorischer Flow bei 75 % der FIVC – auch MIF25%",
         "min": 0,
@@ -1800,8 +1846,8 @@
         ]
       },
       {
-        "id": "Lungenfunktion.FEV1SVC",
-        "path": "Lungenfunktion.FEV1SVC",
+        "id": "Lungenfunktion.Optional.FEV1SVC",
+        "path": "Lungenfunktion.Optional.FEV1SVC",
         "short": "Verhältnis von „Forciertes Exspirationsvolumen in 1 Sekunde (FEV1)“ zu „Langsame Vitalkapazität (SVC)",
         "definition": "Verhältnis von „Forciertes Exspirationsvolumen in 1 Sekunde (FEV1)“ zu „Langsame Vitalkapazität (SVC)",
         "min": 0,
@@ -1813,8 +1859,8 @@
         ]
       },
       {
-        "id": "Lungenfunktion.FEV1FEV6",
-        "path": "Lungenfunktion.FEV1FEV6",
+        "id": "Lungenfunktion.Optional.FEV1FEV6",
+        "path": "Lungenfunktion.Optional.FEV1FEV6",
         "code": [
           {
             "code": "702534005",
@@ -1832,8 +1878,8 @@
         ]
       },
       {
-        "id": "Lungenfunktion.MEP",
-        "path": "Lungenfunktion.MEP",
+        "id": "Lungenfunktion.Optional.MEP",
+        "path": "Lungenfunktion.Optional.MEP",
         "code": [
           {
             "code": "17202005",
@@ -1851,8 +1897,8 @@
         ]
       },
       {
-        "id": "Lungenfunktion.MIP",
-        "path": "Lungenfunktion.MIP",
+        "id": "Lungenfunktion.Optional.MIP",
+        "path": "Lungenfunktion.Optional.MIP",
         "code": [
           {
             "code": "27913002",
@@ -1870,8 +1916,8 @@
         ]
       },
       {
-        "id": "Lungenfunktion.SNIP",
-        "path": "Lungenfunktion.SNIP",
+        "id": "Lungenfunktion.Optional.SNIP",
+        "path": "Lungenfunktion.Optional.SNIP",
         "short": "SNIP",
         "definition": "Sniff-Naseninspirationsdruck (SNIP)",
         "min": 0,
@@ -1883,8 +1929,8 @@
         ]
       },
       {
-        "id": "Lungenfunktion.TGV",
-        "path": "Lungenfunktion.TGV",
+        "id": "Lungenfunktion.Optional.TGV",
+        "path": "Lungenfunktion.Optional.TGV",
         "short": "TGV",
         "definition": "Thorakales Gasvolumen",
         "min": 0,
@@ -1896,8 +1942,8 @@
         ]
       },
       {
-        "id": "Lungenfunktion.ITGV",
-        "path": "Lungenfunktion.ITGV",
+        "id": "Lungenfunktion.Optional.ITGV",
+        "path": "Lungenfunktion.Optional.ITGV",
         "short": "ITGV",
         "definition": "Intrathorakales Gasvolumen",
         "min": 0,
@@ -1909,8 +1955,8 @@
         ]
       },
       {
-        "id": "Lungenfunktion.RAWex",
-        "path": "Lungenfunktion.RAWex",
+        "id": "Lungenfunktion.Optional.RAWex",
+        "path": "Lungenfunktion.Optional.RAWex",
         "short": "RAW-ex",
         "definition": "Exspiratorischer Atemwegswiderstand",
         "min": 0,

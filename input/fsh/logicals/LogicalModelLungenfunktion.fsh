@@ -31,8 +31,8 @@ Description: "MII LogicalModel Modul Lungenfunktion"
     * Provokationstest 0..1 http://hl7.org/fhir/StructureDefinition/CodeableConcept "Provokationstest" "Code nach SNOMED-CT: 252520007 |Methacholine challenge (procedure)|"
   * Person 1..1 Reference(Patient) "Person" "Person, auf die sich die Lungenfunktionsmessung bezieht. Hier soll das MII KDS-Profil Person verwendet werden."
   * Befundungszeit 1..1 http://hl7.org/fhir/StructureDefinition/dateTime "Befundungszeit" "Befundungszeitpunkt der Lungenfunktionsmessung."
-  * Messresultat 0..1 http://hl7.org/fhir/StructureDefinition/CodeableConcept "Messresultat" "Messresultat der Lungenfunktionsmessung"
-  * Bericht 0..* Reference(DiagnosticReport or Composition or DocumentReference) "Bericht" "Referenz auf den Bericht"
+  * Durchfuehrungserfolg 0..1 http://hl7.org/fhir/StructureDefinition/CodeableConcept "Durchführungserfolg" "Durchführungserfolg der Lungenfunktionsmessung: Erfolgreich | nicht Erfolgreich | teilweise Erfolgreich"
+  * Bericht 0..* Reference(DiagnosticReport) "Bericht" "Referenz auf den Bericht"
 * Lungenfunktionsbefund 0..1 BackboneElement "Lungenfunktionsbefund" "Generischer Befund einer Lungenfunktionsprozedur"
   * Status 1..1 http://hl7.org/fhir/StructureDefinition/Coding "Status" "Status des Befundberichts."
   * Kategorie 1..* http://hl7.org/fhir/StructureDefinition/CodeableConcept "Kategorie" "Kategorisierung des Befunds zur Lungenfunktion nach SNOMED-CT: 720449003 |Pulmonary function report (record artifact)|"
@@ -53,7 +53,7 @@ Description: "MII LogicalModel Modul Lungenfunktion"
 * Lungenfunktionsmesswerte 0..1 BackboneElement "Lungenfunktionsmesswerte" "Generische Messwerte einer Lungenfunktionsprozedur"
   * Prozedur 0..1 Reference(Procedure) "Prozedur" "Prozedur der Lungenfunktionsmessung"
   * Status 1..1 http://hl7.org/fhir/StructureDefinition/Coding "Status" "Status des Befundberichts."
-  * Kategorie 0..* http://hl7.org/fhir/StructureDefinition/CodeableConcept "Kategorie" "Kategorisierung des Messwerts zur Lungenfunktion."
+  * Kategorie 1..* http://hl7.org/fhir/StructureDefinition/CodeableConcept "Kategorie" "Kategorisierung des Messwerts zur Lungenfunktion."
   * Code 1..1 http://hl7.org/fhir/StructureDefinition/Coding "Code" "Code für den spezifischen Lungenfunktionsbericht."
     * Spirometrie 0..1 BackboneElement "Spirometrie" "Messwerte einer Spirometrie"
       * IVC 0..1 http://hl7.org/fhir/StructureDefinition/CodeableConcept "IVC" "inspiratorische Vitalkapazität; SNOMED-CT: 251913009; LOINC: "
@@ -100,55 +100,55 @@ Description: "MII LogicalModel Modul Lungenfunktion"
       * Applikationszeitpunkt 0..1 Duration "Zeitpunkt nach Applikation" "Zeitintervall zwischen Applikation und Messung"
       * thresholdDoseWert 0..1 Quantity "Threshold-Dosis" "Dosis, bei der der definierte Schwellenwert (z. B. 20 % FEV1-Abfall) erreicht wird (PD20 / PC20)" 
   * Person 1..1 Reference(Patient) "Personen-Identifikation" "Die Person, für die der Lungenfunktionsbericht erstellt wurde. Hier sollte das MII KDS-Modul Person referenziert werden"
-  * ZeitpunktErstellung 0..1 http://hl7.org/fhir/StructureDefinition/dateTime "Zeitpunkt der Erstellung" "Zeitpunkt der Erstellung des Berichts."
+  * Dokumentationszeitpunkt 0..1 http://hl7.org/fhir/StructureDefinition/dateTime "Dokumentationszeitpunkt " "Zeitpunkt an dem der Messwert dokumentiert wurde."
   * Messergebnis 0..1 http://hl7.org/fhir/StructureDefinition/SimpleQuantity "Messergebnis" "Messergebnis eines Lungenfunktionsmesswert"
   * Interpretation 0..1 http://hl7.org/fhir/StructureDefinition/CodeableConcept "Interpretation" "Interpretation der Messergebnisse im Bezug zum Referenzintervall."
   * Messverfahren 0..1 http://hl7.org/fhir/StructureDefinition/CodeableConcept "Messverfahren" "Verfahren, wie der Messwert aufgenommen wurden."
-  * UntererReferenzwert 0..1 http://hl7.org/fhir/StructureDefinition/SimpleQuantity "Unterer Referenzwert" "Unter Referenzwert, oder auch LLN"
-  * ObererReferenzwert 0..1 http://hl7.org/fhir/StructureDefinition/SimpleQuantity "Oberer Referenzwert" "Oberer Refernzwert, oder auch ULN"
-  * Referenzalter 0..1 http://hl7.org/fhir/StructureDefinition/SimpleQuantity "Referenzalter" "Alter, auf welchen sich das Referenzintervall bezieht."
+  * Referenzintervall 0..1 BackboneElement "Referenzintervall" "Intervall zur Auswertung des Messwertes"
+    * UntererReferenzwert 0..1 http://hl7.org/fhir/StructureDefinition/SimpleQuantity "Unterer Referenzwert" "Unter Referenzwert, oder auch LLN"
+    * ObererReferenzwert 0..1 http://hl7.org/fhir/StructureDefinition/SimpleQuantity "Oberer Referenzwert" "Oberer Refernzwert, oder auch ULN"
+    * Referenzalter 0..1 http://hl7.org/fhir/StructureDefinition/SimpleQuantity "Referenzalter" "Alter, auf welchen sich das Referenzintervall bezieht."
   * WeitereMesswerte 0..* Reference(Observation) "WeitereMesswert" "Weitere Messwerte, die mit diesem zusammengehören."
   * Bezugsmesswerte 0..* Reference(Observation) "Bezugsmesswerte" "Messwerte, aus welche dieser berechnet wurde."
   * Bewertungsmesswerte 0..* BackboneElement "Bewertungsmesswerte" "Messwerte, die zur Bewertung dieses Messwerts dient."
     * VorhergesagterMesswert 0..1 http://hl7.org/fhir/StructureDefinition/SimpleQuantity "Vorhergesagter Messwert" "Messwert, der personenbezogen vorhergesagt wird."
     * VerhaeltnisZurVorhersage 0..1 http://hl7.org/fhir/StructureDefinition/SimpleQuantity "Verhältnis zur Vorhersage" "Verhältnis von Messwert zum vorhergesagtem Messwert."
     * zScore 0..1 http://hl7.org/fhir/StructureDefinition/SimpleQuantity "z-Score" "z-Score zur Bewertung des Messwerts"
-
-  
 // Zusätzliche Parameter in openEHR
-* SVC 0..1 CodeableConcept "SVC" "Langsame Vitalkapazität (SVC)"
-  * ^code = $SCT#83411002
-* FIVC 0..1 CodeableConcept "FIVC" "Forcierte inspiratorische Vitalkapazität (FIVC)"
-* FEV05 0..1 CodeableConcept "FEV0.5" "Forcierte Exspirationsvolumen bei 0.5 Sekunden (FEV0.5)"
-* FEV075 0..1 CodeableConcept "FEV0.75" "Forcierte Exspirationsvolumen bei 0.75 Sekunden (FEV0.75)"  
-  * ^code = $SCT#251910007 
-* FEV2 0..1 CodeableConcept "FEV2" "Forcierte Exspirationsvolumen bei 2 Sekunden (FEV2)" 
-* FEV3 0..1 CodeableConcept "FEV3" "Forcierte Exspirationsvolumen bei 3 Sekunden (FEV3)" 
-* FEV6 0..1 CodeableConcept "FEV6" "Forcierte Exspirationsvolumen nach 6 Sekunden (FEV6)"    
-  * ^code = $SCT#878869001
-* TV 0..1 CodeableConcept "TV" "Das Atemzugvolumen (TV)"
-  * ^code = $SCT#13621006 
-* MVV 0..1 CodeableConcept "MVV" "maximale freiwillige Ventilation (MVV)"
-* PIFR 0..1 CodeableConcept "PIFR" "Maximale inspiratorische Flussrate während eines forcierten Inspirationsmanövers (FIVC)"
-  * ^code = $SCT#251923000  
-* FIF2575 0..1 CodeableConcept "FIF25–75%" "Mittlerer forcierter inspiratorischer Flow zwischen 25 % und 75 % der FIVC"
-* FIF2550 0..1 CodeableConcept "FIF25–50%" "Mittlerer forcierter inspiratorischer Flow zwischen 25 % und 50 % der FIVC"
-* FIF25 0..1 CodeableConcept "FIF25%" "Maximaler inspiratorischer Flow bei 25 % der FIVC – auch MIF75%"
-  * ^code = $SCT#251927004
-* FIF50 0..1 CodeableConcept "FIF50%" "Maximaler inspiratorischer Flow bei 50 % der FIVC – auch MIF50%"
-  * ^code = $SCT#251926008
-* FIF75 0..1 CodeableConcept "FIF75%" "Maximaler inspiratorischer Flow bei 75 % der FIVC – auch MIF25%"
-* FEV1SVC 0..1 CodeableConcept "Verhältnis von „Forciertes Exspirationsvolumen in 1 Sekunde (FEV1)“ zu „Langsame Vitalkapazität (SVC)"
-* FEV1FEV6 0..1 CodeableConcept "Verhältnis von „Forciertes Exspirationsvolumen in 1 Sekunde (FEV1)“ zu „Forciertes Exspirationsvolumen in 6 Sekunden (FEV6)"
-  * ^code = $SCT#702534005
-* MEP 0..1 CodeableConcept "MEP" "Maximale Ausatmungsdruck (MEP)" 
-  * ^code = $SCT#17202005 
-* MIP 0..1 CodeableConcept "MIP" "Maximale Inspirationsdruck (MIP)"
-  * ^code = $SCT#27913002 
-* SNIP 0..1 CodeableConcept "SNIP" "Sniff-Naseninspirationsdruck (SNIP)"
-* TGV 0..1 CodeableConcept "TGV" "Thorakales Gasvolumen"        
-* ITGV 0..1 CodeableConcept "ITGV" "Intrathorakales Gasvolumen"
-* RAWex 0..1 CodeableConcept "RAW-ex" "Exspiratorischer Atemwegswiderstand"
+* Optional 0..1 BackboneElement "" ""
+  * SVC 0..1 CodeableConcept "SVC" "Langsame Vitalkapazität (SVC)"
+    * ^code = $SCT#83411002
+  * FIVC 0..1 CodeableConcept "FIVC" "Forcierte inspiratorische Vitalkapazität (FIVC)"
+  * FEV05 0..1 CodeableConcept "FEV0.5" "Forcierte Exspirationsvolumen bei 0.5 Sekunden (FEV0.5)"
+  * FEV075 0..1 CodeableConcept "FEV0.75" "Forcierte Exspirationsvolumen bei 0.75 Sekunden (FEV0.75)"  
+    * ^code = $SCT#251910007 
+  * FEV2 0..1 CodeableConcept "FEV2" "Forcierte Exspirationsvolumen bei 2 Sekunden (FEV2)" 
+  * FEV3 0..1 CodeableConcept "FEV3" "Forcierte Exspirationsvolumen bei 3 Sekunden (FEV3)" 
+  * FEV6 0..1 CodeableConcept "FEV6" "Forcierte Exspirationsvolumen nach 6 Sekunden (FEV6)"    
+    * ^code = $SCT#878869001
+  * TV 0..1 CodeableConcept "TV" "Das Atemzugvolumen (TV)"
+    * ^code = $SCT#13621006 
+  * MVV 0..1 CodeableConcept "MVV" "maximale freiwillige Ventilation (MVV)"
+  * PIFR 0..1 CodeableConcept "PIFR" "Maximale inspiratorische Flussrate während eines forcierten Inspirationsmanövers (FIVC)"
+    * ^code = $SCT#251923000  
+  * FIF2575 0..1 CodeableConcept "FIF25–75%" "Mittlerer forcierter inspiratorischer Flow zwischen 25 % und 75 % der FIVC"
+  * FIF2550 0..1 CodeableConcept "FIF25–50%" "Mittlerer forcierter inspiratorischer Flow zwischen 25 % und 50 % der FIVC"
+  * FIF25 0..1 CodeableConcept "FIF25%" "Maximaler inspiratorischer Flow bei 25 % der FIVC – auch MIF75%"
+    * ^code = $SCT#251927004
+  * FIF50 0..1 CodeableConcept "FIF50%" "Maximaler inspiratorischer Flow bei 50 % der FIVC – auch MIF50%"
+    * ^code = $SCT#251926008
+  * FIF75 0..1 CodeableConcept "FIF75%" "Maximaler inspiratorischer Flow bei 75 % der FIVC – auch MIF25%"
+  * FEV1SVC 0..1 CodeableConcept "Verhältnis von „Forciertes Exspirationsvolumen in 1 Sekunde (FEV1)“ zu „Langsame Vitalkapazität (SVC)"
+  * FEV1FEV6 0..1 CodeableConcept "Verhältnis von „Forciertes Exspirationsvolumen in 1 Sekunde (FEV1)“ zu „Forciertes Exspirationsvolumen in 6 Sekunden (FEV6)"
+    * ^code = $SCT#702534005
+  * MEP 0..1 CodeableConcept "MEP" "Maximale Ausatmungsdruck (MEP)" 
+    * ^code = $SCT#17202005 
+  * MIP 0..1 CodeableConcept "MIP" "Maximale Inspirationsdruck (MIP)"
+    * ^code = $SCT#27913002 
+  * SNIP 0..1 CodeableConcept "SNIP" "Sniff-Naseninspirationsdruck (SNIP)"
+  * TGV 0..1 CodeableConcept "TGV" "Thorakales Gasvolumen"        
+  * ITGV 0..1 CodeableConcept "ITGV" "Intrathorakales Gasvolumen"
+  * RAWex 0..1 CodeableConcept "RAW-ex" "Exspiratorischer Atemwegswiderstand"
      
 
 
@@ -163,8 +163,8 @@ Source: MII_LM_Lungenfunktion
   * Kategorie -> "Procedure.category"
   * Code -> "Procedure.code"
   * Person -> "Procedure.subject"
-  * Befundungszeit -> "Procedure.performed[x]"
-  * Messresultat -> "Procedure.outcome"
+  * Befundungszeit -> "Procedure.performedDateTime"
+  * Durchfuehrungserfolg -> "Procedure.outcome"
   * Bericht -> "Procedure.report"
 * Lungenfunktionsbefund -> "DiagnosticReport"
   * Status -> "DiagnosticReport.status"
@@ -185,16 +185,20 @@ Source: MII_LM_Lungenfunktion
   * Kategorie -> "Observation.category"
   * Code -> "Observation.code"
   * Person -> "Observation.subject"
-  * ZeitpunktErstellung -> "Observation.issued"
+  * Dokumentationszeitpunkt -> "Observation.issued"
   * Messergebnis -> "Observation.value[x]"
   * Interpretation -> "Observation.interpretation"
   * Messverfahren -> "Observation.method"
-  * UntererReferenzwert -> "Observation.referenceRange.low"
-  * ObererReferenzwert -> "Observation.referenceRange.high"
-  * Referenzalter -> "Observation.referenceRange.age"
+  * Referenzintervall -> "Observation.referenceRange"
+    * UntererReferenzwert -> "Observation.referenceRange.low"
+    * ObererReferenzwert -> "Observation.referenceRange.high"
+    * Referenzalter -> "Observation.referenceRange.age"
   * WeitereMesswerte -> "Observation.hasMember"
   * Bezugsmesswerte -> "Observation.derivedFrom"
   * Bewertungsmesswerte -> "Observation.component"
+    * VorhergesagterMesswert -> "Observation.component[predicted]"
+    * VerhaeltnisZurVorhersage -> "Observation.component[ratio]"
+    * zScore -> "Observation.component[z-score]"
 
 //Mapping KDS
 Mapping: Lungenfunktion-LogicalModel-Profile
