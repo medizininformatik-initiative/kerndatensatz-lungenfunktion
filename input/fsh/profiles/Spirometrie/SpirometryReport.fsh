@@ -35,6 +35,7 @@ Description: "Diese Ressource beschreibt einen Befunde der Spirometrie"
     MEF25 0..1 MS and
     MEF50 0..1 MS and
     MEF75 0..1 MS and
+    MEF75_25 0..1 MS and
     FEV1_FVC 0..1 MS and
     FEV1_VC 0..1 MS
 * result[IVC] only Reference(MII_PR_Lungenfunktion_IVC)
@@ -50,5 +51,6 @@ Description: "Diese Ressource beschreibt einen Befunde der Spirometrie"
 * result[MEF25] only Reference(MII_PR_Lungenfunktion_MEF25)
 * result[MEF50] only Reference(MII_PR_Lungenfunktion_MEF50)
 * result[MEF75] only Reference(MII_PR_Lungenfunktion_MEF75)
+* result[MEF75_25] only Reference(MII_PR_Lungenfunktion_MEF75_25)
 * result[FEV1_FVC] only Reference(MII_PR_Lungenfunktion_FEV1_FVC)
 * result[FEV1_VC] only Reference(MII_PR_Lungenfunktion_FEV1_VC)

@@ -22,3 +22,4 @@ Description: "Beschreibt die Tätigkeiten, wie eine Bodyplethysmographie durchge
 * outcome from http://hl7.org/fhir/ValueSet/procedure-outcome (preferred)
 * report MS
 * report only Reference(MII_PR_Lungenfunktion_Bodyplethysmographie)
+* insert AddProcedureTranslation

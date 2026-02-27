@@ -21,4 +21,5 @@ Description: "Beschreibt die Tätigkeiten, wie eine Diffusion durchgeführt wird
 * outcome MS
 * outcome from http://hl7.org/fhir/ValueSet/procedure-outcome (preferred)
 * report MS
-* report only Reference(MII_PR_Lungenfunktion_Bodyplethysmographie)
+* report only Reference(MII_PR_Lungenfunktion_Provokationstest)
+* insert AddProcedureTranslation

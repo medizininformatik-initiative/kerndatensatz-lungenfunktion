@@ -19,10 +19,11 @@ Description: "Beschreibt die Tätigkeiten, wie eine Spirometrie durchgeführt wi
 * meta.source MS
 * meta.profile MS
 //Profile
-* category.coding = $SCT-version#23426006 "Measurement of respiratory function (procedure)"
+* category.coding[sct] = $SCT-version#23426006 "Measurement of respiratory function (procedure)"
 * code.coding[sct] = $SCT-version#127783003 "Spirometry (procedure)"
 * subject only Reference(Patient)
 * outcome MS
 * outcome from http://hl7.org/fhir/ValueSet/procedure-outcome (preferred)
 * report MS
 * report only Reference(MII_PR_Lungenfunktion_Spirometrie)
+* insert AddProcedureTranslation
