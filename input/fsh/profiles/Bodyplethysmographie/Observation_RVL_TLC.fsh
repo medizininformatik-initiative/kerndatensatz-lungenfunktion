@@ -1,11 +1,11 @@
 //EXAMPLE Profile
 //Head
-Profile: MII_PR_Lungenfunktion_RV_TLC
+Profile: MII_PR_Lungenfunktion_RVL_TLC
 Parent: MII_PR_Lungenfunktion_Prozent
-Id: mii-pr-lungenfunktion-rv-tlc
+Id: mii-pr-lungenfunktion-rvl-tlc
 Title: "MII PR Lungenfunktion Anteil Residualvolumen an Lungenkapazität"
 Description: "Dieses Beobachtung beschreibt den prozentualen Anteil des Residualvolumen an der totalen Lungenkapazität."
-* ^url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-rv-tlc"
+* ^url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-rvl-tlc"
 //Translation Meta
 * insert Translation(^name, en-US, MII_PR_Lungfunction_RV_TLC)
 * insert Translation(^title, en-US, MII PR Lungfunction RV TLC)

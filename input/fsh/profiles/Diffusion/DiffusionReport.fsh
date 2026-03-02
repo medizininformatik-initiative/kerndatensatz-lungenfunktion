@@ -26,25 +26,25 @@ Description: "Diese Ressource beschreibt einen Befunde der Diffusions-Messung"
     DLCOc 0..1 MS and
     KCO 0..1 MS and
     KCOc 0..1 MS and
-    ERV 0..1 MS and
-    TLC 0..1 MS and
     RV 0..1 MS and
-    RV_TLC 0..1 MS and
+    TLC 0..1 MS and
+    RVL 0..1 MS and
+    RVL_TLC 0..1 MS and
     FRC 0..1 MS and
     TA 0..1 MS and
     VA 0..1 MS and
-    IVC 0..1 MS and
+    VC 0..1 MS and
     Hb 0..1 MS
 * result[DLCO] only Reference(MII_PR_Lungenfunktion_DLCO)
 * result[DLCOc] only Reference(MII_PR_Lungenfunktion_DLCOc)
 * result[KCO] only Reference(MII_PR_Lungenfunktion_KCO)
 * result[KCOc] only Reference(MII_PR_Lungenfunktion_KCOc)
-* result[ERV] only Reference(MII_PR_Lungenfunktion_ERV)
-* result[TLC] only Reference(MII_PR_Lungenfunktion_TLC)
 * result[RV] only Reference(MII_PR_Lungenfunktion_RV)
-* result[RV_TLC] only Reference(MII_PR_Lungenfunktion_RV_TLC)
+* result[TLC] only Reference(MII_PR_Lungenfunktion_TLC)
+* result[RVL] only Reference(MII_PR_Lungenfunktion_RVL)
+* result[RVL_TLC] only Reference(MII_PR_Lungenfunktion_RVL_TLC)
 * result[FRC] only Reference(MII_PR_Lungenfunktion_FRC)
 * result[TA] only Reference(MII_PR_Lungenfunktion_TA)
 * result[VA] only Reference(MII_PR_Lungenfunktion_VA)
-* result[IVC] only Reference(MII_PR_Lungenfunktion_IVC)
+* result[VC] only Reference(MII_PR_Lungenfunktion_VC)
 * result[Hb] only Reference(MII_PR_Lungenfunktion_Hb)

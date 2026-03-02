@@ -1,14 +1,14 @@
 //EXAMPLE Profile
 //Head
-Profile: MII_PR_Lungenfunktion_RV
+Profile: MII_PR_Lungenfunktion_RVL
 Parent: MII_PR_Lungenfunktion_Volumen
-Id: mii-pr-lungenfunktion-rv
-Title: "MII PR Lungenfunktion RV"
+Id: mii-pr-lungenfunktion-rvl
+Title: "MII PR Lungenfunktion RVL"
 Description: "Dieses Profil beschreibt die Messung des Residualvolumen."
-* ^url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-rv"
+* ^url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-rvl"
 //Translation Meta
-* insert Translation(^name, en-US, MII_PR_Lungfunction_RV)
-* insert Translation(^title, en-US, MII PR Lungfunction RV)
+* insert Translation(^name, en-US, MII_PR_Lungfunction_RVL)
+* insert Translation(^title, en-US, MII PR Lungfunction RVL)
 * insert Translation(^description, en-US, The profile describes a observation for the residual volume.)
 //Meta
 * insert PR_CS_VS_Version
