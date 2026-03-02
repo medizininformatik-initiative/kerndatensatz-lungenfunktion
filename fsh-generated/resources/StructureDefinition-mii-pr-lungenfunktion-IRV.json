@@ -1,6 +1,6 @@
 {
   "resourceType": "StructureDefinition",
-  "id": "mii-pr-lungenfunktion-IRV",
+  "id": "mii-pr-lungenfunktion-irv",
   "extension": [
     {
       "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-ex-meta-license-codeable",
@@ -15,9 +15,9 @@
       }
     }
   ],
-  "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-irv",
+  "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-rv",
   "version": "2025.0.0",
-  "name": "MII_PR_Lungenfunktion_IRV",
+  "name": "MII_PR_Lungenfunktion_RV",
   "_name": {
     "extension": [
       {
@@ -29,13 +29,13 @@
           },
           {
             "url": "content",
-            "valueString": "MII_PR_Lungfunction_IRV"
+            "valueString": "MII_PR_Lungfunction_RV"
           }
         ]
       }
     ]
   },
-  "title": "MII PR Lungenfunktion IRV",
+  "title": "MII PR Lungenfunktion RV",
   "_title": {
     "extension": [
       {
@@ -47,7 +47,7 @@
           },
           {
             "url": "content",
-            "valueString": "MII PR Lungfunction IRV"
+            "valueString": "MII PR Lungfunction RV"
           }
         ]
       }
@@ -66,7 +66,7 @@
       ]
     }
   ],
-  "description": "Dieses Profil beschreibt die Messung des inspiratorischen Reservevolumen.",
+  "description": "Dieses Profil beschreibt die Messung des Reservevolumen.",
   "_description": {
     "extension": [
       {
@@ -78,7 +78,7 @@
           },
           {
             "url": "content",
-            "valueString": "The profile describes a observation for the inspiratory reserve volume."
+            "valueString": "The profile describes a observation for the reserve volume."
           }
         ]
       }
@@ -108,11 +108,9 @@
         "id": "Observation.code.coding:sct",
         "path": "Observation.code.coding",
         "sliceName": "sct",
-        "patternCoding": {
-          "code": "55562005",
-          "system": "http://snomed.info/sct",
-          "version": "http://snomed.info/sct/900000000000207008/version/20240701",
-          "display": "Inspiratory reserve volume (observable entity)"
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/ValueSet/mii-vs-lufu-sct-rv"
         }
       },
       {

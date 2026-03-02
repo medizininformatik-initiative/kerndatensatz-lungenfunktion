@@ -120,9 +120,8 @@
         "path": "Observation.code.coding",
         "sliceName": "loinc",
         "patternCoding": {
-          "code": "19926-5",
-          "system": "http://loinc.org",
-          "display": "FEV1/FVC"
+          "code": "TODO",
+          "system": "http://loinc.org"
         }
       },
       {
@@ -133,8 +132,7 @@
             "code": "Reference",
             "targetProfile": [
               "https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-fev",
-              "https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-ivc",
-              "https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-evc"
+              "https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-vc"
             ]
           }
         ]
@@ -159,9 +157,8 @@
         "path": "Observation.component.code.coding",
         "sliceName": "loinc",
         "patternCoding": {
-          "code": "19925-7",
-          "system": "http://loinc.org",
-          "display": "FEV1/FVC Predicted"
+          "code": "TODO",
+          "system": "http://loinc.org"
         }
       },
       {
@@ -184,9 +181,8 @@
         "path": "Observation.component.code.coding",
         "sliceName": "loinc",
         "patternCoding": {
-          "code": "69984-3",
-          "system": "http://loinc.org",
-          "display": "Volume expired during 1.0 s of forced expiration/Forced vital capacity percent change"
+          "code": "TODO",
+          "system": "http://loinc.org"
         }
       }
     ]

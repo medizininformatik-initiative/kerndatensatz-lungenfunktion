@@ -1,6 +1,6 @@
 {
   "resourceType": "StructureDefinition",
-  "id": "mii-pr-lungenfunktion-mef7525",
+  "id": "mii-pr-lungenfunktion-fev-fvc",
   "extension": [
     {
       "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-ex-meta-license-codeable",
@@ -15,9 +15,9 @@
       }
     }
   ],
-  "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-mef7525",
+  "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-fev-fvc",
   "version": "2025.0.0",
-  "name": "MII_PR_Lungenfunktion_MEF75_25",
+  "name": "MII_PR_Lungenfunktion_FEV_FVC",
   "_name": {
     "extension": [
       {
@@ -29,13 +29,13 @@
           },
           {
             "url": "content",
-            "valueString": "MII_PR_Lungfunction_MEF75_25"
+            "valueString": "MII_PR_Lungfunction_Tiffeneau"
           }
         ]
       }
     ]
   },
-  "title": "MII PR Lungenfunktion MEF 75-25",
+  "title": "MII PR Lungenfunktion FEV/FVC",
   "_title": {
     "extension": [
       {
@@ -47,7 +47,7 @@
           },
           {
             "url": "content",
-            "valueString": "MII PR Lungfunction MEF 75-25"
+            "valueString": "MII PR Lungfunction Tiffeneau"
           }
         ]
       }
@@ -66,7 +66,7 @@
       ]
     }
   ],
-  "description": "Dieses Profil beschreibt die Messung des maximalen exspiratorischen Fluss bei 75%-25% forcierten exspiratorischen Vitalkapazität.",
+  "description": "Dieses Profil beschreibt die Messung des Tiffeneau-Index.",
   "_description": {
     "extension": [
       {
@@ -78,7 +78,7 @@
           },
           {
             "url": "content",
-            "valueString": "The profile describes a observation for the maximum exspiratory flow at 75%-25% of forced exspiratory capacity."
+            "valueString": "The profile describes a observation for the tiffeneau."
           }
         ]
       }
@@ -88,7 +88,7 @@
   "kind": "resource",
   "abstract": false,
   "type": "Observation",
-  "baseDefinition": "https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-fluss",
+  "baseDefinition": "https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-prozent",
   "derivation": "constraint",
   "differential": {
     "element": [
@@ -108,11 +108,9 @@
         "id": "Observation.code.coding:sct",
         "path": "Observation.code.coding",
         "sliceName": "sct",
-        "patternCoding": {
-          "code": "251930006",
-          "system": "http://snomed.info/sct",
-          "version": "http://snomed.info/sct/900000000000207008/version/20240701",
-          "display": "Forced expiratory flow rate (observable entity)"
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/ValueSet/mii-vs-lufu-sct-fev-fvc"
         }
       },
       {
@@ -120,10 +118,23 @@
         "path": "Observation.code.coding",
         "sliceName": "loinc",
         "patternCoding": {
-          "code": "69972-8",
+          "code": "19866-3",
           "system": "http://loinc.org",
-          "display": "FEF 25-75% --pre bronchodilation"
+          "display": "VC Vol Respiratory Spirometry"
         }
+      },
+      {
+        "id": "Observation.derivedFrom",
+        "path": "Observation.derivedFrom",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-fev",
+              "https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-fvc"
+            ]
+          }
+        ]
       },
       {
         "id": "Observation.component:predicted",
@@ -134,10 +145,9 @@
         "id": "Observation.component:predicted.code.coding:sct",
         "path": "Observation.component.code.coding",
         "sliceName": "sct",
-        "patternCoding": {
-          "code": "TODO",
-          "system": "http://snomed.info/sct",
-          "version": "http://snomed.info/sct/900000000000207008/version/20240701"
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/ValueSet/mii-vs-lufu-sct-fev-fvc"
         }
       },
       {
@@ -145,9 +155,8 @@
         "path": "Observation.component.code.coding",
         "sliceName": "loinc",
         "patternCoding": {
-          "code": "69971-0",
-          "system": "http://loinc.org",
-          "display": "FEF 25-75% Predicted"
+          "code": "TODO",
+          "system": "http://loinc.org"
         }
       },
       {

@@ -170,9 +170,8 @@
         "path": "Observation.component.code.coding",
         "sliceName": "loinc",
         "patternCoding": {
-          "code": "69984-3",
-          "system": "http://loinc.org",
-          "display": "FEV1/FVC percent change"
+          "code": "TODO",
+          "system": "http://loinc.org"
         }
       }
     ]

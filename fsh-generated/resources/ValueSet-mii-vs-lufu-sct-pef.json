@@ -1,0 +1,90 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "MII_VS_Lufu_SCT_PEF",
+  "id": "mii-vs-lufu-sct-pef",
+  "title": "MII VS Lufu SCT PEF",
+  "description": "Import the ValueSet for lungfunction peak expiratory flow",
+  "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/ValueSet/mii-vs-lufu-sct-pef",
+  "publisher": "Medizininformatik Initiative",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://www.medizininformatik-initiative.de"
+        }
+      ]
+    }
+  ],
+  "version": "2025.0.0",
+  "copyright": "This value set includes content from SNOMED CT, which is copyright © 2002+ International Health Terminology Standards Development Organisation (IHTSDO), and distributed by agreement between IHTSDO and HL7. Implementer use of SNOMED CT is not covered by this agreement",
+  "date": "2025-01-01",
+  "meta": {
+    "profile": [
+      "http://hl7.org/fhir/StructureDefinition/shareablevalueset"
+    ]
+  },
+  "experimental": false,
+  "compose": {
+    "include": [
+      {
+        "system": "http://snomed.info/sct",
+        "concept": [
+          {
+            "code": "18491006",
+            "display": "Peak expiratory flow rate (observable entity)"
+          },
+          {
+            "code": "251936000",
+            "display": "Best ever peak expiratory flow rate (observable entity)"
+          },
+          {
+            "code": "429745009",
+            "display": "Diurnal variation of peak expiratory flow rate (observable entity)"
+          },
+          {
+            "code": "313192007",
+            "display": "Expected peak expiratory flow rate (observable entity)"
+          },
+          {
+            "code": "313232000",
+            "display": "Peak expiratory flow rate after bronchodilation (observable entity)"
+          },
+          {
+            "code": "878870000",
+            "display": "Peak expiratory flow rate after exercise (observable entity)"
+          },
+          {
+            "code": "313276007",
+            "display": "Peak expiratory flow rate before bronchodilation (observable entity)"
+          },
+          {
+            "code": "401015005",
+            "display": "Peak expiratory flow rate post steroids (observable entity)"
+          },
+          {
+            "code": "401014009",
+            "display": "Peak expiratory flow rate pre steroids (observable entity)"
+          },
+          {
+            "code": "401163005",
+            "display": "Percentage of best ever peak expiratory flow rate (observable entity)"
+          },
+          {
+            "code": "401199000",
+            "display": "Percentage of peak expiratory flow rate variability (observable entity)"
+          },
+          {
+            "code": "251940009",
+            "display": "Serial peak expiratory flow rate (observable entity)"
+          },
+          {
+            "code": "251939007",
+            "display": "Single peak expiratory flow rate (observable entity)"
+          }
+        ]
+      }
+    ]
+  }
+}

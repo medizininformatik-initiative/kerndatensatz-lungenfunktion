@@ -1,6 +1,6 @@
 {
   "resourceType": "StructureDefinition",
-  "id": "mii-pr-lungenfunktion-erv",
+  "id": "mii-pr-lungenfunktion-rvl",
   "extension": [
     {
       "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-ex-meta-license-codeable",
@@ -15,9 +15,9 @@
       }
     }
   ],
-  "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-erv",
+  "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-rvl",
   "version": "2025.0.0",
-  "name": "MII_PR_Lungenfunktion_ERV",
+  "name": "MII_PR_Lungenfunktion_RVL",
   "_name": {
     "extension": [
       {
@@ -29,13 +29,13 @@
           },
           {
             "url": "content",
-            "valueString": "MII_PR_Lungfunction_ERV"
+            "valueString": "MII_PR_Lungfunction_RVL"
           }
         ]
       }
     ]
   },
-  "title": "MII PR Lungenfunktion ERV",
+  "title": "MII PR Lungenfunktion RVL",
   "_title": {
     "extension": [
       {
@@ -47,7 +47,7 @@
           },
           {
             "url": "content",
-            "valueString": "MII PR Lungfunction ERV"
+            "valueString": "MII PR Lungfunction RVL"
           }
         ]
       }
@@ -66,7 +66,7 @@
       ]
     }
   ],
-  "description": "Dieses Profil beschreibt die Messung des exspiratorischen Reservevolumen.",
+  "description": "Dieses Profil beschreibt die Messung des Residualvolumen.",
   "_description": {
     "extension": [
       {
@@ -78,7 +78,7 @@
           },
           {
             "url": "content",
-            "valueString": "The profile describes a observation for the exspiratory reserve volume."
+            "valueString": "The profile describes a observation for the residual volume."
           }
         ]
       }
@@ -99,7 +99,7 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-spirometrie-messung"
+              "https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-bodyplethysmographie-messung"
             ]
           }
         ]
@@ -107,21 +107,22 @@
       {
         "id": "Observation.code.coding:sct",
         "path": "Observation.code.coding",
-        "sliceName": "sct"
-      },
-      {
-        "id": "Observation.code.coding:sct.code",
-        "path": "Observation.code.coding.code",
-        "patternCode": "55532004"
+        "sliceName": "sct",
+        "patternCoding": {
+          "code": "42457008",
+          "system": "http://snomed.info/sct",
+          "version": "http://snomed.info/sct/900000000000207008/version/20240701",
+          "display": "Residual respiratory volume (observable entity)"
+        }
       },
       {
         "id": "Observation.code.coding:loinc",
         "path": "Observation.code.coding",
         "sliceName": "loinc",
         "patternCoding": {
-          "code": "19924-0",
+          "code": "20146-7",
           "system": "http://loinc.org",
-          "display": "Expiratory reserve"
+          "display": "Residual volume"
         }
       },
       {
@@ -144,9 +145,9 @@
         "path": "Observation.component.code.coding",
         "sliceName": "loinc",
         "patternCoding": {
-          "code": "19923-2",
+          "code": "20145-9",
           "system": "http://loinc.org",
-          "display": "Expiratory reserve Predicted"
+          "display": "Residual volume Predicted"
         }
       },
       {
@@ -169,8 +170,9 @@
         "path": "Observation.component.code.coding",
         "sliceName": "loinc",
         "patternCoding": {
-          "code": "TODO",
-          "system": "http://loinc.org"
+          "code": "94125-2",
+          "system": "http://loinc.org",
+          "display": "Residual volume/Predicted by Plethysmograph body box"
         }
       }
     ]

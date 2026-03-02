@@ -1,6 +1,6 @@
 {
   "resourceType": "StructureDefinition",
-  "id": "mii-pr-lungenfunktion-ivc",
+  "id": "mii-pr-lungenfunktion-rvl-tlc",
   "extension": [
     {
       "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-ex-meta-license-codeable",
@@ -15,9 +15,9 @@
       }
     }
   ],
-  "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-ivc",
+  "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-rvl-tlc",
   "version": "2025.0.0",
-  "name": "MII_PR_Lungenfunktion_IVC",
+  "name": "MII_PR_Lungenfunktion_RVL_TLC",
   "_name": {
     "extension": [
       {
@@ -29,13 +29,13 @@
           },
           {
             "url": "content",
-            "valueString": "MII_PR_Lungfunction_IVC"
+            "valueString": "MII_PR_Lungfunction_RV_TLC"
           }
         ]
       }
     ]
   },
-  "title": "MII PR Lungenfunktion IVC",
+  "title": "MII PR Lungenfunktion Anteil Residualvolumen an Lungenkapazität",
   "_title": {
     "extension": [
       {
@@ -47,7 +47,7 @@
           },
           {
             "url": "content",
-            "valueString": "MII PR Lungfunction IVC"
+            "valueString": "MII PR Lungfunction RV TLC"
           }
         ]
       }
@@ -66,7 +66,7 @@
       ]
     }
   ],
-  "description": "Dieses Profil beschreibt die Messung der inspiratorischen Vitalkapzität.",
+  "description": "Dieses Beobachtung beschreibt den prozentualen Anteil des Residualvolumen an der totalen Lungenkapazität.",
   "_description": {
     "extension": [
       {
@@ -78,7 +78,7 @@
           },
           {
             "url": "content",
-            "valueString": "The profile describes a observation for the inspiratory vital capacity."
+            "valueString": "The profile describes a observation for testing of lungfunction."
           }
         ]
       }
@@ -88,7 +88,7 @@
   "kind": "resource",
   "abstract": false,
   "type": "Observation",
-  "baseDefinition": "https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-volumen",
+  "baseDefinition": "https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-prozent",
   "derivation": "constraint",
   "differential": {
     "element": [
@@ -99,7 +99,7 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-spirometrie-messung"
+              "https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-bodyplethysmographie-messung"
             ]
           }
         ]
@@ -109,10 +109,10 @@
         "path": "Observation.code.coding",
         "sliceName": "sct",
         "patternCoding": {
-          "code": "251913009",
+          "code": "1366666000",
           "system": "http://snomed.info/sct",
           "version": "http://snomed.info/sct/900000000000207008/version/20240701",
-          "display": "Inspiratory vital capacity (observable entity)"
+          "display": "Residual volume/total lung capacity ratio (observable entity)"
         }
       },
       {
@@ -120,8 +120,9 @@
         "path": "Observation.code.coding",
         "sliceName": "loinc",
         "patternCoding": {
-          "code": "TODO",
-          "system": "http://loinc.org"
+          "code": "81454-1",
+          "system": "http://loinc.org",
+          "display": "Residual volume/Total capacity --pre bronchodilation"
         }
       },
       {
@@ -144,8 +145,9 @@
         "path": "Observation.component.code.coding",
         "sliceName": "loinc",
         "patternCoding": {
-          "code": "TODO",
-          "system": "http://loinc.org"
+          "code": "43252-6",
+          "system": "http://loinc.org",
+          "display": "Residual volume/Total capacity Predicted"
         }
       },
       {
@@ -158,10 +160,9 @@
         "path": "Observation.component.code.coding",
         "sliceName": "sct",
         "patternCoding": {
-          "code": "445389005",
+          "code": "TODO",
           "system": "http://snomed.info/sct",
-          "version": "http://snomed.info/sct/900000000000207008/version/20240701",
-          "display": "Percentage of predicted vital capacity (observable entity)"
+          "version": "http://snomed.info/sct/900000000000207008/version/20240701"
         }
       },
       {
