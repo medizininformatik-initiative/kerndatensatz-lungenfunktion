@@ -18,8 +18,8 @@ Description: "Dieses Profil beschreibt die Messung des forcierten, exspiratorisc
 //Profile
 * partOf only Reference(MII_PR_Lungenfunktion_Spirometrie_Messung)
 * code.coding[loinc] = $loinc#20150-9 "Volume expired during 1.0 s of forced expiration"
-* code.coding[sct] = $SCT-version#59328004 "Forced expired volume in 1 second (observable entity)"
-* component[predicted].code.coding[sct] = $SCT-version#310520004 "Expected forced expired volume in 1 second (observable entity)"
-* component[predicted].code.coding[loinc] = $loinc#19925-7 "FEV1/FVC Predicted"
-* component[ratio].code.coding[sct] = $SCT-version#313223002 "Percent predicted forced expired volume in one second (observable entity)"
-* component[ratio].code.coding[loinc] = $loinc#69984-3 "FEV1/FVC percent change"
+* code.coding[sct] from MII_VS_Lufu_SCT_FEV (required)
+* component[predicted].code.coding[sct] from MII_VS_Lufu_SCT_FEV (required)
+* component[predicted].code.coding[loinc] = $loinc#TODO
+* component[ratio].code.coding[sct] from MII_VS_Lufu_SCT_FEV (required)
+* component[ratio].code.coding[loinc] = $loinc#TODO

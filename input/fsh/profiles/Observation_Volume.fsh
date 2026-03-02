@@ -32,7 +32,7 @@ Description: "Dieses Beobachtung beschreibt eine Volumenmessung."
     sct 0..1 and
     loinc 0..1
 * code.coding[loinc].code from MII_VS_Lufu_LNC_Observable (required)
-* code.coding[sct].code from MII_VS_Lufu_SCT_Observable (required)
+* code.coding[sct].code from MII_VS_Lufu_SCT_Observable (preferred)
 * code.coding.system 1.. MS
 * code.coding.code 1.. MS
 * code.coding.display MS
