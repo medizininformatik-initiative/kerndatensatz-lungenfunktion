@@ -1,0 +1,6 @@
+- name: Spirometriemessung
+  filename: Index.page.md
+- name: Spirometriebefund
+  filename: Report.page.md
+- name: Spirometriemesswerte
+  filename: Observation

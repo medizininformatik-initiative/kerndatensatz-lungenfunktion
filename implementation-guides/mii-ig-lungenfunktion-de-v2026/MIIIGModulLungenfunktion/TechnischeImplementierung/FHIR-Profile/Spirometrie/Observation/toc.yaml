@@ -1,0 +1,28 @@
+- name: Atemfrequenz
+  filename: BF.page.md
+- name: FEV
+  filename: FEV.page.md
+- name: FEV FVC
+  filename: FEVFVC.page.md
+- name: FEV VC
+  filename: FEVVC.page.md
+- name: FIV
+  filename: FIV.page.md
+- name: FVC
+  filename: FVC.page.md
+- name: IC
+  filename: IC.page.md
+- name: MEF 25
+  filename: MEF25.page.md
+- name: MEF 50
+  filename: MEF50.page.md
+- name: MEF 75
+  filename: MEF75.page.md
+- name: MEF 75-25
+  filename: MEF7525.page.md
+- name: PEF
+  filename: PEF.page.md
+- name: RV
+  filename: RV.page.md
+- name: VC
+  filename: VC.page.md
