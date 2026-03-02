@@ -1,0 +1,6 @@
+- name: Diffusionsmessung
+  filename: Procedure.page.md
+- name: Diffusionsmessungsbefund
+  filename: Report.page.md
+- name: Diffusionsmesswerte
+  filename: Observation
