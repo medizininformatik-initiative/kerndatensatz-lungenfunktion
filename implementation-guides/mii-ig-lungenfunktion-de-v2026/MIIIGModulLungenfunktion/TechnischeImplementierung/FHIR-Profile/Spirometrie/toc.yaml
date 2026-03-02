@@ -1,5 +1,5 @@
 - name: Spirometriemessung
-  filename: Index.page.md
+  filename: Procedure.page.md
 - name: Spirometriebefund
   filename: Report.page.md
 - name: Spirometriemesswerte

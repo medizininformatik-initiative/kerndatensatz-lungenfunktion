@@ -5,8 +5,8 @@ subject: https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunkti
 ---
 
 ## DiagnosticReport
-//TODO
-Der Diagnostic Report für Bildgebende verfahren richtet sich an die Dokumentation von radiologischen Befundungsergebnissen. Unterschiedliche Systeme (RIS Befundungsmodule, AI Integrationen dedizierte Systeme zur strukturieren Befundung) lieferen in unterschiedlichem Detailgrad Informationen. Dieses Profil addressiert diese unterschiedlichen Detailgrade und bietet modulare aufeinander aufbauende Stufen. Jede Stufe fügt weitere Konzepte hinzu und ermöglicht so neue Anwendungsmöglichkeiten von der Routine bis hin zu wissenschaftlichen Auswertungen.
+!!TODO!!
+Bericht einer Spirometrie
 
 @```
 from
@@ -53,8 +53,8 @@ select
 
 @```
 from StructureDefinition
-where url = 'https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/LogicalModel/Lungenfunktion'
-    for differential.element where id.contains('Bildgebung.Befundbericht')
+where url = 'https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/LogicalModel/Lungenfunktion'
+    for differential.element where id.contains('Lungenfunktion.Lungenfunktionsbefund')
     select
         FHIR: mapping[0].map,
         Datensatz: path,
@@ -66,9 +66,9 @@ where url = 'https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebu
 **Suchparameter**
 
 
-Folgende Suchparameter sind für das Modul Bildgebung relevant, auch in Kombination:
+Folgende Suchparameter sind für das Modul Lungenfunktion relevant, auch in Kombination:
 
-@``` from CapabilityStatement where url = 'https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/CapabilityStatement/metadata' for rest.resource.where(type='DiagnosticReport').searchParam select Name: name, Definition: definition, Type: type, Expectation: extension.where(url='http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation').value.ofType(code)
+@``` from CapabilityStatement where url = 'https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/CapabilityStatement/metadata' for rest.resource.where(type='DiagnosticReport').searchParam select Name: name, Definition: definition, Type: type, Expectation: extension.where(url='http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation').value.ofType(code)
 
 ```
 
@@ -76,7 +76,7 @@ Folgende Suchparameter sind für das Modul Bildgebung relevant, auch in Kombinat
 
 **Beispiele**
 
-Beispiel einer DiagnosticReport-Ressource
+Beispiel eines Spirometriebefund-Ressource
 
 {{json:fsh-generated/resources/DiagnosticReport-mii-exa-bildgebung-radiologischer-Befund.json}}
 
