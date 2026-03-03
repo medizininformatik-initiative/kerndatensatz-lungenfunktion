@@ -1,3 +1,5 @@
+- name: Index
+  filename: Index.page.md
 - name: Provokationstest
   filename: Procedure.page.md
 - name: Provokationstestbefund

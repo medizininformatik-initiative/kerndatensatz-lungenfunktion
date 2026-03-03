@@ -1,3 +1,5 @@
+- name: Index
+  filename: Index.page.md
 - name: Diffusionsmessung
   filename: Procedure.page.md
 - name: Diffusionsmessungsbefund
