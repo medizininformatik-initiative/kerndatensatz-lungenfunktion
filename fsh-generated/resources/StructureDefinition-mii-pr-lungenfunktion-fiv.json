@@ -16,7 +16,7 @@
     }
   ],
   "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-fiv",
-  "version": "2025.0.0",
+  "version": "2027.0.0-preview",
   "name": "MII_PR_Lungenfunktion_FIV",
   "_name": {
     "extension": [
@@ -54,7 +54,7 @@
     ]
   },
   "status": "active",
-  "date": "2025-01-01",
+  "date": "2027-01-01",
   "publisher": "Medizininformatik Initiative",
   "contact": [
     {
@@ -170,8 +170,9 @@
         "path": "Observation.component.code.coding",
         "sliceName": "loinc",
         "patternCoding": {
-          "code": "TODO",
-          "system": "http://loinc.org"
+          "code": "43264-1",
+          "system": "http://loinc.org",
+          "display": "FIV1/FIV Predicted"
         }
       }
     ]

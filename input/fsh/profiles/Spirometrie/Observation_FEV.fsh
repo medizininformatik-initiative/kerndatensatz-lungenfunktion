@@ -17,9 +17,9 @@ Description: "Dieses Profil beschreibt die Messung des forcierten, exspiratorisc
 * insert LicenseCodeableCCBY40
 //Profile
 * partOf only Reference(MII_PR_Lungenfunktion_Spirometrie_Messung)
-* code.coding[loinc] = $loinc#20150-9 "Volume expired during 1.0 s of forced expiration"
+* code.coding[loinc] from MII_VS_Lufu_LNC_FEV (required)
 * code.coding[sct] from MII_VS_Lufu_SCT_FEV (required)
 * component[predicted].code.coding[sct] from MII_VS_Lufu_SCT_FEV (required)
-* component[predicted].code.coding[loinc] = $loinc#TODO
+* component[predicted].code.coding[loinc] from MII_VS_Lufu_LNC_FEV (required)
 * component[ratio].code.coding[sct] from MII_VS_Lufu_SCT_FEV (required)
-* component[ratio].code.coding[loinc] = $loinc#TODO
+* component[ratio].code.coding[loinc] from MII_VS_Lufu_LNC_FEV (required)

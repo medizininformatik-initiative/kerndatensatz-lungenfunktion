@@ -17,9 +17,9 @@ Description: "Dieses Profil beschreibt die Messung der forcierten Vitalkapazitä
 * insert LicenseCodeableCCBY40
 //Profile
 * partOf only Reference(MII_PR_Lungenfunktion_Spirometrie_Messung)
-* code.coding[loinc] = $loinc#19868-9 "FVC Vol Respiratory Spirometry"
+* code.coding[loinc] from MII_VS_Lufu_LNC_FVC (required)
 * code.coding[sct] from MII_VS_Lufu_SCT_FVC (required)
 * component[predicted].code.coding[sct] from MII_VS_Lufu_SCT_FVC (required)
-* component[predicted].code.coding[loinc] = $loinc#19869-7 "Forced vital capacity [Volume] Respiratory system Predicted"
+* component[predicted].code.coding[loinc] from MII_VS_Lufu_LNC_FVC (required)
 * component[ratio].code.coding[sct] from MII_VS_Lufu_SCT_FVC (required)
-* component[ratio].code.coding[loinc] = $loinc#19872-1 "FVC measured/predicted"
+* component[ratio].code.coding[loinc] from MII_VS_Lufu_LNC_FVC (required)

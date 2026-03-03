@@ -22,4 +22,4 @@ Description: "Dieses Profil beschreibt die Messung des forcierten, exspiratorisc
 * component[predicted].code.coding[sct] = $SCT-version#TODO
 * component[predicted].code.coding[loinc] = $loinc#43251-8 "FIV1 Predicted"
 * component[ratio].code.coding[sct] = $SCT-version#TODO
-* component[ratio].code.coding[loinc] = $loinc#TODO
+* component[ratio].code.coding[loinc] = $loinc#43264-1 "FIV1/FIV Predicted"

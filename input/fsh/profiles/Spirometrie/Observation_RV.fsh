@@ -17,9 +17,9 @@ Description: "Dieses Profil beschreibt die Messung des Reservevolumen."
 * insert LicenseCodeableCCBY40
 //Profile
 * partOf only Reference(MII_PR_Lungenfunktion_Spirometrie_Messung)
-* code.coding[loinc] = $loinc#100759-0 "Inspiratory reserve [Volume] Respiratory system by Spirometry"
+* code.coding[loinc] from MII_VS_Lufu_LNC_RV (required)
 * code.coding[sct] from MII_VS_Lufu_SCT_RV (required)
 * component[predicted].code.coding[sct] = $SCT-version#TODO
-* component[predicted].code.coding[loinc] = $loinc#TODO
+* component[predicted].code.coding[loinc] from MII_VS_Lufu_LNC_RV
 * component[ratio].code.coding[sct] = $SCT-version#TODO
-* component[ratio].code.coding[loinc] = $loinc#TODO
+* component[ratio].code.coding[loinc] from MII_VS_Lufu_LNC_RV

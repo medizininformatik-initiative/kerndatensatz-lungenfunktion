@@ -17,9 +17,9 @@ Description: "Dieses Profil beschreibt die Messung der inspiratorischen Kapazit√
 * insert LicenseCodeableCCBY40
 //Profile
 * partOf only Reference(MII_PR_Lungenfunktion_Spirometrie_Messung)
-* code.coding[loinc] = $loinc#19852-3 "Inspiratory capacity by Spirometry"
+* code.coding[loinc] from MII_VS_Lufu_LNC_IC (required)
 * code.coding[sct].code = $SCT-version#29533001 "Inspiratory capacity (observable entity)"
 * component[predicted].code.coding[sct] = $SCT-version#TODO
-* component[predicted].code.coding[loinc] = $loinc#19851-5 "Inspiratory capacity Predicted"
+* component[predicted].code.coding[loinc] from MII_VS_Lufu_LNC_IC (required)
 * component[ratio].code.coding[sct] = $SCT-version#TODO
-* component[ratio].code.coding[loinc] = $loinc#19855-6 "Inspiratory capacity measured/predicted by Spirometry"
+* component[ratio].code.coding[loinc] from MII_VS_Lufu_LNC_IC (required)

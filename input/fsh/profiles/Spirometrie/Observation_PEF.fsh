@@ -17,9 +17,9 @@ Description: "Dieses Profil beschreibt die Messung des exspiratorischen Spitzenf
 * insert LicenseCodeableCCBY40
 //Profile
 * partOf only Reference(MII_PR_Lungenfunktion_Spirometrie_Messung)
-* code.coding[loinc] = $loinc#33452-4 "Maximum expiratory gas flow Respiratory system airway"
+* code.coding[loinc] from MII_VS_Lufu_LNC_PEF (required)
 * code.coding[sct] from MII_VS_Lufu_SCT_PEF (required)
 * component[predicted].code.coding[sct] from MII_VS_Lufu_SCT_PEF (required)
-* component[predicted].code.coding[loinc] = $loinc#69974-4 "Maximum expiratory gas flow Respiratory system airway Predicted"
+* component[predicted].code.coding[loinc] from MII_VS_Lufu_LNC_PEF (required)
 * component[ratio].code.coding[sct] from MII_VS_Lufu_SCT_PEF (required)
-* component[ratio].code.coding[loinc] = $loinc#69977-7 "Maximum expiratory gas flow/Predicted maximum expiratory gas flow Respiratory system airway --pre bronchodilation"
+* component[ratio].code.coding[loinc] from MII_VS_Lufu_LNC_PEF (required)
