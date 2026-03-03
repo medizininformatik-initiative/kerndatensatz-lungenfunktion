@@ -1,0 +1,6 @@
+- name: Bodyplethysmographiemessung
+  filename: Procedure.page.md
+- name: Bodyplethysmographiebefund
+  filename: Report.page.md
+- name: Bodyplethysmographiemesswerte
+  filename: Observation

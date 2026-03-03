@@ -1,0 +1,25 @@
+//EXAMPLE Profile
+//Head
+Profile: MII_PR_Lungenfunktion_R_Spezifisch
+Parent: MII_PR_Lungenfunktion_Viskositaet
+Id: mii-pr-lungenfunktion-r-spezifisch
+Title: "MII PR Lungenfunktion R Spezifisch"
+Description: "Dieses Profil beschreibt die Messung des spezifischen Atemwegswiderstand"
+* ^url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-r-spezifisch"
+//Translation Meta
+* insert Translation(^name, en-US, MII_PR_Lungfunction_R_Specific)
+* insert Translation(^title, en-US, MII PR Lungfunction R Specific)
+* insert Translation(^description, en-US, The profile describes a observation for the specific breathing resistence.)
+//Meta
+* insert PR_CS_VS_Version
+* insert PR_CS_VS_Date
+* insert Publisher
+* insert LicenseCodeableCCBY40
+//Profile
+* partOf only Reference(MII_PR_Lungenfunktion_Bodyplethysmographie_Messung)
+* code.coding[loinc] = $loinc#91980-3 "Specific airway resistance by Plethysmograph body box"
+* code.coding[sct] = $SCT-version#1366667009 "Specific airway resistance (observable entity)"
+* component[predicted].code.coding[sct] = $SCT-version#TODO
+* component[predicted].code.coding[loinc] = $loinc#TODO
+* component[ratio].code.coding[sct] = $SCT-version#TODO
+* component[ratio].code.coding[loinc] = $loinc#91982-9 "Specific airway resistance measured/predicted by Plethysmograph body box"

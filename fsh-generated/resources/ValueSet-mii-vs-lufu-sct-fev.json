@@ -1,0 +1,94 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "MII_VS_Lufu_SCT_FEV",
+  "id": "mii-vs-lufu-sct-fev",
+  "title": "MII VS Lufu SCT FEV",
+  "description": "Import the ValueSet for lungfunction forced expiratory volume",
+  "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/ValueSet/mii-vs-lufu-sct-fev",
+  "publisher": "Medizininformatik Initiative",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://www.medizininformatik-initiative.de"
+        }
+      ]
+    }
+  ],
+  "version": "2025.0.0",
+  "copyright": "This value set includes content from SNOMED CT, which is copyright © 2002+ International Health Terminology Standards Development Organisation (IHTSDO), and distributed by agreement between IHTSDO and HL7. Implementer use of SNOMED CT is not covered by this agreement",
+  "date": "2025-01-01",
+  "meta": {
+    "profile": [
+      "http://hl7.org/fhir/StructureDefinition/shareablevalueset"
+    ]
+  },
+  "experimental": false,
+  "compose": {
+    "include": [
+      {
+        "system": "http://snomed.info/sct",
+        "concept": [
+          {
+            "code": "165041004",
+            "display": "Forced expired volume (observable entity)"
+          },
+          {
+            "code": "251910007",
+            "display": "Forced expired volume in 0.75 seconds (observable entity)"
+          },
+          {
+            "code": "59328004",
+            "display": "Forced expired volume in 1 second (observable entity)"
+          },
+          {
+            "code": "310520004",
+            "display": "Expected forced expired volume in 1 second (observable entity)"
+          },
+          {
+            "code": "401013003",
+            "display": "Forced expired volume in 1 second after bronchodilation (observable entity)"
+          },
+          {
+            "code": "447254005",
+            "display": "Percentage predicted forced expiratory volume in 1 second after bronchodilation (observable entity)"
+          },
+          {
+            "code": "401012008",
+            "display": "Forced expired volume in 1 second before bronchodilation (observable entity)"
+          },
+          {
+            "code": "401016006",
+            "display": "Forced expired volume in 1 second post steroids (observable entity)"
+          },
+          {
+            "code": "401115007",
+            "display": "Forced expired volume in 1 second pre steroids (observable entity)"
+          },
+          {
+            "code": "445466003",
+            "display": "Forced expired volume in 1 second reversibility (observable entity)"
+          },
+          {
+            "code": "878869001",
+            "display": "Forced expired volume in six seconds (observable entity)"
+          },
+          {
+            "code": "1366662003",
+            "display": "Maximal drop of forced expired volume in 1 second (observable entity)"
+          },
+          {
+            "code": "313223002",
+            "display": "Percent predicted forced expired volume in one second (observable entity)"
+          },
+          {
+            "code": "702534005",
+            "display": "Forced expiratory volume in one second/Forced expiratory volume in six seconds ratio (observable entity)"
+          }
+        ]
+      }
+    ]
+  }
+}

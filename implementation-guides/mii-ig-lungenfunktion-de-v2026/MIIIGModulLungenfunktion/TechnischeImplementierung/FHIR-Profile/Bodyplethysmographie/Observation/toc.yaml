@@ -1,0 +1,17 @@
+- name: FRC
+  filename: FRC.page.md
+- name: R tot
+  filename: R_tot.page.md
+- name: sR total
+  filename: sR_tot.page.md
+- name: sR effektiv
+  filename: sR_eff.page.md
+- name: sG total
+  filename: sG_tot.page.md
+- name: TLC
+  filename: TLC.page.md
+- name: RVL
+  filename: RVL.page.md
+- name: RVL TLC
+  filename: RVLTLC.page.md
+  

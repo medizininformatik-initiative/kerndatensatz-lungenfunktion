@@ -1,0 +1,1972 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "mii-lm-lungenfunktion",
+  "extension": [
+    {
+      "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-ex-meta-license-codeable",
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "code": "CC-BY-4.0",
+            "system": "http://hl7.org/fhir/spdx-license",
+            "display": "Creative Commons Attribution 4.0 International"
+          }
+        ]
+      }
+    }
+  ],
+  "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/LogicalModel/Lungenfunktion",
+  "version": "2025.0.0",
+  "name": "MII_LM_Lungenfunktion",
+  "_name": {
+    "extension": [
+      {
+        "url": "http://hl7.org/fhir/StructureDefinition/translation",
+        "extension": [
+          {
+            "url": "lang",
+            "valueCode": "en-US"
+          },
+          {
+            "url": "content",
+            "valueString": "MII_LM_Lungenfunktion"
+          }
+        ]
+      }
+    ]
+  },
+  "title": "MII LM Lungenfunktion",
+  "_title": {
+    "extension": [
+      {
+        "url": "http://hl7.org/fhir/StructureDefinition/translation",
+        "extension": [
+          {
+            "url": "lang",
+            "valueCode": "en-US"
+          },
+          {
+            "url": "content",
+            "valueString": "MII LM Lungenfunktion"
+          }
+        ]
+      }
+    ]
+  },
+  "status": "active",
+  "date": "2025-01-01",
+  "publisher": "Medizininformatik Initiative",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://www.medizininformatik-initiative.de"
+        }
+      ]
+    }
+  ],
+  "description": "MII LogicalModel Modul Lungenfunktion",
+  "_description": {
+    "extension": [
+      {
+        "url": "http://hl7.org/fhir/StructureDefinition/translation",
+        "extension": [
+          {
+            "url": "lang",
+            "valueCode": "en-US"
+          },
+          {
+            "url": "content",
+            "valueString": "MII LogicalModel Module Lungenfunktion"
+          }
+        ]
+      }
+    ]
+  },
+  "fhirVersion": "4.0.1",
+  "mapping": [
+    {
+      "identity": "FHIR",
+      "name": "Bildgebung LogicalModel FHIR Mapping"
+    },
+    {
+      "identity": "KDS-Profile",
+      "name": "Lungenfunktion LogicalModel KDS-Profile Mapping"
+    }
+  ],
+  "kind": "logical",
+  "abstract": false,
+  "type": "https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/LogicalModel/Lungenfunktion",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Element",
+  "derivation": "specialization",
+  "differential": {
+    "element": [
+      {
+        "id": "Lungenfunktion",
+        "path": "Lungenfunktion",
+        "short": "Das Erweiterungsmodul Lungenfunktion enthält Datenelemente zur Dokumentation von Lungenfunktionsuntersuchungen (Spirometrie, Bodyplethysmographie, Diffusionskapazität, Provokationstestung) und zugehörigen Befundberichten.",
+        "definition": "MII LogicalModel Modul Lungenfunktion"
+      },
+      {
+        "id": "Lungenfunktion.Lungenfunktionsprozedur",
+        "path": "Lungenfunktion.Lungenfunktionsprozedur",
+        "short": "Lungenfunktionsprozedur",
+        "definition": "Generische Prozedur einer Lungenfunktionmessung. Hier soll das MII KDS-Profil Prozedur verwendet werden.",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "FHIR",
+            "map": "Procedure"
+          }
+        ]
+      },
+      {
+        "id": "Lungenfunktion.Lungenfunktionsprozedur.Status",
+        "path": "Lungenfunktion.Lungenfunktionsprozedur.Status",
+        "short": "Status",
+        "definition": "Status der Lugenfunktionsmessung",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "Coding"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "FHIR",
+            "map": "Procedure.status"
+          }
+        ]
+      },
+      {
+        "id": "Lungenfunktion.Lungenfunktionsprozedur.Kategorie",
+        "path": "Lungenfunktion.Lungenfunktionsprozedur.Kategorie",
+        "short": "Kategorie",
+        "definition": "Kategoriesierung der Lungenfunktionmessung nach SNOMET-CT: 23426006 |Measurement of respiratory function (procedure)|",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "FHIR",
+            "map": "Procedure.category"
+          }
+        ]
+      },
+      {
+        "id": "Lungenfunktion.Lungenfunktionsprozedur.Code",
+        "path": "Lungenfunktion.Lungenfunktionsprozedur.Code",
+        "short": "Code",
+        "definition": "Code für spezifische Lungenfunktionsmessung",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "FHIR",
+            "map": "Procedure.code"
+          }
+        ]
+      },
+      {
+        "id": "Lungenfunktion.Lungenfunktionsprozedur.Code.Spirometrie",
+        "path": "Lungenfunktion.Lungenfunktionsprozedur.Code.Spirometrie",
+        "short": "Spirometrie",
+        "definition": "Code nach SNOMED-CT: 127783003 |Spirometry (procedure)|",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ]
+      },
+      {
+        "id": "Lungenfunktion.Lungenfunktionsprozedur.Code.Bodyplethysmographie",
+        "path": "Lungenfunktion.Lungenfunktionsprozedur.Code.Bodyplethysmographie",
+        "short": "Bodyplethysmographie",
+        "definition": "Code nach SNOMED-CT: 28275007 |Total body plethysmography (procedure)|",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ]
+      },
+      {
+        "id": "Lungenfunktion.Lungenfunktionsprozedur.Code.Diffusionskapazitaet",
+        "path": "Lungenfunktion.Lungenfunktionsprozedur.Code.Diffusionskapazitaet",
+        "short": "Diffusionskapazität",
+        "definition": "Code nach SNOMED-CT: 36421003 |Carbon monoxide diffusing capacity measurement (procedure)|",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ]
+      },
+      {
+        "id": "Lungenfunktion.Lungenfunktionsprozedur.Code.Provokationstest",
+        "path": "Lungenfunktion.Lungenfunktionsprozedur.Code.Provokationstest",
+        "short": "Provokationstest",
+        "definition": "Code nach SNOMED-CT: 252520007 |Methacholine challenge (procedure)|",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ]
+      },
+      {
+        "id": "Lungenfunktion.Lungenfunktionsprozedur.Person",
+        "path": "Lungenfunktion.Lungenfunktionsprozedur.Person",
+        "short": "Person",
+        "definition": "Person, auf die sich die Lungenfunktionsmessung bezieht. Hier soll das MII KDS-Profil Person verwendet werden.",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/StructureDefinition/Patient"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "FHIR",
+            "map": "Procedure.subject"
+          }
+        ]
+      },
+      {
+        "id": "Lungenfunktion.Lungenfunktionsprozedur.Befundungszeit",
+        "path": "Lungenfunktion.Lungenfunktionsprozedur.Befundungszeit",
+        "short": "Befundungszeit",
+        "definition": "Befundungszeitpunkt der Lungenfunktionsmessung.",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "dateTime"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "FHIR",
+            "map": "Procedure.performedDateTime"
+          }
+        ]
+      },
+      {
+        "id": "Lungenfunktion.Lungenfunktionsprozedur.Durchfuehrungserfolg",
+        "path": "Lungenfunktion.Lungenfunktionsprozedur.Durchfuehrungserfolg",
+        "short": "Durchführungserfolg",
+        "definition": "Durchführungserfolg der Lungenfunktionsmessung: Erfolgreich | nicht Erfolgreich | teilweise Erfolgreich",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "FHIR",
+            "map": "Procedure.outcome"
+          }
+        ]
+      },
+      {
+        "id": "Lungenfunktion.Lungenfunktionsprozedur.Bericht",
+        "path": "Lungenfunktion.Lungenfunktionsprozedur.Bericht",
+        "short": "Bericht",
+        "definition": "Referenz auf den Bericht",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/StructureDefinition/DiagnosticReport"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "FHIR",
+            "map": "Procedure.report"
+          }
+        ]
+      },
+      {
+        "id": "Lungenfunktion.Lungenfunktionsbefund",
+        "path": "Lungenfunktion.Lungenfunktionsbefund",
+        "short": "Lungenfunktionsbefund",
+        "definition": "Generischer Befund einer Lungenfunktionsprozedur",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "FHIR",
+            "map": "DiagnosticReport"
+          }
+        ]
+      },
+      {
+        "id": "Lungenfunktion.Lungenfunktionsbefund.Status",
+        "path": "Lungenfunktion.Lungenfunktionsbefund.Status",
+        "short": "Status",
+        "definition": "Status des Befundberichts.",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "Coding"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "FHIR",
+            "map": "DiagnosticReport.status"
+          }
+        ]
+      },
+      {
+        "id": "Lungenfunktion.Lungenfunktionsbefund.Kategorie",
+        "path": "Lungenfunktion.Lungenfunktionsbefund.Kategorie",
+        "short": "Kategorie",
+        "definition": "Kategorisierung des Befunds zur Lungenfunktion nach SNOMED-CT: 720449003 |Pulmonary function report (record artifact)|",
+        "min": 1,
+        "max": "*",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "FHIR",
+            "map": "DiagnosticReport.category"
+          }
+        ]
+      },
+      {
+        "id": "Lungenfunktion.Lungenfunktionsbefund.Code",
+        "path": "Lungenfunktion.Lungenfunktionsbefund.Code",
+        "short": "Code",
+        "definition": "Code für den spezifischen Lungenfunktionsbericht.",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "Coding"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "FHIR",
+            "map": "DiagnosticReport.code"
+          }
+        ]
+      },
+      {
+        "id": "Lungenfunktion.Lungenfunktionsbefund.Code.Spirometrie",
+        "path": "Lungenfunktion.Lungenfunktionsbefund.Code.Spirometrie",
+        "short": "Spirometrie",
+        "definition": "Code nach SNOMED-CT: 127783003 |Spirometry (procedure)|",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ]
+      },
+      {
+        "id": "Lungenfunktion.Lungenfunktionsbefund.Code.Bodyplethysmographie",
+        "path": "Lungenfunktion.Lungenfunktionsbefund.Code.Bodyplethysmographie",
+        "short": "Bodyplethysmographie",
+        "definition": "Code nach SNOMED-CT: 28275007 |Total body plethysmography (procedure)|",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ]
+      },
+      {
+        "id": "Lungenfunktion.Lungenfunktionsbefund.Code.Diffusionskapazitaet",
+        "path": "Lungenfunktion.Lungenfunktionsbefund.Code.Diffusionskapazitaet",
+        "short": "Diffusionskapazität",
+        "definition": "Code nach SNOMED-CT: 36421003 |Carbon monoxide diffusing capacity measurement (procedure)|",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ]
+      },
+      {
+        "id": "Lungenfunktion.Lungenfunktionsbefund.Code.Provokationstest",
+        "path": "Lungenfunktion.Lungenfunktionsbefund.Code.Provokationstest",
+        "short": "Provokationstest",
+        "definition": "Code nach SNOMED-CT: 252520007 |Methacholine challenge (procedure)|",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ]
+      },
+      {
+        "id": "Lungenfunktion.Lungenfunktionsbefund.Person",
+        "path": "Lungenfunktion.Lungenfunktionsbefund.Person",
+        "short": "Personen-Identifikation",
+        "definition": "Die Person, für die der Lungenfunktionsbericht erstellt wurde. Hier sollte das MII KDS-Modul Person referenziert werden",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/StructureDefinition/Patient"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "FHIR",
+            "map": "DiagnosticReport.subject"
+          }
+        ]
+      },
+      {
+        "id": "Lungenfunktion.Lungenfunktionsbefund.Fall",
+        "path": "Lungenfunktion.Lungenfunktionsbefund.Fall",
+        "short": "Fall-Referenz",
+        "definition": "Referenz über Fall auf den Versorgungsstellenkontakt. Hier soll das MII KDS-Modul Fall referenziert werden",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/StructureDefinition/Encounter"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "FHIR",
+            "map": "DiagnosticReport.encounter"
+          }
+        ]
+      },
+      {
+        "id": "Lungenfunktion.Lungenfunktionsbefund.Zeitpunkt",
+        "path": "Lungenfunktion.Lungenfunktionsbefund.Zeitpunkt",
+        "short": "Klinisch relevanter Zeitpunkt",
+        "definition": "Klinisch relevanter Zeitpunkt, auf den sich der Bericht bezieht.",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "dateTime"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "FHIR",
+            "map": "DiagnosticReport.effectiveDateTime"
+          }
+        ]
+      },
+      {
+        "id": "Lungenfunktion.Lungenfunktionsbefund.Periode",
+        "path": "Lungenfunktion.Lungenfunktionsbefund.Periode",
+        "short": "Klinisch relevante Periode",
+        "definition": "Klinisch relevante Periode, auf die sich der Bericht bezieht.",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Period"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "FHIR",
+            "map": "DiagnosticReport.effectivePeriod"
+          }
+        ]
+      },
+      {
+        "id": "Lungenfunktion.Lungenfunktionsbefund.ZeitpunktErstellung",
+        "path": "Lungenfunktion.Lungenfunktionsbefund.ZeitpunktErstellung",
+        "short": "Zeitpunkt der Erstellung",
+        "definition": "Zeitpunkt der Erstellung des Berichts.",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "dateTime"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "FHIR",
+            "map": "DiagnosticReport.issued"
+          }
+        ]
+      },
+      {
+        "id": "Lungenfunktion.Lungenfunktionsbefund.Beobachtung",
+        "path": "Lungenfunktion.Lungenfunktionsbefund.Beobachtung",
+        "short": "Beobachtung",
+        "definition": "Referenz auf die Lungenfunktionsmesswerte.",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/StructureDefinition/Observation"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "FHIR",
+            "map": "DiagnosticReport.result"
+          }
+        ]
+      },
+      {
+        "id": "Lungenfunktion.Lungenfunktionsbefund.InterpretationBeobachtung",
+        "path": "Lungenfunktion.Lungenfunktionsbefund.InterpretationBeobachtung",
+        "short": "Interpretation",
+        "definition": "Freitextinterpretation der Lungenfunktionsmessung.",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "markdown"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "FHIR",
+            "map": "DiagnosticReport.conclusion"
+          }
+        ]
+      },
+      {
+        "id": "Lungenfunktion.Lungenfunktionsbefund.StrukturierteInterpretation",
+        "path": "Lungenfunktion.Lungenfunktionsbefund.StrukturierteInterpretation",
+        "short": "Strukturierte Interpretation",
+        "definition": "Strukturierte Interpretation der Lungenfunktionsmessung.",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "FHIR",
+            "map": "DiagnosticReport.conclusionCode"
+          }
+        ]
+      },
+      {
+        "id": "Lungenfunktion.Lungenfunktionsbefund.Dokumentenanhang",
+        "path": "Lungenfunktion.Lungenfunktionsbefund.Dokumentenanhang",
+        "short": "Dokumentenanhang",
+        "definition": "Anhang der Dokumente und Bilder.",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "Attachment"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "FHIR",
+            "map": "DiagnosticReport.presentedForm"
+          }
+        ]
+      },
+      {
+        "id": "Lungenfunktion.Lungenfunktionsmesswerte",
+        "path": "Lungenfunktion.Lungenfunktionsmesswerte",
+        "short": "Lungenfunktionsmesswerte",
+        "definition": "Generische Messwerte einer Lungenfunktionsprozedur",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "FHIR",
+            "map": "Observation"
+          }
+        ]
+      },
+      {
+        "id": "Lungenfunktion.Lungenfunktionsmesswerte.Prozedur",
+        "path": "Lungenfunktion.Lungenfunktionsmesswerte.Prozedur",
+        "short": "Prozedur",
+        "definition": "Prozedur der Lungenfunktionsmessung",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/StructureDefinition/Procedure"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "FHIR",
+            "map": "Observation.partOf"
+          }
+        ]
+      },
+      {
+        "id": "Lungenfunktion.Lungenfunktionsmesswerte.Status",
+        "path": "Lungenfunktion.Lungenfunktionsmesswerte.Status",
+        "short": "Status",
+        "definition": "Status des Befundberichts.",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "Coding"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "FHIR",
+            "map": "Observation.status"
+          }
+        ]
+      },
+      {
+        "id": "Lungenfunktion.Lungenfunktionsmesswerte.Kategorie",
+        "path": "Lungenfunktion.Lungenfunktionsmesswerte.Kategorie",
+        "short": "Kategorie",
+        "definition": "Kategorisierung des Messwerts zur Lungenfunktion.",
+        "min": 1,
+        "max": "*",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "FHIR",
+            "map": "Observation.category"
+          }
+        ]
+      },
+      {
+        "id": "Lungenfunktion.Lungenfunktionsmesswerte.Code",
+        "path": "Lungenfunktion.Lungenfunktionsmesswerte.Code",
+        "short": "Code",
+        "definition": "Code für den spezifischen Lungenfunktionsbericht.",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "Coding"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "FHIR",
+            "map": "Observation.code"
+          }
+        ]
+      },
+      {
+        "id": "Lungenfunktion.Lungenfunktionsmesswerte.Code.Spirometrie",
+        "path": "Lungenfunktion.Lungenfunktionsmesswerte.Code.Spirometrie",
+        "short": "Spirometrie",
+        "definition": "Messwerte einer Spirometrie",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "Lungenfunktion.Lungenfunktionsmesswerte.Code.Spirometrie.IVC",
+        "path": "Lungenfunktion.Lungenfunktionsmesswerte.Code.Spirometrie.IVC",
+        "short": "IVC",
+        "definition": "inspiratorische Vitalkapazität; SNOMED-CT: 251913009; LOINC: ",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ]
+      },
+      {
+        "id": "Lungenfunktion.Lungenfunktionsmesswerte.Code.Spirometrie.FVC",
+        "path": "Lungenfunktion.Lungenfunktionsmesswerte.Code.Spirometrie.FVC",
+        "short": "FVC",
+        "definition": "Forcierte Vitalkapazität; SNOMED-CT: 50834005; LOINC: 19868-9",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ]
+      },
+      {
+        "id": "Lungenfunktion.Lungenfunktionsmesswerte.Code.Spirometrie.EVC",
+        "path": "Lungenfunktion.Lungenfunktionsmesswerte.Code.Spirometrie.EVC",
+        "short": "EVC",
+        "definition": "inspiratorische Vitalkapazität; SNOMED-CT: 251914003; LOINC: 19866-3",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ]
+      },
+      {
+        "id": "Lungenfunktion.Lungenfunktionsmesswerte.Code.Spirometrie.IC",
+        "path": "Lungenfunktion.Lungenfunktionsmesswerte.Code.Spirometrie.IC",
+        "short": "IC",
+        "definition": "Inspirationskapazität; SNOMED-CT: 29533001; LOINC: 19852-3",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ]
+      },
+      {
+        "id": "Lungenfunktion.Lungenfunktionsmesswerte.Code.Spirometrie.FEV1",
+        "path": "Lungenfunktion.Lungenfunktionsmesswerte.Code.Spirometrie.FEV1",
+        "short": "FEV1",
+        "definition": "Forcierte Exspirationsvolumen bei 1 Sekunde; SNOMED-CT: 59328004; LOINC: 20150-9",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ]
+      },
+      {
+        "id": "Lungenfunktion.Lungenfunktionsmesswerte.Code.Spirometrie.FIV1",
+        "path": "Lungenfunktion.Lungenfunktionsmesswerte.Code.Spirometrie.FIV1",
+        "short": "FIV1",
+        "definition": "Forcierte Inspirationsvolumen bei 1 Sekunde; SNOMED-CT: 251912004; LOINC: ",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ]
+      },
+      {
+        "id": "Lungenfunktion.Lungenfunktionsmesswerte.Code.Spirometrie.ERV",
+        "path": "Lungenfunktion.Lungenfunktionsmesswerte.Code.Spirometrie.ERV",
+        "short": "ERV",
+        "definition": "exspiratorisches Reservevolumen; SNOMED-CT: 55532004; LOINC: 19924-0",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ]
+      },
+      {
+        "id": "Lungenfunktion.Lungenfunktionsmesswerte.Code.Spirometrie.IRV",
+        "path": "Lungenfunktion.Lungenfunktionsmesswerte.Code.Spirometrie.IRV",
+        "short": "IRV",
+        "definition": "inspiratorisches Reservevolumen; SNOMED-CT: 55562005; LOINC: 100759-0",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ]
+      },
+      {
+        "id": "Lungenfunktion.Lungenfunktionsmesswerte.Code.Spirometrie.PEF",
+        "path": "Lungenfunktion.Lungenfunktionsmesswerte.Code.Spirometrie.PEF",
+        "short": "PEF",
+        "definition": "Maximale exspiratorische Spitzenfluss; SNOMED-CT: 18491006; LOINC: 33452-4",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ]
+      },
+      {
+        "id": "Lungenfunktion.Lungenfunktionsmesswerte.Code.Spirometrie.MEF25",
+        "path": "Lungenfunktion.Lungenfunktionsmesswerte.Code.Spirometrie.MEF25",
+        "short": "MEF25",
+        "definition": "Maximaler exspiratorischer Fluss bei einem Restvolumen von 25 % der ausgeatmeten forcierten Vitalkapazität; SNOMED-CT: 251919008; LOINC: ",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ]
+      },
+      {
+        "id": "Lungenfunktion.Lungenfunktionsmesswerte.Code.Spirometrie.MEF50",
+        "path": "Lungenfunktion.Lungenfunktionsmesswerte.Code.Spirometrie.MEF50",
+        "short": "MEF50",
+        "definition": "Maximaler exspiratorischer Fluss bei einem Restvolumen von 50 % der ausgeatmeten forcierten Vitalkapazität; SNOMED-CT: 251920002; LOINC: ",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ]
+      },
+      {
+        "id": "Lungenfunktion.Lungenfunktionsmesswerte.Code.Spirometrie.MEF75",
+        "path": "Lungenfunktion.Lungenfunktionsmesswerte.Code.Spirometrie.MEF75",
+        "short": "MEF75",
+        "definition": "Maximaler exspiratorischer Fluss bei einem Restvolumen von 75 % der ausgeatmeten forcierten Vitalkapazität; SNOMED-CT: 251921003; LOINC: ",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ]
+      },
+      {
+        "id": "Lungenfunktion.Lungenfunktionsmesswerte.Code.Spirometrie.MEF7525",
+        "path": "Lungenfunktion.Lungenfunktionsmesswerte.Code.Spirometrie.MEF7525",
+        "short": "MEF75-25",
+        "definition": "Maximaler exspiratorischer Fluss bei einem Restvolumen von 75 % - 25 % der ausgeatmeten forcierten Vitalkapazität; SNOMED-CT: 251930006; LOINC: 69972-8",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ]
+      },
+      {
+        "id": "Lungenfunktion.Lungenfunktionsmesswerte.Code.Spirometrie.FEV1VC",
+        "path": "Lungenfunktion.Lungenfunktionsmesswerte.Code.Spirometrie.FEV1VC",
+        "short": "FEV1/VC Verhältnis",
+        "definition": "Verhältnis von Forciertes Exspirationsvolumen in 1 Sekunde zur Vitalkapazität; SNOMED-CT: 251943006; LOINC: 19926-5",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ]
+      },
+      {
+        "id": "Lungenfunktion.Lungenfunktionsmesswerte.Code.Spirometrie.FEV1FVC",
+        "path": "Lungenfunktion.Lungenfunktionsmesswerte.Code.Spirometrie.FEV1FVC",
+        "short": "FEV1/FVC Verhältnis",
+        "definition": "Verhältnis von Forciertes Exspirationsvolumen in 1 Sekunde zu  Forcierter Vitalkapazität; SNOMED-CT: 251944000; LOINC: ",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ]
+      },
+      {
+        "id": "Lungenfunktion.Lungenfunktionsmesswerte.Code.Spirometrie.BF",
+        "path": "Lungenfunktion.Lungenfunktionsmesswerte.Code.Spirometrie.BF",
+        "short": "Atemfrequenz",
+        "definition": "Messung der Atemfrequenz; SNOMED-CT: 271625008; LOINC: ",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ]
+      },
+      {
+        "id": "Lungenfunktion.Lungenfunktionsmesswerte.Code.Bodyplethysmographie",
+        "path": "Lungenfunktion.Lungenfunktionsmesswerte.Code.Bodyplethysmographie",
+        "short": "Bodyplethysmographie",
+        "definition": "Messwerte einer Bodyplethysmographie",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "Lungenfunktion.Lungenfunktionsmesswerte.Code.Bodyplethysmographie.FRC",
+        "path": "Lungenfunktion.Lungenfunktionsmesswerte.Code.Bodyplethysmographie.FRC",
+        "short": "FRC",
+        "definition": "funktionelle Residualkapazität; SNOMED-CT: 65825000; LOINC: 19843-2",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ]
+      },
+      {
+        "id": "Lungenfunktion.Lungenfunktionsmesswerte.Code.Bodyplethysmographie.Rtot",
+        "path": "Lungenfunktion.Lungenfunktionsmesswerte.Code.Bodyplethysmographie.Rtot",
+        "short": "R tot",
+        "definition": "totaler Atemwegswiderstand; SNOMED-CT: 16162007; LOINC: 75946-4",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ]
+      },
+      {
+        "id": "Lungenfunktion.Lungenfunktionsmesswerte.Code.Bodyplethysmographie.sGtot",
+        "path": "Lungenfunktion.Lungenfunktionsmesswerte.Code.Bodyplethysmographie.sGtot",
+        "short": "sG tot",
+        "definition": "totale, spezifische Atemwegsleitfähigkeit; SNOMED-CT: 79412009; LOINC: ",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ]
+      },
+      {
+        "id": "Lungenfunktion.Lungenfunktionsmesswerte.Code.Bodyplethysmographie.sRtot",
+        "path": "Lungenfunktion.Lungenfunktionsmesswerte.Code.Bodyplethysmographie.sRtot",
+        "short": "sR tot",
+        "definition": "totaler, spezifischer Atemwegswiderstand; SNOMED-CT: 1366667009; LOINC: 91980-3",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ]
+      },
+      {
+        "id": "Lungenfunktion.Lungenfunktionsmesswerte.Code.Bodyplethysmographie.sReff",
+        "path": "Lungenfunktion.Lungenfunktionsmesswerte.Code.Bodyplethysmographie.sReff",
+        "short": "sR eff",
+        "definition": "effektiver, spezifischer Atemwegswiderstand; SNOMED-CT: 1366667009; LOINC: 98084-7",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ]
+      },
+      {
+        "id": "Lungenfunktion.Lungenfunktionsmesswerte.Code.Bodyplethysmographie.RV",
+        "path": "Lungenfunktion.Lungenfunktionsmesswerte.Code.Bodyplethysmographie.RV",
+        "short": "RV",
+        "definition": "Residualvolumen; SNOMED-CT: 42457008; LOINC: 20146-7",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ]
+      },
+      {
+        "id": "Lungenfunktion.Lungenfunktionsmesswerte.Code.Bodyplethysmographie.TLC",
+        "path": "Lungenfunktion.Lungenfunktionsmesswerte.Code.Bodyplethysmographie.TLC",
+        "short": "TLC",
+        "definition": "totale Lungenkapazität; SNOMED-CT: 57566009; LOINC: 19862-2",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ]
+      },
+      {
+        "id": "Lungenfunktion.Lungenfunktionsmesswerte.Code.Bodyplethysmographie.RVTLC",
+        "path": "Lungenfunktion.Lungenfunktionsmesswerte.Code.Bodyplethysmographie.RVTLC",
+        "short": "RV/TLC Verhältnis",
+        "definition": "prozentuale Anteil des Residualvolumens an der Totalen Lungenkapazität.; SNOMED-CT: 1366666000; LOINC: 81454-1",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ]
+      },
+      {
+        "id": "Lungenfunktion.Lungenfunktionsmesswerte.Code.Diffussionsmessung",
+        "path": "Lungenfunktion.Lungenfunktionsmesswerte.Code.Diffussionsmessung",
+        "short": "Diffussionsmessung",
+        "definition": "Messwerte einer Diffussionsmessung",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "Lungenfunktion.Lungenfunktionsmesswerte.Code.Diffussionsmessung.DLCO",
+        "path": "Lungenfunktion.Lungenfunktionsmesswerte.Code.Diffussionsmessung.DLCO",
+        "short": "DLCO",
+        "definition": "Transferfaktor der Lunge für Kohlenmonoxid (TLCO) wird auch oft als DLCO (Diffusionskapazität der Lunge für Kohlenmonoxid) bezeichnet.; SNOMED-CT: 1366665001; LOINC: 19911-7",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ]
+      },
+      {
+        "id": "Lungenfunktion.Lungenfunktionsmesswerte.Code.Diffussionsmessung.DLCOc",
+        "path": "Lungenfunktion.Lungenfunktionsmesswerte.Code.Diffussionsmessung.DLCOc",
+        "short": "DLCOc",
+        "definition": "Durch Hämoglobinmessung korrigiertes DLCO; SNOMED-CT: ; LOINC: 19913-3",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ]
+      },
+      {
+        "id": "Lungenfunktion.Lungenfunktionsmesswerte.Code.Diffussionsmessung.KCO",
+        "path": "Lungenfunktion.Lungenfunktionsmesswerte.Code.Diffussionsmessung.KCO",
+        "short": "KCO",
+        "definition": "Kohlenmonoxid-Transferkoeffizient (KCO) misst die Effizienz des Gausaustauschs pro Volumeneinheit der Lunge (TLCO / VA); SNOMED-CT: 251952002; LOINC: 19916-6",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ]
+      },
+      {
+        "id": "Lungenfunktion.Lungenfunktionsmesswerte.Code.Diffussionsmessung.KCOc",
+        "path": "Lungenfunktion.Lungenfunktionsmesswerte.Code.Diffussionsmessung.KCOc",
+        "short": "KCOc",
+        "definition": "Durch Hämoglobinmessung korrigiertes KCO; SNOMED-CT: ; LOINC: 69578-3",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ]
+      },
+      {
+        "id": "Lungenfunktion.Lungenfunktionsmesswerte.Code.Diffussionsmessung.VA",
+        "path": "Lungenfunktion.Lungenfunktionsmesswerte.Code.Diffussionsmessung.VA",
+        "short": "VA",
+        "definition": "Alveolarvolumen ist das Volumen der Lunge, das aktiv am Gasaustausch beteiligt ist.; SNOMED-CT: 251953007; LOINC: ",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ]
+      },
+      {
+        "id": "Lungenfunktion.Lungenfunktionsmesswerte.Code.Diffussionsmessung.TA",
+        "path": "Lungenfunktion.Lungenfunktionsmesswerte.Code.Diffussionsmessung.TA",
+        "short": "TA",
+        "definition": "Haltezeit des Atemzug oder kapillare Transitzeit in der Lunge; SNOMED-CT: ; LOINC: 60821-6",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ]
+      },
+      {
+        "id": "Lungenfunktion.Lungenfunktionsmesswerte.Code.Diffussionsmessung.Hb",
+        "path": "Lungenfunktion.Lungenfunktionsmesswerte.Code.Diffussionsmessung.Hb",
+        "short": "Hb",
+        "definition": "Hämoglobinwert durch Blutgasmessung; SNOMED-CT: 38082009; LOINC: 718-7",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ]
+      },
+      {
+        "id": "Lungenfunktion.Lungenfunktionsmesswerte.Code.Provokationstest",
+        "path": "Lungenfunktion.Lungenfunktionsmesswerte.Code.Provokationstest",
+        "short": "Provokationstest",
+        "definition": "Provokationstest mit wiederholten Spirometrietests",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "Lungenfunktion.Lungenfunktionsmesswerte.Code.Provokationstest.Durchfuehrungstyp",
+        "path": "Lungenfunktion.Lungenfunktionsmesswerte.Code.Provokationstest.Durchfuehrungstyp",
+        "short": "Durchführungstyp",
+        "definition": "Art des Provokationstests (z. B. Methacholin-Test, Mannitol-Test, Belastungstest)",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "code"
+          }
+        ]
+      },
+      {
+        "id": "Lungenfunktion.Lungenfunktionsmesswerte.Code.Provokationstest.Substanz",
+        "path": "Lungenfunktion.Lungenfunktionsmesswerte.Code.Provokationstest.Substanz",
+        "short": "Provokationssubstanz",
+        "definition": "Art des Provokationsreizes z. B. Methacholin, Mannitol, Belastung",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ]
+      },
+      {
+        "id": "Lungenfunktion.Lungenfunktionsmesswerte.Code.Provokationstest.Dosis",
+        "path": "Lungenfunktion.Lungenfunktionsmesswerte.Code.Provokationstest.Dosis",
+        "definition": "Konzentration pro Stufe",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ]
+      },
+      {
+        "id": "Lungenfunktion.Lungenfunktionsmesswerte.Code.Provokationstest.stufe",
+        "path": "Lungenfunktion.Lungenfunktionsmesswerte.Code.Provokationstest.stufe",
+        "short": "Provokationsstufe",
+        "definition": "Eine einzelne Dosisstufe innerhalb des Provokationstests",
+        "min": 1,
+        "max": "*",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "Lungenfunktion.Lungenfunktionsmesswerte.Code.Provokationstest.sequenznummer",
+        "path": "Lungenfunktion.Lungenfunktionsmesswerte.Code.Provokationstest.sequenznummer",
+        "short": "Sequenznummer",
+        "definition": "Reihenfolge der Dosisstufe",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "integer"
+          }
+        ]
+      },
+      {
+        "id": "Lungenfunktion.Lungenfunktionsmesswerte.Code.Provokationstest.kumulativeDosis",
+        "path": "Lungenfunktion.Lungenfunktionsmesswerte.Code.Provokationstest.kumulativeDosis",
+        "short": "Kumulative Dosis",
+        "definition": "Bis zu dieser Stufe insgesamt verabreichte Dosis",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Quantity"
+          }
+        ]
+      },
+      {
+        "id": "Lungenfunktion.Lungenfunktionsmesswerte.Code.Provokationstest.Applikationszeitpunkt",
+        "path": "Lungenfunktion.Lungenfunktionsmesswerte.Code.Provokationstest.Applikationszeitpunkt",
+        "short": "Zeitpunkt nach Applikation",
+        "definition": "Zeitintervall zwischen Applikation und Messung",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Duration"
+          }
+        ]
+      },
+      {
+        "id": "Lungenfunktion.Lungenfunktionsmesswerte.Code.Provokationstest.thresholdDoseWert",
+        "path": "Lungenfunktion.Lungenfunktionsmesswerte.Code.Provokationstest.thresholdDoseWert",
+        "short": "Threshold-Dosis",
+        "definition": "Dosis, bei der der definierte Schwellenwert (z. B. 20 % FEV1-Abfall) erreicht wird (PD20 / PC20)",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Quantity"
+          }
+        ]
+      },
+      {
+        "id": "Lungenfunktion.Lungenfunktionsmesswerte.Person",
+        "path": "Lungenfunktion.Lungenfunktionsmesswerte.Person",
+        "short": "Personen-Identifikation",
+        "definition": "Die Person, für die der Lungenfunktionsbericht erstellt wurde. Hier sollte das MII KDS-Modul Person referenziert werden",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/StructureDefinition/Patient"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "FHIR",
+            "map": "Observation.subject"
+          }
+        ]
+      },
+      {
+        "id": "Lungenfunktion.Lungenfunktionsmesswerte.Dokumentationszeitpunkt",
+        "path": "Lungenfunktion.Lungenfunktionsmesswerte.Dokumentationszeitpunkt",
+        "short": "Dokumentationszeitpunkt ",
+        "definition": "Zeitpunkt an dem der Messwert dokumentiert wurde.",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "dateTime"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "FHIR",
+            "map": "Observation.issued"
+          }
+        ]
+      },
+      {
+        "id": "Lungenfunktion.Lungenfunktionsmesswerte.Messergebnis",
+        "path": "Lungenfunktion.Lungenfunktionsmesswerte.Messergebnis",
+        "short": "Messergebnis",
+        "definition": "Messergebnis eines Lungenfunktionsmesswert",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Quantity",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/SimpleQuantity"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "FHIR",
+            "map": "Observation.value[x]"
+          }
+        ]
+      },
+      {
+        "id": "Lungenfunktion.Lungenfunktionsmesswerte.Interpretation",
+        "path": "Lungenfunktion.Lungenfunktionsmesswerte.Interpretation",
+        "short": "Interpretation",
+        "definition": "Interpretation der Messergebnisse im Bezug zum Referenzintervall.",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "FHIR",
+            "map": "Observation.interpretation"
+          }
+        ]
+      },
+      {
+        "id": "Lungenfunktion.Lungenfunktionsmesswerte.Messverfahren",
+        "path": "Lungenfunktion.Lungenfunktionsmesswerte.Messverfahren",
+        "short": "Messverfahren",
+        "definition": "Verfahren, wie der Messwert aufgenommen wurden.",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "FHIR",
+            "map": "Observation.method"
+          }
+        ]
+      },
+      {
+        "id": "Lungenfunktion.Lungenfunktionsmesswerte.Referenzintervall",
+        "path": "Lungenfunktion.Lungenfunktionsmesswerte.Referenzintervall",
+        "short": "Referenzintervall",
+        "definition": "Intervall zur Auswertung des Messwertes",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "FHIR",
+            "map": "Observation.referenceRange"
+          }
+        ]
+      },
+      {
+        "id": "Lungenfunktion.Lungenfunktionsmesswerte.Referenzintervall.UntererReferenzwert",
+        "path": "Lungenfunktion.Lungenfunktionsmesswerte.Referenzintervall.UntererReferenzwert",
+        "short": "Unterer Referenzwert",
+        "definition": "Unter Referenzwert, oder auch LLN",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Quantity",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/SimpleQuantity"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "FHIR",
+            "map": "Observation.referenceRange.low"
+          }
+        ]
+      },
+      {
+        "id": "Lungenfunktion.Lungenfunktionsmesswerte.Referenzintervall.ObererReferenzwert",
+        "path": "Lungenfunktion.Lungenfunktionsmesswerte.Referenzintervall.ObererReferenzwert",
+        "short": "Oberer Referenzwert",
+        "definition": "Oberer Refernzwert, oder auch ULN",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Quantity",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/SimpleQuantity"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "FHIR",
+            "map": "Observation.referenceRange.high"
+          }
+        ]
+      },
+      {
+        "id": "Lungenfunktion.Lungenfunktionsmesswerte.Referenzintervall.Referenzalter",
+        "path": "Lungenfunktion.Lungenfunktionsmesswerte.Referenzintervall.Referenzalter",
+        "short": "Referenzalter",
+        "definition": "Alter, auf welchen sich das Referenzintervall bezieht.",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Quantity",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/SimpleQuantity"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "FHIR",
+            "map": "Observation.referenceRange.age"
+          }
+        ]
+      },
+      {
+        "id": "Lungenfunktion.Lungenfunktionsmesswerte.WeitereMesswerte",
+        "path": "Lungenfunktion.Lungenfunktionsmesswerte.WeitereMesswerte",
+        "short": "WeitereMesswert",
+        "definition": "Weitere Messwerte, die mit diesem zusammengehören.",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/StructureDefinition/Observation"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "FHIR",
+            "map": "Observation.hasMember"
+          }
+        ]
+      },
+      {
+        "id": "Lungenfunktion.Lungenfunktionsmesswerte.Bezugsmesswerte",
+        "path": "Lungenfunktion.Lungenfunktionsmesswerte.Bezugsmesswerte",
+        "short": "Bezugsmesswerte",
+        "definition": "Messwerte, aus welche dieser berechnet wurde.",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/StructureDefinition/Observation"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "FHIR",
+            "map": "Observation.derivedFrom"
+          }
+        ]
+      },
+      {
+        "id": "Lungenfunktion.Lungenfunktionsmesswerte.Bewertungsmesswerte",
+        "path": "Lungenfunktion.Lungenfunktionsmesswerte.Bewertungsmesswerte",
+        "short": "Bewertungsmesswerte",
+        "definition": "Messwerte, die zur Bewertung dieses Messwerts dient.",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "FHIR",
+            "map": "Observation.component"
+          }
+        ]
+      },
+      {
+        "id": "Lungenfunktion.Lungenfunktionsmesswerte.Bewertungsmesswerte.VorhergesagterMesswert",
+        "path": "Lungenfunktion.Lungenfunktionsmesswerte.Bewertungsmesswerte.VorhergesagterMesswert",
+        "short": "Vorhergesagter Messwert",
+        "definition": "Messwert, der personenbezogen vorhergesagt wird.",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Quantity",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/SimpleQuantity"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "FHIR",
+            "map": "Observation.component[predicted]"
+          }
+        ]
+      },
+      {
+        "id": "Lungenfunktion.Lungenfunktionsmesswerte.Bewertungsmesswerte.VerhaeltnisZurVorhersage",
+        "path": "Lungenfunktion.Lungenfunktionsmesswerte.Bewertungsmesswerte.VerhaeltnisZurVorhersage",
+        "short": "Verhältnis zur Vorhersage",
+        "definition": "Verhältnis von Messwert zum vorhergesagtem Messwert.",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Quantity",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/SimpleQuantity"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "FHIR",
+            "map": "Observation.component[ratio]"
+          }
+        ]
+      },
+      {
+        "id": "Lungenfunktion.Lungenfunktionsmesswerte.Bewertungsmesswerte.zScore",
+        "path": "Lungenfunktion.Lungenfunktionsmesswerte.Bewertungsmesswerte.zScore",
+        "short": "z-Score",
+        "definition": "z-Score zur Bewertung des Messwerts",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Quantity",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/SimpleQuantity"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "FHIR",
+            "map": "Observation.component[z-score]"
+          }
+        ]
+      },
+      {
+        "id": "Lungenfunktion.Optional",
+        "path": "Lungenfunktion.Optional",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "Lungenfunktion.Optional.SVC",
+        "path": "Lungenfunktion.Optional.SVC",
+        "code": [
+          {
+            "code": "83411002",
+            "system": "http://snomed.info/sct"
+          }
+        ],
+        "short": "SVC",
+        "definition": "Langsame Vitalkapazität (SVC)",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ]
+      },
+      {
+        "id": "Lungenfunktion.Optional.FIVC",
+        "path": "Lungenfunktion.Optional.FIVC",
+        "short": "FIVC",
+        "definition": "Forcierte inspiratorische Vitalkapazität (FIVC)",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ]
+      },
+      {
+        "id": "Lungenfunktion.Optional.FEV05",
+        "path": "Lungenfunktion.Optional.FEV05",
+        "short": "FEV0.5",
+        "definition": "Forcierte Exspirationsvolumen bei 0.5 Sekunden (FEV0.5)",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ]
+      },
+      {
+        "id": "Lungenfunktion.Optional.FEV075",
+        "path": "Lungenfunktion.Optional.FEV075",
+        "code": [
+          {
+            "code": "251910007",
+            "system": "http://snomed.info/sct"
+          }
+        ],
+        "short": "FEV0.75",
+        "definition": "Forcierte Exspirationsvolumen bei 0.75 Sekunden (FEV0.75)",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ]
+      },
+      {
+        "id": "Lungenfunktion.Optional.FEV2",
+        "path": "Lungenfunktion.Optional.FEV2",
+        "short": "FEV2",
+        "definition": "Forcierte Exspirationsvolumen bei 2 Sekunden (FEV2)",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ]
+      },
+      {
+        "id": "Lungenfunktion.Optional.FEV3",
+        "path": "Lungenfunktion.Optional.FEV3",
+        "short": "FEV3",
+        "definition": "Forcierte Exspirationsvolumen bei 3 Sekunden (FEV3)",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ]
+      },
+      {
+        "id": "Lungenfunktion.Optional.FEV6",
+        "path": "Lungenfunktion.Optional.FEV6",
+        "code": [
+          {
+            "code": "878869001",
+            "system": "http://snomed.info/sct"
+          }
+        ],
+        "short": "FEV6",
+        "definition": "Forcierte Exspirationsvolumen nach 6 Sekunden (FEV6)",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ]
+      },
+      {
+        "id": "Lungenfunktion.Optional.TV",
+        "path": "Lungenfunktion.Optional.TV",
+        "code": [
+          {
+            "code": "13621006",
+            "system": "http://snomed.info/sct"
+          }
+        ],
+        "short": "TV",
+        "definition": "Das Atemzugvolumen (TV)",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ]
+      },
+      {
+        "id": "Lungenfunktion.Optional.MVV",
+        "path": "Lungenfunktion.Optional.MVV",
+        "short": "MVV",
+        "definition": "maximale freiwillige Ventilation (MVV)",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ]
+      },
+      {
+        "id": "Lungenfunktion.Optional.PIFR",
+        "path": "Lungenfunktion.Optional.PIFR",
+        "code": [
+          {
+            "code": "251923000",
+            "system": "http://snomed.info/sct"
+          }
+        ],
+        "short": "PIFR",
+        "definition": "Maximale inspiratorische Flussrate während eines forcierten Inspirationsmanövers (FIVC)",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ]
+      },
+      {
+        "id": "Lungenfunktion.Optional.FIF2575",
+        "path": "Lungenfunktion.Optional.FIF2575",
+        "short": "FIF25–75%",
+        "definition": "Mittlerer forcierter inspiratorischer Flow zwischen 25 % und 75 % der FIVC",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ]
+      },
+      {
+        "id": "Lungenfunktion.Optional.FIF2550",
+        "path": "Lungenfunktion.Optional.FIF2550",
+        "short": "FIF25–50%",
+        "definition": "Mittlerer forcierter inspiratorischer Flow zwischen 25 % und 50 % der FIVC",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ]
+      },
+      {
+        "id": "Lungenfunktion.Optional.FIF25",
+        "path": "Lungenfunktion.Optional.FIF25",
+        "code": [
+          {
+            "code": "251927004",
+            "system": "http://snomed.info/sct"
+          }
+        ],
+        "short": "FIF25%",
+        "definition": "Maximaler inspiratorischer Flow bei 25 % der FIVC – auch MIF75%",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ]
+      },
+      {
+        "id": "Lungenfunktion.Optional.FIF50",
+        "path": "Lungenfunktion.Optional.FIF50",
+        "code": [
+          {
+            "code": "251926008",
+            "system": "http://snomed.info/sct"
+          }
+        ],
+        "short": "FIF50%",
+        "definition": "Maximaler inspiratorischer Flow bei 50 % der FIVC – auch MIF50%",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ]
+      },
+      {
+        "id": "Lungenfunktion.Optional.FIF75",
+        "path": "Lungenfunktion.Optional.FIF75",
+        "short": "FIF75%",
+        "definition": "Maximaler inspiratorischer Flow bei 75 % der FIVC – auch MIF25%",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ]
+      },
+      {
+        "id": "Lungenfunktion.Optional.FEV1SVC",
+        "path": "Lungenfunktion.Optional.FEV1SVC",
+        "short": "Verhältnis von „Forciertes Exspirationsvolumen in 1 Sekunde (FEV1)“ zu „Langsame Vitalkapazität (SVC)",
+        "definition": "Verhältnis von „Forciertes Exspirationsvolumen in 1 Sekunde (FEV1)“ zu „Langsame Vitalkapazität (SVC)",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ]
+      },
+      {
+        "id": "Lungenfunktion.Optional.FEV1FEV6",
+        "path": "Lungenfunktion.Optional.FEV1FEV6",
+        "code": [
+          {
+            "code": "702534005",
+            "system": "http://snomed.info/sct"
+          }
+        ],
+        "short": "Verhältnis von „Forciertes Exspirationsvolumen in 1 Sekunde (FEV1)“ zu „Forciertes Exspirationsvolumen in 6 Sekunden (FEV6)",
+        "definition": "Verhältnis von „Forciertes Exspirationsvolumen in 1 Sekunde (FEV1)“ zu „Forciertes Exspirationsvolumen in 6 Sekunden (FEV6)",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ]
+      },
+      {
+        "id": "Lungenfunktion.Optional.MEP",
+        "path": "Lungenfunktion.Optional.MEP",
+        "code": [
+          {
+            "code": "17202005",
+            "system": "http://snomed.info/sct"
+          }
+        ],
+        "short": "MEP",
+        "definition": "Maximale Ausatmungsdruck (MEP)",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ]
+      },
+      {
+        "id": "Lungenfunktion.Optional.MIP",
+        "path": "Lungenfunktion.Optional.MIP",
+        "code": [
+          {
+            "code": "27913002",
+            "system": "http://snomed.info/sct"
+          }
+        ],
+        "short": "MIP",
+        "definition": "Maximale Inspirationsdruck (MIP)",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ]
+      },
+      {
+        "id": "Lungenfunktion.Optional.SNIP",
+        "path": "Lungenfunktion.Optional.SNIP",
+        "short": "SNIP",
+        "definition": "Sniff-Naseninspirationsdruck (SNIP)",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ]
+      },
+      {
+        "id": "Lungenfunktion.Optional.TGV",
+        "path": "Lungenfunktion.Optional.TGV",
+        "short": "TGV",
+        "definition": "Thorakales Gasvolumen",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ]
+      },
+      {
+        "id": "Lungenfunktion.Optional.ITGV",
+        "path": "Lungenfunktion.Optional.ITGV",
+        "short": "ITGV",
+        "definition": "Intrathorakales Gasvolumen",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ]
+      },
+      {
+        "id": "Lungenfunktion.Optional.RAWex",
+        "path": "Lungenfunktion.Optional.RAWex",
+        "short": "RAW-ex",
+        "definition": "Exspiratorischer Atemwegswiderstand",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ]
+      }
+    ]
+  }
+}

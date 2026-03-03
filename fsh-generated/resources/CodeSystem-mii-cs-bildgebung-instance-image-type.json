@@ -1,0 +1,530 @@
+{
+  "resourceType": "CodeSystem",
+  "status": "active",
+  "content": "complete",
+  "name": "MII_CS_Bildgebung_Instance_Image_Type",
+  "_name": {
+    "extension": [
+      {
+        "url": "http://hl7.org/fhir/StructureDefinition/translation",
+        "extension": [
+          {
+            "url": "lang",
+            "valueCode": "en-US"
+          },
+          {
+            "url": "content",
+            "valueString": "MII_CS_Imaging_Image_Type"
+          }
+        ]
+      }
+    ]
+  },
+  "id": "mii-cs-bildgebung-instance-image-type",
+  "title": "MII CS Bildgebung Instance Image Type",
+  "_title": {
+    "extension": [
+      {
+        "url": "http://hl7.org/fhir/StructureDefinition/translation",
+        "extension": [
+          {
+            "url": "lang",
+            "valueCode": "en-US"
+          },
+          {
+            "url": "content",
+            "valueString": "MII CS Imaging Image Type"
+          }
+        ]
+      }
+    ]
+  },
+  "description": "Image type für Radiologische Bilder",
+  "_description": {
+    "extension": [
+      {
+        "url": "http://hl7.org/fhir/StructureDefinition/translation",
+        "extension": [
+          {
+            "url": "lang",
+            "valueCode": "en-US"
+          },
+          {
+            "url": "content",
+            "valueString": "Codes for Image Type in radiological images"
+          }
+        ]
+      }
+    ]
+  },
+  "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/CodeSystem/mii-cs-bildgebung-instance-image-type",
+  "concept": [
+    {
+      "code": "PDC",
+      "display": "Pixel Data Characteristics",
+      "property": [
+        {
+          "code": "child",
+          "valueCode": "ORIGINAL"
+        },
+        {
+          "code": "child",
+          "valueCode": "DERIVED"
+        }
+      ]
+    },
+    {
+      "code": "ORIGINAL",
+      "display": "identifies an original image",
+      "property": [
+        {
+          "code": "parent",
+          "valueCode": "PDC"
+        }
+      ]
+    },
+    {
+      "code": "DERIVED",
+      "display": "identifies an derived image",
+      "property": [
+        {
+          "code": "parent",
+          "valueCode": "PDC"
+        }
+      ]
+    },
+    {
+      "code": "PEC",
+      "display": "Patient Examination Characteristics",
+      "property": [
+        {
+          "code": "child",
+          "valueCode": "PRIMARY"
+        },
+        {
+          "code": "child",
+          "valueCode": "SECONDARY"
+        }
+      ]
+    },
+    {
+      "code": "PRIMARY",
+      "display": "identifies a primary image",
+      "property": [
+        {
+          "code": "parent",
+          "valueCode": "PEC"
+        }
+      ]
+    },
+    {
+      "code": "SECONDARY",
+      "display": "identifies a secondary image",
+      "property": [
+        {
+          "code": "parent",
+          "valueCode": "PEC"
+        }
+      ]
+    },
+    {
+      "code": "MSC",
+      "display": "Modality Specific Characteristics",
+      "property": [
+        {
+          "code": "child",
+          "valueCode": "CT"
+        },
+        {
+          "code": "child",
+          "valueCode": "MR"
+        },
+        {
+          "code": "child",
+          "valueCode": "CR"
+        },
+        {
+          "code": "child",
+          "valueCode": "NM"
+        },
+        {
+          "code": "child",
+          "valueCode": "XR"
+        }
+      ]
+    },
+    {
+      "code": "CT",
+      "display": "CT Specific Characteristics",
+      "property": [
+        {
+          "code": "parent",
+          "valueCode": "MSC"
+        },
+        {
+          "code": "child",
+          "valueCode": "AXIAL"
+        },
+        {
+          "code": "child",
+          "valueCode": "LOCALIZER"
+        }
+      ]
+    },
+    {
+      "code": "AXIAL",
+      "display": "a CT Cross-sectional Image",
+      "property": [
+        {
+          "code": "parent",
+          "valueCode": "CT"
+        }
+      ]
+    },
+    {
+      "code": "LOCALIZER",
+      "display": "a CT Localizer Image",
+      "property": [
+        {
+          "code": "parent",
+          "valueCode": "CT"
+        }
+      ]
+    },
+    {
+      "code": "MR",
+      "display": "MR Specific Characteristics",
+      "property": [
+        {
+          "code": "child",
+          "valueCode": "VELOCITYMAP"
+        }
+      ]
+    },
+    {
+      "code": "DENSITYMAP",
+      "display": "Density Map",
+      "property": [
+        {
+          "code": "parent",
+          "valueCode": "MR"
+        }
+      ]
+    },
+    {
+      "code": "DIFFUSIONMAP",
+      "display": "Diffusion Map",
+      "property": [
+        {
+          "code": "parent",
+          "valueCode": "MR"
+        }
+      ]
+    },
+    {
+      "code": "IMAGEADDITION",
+      "display": "Image Addition",
+      "property": [
+        {
+          "code": "parent",
+          "valueCode": "MR"
+        }
+      ]
+    },
+    {
+      "code": "MODULUSSUBTRACT",
+      "display": "Modulus Substract",
+      "property": [
+        {
+          "code": "parent",
+          "valueCode": "MR"
+        }
+      ]
+    },
+    {
+      "code": "MPR",
+      "display": "MPR",
+      "property": [
+        {
+          "code": "parent",
+          "valueCode": "MR"
+        }
+      ]
+    },
+    {
+      "code": "OTHER",
+      "display": "Other",
+      "property": [
+        {
+          "code": "parent",
+          "valueCode": "MR"
+        }
+      ]
+    },
+    {
+      "code": "PHASEMAP",
+      "display": "Phase Map",
+      "property": [
+        {
+          "code": "parent",
+          "valueCode": "MR"
+        }
+      ]
+    },
+    {
+      "code": "PHASESUBTRACT",
+      "display": "Phase Substract",
+      "property": [
+        {
+          "code": "parent",
+          "valueCode": "MR"
+        }
+      ]
+    },
+    {
+      "code": "PROJECTIONIMAGE",
+      "display": "Projection Image",
+      "property": [
+        {
+          "code": "parent",
+          "valueCode": "MR"
+        }
+      ]
+    },
+    {
+      "code": "T1MAP",
+      "display": "T1 Map",
+      "property": [
+        {
+          "code": "parent",
+          "valueCode": "MR"
+        }
+      ]
+    },
+    {
+      "code": "T2MAP",
+      "display": "T2 Map",
+      "property": [
+        {
+          "code": "parent",
+          "valueCode": "MR"
+        }
+      ]
+    },
+    {
+      "code": "VELOCITYMAP",
+      "display": "Velocity Map",
+      "property": [
+        {
+          "code": "parent",
+          "valueCode": "MR"
+        }
+      ]
+    },
+    {
+      "code": "NM",
+      "display": "NM Specific Characteristics",
+      "property": [
+        {
+          "code": "parent",
+          "valueCode": "MSC"
+        },
+        {
+          "code": "child",
+          "valueCode": "STATIC"
+        },
+        {
+          "code": "child",
+          "valueCode": "DYNAMIC"
+        },
+        {
+          "code": "child",
+          "valueCode": "GATED"
+        },
+        {
+          "code": "child",
+          "valueCode": "WHOLEBODY"
+        },
+        {
+          "code": "child",
+          "valueCode": "TOMO"
+        },
+        {
+          "code": "child",
+          "valueCode": "GATEDTOMO"
+        },
+        {
+          "code": "child",
+          "valueCode": "RECONTOMO"
+        },
+        {
+          "code": "child",
+          "valueCode": "RECONGATEDTOMO"
+        }
+      ]
+    },
+    {
+      "code": "STATIC",
+      "display": "Static",
+      "property": [
+        {
+          "code": "parent",
+          "valueCode": "NM"
+        }
+      ]
+    },
+    {
+      "code": "DYNAMIC",
+      "display": "Dynamic",
+      "property": [
+        {
+          "code": "parent",
+          "valueCode": "NM"
+        }
+      ]
+    },
+    {
+      "code": "GATED",
+      "display": "Gated",
+      "property": [
+        {
+          "code": "parent",
+          "valueCode": "NM"
+        }
+      ]
+    },
+    {
+      "code": "WHOLEBODY",
+      "display": "Whole Body",
+      "property": [
+        {
+          "code": "parent",
+          "valueCode": "NM"
+        }
+      ]
+    },
+    {
+      "code": "TOMO",
+      "display": "Tomo",
+      "property": [
+        {
+          "code": "parent",
+          "valueCode": "NM"
+        }
+      ]
+    },
+    {
+      "code": "GATEDTOMO",
+      "display": "Gated Tomo",
+      "property": [
+        {
+          "code": "parent",
+          "valueCode": "NM"
+        }
+      ]
+    },
+    {
+      "code": "RECONTOMO",
+      "display": "Recon Tomo",
+      "property": [
+        {
+          "code": "parent",
+          "valueCode": "NM"
+        }
+      ]
+    },
+    {
+      "code": "RECONGATEDTOMO",
+      "display": "Recon Gated Tomo",
+      "property": [
+        {
+          "code": "parent",
+          "valueCode": "NM"
+        }
+      ]
+    },
+    {
+      "code": "ISI",
+      "display": "Implemetation Specific Identifiers",
+      "property": [
+        {
+          "code": "child",
+          "valueCode": "NMI"
+        }
+      ]
+    },
+    {
+      "code": "NMI",
+      "display": "NM implematation",
+      "property": [
+        {
+          "code": "parent",
+          "valueCode": "ISI"
+        },
+        {
+          "code": "child",
+          "valueCode": "EMISSION"
+        },
+        {
+          "code": "child",
+          "valueCode": "TRANSMISSION"
+        }
+      ]
+    },
+    {
+      "code": "EMISSION",
+      "display": "Emission",
+      "property": [
+        {
+          "code": "parent",
+          "valueCode": "NMI"
+        }
+      ]
+    },
+    {
+      "code": "TRANSMISSION",
+      "display": "Transmission",
+      "property": [
+        {
+          "code": "parent",
+          "valueCode": "NMI"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "profile": [
+      "http://hl7.org/fhir/StructureDefinition/shareablecodesystem"
+    ]
+  },
+  "experimental": false,
+  "publisher": "Medizininformatik Initiative",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://www.medizininformatik-initiative.de"
+        }
+      ]
+    }
+  ],
+  "version": "2025.0.0",
+  "extension": [
+    {
+      "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-ex-meta-license-codeable",
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "code": "CC-BY-4.0",
+            "system": "http://hl7.org/fhir/spdx-license",
+            "display": "Creative Commons Attribution 4.0 International"
+          }
+        ]
+      }
+    }
+  ],
+  "date": "2025-01-01",
+  "caseSensitive": true,
+  "count": 36
+}

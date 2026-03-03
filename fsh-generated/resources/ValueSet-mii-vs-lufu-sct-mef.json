@@ -1,0 +1,66 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "MII_VS_Lufu_SCT_MEF",
+  "id": "mii-vs-lufu-sct-mef",
+  "title": "MII VS Lufu SCT MEF",
+  "description": "Import the ValueSet for lungfunction maximum expiratory flow",
+  "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/ValueSet/mii-vs-lufu-sct-mef",
+  "publisher": "Medizininformatik Initiative",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://www.medizininformatik-initiative.de"
+        }
+      ]
+    }
+  ],
+  "version": "2025.0.0",
+  "copyright": "This value set includes content from SNOMED CT, which is copyright © 2002+ International Health Terminology Standards Development Organisation (IHTSDO), and distributed by agreement between IHTSDO and HL7. Implementer use of SNOMED CT is not covered by this agreement",
+  "date": "2025-01-01",
+  "meta": {
+    "profile": [
+      "http://hl7.org/fhir/StructureDefinition/shareablevalueset"
+    ]
+  },
+  "experimental": false,
+  "compose": {
+    "include": [
+      {
+        "system": "http://snomed.info/sct",
+        "concept": [
+          {
+            "code": "251918000",
+            "display": "Maximum expiratory flow rate (observable entity)"
+          },
+          {
+            "code": "251919008",
+            "display": "Maximum expiratory flow rate at 25 percent of vital capacity (observable entity)"
+          },
+          {
+            "code": "251920002",
+            "display": "Maximum expiratory flow rate at 50 percent of vital capacity (observable entity)"
+          },
+          {
+            "code": "251921003",
+            "display": "Maximum expiratory flow rate at 75 percent of vital capacity (observable entity)"
+          },
+          {
+            "code": "1367695001",
+            "display": "Forced expiratory flow rate at 50 percent of vital capacity (observable entity)"
+          },
+          {
+            "code": "251932003",
+            "display": "Forced expiratory flow rate between 25 to 75 percent of vital capacity (observable entity)"
+          },
+          {
+            "code": "251931005",
+            "display": "Forced mid-expiratory flow rate (observable entity)"
+          }
+        ]
+      }
+    ]
+  }
+}

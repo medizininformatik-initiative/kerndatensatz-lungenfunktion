@@ -1,6 +1,10 @@
 - name: Index
   filename: Index.page.md
-- name: DiagnosticReport
-  filename: DiagnosticReport.page.md
-- name: Observation
-  filename: Observation
+- name: Bodyplethysmographie
+  filename: Bodyplethysmographie
+- name: Diffusion
+  filename: Diffusion
+- name: Provokationstest
+  filename: Provokationstest
+- name: Spirometrie
+  filename: Spirometrie
