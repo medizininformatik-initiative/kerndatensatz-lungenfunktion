@@ -25,38 +25,33 @@ package "Funktionstest" {
     class Spirometrie <<DiagnosticReport and Procedure>>{
         {field} Procedure(Spirometrie)
         {field} DiagnosticReport(Spirometrie)
-        {field} Observation(VC_IN)
+        {field} Observation(VC)
         {field} Observation(FVC)
-        {field} Observation(VC_MAX)
-        {field} Observation(FEV_1)
+        {field} Observation(FEV)
         {field} Observation(PEF)
-        {field} Observation(MEF_25)
-        {field} Observation(MEF_50)
-        {field} Observation(MEF_75)
+        {field} Observation(MEF)
         {field} Observation(FIV_1)
         {field} Observation(BF)
-        {field} Observation(IRV)
-        {field} Observation(ERV)
-        {field} Observation(FEV1/VC_IN_Ratio)
-        {field} Observation(FEV1/FVC_Ratio)
-        {field} Observation(FEV1/VC_MAX_Ratio)
+        {field} Observation(RV)
+        {field} Observation(FEV1/FVC)
+        {field} Observation(FEV1/VC)
     }
-    class Diffusion_single_breath <<DiagnosticReport and Procedure>> {
-        {field} Procedure(Diffusion SB)
-        {field} DiagnosticReport(Diffusion SB)
-        {field} Observation(DLCO_SB)
-        {field} Observation(KCO_SB)
-        {field} Observation(VA_SB)
+    class Diffusion <<DiagnosticReport and Procedure>> {
+        {field} Procedure(Diffusion)
+        {field} DiagnosticReport(Diffusion)
+        {field} Observation(DLCO)
+        {field} Observation(KCO)
+        {field} Observation(VA)
         {field} Observation(Hb)
-        {field} Observation(DLCOcSB)
-        {field} Observation(KCOcSb)
+        {field} Observation(DLCOc)
+        {field} Observation(KCOc)
         {field} Observation(TA)
-        {field} Observation(VIN_SB)
-        {field} Observation(TLC_SB)
-        {field} Observation(FRC_SB)
-        {field} Observation(ERV_SB)
-        {field} Observation(RV_SB)
-        {field} Observation(RV%TLC_SB)
+        {field} Observation(VC)
+        {field} Observation(TLC)
+        {field} Observation(FRC)
+        {field} Observation(ERV)
+        {field} Observation(RV)
+        {field} Observation(RV%TLC)
     }
     class Provokationstestung <<DiagnosticReport and Procedure>> {
         {field} Procedure(Provokationstestung)
@@ -104,4 +99,3 @@ DemografischeDaten -[hidden]d- Blutgase_arteriell
 Spirometrie -[hidden]d- Diffusion_single_breath
 Bodyplethysmographie -[hidden]d- Provokationstestung
 Lungenfunktionsmessung -[hidden]d- Spirometrie
-@enduml
