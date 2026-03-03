@@ -20,7 +20,7 @@ Description: "Dieses Profil beschreibt die Messung des maximalen exspiratorische
 * code.coding[loinc] from MII_VS_Lufu_LNC_MEF (required)
 * code.coding[sct] from MII_VS_Lufu_SCT_MEF (required)
 * component[predicted].code.coding[sct] = $SCT-version#TODO
-* component[predicted].code.coding[loinc] from MII_VS_Lufu_LNC_MEF (required)
+* component[predicted].code.coding[loinc] = $loinc#TODO
 * component[ratio].code.coding[sct] = $SCT-version#TODO
-* component[ratio].code.coding[loinc] from MII_VS_Lufu_LNC_MEF (required)
+* component[ratio].code.coding[loinc] = $loinc#TODO
 
