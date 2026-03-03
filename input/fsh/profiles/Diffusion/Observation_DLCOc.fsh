@@ -19,7 +19,7 @@ Description: "Dieses Profil beschreibt die Messung der korrigierten Diffusionska
 * insert LicenseCodeableCCBY40
 //Profile
 * partOf only Reference(MII_PR_Lungenfunktion_Diffusion_Messung)
-* code.coding[loinc] = $loinc#19913-3 "Diffusion capacity.carbon monoxide adjusted for hemoglobin"
+* code.coding[loinc] from MII_VS_Lufu_LNC_DLCOc (required)
 * code.coding[sct] = $SCT-version#TODO "TODO"
 * method from MII_VS_Lufu_SCT_Technique (required)
 * component[predicted].code.coding[sct] = $SCT-version#TODO

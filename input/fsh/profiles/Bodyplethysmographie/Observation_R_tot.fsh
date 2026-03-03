@@ -17,9 +17,9 @@ Description: "Dieses Profil beschreibt die Messung des Atemwegswiderstand."
 * insert LicenseCodeableCCBY40
 //Profile
 * partOf only Reference(MII_PR_Lungenfunktion_Bodyplethysmographie_Messung)
-* code.coding[loinc] = $loinc#75946-4 "Airway resistance"
+* code.coding[loinc] from MII_VS_Lufu_LNC_R (required)
 * code.coding[sct] = $SCT-version#16162007 "Total airway resistance (observable entity)"
 * component[predicted].code.coding[sct] = $SCT-version#TODO
 * component[predicted].code.coding[loinc] = $loinc#TODO
 * component[ratio].code.coding[sct] = $SCT-version#TODO
-* component[ratio].code.coding[loinc] = $loinc#91981-1 	"Airway resistance measured/predicted by Plethysmograph body box"
+* component[ratio].code.coding[loinc] from MII_VS_Lufu_LNC_R (required)

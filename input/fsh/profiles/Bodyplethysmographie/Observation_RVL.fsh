@@ -17,9 +17,9 @@ Description: "Dieses Profil beschreibt die Messung des Residualvolumen."
 * insert LicenseCodeableCCBY40
 //Profile
 * partOf only Reference(MII_PR_Lungenfunktion_Bodyplethysmographie_Messung)
-* code.coding[loinc] = $loinc#20146-7 "Residual volume"
+* code.coding[loinc] from MII_VS_Lufu_LNC_RVL
 * code.coding[sct] = $SCT-version#42457008 "Residual respiratory volume (observable entity)"
 * component[predicted].code.coding[sct] = $SCT-version#TODO
-* component[predicted].code.coding[loinc] = $loinc#20145-9 "Residual volume Predicted"
+* component[predicted].code.coding[loinc] from MII_VS_Lufu_LNC_RVL
 * component[ratio].code.coding[sct] = $SCT-version#TODO
-* component[ratio].code.coding[loinc] = $loinc#94125-2 "Residual volume/Predicted by Plethysmograph body box"
+* component[ratio].code.coding[loinc] from MII_VS_Lufu_LNC_RVL

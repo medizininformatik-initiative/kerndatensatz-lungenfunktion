@@ -1,0 +1,66 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "MII_VS_Lufu_LNC_FRC",
+  "id": "mii-vs-lufu-lnc-frc",
+  "title": "MII VS Lufu LNC FRC",
+  "description": "Import the ValueSet for lungfunction functional residual capacity",
+  "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/ValueSet/mii-vs-lufu-lnc-frc",
+  "publisher": "Medizininformatik Initiative",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://www.medizininformatik-initiative.de"
+        }
+      ]
+    }
+  ],
+  "version": "2027.0.0-preview",
+  "copyright": "This value set includes content from SNOMED CT, which is copyright © 2002+ International Health Terminology Standards Development Organisation (IHTSDO), and distributed by agreement between IHTSDO and HL7. Implementer use of SNOMED CT is not covered by this agreement",
+  "date": "2027-01-01",
+  "meta": {
+    "profile": [
+      "http://hl7.org/fhir/StructureDefinition/shareablevalueset"
+    ]
+  },
+  "experimental": false,
+  "compose": {
+    "include": [
+      {
+        "system": "http://loinc.org",
+        "concept": [
+          {
+            "code": "19843-2",
+            "display": "Functional residual capacity"
+          },
+          {
+            "code": "19847-3",
+            "display": "Functional residual capacity Predicted"
+          },
+          {
+            "code": "81456-6",
+            "display": "Functional residual capacity --pre bronchodilation"
+          },
+          {
+            "code": "81457-4",
+            "display": "Functional residual capacity --post bronchodilation"
+          },
+          {
+            "code": "19844-0",
+            "display": "Functional residual capacity by Helium rebreathing"
+          },
+          {
+            "code": "19846-5",
+            "display": "Functional residual capacity by Plethysmograph body box"
+          },
+          {
+            "code": "19845-7",
+            "display": "Functional residual capacity by Helium single breath"
+          }
+        ]
+      }
+    ]
+  }
+}

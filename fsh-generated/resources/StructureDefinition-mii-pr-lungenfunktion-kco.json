@@ -119,10 +119,9 @@
         "id": "Observation.code.coding:loinc",
         "path": "Observation.code.coding",
         "sliceName": "loinc",
-        "patternCoding": {
-          "code": "19916-6",
-          "system": "http://loinc.org",
-          "display": "Diffusion capacity/Alveolar volume"
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/ValueSet/mii-vs-lufu-lnc-kco"
         }
       },
       {
@@ -165,10 +164,9 @@
         "id": "Observation.component:predicted.code.coding:loinc",
         "path": "Observation.component.code.coding",
         "sliceName": "loinc",
-        "patternCoding": {
-          "code": "19915-8",
-          "system": "http://loinc.org",
-          "display": "Diffusion capacity/Alveolar volume Predicted"
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/ValueSet/mii-vs-lufu-lnc-kco"
         }
       },
       {
@@ -190,10 +188,9 @@
         "id": "Observation.component:ratio.code.coding:loinc",
         "path": "Observation.component.code.coding",
         "sliceName": "loinc",
-        "patternCoding": {
-          "code": "98203-3",
-          "system": "http://loinc.org",
-          "display": "(Diffusion capacity/Alveolar volume)/predicted"
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/ValueSet/mii-vs-lufu-lnc-kco"
         }
       }
     ]

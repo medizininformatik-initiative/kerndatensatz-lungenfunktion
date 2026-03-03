@@ -1,11 +1,11 @@
 {
   "resourceType": "ValueSet",
   "status": "active",
-  "name": "MII_VS_Lufu_LNC_RV",
-  "id": "mii-vs-lufu-lnc-rv",
-  "title": "MII VS Lufu LNC RV",
-  "description": "Import the ValueSet for lungfunction reserve volume",
-  "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/ValueSet/mii-vs-lufu-lnc-rv",
+  "name": "MII_VS_Lufu_LNC_KCO",
+  "id": "mii-vs-lufu-lnc-kco",
+  "title": "MII VS Lufu LNC KCO",
+  "description": "Import the ValueSet for lungfunction functional residual capacity",
+  "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/ValueSet/mii-vs-lufu-lnc-kco",
   "publisher": "Medizininformatik Initiative",
   "contact": [
     {
@@ -32,24 +32,28 @@
         "system": "http://loinc.org",
         "concept": [
           {
-            "code": "19924-0",
-            "display": "Expiratory reserve"
+            "code": "19916-6",
+            "display": "Diffusion capacity/Alveolar volume"
           },
           {
-            "code": "19923-2",
-            "display": "Expiratory reserve Predicted"
+            "code": "98203-3",
+            "display": "(Diffusion capacity/Alveolar volume)/predicted"
           },
           {
-            "code": "100759-0",
-            "display": "Inspiratory reserve [Volume] Respiratory system by Spirometry"
+            "code": "19915-8",
+            "display": "Diffusion capacity/Alveolar volume Predicted"
           },
           {
-            "code": "19921-6",
-            "display": "Expiratory reserve by Helium rebreathing"
+            "code": "82620-6",
+            "display": "Diffusion capacity/Alveolar volume --post bronchodilation"
           },
           {
-            "code": "19922-4",
-            "display": "Expiratory reserve by Helium single breath"
+            "code": "82619-8",
+            "display": "Diffusion capacity/Alveolar volume --pre bronchodilation"
+          },
+          {
+            "code": "19914-1",
+            "display": "Diffusion capacity/Alveolar volume by Single breath.carbon monoxide+Helium"
           }
         ]
       }

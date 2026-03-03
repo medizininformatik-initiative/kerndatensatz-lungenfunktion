@@ -17,9 +17,9 @@ Description: "Dieses Profil beschreibt die Messung des effektiven, spezifischen 
 * insert LicenseCodeableCCBY40
 //Profile
 * partOf only Reference(MII_PR_Lungenfunktion_Bodyplethysmographie_Messung)
-* code.coding[loinc] = $loinc#98084-7 "Specific effective resistance.airway mean Calculated"
+* code.coding[loinc] from MII_VS_Lufu_LNC_sR_eff (required)
 * code.coding[sct] = $SCT-version#1366667009 "Specific airway resistance (observable entity)"
 * component[predicted].code.coding[sct] = $SCT-version#TODO
 * component[predicted].code.coding[loinc] = $loinc#TODO
 * component[ratio].code.coding[sct] = $SCT-version#TODO
-* component[ratio].code.coding[loinc] = $loinc#98087-0 "Specific effective resistance.airway/Predicted mean"
+* component[ratio].code.coding[loinc] from MII_VS_Lufu_LNC_sR_eff (required)

@@ -1,5 +1,5 @@
 ValueSet: MII_VS_Lufu_LNC_RV
-Id: mii-vs-lufu-LNC-rv
+Id: mii-vs-lufu-lnc-rv
 Title: "MII VS Lufu LNC RV"
 Description: "Import the ValueSet for lungfunction reserve volume"
 * insert Publisher

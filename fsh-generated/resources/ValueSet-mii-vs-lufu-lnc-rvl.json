@@ -1,11 +1,11 @@
 {
   "resourceType": "ValueSet",
   "status": "active",
-  "name": "MII_VS_Lufu_LNC_RV",
-  "id": "mii-vs-lufu-lnc-rv",
-  "title": "MII VS Lufu LNC RV",
-  "description": "Import the ValueSet for lungfunction reserve volume",
-  "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/ValueSet/mii-vs-lufu-lnc-rv",
+  "name": "MII_VS_Lufu_LNC_RVL",
+  "id": "mii-vs-lufu-lnc-rvl",
+  "title": "MII VS Lufu LNC RVL",
+  "description": "Import the ValueSet for lungfunction Residual Volume",
+  "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/ValueSet/mii-vs-lufu-lnc-rvl",
   "publisher": "Medizininformatik Initiative",
   "contact": [
     {
@@ -32,24 +32,32 @@
         "system": "http://loinc.org",
         "concept": [
           {
-            "code": "19924-0",
-            "display": "Expiratory reserve"
+            "code": "20146-7",
+            "display": "Residual volume"
           },
           {
-            "code": "19923-2",
-            "display": "Expiratory reserve Predicted"
+            "code": "20145-9",
+            "display": "Residual volume Predicted"
           },
           {
-            "code": "100759-0",
-            "display": "Inspiratory reserve [Volume] Respiratory system by Spirometry"
+            "code": "20143-4",
+            "display": "Residual volume by Helium rebreathing"
           },
           {
-            "code": "19921-6",
-            "display": "Expiratory reserve by Helium rebreathing"
+            "code": "81453-3",
+            "display": "Residual volume --post bronchodilation"
           },
           {
-            "code": "19922-4",
-            "display": "Expiratory reserve by Helium single breath"
+            "code": "81452-5",
+            "display": "Residual volume --pre bronchodilation"
+          },
+          {
+            "code": "20144-2",
+            "display": "Residual volume by Helium single breath"
+          },
+          {
+            "code": "94125-2",
+            "display": "Residual volume/Predicted by Plethysmograph body box"
           }
         ]
       }

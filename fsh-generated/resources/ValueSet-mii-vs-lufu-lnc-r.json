@@ -1,0 +1,74 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "MII_VS_Lufu_LNC_R",
+  "id": "mii-vs-lufu-lnc-r",
+  "title": "MII VS Lufu LNC R",
+  "description": "Import the ValueSet for lungfunction total airway resistance",
+  "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/ValueSet/mii-vs-lufu-lnc-r",
+  "publisher": "Medizininformatik Initiative",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://www.medizininformatik-initiative.de"
+        }
+      ]
+    }
+  ],
+  "version": "2027.0.0-preview",
+  "copyright": "This value set includes content from SNOMED CT, which is copyright © 2002+ International Health Terminology Standards Development Organisation (IHTSDO), and distributed by agreement between IHTSDO and HL7. Implementer use of SNOMED CT is not covered by this agreement",
+  "date": "2027-01-01",
+  "meta": {
+    "profile": [
+      "http://hl7.org/fhir/StructureDefinition/shareablevalueset"
+    ]
+  },
+  "experimental": false,
+  "compose": {
+    "include": [
+      {
+        "system": "http://loinc.org",
+        "concept": [
+          {
+            "code": "75946-4",
+            "display": "Airway resistance"
+          },
+          {
+            "code": "20084-0",
+            "display": "Airway resistance mean"
+          },
+          {
+            "code": "75947-2",
+            "display": "Airway resistance --during expiration"
+          },
+          {
+            "code": "81443-4",
+            "display": "Airway resistance --pre bronchodilation"
+          },
+          {
+            "code": "20085-7",
+            "display": "Airway resistance mean Calculated"
+          },
+          {
+            "code": "75948-0",
+            "display": "Airway resistance --during inspiration"
+          },
+          {
+            "code": "81442-6",
+            "display": "Airway resistance --post bronchodilation"
+          },
+          {
+            "code": "20083-2",
+            "display": "Airway resistance mean by Plethysmograph body box"
+          },
+          {
+            "code": "91981-1",
+            "display": "Airway resistance measured/predicted by Plethysmograph body box"
+          }
+        ]
+      }
+    ]
+  }
+}
