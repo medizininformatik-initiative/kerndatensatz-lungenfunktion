@@ -93,6 +93,11 @@
   "differential": {
     "element": [
       {
+        "id": "Procedure.partOf",
+        "path": "Procedure.partOf",
+        "mustSupport": true
+      },
+      {
         "id": "Procedure.category.coding",
         "path": "Procedure.category.coding",
         "patternCoding": {
