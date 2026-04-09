@@ -18,3 +18,11 @@ Description: "Dieses Profil beschreibt die Messung der Dosis."
 //Profile
 * partOf only Reference(MII_PR_Lungenfunktion_Provokationstest_Messung or MII_PR_Lungenfunktion_Dosis)
 * medicationReference only Reference(MII_PR_Lungenfunktion_Substanz)
+* dosage 1..1 MS
+* dosage.dose 1..1 MS
+* dosage.dose.unit MS
+* dosage.dose.unit = "mg"
+* dosage.dose.system MS
+* dosage.dose.system = $ucum
+* dosage.dose.code MS
+* dosage.dose.code = $ucum#mg

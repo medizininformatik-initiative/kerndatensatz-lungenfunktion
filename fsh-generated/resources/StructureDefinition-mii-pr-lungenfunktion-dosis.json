@@ -117,6 +117,31 @@
             ]
           }
         ]
+      },
+      {
+        "id": "MedicationAdministration.dosage",
+        "path": "MedicationAdministration.dosage",
+        "min": 1
+      },
+      {
+        "id": "MedicationAdministration.dosage.dose",
+        "path": "MedicationAdministration.dosage.dose",
+        "min": 1
+      },
+      {
+        "id": "MedicationAdministration.dosage.dose.unit",
+        "path": "MedicationAdministration.dosage.dose.unit",
+        "patternString": "mg"
+      },
+      {
+        "id": "MedicationAdministration.dosage.dose.system",
+        "path": "MedicationAdministration.dosage.dose.system",
+        "patternUri": "http://unitsofmeasure.org"
+      },
+      {
+        "id": "MedicationAdministration.dosage.dose.code",
+        "path": "MedicationAdministration.dosage.dose.code",
+        "patternCode": "mg"
       }
     ]
   }
