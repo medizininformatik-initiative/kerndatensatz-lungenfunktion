@@ -16,7 +16,7 @@
     }
   ],
   "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-dosis",
-  "version": "2025.0.0",
+  "version": "2027.0.0-preview",
   "name": "MII_PR_Lungenfunktion_Dosis",
   "_name": {
     "extension": [
@@ -54,7 +54,7 @@
     ]
   },
   "status": "active",
-  "date": "2025-01-01",
+  "date": "2027-01-01",
   "publisher": "Medizininformatik Initiative",
   "contact": [
     {
@@ -117,6 +117,31 @@
             ]
           }
         ]
+      },
+      {
+        "id": "MedicationAdministration.dosage",
+        "path": "MedicationAdministration.dosage",
+        "min": 1
+      },
+      {
+        "id": "MedicationAdministration.dosage.dose",
+        "path": "MedicationAdministration.dosage.dose",
+        "min": 1
+      },
+      {
+        "id": "MedicationAdministration.dosage.dose.unit",
+        "path": "MedicationAdministration.dosage.dose.unit",
+        "patternString": "mg"
+      },
+      {
+        "id": "MedicationAdministration.dosage.dose.system",
+        "path": "MedicationAdministration.dosage.dose.system",
+        "patternUri": "http://unitsofmeasure.org"
+      },
+      {
+        "id": "MedicationAdministration.dosage.dose.code",
+        "path": "MedicationAdministration.dosage.dose.code",
+        "patternCode": "mg"
       }
     ]
   }

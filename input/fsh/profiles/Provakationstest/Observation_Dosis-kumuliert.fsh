@@ -1,15 +1,15 @@
 //EXAMPLE Profile
 //Head
-Profile: MII_PR_Lungenfunktion_Dosis_Schwellwert
+Profile: MII_PR_Lungenfunktion_Dosis_kumuliert
 Parent: Observation
-Id: mii-pr-lungenfunktion-dosis-schwellwert
-Title: "MII PR Lungenfunktion Dosis Schwellwert"
-Description: "Dieses Profil beschreibt die Messung des erreichten Schwellwert der Dosis."
-* ^url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-dosis-schwellwert"
+Id: mii-pr-lungenfunktion-dosis-kumuliert
+Title: "MII PR Lungenfunktion Dosis kumuliert"
+Description: "Dieses Profil beschreibt die Messung der kumulierten Dosis."
+* ^url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-dosis-kumuliert"
 //Translation Meta
-* insert Translation(^name, en-US, MII_PR_Lungfunction_Dose_Threshold)
-* insert Translation(^title, en-US, MII PR Lungfunction Dose Treshhold)
-* insert Translation(^description, en-US, The profile describes a observation for the threshold of the dose.)
+* insert Translation(^name, en-US, MII_PR_Lungfunction_Dose_cumulated)
+* insert Translation(^title, en-US, MII PR Lungfunction Dose cumulated)
+* insert Translation(^description, en-US, The profile describes a observation for the cumulated dose.)
 //Meta
 * insert PR_CS_VS_Version
 * insert PR_CS_VS_Date
@@ -40,7 +40,7 @@ Description: "Dieses Profil beschreibt die Messung des erreichten Schwellwert de
 * code.coding contains
     sct 0..1 and
     loinc 0..1
-* code.coding[loinc].code = $loinc#TODO
+* code.coding[loinc].code = $loinc#65866-6 "Methacholine [Mass] of Dose"
 * code.coding[sct].code = $SCT-version#1376040001 "Dose of methacholine to achieve maximal drop of forced expired volume in 1 second (observable entity)"
 * code.coding.system 1.. MS
 * code.coding.code 1.. MS
@@ -66,18 +66,5 @@ Description: "Dieses Profil beschreibt die Messung des erreichten Schwellwert de
 * interpretation MS
 * interpretation ^short = "Interpretation"
 * interpretation ^definition = "Interpretation des Messergebnisses"
-* method MS
-* method ^short = "Methode"
-* method ^definition = "Methode, mit der der Messwert erfasst wurde"
-* referenceRange MS
-* referenceRange ^short = "Referenzintervall"
-* referenceRange ^definition = "Intervall zur Interpretation des Messwertes"
-* referenceRange.low 1.. MS
-* referenceRange.low ^short = "LLN"
-* referenceRange.low ^definition = "untere Normgrenze"
-* referenceRange.high 1.. MS
-* referenceRange.high ^short = "ULN"
-* referenceRange.high ^definition = "obere Normgrenze"
-* referenceRange.age 1.. MS
-* referenceRange.age ^short = "Altersbezug"
-* referenceRange.age ^definition = "Altersbezug der Normgrenzen"
+
+

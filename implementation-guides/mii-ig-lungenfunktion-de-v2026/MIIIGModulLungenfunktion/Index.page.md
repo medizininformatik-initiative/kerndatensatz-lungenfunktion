@@ -6,8 +6,8 @@ Im Folgenden werden die Use Cases des Moduls, sowie die dazugehörigen FHIR-Prof
 | Veröffentlichung   |   |
 |---------|---|
 | Datum   | TODO |
-| Version | 2026.0.0 |
-| Status  | aktiv      |
+| Version | 2027.0.0-preview |
+| Status  | draft      |
 | Realm   | DE          | 
 
 ## Inhaltsverzeichnis

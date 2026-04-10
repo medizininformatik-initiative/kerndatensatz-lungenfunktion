@@ -19,6 +19,7 @@ Description: "Beschreibt die Tätigkeiten, wie eine Spirometrie durchgeführt wi
 * meta.source MS
 * meta.profile MS
 //Profile
+* partOf MS
 * category.coding[sct] = $SCT-version#23426006 "Measurement of respiratory function (procedure)"
 * code.coding[sct] = $SCT-version#127783003 "Spirometry (procedure)"
 * subject only Reference(Patient)

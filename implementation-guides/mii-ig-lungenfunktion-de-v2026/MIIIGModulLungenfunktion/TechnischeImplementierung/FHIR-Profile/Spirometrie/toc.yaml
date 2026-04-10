@@ -1,3 +1,5 @@
+- name: Index
+  filename: Index.page.md
 - name: Spirometriemessung
   filename: Procedure.page.md
 - name: Spirometriebefund

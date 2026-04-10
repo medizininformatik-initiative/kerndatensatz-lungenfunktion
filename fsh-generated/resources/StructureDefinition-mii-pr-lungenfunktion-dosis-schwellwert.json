@@ -16,7 +16,7 @@
     }
   ],
   "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-dosis-schwellwert",
-  "version": "2025.0.0",
+  "version": "2027.0.0-preview",
   "name": "MII_PR_Lungenfunktion_Dosis_Schwellwert",
   "_name": {
     "extension": [
@@ -54,7 +54,7 @@
     ]
   },
   "status": "active",
-  "date": "2025-01-01",
+  "date": "2027-01-01",
   "publisher": "Medizininformatik Initiative",
   "contact": [
     {
@@ -228,7 +228,7 @@
         "id": "Observation.code.coding:loinc.code",
         "path": "Observation.code.coding.code",
         "min": 1,
-        "patternCode": "TODO",
+        "patternCode": "65866-6",
         "mustSupport": true
       },
       {
@@ -299,44 +299,6 @@
         "path": "Observation.interpretation",
         "short": "Interpretation",
         "definition": "Interpretation des Messergebnisses",
-        "mustSupport": true
-      },
-      {
-        "id": "Observation.method",
-        "path": "Observation.method",
-        "short": "Methode",
-        "definition": "Methode, mit der der Messwert erfasst wurde",
-        "mustSupport": true
-      },
-      {
-        "id": "Observation.referenceRange",
-        "path": "Observation.referenceRange",
-        "short": "Referenzintervall",
-        "definition": "Intervall zur Interpretation des Messwertes",
-        "mustSupport": true
-      },
-      {
-        "id": "Observation.referenceRange.low",
-        "path": "Observation.referenceRange.low",
-        "short": "LLN",
-        "definition": "untere Normgrenze",
-        "min": 1,
-        "mustSupport": true
-      },
-      {
-        "id": "Observation.referenceRange.high",
-        "path": "Observation.referenceRange.high",
-        "short": "ULN",
-        "definition": "obere Normgrenze",
-        "min": 1,
-        "mustSupport": true
-      },
-      {
-        "id": "Observation.referenceRange.age",
-        "path": "Observation.referenceRange.age",
-        "short": "Altersbezug",
-        "definition": "Altersbezug der Normgrenzen",
-        "min": 1,
         "mustSupport": true
       }
     ]

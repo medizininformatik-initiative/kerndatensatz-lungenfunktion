@@ -1,0 +1,74 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "MII_VS_Lufu_LNC_MEF",
+  "id": "mii-vs-lufu-lnc-mef",
+  "title": "MII VS Lufu LNC MEF",
+  "description": "Import the ValueSet for lungfunction maximum expiratory flow",
+  "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/ValueSet/mii-vs-lufu-lnc-mef",
+  "publisher": "Medizininformatik Initiative",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://www.medizininformatik-initiative.de"
+        }
+      ]
+    }
+  ],
+  "version": "2027.0.0-preview",
+  "copyright": "This value set includes content from SNOMED CT, which is copyright © 2002+ International Health Terminology Standards Development Organisation (IHTSDO), and distributed by agreement between IHTSDO and HL7. Implementer use of SNOMED CT is not covered by this agreement",
+  "date": "2027-01-01",
+  "meta": {
+    "profile": [
+      "http://hl7.org/fhir/StructureDefinition/shareablevalueset"
+    ]
+  },
+  "experimental": false,
+  "compose": {
+    "include": [
+      {
+        "system": "http://loinc.org",
+        "concept": [
+          {
+            "code": "65821-1",
+            "display": "Gas flow FEV 25%"
+          },
+          {
+            "code": "65822-9",
+            "display": "Gas flow FEV 50%"
+          },
+          {
+            "code": "65823-7",
+            "display": "Gas flow FEV 75%"
+          },
+          {
+            "code": "65824-5",
+            "display": "Gas flow FEV 90%"
+          },
+          {
+            "code": "69972-8",
+            "display": "FEF 25-75% --pre bronchodilation"
+          },
+          {
+            "code": "69973-6",
+            "display": "FEF 25-75% --post bronchodilation"
+          },
+          {
+            "code": "69971-0",
+            "display": "FEF 25-75% Predicted"
+          },
+          {
+            "code": "19927-3",
+            "display": "Gas flow FEV 25%-75%"
+          },
+          {
+            "code": "19945-5",
+            "display": "Gas flow FEV 25%-75% airway"
+          }
+        ]
+      }
+    ]
+  }
+}

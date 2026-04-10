@@ -1,3 +1,5 @@
+- name: Index
+  filename: Index.page.md
 - name: Bodyplethysmographiemessung
   filename: Procedure.page.md
 - name: Bodyplethysmographiebefund

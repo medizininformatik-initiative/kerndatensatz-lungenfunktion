@@ -17,10 +17,10 @@ Description: "Dieses Profil beschreibt die Messung des Tiffeneau-Index."
 * insert LicenseCodeableCCBY40
 //Profile
 * partOf only Reference(MII_PR_Lungenfunktion_Spirometrie_Messung)
-* code.coding[loinc] = $loinc#19866-3 "VC Vol Respiratory Spirometry"
+* code.coding[loinc] from MII_VS_Lufu_LNC_FEV_FVC (required)
 * code.coding[sct] from MII_VS_Lufu_SCT_FEV_FVC (required)
 * derivedFrom only Reference(MII_PR_Lungenfunktion_FEV or MII_PR_Lungenfunktion_FVC)
 * component[predicted].code.coding[sct] from MII_VS_Lufu_SCT_FEV_FVC (required)
-* component[predicted].code.coding[loinc] = $loinc#TODO
-* component[ratio].code.coding[sct] = $SCT-version#TODO
-* component[ratio].code.coding[loinc] = $loinc#TODO
+* component[predicted].code.coding[loinc] from MII_VS_Lufu_LNC_FEV_FVC (required)
+* component[ratio].code.coding[sct] from MII_VS_Lufu_LNC_FEV_FVC (required)
+* component[ratio].code.coding[loinc] from MII_VS_Lufu_LNC_FEV_FVC (required)

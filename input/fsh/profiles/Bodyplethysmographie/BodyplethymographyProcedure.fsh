@@ -15,6 +15,7 @@ Description: "Beschreibt die Tätigkeiten, wie eine Bodyplethysmographie durchge
 * insert Publisher
 * insert LicenseCodeableCCBY40
 //Profile
+* partOf MS
 * category.coding = $SCT-version#23426006 "Measurement of respiratory function (procedure)"
 * code.coding[sct] = $SCT-version#28275007 "Total body plethysmography (procedure)"
 * subject only Reference(Patient)
