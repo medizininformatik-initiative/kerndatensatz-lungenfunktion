@@ -64,6 +64,10 @@
             "display": "FEV1 Predicted"
           },
           {
+            "code": "20152-5",
+            "display": "FEV1 measured/predicted"
+          },
+          {
             "code": "69983-5",
             "display": "FEV1 percent change"
           },
