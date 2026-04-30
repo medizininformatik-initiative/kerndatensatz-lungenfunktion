@@ -1,14 +1,14 @@
 //EXAMPLE Profile
 //Head
-Profile: MII_PR_Lungenfunktion_Substanz
+Profile: MII_PR_Lungenfunktion_Methacholine
 Parent: $miiMedikation
-Id: mii-pr-lungenfunktion-substanz
-Title: "MII PR Lungenfunktion Substanz"
-Description: "Dieses Profil beschreibt die Messung der Substance."
-* ^url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-substanz"
+Id: mii-pr-lungenfunktion-methacholine
+Title: "MII PR Lungenfunktion Methacholine"
+Description: "Dieses Profil beschreibt die Angabe zur Medication."
+* ^url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-methacholine"
 //Translation Meta
-* insert Translation(^name, en-US, MII_PR_Lungfunction_Substance)
-* insert Translation(^title, en-US, MII PR Lungfunction Substance)
+* insert Translation(^name, en-US, MII_PR_Lungfunction_Methacholine)
+* insert Translation(^title, en-US, MII PR Lungfunction Methacholine)
 * insert Translation(^description, en-US, The profile describes a observation for the substance.)
 //Meta
 * insert PR_CS_VS_Version

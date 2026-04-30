@@ -1,15 +1,15 @@
 //EXAMPLE Profile
 //Head
-Profile: MII_PR_Lungenfunktion_Dosis_kumuliert
+Profile: MII_PR_Lungenfunktion_Dosis
 Parent: Observation
-Id: mii-pr-lungenfunktion-dosis-kumuliert
-Title: "MII PR Lungenfunktion Dosis kumuliert"
-Description: "Dieses Profil beschreibt die Messung der kumulierten Dosis."
-* ^url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-dosis-kumuliert"
+Id: mii-pr-lungenfunktion-dosis
+Title: "MII PR Lungenfunktion Dosis"
+Description: "Dieses Profil beschreibt die Messung der Dosis."
+* ^url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-dosis"
 //Translation Meta
-* insert Translation(^name, en-US, MII_PR_Lungfunction_Dose_cumulated)
-* insert Translation(^title, en-US, MII PR Lungfunction Dose cumulated)
-* insert Translation(^description, en-US, The profile describes a observation for the cumulated dose.)
+* insert Translation(^name, en-US, MII_PR_Lungfunction_Dose)
+* insert Translation(^title, en-US, MII PR Lungfunction Dose)
+* insert Translation(^description, en-US, The profile describes a observation for the threshold of the dose.)
 //Meta
 * insert PR_CS_VS_Version
 * insert PR_CS_VS_Date
@@ -23,7 +23,7 @@ Description: "Dieses Profil beschreibt die Messung der kumulierten Dosis."
 * partOf MS
 * partOf ^short = "Teil von"
 * partOf ^definition = "Teil einer Befundungprozedur"
-* partOf only Reference(MII_PR_Lungenfunktion_Dosis)
+* partOf only Reference(MII_PR_Lungenfunktion_Dosis_Gabe)
 * status MS
 * status ^short = "Status"
 * status ^definition = "angemeldet | vorläufig | endgültig | geändert | korrigiert | abgebrochen | fehlerhafte Eingabe | unbekannt"
@@ -66,5 +66,3 @@ Description: "Dieses Profil beschreibt die Messung der kumulierten Dosis."
 * interpretation MS
 * interpretation ^short = "Interpretation"
 * interpretation ^definition = "Interpretation des Messergebnisses"
-
-
