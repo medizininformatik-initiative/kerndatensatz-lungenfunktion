@@ -33,7 +33,6 @@ Description: "Diese Ressource beschreibt einen Befunde der Bodyplethysmographie"
     PEF 0..* MS and
     RV 0..* MS and
     VC 0..* MS and
-    
     FRC 0..1 MS and
     R_tot 0..1 MS and
     sR_tot 0..1 MS and
