@@ -197,7 +197,7 @@ Source: MII_LM_Lungenfunktion
   * Bezugsmesswerte -> "Observation.derivedFrom"
   * Bewertungsmesswerte -> "Observation.component"
     * VorhergesagterMesswert -> "Observation.component[predicted]"
-    * VerhaeltnisZurVorhersage -> "Observation.component[ratio]"
+    * VerhaeltnisZurVorhersage -> "Observation.component[%predicted]"
     * zScore -> "Observation.component[z-score]"
 
 //Mapping KDS

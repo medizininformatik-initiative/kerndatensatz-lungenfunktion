@@ -909,7 +909,7 @@
         "mapping": [
           {
             "identity": "FHIR",
-            "map": "Observation.component[ratio]"
+            "map": "Observation.component[%predicted]"
           }
         ]
       },
