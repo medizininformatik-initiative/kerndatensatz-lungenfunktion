@@ -21,5 +21,5 @@ Description: "Dieses Profil beschreibt die Messung des Residualvolumen."
 * code.coding[sct] = $SCT-version#42457008 "Residual respiratory volume (observable entity)"
 * component[predicted].code.coding[sct] = $SCT-version#TODO
 * component[predicted].code.coding[loinc] from MII_VS_Lufu_LNC_RVL
-* component[ratio].code.coding[sct] = $SCT-version#TODO
-* component[ratio].code.coding[loinc] from MII_VS_Lufu_LNC_RVL
+* component[%predicted].code.coding[sct] = $SCT-version#TODO
+* component[%predicted].code.coding[loinc] from MII_VS_Lufu_LNC_RVL

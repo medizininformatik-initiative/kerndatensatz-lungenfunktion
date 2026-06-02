@@ -31,7 +31,6 @@ Description: "Diese Ressource beschreibt einen Befunde der Diffusions-Messung"
     RVL 0..1 MS and
     RVL_TLC 0..1 MS and
     FRC 0..1 MS and
-    TA 0..1 MS and
     VA 0..1 MS and
     VC 0..1 MS and
     Hb 0..1 MS
@@ -44,7 +43,6 @@ Description: "Diese Ressource beschreibt einen Befunde der Diffusions-Messung"
 * result[RVL] only Reference(MII_PR_Lungenfunktion_RVL)
 * result[RVL_TLC] only Reference(MII_PR_Lungenfunktion_RVL_TLC)
 * result[FRC] only Reference(MII_PR_Lungenfunktion_FRC)
-* result[TA] only Reference(MII_PR_Lungenfunktion_TA)
 * result[VA] only Reference(MII_PR_Lungenfunktion_VA)
 * result[VC] only Reference(MII_PR_Lungenfunktion_VC)
 * result[Hb] only Reference(MII_PR_Lungenfunktion_Hb)

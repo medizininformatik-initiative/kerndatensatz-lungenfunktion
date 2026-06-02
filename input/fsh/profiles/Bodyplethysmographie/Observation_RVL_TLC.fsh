@@ -21,5 +21,5 @@ Description: "Dieses Beobachtung beschreibt den prozentualen Anteil des Residual
 * code.coding[sct] = $SCT-version#1366666000 "Residual volume/total lung capacity ratio (observable entity)" 
 * component[predicted].code.coding[sct] = $SCT-version#TODO
 * component[predicted].code.coding[loinc] from MII_VS_Lufu_LNC_RVL_TLC
-* component[ratio].code.coding[sct] = $SCT-version#TODO
-* component[ratio].code.coding[loinc] = $loinc#TODO
+* component[%predicted].code.coding[sct] = $SCT-version#TODO
+* component[%predicted].code.coding[loinc] = $loinc#TODO

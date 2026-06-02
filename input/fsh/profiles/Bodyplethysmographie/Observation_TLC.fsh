@@ -21,5 +21,5 @@ Description: "Dieses Profil beschreibt die Messung der totalen Lungenkapazität.
 * code.coding[sct] = $SCT-version#57566009 "Total lung capacity (observable entity)"
 * component[predicted].code.coding[sct] = $SCT-version#TODO
 * component[predicted].code.coding[loinc] from MII_VS_Lufu_LNC_TLC (required)
-* component[ratio].code.coding[sct] = $SCT-version#TODO
-* component[ratio].code.coding[loinc] from MII_VS_Lufu_LNC_TLC (required)
+* component[%predicted].code.coding[sct] = $SCT-version#TODO
+* component[%predicted].code.coding[loinc] from MII_VS_Lufu_LNC_TLC (required)

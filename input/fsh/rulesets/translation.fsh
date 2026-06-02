@@ -56,8 +56,8 @@ RuleSet: AddObservationTranslation
 * component ^definition = "detailierte Bestandteile der Beobachtung"
 * component[predicted] ^short = "Vorhersage"
 * component[predicted] ^definition = "vorhergesagtes Messergebnis"
-* component[ratio] ^short = "Verhältnis"
-* component[ratio] ^definition = "Verhältnis von Messwert zu vorhergesagtem Ergebnis"
+* component[%predicted] ^short = "Verhältnis"
+* component[%predicted] ^definition = "Verhältnis von Messwert zu vorhergesagtem Ergebnis"
 * component[z-score] ^short = "Z-Score"
 * component[z-score] ^definition = "Z-Score mit GLI-Referenztabellen"
 * insert Translation(partOf ^short, de-DE, Teil von)
@@ -132,10 +132,10 @@ RuleSet: AddObservationTranslation
 * insert Translation(component[predicted] ^short, en-US, prediction)
 * insert Translation(component[predicted] ^definition, de-DE, vorhergesagtes Messergebnis)
 * insert Translation(component[predicted] ^definition, en-US, predicted measured value)
-* insert Translation(component[ratio] ^short, de-DE, Verhältnis)
-* insert Translation(component[ratio] ^short, en-US, ratio)
-* insert Translation(component[ratio] ^definition, de-DE, Verhältnis von Messwert zu vorhergesagtem Ergebnis)
-* insert Translation(component[ratio] ^definition, en-US, ratio of measured value to prediction)
+* insert Translation(component[%predicted] ^short, de-DE, Verhältnis)
+* insert Translation(component[%predicted] ^short, en-US, ratio)
+* insert Translation(component[%predicted] ^definition, de-DE, Verhältnis von Messwert zu vorhergesagtem Ergebnis)
+* insert Translation(component[%predicted] ^definition, en-US, ratio of measured value to prediction)
 * insert Translation(component[z-score] ^short, de-DE, z-Score)
 * insert Translation(component[z-score] ^short, en-US, z-score)
 * insert Translation(component[z-score] ^definition, de-DE, z-Score der Messung)
