@@ -89,10 +89,6 @@
     {
       "identity": "FHIR",
       "name": "Bildgebung LogicalModel FHIR Mapping"
-    },
-    {
-      "identity": "KDS-Profile",
-      "name": "Lungenfunktion LogicalModel KDS-Profile Mapping"
     }
   ],
   "kind": "logical",

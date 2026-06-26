@@ -201,8 +201,8 @@ Source: MII_LM_Lungenfunktion
     * zScore -> "Observation.component[z-score]"
 
 //Mapping KDS
-Mapping: Lungenfunktion-LogicalModel-Profile
+/*Mapping: Lungenfunktion-LogicalModel-Profile
 Id: KDS-Profile
 Title: "Lungenfunktion LogicalModel KDS-Profile Mapping"
 Source: MII_LM_Lungenfunktion
-
+*/
