@@ -930,6 +930,622 @@
             "map": "Observation.component[z-score]"
           }
         ]
+      },
+      {
+        "id": "Lungenfunktion.Umgebungsvariablen",
+        "path": "Lungenfunktion.Umgebungsvariablen",
+        "short": "Umgebungsvariablen",
+        "definition": "Umgebungsvariablen zur Beschreibung des Patientenumfeld",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "FHIR",
+            "map": ""
+          }
+        ]
+      },
+      {
+        "id": "Lungenfunktion.Umgebungsvariablen.Umgebung",
+        "path": "Lungenfunktion.Umgebungsvariablen.Umgebung",
+        "short": "Umgebung",
+        "definition": "Umgebung in der der Messwert aufgenommen wurde",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "FHIR",
+            "map": "Location"
+          }
+        ]
+      },
+      {
+        "id": "Lungenfunktion.Umgebungsvariablen.Umgebung.Typ",
+        "path": "Lungenfunktion.Umgebungsvariablen.Umgebung.Typ",
+        "short": "Typ",
+        "definition": "Typ der Umgebung",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "FHIR",
+            "map": "Location.type"
+          }
+        ]
+      },
+      {
+        "id": "Lungenfunktion.Umgebungsvariablen.Umgebung.Lokalisation",
+        "path": "Lungenfunktion.Umgebungsvariablen.Umgebung.Lokalisation",
+        "short": "Lokalisation",
+        "definition": "Lokalisation der Umgebung, zur Dokumentation von Innen oder Außen",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "FHIR",
+            "map": "Location.physicalType"
+          }
+        ]
+      },
+      {
+        "id": "Lungenfunktion.Umgebungsvariablen.Luftfeuchtigkeit",
+        "path": "Lungenfunktion.Umgebungsvariablen.Luftfeuchtigkeit",
+        "short": "Luftfeuchtigkeit",
+        "definition": "relative Luftfeuchtigkeit in der Patientenumgebung",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "FHIR",
+            "map": "Observation"
+          }
+        ]
+      },
+      {
+        "id": "Lungenfunktion.Umgebungsvariablen.Luftfeuchtigkeit.Status",
+        "path": "Lungenfunktion.Umgebungsvariablen.Luftfeuchtigkeit.Status",
+        "short": "Status",
+        "definition": "Status des Befundberichts.",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "Coding"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "FHIR",
+            "map": "Observation.status"
+          }
+        ]
+      },
+      {
+        "id": "Lungenfunktion.Umgebungsvariablen.Luftfeuchtigkeit.Kategorie",
+        "path": "Lungenfunktion.Umgebungsvariablen.Luftfeuchtigkeit.Kategorie",
+        "short": "Kategorie",
+        "definition": "Kategorisierung des Messwerts zur Lungenfunktion.",
+        "min": 1,
+        "max": "*",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "FHIR",
+            "map": "Observation.category"
+          }
+        ]
+      },
+      {
+        "id": "Lungenfunktion.Umgebungsvariablen.Luftfeuchtigkeit.Code",
+        "path": "Lungenfunktion.Umgebungsvariablen.Luftfeuchtigkeit.Code",
+        "short": "Code",
+        "definition": "Code für den spezifischen Lungenfunktionsbericht.",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "FHIR",
+            "map": "Observation.code"
+          }
+        ]
+      },
+      {
+        "id": "Lungenfunktion.Umgebungsvariablen.Luftfeuchtigkeit.Person",
+        "path": "Lungenfunktion.Umgebungsvariablen.Luftfeuchtigkeit.Person",
+        "short": "Personen-Identifikation",
+        "definition": "Die Person, für die der Lungenfunktionsbericht erstellt wurde. Hier sollte das MII KDS-Modul Person referenziert werden",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/StructureDefinition/Patient"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "FHIR",
+            "map": "Observation.subject"
+          }
+        ]
+      },
+      {
+        "id": "Lungenfunktion.Umgebungsvariablen.Luftfeuchtigkeit.Fokus",
+        "path": "Lungenfunktion.Umgebungsvariablen.Luftfeuchtigkeit.Fokus",
+        "short": "Fokus",
+        "definition": "Fokus auf den Ort der Messung",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/StructureDefinition/Location"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "FHIR",
+            "map": "Observation.focus"
+          }
+        ]
+      },
+      {
+        "id": "Lungenfunktion.Umgebungsvariablen.Luftfeuchtigkeit.Dokumentationszeitpunkt",
+        "path": "Lungenfunktion.Umgebungsvariablen.Luftfeuchtigkeit.Dokumentationszeitpunkt",
+        "short": "Dokumentationszeitpunkt ",
+        "definition": "Zeitpunkt an dem der Messwert dokumentiert wurde.",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "dateTime"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "FHIR",
+            "map": "Observation.issued"
+          }
+        ]
+      },
+      {
+        "id": "Lungenfunktion.Umgebungsvariablen.Luftfeuchtigkeit.Messergebnis",
+        "path": "Lungenfunktion.Umgebungsvariablen.Luftfeuchtigkeit.Messergebnis",
+        "short": "Messergebnis",
+        "definition": "Messergebnis eines Lungenfunktionsmesswert",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Quantity",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/SimpleQuantity"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "FHIR",
+            "map": "Observation.value[x]"
+          }
+        ]
+      },
+      {
+        "id": "Lungenfunktion.Umgebungsvariablen.Luftfeuchtigkeit.Interpretation",
+        "path": "Lungenfunktion.Umgebungsvariablen.Luftfeuchtigkeit.Interpretation",
+        "short": "Interpretation",
+        "definition": "Interpretation der Messergebnisse im Bezug zum Referenzintervall.",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "FHIR",
+            "map": "Observation.interpretation"
+          }
+        ]
+      },
+      {
+        "id": "Lungenfunktion.Umgebungsvariablen.Lufttemperatur",
+        "path": "Lungenfunktion.Umgebungsvariablen.Lufttemperatur",
+        "short": "Lufttemperatur",
+        "definition": "Lufttemperatur in der Patientenumgebung",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "FHIR",
+            "map": "Observation"
+          }
+        ]
+      },
+      {
+        "id": "Lungenfunktion.Umgebungsvariablen.Lufttemperatur.Status",
+        "path": "Lungenfunktion.Umgebungsvariablen.Lufttemperatur.Status",
+        "short": "Status",
+        "definition": "Status des Befundberichts.",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "Coding"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "FHIR",
+            "map": "Observation.status"
+          }
+        ]
+      },
+      {
+        "id": "Lungenfunktion.Umgebungsvariablen.Lufttemperatur.Kategorie",
+        "path": "Lungenfunktion.Umgebungsvariablen.Lufttemperatur.Kategorie",
+        "short": "Kategorie",
+        "definition": "Kategorisierung des Messwerts zur Lungenfunktion.",
+        "min": 1,
+        "max": "*",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "FHIR",
+            "map": "Observation.category"
+          }
+        ]
+      },
+      {
+        "id": "Lungenfunktion.Umgebungsvariablen.Lufttemperatur.Code",
+        "path": "Lungenfunktion.Umgebungsvariablen.Lufttemperatur.Code",
+        "short": "Code",
+        "definition": "Code für den spezifischen Lungenfunktionsbericht.",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "FHIR",
+            "map": "Observation.code"
+          }
+        ]
+      },
+      {
+        "id": "Lungenfunktion.Umgebungsvariablen.Lufttemperatur.Person",
+        "path": "Lungenfunktion.Umgebungsvariablen.Lufttemperatur.Person",
+        "short": "Personen-Identifikation",
+        "definition": "Die Person, für die der Lungenfunktionsbericht erstellt wurde. Hier sollte das MII KDS-Modul Person referenziert werden",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/StructureDefinition/Patient"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "FHIR",
+            "map": "Observation.subject"
+          }
+        ]
+      },
+      {
+        "id": "Lungenfunktion.Umgebungsvariablen.Lufttemperatur.Fokus",
+        "path": "Lungenfunktion.Umgebungsvariablen.Lufttemperatur.Fokus",
+        "short": "Fokus",
+        "definition": "Fokus auf den Ort der Messung",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/StructureDefinition/Location"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "FHIR",
+            "map": "Observation.focus"
+          }
+        ]
+      },
+      {
+        "id": "Lungenfunktion.Umgebungsvariablen.Lufttemperatur.Dokumentationszeitpunkt",
+        "path": "Lungenfunktion.Umgebungsvariablen.Lufttemperatur.Dokumentationszeitpunkt",
+        "short": "Dokumentationszeitpunkt ",
+        "definition": "Zeitpunkt an dem der Messwert dokumentiert wurde.",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "dateTime"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "FHIR",
+            "map": "Observation.issued"
+          }
+        ]
+      },
+      {
+        "id": "Lungenfunktion.Umgebungsvariablen.Lufttemperatur.Messergebnis",
+        "path": "Lungenfunktion.Umgebungsvariablen.Lufttemperatur.Messergebnis",
+        "short": "Messergebnis",
+        "definition": "Messergebnis eines Lungenfunktionsmesswert",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Quantity",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/SimpleQuantity"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "FHIR",
+            "map": "Observation.value[x]"
+          }
+        ]
+      },
+      {
+        "id": "Lungenfunktion.Umgebungsvariablen.Lufttemperatur.Interpretation",
+        "path": "Lungenfunktion.Umgebungsvariablen.Lufttemperatur.Interpretation",
+        "short": "Interpretation",
+        "definition": "Interpretation der Messergebnisse im Bezug zum Referenzintervall.",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "FHIR",
+            "map": "Observation.interpretation"
+          }
+        ]
+      },
+      {
+        "id": "Lungenfunktion.Umgebungsvariablen.CO2Konzentration",
+        "path": "Lungenfunktion.Umgebungsvariablen.CO2Konzentration",
+        "short": "CO2 Konzentration",
+        "definition": "CO2 Konzentration in der Patientenumgebung",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "FHIR",
+            "map": "Observation"
+          }
+        ]
+      },
+      {
+        "id": "Lungenfunktion.Umgebungsvariablen.CO2Konzentration.Status",
+        "path": "Lungenfunktion.Umgebungsvariablen.CO2Konzentration.Status",
+        "short": "Status",
+        "definition": "Status des Befundberichts.",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "Coding"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "FHIR",
+            "map": "Observation.status"
+          }
+        ]
+      },
+      {
+        "id": "Lungenfunktion.Umgebungsvariablen.CO2Konzentration.Kategorie",
+        "path": "Lungenfunktion.Umgebungsvariablen.CO2Konzentration.Kategorie",
+        "short": "Kategorie",
+        "definition": "Kategorisierung des Messwerts zur Lungenfunktion.",
+        "min": 1,
+        "max": "*",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "FHIR",
+            "map": "Observation.category"
+          }
+        ]
+      },
+      {
+        "id": "Lungenfunktion.Umgebungsvariablen.CO2Konzentration.Code",
+        "path": "Lungenfunktion.Umgebungsvariablen.CO2Konzentration.Code",
+        "short": "Code",
+        "definition": "Code für den spezifischen Lungenfunktionsbericht.",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "FHIR",
+            "map": "Observation.code"
+          }
+        ]
+      },
+      {
+        "id": "Lungenfunktion.Umgebungsvariablen.CO2Konzentration.Person",
+        "path": "Lungenfunktion.Umgebungsvariablen.CO2Konzentration.Person",
+        "short": "Personen-Identifikation",
+        "definition": "Die Person, für die der Lungenfunktionsbericht erstellt wurde. Hier sollte das MII KDS-Modul Person referenziert werden",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/StructureDefinition/Patient"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "FHIR",
+            "map": "Observation.subject"
+          }
+        ]
+      },
+      {
+        "id": "Lungenfunktion.Umgebungsvariablen.CO2Konzentration.Fokus",
+        "path": "Lungenfunktion.Umgebungsvariablen.CO2Konzentration.Fokus",
+        "short": "Fokus",
+        "definition": "Fokus auf den Ort der Messung",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/StructureDefinition/Location"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "FHIR",
+            "map": "Observation.focus"
+          }
+        ]
+      },
+      {
+        "id": "Lungenfunktion.Umgebungsvariablen.CO2Konzentration.Dokumentationszeitpunkt",
+        "path": "Lungenfunktion.Umgebungsvariablen.CO2Konzentration.Dokumentationszeitpunkt",
+        "short": "Dokumentationszeitpunkt ",
+        "definition": "Zeitpunkt an dem der Messwert dokumentiert wurde.",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "dateTime"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "FHIR",
+            "map": "Observation.issued"
+          }
+        ]
+      },
+      {
+        "id": "Lungenfunktion.Umgebungsvariablen.CO2Konzentration.Messergebnis",
+        "path": "Lungenfunktion.Umgebungsvariablen.CO2Konzentration.Messergebnis",
+        "short": "Messergebnis",
+        "definition": "Messergebnis eines Lungenfunktionsmesswert",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Quantity",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/SimpleQuantity"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "FHIR",
+            "map": "Observation.value[x]"
+          }
+        ]
+      },
+      {
+        "id": "Lungenfunktion.Umgebungsvariablen.CO2Konzentration.Interpretation",
+        "path": "Lungenfunktion.Umgebungsvariablen.CO2Konzentration.Interpretation",
+        "short": "Interpretation",
+        "definition": "Interpretation der Messergebnisse im Bezug zum Referenzintervall.",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "FHIR",
+            "map": "Observation.interpretation"
+          }
+        ]
       }
     ]
   }
