@@ -1,4 +1,3 @@
-//EXAMPLE Profile
 //Head
 Profile: MII_PR_Lungenfunktion_BF
 Parent: http://fhir.de/StructureDefinition/observation-de-vitalsign-atemfrequenz

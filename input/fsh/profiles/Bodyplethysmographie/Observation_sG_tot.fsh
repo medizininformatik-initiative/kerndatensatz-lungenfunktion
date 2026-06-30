@@ -1,4 +1,3 @@
-//EXAMPLE Profile
 //Head
 Profile: MII_PR_Lungenfunktion_sG_Total
 Parent: MII_PR_Lungenfunktion_1_Viskositaet

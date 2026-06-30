@@ -1,4 +1,3 @@
-//EXAMPLE Profile
 //Head
 Profile: MII_PR_Lungenfunktion_KCOc
 Parent: MII_PR_Lungenfunktion_Transferkoeffizient
