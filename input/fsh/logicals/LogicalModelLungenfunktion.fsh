@@ -90,7 +90,6 @@ Description: "MII LogicalModel Modul Lungenfunktion"
     * Messergebnis 0..1 http://hl7.org/fhir/StructureDefinition/SimpleQuantity "Messergebnis" "Messergebnis eines Lungenfunktionsmesswert"
     * Interpretation 0..1 http://hl7.org/fhir/StructureDefinition/CodeableConcept "Interpretation" "Interpretation der Messergebnisse im Bezug zum Referenzintervall."
 
-
 //Mapping Profiles
 Mapping: Lungenfunktion-LogicalModel
 Id: FHIR

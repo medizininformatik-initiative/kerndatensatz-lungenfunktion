@@ -1,0 +1,8 @@
+- name: Umgebung
+  filename: Umgebung.page.md
+- name: Lufttemperatur
+  filename: Lufttemperatur.page.md
+- name: Luftfeuchtigkeit
+  filename: Luftfeuchtigkeit.page.md
+- name: CO2-Konzentration
+  filename: CO2-Konzentration.page.md
