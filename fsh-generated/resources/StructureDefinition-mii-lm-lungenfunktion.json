@@ -970,10 +970,10 @@
         ]
       },
       {
-        "id": "Lungenfunktion.Umgebungsvariablen.Umgebung.Typ",
-        "path": "Lungenfunktion.Umgebungsvariablen.Umgebung.Typ",
-        "short": "Typ",
-        "definition": "Typ der Umgebung",
+        "id": "Lungenfunktion.Umgebungsvariablen.Umgebung.Standorttyp",
+        "path": "Lungenfunktion.Umgebungsvariablen.Umgebung.Standorttyp",
+        "short": "Standorttyp",
+        "definition": "Typ der Umgebung des Patienten",
         "min": 0,
         "max": "1",
         "type": [
@@ -989,10 +989,10 @@
         ]
       },
       {
-        "id": "Lungenfunktion.Umgebungsvariablen.Umgebung.Lokalisation",
-        "path": "Lungenfunktion.Umgebungsvariablen.Umgebung.Lokalisation",
-        "short": "Lokalisation",
-        "definition": "Lokalisation der Umgebung, zur Dokumentation von Innen oder Außen",
+        "id": "Lungenfunktion.Umgebungsvariablen.Umgebung.Standortform",
+        "path": "Lungenfunktion.Umgebungsvariablen.Umgebung.Standortform",
+        "short": "Standortform",
+        "definition": "Standortform der Umgebung, zur Dokumentation von Innen oder Außen",
         "min": 0,
         "max": "1",
         "type": [

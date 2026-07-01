@@ -66,7 +66,7 @@
       ]
     }
   ],
-  "description": "Dieses Location beschreibt die Patientenumgebung.",
+  "description": "Diese Location beschreibt die Patientenumgebung.",
   "_description": {
     "extension": [
       {

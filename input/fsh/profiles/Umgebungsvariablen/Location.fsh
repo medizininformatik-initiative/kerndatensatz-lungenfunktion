@@ -3,7 +3,7 @@ Profile: MII_PR_Lungenfunktion_Umgebung
 Parent: Location
 Id: mii-pr-lungenfunktion-umgebung
 Title: "MII PR Lungenfunktion Umgebung"
-Description: "Dieses Location beschreibt die Patientenumgebung."
+Description: "Diese Location beschreibt die Patientenumgebung."
 * ^url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-umgebung"
 //Translation Meta
 * insert Translation(^name, en-US, MII_PR_Lungfunction_Location)

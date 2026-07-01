@@ -35,7 +35,7 @@ Description: "Dieses Beobachtung beschreibt eine Lufttemperaturmessung."
 * subject 1..1 MS
 * subject only Reference(Patient)
 * focus 1..1 MS
-* focus only Reference(MII_PR_Lungenfunktion_Umgebung)
+* focus only Reference(Location)
 * issued MS
 * value[x] MS
 * value[x] only Quantity
