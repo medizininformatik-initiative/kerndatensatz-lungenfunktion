@@ -1,4 +1,3 @@
-//EXAMPLE Profile
 //Head
 Profile: MII_PR_Lungenfunktion_FRC
 Parent: MII_PR_Lungenfunktion_Volumen
@@ -21,5 +20,5 @@ Description: "Dieses Profil beschreibt die Messung der funktionellen Residualkap
 * code.coding[sct] = $SCT-version#65825000 "Functional residual capacity (observable entity)"
 * component[predicted].code.coding[sct] = $SCT-version#TODO
 * component[predicted].code.coding[loinc] from MII_VS_Lufu_LNC_FRC (required)
-* component[ratio].code.coding[sct] = $SCT-version#TODO
-* component[ratio].code.coding[loinc] = $loinc#TODO
+* component[%predicted].code.coding[sct] = $SCT-version#TODO
+* component[%predicted].code.coding[loinc] = $loinc#TODO

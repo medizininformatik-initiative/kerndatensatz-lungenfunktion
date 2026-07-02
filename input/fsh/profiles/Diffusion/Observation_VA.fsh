@@ -1,4 +1,3 @@
-//EXAMPLE Profile
 //Head
 Profile: MII_PR_Lungenfunktion_VA
 Parent: MII_PR_Lungenfunktion_Volumen
@@ -24,5 +23,5 @@ Description: "Dieses Profil beschreibt die Messung des alveolärer Volumen."
 * method from MII_VS_Lufu_SCT_Technique (required)
 * component[predicted].code.coding[sct] = $SCT-version#TODO
 * component[predicted].code.coding[loinc] = $loinc#TODO
-* component[ratio].code.coding[sct] = $SCT-version#TODO
-* component[ratio].code.coding[loinc] = $loinc#TODO
+* component[%predicted].code.coding[sct] = $SCT-version#TODO
+* component[%predicted].code.coding[loinc] = $loinc#TODO

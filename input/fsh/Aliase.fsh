@@ -3,7 +3,8 @@ Alias: $exp = http://hl7.org/fhir/StructureDefinition/capabilitystatement-expect
 //HL7 VS
 Alias: $obs-category = http://terminology.hl7.org/CodeSystem/observation-category
 Alias: $obs-methods = http://hl7.org/fhir/ValueSet/observation-methods
-Alias: $medad-category = http://terminology.hl7.org/CodeSystem/medication-admin-categor
+Alias: $medad-category = http://hl7.org/fhir/ValueSet/medication-admin-category
+Alias: $location = http://terminology.hl7.org/CodeSystem/v3-RoleCode
 //MII-Profile
 Alias: $miiProcedure = https://www.medizininformatik-initiative.de/fhir/core/modul-prozedur/StructureDefinition/Procedure
 Alias: $miiAdministration = https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/MedicationAdministration

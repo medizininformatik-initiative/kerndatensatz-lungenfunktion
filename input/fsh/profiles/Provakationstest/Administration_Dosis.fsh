@@ -1,0 +1,27 @@
+//Head
+Profile: MII_PR_Lungenfunktion_Dosis_Gabe
+Parent: $miiAdministration
+Id: mii-pr-lungenfunktion-dosis-gabe
+Title: "MII PR Lungenfunktion Dosisgabe"
+Description: "Dieses Profil beschreibt die Gabe der Dosis."
+* ^url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-dosis-gabe"
+//Translation Meta
+* insert Translation(^name, en-US, MII_PR_Lungfunction_Dose_Administration)
+* insert Translation(^title, en-US, MII PR Lungfunction Dose Administration)
+* insert Translation(^description, en-US, The profile describes a administration for the dose.)
+//Meta
+* insert PR_CS_VS_Version
+* insert PR_CS_VS_Date
+* insert Publisher
+* insert LicenseCodeableCCBY40
+//Profile
+* partOf only Reference(MII_PR_Lungenfunktion_Provokationstest_Messung or MII_PR_Lungenfunktion_Dosis_Gabe)
+* medicationReference only Reference(MII_PR_Lungenfunktion_Methacholine or $miiMedikation)
+* dosage 1..1 MS
+* dosage.dose 1..1 MS
+* dosage.dose.unit MS
+* dosage.dose.unit = "mg"
+* dosage.dose.system MS
+* dosage.dose.system = $ucum
+* dosage.dose.code MS
+* dosage.dose.code = $ucum#mg

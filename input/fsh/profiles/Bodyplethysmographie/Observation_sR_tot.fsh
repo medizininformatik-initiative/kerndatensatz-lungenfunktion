@@ -1,4 +1,3 @@
-//EXAMPLE Profile
 //Head
 Profile: MII_PR_Lungenfunktion_R_Spezifisch
 Parent: MII_PR_Lungenfunktion_Viskositaet
@@ -21,5 +20,5 @@ Description: "Dieses Profil beschreibt die Messung des spezifischen Atemwegswide
 * code.coding[sct] = $SCT-version#1366667009 "Specific airway resistance (observable entity)"
 * component[predicted].code.coding[sct] = $SCT-version#TODO
 * component[predicted].code.coding[loinc] = $loinc#TODO
-* component[ratio].code.coding[sct] = $SCT-version#TODO
-* component[ratio].code.coding[loinc] from MII_VS_Lufu_LNC_sR (required)
+* component[%predicted].code.coding[sct] = $SCT-version#TODO
+* component[%predicted].code.coding[loinc] from MII_VS_Lufu_LNC_sR (required)

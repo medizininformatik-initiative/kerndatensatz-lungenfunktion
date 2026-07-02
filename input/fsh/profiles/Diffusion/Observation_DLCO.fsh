@@ -1,4 +1,3 @@
-//EXAMPLE Profile
 //Head
 Profile: MII_PR_Lungenfunktion_DLCO
 Parent: MII_PR_Lungenfunktion_Diffusionskapzitaet
@@ -22,5 +21,5 @@ Description: "Dieses Profil beschreibt die Messung der Diffusionskapazität von 
 * method from MII_VS_Lufu_SCT_Technique (required)
 * component[predicted].code.coding[sct] = $SCT-version#TODO
 * component[predicted].code.coding[loinc] from MII_VS_Lufu_LNC_DLCO (required)
-* component[ratio].code.coding[sct] = $SCT-version#TODO
-* component[ratio].code.coding[loinc] from MII_VS_Lufu_LNC_DLCO (required)
+* component[%predicted].code.coding[sct] = $SCT-version#TODO
+* component[%predicted].code.coding[loinc] from MII_VS_Lufu_LNC_DLCO (required)

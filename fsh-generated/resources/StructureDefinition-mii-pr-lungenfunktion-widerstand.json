@@ -1771,9 +1771,9 @@
         "patternCode": "kPa/(L/s)"
       },
       {
-        "id": "Observation.component:ratio",
+        "id": "Observation.component:%predicted",
         "path": "Observation.component",
-        "sliceName": "ratio",
+        "sliceName": "%predicted",
         "short": "Verhältnis",
         "_short": {
           "extension": [
@@ -1841,7 +1841,7 @@
         "mustSupport": true
       },
       {
-        "id": "Observation.component:ratio.value[x]:valueQuantity",
+        "id": "Observation.component:%predicted.value[x]:valueQuantity",
         "path": "Observation.component.value[x]",
         "sliceName": "valueQuantity",
         "type": [
@@ -1851,17 +1851,17 @@
         ]
       },
       {
-        "id": "Observation.component:ratio.value[x]:valueQuantity.unit",
+        "id": "Observation.component:%predicted.value[x]:valueQuantity.unit",
         "path": "Observation.component.value[x].unit",
         "patternString": "%"
       },
       {
-        "id": "Observation.component:ratio.value[x]:valueQuantity.system",
+        "id": "Observation.component:%predicted.value[x]:valueQuantity.system",
         "path": "Observation.component.value[x].system",
         "patternUri": "http://unitsofmeasure.org"
       },
       {
-        "id": "Observation.component:ratio.value[x]:valueQuantity.code",
+        "id": "Observation.component:%predicted.value[x]:valueQuantity.code",
         "path": "Observation.component.value[x].code",
         "patternCode": "%"
       },

@@ -1,4 +1,3 @@
-//EXAMPLE Profile
 //Head
 Profile: MII_PR_Lungenfunktion_FEV_FVC
 Parent: MII_PR_Lungenfunktion_Prozent
@@ -22,5 +21,5 @@ Description: "Dieses Profil beschreibt die Messung des Tiffeneau-Index."
 * derivedFrom only Reference(MII_PR_Lungenfunktion_FEV or MII_PR_Lungenfunktion_FVC)
 * component[predicted].code.coding[sct] from MII_VS_Lufu_SCT_FEV_FVC (required)
 * component[predicted].code.coding[loinc] from MII_VS_Lufu_LNC_FEV_FVC (required)
-* component[ratio].code.coding[sct] from MII_VS_Lufu_LNC_FEV_FVC (required)
-* component[ratio].code.coding[loinc] from MII_VS_Lufu_LNC_FEV_FVC (required)
+* component[%predicted].code.coding[sct] from MII_VS_Lufu_LNC_FEV_FVC (required)
+* component[%predicted].code.coding[loinc] from MII_VS_Lufu_LNC_FEV_FVC (required)

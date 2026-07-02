@@ -1,4 +1,3 @@
-//EXAMPLE Profile
 //Head
 Profile: MII_PR_Lungenfunktion_FVC
 Parent: MII_PR_Lungenfunktion_Volumen
@@ -21,5 +20,5 @@ Description: "Dieses Profil beschreibt die Messung der forcierten Vitalkapazitä
 * code.coding[sct] from MII_VS_Lufu_SCT_FVC (required)
 * component[predicted].code.coding[sct] from MII_VS_Lufu_SCT_FVC (required)
 * component[predicted].code.coding[loinc] from MII_VS_Lufu_LNC_FVC (required)
-* component[ratio].code.coding[sct] from MII_VS_Lufu_SCT_FVC (required)
-* component[ratio].code.coding[loinc] from MII_VS_Lufu_LNC_FVC (required)
+* component[%predicted].code.coding[sct] from MII_VS_Lufu_SCT_FVC (required)
+* component[%predicted].code.coding[loinc] from MII_VS_Lufu_LNC_FVC (required)

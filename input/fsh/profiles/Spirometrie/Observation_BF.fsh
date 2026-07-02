@@ -1,4 +1,3 @@
-//EXAMPLE Profile
 //Head
 Profile: MII_PR_Lungenfunktion_BF
 Parent: http://fhir.de/StructureDefinition/observation-de-vitalsign-atemfrequenz
@@ -84,8 +83,7 @@ Description: "Dieses Profil beschreibt die Messung der Atemfrequenz."
 * component ^slicing.rules = #open
 * component contains
     predicted 0..1 MS and
-    ratio 0..1 MS and
-    z-score 0..1 MS
+    %predicted 0..1 MS
 * component.code.coding ^slicing.discriminator.type = #pattern
 * component.code.coding ^slicing.discriminator.path = "$this"
 * component.code.coding ^slicing.rules = #open
@@ -103,14 +101,12 @@ Description: "Dieses Profil beschreibt die Messung der Atemfrequenz."
 * component[predicted].valueQuantity.unit = "L"
 * component[predicted].valueQuantity.system = $ucum
 * component[predicted].valueQuantity.code = $ucum#L
-* component[ratio] ^short = "Verhältnis"
-* component[ratio] ^definition = "Verhältnis von Messwert zu vorhergesagtem Ergebnis"
-* component[ratio].valueQuantity.unit = "%"
-* component[ratio].valueQuantity.system = $ucum
-* component[ratio].valueQuantity.code = $ucum#%
-* component[z-score] ^short = "Z-Score"
-* component[z-score] ^definition = "Z-Score mit GLI-Referenztabellen"
-* component[z-score].code = $SCT-version#1078210003 "Z-score calculation technique (qualifier value)"
+* component[%predicted] ^short = "Verhältnis"
+* component[%predicted] ^definition = "Verhältnis von Messwert zu vorhergesagtem Ergebnis"
+* component[%predicted].valueQuantity.unit = "%"
+* component[%predicted].valueQuantity.system = $ucum
+* component[%predicted].valueQuantity.code = $ucum#%
+
 //Translation Profile
 * insert Translation(partOf ^short, de-DE, Teil von)
 * insert Translation(partOf ^short, en-US, part of)
@@ -180,11 +176,7 @@ Description: "Dieses Profil beschreibt die Messung der Atemfrequenz."
 * insert Translation(component[predicted] ^short, en-US, prediction)
 * insert Translation(component[predicted] ^definition, de-DE, vorhergesagtes Messergebnis)
 * insert Translation(component[predicted] ^definition, en-US, predicted measured value)
-* insert Translation(component[ratio] ^short, de-DE, Verhältnis)
-* insert Translation(component[ratio] ^short, en-US, ratio)
-* insert Translation(component[ratio] ^definition, de-DE, Verhältnis von Messwert zu vorhergesagtem Ergebnis)
-* insert Translation(component[ratio] ^definition, en-US, ratio of measured value to prediction)
-* insert Translation(component[z-score] ^short, de-DE, z-Score)
-* insert Translation(component[z-score] ^short, en-US, z-score)
-* insert Translation(component[z-score] ^definition, de-DE, z-Score der Messung)
-* insert Translation(component[z-score] ^definition, en-US, z-score of measurement)
+* insert Translation(component[%predicted] ^short, de-DE, Verhältnis)
+* insert Translation(component[%predicted] ^short, en-US, ratio)
+* insert Translation(component[%predicted] ^definition, de-DE, Verhältnis von Messwert zu vorhergesagtem Ergebnis)
+* insert Translation(component[%predicted] ^definition, en-US, ratio of measured value to prediction)

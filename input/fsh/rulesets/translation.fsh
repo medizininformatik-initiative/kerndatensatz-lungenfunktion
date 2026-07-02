@@ -56,8 +56,8 @@ RuleSet: AddObservationTranslation
 * component ^definition = "detailierte Bestandteile der Beobachtung"
 * component[predicted] ^short = "Vorhersage"
 * component[predicted] ^definition = "vorhergesagtes Messergebnis"
-* component[ratio] ^short = "Verhältnis"
-* component[ratio] ^definition = "Verhältnis von Messwert zu vorhergesagtem Ergebnis"
+* component[%predicted] ^short = "Verhältnis"
+* component[%predicted] ^definition = "Verhältnis von Messwert zu vorhergesagtem Ergebnis"
 * component[z-score] ^short = "Z-Score"
 * component[z-score] ^definition = "Z-Score mit GLI-Referenztabellen"
 * insert Translation(partOf ^short, de-DE, Teil von)
@@ -132,10 +132,10 @@ RuleSet: AddObservationTranslation
 * insert Translation(component[predicted] ^short, en-US, prediction)
 * insert Translation(component[predicted] ^definition, de-DE, vorhergesagtes Messergebnis)
 * insert Translation(component[predicted] ^definition, en-US, predicted measured value)
-* insert Translation(component[ratio] ^short, de-DE, Verhältnis)
-* insert Translation(component[ratio] ^short, en-US, ratio)
-* insert Translation(component[ratio] ^definition, de-DE, Verhältnis von Messwert zu vorhergesagtem Ergebnis)
-* insert Translation(component[ratio] ^definition, en-US, ratio of measured value to prediction)
+* insert Translation(component[%predicted] ^short, de-DE, Verhältnis)
+* insert Translation(component[%predicted] ^short, en-US, ratio)
+* insert Translation(component[%predicted] ^definition, de-DE, Verhältnis von Messwert zu vorhergesagtem Ergebnis)
+* insert Translation(component[%predicted] ^definition, en-US, ratio of measured value to prediction)
 * insert Translation(component[z-score] ^short, de-DE, z-Score)
 * insert Translation(component[z-score] ^short, en-US, z-score)
 * insert Translation(component[z-score] ^definition, de-DE, z-Score der Messung)
@@ -239,3 +239,48 @@ RuleSet: AddProcedureTranslation
 * insert Translation(report ^short, en-US, Report)
 * insert Translation(report ^definition, de-DE, Referenzierung des Lungenfunktionsbefundes)
 * insert Translation(report ^definition, en-US, reference on the pulmonary function report)
+
+RuleSet: AddObservationTranslationAmbient
+* status ^short = "Status"
+* status ^definition = "angemeldet | vorläufig | endgültig | geändert | korrigiert | abgebrochen | fehlerhafte Eingabe | unbekannt"
+* category ^short = "Kategorie"
+* category ^definition = "Klassifikation in diagnostischen Fachbereich und Gruppe"
+* code ^short = "Code"
+* code ^definition = "Ein Code für die zu befundende Beobachtung"
+* subject ^short = "Person"
+* subject ^definition = "Person, auf die sich die Beobachtung bezieht"
+* issued ^short = "Dokumentationsdatum"
+* issued ^definition = "Zeitpunkt, an dem die Beobachtung der Untersuchung dokumentiert wurde"
+* value[x] ^short = "Messwert"
+* value[x] ^definition = "Messwert der Beobachtung"
+* interpretation ^short = "Interpretation"
+* interpretation ^definition = "Interpretation des Messwertes"
+* insert Translation(status ^short, de-DE, Status)
+* insert Translation(status ^short, en-US, status)
+* insert Translation(status ^definition, de-DE, angemeldet | vorläufig | endgültig | geändert | korrigiert | abgebrochen | fehlerhafte Eingabe | unbekannt)
+* insert Translation(status ^definition, en-US, registered | preliminary | final | amended | corrected | cancelled | entered-in-error | unknown)
+* insert Translation(category ^short, de-DE, Kategorie)
+* insert Translation(category ^short, en-US, Category)
+* insert Translation(category ^definition, de-DE, Klassifikation in diagnostischen Fachbereich und Gruppe)
+* insert Translation(category ^definition, en-US, Classification of the diagnostic service section)
+* insert Translation(code ^short, de-DE, Code)
+* insert Translation(code ^short, en-US, Code)
+* insert Translation(code ^definition, de-DE, Ein Code für die zu befundende Beobachtung)
+* insert Translation(code ^definition, en-US, A code identifying the inspected observation)
+* insert AddSnomedCodingTranslation(code.coding[sct])
+* insert Translation(subject ^short, de-DE, Person)
+* insert Translation(subject ^short, en-US, person)
+* insert Translation(subject ^definition, de-DE, Person\, auf die sich die Beobachtung bezieht)
+* insert Translation(subject ^definition, en-US, person\, which this observation is about)
+* insert Translation(issued ^short, de-DE, Dokumentationsdatum)
+* insert Translation(issued ^short, en-US, Issued)
+* insert Translation(issued ^definition, de-DE, Zeitpunkt\, an dem das Ergebnis der Untersuchung dokumentiert wurde)
+* insert Translation(issued ^definition, en-US, The point in time when the result was documented)
+* insert Translation(value[x] ^short, de-DE, Messwert)
+* insert Translation(value[x] ^short, en-US, Value)
+* insert Translation(value[x] ^definition, de-DE, Messwert der Beobachtung)
+* insert Translation(value[x] ^definition, en-US, Value of the observation)
+* insert Translation(interpretation ^short, de-DE, Interpretation)
+* insert Translation(interpretation ^short, en-US, interpretation)
+* insert Translation(interpretation ^definition, de-DE, Interpretation des Messwertes)
+* insert Translation(interpretation ^definition, en-US, interpretation of the result)

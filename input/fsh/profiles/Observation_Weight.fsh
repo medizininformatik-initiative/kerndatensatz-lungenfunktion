@@ -1,4 +1,3 @@
-//EXAMPLE Profile
 //Head
 Profile: MII_PR_Lungenfunktion_Gewicht
 Parent: Observation
@@ -63,7 +62,7 @@ Description: "Dieses Beobachtung beschreibt eine Gewichtsressource."
 * component ^slicing.rules = #open
 * component contains
     predicted 0..1 MS and
-    ratio 0..1 MS and
+    %predicted 0..1 MS and
     z-score 0..1 MS
 * component.code.coding ^slicing.discriminator.type = #value
 * component.code.coding ^slicing.discriminator.path = "$this"
@@ -80,8 +79,8 @@ Description: "Dieses Beobachtung beschreibt eine Gewichtsressource."
 * component[predicted].valueQuantity.unit = "ug"
 * component[predicted].valueQuantity.system = $ucum
 * component[predicted].valueQuantity.code = $ucum#ug
-* component[ratio].valueQuantity.unit = "%"
-* component[ratio].valueQuantity.system = $ucum
-* component[ratio].valueQuantity.code = $ucum#%
+* component[%predicted].valueQuantity.unit = "%"
+* component[%predicted].valueQuantity.system = $ucum
+* component[%predicted].valueQuantity.code = $ucum#%
 * component[z-score].code.coding[sct] = $SCT-version#1078210003 "Z-score calculation technique (qualifier value)"
 * insert AddObservationTranslation

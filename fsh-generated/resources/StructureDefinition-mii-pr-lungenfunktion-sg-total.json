@@ -149,12 +149,12 @@
         }
       },
       {
-        "id": "Observation.component:ratio",
+        "id": "Observation.component:%predicted",
         "path": "Observation.component",
-        "sliceName": "ratio"
+        "sliceName": "%predicted"
       },
       {
-        "id": "Observation.component:ratio.code.coding:sct",
+        "id": "Observation.component:%predicted.code.coding:sct",
         "path": "Observation.component.code.coding",
         "sliceName": "sct",
         "patternCoding": {
@@ -164,7 +164,7 @@
         }
       },
       {
-        "id": "Observation.component:ratio.code.coding:loinc",
+        "id": "Observation.component:%predicted.code.coding:loinc",
         "path": "Observation.component.code.coding",
         "sliceName": "loinc",
         "patternCoding": {
