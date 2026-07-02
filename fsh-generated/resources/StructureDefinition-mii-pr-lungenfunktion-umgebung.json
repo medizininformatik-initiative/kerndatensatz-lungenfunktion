@@ -115,7 +115,7 @@
       {
         "id": "Location.type",
         "path": "Location.type",
-        "short": "Umgebungstyp",
+        "short": "Standorttyp",
         "_short": {
           "extension": [
             {
@@ -127,7 +127,7 @@
                 },
                 {
                   "url": "content",
-                  "valueString": "Umgebungstyp"
+                  "valueString": "Standorttyp"
                 }
               ]
             },
@@ -146,7 +146,7 @@
             }
           ]
         },
-        "definition": "Umgebungstyp des Patienten",
+        "definition": "Standorttyp der Umgebung des Patienten",
         "_definition": {
           "extension": [
             {
@@ -158,7 +158,7 @@
                 },
                 {
                   "url": "content",
-                  "valueString": "Umgebungstyp des Patienten"
+                  "valueString": "Standorttyp der Umgebung des Patienten"
                 }
               ]
             },
@@ -191,7 +191,7 @@
       {
         "id": "Location.physicalType",
         "path": "Location.physicalType",
-        "short": "Lokalisierung",
+        "short": "Standortform",
         "_short": {
           "extension": [
             {
@@ -203,7 +203,7 @@
                 },
                 {
                   "url": "content",
-                  "valueString": "Lokalisierung"
+                  "valueString": "Standortform"
                 }
               ]
             },
@@ -216,13 +216,13 @@
                 },
                 {
                   "url": "content",
-                  "valueString": "location details"
+                  "valueString": "locationform"
                 }
               ]
             }
           ]
         },
-        "definition": "Lokalisierung des Patienten",
+        "definition": "Standortform der Umgebung des Patienten",
         "_definition": {
           "extension": [
             {
@@ -234,7 +234,7 @@
                 },
                 {
                   "url": "content",
-                  "valueString": "Lokalisierung des Patienten"
+                  "valueString": "Standortform der Umgebung des Patienten"
                 }
               ]
             },
@@ -247,7 +247,7 @@
                 },
                 {
                   "url": "content",
-                  "valueString": "locationdetails of patient"
+                  "valueString": "locationform of patient"
                 }
               ]
             }

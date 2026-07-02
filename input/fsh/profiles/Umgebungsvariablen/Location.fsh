@@ -21,17 +21,17 @@ Description: "Diese Location beschreibt die Patientenumgebung."
 //Profile
 * type MS
 * type.coding = $location#PTRES "Patient's Residence"
-* type ^short = "Umgebungstyp"
-* type ^definition = "Umgebungstyp des Patienten"
-* insert Translation(type ^short, de-DE, Umgebungstyp)
+* type ^short = "Standorttyp"
+* type ^definition = "Standorttyp der Umgebung des Patienten"
+* insert Translation(type ^short, de-DE, Standorttyp)
 * insert Translation(type ^short, en-US, Locationtype)
-* insert Translation(type ^definition, de-DE, Umgebungstyp des Patienten)
+* insert Translation(type ^definition, de-DE, Standorttyp der Umgebung des Patienten)
 * insert Translation(type ^definition, en-US, locationtype of the patient)
 * physicalType MS
 * physicalType from MII_VS_Lufu_SCT_Location
-* physicalType ^short = "Lokalisierung"
-* physicalType ^definition = "Lokalisierung des Patienten"
-* insert Translation(physicalType ^short, de-DE, Lokalisierung)
-* insert Translation(physicalType ^short, en-US, location details)
-* insert Translation(physicalType ^definition, de-DE, Lokalisierung des Patienten)
-* insert Translation(physicalType ^definition, en-US, locationdetails of patient)
+* physicalType ^short = "Standortform"
+* physicalType ^definition = "Standortform der Umgebung des Patienten"
+* insert Translation(physicalType ^short, de-DE, Standortform)
+* insert Translation(physicalType ^short, en-US, locationform)
+* insert Translation(physicalType ^definition, de-DE, Standortform der Umgebung des Patienten)
+* insert Translation(physicalType ^definition, en-US, locationform of patient)
