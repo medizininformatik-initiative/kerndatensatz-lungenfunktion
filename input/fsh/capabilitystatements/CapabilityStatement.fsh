@@ -35,7 +35,7 @@ Usage: #definition
 * insert SP_Publisher
 * insert Date
 * insert LicenseCodeableCCBY40Instance
-* url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-lufo/CapabilityStatement/metadata"
+* url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/CapabilityStatement/metadata"
 * name = "MII_CPS_Lungenfunktion_CapabilityStatement"
 * title = "MII CPS Lungenfunktion CapabilityStatement"
 * status = #active

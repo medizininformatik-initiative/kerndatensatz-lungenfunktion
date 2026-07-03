@@ -19,8 +19,7 @@ Description: "Diese Location beschreibt die Patientenumgebung."
 * meta.source MS
 * meta.profile MS
 //Profile
-* type MS
-* type.coding = $location#PTRES "Patient's Residence"
+* type 1..1 MS
 * type ^short = "Standorttyp"
 * type ^definition = "Standorttyp der Umgebung des Patienten"
 * insert Translation(type ^short, de-DE, Standorttyp)
