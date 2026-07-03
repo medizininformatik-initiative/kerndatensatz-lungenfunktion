@@ -54,7 +54,7 @@ select
 @```
 from StructureDefinition
 where url = 'https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/LogicalModel/Lungenfunktion'
-    for differential.element where id.contains('Lungenfunktion.Lufttemperatur')
+    for differential.element where id.contains('Lungenfunktion.Umgebungsvariablen.Lufttemperatur')
     select
         FHIR: mapping[0].map,
         Datensatz: path,
