@@ -1,0 +1,15 @@
+{
+  "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/ImplementationGuide/mii-ig-lungenfunktion",
+  "name" : "MII_IG_Lungenfunktion",
+  "title" : null,
+  "description" : "description",
+  "status" : "active",
+  "package-id" : "de.medizininformatikinitiative.kerndatensatz.lungenfunktion",
+  "ig-ver" : "2026.0.0",
+  "date" : "Thu, 23 Jul, 2026 15:51:57 +0000",
+  "dateISO8601" : "2026-07-23T15:51:57+00:00",
+  "exception" : "Error generating snapshot for /workspace/fsh-generated/resources/StructureDefinition-mii-pr-lungenfunktion-dlco(mii-pr-lungenfunktion-dlco): Unable to generate snapshot for https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-dlco in /workspace/fsh-generated/resources/StructureDefinition-mii-pr-lungenfunktion-dlco because Differential in profile https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-dlco does not have a slice at Observation.component.code.coding (on CodeableConcept.coding, position 3 of 4 / 6 / 7)",
+  "version" : "4.0.1",
+  "tool" : "5.0.0 (3)",
+  "maxMemory" : 927709768
+}
