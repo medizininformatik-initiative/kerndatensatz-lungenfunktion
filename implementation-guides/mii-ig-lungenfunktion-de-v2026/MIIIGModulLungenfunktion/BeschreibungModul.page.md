@@ -1,46 +1,44 @@
 # Beschreibung Modul 
-//TODO
-{{render:implementation-guides/ImplementationGuide-Common/images/Moduluebersicht.jpg}}
 
-Das Kerndatensatzmodul **Befunde bildgebender Verfahren** enthält Datenelemenete zur Dokumentation radiologischer Bildgebung und Befundung aller gängigen Modalitäten. Es ist Bestandteil der Erweiterungsmodule des Kerndatensatzes (KDS) der Medizininformatik-Initiative (MII).
+Das Kerndatensatzmodul Lungenfunktion umfasst Informationen zu Messungen und zur Einordnung von Funktionstests der Lunge. Es ist Bestandteil der Erweiterungsmodule des Kerndatensatzes (KDS) der Medizininformatik-Initiative (MII).
 
-Die medizinische Bildgebung spielt eine zentrale Rolle in der klinischen Praxis bei der Diagnose, Therapie und Dokumentation verschiedener Krankheiten und wird voraussichtlich noch wichtiger werden. Es existiert ein stetig wachsendes Volumen an klinischen Bilddaten in den Krankenhäusern. Diese Daten sind entscheidend für eine patientenzentrierte und individualisierte Gesundheitsversorgung und fördern die Entwicklung neuer Auswertungsmethoden zur Optimierung des Behandlungsstandards. Die sekundäre Nutzung dieser Daten bietet massive Potentiale, die durch dieses Erweiterungsmoduls des KDS in der MII zukünftig abgebildet werden können. 
+Die Lungenfunktionsdiagnostik ist das zentrale Instrument zur Erkennung, Klassifikation und Verlaufsbeurteilung von Ventilations- und Gasaustauschstörungen. Das Modul unterstützt die klinische Entscheidungsfindung insbesondere bei chronisch-obstruktiven Lungenerkrankungen (z. B. COPD, Asthma bronchiale) und interstitiellen Lungenerkrankungen sowie in der präoperativen Risikoeinschätzung und in arbeitsmedizinischen Kontexten.
 
-## Teilmodule
+Lungenfunktionsdaten sind quantitativ, longitudinal vergleichbar und international standardisiert erhoben und bieten damit ein hohes Potenzial für phänotypisierende Auswertungen, Kohortenbildung und Verlaufsanalysen. In den Kliniken liegen sie jedoch überwiegend in proprietären Formaten der Messplatzsysteme oder als PDF-Befund vor und sind für die Sekundärnutzung bislang kaum erschlossen. Das Modul ermöglicht die strukturierte Erfassung der zentralen diagnostischen Verfahren zusammen mit den Einflussfaktoren, die für eine differenzierte funktionelle Beurteilung erforderlich sind.
 
-Grob lässt sich das gesamte Kerndatensatzmodul **Befunde bildgebender Verfahren** in zwei Teilmodule aufteilen: die ImagingStudy mit Informationen aus dem DICOM-Header und die Abbildung des radiologischen Befundberichts über den DiagnosticReport.
-Beide Teilmodule ergänzen sich in der Abbildung ihrer Datenelemente und wurden kongruent aufeinander abgestimmt.
-Um einen Gesamtüberblick über die vorliegende Datenlage zu bekommen, ist die Nutzung beider Teilmodule erforderlich. Theoretisch ist es aber auch möglich, die Teilmodule getrennt voneinander zu implementieren, falls am gegegebenen Standort bisher nur eine Datenquelle (z.B. RIS) erschlossen wurde.
+### Grundstruktur
 
-### Teilmodul "Metadaten"
+Jede durchgeführte Untersuchung wird durch einen DiagnosticReport (Lungenfunktionstest) und eine zugehörige Procedure (Lungenfunktionsmessung) repräsentiert. Die einzelnen Messwerte werden als Observation (Lungenfunktions_Messergebnis) abgebildet, einschließlich Referenzbereich und Bewertung.
 
-Zur Modellierung wurde die ImagingStudy analog in drei Teilmodule strukturiert:
-1. Studienebene
-2. Serienebene
-3. Instanzebene
+Für die Messparameter sind neben dem Messwert selbst durchgängig der Sollwert, der prozentuale Sollwertbezug (Messergebnis/Soll) sowie – wo fachlich sinnvoll – der Z-Score vorgesehen. Die Einheiten sind je Parameter festgelegt (u. a. L, L/s, %, kPa/(L/s), mmol/(min·kPa)). Damit sind Messwerte nicht nur syntaktisch, sondern auch in ihrer Interpretation standortübergreifend vergleichbar.
 
-Dafür wurde sich an der internationalen FHIR-Ressource "ImagingStudy" (https://hl7.org/fhir/R4/imagingstudy.html) orientiert und überlegt, welche Elemente für die Medizininformatik-Initiative relevant sind. Es wurde außerdem diskutiert, welche weiteren DICOM-Metadaten von Interesse sind, die im Profil abgebildet werden sollen.
+Zur nachträglichen Validierung der Referenzbereiche werden die Messergebnisse durch anamnestische Informationen ergänzt, die als referenzierte Anamnesedaten eingebunden sind.
 
-Ergänzt wurden vorrangig modalitätsspezifische Attribute auf Serien-Ebene. Diese sollen dazu beitragen, einen tieferen technischen Einblick in die jeweilige genutzte Modalität zu erlangen.
-* Bei den röntgenbasierten Modalitäten (DX, CT, MG, CR) werden die Werte der Röntgenröhrenspannung und des Röntgenröhrenstroms abgebildet sowie die Werte der Exposition und der Expositionszeit und der Blickposition.
-* Die nuklearmedizinischen Modalitäten (NM und PET) beinhalten Dosis und weitere Informationen zum applizierten Radiopharmakon, Radionuklid und Tracer.
-* Bei der Modalität MR werden die Scanning Sequence und Variant sowie die genutzte magnetische Feldstärke und die Zeitintervalle TE, TR und TI abgebildet.
+### Funktionstests
 
-Im Moment werden diese sieben Modalitäten (MR, CT, DX, CR, MG, NM und PET) im Teilmodul betrachtet und es ist geplant, in einem stufenweisen Verfahren, in Zukunft auch weitere modalitätsspezifische Attribute anderer Modalitäten zu spezifizieren.
+Im Abschnitt Funktionstest ist explizit definiert, aus welchen Einzelmessungen sich die jeweiligen Verfahren zusammensetzen können. Berücksichtigt werden:
 
-Die Originalnamen der Elemente aus dem FHIR Profil wurden ins Deutsche übersetzt und ggf. zur besseren Lesbarkeit angepasst. Die Instanzebene sowie auch die Serienebene sind komplett optional, sodass auch nur die Attribute auf Studienebene befüllt werden können. Allerdings wird empfohlen, wenn mögich, auch die beiden unteren Ebenen zu befüllen, um ein umfassendes Bild der abgebildeten Bildgebungsstudien zu erhalten.
+Spirometrie — statische und dynamische Volumina (VC IN, FVC, VC MAX, IC, ERV, FEV 1, FIV 1), Flusswerte (PEF, FEF 25/50/75, MEF 25/50/75), Atemfrequenz sowie die gängigen Quotienten (FEV 1 % VC IN, FEV 1 % FVC / Tiffeneau-Index, FEV 1 % VC MAX).
+Bodyplethysmographie — die spirometrischen Parameter zuzüglich der Widerstands- und Leitwertgrößen (R tot, sR tot, sR eff, sG tot) sowie der nur plethysmographisch bestimmbaren Volumina (FRCpleth, RV, TLC, RV % TLC).
+Diffusionsmessung im Single-Breath-Verfahren — DLCO_SB, KCO_SB, VA_SB und die Hb-korrigierten Werte (DLCOcSB, KCOcSB) sowie die im selben Manöver mitbestimmten Volumina (VIN_SB, TLC_SB, FRC_SB, ERV_SB, RV_SB, RV%TLC_SB). Der Hämoglobinwert wird mitgeführt, da er für die Interpretation der Diffusionskapazität erforderlich ist.
+Broncho-Provokationstestung — der Testverlauf wird stufenweise abgebildet (Sequenznummer, Durchführungstyp, Substanz, Einzel- und kumulierte Dosis, zugehöriger FEV-1-Wert, Erreichen der Schwellendosis) und nicht nur als Endergebnis.
+Reversibilitätstestung — die Zunahme der FEV 1 nach Bronchodilatation (> 12 % bzw. > 200 ml) ist ein zentrales Kriterium der Asthmadiagnostik; eine fehlende Reversibilität in einem einzelnen Test schließt ein Asthma jedoch nicht aus.
 
-### Teilmodul "Befundbericht"
+### Begleitinformationen und Abgrenzung zu anderen KDS-Modulen
 
-Das Teilmodul zum Befund berücksichtigt zwei Perspektiven, deren gemeinsames Element der Befundbericht ist:
+Das Modul definiert bewusst keine eigenen Profile für Inhalte, die bereits andernorts spezifiziert sind, sondern nutzt diese nach:
 
-1. Hochstrukturierte Berichte und deren Ergebnisse können durch eine generische Beobachtung dargestellt werden.
-2. Un- oder semistrukturierte Befunde (z. B. historische Freitext-Befunde) lassen sich über die Entitäten semistrukturierter Befundbericht und Befundabschnitt darstellen. Hierbei ist es auch möglich, einzelne strukturierte Beobachtungen als generische Observations abzubilden.
+|Inhalt	                        |Ressource          |Herkunft |
+|Demografische Daten            |Patient            |Modul Person, erweitert um Ethnie |
+|Vitalparameter / Körpermaße    |Observation        |ISiK bzw. Modul ICU |
+|Blutgase, arteriell (kapillär) |Observation        |Modul Labor |
+|Risikofaktor Rauchverhalten    |Observation        |—|
+|Risikofaktor Allergie          |AllergyIntolerance |—|
 
-Dieses Konzept ermöglicht sowohl die Integration und Berücksichtigung bereits vorhandener historischer Befunde (Rückwärtskompatibilität) als auch die Nutzung neuer hochstrukturierter Befundvorlagen aus der Industrie (Vorwärtskompatibilität).
+Diese Angaben sind keine Beiwerke: Körpermaße, Alter, Geschlecht und Ethnie gehen unmittelbar in die Berechnung der Sollwerte ein und sind damit Voraussetzung für eine belastbare Interpretation der Messwerte.
 
-In der ersten Version des Kerndatensatzmoduls gibt es noch keine festgelegten Vorgaben zur Darstellung einzelner strukturierter Befundwerte. Dafür ist eine generische Beobachtung definiert, die als Grundlage dient, um in zukünftigen Iterationen anhand fachlicher Vorgaben (z. B. aus Use Cases, DRG-Templates) Profile für strukturierte Befundwerte zu entwickeln.
+Weitere lungenfunktionsrelevante Inhalte sind außerhalb dieses Moduls verortet, etwa subjektiv wahrgenommene Einschränkungen (PROMs) und schlafmedizinische Aspekte. Die entsprechenden Module befinden sich derzeit in Entstehung. Die Integration bereits vorhandener Daten erfolgt gemäß den Vorgaben des jeweiligen Moduls und wird auf Eignung und Vollständigkeit für den Bereich Lungenfunktion geprüft.
 
-Das zentrale Element des Teilmoduls ist der Befundbericht. Dieser bildet den Rahmen für die Informationen des Befundes, die entweder als semistrukturiertes Dokument (in Abschnitte gegliederter Freitext), als strukturierte Beobachtung oder als Kombination aus beidem abgebildet werden können. Die Modellierung einer Körperstruktur (z. B. ein beobachteter Tumor) erlaubt die direkte Beobachtung eines Verlaufs (z. B. Wachstum eines Tumors).
+### Status
 
-Wenn die Befundung einem vorgegebenen Algorithmus folgt, kann dies als Befundungsprozedur angegeben werden. Jeder Befund enthält eine Referenz auf die zugrunde liegenden Bilder, die als Studie dargestellt werden (vgl. Teilmodul "Metadaten").
+Das Informationsmodell wurde mit dem Modul-3-Projekt CALM-QE und dem MII-Projekt SOMNOLINK sowie mit Blick auf die ISiK- und ICU-Spezifikationen abgestimmt. Es dient als Grundlage für die Entwicklung der FHIR-Profile und Implementierungsleitfäden und unterliegt bis zur HL7-Ballotierung einem inkrementellen Verfeinerungsprozess.

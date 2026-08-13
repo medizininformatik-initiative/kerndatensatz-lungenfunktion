@@ -5,7 +5,7 @@ Im Folgenden werden die Use Cases des Moduls, sowie die dazugehörigen FHIR-Prof
 
 | Veröffentlichung   |   |
 |---------|---|
-| Datum   | TODO |
+| Datum   | 01.09.2026 |
 | Version | 2027.0.0-preview |
 | Status  | draft      |
 | Realm   | DE          | 
@@ -28,7 +28,14 @@ Anmerkungen und Kritik werden in Form von 'Issues' auf [GitHub](https://github.c
 
 
 ## Autoren (in alphabetischer Reihenfolge)
-
+* Lena Raber, Universitätsklinikum Erlangen (UKER)
+* Lucas Mundo, Universitätsklinikum Erlangen (UKER)
+* Noemi Deppenwiese, Universitätsklinikum Erlangen (UKER)
+* Dirk Meyer zum Büschefelde, Charite Berlin (CHA)
+* Maximilian Meixner, Charite Berlin (CHA)
+* Dirk Westhölter
+* Jakub Lidke 
+* Thimo Andre Hölter
 
 
 ## Copyright-Hinweis, Nutzungshinweise
