@@ -3,14 +3,14 @@
       "4.0.1"
     ],
     "name": "de.medizininformatikinitiative.kerndatensatz.lungenfunktion",
-    "version": "2026.0.0",
+    "version": "2027.0.0-ballot",
     "description": "Medizininformatik Initiative - Modul Lungenfunktion",
     "author": "lucasscherer",
     "dependencies": {
-      "de.medizininformatikinitiative.kerndatensatz.meta": "2026.0.0",
-      "de.medizininformatikinitiative.kerndatensatz.base": "2026.0.0",
-      "de.medizininformatikinitiative.kerndatensatz.medikation": "2026.0.1",
-      "de.basiprofil.r4": "1.5.4",
+      "de.medizininformatikinitiative.kerndatensatz.meta": "2026.0.x",
+      "de.medizininformatikinitiative.kerndatensatz.base": "2026.0.x",
+      "de.medizininformatikinitiative.kerndatensatz.medikation": "2026.0.x",
+      "de.basiprofil.r4": "1.5.x",
       "hl7.fhir.r4.core": "4.0.1"
     },
     "jurisdiction": "urn:iso:std:iso:3166#DE"

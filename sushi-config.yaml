@@ -5,7 +5,7 @@ applyExtensionMetadataToRoot: false
 id: mii-ig-lungenfunktion
 name: MII_IG_Lungenfunktion
 status: active
-version: 2026.0.0
+version: 2027.0.0-ballot
 packageId: de.medizininformatikinitiative.kerndatensatz.lungenfunktion
 copyrightYear: 2024+
 releaseLabel: ci-build
@@ -13,10 +13,10 @@ publisher:
   name: Medizininformatik Initiative
   url: https://www.medizininformatik-initiative.de/
 dependencies:
-  de.medizininformatikinitiative.kerndatensatz.meta: 2026.0.0
-  de.medizininformatikinitiative.kerndatensatz.base: 2026.0.0
-  de.medizininformatikinitiative.kerndatensatz.medikation : 2026.0.1
-  de.basisprofil.r4: 1.5.4
+  de.medizininformatikinitiative.kerndatensatz.meta: 2026.0.x
+  de.medizininformatikinitiative.kerndatensatz.base: 2026.0.x
+  de.medizininformatikinitiative.kerndatensatz.medikation : 2026.0.x
+  de.basisprofil.r4: 1.5.x
   hl7.fhir.r4.core: 4.0.1
 
 
