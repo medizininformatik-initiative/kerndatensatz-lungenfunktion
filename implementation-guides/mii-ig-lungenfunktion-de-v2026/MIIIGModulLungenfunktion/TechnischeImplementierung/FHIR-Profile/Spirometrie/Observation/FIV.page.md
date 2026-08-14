@@ -5,8 +5,7 @@ subject: https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunkti
 ---
 
 ## Observation
-!!TODO!!
-FIV
+Diese Observation beschreibt das gemessene forcierte inspiratorische Volumen.
 
 @```
 from

@@ -5,8 +5,7 @@ subject: https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunkti
 ---
 
 ## Procedure
-!!TODO!!
-Die CO2-Konzentration der Patientenumgebung
+Diese Observation beschreibt die gemessene CO2-Konzentration in der Patientenumgebung.
 
 @```
 from

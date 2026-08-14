@@ -5,8 +5,7 @@ subject: https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunkti
 ---
 
 ## Procedure
-!!TODO!!
-Die Procedure der Spirometrie
+Das Messverfahren der Spirometrie wird mittels dieser Procedure abgebildet.
 
 @```
 from

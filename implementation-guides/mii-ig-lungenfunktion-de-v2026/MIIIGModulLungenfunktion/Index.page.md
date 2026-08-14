@@ -31,11 +31,12 @@ Anmerkungen und Kritik werden in Form von 'Issues' auf [GitHub](https://github.c
 * Lena Raber, Universitätsklinikum Erlangen (UKER)
 * Lucas Mundo, Universitätsklinikum Erlangen (UKER)
 * Noemi Deppenwiese, Universitätsklinikum Erlangen (UKER)
-* Dirk Meyer zum Büschefelde, Charite Berlin (CHA)
-* Maximilian Meixner, Charite Berlin (CHA)
-* Dirk Westhölter
-* Jakub Lidke 
-* Thimo Andre Hölter
+* Dirk Meyer zum Büschefelde, Charité Berlin (CHA)
+* Maximilian Meixner, Charité Berlin (CHA)
+* Dirk Westhölter, Universitätsklinikum Essen (UME)
+* Jakub Lidke, Universitätsklinikum Marburg (UKMR)
+* Thimo Andre Hölter, Charité Berlin (CHA)
+* Alina Rehberg, Universitätsklinikum Hannover (MHH)
 
 
 ## Copyright-Hinweis, Nutzungshinweise

@@ -5,8 +5,7 @@ subject: https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunkti
 ---
 
 ## Observation
-!!TODO!!
-VA ...
+Diese Observation beschreibt den gemessene alveoläre Volumen.
 
 @```
 from

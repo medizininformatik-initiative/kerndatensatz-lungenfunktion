@@ -5,8 +5,7 @@ subject: https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunkti
 ---
 
 ## Observation
-!!TODO!!
-MEF
+Diese Observation beschreibt den gemessenen maximalen expiratorischen Fluss.
 
 @```
 from

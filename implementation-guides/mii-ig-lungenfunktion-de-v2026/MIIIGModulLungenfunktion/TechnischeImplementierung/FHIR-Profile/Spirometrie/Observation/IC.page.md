@@ -5,8 +5,7 @@ subject: https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunkti
 ---
 
 ## Observation
-!!TODO!!
-FEV zu FVC
+Diese Observation beschreibt die gemessene inspiratorische Kapazität.
 
 @```
 from

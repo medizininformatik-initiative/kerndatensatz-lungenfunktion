@@ -5,8 +5,7 @@ subject: https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunkti
 ---
 
 ## Procedure
-!!TODO!!
-Die Luftfeuchtigkeit der Umgebung des Patienten
+Diese Observation beschreibt die gemessene Luftfeuchtigkeit in der Patientenumgebung.
 
 @```
 from
