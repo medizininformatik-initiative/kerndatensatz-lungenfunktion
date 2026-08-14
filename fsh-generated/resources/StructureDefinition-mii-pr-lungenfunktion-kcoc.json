@@ -138,6 +138,20 @@
         }
       },
       {
+        "id": "Observation.derivedFrom",
+        "path": "Observation.derivedFrom",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-dlco",
+              "https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-va",
+              "https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-hb"
+            ]
+          }
+        ]
+      },
+      {
         "id": "Observation.component:predicted",
         "path": "Observation.component",
         "sliceName": "predicted"
