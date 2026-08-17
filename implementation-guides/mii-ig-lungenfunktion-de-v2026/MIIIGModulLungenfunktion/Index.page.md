@@ -28,15 +28,15 @@ Anmerkungen und Kritik werden in Form von 'Issues' auf [GitHub](https://github.c
 
 
 ## Autoren (in alphabetischer Reihenfolge)
-* Lena Raber, Universitätsklinikum Erlangen (UKER)
-* Lucas Mundo, Universitätsklinikum Erlangen (UKER)
 * Noemi Deppenwiese, Universitätsklinikum Erlangen (UKER)
-* Dirk Meyer zum Büschefelde, Charité Berlin (CHA)
-* Maximilian Meixner, Charité Berlin (CHA)
-* Dirk Westhölter, Universitätsklinikum Essen (UME)
-* Jakub Lidke, Universitätsklinikum Marburg (UKMR)
 * Thimo Andre Hölter, Charité Berlin (CHA)
+* Jakub Lidke, Universitätsklinikum Marburg (UKMR)
+* Maximilian Meixner, Charité Berlin (CHA)
+* Dirk Meyer zum Büschefelde, Charité Berlin (CHA)
+* Lucas Mundo, Universitätsklinikum Erlangen (UKER)
+* Lena Raber, Universitätsklinikum Erlangen (UKER)
 * Alina Rehberg, Universitätsklinikum Hannover (MHH)
+* Dirk Westhölter, Universitätsklinikum Essen (UME)
 
 
 ## Copyright-Hinweis, Nutzungshinweise
