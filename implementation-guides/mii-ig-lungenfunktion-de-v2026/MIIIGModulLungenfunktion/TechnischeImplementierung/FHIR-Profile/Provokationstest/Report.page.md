@@ -5,8 +5,7 @@ subject: https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunkti
 ---
 
 ## DiagnosticReport
-!!TODO!!
-Bericht eines Provokationstest
+Der Befund des Provokationstests wird in diesem DiagnosticReport abgebildet. Die Messwerte sind als Observation referenziert.
 
 @```
 from

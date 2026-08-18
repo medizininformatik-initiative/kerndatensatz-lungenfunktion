@@ -5,8 +5,7 @@ subject: https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunkti
 ---
 
 ## Observation
-!!TODO!!
-VC
+Diese Observation beschreibt die gemessene Vitalkapzität.
 
 @```
 from

@@ -5,8 +5,7 @@ subject: https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunkti
 ---
 
 ## Observation
-!!TODO!!
-DLCO ...
+Diese Observation beschreibt die gemessene Diffusionskapzität der Lunge für Kohlenmonoxid.
 
 @```
 from

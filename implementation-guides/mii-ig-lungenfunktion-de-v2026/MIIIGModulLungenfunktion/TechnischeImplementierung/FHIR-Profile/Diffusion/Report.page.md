@@ -5,8 +5,7 @@ subject: https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunkti
 ---
 
 ## DiagnosticReport
-!!TODO!!
-Bericht einer Diffusionsmessung
+Der Befund der Diffusionsmessung wird in diesem DiagnosticReport abgebildet. Die Messwerte sind als Observation referenziert.
 
 @```
 from

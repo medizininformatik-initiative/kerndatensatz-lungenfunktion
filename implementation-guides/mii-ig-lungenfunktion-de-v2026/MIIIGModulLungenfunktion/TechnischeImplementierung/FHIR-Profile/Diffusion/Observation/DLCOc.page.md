@@ -5,9 +5,7 @@ subject: https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunkti
 ---
 
 ## Observation
-!!TODO!!
-DLCOc ...
-
+Diese Observation beschreibt die gemessene, korrigierte Diffusionskapzität der Lunge für Kohlenmonoxid. Die Korrektur wird unter Messung des Hämoglobinmesswerts vorgenommen.
 @```
 from
     StructureDefinition

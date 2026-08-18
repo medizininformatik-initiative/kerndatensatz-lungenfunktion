@@ -5,8 +5,7 @@ subject: https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunkti
 ---
 
 ## Observation
-!!TODO!!
-FEV zu VC
+Diese Observation beschreibt das gemessene Verhältnis von forcierten exspiratorischen Volumen zur Vitalkapazität.
 
 @```
 from

@@ -5,8 +5,8 @@ subject: https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunkti
 ---
 
 ## Observation
-!!TODO!!
-KCOc ...
+Diese Observation beschreibt den korrigiert berechneten Transferkoeffizient für Kohlenmonoxid. Berechnet wird er aus der korrigierten Diffusionskapazität geteilt durch das alveoläre Volumen. Die Korrektur wird unter Messung des Hämoglobinmesswerts vorgenommen.
+
 
 @```
 from

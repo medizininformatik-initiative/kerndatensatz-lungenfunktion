@@ -5,8 +5,7 @@ subject: https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunkti
 ---
 
 ## Observation
-!!TODO!!
-Hb ...
+Diese Observation beschreibt den gemessenen Hämoglobinwert.
 
 @```
 from

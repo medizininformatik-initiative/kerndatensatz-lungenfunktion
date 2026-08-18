@@ -1,3 +1,6 @@
+---
+parent:
+---
 ## Umgebungsvariablen
 
-TODO
+Diese Seite wurde absichtlich leer gelassen!
