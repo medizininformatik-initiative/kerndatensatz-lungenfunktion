@@ -1102,7 +1102,6 @@
             }
           ]
         },
-        "min": 1,
         "mustSupport": true
       },
       {
@@ -1170,7 +1169,6 @@
             }
           ]
         },
-        "min": 1,
         "mustSupport": true
       },
       {
@@ -1238,7 +1236,6 @@
             }
           ]
         },
-        "min": 1,
         "mustSupport": true
       },
       {

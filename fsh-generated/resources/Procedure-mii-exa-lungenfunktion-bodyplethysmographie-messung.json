@@ -1,0 +1,49 @@
+{
+  "resourceType": "Procedure",
+  "id": "mii-exa-lungenfunktion-bodyplethysmographie-messung",
+  "meta": {
+    "profile": [
+      "https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-bodyplethysmographie-messung"
+    ]
+  },
+  "status": "completed",
+  "category": {
+    "coding": [
+      {
+        "code": "23426006",
+        "system": "http://snomed.info/sct",
+        "display": "Measurement of respiratory function (procedure)"
+      }
+    ]
+  },
+  "code": {
+    "coding": [
+      {
+        "code": "28275007",
+        "system": "http://snomed.info/sct",
+        "display": "Total body plethysmography (procedure)"
+      }
+    ]
+  },
+  "subject": {
+    "reference": "Patient/PatExample"
+  },
+  "encounter": {
+    "reference": "Encounter/EncExample"
+  },
+  "performedDateTime": "2024-07-19T12:03:30+02:00",
+  "outcome": {
+    "coding": [
+      {
+        "code": "385669000",
+        "system": "http://snomed.info/sct",
+        "display": "Successful (qualifier value)"
+      }
+    ]
+  },
+  "report": [
+    {
+      "reference": "DiagnosticReport/mii-exa-lungenfunktion-bodyplethysmographie"
+    }
+  ]
+}

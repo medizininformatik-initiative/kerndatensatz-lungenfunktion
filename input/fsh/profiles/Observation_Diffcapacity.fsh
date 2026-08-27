@@ -42,7 +42,7 @@ Description: "Dieses Beobachtung beschreibt eine Flussmessung."
 * value[x] only Quantity
 * valueQuantity.value MS
 * valueQuantity.unit MS
-* valueQuantity.unit = "mmol/(min*kPa)"
+* valueQuantity.unit = "mmol/(min.kPa)"
 * valueQuantity.system MS
 * valueQuantity.system = $ucum
 * valueQuantity.code MS
@@ -50,9 +50,9 @@ Description: "Dieses Beobachtung beschreibt eine Flussmessung."
 * interpretation MS
 * method MS
 * referenceRange MS
-* referenceRange.low 1.. MS
-* referenceRange.high 1.. MS
-* referenceRange.age 1.. MS
+* referenceRange.low MS
+* referenceRange.high MS
+* referenceRange.age MS
 * hasMember MS
 * hasMember only Reference(Observation)
 * derivedFrom MS

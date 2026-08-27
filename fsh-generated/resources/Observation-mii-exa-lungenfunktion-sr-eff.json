@@ -1,0 +1,95 @@
+{
+  "resourceType": "Observation",
+  "id": "mii-exa-lungenfunktion-sr-eff",
+  "meta": {
+    "profile": [
+      "https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-r-effektiv"
+    ]
+  },
+  "category": [
+    {
+      "coding": [
+        {
+          "code": "procedure",
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category"
+        }
+      ]
+    }
+  ],
+  "partOf": [
+    {
+      "reference": "Procedure/mii-exa-lungenfunktion-bodyplethysmographie-messung"
+    }
+  ],
+  "status": "final",
+  "code": {
+    "coding": [
+      {
+        "code": "75946-4",
+        "system": "http://loinc.org",
+        "display": "Airway resistance"
+      }
+    ]
+  },
+  "subject": {
+    "reference": "Patient/PatExample"
+  },
+  "issued": "2024-07-19T13:03:20+02:00",
+  "valueQuantity": {
+    "value": 1.08,
+    "code": "kPa.s",
+    "system": "http://unitsofmeasure.org"
+  },
+  "interpretation": [
+    {
+      "coding": [
+        {
+          "code": "N",
+          "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation"
+        }
+      ]
+    }
+  ],
+  "method": {
+    "coding": [
+      {
+        "code": "249862003",
+        "system": "http://snomed.info/sct",
+        "display": "Sitting upright (finding)"
+      }
+    ]
+  },
+  "component": [
+    {
+      "code": {
+        "coding": [
+          {
+            "code": "TODO",
+            "system": "http://snomed.info/sct"
+          }
+        ]
+      },
+      "valueQuantity": {
+        "value": 1.18,
+        "code": "kPa.s",
+        "system": "http://unitsofmeasure.org"
+      }
+    },
+    {
+      "code": {
+        "coding": [
+          {
+            "code": "91981-1",
+            "system": "http://loinc.org",
+            "display": "Airway resistance measured/predicted by Plethysmograph body box"
+          }
+        ]
+      },
+      "valueQuantity": {
+        "value": 92,
+        "code": "%",
+        "system": "http://unitsofmeasure.org"
+      }
+    }
+  ]
+}

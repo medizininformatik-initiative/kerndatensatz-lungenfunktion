@@ -62,6 +62,10 @@
           {
             "code": "407599001",
             "display": "Forced expiratory volume in one second/Forced vital capacity ratio pre steroids (observable entity)"
+          },
+          {
+            "code": "251943006",
+            "display": "Forced expired volume in one second/vital capacity ratio (observable entity)"
           }
         ]
       }

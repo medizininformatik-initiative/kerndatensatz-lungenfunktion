@@ -16,7 +16,7 @@ Description: "Beschreibt die Tätigkeiten, wie eine Diffusion durchgeführt wird
 * insert LicenseCodeableCCBY40
 //Profile
 * partOf MS
-* category.coding = $SCT-version#23426006 "Measurement of respiratory function (procedure)"
+* category.coding[sct] = $SCT-version#23426006 "Measurement of respiratory function (procedure)"
 * code.coding[sct] = $SCT-version#36421003 "Carbon monoxide diffusing capacity measurement (procedure)"
 * subject only Reference(Patient)
 * outcome MS

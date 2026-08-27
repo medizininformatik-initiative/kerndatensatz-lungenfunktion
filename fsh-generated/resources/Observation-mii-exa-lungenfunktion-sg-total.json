@@ -1,0 +1,95 @@
+{
+  "resourceType": "Observation",
+  "id": "mii-exa-lungenfunktion-sg-total",
+  "meta": {
+    "profile": [
+      "https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-sg-total"
+    ]
+  },
+  "category": [
+    {
+      "coding": [
+        {
+          "code": "procedure",
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category"
+        }
+      ]
+    }
+  ],
+  "partOf": [
+    {
+      "reference": "Procedure/mii-exa-lungenfunktion-bodyplethysmographie-messung"
+    }
+  ],
+  "status": "final",
+  "code": {
+    "coding": [
+      {
+        "code": "79412009",
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/900000000000207008/version/20240701",
+        "display": "Specific airway conductance (observable entity)"
+      }
+    ]
+  },
+  "subject": {
+    "reference": "Patient/PatExample"
+  },
+  "issued": "2024-07-19T13:03:20+02:00",
+  "valueQuantity": {
+    "value": 0.92,
+    "code": "/kPA.s",
+    "system": "http://unitsofmeasure.org"
+  },
+  "interpretation": [
+    {
+      "coding": [
+        {
+          "code": "N",
+          "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation"
+        }
+      ]
+    }
+  ],
+  "method": {
+    "coding": [
+      {
+        "code": "249862003",
+        "system": "http://snomed.info/sct",
+        "display": "Sitting upright (finding)"
+      }
+    ]
+  },
+  "component": [
+    {
+      "code": {
+        "coding": [
+          {
+            "code": "TODO",
+            "system": "http://snomed.info/sct"
+          }
+        ]
+      },
+      "valueQuantity": {
+        "value": 0.85,
+        "code": "/kPA.s",
+        "system": "http://unitsofmeasure.org"
+      }
+    },
+    {
+      "code": {
+        "coding": [
+          {
+            "code": "TODO",
+            "system": "http://snomed.info/sct"
+          }
+        ]
+      },
+      "valueQuantity": {
+        "value": 108,
+        "code": "%",
+        "system": "http://unitsofmeasure.org"
+      }
+    }
+  ]
+}
