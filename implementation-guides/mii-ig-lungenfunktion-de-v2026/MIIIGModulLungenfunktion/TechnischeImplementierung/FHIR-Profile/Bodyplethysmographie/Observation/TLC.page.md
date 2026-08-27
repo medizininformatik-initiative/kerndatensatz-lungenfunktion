@@ -78,6 +78,6 @@ Folgende Suchparameter sind für das Modul Lungenfunktion relevant, auch in Komb
 
 Beispiel einer TLC-Ressource:
 
-{{json:fsh-generated/resources/DiagnosticReport-mii-exa-bildgebung-radiologischer-Befund.json}}
+{{json:fsh-generated/resources/Observation-mii-exa-lungenfunktion-tlc.json}}
 
 ---

@@ -77,6 +77,6 @@ Folgende Suchparameter sind für das Modul Lungenfunktion relevant, auch in Komb
 
 Beispiel einer FEV/FVC-Ressource
 
-{{json:fsh-generated/resources/DiagnosticReport-mii-exa-bildgebung-radiologischer-Befund.json}}
+{{json:fsh-generated/resources/Observation-mii-exa-lungenfunktion-fev1-fvc.json}}
 
 ---

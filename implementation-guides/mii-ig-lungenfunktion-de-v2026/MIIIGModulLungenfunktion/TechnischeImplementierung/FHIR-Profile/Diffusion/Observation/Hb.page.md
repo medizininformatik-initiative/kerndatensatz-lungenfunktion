@@ -77,6 +77,7 @@ Folgende Suchparameter sind für das Modul Lungenfunktion relevant, auch in Komb
 
 Beispiel einer Hb-Ressource:
 
-{{json:fsh-generated/resources/DiagnosticReport-mii-exa-bildgebung-radiologischer-Befund.json}}
+{{json:fsh-generated/resources/Observation-mii-exa-lungenfunktion-hb.json}}
+
 
 ---
