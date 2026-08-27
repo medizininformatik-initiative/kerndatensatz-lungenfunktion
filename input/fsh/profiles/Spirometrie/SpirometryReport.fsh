@@ -24,8 +24,6 @@ Description: "Diese Ressource beschreibt einen Befunde der Spirometrie"
     BF 0..1 MS and
     FEV_FVC 0..* MS and
     FEV 0..* MS and
-    FEV1_VC 0..1 MS and
-    FIV1 0..1 MS and
     FVC 0..* MS and
     IC 0..1 MS and
     MEF 0..* MS and
@@ -35,8 +33,6 @@ Description: "Diese Ressource beschreibt einen Befunde der Spirometrie"
 * result[BF] only Reference(MII_PR_Lungenfunktion_BF)
 * result[FEV_FVC] only Reference(MII_PR_Lungenfunktion_FEV_FVC)
 * result[FEV] only Reference(MII_PR_Lungenfunktion_FEV)
-* result[FEV1_VC] only Reference(MII_PR_Lungenfunktion_FEV1_VC)
-* result[FIV1] only Reference(MII_PR_Lungenfunktion_FIV)
 * result[FVC] only Reference(MII_PR_Lungenfunktion_FVC)
 * result[IC] only Reference(MII_PR_Lungenfunktion_IC)
 * result[MEF] only Reference(MII_PR_Lungenfunktion_MEF)

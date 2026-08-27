@@ -5,6 +5,7 @@ Alias: $obs-category = http://terminology.hl7.org/CodeSystem/observation-categor
 Alias: $obs-methods = http://hl7.org/fhir/ValueSet/observation-methods
 Alias: $medad-category = http://hl7.org/fhir/ValueSet/medication-admin-category
 Alias: $location = http://terminology.hl7.org/CodeSystem/v3-RoleCode
+Alias: $interpretation = http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation
 //MII-Profile
 Alias: $miiProcedure = https://www.medizininformatik-initiative.de/fhir/core/modul-prozedur/StructureDefinition/Procedure
 Alias: $miiAdministration = https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/MedicationAdministration

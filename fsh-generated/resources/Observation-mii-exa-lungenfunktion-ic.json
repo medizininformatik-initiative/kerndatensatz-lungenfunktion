@@ -1,0 +1,120 @@
+{
+  "resourceType": "Observation",
+  "id": "mii-exa-lungenfunktion-ic",
+  "meta": {
+    "profile": [
+      "https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-ic"
+    ]
+  },
+  "category": [
+    {
+      "coding": [
+        {
+          "code": "procedure",
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category"
+        }
+      ]
+    }
+  ],
+  "partOf": [
+    {
+      "reference": "Procedure/mii-exa-lungenfunktion-spirometrie-messung"
+    }
+  ],
+  "status": "final",
+  "code": {
+    "coding": [
+      {
+        "code": "29533001",
+        "system": "http://snomed.info/sct",
+        "display": "Inspiratory capacity (observable entity)"
+      }
+    ]
+  },
+  "subject": {
+    "reference": "Patient/PatExample"
+  },
+  "issued": "2024-07-19T13:03:20+02:00",
+  "valueQuantity": {
+    "value": 2.43,
+    "code": "L",
+    "system": "http://unitsofmeasure.org"
+  },
+  "interpretation": [
+    {
+      "coding": [
+        {
+          "code": "N",
+          "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation"
+        }
+      ]
+    }
+  ],
+  "method": {
+    "coding": [
+      {
+        "code": "249862003",
+        "system": "http://snomed.info/sct",
+        "display": "Sitting upright (finding)"
+      }
+    ]
+  },
+  "referenceRange": [
+    {
+      "low": {
+        "value": 3.31,
+        "code": "L",
+        "system": "http://unitsofmeasure.org"
+      },
+      "high": {
+        "value": 6,
+        "code": "L",
+        "system": "http://unitsofmeasure.org"
+      },
+      "age": {
+        "low": {
+          "value": 50,
+          "system": "http://unitsofmeasure.org"
+        },
+        "high": {
+          "value": 51,
+          "system": "http://unitsofmeasure.org"
+        }
+      }
+    }
+  ],
+  "component": [
+    {
+      "code": {
+        "coding": [
+          {
+            "code": "19851-5",
+            "system": "http://loinc.org",
+            "display": "Inspiratory capacity Predicted"
+          }
+        ]
+      },
+      "valueQuantity": {
+        "value": 3.31,
+        "code": "L",
+        "system": "http://unitsofmeasure.org"
+      }
+    },
+    {
+      "code": {
+        "coding": [
+          {
+            "code": "19856-4",
+            "system": "http://loinc.org",
+            "display": "Inspiratory capacity measured/predicted"
+          }
+        ]
+      },
+      "valueQuantity": {
+        "value": 73,
+        "code": "%",
+        "system": "http://unitsofmeasure.org"
+      }
+    }
+  ]
+}

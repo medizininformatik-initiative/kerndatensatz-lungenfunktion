@@ -4,10 +4,6 @@
   filename: FEV.page.md
 - name: FEV FVC
   filename: FEVFVC.page.md
-- name: FEV VC
-  filename: FEVVC.page.md
-- name: FIV
-  filename: FIV.page.md
 - name: FVC
   filename: FVC.page.md
 - name: IC

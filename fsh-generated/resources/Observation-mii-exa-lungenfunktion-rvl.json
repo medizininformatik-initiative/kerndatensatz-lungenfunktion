@@ -1,0 +1,135 @@
+{
+  "resourceType": "Observation",
+  "id": "mii-exa-lungenfunktion-rvl",
+  "meta": {
+    "profile": [
+      "https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-rvl"
+    ]
+  },
+  "category": [
+    {
+      "coding": [
+        {
+          "code": "procedure",
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category"
+        }
+      ]
+    }
+  ],
+  "partOf": [
+    {
+      "reference": "Procedure/mii-exa-lungenfunktion-bodyplethysmographie-messung"
+    }
+  ],
+  "status": "final",
+  "code": {
+    "coding": [
+      {
+        "code": "20146-7",
+        "system": "http://loinc.org",
+        "display": "Residual volume"
+      }
+    ]
+  },
+  "subject": {
+    "reference": "Patient/PatExample"
+  },
+  "issued": "2024-07-19T13:03:20+02:00",
+  "valueQuantity": {
+    "value": 3.01,
+    "code": "L",
+    "system": "http://unitsofmeasure.org"
+  },
+  "interpretation": [
+    {
+      "coding": [
+        {
+          "code": "N",
+          "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation"
+        }
+      ]
+    }
+  ],
+  "method": {
+    "coding": [
+      {
+        "code": "249862003",
+        "system": "http://snomed.info/sct",
+        "display": "Sitting upright (finding)"
+      }
+    ]
+  },
+  "referenceRange": [
+    {
+      "low": {
+        "value": 1.43,
+        "code": "L",
+        "system": "http://unitsofmeasure.org"
+      },
+      "high": {
+        "value": 2,
+        "code": "L",
+        "system": "http://unitsofmeasure.org"
+      },
+      "age": {
+        "low": {
+          "value": 50,
+          "system": "http://unitsofmeasure.org"
+        },
+        "high": {
+          "value": 51,
+          "system": "http://unitsofmeasure.org"
+        }
+      }
+    }
+  ],
+  "component": [
+    {
+      "code": {
+        "coding": [
+          {
+            "code": "20145-9",
+            "system": "http://loinc.org",
+            "display": "Residual volume Predicted"
+          }
+        ]
+      },
+      "valueQuantity": {
+        "value": 2.11,
+        "code": "L",
+        "system": "http://unitsofmeasure.org"
+      }
+    },
+    {
+      "code": {
+        "coding": [
+          {
+            "code": "94125-2",
+            "system": "http://loinc.org",
+            "display": "Residual volume/Predicted by Plethysmograph body box"
+          }
+        ]
+      },
+      "valueQuantity": {
+        "value": 143,
+        "code": "%",
+        "system": "http://unitsofmeasure.org"
+      }
+    },
+    {
+      "code": {
+        "coding": [
+          {
+            "code": "1078210003",
+            "system": "http://snomed.info/sct",
+            "display": "Z-score calculation technique (qualifier value)"
+          }
+        ]
+      },
+      "valueQuantity": {
+        "value": 2.2,
+        "system": "http://unitsofmeasure.org"
+      }
+    }
+  ]
+}

@@ -49,9 +49,9 @@ Description: "Dieses Beobachtung beschreibt eine spezifische totale Atemwegsleit
 * interpretation MS
 * method MS
 * referenceRange MS
-* referenceRange.low 1.. MS
-* referenceRange.high 1.. MS
-* referenceRange.age 1.. MS
+* referenceRange.low MS
+* referenceRange.high MS
+* referenceRange.age MS
 * hasMember MS
 * hasMember only Reference(Observation)
 * derivedFrom MS

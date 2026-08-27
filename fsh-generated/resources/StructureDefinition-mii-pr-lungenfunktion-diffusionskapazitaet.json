@@ -822,7 +822,7 @@
       {
         "id": "Observation.value[x].unit",
         "path": "Observation.value[x].unit",
-        "patternString": "mmol/(min*kPa)",
+        "patternString": "mmol/(min.kPa)",
         "mustSupport": true
       },
       {
@@ -1103,7 +1103,6 @@
             }
           ]
         },
-        "min": 1,
         "mustSupport": true
       },
       {
@@ -1171,7 +1170,6 @@
             }
           ]
         },
-        "min": 1,
         "mustSupport": true
       },
       {
@@ -1239,7 +1237,6 @@
             }
           ]
         },
-        "min": 1,
         "mustSupport": true
       },
       {

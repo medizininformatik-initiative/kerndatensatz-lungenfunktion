@@ -25,10 +25,10 @@ Description: "Dieses Profil beschreibt die Messung der Atemfrequenz."
 * status MS
 * status ^short = "Status"
 * status ^definition = "angemeldet | vorläufig | endgültig | geändert | korrigiert | abgebrochen | fehlerhafte Eingabe | unbekannt"
-* category 1.. MS
+* category MS
 * category ^short = "Kategorie"
 * category ^definition = "Klassifikation in diagnostischen Fachbereich und Gruppe"
-* category.coding = $obs-category#procedure
+* category[VSCat] = $obs-category#vital-signs
 * code MS
 * code ^short = "Code"
 * code ^definition = "Ein Code für die zu befundende Beobachtung"

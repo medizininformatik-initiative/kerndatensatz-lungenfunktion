@@ -1,0 +1,94 @@
+{
+  "resourceType": "DiagnosticReport",
+  "id": "mii-exa-lungenfunktion-bodyplethysmographie-befund",
+  "meta": {
+    "profile": [
+      "https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-bodyplethysmographie"
+    ]
+  },
+  "category": [
+    {
+      "coding": [
+        {
+          "code": "720449003",
+          "system": "http://snomed.info/sct",
+          "display": "Pulmonary function report (record artifact)"
+        }
+      ]
+    }
+  ],
+  "status": "final",
+  "code": {
+    "coding": [
+      {
+        "code": "28275007",
+        "system": "http://snomed.info/sct",
+        "display": "Total body plethysmography (procedure)"
+      }
+    ]
+  },
+  "subject": {
+    "reference": "Patient/PatExample"
+  },
+  "encounter": {
+    "reference": "Encounter/EncExample"
+  },
+  "effectiveDateTime": "2024-07-19T12:03:30+02:00",
+  "issued": "2024-07-19T13:03:20+02:00",
+  "result": [
+    {
+      "reference": "Observation/mii-exa-lungenfunktion-fev1"
+    },
+    {
+      "reference": "Observation/mii-exa-lungenfunktion-fvc"
+    },
+    {
+      "reference": "Observation/mii-exa-lungenfunktion-fev1-fvc"
+    },
+    {
+      "reference": "Observation/mii-exa-lungenfunktion-mef25"
+    },
+    {
+      "reference": "Observation/mii-exa-lungenfunktion-mef50"
+    },
+    {
+      "reference": "Observation/mii-exa-lungenfunktion-mef75"
+    },
+    {
+      "reference": "Observation/mii-exa-lungenfunktion-frc"
+    },
+    {
+      "reference": "Observation/mii-exa-lungenfunktion-rvl"
+    },
+    {
+      "reference": "Observation/mii-exa-lungenfunktion-tlc"
+    },
+    {
+      "reference": "Observation/mii-exa-lungenfunktion-rvl-tlc"
+    },
+    {
+      "reference": "Observation/mii-exa-lungenfunktion-r"
+    },
+    {
+      "reference": "Observation/mii-exa-lungenfunktion-sg-total"
+    },
+    {
+      "reference": "Observation/mii-exa-lungenfunktion-sr-eff"
+    },
+    {
+      "reference": "Observation/mii-exa-lungenfunktion-sr-total"
+    }
+  ],
+  "conclusion": "Increased lung compliance",
+  "conclusionCode": [
+    {
+      "coding": [
+        {
+          "code": "21368004",
+          "system": "http://snomed.info/sct",
+          "display": "Increased lung compliance (finding)"
+        }
+      ]
+    }
+  ]
+}
