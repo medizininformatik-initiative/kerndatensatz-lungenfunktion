@@ -77,7 +77,7 @@ Folgende Suchparameter sind für das Modul Lungenfunktion relevant, auch in Komb
 
 Beispiel einer RV-Ressource
 
-{{json:fsh-generated/resources/Observation-mii-exa-lungenfunktion-rv.json}}
+{{json:fsh-generated/resources/Observation-mii-exa-lungenfunktion-erv.json}}
 
 
 ---

@@ -5,8 +5,7 @@ subject: https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunkti
 ---
 
 ## Observation
-!!TODO!!
-sG total ...
+Diese Observation beschreibt die gemessene spezifische, totale Leitfähigkeit der Atemwege.
 
 @```
 from

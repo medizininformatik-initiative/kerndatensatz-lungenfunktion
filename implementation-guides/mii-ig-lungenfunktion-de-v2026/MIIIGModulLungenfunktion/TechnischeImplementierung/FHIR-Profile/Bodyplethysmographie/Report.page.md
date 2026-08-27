@@ -77,7 +77,7 @@ Folgende Suchparameter sind für das Modul Lungenfunktion relevant, auch in Komb
 
 Beispiel eines Bodyplethysmographiebefund-Ressource
 
-{{json:fsh-generated/resources/DiagnosticReport-mii-exa-lungenfunktion-bodyplehtysmographie-befund.json}}
+{{json:fsh-generated/resources/DiagnosticReport-mii-exa-lungenfunktion-bodyplethysmographie-befund.json}}
 
 
 ---
