@@ -77,6 +77,7 @@ Folgende Suchparameter sind für das Modul Lungenfunktion relevant, auch in Komb
 
 Beispiel einer Diffusion-Ressource:
 
-{{json:fsh-generated/resources/DiagnosticReport-mii-exa-bildgebung-radiologischer-Befund.json}}
+{{json:fsh-generated/resources/Procedure-mii-exa-lungenfunktion-diffusion-messung.json}}
+
 
 ---

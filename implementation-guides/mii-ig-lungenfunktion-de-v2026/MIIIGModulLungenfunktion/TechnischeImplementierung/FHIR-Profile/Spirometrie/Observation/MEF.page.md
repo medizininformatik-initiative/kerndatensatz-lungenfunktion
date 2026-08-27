@@ -77,6 +77,10 @@ Folgende Suchparameter sind für das Modul Lungenfunktion relevant, auch in Komb
 
 Beispiel einer MEF-Ressource
 
-{{json:fsh-generated/resources/DiagnosticReport-mii-exa-bildgebung-radiologischer-Befund.json}}
+{{json:fsh-generated/resources/Observation-mii-exa-lungenfunktion-mef25.json}}
+
+{{json:fsh-generated/resources/Observation-mii-exa-lungenfunktion-mef50.json}}
+
+{{json:fsh-generated/resources/Observation-mii-exa-lungenfunktion-mef75.json}}
 
 ---
