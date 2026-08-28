@@ -12,9 +12,6 @@ Title: "MII Example Lungenfunktion ERV"
 * interpretation = $interpretation#N
 * method = $SCT#249862003 "Sitting upright (finding)"
 * referenceRange.low = 1.31 'L'
-* referenceRange.high = 4 'L'
-* referenceRange.age.low = 50 ''
-* referenceRange.age.high = 51 ''
 * component[predicted].code = $loinc#19923-2 "Expiratory reserve Predicted"
 * component[%predicted].code = $SCT#TODO
 * component[predicted].valueQuantity = 1.31 'L'

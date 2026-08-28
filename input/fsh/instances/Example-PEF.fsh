@@ -12,9 +12,6 @@ Title: "MII Example Lungenfunktion PEF"
 * interpretation = $interpretation#N
 * method = $SCT#249862003 "Sitting upright (finding)"
 * referenceRange.low = 6.79 'L/s'
-* referenceRange.high = 8.0 'L/s'
-* referenceRange.age.low = 50 ''
-* referenceRange.age.high = 51 ''
 * component[predicted].code = $SCT#313192007 "Expected peak expiratory flow rate (observable entity)"
 * component[%predicted].code = $SCT#401163005 "Percentage of best ever peak expiratory flow rate (observable entity)"
 * component[z-score].code = $SCT#1078210003 "Z-score calculation technique (qualifier value)"

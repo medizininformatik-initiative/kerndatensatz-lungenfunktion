@@ -1,0 +1,118 @@
+{
+  "resourceType": "DiagnosticReport",
+  "id": "mii-exa-lungenfunktion-provokationstest-befund",
+  "meta": {
+    "profile": [
+      "https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-provokationstest"
+    ]
+  },
+  "category": [
+    {
+      "coding": [
+        {
+          "code": "720449003",
+          "system": "http://snomed.info/sct",
+          "display": "Pulmonary function report (record artifact)"
+        }
+      ]
+    }
+  ],
+  "status": "final",
+  "code": {
+    "coding": [
+      {
+        "code": "252520007",
+        "system": "http://snomed.info/sct",
+        "display": "Methacholine challenge (procedure)"
+      }
+    ]
+  },
+  "subject": {
+    "reference": "Patient/PatExample"
+  },
+  "encounter": {
+    "reference": "Encounter/EncExample"
+  },
+  "effectiveDateTime": "2024-07-19T12:03:30+02:00",
+  "issued": "2024-07-19T13:03:20+02:00",
+  "result": [
+    {
+      "reference": "Observation/mii-exa-lungenfunktion-fev1-b"
+    },
+    {
+      "reference": "Observation/mii-exa-lungenfunktion-fev1-p3"
+    },
+    {
+      "reference": "Observation/mii-exa-lungenfunktion-fev1-p4"
+    },
+    {
+      "reference": "Observation/mii-exa-lungenfunktion-fev1-p5"
+    },
+    {
+      "reference": "Observation/mii-exa-lungenfunktion-pef-b"
+    },
+    {
+      "reference": "Observation/mii-exa-lungenfunktion-pef-p3"
+    },
+    {
+      "reference": "Observation/mii-exa-lungenfunktion-pef-p4"
+    },
+    {
+      "reference": "Observation/mii-exa-lungenfunktion-pef-p5"
+    },
+    {
+      "reference": "Observation/mii-exa-lungenfunktion-frc-b"
+    },
+    {
+      "reference": "Observation/mii-exa-lungenfunktion-frc-p3"
+    },
+    {
+      "reference": "Observation/mii-exa-lungenfunktion-frc-p4"
+    },
+    {
+      "reference": "Observation/mii-exa-lungenfunktion-frc-p5"
+    },
+    {
+      "reference": "Observation/mii-exa-lungenfunktion-r-b"
+    },
+    {
+      "reference": "Observation/mii-exa-lungenfunktion-r-p3"
+    },
+    {
+      "reference": "Observation/mii-exa-lungenfunktion-r-p4"
+    },
+    {
+      "reference": "Observation/mii-exa-lungenfunktion-r-p5"
+    },
+    {
+      "reference": "Observation/mii-exa-lungenfunktion-sr-total-b"
+    },
+    {
+      "reference": "Observation/mii-exa-lungenfunktion-sr-total-p3"
+    },
+    {
+      "reference": "Observation/mii-exa-lungenfunktion-sr-total-p4"
+    },
+    {
+      "reference": "Observation/mii-exa-lungenfunktion-sr-total-p5"
+    },
+    {
+      "reference": "Observation/mii-exa-lungenfunktion-dosis-kumuliert"
+    },
+    {
+      "reference": "Observation/mii-exa-lungenfunktion-dosis-schwellwert"
+    }
+  ],
+  "conclusion": "Increased lung compliance",
+  "conclusionCode": [
+    {
+      "coding": [
+        {
+          "code": "21368004",
+          "system": "http://snomed.info/sct",
+          "display": "Increased lung compliance (finding)"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "resourceType": "Location",
+  "id": "mii-exa-lungenfunktion-location",
+  "meta": {
+    "profile": [
+      "https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-umgebung"
+    ]
+  },
+  "type": [
+    {
+      "coding": [
+        {
+          "code": "PTRES",
+          "system": "http://terminology.hl7.org/CodeSystem/v3-RoleCode"
+        }
+      ]
+    }
+  ],
+  "physicalType": {
+    "coding": [
+      {
+        "code": "224709006",
+        "system": "http://snomed.info/sct",
+        "display": "Location inside building (environment)"
+      }
+    ]
+  }
+}

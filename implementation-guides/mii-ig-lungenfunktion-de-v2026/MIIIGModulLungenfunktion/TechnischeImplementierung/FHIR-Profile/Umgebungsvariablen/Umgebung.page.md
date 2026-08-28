@@ -4,9 +4,8 @@ topic: Location
 subject: https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-umgebung
 ---
 
-## Procedure
-!!TODO!!
-Die Umgebung des Patienten
+## Location
+Diese Location beschreibt die Umgebung in der sich der Patient befindet.
 
 @```
 from
@@ -78,6 +77,6 @@ Folgende Suchparameter sind für das Modul Lungenfunktion relevant, auch in Komb
 
 Beispiel einer Location-Ressource:
 
-{{json:fsh-generated/resources/DiagnosticReport-mii-exa-bildgebung-radiologischer-Befund.json}}
+{{json:fsh-generated/resources/Location-mii-exa-lungenfunktion-location.json}}
 
 ---

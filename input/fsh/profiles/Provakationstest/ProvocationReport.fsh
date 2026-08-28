@@ -23,7 +23,15 @@ Description: "Diese Ressource beschreibt einen Befunde des Provokationstest"
 * result contains
     Dosis_Schwellwert 1..1 MS and
     Dosis_kumuliert 1..1 MS and
-    FEV 1..* MS
+    FEV 1..* MS and
+    PEF 1..* MS and
+    R_tot 1..* MS and
+    sR_tot 1..* MS and
+    FRC 1..* MS
 * result[FEV] only Reference(MII_PR_Lungenfunktion_FEV)
 * result[Dosis_Schwellwert] only Reference(MII_PR_Lungenfunktion_Dosis)
 * result[Dosis_kumuliert] only Reference(MII_PR_Lungenfunktion_Dosis)
+* result[PEF] only Reference(MII_PR_Lungenfunktion_PEF)
+* result[R_tot] only Reference(MII_PR_Lungenfunktion_R)
+* result[sR_tot] only Reference(MII_PR_Lungenfunktion_R_Spezifisch)
+* result[FRC] only Reference(MII_PR_Lungenfunktion_FRC)

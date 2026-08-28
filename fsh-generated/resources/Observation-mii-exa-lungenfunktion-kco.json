@@ -65,21 +65,6 @@
         "value": 1.18,
         "code": "mmol/(min.kPa.L)",
         "system": "http://unitsofmeasure.org"
-      },
-      "high": {
-        "value": 3,
-        "code": "mmol/(min.kPa.L)",
-        "system": "http://unitsofmeasure.org"
-      },
-      "age": {
-        "low": {
-          "value": 50,
-          "system": "http://unitsofmeasure.org"
-        },
-        "high": {
-          "value": 51,
-          "system": "http://unitsofmeasure.org"
-        }
       }
     }
   ],

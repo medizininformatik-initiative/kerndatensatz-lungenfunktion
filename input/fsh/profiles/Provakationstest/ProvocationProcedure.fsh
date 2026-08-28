@@ -16,7 +16,7 @@ Description: "Beschreibt die Tätigkeiten, wie eine Diffusion durchgeführt wird
 * insert LicenseCodeableCCBY40
 //Profile
 * partOf MS
-* category.coding = $SCT#323426006 "Measurement of respiratory function (procedure)"
+* category.coding[sct] = $SCT#323426006 "Measurement of respiratory function (procedure)"
 * code.coding[sct] = $SCT-version#252520007 "Methacholine challenge (procedure)"
 * subject only Reference(Patient)
 * outcome MS

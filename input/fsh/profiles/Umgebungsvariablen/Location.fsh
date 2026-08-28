@@ -27,7 +27,7 @@ Description: "Diese Location beschreibt die Patientenumgebung."
 * insert Translation(type ^definition, de-DE, Standorttyp der Umgebung des Patienten)
 * insert Translation(type ^definition, en-US, locationtype of the patient)
 * physicalType MS
-* physicalType from MII_VS_Lufu_SCT_Location
+* physicalType from MII_VS_Lufu_SCT_Location (required)
 * physicalType ^short = "Standortform"
 * physicalType ^definition = "Standortform der Umgebung des Patienten"
 * insert Translation(physicalType ^short, de-DE, Standortform)

@@ -65,9 +65,6 @@ Description: "Dieses Profil beschreibt die Messung der Atemfrequenz."
 * referenceRange.high 1.. MS
 * referenceRange.high ^short = "ULN"
 * referenceRange.high ^definition = "obere Normgrenze"
-* referenceRange.age 1.. MS
-* referenceRange.age ^short = "Altersbezug"
-* referenceRange.age ^definition = "Altersbezug der Normgrenzen"
 * hasMember MS
 * hasMember only Reference(Observation)
 * hasMember ^short = "weitere Beobachtungen"
@@ -156,10 +153,6 @@ Description: "Dieses Profil beschreibt die Messung der Atemfrequenz."
 * insert Translation(referenceRange.high ^short, en-US, ULN)
 * insert Translation(referenceRange.high ^definition, de-DE, obere Normgrenze)
 * insert Translation(referenceRange.high ^definition, en-US, upper limit of normal)
-* insert Translation(referenceRange.age ^short, de-DE, Altersbezug)
-* insert Translation(referenceRange.age ^short, en-US, reference age)
-* insert Translation(referenceRange.age ^definition, de-DE, Altersbezug der Normgrenzen)
-* insert Translation(referenceRange.age ^definition, en-US, reference age of normal)
 * insert Translation(hasMember ^short, de-DE, weitere Beobachtungen)
 * insert Translation(hasMember ^short, en-US, additional observation)
 * insert Translation(hasMember ^definition, de-DE, Referenzierung weiterer Beobachtungen)

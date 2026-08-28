@@ -1,18 +1,17 @@
 ---
 parent:
-topic: Observation
-subject: https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-fev
+topic: Medication
+subject: https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-methacholine
 ---
 
-## Observation
-!!TODO!!
-FEV ...
+## Medikation
+Diese Medikation beschreibt das Provokations-Medikament.
 
 @```
 from
     StructureDefinition
 where
-    url = 'https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-fev'
+    url = 'https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-methacholine'
 select
     Name: name, Status: status, Version: version, Canonical: url, Basis: baseDefinition
 ```
@@ -26,7 +25,7 @@ select
         from
 	        StructureDefinition
         where
-	        url = 'https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-fev'
+	        url = 'https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-methacholine'
         select
 	        Beschreibung: description
         with
@@ -36,7 +35,7 @@ select
         from
             StructureDefinition
         where
-            url = 'https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-fev'
+            url = 'https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-methacholine'
         for
             differential.element
             where
@@ -68,7 +67,7 @@ where url = 'https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfu
 
 Folgende Suchparameter sind für das Modul Lungenfunktion relevant, auch in Kombination:
 
-@``` from CapabilityStatement where url = 'https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/CapabilityStatement/metadata' for rest.resource.where(type='Observation').searchParam select Name: name, Definition: definition, Type: type, Expectation: extension.where(url='http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation').value.ofType(code)
+@``` from CapabilityStatement where url = 'https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/CapabilityStatement/metadata' for rest.resource.where(type='Medication').searchParam select Name: name, Definition: definition, Type: type, Expectation: extension.where(url='http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation').value.ofType(code)
 
 ```
 
@@ -76,8 +75,8 @@ Folgende Suchparameter sind für das Modul Lungenfunktion relevant, auch in Komb
 
 **Beispiele**
 
-Beispiel einer FEV 1-Ressource:
+Beispiel einer Methacholine-Ressource:
 
-{{json:fsh-generated/resources/DiagnosticReport-mii-exa-bildgebung-radiologischer-Befund.json}}
+{{json:fsh-generated/resources/Observation-mii-exa-lungenfunktion-methacholine.json}}
 
 ---

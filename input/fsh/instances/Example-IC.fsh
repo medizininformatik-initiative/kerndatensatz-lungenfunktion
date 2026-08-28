@@ -12,9 +12,6 @@ Title: "MII Example Lungenfunktion IC"
 * interpretation = $interpretation#N
 * method = $SCT#249862003 "Sitting upright (finding)"
 * referenceRange.low = 3.31 'L'
-* referenceRange.high = 6 'L'
-* referenceRange.age.low = 50 ''
-* referenceRange.age.high = 51 ''
 * component[predicted].code = $loinc#19851-5 "Inspiratory capacity Predicted"
 * component[%predicted].code = $loinc#19856-4 "Inspiratory capacity measured/predicted"
 * component[predicted].valueQuantity = 3.31 'L'

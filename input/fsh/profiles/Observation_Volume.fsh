@@ -52,7 +52,6 @@ Description: "Dieses Beobachtung beschreibt eine Volumenmessung."
 * referenceRange MS
 * referenceRange.low MS
 * referenceRange.high MS
-* referenceRange.age MS
 * hasMember MS
 * hasMember only Reference(Observation)
 * derivedFrom MS

@@ -1,0 +1,57 @@
+{
+  "resourceType": "Medication",
+  "id": "mii-exa-lungenfunktion-methacholine",
+  "meta": {
+    "profile": [
+      "https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-methacholine"
+    ]
+  },
+  "code": {
+    "coding": [
+      {
+        "code": "00171345",
+        "system": "http://fhir.de/CodeSystem/ifa/pzn",
+        "display": "Provokit® 0,33%"
+      }
+    ]
+  },
+  "ingredient": [
+    {
+      "strength": {
+        "denominator": {
+          "value": 10,
+          "code": "ml",
+          "system": "http://unitsofmeasure.org",
+          "unit": "ml"
+        },
+        "numerator": {
+          "value": 33,
+          "code": "mg",
+          "system": "http://unitsofmeasure.org",
+          "unit": "mg"
+        }
+      },
+      "itemCodeableConcept": {
+        "coding": [
+          {
+            "code": "109196007",
+            "system": "http://snomed.info/sct",
+            "display": "Methacholine chloride (substance)"
+          }
+        ]
+      }
+    },
+    {
+      "itemCodeableConcept": {
+        "coding": [
+          {
+            "code": "11713004",
+            "system": "http://snomed.info/sct",
+            "version": "http://snomed.info/sct/900000000000207008/version/20240701",
+            "display": "Water (substance)"
+          }
+        ]
+      }
+    }
+  ]
+}

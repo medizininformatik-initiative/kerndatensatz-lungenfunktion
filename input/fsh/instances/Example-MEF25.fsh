@@ -12,9 +12,6 @@ Title: "MII Example Lungenfunktion MEF 25"
 * interpretation = $interpretation#N
 * method = $SCT#249862003 "Sitting upright (finding)"
 * referenceRange.low = 0.57 'L/s'
-* referenceRange.high = 5.0 'L/s'
-* referenceRange.age.low = 50 ''
-* referenceRange.age.high = 51 ''
 * component[predicted].code = $SCT#TODO
 * component[%predicted].code = $SCT#TODO
 * component[z-score].code = $SCT#1078210003 "Z-score calculation technique (qualifier value)"

@@ -12,9 +12,6 @@ Title: "MII Example Lungenfunktion RVL"
 * interpretation = $interpretation#N
 * method = $SCT#249862003 "Sitting upright (finding)"
 * referenceRange.low = 1.43 'L'
-* referenceRange.high = 2.0 'L'
-* referenceRange.age.low = 50 ''
-* referenceRange.age.high = 51 ''
 * component[predicted].code = $loinc#20145-9 "Residual volume Predicted"
 * component[%predicted].code = $loinc#94125-2 "Residual volume/Predicted by Plethysmograph body box"
 * component[z-score].code = $SCT#1078210003 "Z-score calculation technique (qualifier value)"

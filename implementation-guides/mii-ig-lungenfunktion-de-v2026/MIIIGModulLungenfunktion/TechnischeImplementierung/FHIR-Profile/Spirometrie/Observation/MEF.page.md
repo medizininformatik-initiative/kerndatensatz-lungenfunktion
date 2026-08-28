@@ -5,7 +5,7 @@ subject: https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunkti
 ---
 
 ## Observation
-Diese Observation beschreibt den gemessenen maximalen expiratorischen Fluss.
+Diese Observation beschreibt den gemessenen maximalen expiratorischen Fluss. Die Messwerte zu FEF können ebenso mit dieser Ressource abgebildet werden. Achtung: Dabei muss der Unterschied MEF 25% = FEF 75%, MEF 75% = FEF 25%  und MEF 50% = FEF 50% beachtet werden.
 
 @```
 from

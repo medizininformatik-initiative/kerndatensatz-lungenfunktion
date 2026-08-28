@@ -12,9 +12,6 @@ Title: "MII Example Lungenfunktion FEV 1"
 * interpretation = $interpretation#N
 * method = $SCT#249862003 "Sitting upright (finding)"
 * referenceRange.low = 2.98 'L'
-* referenceRange.high = 6 'L'
-* referenceRange.age.low = 50 ''
-* referenceRange.age.high = 51 ''
 * component[predicted].code = $SCT#310520004 "Expected forced expired volume in 1 second (observable entity)"
 * component[%predicted].code = $SCT#313223002 "Percent predicted forced expired volume in one second (observable entity)"
 * component[z-score].code = $SCT#1078210003 "Z-score calculation technique (qualifier value)"
