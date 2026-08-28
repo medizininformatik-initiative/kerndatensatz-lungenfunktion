@@ -12,9 +12,6 @@ Title: "MII Example Lungenfunktion FRC"
 * interpretation = $interpretation#N
 * method = $SCT#249862003 "Sitting upright (finding)"
 * referenceRange.low = 2.43 'L'
-* referenceRange.high = 3.8 'L'
-* referenceRange.age.low = 50 ''
-* referenceRange.age.high = 51 ''
 * component[predicted].code = $loinc#19847-3 "Functional residual capacity Predicted"
 * component[%predicted].code = $SCT#TODO
 * component[z-score].code = $SCT#1078210003 "Z-score calculation technique (qualifier value)"

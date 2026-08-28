@@ -12,9 +12,6 @@ Title: "MII Example Lungenfunktion DLCO"
 * interpretation = $interpretation#N
 * method = $SCT#249862003 "Sitting upright (finding)"
 * referenceRange.low = 7.29 'mmol/(min.kPa)'
-* referenceRange.high = 10.0 'mmol/(min.kPa)'
-* referenceRange.age.low = 50 ''
-* referenceRange.age.high = 51 ''
 * component[predicted].code = $loinc#19910-9 "Diffusion capacity.carbon monoxide Predicted"
 * component[%predicted].code = $loinc#98130-8 "Diffusion capacity.carbon monoxide/Predicted"
 * component[z-score].code = $SCT#1078210003 "Z-score calculation technique (qualifier value)"

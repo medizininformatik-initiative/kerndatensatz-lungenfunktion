@@ -12,9 +12,6 @@ Title: "MII Example Lungenfunktion FVC"
 * interpretation = $interpretation#N
 * method = $SCT#249862003 "Sitting upright (finding)"
 * referenceRange.low = 3.76 'L'
-* referenceRange.high = 5 'L'
-* referenceRange.age.low = 50 ''
-* referenceRange.age.high = 51 ''
 * component[predicted].code = $SCT#310521000 "Expected forced vital capacity (observable entity)"
 * component[%predicted].code = $SCT#445210000 "Percentage of predicted forced vital capacity (observable entity)"
 * component[z-score].code = $SCT#1078210003 "Z-score calculation technique (qualifier value)"

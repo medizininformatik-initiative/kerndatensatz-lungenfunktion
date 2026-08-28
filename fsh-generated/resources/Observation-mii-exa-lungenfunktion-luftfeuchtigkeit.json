@@ -1,0 +1,43 @@
+{
+  "resourceType": "Observation",
+  "id": "mii-exa-lungenfunktion-luftfeuchtigkeit",
+  "meta": {
+    "profile": [
+      "https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-luftfeuchtigkeit"
+    ]
+  },
+  "category": [
+    {
+      "coding": [
+        {
+          "code": "social-history",
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category"
+        }
+      ]
+    }
+  ],
+  "status": "final",
+  "code": {
+    "coding": [
+      {
+        "code": "3525006",
+        "system": "http://snomed.info/sct",
+        "display": "Humidity (physical force)"
+      }
+    ]
+  },
+  "subject": {
+    "reference": "Patient/PatExample"
+  },
+  "focus": [
+    {
+      "reference": "Location/mii-exa-lungenfunktion-location"
+    }
+  ],
+  "issued": "2024-07-19T13:03:20+02:00",
+  "valueQuantity": {
+    "value": 98,
+    "code": "%",
+    "system": "http://unitsofmeasure.org"
+  }
+}

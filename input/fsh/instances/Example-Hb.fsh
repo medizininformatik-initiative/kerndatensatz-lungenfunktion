@@ -13,5 +13,3 @@ Title: "MII Example Lungenfunktion Hb"
 * method = $SCT#249862003 "Sitting upright (finding)"
 * referenceRange.low = 13.5 'g{Hemoglobin}/dL'
 * referenceRange.high = 17.2 'g{Hemoglobin}/dL'
-* referenceRange.age.low = 50 ''
-* referenceRange.age.high = 51 ''

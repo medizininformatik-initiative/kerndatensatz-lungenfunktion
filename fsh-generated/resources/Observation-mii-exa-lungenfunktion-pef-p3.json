@@ -1,0 +1,83 @@
+{
+  "resourceType": "Observation",
+  "id": "mii-exa-lungenfunktion-pef-p3",
+  "meta": {
+    "profile": [
+      "https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-pef"
+    ]
+  },
+  "category": [
+    {
+      "coding": [
+        {
+          "code": "procedure",
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category"
+        }
+      ]
+    }
+  ],
+  "partOf": [
+    {
+      "reference": "Procedure/mii-exa-lungenfunktion-spirometrie-messung"
+    },
+    {
+      "reference": "MedicationAdminstration/mii-exa-lungenfunktion-dosis-gabe-1"
+    }
+  ],
+  "status": "final",
+  "code": {
+    "coding": [
+      {
+        "code": "18491006",
+        "system": "http://snomed.info/sct",
+        "display": "Peak expiratory flow rate (observable entity)"
+      }
+    ]
+  },
+  "subject": {
+    "reference": "Patient/PatExample"
+  },
+  "issued": "2024-07-19T13:03:20+02:00",
+  "valueQuantity": {
+    "value": 8.07,
+    "code": "L/s",
+    "system": "http://unitsofmeasure.org"
+  },
+  "interpretation": [
+    {
+      "coding": [
+        {
+          "code": "N",
+          "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation"
+        }
+      ]
+    }
+  ],
+  "method": {
+    "coding": [
+      {
+        "code": "249862003",
+        "system": "http://snomed.info/sct",
+        "display": "Sitting upright (finding)"
+      }
+    ]
+  },
+  "component": [
+    {
+      "code": {
+        "coding": [
+          {
+            "code": "313192007",
+            "system": "http://snomed.info/sct",
+            "display": "Expected peak expiratory flow rate (observable entity)"
+          }
+        ]
+      },
+      "valueQuantity": {
+        "value": 7.45,
+        "code": "L/s",
+        "system": "http://unitsofmeasure.org"
+      }
+    }
+  ]
+}

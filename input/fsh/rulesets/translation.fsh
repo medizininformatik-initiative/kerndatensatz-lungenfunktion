@@ -46,8 +46,6 @@ RuleSet: AddObservationTranslation
 * referenceRange.low ^definition = "untere Normgrenze"
 * referenceRange.high ^short = "ULN"
 * referenceRange.high ^definition = "obere Normgrenze"
-* referenceRange.age ^short = "Altersbezug"
-* referenceRange.age ^definition = "Altersbezug der Normgrenzen"
 * hasMember ^short = "weitere Beobachtungen"
 * hasMember ^definition = "Referenzierung weiterer Beobachtungen"
 * derivedFrom ^short = "abgeleitet"
@@ -110,10 +108,6 @@ RuleSet: AddObservationTranslation
 * insert Translation(referenceRange.high ^short, en-US, ULN)
 * insert Translation(referenceRange.high ^definition, de-DE, obere Normgrenze)
 * insert Translation(referenceRange.high ^definition, en-US, upper limit of normal)
-* insert Translation(referenceRange.age ^short, de-DE, Altersbezug)
-* insert Translation(referenceRange.age ^short, en-US, reference age)
-* insert Translation(referenceRange.age ^definition, de-DE, Altersbezug der Normgrenzen)
-* insert Translation(referenceRange.age ^definition, en-US, reference age of normal)
 * insert Translation(hasMember ^short, de-DE, weitere Beobachtungen)
 * insert Translation(hasMember ^short, en-US, additional observation)
 * insert Translation(hasMember ^definition, de-DE, Referenzierung weiterer Beobachtungen)

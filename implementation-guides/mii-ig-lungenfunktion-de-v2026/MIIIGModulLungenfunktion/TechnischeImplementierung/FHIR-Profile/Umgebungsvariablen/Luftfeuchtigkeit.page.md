@@ -4,7 +4,7 @@ topic: Observation
 subject: https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-luftfeuchtigkeit
 ---
 
-## Procedure
+## Observation
 Diese Observation beschreibt die gemessene Luftfeuchtigkeit in der Patientenumgebung.
 
 @```
@@ -77,6 +77,6 @@ Folgende Suchparameter sind für das Modul Lungenfunktion relevant, auch in Komb
 
 Beispiel einer Spirometriemessungs-Ressource:
 
-{{json:fsh-generated/resources/DiagnosticReport-mii-exa-bildgebung-radiologischer-Befund.json}}
+{{json:fsh-generated/resources/Observation-mii-exa-lungenfunktion-luftfeuchtigkeit.json}}
 
 ---

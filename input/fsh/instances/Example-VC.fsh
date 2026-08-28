@@ -12,9 +12,6 @@ Title: "MII Example Lungenfunktion VC"
 * interpretation = $interpretation#N
 * method = $SCT#249862003 "Sitting upright (finding)"
 * referenceRange.low = 3.70 'L'
-* referenceRange.high = 10.0 'L'
-* referenceRange.age.low = 50 ''
-* referenceRange.age.high = 51 ''
 * component[predicted].code = $loinc#19865-5 "Vital capacity [Volume] Respiratory system Predicted"
 * component[%predicted].code = $SCT#445389005 "Percentage of predicted vital capacity (observable entity)"
 * component[z-score].code = $SCT#1078210003 "Z-score calculation technique (qualifier value)"

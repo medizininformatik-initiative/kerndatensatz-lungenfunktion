@@ -5,8 +5,7 @@ subject: https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunkti
 ---
 
 ## Observation
-!!TODO!!
-sR effektiv ...
+Diese Observation beschreibt den errechneten effektiven, spezifischen Atemwegswiderstand.
 
 @```
 from

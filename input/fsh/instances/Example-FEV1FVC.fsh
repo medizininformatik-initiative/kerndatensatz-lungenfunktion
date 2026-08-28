@@ -12,9 +12,6 @@ Title: "MII Example Lungenfunktion FEV1/FVC"
 * interpretation = $interpretation#N
 * method = $SCT#249862003 "Sitting upright (finding)"
 * referenceRange.low = 68.88 '%'
-* referenceRange.high = 90 '%'
-* referenceRange.age.low = 50 ''
-* referenceRange.age.high = 51 ''
 * derivedFrom[0] = Reference(Observation/mii-exa-lungenfunktion-fev1)
 * derivedFrom[+] = Reference(Observation/mii-exa-lungenfunktion-fvc)
 * component[predicted].code = $SCT#310360002 "Expected forced expiratory volume in one second/Forced vital capacity ratio (observable entity)"

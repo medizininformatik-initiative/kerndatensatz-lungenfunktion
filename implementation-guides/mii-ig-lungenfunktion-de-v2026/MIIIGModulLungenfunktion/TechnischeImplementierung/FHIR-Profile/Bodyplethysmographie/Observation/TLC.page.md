@@ -5,8 +5,7 @@ subject: https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunkti
 ---
 
 ## Observation
-!!TODO!!
-TLC ...
+Diese Observation beschreibt die gemessene totale Lungenkapazität.
 
 @```
 from

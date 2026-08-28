@@ -5,8 +5,7 @@ subject: https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunkti
 ---
 
 ## Observation
-!!TODO!!
-RVL zu TLC ...
+Diese Observation beschreibt das errechnet Verhältnis von Residualvolumen zur totalen Lungenkapazität.
 
 @```
 from

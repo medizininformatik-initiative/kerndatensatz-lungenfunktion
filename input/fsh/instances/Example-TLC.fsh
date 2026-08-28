@@ -12,9 +12,6 @@ Title: "MII Example Lungenfunktion TLC"
 * interpretation = $interpretation#N
 * method = $SCT#249862003 "Sitting upright (finding)"
 * referenceRange.low = 5.67 'L'
-* referenceRange.high = 6.0 'L'
-* referenceRange.age.low = 50 ''
-* referenceRange.age.high = 51 ''
 * component[predicted].code = $loinc#19861-4 "Total lung capacity Predicted"
 * component[%predicted].code = $loinc#89085-5 "Total lung capacity measured/predicted by Plethysmograph body box"
 * component[z-score].code = $SCT#1078210003 "Z-score calculation technique (qualifier value)"

@@ -12,9 +12,6 @@ Title: "MII Example Lungenfunktion VA"
 * interpretation = $interpretation#N
 * method = $SCT#249862003 "Sitting upright (finding)"
 * referenceRange.low = 5.11 'L'
-* referenceRange.high = 10.0 'L'
-* referenceRange.age.low = 50 ''
-* referenceRange.age.high = 51 ''
 * component[predicted].code = $SCT#TODO
 * component[%predicted].code = $SCT#TODO
 * component[z-score].code = $SCT#1078210003 "Z-score calculation technique (qualifier value)"

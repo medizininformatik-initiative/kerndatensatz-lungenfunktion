@@ -206,8 +206,9 @@
         "mustSupport": true
       },
       {
-        "id": "Procedure.category.coding",
+        "id": "Procedure.category.coding:sct",
         "path": "Procedure.category.coding",
+        "sliceName": "sct",
         "patternCoding": {
           "code": "323426006",
           "system": "http://snomed.info/sct",

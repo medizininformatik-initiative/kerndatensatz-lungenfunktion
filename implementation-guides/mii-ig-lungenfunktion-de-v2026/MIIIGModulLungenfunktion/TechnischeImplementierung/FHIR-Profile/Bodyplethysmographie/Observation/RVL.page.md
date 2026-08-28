@@ -5,8 +5,7 @@ subject: https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunkti
 ---
 
 ## Observation
-!!TODO!!
-Residual Volumen ...
+Diese Observation beschreibt das gemessene Residualvolumen.
 
 @```
 from

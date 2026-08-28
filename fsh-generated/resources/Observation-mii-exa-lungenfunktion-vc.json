@@ -65,21 +65,6 @@
         "value": 3.7,
         "code": "L",
         "system": "http://unitsofmeasure.org"
-      },
-      "high": {
-        "value": 10,
-        "code": "L",
-        "system": "http://unitsofmeasure.org"
-      },
-      "age": {
-        "low": {
-          "value": 50,
-          "system": "http://unitsofmeasure.org"
-        },
-        "high": {
-          "value": 51,
-          "system": "http://unitsofmeasure.org"
-        }
       }
     }
   ],

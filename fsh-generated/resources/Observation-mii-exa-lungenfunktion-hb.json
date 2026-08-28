@@ -70,16 +70,6 @@
         "value": 17.2,
         "code": "g{Hemoglobin}/dL",
         "system": "http://unitsofmeasure.org"
-      },
-      "age": {
-        "low": {
-          "value": 50,
-          "system": "http://unitsofmeasure.org"
-        },
-        "high": {
-          "value": 51,
-          "system": "http://unitsofmeasure.org"
-        }
       }
     }
   ]

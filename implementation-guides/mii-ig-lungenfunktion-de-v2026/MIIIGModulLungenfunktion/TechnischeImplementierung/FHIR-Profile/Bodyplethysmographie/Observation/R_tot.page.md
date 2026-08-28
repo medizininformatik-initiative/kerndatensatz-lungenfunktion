@@ -5,8 +5,7 @@ subject: https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunkti
 ---
 
 ## Observation
-!!TODO!!
-R total ...
+Diese Observation beschreibt den gemessenen totalen Atemwegswiderstand.
 
 @```
 from

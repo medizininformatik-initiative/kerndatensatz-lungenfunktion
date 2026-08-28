@@ -1,0 +1,29 @@
+{
+  "resourceType": "MedicationAdministration",
+  "id": "mii-exa-lungenfunktion-dosis-gabe-3",
+  "meta": {
+    "profile": [
+      "https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-dosis-gabe"
+    ]
+  },
+  "dosage": {
+    "dose": {
+      "system": "http://unitsofmeasure.org",
+      "code": "mg",
+      "value": 0.121
+    }
+  },
+  "partOf": [
+    {
+      "reference": "Procedure/mii-exa-lungenfunktion-provokationstest-messung"
+    }
+  ],
+  "status": "completed",
+  "medicationReference": {
+    "reference": "Medication/mii-exa-lungenfunktion-methacholine"
+  },
+  "subject": {
+    "reference": "Patient/PatExample"
+  },
+  "effectiveDateTime": "2024-07-19T13:03:20+02:00"
+}

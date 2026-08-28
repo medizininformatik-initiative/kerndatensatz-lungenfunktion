@@ -12,9 +12,6 @@ Title: "MII Example Lungenfunktion RV/TLC"
 * interpretation = $interpretation#N
 * method = $SCT#249862003 "Sitting upright (finding)"
 * referenceRange.low = 23.73 '%'
-* referenceRange.high = 30 '%'
-* referenceRange.age.low = 50 ''
-* referenceRange.age.high = 51 ''
 * derivedFrom[0] = Reference(Observation/mii-exa-lungenfunktion-rvl)
 * derivedFrom[+] = Reference(Observation/mii-exa-lungenfunktion-tlc)
 * component[predicted].code = $loinc#43252-6 "Residual volume/Total capacity Predicted"

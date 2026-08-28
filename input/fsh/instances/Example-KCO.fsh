@@ -12,9 +12,6 @@ Title: "MII Example Lungenfunktion KCO"
 * interpretation = $interpretation#N
 * method = $SCT#249862003 "Sitting upright (finding)"
 * referenceRange.low = 1.18 'mmol/(min.kPa.L)'
-* referenceRange.high = 3.0 'mmol/(min.kPa.L)'
-* referenceRange.age.low = 50 ''
-* referenceRange.age.high = 51 ''
 * derivedFrom[0] = Reference(Observation/mii-exa-lungenfunktion-dlco)
 * derivedFrom[+] = Reference(Observation/mii-exa-lungenfunktion-va)
 * component[predicted].code = $loinc#19915-8 "Diffusion capacity/Alveolar volume Predicted"

@@ -5,7 +5,7 @@ subject: https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunkti
 ---
 
 ## Observation
-Diese Observation beschreibt das gemessene Verhältnis von forciertem exspiratorischen Volumen zur forcierten Vitalkapazität.
+Diese Observation beschreibt das gemessene Verhältnis von forciertem exspiratorischen Volumen zur forcierten Vitalkapazität. Jegliche Varianten dieses Messwerts können über die passende Codes aus dem Valueset mit dieser Ressource abgebildet werden.
 
 @```
 from
