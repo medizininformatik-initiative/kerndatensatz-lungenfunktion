@@ -4,22 +4,7 @@ info    /Users/thome/code/fhir-profiling/kerndatensatz-lungenfunktion
 info  No output path specified. Output to .
 info  Using configuration file: /Users/thome/code/fhir-profiling/kerndatensatz-lungenfunktion/sushi-config.yaml
 info  Importing FSH text...
-error Skipping RuleSet: a RuleSet named SupportResource already exists.
-  File: /Users/thome/code/fhir-profiling/kerndatensatz-lungenfunktion/input/fsh/rulesets/cps-rules.fsh
-  Line: 21 - 24
-error Skipping RuleSet: a RuleSet named Profile already exists.
-  File: /Users/thome/code/fhir-profiling/kerndatensatz-lungenfunktion/input/fsh/rulesets/cps-rules.fsh
-  Line: 39 - 40
-error Skipping RuleSet: a RuleSet named SupportProfile already exists.
-  File: /Users/thome/code/fhir-profiling/kerndatensatz-lungenfunktion/input/fsh/rulesets/cps-rules.fsh
-  Line: 44 - 48
-error Skipping RuleSet: a RuleSet named SupportInteraction already exists.
-  File: /Users/thome/code/fhir-profiling/kerndatensatz-lungenfunktion/input/fsh/rulesets/cps-rules.fsh
-  Line: 50 - 54
-error Skipping RuleSet: a RuleSet named SupportSearchParam already exists.
-  File: /Users/thome/code/fhir-profiling/kerndatensatz-lungenfunktion/input/fsh/rulesets/cps-rules.fsh
-  Line: 56 - 62
-info  Preprocessed 100 documents with 63 aliases.
+info  Preprocessed 99 documents with 63 aliases.
 info  Imported 83 definitions and 1 instances.
 info  Loaded virtual package sushi-r5forR4#1.0.0 with 7 resources
 info  Resolved hl7.fhir.uv.tools.r4#latest to concrete version 1.1.2
@@ -59,7 +44,7 @@ info  The _build script hosted at https://github.com/HL7/ig-publisher-scripts is
 |  -------------------------------------------------------------  |
 |                                                                 |
 ===================================================================
-| Dolphinately not the desired outcome.   5 Errors      0 Warnings |
+| You really made a splash!              0 Errors      0 Warnings |
 ===================================================================
 |    You are using SUSHI version 3.20.0, but the latest stable    |
 | release is version 3.20.1. To install the latest release, run:  |

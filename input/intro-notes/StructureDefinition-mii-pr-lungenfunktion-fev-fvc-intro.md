@@ -1,7 +1,4 @@
-<!-- Source: MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Observation/FEVFVC.page.md (Simplifier guide mii-ig-lungenfunktion-de-v2026); migrated 2026-08-28. -->
-<!-- TODO:REVIEW machine translation of the German intro note (de) -->
-<!-- TODO:REVIEW source page carries the author marker !!TODO!! - description incomplete in the source. -->
+<!-- Source: MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Observation/FEVFVC.page.md (guide tree mii-ig-lungenfunktion-de-v2026, main@c2fe7fe); migrated 2026-08-28. -->
+<!-- TODO:REVIEW translation of the German intro note (de) - Gate C -->
 
-FEV zu FVC
-
-Beispiel einer FEV/FVC-Ressource
+This Observation represents the measured ratio of forced expiratory volume to forced vital capacity. Any variant of this measurement can be represented with this resource using the appropriate code from the value set.

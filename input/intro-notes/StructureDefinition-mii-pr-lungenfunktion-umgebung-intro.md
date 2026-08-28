@@ -1,7 +1,4 @@
-<!-- Source: MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Umgebungsvariablen/Umgebung.page.md (Simplifier guide mii-ig-lungenfunktion-de-v2026); migrated 2026-08-28. -->
-<!-- TODO:REVIEW machine translation of the German intro note (de) -->
-<!-- TODO:REVIEW source page carries the author marker !!TODO!! - description incomplete in the source. -->
+<!-- Source: MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Umgebungsvariablen/Umgebung.page.md (guide tree mii-ig-lungenfunktion-de-v2026, main@c2fe7fe); migrated 2026-08-28. -->
+<!-- TODO:REVIEW translation of the German intro note (de) - Gate C -->
 
-Die Umgebung des Patienten
-
-Beispiel einer Location-Ressource:
+This Location represents the environment the patient is in.

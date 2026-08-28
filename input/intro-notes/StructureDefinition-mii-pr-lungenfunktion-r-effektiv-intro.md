@@ -1,7 +1,4 @@
-<!-- Source: MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Bodyplethysmographie/Observation/sR_eff.page.md (Simplifier guide mii-ig-lungenfunktion-de-v2026); migrated 2026-08-28. -->
-<!-- TODO:REVIEW machine translation of the German intro note (de) -->
-<!-- TODO:REVIEW source page carries the author marker !!TODO!! - description incomplete in the source. -->
+<!-- Source: MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Bodyplethysmographie/Observation/sR_eff.page.md (guide tree mii-ig-lungenfunktion-de-v2026, main@c2fe7fe); migrated 2026-08-28. -->
+<!-- TODO:REVIEW translation of the German intro note (de) - Gate C -->
 
-sR effektiv ...
-
-Beispiel einer sR effektiv-Ressource:
+This Observation represents the calculated effective specific airway resistance.

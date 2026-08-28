@@ -1,7 +1,4 @@
-<!-- Source: MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Provokationstest/Observation/FEV.page.md; MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Observation/FEV.page.md (Simplifier guide mii-ig-lungenfunktion-de-v2026); migrated 2026-08-28. -->
-<!-- TODO:REVIEW machine translation of the German intro note (de) -->
-<!-- TODO:REVIEW source page carries the author marker !!TODO!! - description incomplete in the source. -->
+<!-- Source: MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Observation/FEV.page.md (guide tree mii-ig-lungenfunktion-de-v2026, main@c2fe7fe); migrated 2026-08-28. -->
+<!-- TODO:REVIEW translation of the German intro note (de) - Gate C -->
 
-FEV ...
-
-Beispiel einer FEV 1-Ressource:
+This Observation represents the measured forced expiratory volume.

@@ -1,7 +1,4 @@
-<!-- Source: MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Diffusion/Observation/KCOc.page.md (Simplifier guide mii-ig-lungenfunktion-de-v2026); migrated 2026-08-28. -->
-<!-- TODO:REVIEW machine translation of the German intro note (de) -->
-<!-- TODO:REVIEW source page carries the author marker !!TODO!! - description incomplete in the source. -->
+<!-- Source: MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Diffusion/Observation/KCOc.page.md (guide tree mii-ig-lungenfunktion-de-v2026, main@c2fe7fe); migrated 2026-08-28. -->
+<!-- TODO:REVIEW translation of the German intro note (de) - Gate C -->
 
-KCOc ...
-
-Beispiel einer KCOc-Ressource:
+This Observation represents the corrected calculated transfer coefficient for carbon monoxide. It is calculated as the corrected diffusing capacity divided by the alveolar volume. The correction is applied using the measured haemoglobin value.

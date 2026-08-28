@@ -1,6 +1,4 @@
-<!-- Quelle: MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Bodyplethysmographie/Observation/sR_eff.page.md (Simplifier-Guide mii-ig-lungenfunktion-de-v2026); migriert 2026-08-28. -->
-<!-- TODO:REVIEW Quellseite traegt die Autoren-Markierung !!TODO!! - Beschreibung in der Quelle unvollstaendig. -->
+<!-- Quelle: MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Bodyplethysmographie/Observation/sR_eff.page.md (Guide-Baum mii-ig-lungenfunktion-de-v2026, main@c2fe7fe); migriert 2026-08-28. Verbatim uebernommen - NICHT als DERIVED markiert. -->
+<!-- Die Beispiel-Anmoderation der Quellseite entfaellt: der IG Publisher listet die Beispiele selbst auf der Artefaktseite. -->
 
-sR effektiv ...
-
-Beispiel einer sR effektiv-Ressource:
+Diese Observation beschreibt den errechneten effektiven, spezifischen Atemwegswiderstand.

@@ -1,19 +1,20 @@
-# IG-Statistik — Lungenfunktion 2026.0.0 (Quelle)
+# IG-Statistik — Lungenfunktion 2027.0.0-ballot (Quelle c2fe7fe)
 
-_Modus: `static` · Stand: 2026-08-28T08:13:57Z · Commit: `7a42ed7`_
+_Modus: `static` · Stand: 2026-08-28T14:17:32Z · Commit: `c2fe7fe`_
 
 ## Kennzahlen-Überblick
 
-### Artefakte (Σ 84 publiziert)
+### Artefakte (Σ 145 publiziert)
 
 _Hier wird gezählt, wie viele FHIR-Bausteine (Profile, Extensions, ValueSets usw.) der IG je Typ definiert._
 
 <div align="center">
 
 ```mermaid
-%%{init: {'theme':'base','themeVariables':{"pie1": "#4E79A7", "pie2": "#F28E2B", "pie3": "#59A14F", "pie4": "#E15759", "pieOpacity": "1", "pieSectionTextColor": "#1A1A1A", "pieTitleTextSize": "18px"}}}%%
+%%{init: {'theme':'base','themeVariables':{"pie1": "#4E79A7", "pie2": "#F28E2B", "pie3": "#59A14F", "pie4": "#E15759", "pie5": "#76B7B2", "pieOpacity": "1", "pieSectionTextColor": "#1A1A1A", "pieTitleTextSize": "18px"}}}%%
 pie showData title Artefakte
-    "profiles" : 50
+    "examples" : 63
+    "profiles" : 48
     "valuesets" : 32
     "logicals" : 1
     "capabilitystatements" : 1
@@ -25,7 +26,8 @@ pie showData title Artefakte
 
 | Typ | Anzahl |
 |---|---|
-| profiles | 50 |
+| examples | 63 |
+| profiles | 48 |
 | valuesets | 32 |
 | logicals | 1 |
 | capabilitystatements | 1 |
@@ -34,7 +36,7 @@ pie showData title Artefakte
 
 _Interne FSH-Konstrukte (nicht in Σ): 24 rulesets, 1 mappings._
 
-### Plattform-Direktiven — Σ 711 (unbekannt: 0)
+### Plattform-Direktiven — Σ 694 (unbekannt: 0)
 
 _Dieser Abschnitt listet die plattformspezifischen Platzhalter in den Erklärseiten, die ein generischer IG Publisher nicht versteht und die daher umgesetzt werden müssen._
 
@@ -43,13 +45,13 @@ _Dieser Abschnitt listet die plattformspezifischen Platzhalter in den Erklärsei
 ```mermaid
 %%{init: {'theme':'base','themeVariables':{"pie1": "#4E79A7", "pie2": "#F28E2B", "pie3": "#59A14F", "pie4": "#E15759", "pie5": "#76B7B2", "pie6": "#EDC948", "pie7": "#B07AA1", "pie8": "#FF9DA7", "pie9": "#9C755F", "pie10": "#BAB0AC", "pieOpacity": "1", "pieSectionTextColor": "#1A1A1A", "pieTitleTextSize": "18px"}}}%%
 pie showData title Direktiven
-    "tabs" : 312
-    "fql-at" : 195
-    "json" : 78
-    "tree" : 40
-    "xml" : 39
-    "link" : 39
-    "render-image" : 4
+    "tabs" : 304
+    "fql-at" : 190
+    "json" : 79
+    "tree" : 39
+    "xml" : 38
+    "link" : 38
+    "render-image" : 2
     "page-title" : 2
     "index-root" : 1
     "render-resource" : 1
@@ -61,13 +63,13 @@ pie showData title Direktiven
 
 | Direktive | Anzahl |
 |---|---|
-| tabs | 312 |
-| fql-at | 195 |
-| json | 78 |
-| tree | 40 |
-| xml | 39 |
-| link | 39 |
-| render-image | 4 |
+| tabs | 304 |
+| fql-at | 190 |
+| json | 79 |
+| tree | 39 |
+| xml | 38 |
+| link | 38 |
+| render-image | 2 |
 | page-title | 2 |
 | index-root | 1 |
 | render-resource | 1 |
@@ -82,15 +84,15 @@ _Linguistische Kennzahlen zum Textumfang (Wörter je Seite, Durchschnitt) sowie 
 
 | Kennzahl | Wert |
 |---|---|
-| Inhalts-Seiten | 49 |
-| Wörter gesamt | 7796 |
-| Ø Wörter / Seite | 159,1 |
-| Median Wörter / Seite | 142 |
-| kürzeste / längste Seite | 85 / 652 Wörter |
-| doppelte Inhaltsblöcke | 8 |
-| identische Seiten (Gruppen) | 1 |
-| Bilder nicht referenziert | 0 von 1 |
-| Beispiele nicht in Narrativen | 0 von 0 |
+| Inhalts-Seiten | 47 |
+| Wörter gesamt | 8249 |
+| Ø Wörter / Seite | 175,5 |
+| Median Wörter / Seite | 147 |
+| kürzeste / längste Seite | 85 / 602 Wörter |
+| doppelte Inhaltsblöcke | 6 |
+| identische Seiten (Gruppen) | 0 |
+| Bilder nicht referenziert | 1 von 2 |
+| Beispiele nicht in Narrativen | 24 von 63 |
 
 </div>
 
@@ -105,13 +107,13 @@ _Gezählte Reife-Komponenten nebeneinander: Status, Vollständigkeit der Dokumen
 | Komponente | Wert |
 |---|---|
 | Status | active |
-| Doku-Vollständigkeit (Inhalt vs. Stubs) | 86 % |
-| Beispiel-Abdeckung Profile | 0 % (0/50) |
+| Doku-Vollständigkeit (Inhalt vs. Stubs) | 84 % |
+| Beispiel-Abdeckung Profile | 79 % (38/48) |
 | Governance (CI · ig.ini · publication · devcontainer) | 25/100 |
 
 </div>
 
-**Profile ohne Beispiel (50):** `MII_PR_Lungenfunktion_Bodyplethysmographie`, `MII_PR_Lungenfunktion_Bodyplethysmographie_Messung`, `MII_PR_Lungenfunktion_FRC`, `MII_PR_Lungenfunktion_RVL`, `MII_PR_Lungenfunktion_RVL_TLC`, `MII_PR_Lungenfunktion_R`, `MII_PR_Lungenfunktion_TLC`, `MII_PR_Lungenfunktion_sG_Total`, `MII_PR_Lungenfunktion_R_Effektiv`, `MII_PR_Lungenfunktion_R_Spezifisch`, `MII_PR_Lungenfunktion_Befund`, `MII_PR_Lungenfunktion_Diffusion_Messung`, `MII_PR_Lungenfunktion_Diffusion`, `MII_PR_Lungenfunktion_DLCO`, `MII_PR_Lungenfunktion_DLCOc`, `MII_PR_Lungenfunktion_Hb`, `MII_PR_Lungenfunktion_KCO`, `MII_PR_Lungenfunktion_KCOc`, `MII_PR_Lungenfunktion_VA`, `MII_PR_Lungenfunktion_1_Viskositaet`, `MII_PR_Lungenfunktion_Diffusionskapzitaet`, `MII_PR_Lungenfunktion_Fluss`, `MII_PR_Lungenfunktion_Prozent`, `MII_PR_Lungenfunktion_Widerstand`, `MII_PR_Lungenfunktion_Transferkoeffizient`, `MII_PR_Lungenfunktion_Viskositaet`, `MII_PR_Lungenfunktion_Volumen`, `MII_PR_Lungenfunktion_Gewicht`, `MII_PR_Lungenfunktion_Dosis_Gabe`, `MII_PR_Lungenfunktion_Methacholine`, `MII_PR_Lungenfunktion_Dosis`, `MII_PR_Lungenfunktion_Provokationstest_Messung`, `MII_PR_Lungenfunktion_Provokationstest`, `MII_PR_Lungenfunktion_BF`, `MII_PR_Lungenfunktion_FEV`, `MII_PR_Lungenfunktion_FEV1_VC`, `MII_PR_Lungenfunktion_FEV_FVC`, `MII_PR_Lungenfunktion_FIV`, `MII_PR_Lungenfunktion_FVC`, `MII_PR_Lungenfunktion_IC`, `MII_PR_Lungenfunktion_MEF`, `MII_PR_Lungenfunktion_PEF`, `MII_PR_Lungenfunktion_RV`, `MII_PR_Lungenfunktion_VC`, `MII_PR_Lungenfunktion_Spirometrie`, `MII_PR_Lungenfunktion_Spirometrie_Messung`, `MII_PR_Lungenfunktion_Umgebung`, `MII_PR_Lungenfunktion_Luftfeuchtigkeit`, `MII_PR_Lungenfunktion_Lufttemperatur`, `MII_PR_Lungenfunktion_CO2_Konzentration`
+**Profile ohne Beispiel (10):** `MII_PR_Lungenfunktion_Befund`, `MII_PR_Lungenfunktion_1_Viskositaet`, `MII_PR_Lungenfunktion_Diffusionskapzitaet`, `MII_PR_Lungenfunktion_Fluss`, `MII_PR_Lungenfunktion_Prozent`, `MII_PR_Lungenfunktion_Widerstand`, `MII_PR_Lungenfunktion_Transferkoeffizient`, `MII_PR_Lungenfunktion_Viskositaet`, `MII_PR_Lungenfunktion_Volumen`, `MII_PR_Lungenfunktion_Gewicht`
 
 ## Strategie: Wiederverwendung, Lock-in & Zukunftssicherheit
 
@@ -121,12 +123,12 @@ _Strategische Kennzahlen: Bindung an die Quellplattform (Lock-in), Anteil standa
 
 | Kennzahl | Wert |
 |---|---|
-| Hersteller-Lock-in | 100/100 (hoch) · 14,5 Direktiven/Seite |
+| Hersteller-Lock-in | 100/100 (hoch) · 14,8 Direktiven/Seite |
 | Standard-Terminologie-Anteil | 100 % (SNOMED CT, LOINC, ICD-10, UCUM, ATC) |
-| Wiederverwendung externer Profile (Parents) | 46 % (23 von 50 Profil-Parents extern; abstrakte LM-Basistypen ausgeschlossen) |
+| Wiederverwendung externer Profile (Parents) | 48 % (23 von 48 Profil-Parents extern; abstrakte LM-Basistypen ausgeschlossen) |
 | FHIR-Version | R4 — aktuell verbreitet |
 | Dependency-Veraltung | 0 veraltet (Heuristik) |
-| Pflege-Kadenz | 89.8 Commits/Jahr · letzter Commit vor 56 Tagen |
+| Pflege-Kadenz | 96.5 Commits/Jahr · letzter Commit vor 0 Tagen |
 
 </div>
 
@@ -144,7 +146,7 @@ _Entscheidungsrelevante Risiken für die Freigabe: Terminologie-Lizenzen, unterd
 | Unterdrückte QA-Warnungen | 0 (davon 0 breit) → keine |
 | Datenschutz-Seite (Substanz) | fehlt/nur Stub (0 Wörter) |
 | PII-artige Beispieldaten | keine erkannt |
-| Bus-Faktor (Wissenskonzentration) | 73 % Top-Autor → mittel |
+| Bus-Faktor (Wissenskonzentration) | 71 % Top-Autor → mittel |
 | Breaking-Change-Risiko ggü. Vorversion | — (nur per Build/Vorversions-Diff) |
 
 </div>
@@ -157,14 +159,14 @@ _Je Themenbereich der gemessene Befund und eine neutrale Einordnung, was er übe
 
 | Bereich | Befund | Einordnung |
 |---|---|---|
-| Artefakte (FSH) | 84 publiziert, FSH vorhanden | Zählt die publizierten Konformitätsressourcen und ob FSH-Quelltext vorliegt. FSH-Quellen machen den Bestand direkt les-, diff- und weiterverarbeitbar; ohne sie ist nur das generierte JSON/XML die Quelle. |
-| Narrative | 49 Inhalts-Seiten, Format source | Anzahl und Format der Erklärseiten (source = Plattformformat, target = IG-Publisher-Format). Das Format bestimmt, welche Werkzeuge die Seiten unverändert verarbeiten können. |
-| Direktiven | 711 (0 unbekannt) | Vorkommen plattformspezifischer Platzhalter/Tags, die nur die Quellplattform interpretiert. Je mehr davon, desto stärker ist die Darstellung an die Plattform gebunden (vgl. Lock-in-Kennzahl). |
-| Dependencies | 4 (0 floating) | Deklarierte Paket-Abhängigkeiten und ihr Pinning. Floating-Einträge folgen automatisch neuen Versionen und machen Builds weniger reproduzierbar — der Wert zeigt, wie reproduzierbar der aktuelle Stand ist. |
+| Artefakte (FSH) | 145 publiziert, FSH vorhanden | Zählt die publizierten Konformitätsressourcen und ob FSH-Quelltext vorliegt. FSH-Quellen machen den Bestand direkt les-, diff- und weiterverarbeitbar; ohne sie ist nur das generierte JSON/XML die Quelle. |
+| Narrative | 47 Inhalts-Seiten, Format source | Anzahl und Format der Erklärseiten (source = Plattformformat, target = IG-Publisher-Format). Das Format bestimmt, welche Werkzeuge die Seiten unverändert verarbeiten können. |
+| Direktiven | 694 (0 unbekannt) | Vorkommen plattformspezifischer Platzhalter/Tags, die nur die Quellplattform interpretiert. Je mehr davon, desto stärker ist die Darstellung an die Plattform gebunden (vgl. Lock-in-Kennzahl). |
+| Dependencies | 4 (3 floating) | Deklarierte Paket-Abhängigkeiten und ihr Pinning. Floating-Einträge folgen automatisch neuen Versionen und machen Builds weniger reproduzierbar — der Wert zeigt, wie reproduzierbar der aktuelle Stand ist. |
 | Mehrsprachigkeit | FSH-Übersetzung ja, Supplements 0 | Ob Übersetzungen in den FSH-Quellen (translation-Extensions) und/oder als Publisher-Supplements vorliegen. Die beiden Mechanismen decken unterschiedliche Textarten ab; der Wert zeigt den vorhandenen Stand, nicht den Bedarf. |
 | Pflichtseiten | 0/13 im Zielformat | Wie viele Seiten des hinterlegten Pflicht-Rasters (mandatory_pages in dieser Datei) im Zielformat existieren. Die Aussagekraft hängt vom Raster ab: Nutzt ein Guide legitim ein anderes Seitenraster, wird das Raster korrigiert — nicht die Seiten als fehlend gewertet. |
 | QC-Regeln | 8 definiert | Anzahl der im Projekt definierten Qualitätsregeln (qc/custom.rules.yaml). Statisch wird nur die Definition gezählt; Verletzungen zeigt erst der Qualitätslauf eines Builds. |
-| Metadaten/Config | id mii-ig-lungenfunktion, v2026.0.0 | Kern-Identität (id, Version) wie in sushi-config.yaml/package.json deklariert; die vollständigen Identitätsfelder stehen im Anhang. |
+| Metadaten/Config | id mii-ig-lungenfunktion, v2027.0.0-ballot | Kern-Identität (id, Version) wie in sushi-config.yaml/package.json deklariert; die vollständigen Identitätsfelder stehen im Anhang. |
 
 </div>
 
@@ -176,13 +178,13 @@ _Dieser Abschnitt ordnet jedem Direktiven-Typ sein dokumentiertes Standard-Gegen
 
 | Direktive | Anzahl | Was es tut | Standard-Gegenstück (IG Publisher) |
 |---|---|---|---|
-| tabs | 312 | Gruppiert mehrere Inhalte (z.B. Darstellung, XML, JSON) in umschaltbare Reiter. | Die einzelnen Reiterinhalte durch die jeweils passenden generierten Anzeige-Fragmente (Struktur, XML, JSON) ersetzen; eine eigene Reiter-Mechanik ist meist nicht nötig. |
-| fql-at | 195 | Markiert einen Abfrage-Codeblock in besonderer Schreibweise (mit @-Präfix). | Wie einen normalen Abfrageblock behandeln und durch ein generiertes Tabellen-Fragment oder eine statische Tabelle ersetzen. |
-| json | 78 | Zeigt eine Ressource oder ein Beispiel in JSON-Darstellung an. | Durch das vom IG Publisher erzeugte JSON-Anzeige-Fragment ersetzen. |
-| tree | 40 | Zeigt die Struktur eines Profils/einer Extension als aufklappbaren Strukturbaum an. | Durch das vom IG Publisher erzeugte Struktur-Fragment ersetzen (Snapshot- oder Differential-Ansicht bzw. Element-Wörterbuch). |
-| xml | 39 | Zeigt eine Ressource oder ein Beispiel in XML-Darstellung an. | Durch das vom IG Publisher erzeugte XML-Anzeige-Fragment ersetzen. |
-| link | 39 | Erzeugt einen Verweis auf ein einzelnes Artefakt (z.B. dessen Übersichtsseite). | Durch einen normalen Markdown-Link auf die generierte Artefaktseite ersetzen (Form Typ-id.html). |
-| render-image | 4 | Bindet ein Bild bzw. eine Grafik in die Seite ein. | Das Bild in das Bilderverzeichnis des Ziel-IG (input/images/) legen und über ein normales Markdown- oder HTML-Bild einbinden. |
+| tabs | 304 | Gruppiert mehrere Inhalte (z.B. Darstellung, XML, JSON) in umschaltbare Reiter. | Die einzelnen Reiterinhalte durch die jeweils passenden generierten Anzeige-Fragmente (Struktur, XML, JSON) ersetzen; eine eigene Reiter-Mechanik ist meist nicht nötig. |
+| fql-at | 190 | Markiert einen Abfrage-Codeblock in besonderer Schreibweise (mit @-Präfix). | Wie einen normalen Abfrageblock behandeln und durch ein generiertes Tabellen-Fragment oder eine statische Tabelle ersetzen. |
+| json | 79 | Zeigt eine Ressource oder ein Beispiel in JSON-Darstellung an. | Durch das vom IG Publisher erzeugte JSON-Anzeige-Fragment ersetzen. |
+| tree | 39 | Zeigt die Struktur eines Profils/einer Extension als aufklappbaren Strukturbaum an. | Durch das vom IG Publisher erzeugte Struktur-Fragment ersetzen (Snapshot- oder Differential-Ansicht bzw. Element-Wörterbuch). |
+| xml | 38 | Zeigt eine Ressource oder ein Beispiel in XML-Darstellung an. | Durch das vom IG Publisher erzeugte XML-Anzeige-Fragment ersetzen. |
+| link | 38 | Erzeugt einen Verweis auf ein einzelnes Artefakt (z.B. dessen Übersichtsseite). | Durch einen normalen Markdown-Link auf die generierte Artefaktseite ersetzen (Form Typ-id.html). |
+| render-image | 2 | Bindet ein Bild bzw. eine Grafik in die Seite ein. | Das Bild in das Bilderverzeichnis des Ziel-IG (input/images/) legen und über ein normales Markdown- oder HTML-Bild einbinden. |
 | page-title | 2 | Setzt an dieser Stelle den Titel der Seite, der aus den Seiteneinstellungen gezogen wird. | Entfällt ersatzlos - Seitentitel und Überschrift steuert man zentral über die Seiten- und Menükonfiguration. |
 | index-root | 1 | Erzeugt an dieser Stelle ein automatisches Inhaltsverzeichnis bzw. die Wurzel der Navigationsstruktur. | Entfällt - Navigation und Inhaltsverzeichnis erzeugt der IG Publisher selbst aus der konfigurierten Seitenstruktur. |
 | render-resource | 1 | Rendert eine vollständige FHIR-Ressource (z.B. ein CapabilityStatement) in die Seite hinein. | Meist entfernen, da der IG Publisher für jedes Artefakt automatisch eine eigene Seite erzeugt; alternativ das passende vorgefertigte Anzeige-Fragment einbinden. |
@@ -204,7 +206,7 @@ _Im Anhang steht jeder Einzelwert mit seiner Quelle, damit man die Kennzahlen na
 | packageId | de.medizininformatikinitiative.kerndatensatz.lungenfunktion | sushi-config.yaml / package.json |
 | name | MII_IG_Lungenfunktion | sushi-config.yaml / package.json |
 | title |  | sushi-config.yaml / package.json |
-| version | 2026.0.0 | sushi-config.yaml / package.json |
+| version | 2027.0.0-ballot | sushi-config.yaml / package.json |
 | status | active | sushi-config.yaml / package.json |
 | fhirVersion | 4.0.1 | sushi-config.yaml / package.json |
 | license |  | sushi-config.yaml / package.json |
@@ -221,9 +223,9 @@ _Die FHIR-Pakete, auf denen der IG aufbaut, samt Version und ob diese fest oder 
 
 | Package | Version | Pin |
 |---|---|---|
-| de.medizininformatikinitiative.kerndatensatz.meta | 2026.0.0 | gepinnt |
-| de.medizininformatikinitiative.kerndatensatz.base | 2026.0.0 | gepinnt |
-| de.basisprofil.r4 | 1.5.4 | gepinnt |
+| de.medizininformatikinitiative.kerndatensatz.meta | 2026.0.x | floating ⚠ |
+| de.medizininformatikinitiative.kerndatensatz.base | 2026.0.x | floating ⚠ |
+| de.basisprofil.r4 | 1.5.x | floating ⚠ |
 | hl7.fhir.r4.core | 4.0.1 | gepinnt |
 
 </div>
@@ -252,6 +254,69 @@ _Jedes definierte Artefakt mit Typ, Name und Fundort in den Quelldateien._
 | RuleSet | SupportInteraction |  | input/fsh/capabilitystatements/CapabilityStatement.fsh:17 |
 | RuleSet | SupportSearchParam |  | input/fsh/capabilitystatements/CapabilityStatement.fsh:23 |
 | Instance | mii-cps-lungenfunktion-capabilitystatement | CapabilityStatement | input/fsh/capabilitystatements/CapabilityStatement.fsh:31 |
+| Instance | mii-exa-lungenfunktion-bf | MII_PR_Lungenfunktion_BF | input/fsh/instances/Example-BF.fsh:1 |
+| Instance | mii-exa-lungenfunktion-bodyplethysmographie-befund | MII_PR_Lungenfunktion_Bodyplethysmographie | input/fsh/instances/Example-BodyplethysmograghyReport.fsh:1 |
+| Instance | mii-exa-lungenfunktion-bodyplethysmographie-messung | MII_PR_Lungenfunktion_Bodyplethysmographie_Messung | input/fsh/instances/Example-BodyplethysmographyProcedure.fsh:1 |
+| Instance | mii-exa-lungenfunktion-co2 | MII_PR_Lungenfunktion_CO2_Konzentration | input/fsh/instances/Example-CO2.fsh:1 |
+| Instance | mii-exa-lungenfunktion-dlco | MII_PR_Lungenfunktion_DLCO | input/fsh/instances/Example-DLCO.fsh:1 |
+| Instance | mii-exa-lungenfunktion-dlcoc | MII_PR_Lungenfunktion_DLCOc | input/fsh/instances/Example-DLCOc.fsh:1 |
+| Instance | mii-exa-lungenfunktion-diffusion-messung | MII_PR_Lungenfunktion_Diffusion_Messung | input/fsh/instances/Example-DiffusionProcedure.fsh:1 |
+| Instance | mii-exa-lungenfunktion-diffusion-befund | MII_PR_Lungenfunktion_Diffusion | input/fsh/instances/Example-DiffusionReport.fsh:1 |
+| Instance | mii-exa-lungenfunktion-dosis-kumuliert | MII_PR_Lungenfunktion_Dosis | input/fsh/instances/Example-Dose-kumulated.fsh:1 |
+| Instance | mii-exa-lungenfunktion-dosis-schwellwert | MII_PR_Lungenfunktion_Dosis | input/fsh/instances/Example-Dose-threshold.fsh:1 |
+| Instance | mii-exa-lungenfunktion-dosis-gabe-1 | MII_PR_Lungenfunktion_Dosis_Gabe | input/fsh/instances/Example-DoseAdministration-1.fsh:1 |
+| Instance | mii-exa-lungenfunktion-dosis-gabe-2 | MII_PR_Lungenfunktion_Dosis_Gabe | input/fsh/instances/Example-DoseAdministration-2.fsh:1 |
+| Instance | mii-exa-lungenfunktion-dosis-gabe-3 | MII_PR_Lungenfunktion_Dosis_Gabe | input/fsh/instances/Example-DoseAdministration-3.fsh:1 |
+| Instance | mii-exa-lungenfunktion-erv | MII_PR_Lungenfunktion_RV | input/fsh/instances/Example-ERV.fsh:1 |
+| Instance | mii-exa-lungenfunktion-fev1 | MII_PR_Lungenfunktion_FEV | input/fsh/instances/Example-FEV.fsh:1 |
+| Instance | mii-exa-lungenfunktion-fev1-fvc | MII_PR_Lungenfunktion_FEV_FVC | input/fsh/instances/Example-FEV1FVC.fsh:1 |
+| Instance | mii-exa-lungenfunktion-frc | MII_PR_Lungenfunktion_FRC | input/fsh/instances/Example-FRC.fsh:1 |
+| Instance | mii-exa-lungenfunktion-fvc | MII_PR_Lungenfunktion_FVC | input/fsh/instances/Example-FVC.fsh:1 |
+| Instance | mii-exa-lungenfunktion-hb | MII_PR_Lungenfunktion_Hb | input/fsh/instances/Example-Hb.fsh:1 |
+| Instance | mii-exa-lungenfunktion-luftfeuchtigkeit | MII_PR_Lungenfunktion_Luftfeuchtigkeit | input/fsh/instances/Example-Hum.fsh:1 |
+| Instance | mii-exa-lungenfunktion-ic | MII_PR_Lungenfunktion_IC | input/fsh/instances/Example-IC.fsh:1 |
+| Instance | mii-exa-lungenfunktion-kco | MII_PR_Lungenfunktion_KCO | input/fsh/instances/Example-KCO.fsh:1 |
+| Instance | mii-exa-lungenfunktion-kcoc | MII_PR_Lungenfunktion_KCOc | input/fsh/instances/Example-KCOc.fsh:1 |
+| Instance | mii-exa-lungenfunktion-location | MII_PR_Lungenfunktion_Umgebung | input/fsh/instances/Example-Location.fsh:1 |
+| Instance | mii-exa-lungenfunktion-mef25 | MII_PR_Lungenfunktion_MEF | input/fsh/instances/Example-MEF25.fsh:1 |
+| Instance | mii-exa-lungenfunktion-mef50 | MII_PR_Lungenfunktion_MEF | input/fsh/instances/Example-MEF50.fsh:1 |
+| Instance | mii-exa-lungenfunktion-mef75 | MII_PR_Lungenfunktion_MEF | input/fsh/instances/Example-MEF75.fsh:1 |
+| Instance | mii-exa-lungenfunktion-methacholine | MII_PR_Lungenfunktion_Methacholine | input/fsh/instances/Example-Methacholin.fsh:1 |
+| Instance | mii-exa-lungenfunktion-pef | MII_PR_Lungenfunktion_PEF | input/fsh/instances/Example-PEF.fsh:1 |
+| Instance | mii-exa-lungenfunktion-fev1-b | MII_PR_Lungenfunktion_FEV | input/fsh/instances/Example-Provocation-FEV1-B.fsh:1 |
+| Instance | mii-exa-lungenfunktion-fev1-p3 | MII_PR_Lungenfunktion_FEV | input/fsh/instances/Example-Provocation-FEV1-P3.fsh:1 |
+| Instance | mii-exa-lungenfunktion-fev1-p4 | MII_PR_Lungenfunktion_FEV | input/fsh/instances/Example-Provocation-FEV1-P4.fsh:1 |
+| Instance | mii-exa-lungenfunktion-fev1-p5 | MII_PR_Lungenfunktion_FEV | input/fsh/instances/Example-Provocation-FEV1-P5.fsh:1 |
+| Instance | mii-exa-lungenfunktion-frc-b | MII_PR_Lungenfunktion_FRC | input/fsh/instances/Example-Provocation-FRC-B.fsh:1 |
+| Instance | mii-exa-lungenfunktion-frc-p3 | MII_PR_Lungenfunktion_FRC | input/fsh/instances/Example-Provocation-FRC-P3.fsh:1 |
+| Instance | mii-exa-lungenfunktion-frc-p4 | MII_PR_Lungenfunktion_FRC | input/fsh/instances/Example-Provocation-FRC-P4.fsh:1 |
+| Instance | mii-exa-lungenfunktion-frc-p5 | MII_PR_Lungenfunktion_FRC | input/fsh/instances/Example-Provocation-FRC-P5.fsh:1 |
+| Instance | mii-exa-lungenfunktion-pef-b | MII_PR_Lungenfunktion_PEF | input/fsh/instances/Example-Provocation-PEF-B.fsh:1 |
+| Instance | mii-exa-lungenfunktion-pef-p3 | MII_PR_Lungenfunktion_PEF | input/fsh/instances/Example-Provocation-PEF-P3.fsh:1 |
+| Instance | mii-exa-lungenfunktion-pef-p4 | MII_PR_Lungenfunktion_PEF | input/fsh/instances/Example-Provocation-PEF-P4.fsh:1 |
+| Instance | mii-exa-lungenfunktion-pef-p5 | MII_PR_Lungenfunktion_PEF | input/fsh/instances/Example-Provocation-PEF-P5.fsh:1 |
+| Instance | mii-exa-lungenfunktion-r-b | MII_PR_Lungenfunktion_R | input/fsh/instances/Example-Provocation-R-B.fsh:1 |
+| Instance | mii-exa-lungenfunktion-r-p3 | MII_PR_Lungenfunktion_R | input/fsh/instances/Example-Provocation-R-P3.fsh:1 |
+| Instance | mii-exa-lungenfunktion-r-p4 | MII_PR_Lungenfunktion_R | input/fsh/instances/Example-Provocation-R-P4.fsh:1 |
+| Instance | mii-exa-lungenfunktion-r-p5 | MII_PR_Lungenfunktion_R | input/fsh/instances/Example-Provocation-R-P5.fsh:1 |
+| Instance | mii-exa-lungenfunktion-sr-total-b | MII_PR_Lungenfunktion_R_Spezifisch | input/fsh/instances/Example-Provocation-sRtot-B.fsh:1 |
+| Instance | mii-exa-lungenfunktion-sr-total-p3 | MII_PR_Lungenfunktion_R_Spezifisch | input/fsh/instances/Example-Provocation-sRtot-P3.fsh:1 |
+| Instance | mii-exa-lungenfunktion-sr-total-p4 | MII_PR_Lungenfunktion_R_Spezifisch | input/fsh/instances/Example-Provocation-sRtot-P4.fsh:1 |
+| Instance | mii-exa-lungenfunktion-sr-total-p5 | MII_PR_Lungenfunktion_R_Spezifisch | input/fsh/instances/Example-Provocation-sRtot-P5.fsh:1 |
+| Instance | mii-exa-lungenfunktion-provokationstest-messung | MII_PR_Lungenfunktion_Provokationstest_Messung | input/fsh/instances/Example-ProvocationProcedure.fsh:1 |
+| Instance | mii-exa-lungenfunktion-provokationstest-befund | MII_PR_Lungenfunktion_Provokationstest | input/fsh/instances/Example-ProvocationReport.fsh:1 |
+| Instance | mii-exa-lungenfunktion-r | MII_PR_Lungenfunktion_R | input/fsh/instances/Example-R.fsh:1 |
+| Instance | mii-exa-lungenfunktion-rvl | MII_PR_Lungenfunktion_RVL | input/fsh/instances/Example-RVL.fsh:1 |
+| Instance | mii-exa-lungenfunktion-rvl-tlc | MII_PR_Lungenfunktion_RVL_TLC | input/fsh/instances/Example-RVLTLC.fsh:1 |
+| Instance | mii-exa-lungenfunktion-spirometrie-messung | MII_PR_Lungenfunktion_Spirometrie_Messung | input/fsh/instances/Example-SpirometryProcedure.fsh:1 |
+| Instance | mii-exa-lungenfunktion-spirometrie-befund | MII_PR_Lungenfunktion_Spirometrie | input/fsh/instances/Example-SpirometryReport.fsh:1 |
+| Instance | mii-exa-lungenfunktion-tlc | MII_PR_Lungenfunktion_TLC | input/fsh/instances/Example-TLC.fsh:1 |
+| Instance | mii-exa-lungenfunktion-lufttemperatur | MII_PR_Lungenfunktion_Lufttemperatur | input/fsh/instances/Example-Temp.fsh:1 |
+| Instance | mii-exa-lungenfunktion-va | MII_PR_Lungenfunktion_VA | input/fsh/instances/Example-VA.fsh:1 |
+| Instance | mii-exa-lungenfunktion-vc | MII_PR_Lungenfunktion_VC | input/fsh/instances/Example-VC.fsh:1 |
+| Instance | mii-exa-lungenfunktion-sg-total | MII_PR_Lungenfunktion_sG_Total | input/fsh/instances/Example-sGtot.fsh:1 |
+| Instance | mii-exa-lungenfunktion-sr-eff | MII_PR_Lungenfunktion_R_Effektiv | input/fsh/instances/Example-sReff.fsh:1 |
+| Instance | mii-exa-lungenfunktion-sr-total | MII_PR_Lungenfunktion_R_Spezifisch | input/fsh/instances/Example-sRtot.fsh:1 |
 | Logical | MII_LM_Lungenfunktion |  | input/fsh/logicals/LogicalModelLungenfunktion.fsh:3 |
 | Mapping | Lungenfunktion-LogicalModel |  | input/fsh/logicals/LogicalModelLungenfunktion.fsh:94 |
 | Profile | MII_PR_Lungenfunktion_Bodyplethysmographie |  | input/fsh/profiles/Bodyplethysmographie/BodyplethymograhpyReport.fsh:2 |
@@ -289,9 +354,7 @@ _Jedes definierte Artefakt mit Typ, Name und Fundort in den Quelldateien._
 | Profile | MII_PR_Lungenfunktion_Provokationstest |  | input/fsh/profiles/Provakationstest/ProvocationReport.fsh:2 |
 | Profile | MII_PR_Lungenfunktion_BF |  | input/fsh/profiles/Spirometrie/Observation_BF.fsh:2 |
 | Profile | MII_PR_Lungenfunktion_FEV |  | input/fsh/profiles/Spirometrie/Observation_FEV.fsh:2 |
-| Profile | MII_PR_Lungenfunktion_FEV1_VC |  | input/fsh/profiles/Spirometrie/Observation_FEV1_VC.fsh:2 |
 | Profile | MII_PR_Lungenfunktion_FEV_FVC |  | input/fsh/profiles/Spirometrie/Observation_FEV_FVC.fsh:2 |
-| Profile | MII_PR_Lungenfunktion_FIV |  | input/fsh/profiles/Spirometrie/Observation_FIV1.fsh:2 |
 | Profile | MII_PR_Lungenfunktion_FVC |  | input/fsh/profiles/Spirometrie/Observation_FVC.fsh:2 |
 | Profile | MII_PR_Lungenfunktion_IC |  | input/fsh/profiles/Spirometrie/Observation_IC.fsh:2 |
 | Profile | MII_PR_Lungenfunktion_MEF |  | input/fsh/profiles/Spirometrie/Observation_MEF.fsh:2 |
@@ -318,9 +381,9 @@ _Jedes definierte Artefakt mit Typ, Name und Fundort in den Quelldateien._
 | RuleSet | AddSnomedCodingTranslation |  | input/fsh/rulesets/translation.fsh:8 |
 | RuleSet | AddLoincCodingTranslation |  | input/fsh/rulesets/translation.fsh:16 |
 | RuleSet | AddObservationTranslation |  | input/fsh/rulesets/translation.fsh:24 |
-| RuleSet | AddDiagnosticReportTranslation |  | input/fsh/rulesets/translation.fsh:144 |
-| RuleSet | AddProcedureTranslation |  | input/fsh/rulesets/translation.fsh:229 |
-| RuleSet | AddObservationTranslationAmbient |  | input/fsh/rulesets/translation.fsh:243 |
+| RuleSet | AddDiagnosticReportTranslation |  | input/fsh/rulesets/translation.fsh:138 |
+| RuleSet | AddProcedureTranslation |  | input/fsh/rulesets/translation.fsh:223 |
+| RuleSet | AddObservationTranslationAmbient |  | input/fsh/rulesets/translation.fsh:237 |
 | RuleSet | Version |  | input/fsh/rulesets/version.fsh:1 |
 | RuleSet | PR_CS_VS_Version |  | input/fsh/rulesets/version.fsh:4 |
 | ValueSet | MII_VS_Lufu_SCT_Technique |  | input/fsh/valuesets/ValueSet-LuFu-SCT_Technique.fsh:1 |
@@ -358,7 +421,7 @@ _Jedes definierte Artefakt mit Typ, Name und Fundort in den Quelldateien._
 
 </div>
 
-## Narrative-Seiten (49 Inhalt / 57 gesamt)
+## Narrative-Seiten (47 Inhalt / 56 gesamt)
 
 _Die Erklärseiten des IG mit Umfang und der Angabe, ob es sich um Inhalts- oder reine Platzhalterseiten handelt._
 
@@ -366,63 +429,62 @@ _Die Erklärseiten des IG mit Umfang und der Angabe, ob es sich um Inhalts- oder
 
 | Datei | Wörter | Format | Stub? |
 |---|---|---|---|
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/BeschreibungModul.page.md | 652 | source |  |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/KontextimGesamtprojektBezgezuanderenModulen.page.md | 314 | source |  |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/Index.page.md | 270 | source |  |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/AnwendungsflleInformationsmodell/BeschreibungvonSzenarienfrdieAnwendungderModule.page.md | 247 | source |  |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/AnwendungsflleInformationsmodell/UML/Index.page.md | 196 | source |  |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/Referenzen.page.md | 177 | source |  |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Bodyplethysmographie/Observation/RVLTLC.page.md | 145 | source |  |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Umgebungsvariablen/Luftfeuchtigkeit.page.md | 145 | source |  |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Bodyplethysmographie/Observation/R_tot.page.md | 143 | source |  |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Bodyplethysmographie/Observation/sG_tot.page.md | 143 | source |  |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Bodyplethysmographie/Observation/sR_eff.page.md | 143 | source |  |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Bodyplethysmographie/Observation/sR_tot.page.md | 143 | source |  |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Bodyplethysmographie/Procedure.page.md | 143 | source |  |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Diffusion/Procedure.page.md | 143 | source |  |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Provokationstest/Procedure.page.md | 143 | source |  |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Procedure.page.md | 143 | source |  |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Umgebungsvariablen/CO2-Konzentration.page.md | 143 | source |  |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Umgebungsvariablen/Lufttemperatur.page.md | 143 | source |  |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Umgebungsvariablen/Umgebung.page.md | 143 | source |  |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Bodyplethysmographie/Observation/RVL.page.md | 142 | source |  |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Bodyplethysmographie/Report.page.md | 142 | source |  |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Diffusion/Report.page.md | 142 | source |  |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Provokationstest/Observation/FEV.page.md | 142 | source |  |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Provokationstest/Report.page.md | 142 | source |  |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Observation/FEV.page.md | 142 | source |  |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Observation/FEVFVC.page.md | 142 | source |  |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Observation/FEVVC.page.md | 142 | source |  |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Observation/IC.page.md | 142 | source |  |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Report.page.md | 142 | source |  |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Bodyplethysmographie/Observation/FRC.page.md | 141 | source |  |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Bodyplethysmographie/Observation/TLC.page.md | 141 | source |  |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Diffusion/Observation/DLCO.page.md | 141 | source |  |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Diffusion/Observation/DLCOc.page.md | 141 | source |  |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Diffusion/Observation/Hb.page.md | 141 | source |  |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Diffusion/Observation/KCO.page.md | 141 | source |  |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Diffusion/Observation/KCOc.page.md | 141 | source |  |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Diffusion/Observation/TA.page.md | 141 | source |  |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Diffusion/Observation/VA.page.md | 141 | source |  |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Observation/BF.page.md | 140 | source |  |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Observation/FIV.page.md | 140 | source |  |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Observation/FVC.page.md | 140 | source |  |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Observation/MEF.page.md | 140 | source |  |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Observation/PEF.page.md | 140 | source |  |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Observation/RV.page.md | 140 | source |  |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Observation/VC.page.md | 140 | source |  |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/BeschreibungModul.page.md | 602 | source |  |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/KontextimGesamtprojektBezgezuanderenModulen.page.md | 598 | source |  |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/AnwendungsflleInformationsmodell/BeschreibungvonSzenarienfrdieAnwendungderModule.page.md | 471 | source |  |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/Index.page.md | 327 | source |  |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Observation/MEF.page.md | 182 | source |  |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Observation/FEVFVC.page.md | 168 | source |  |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Diffusion/Observation/KCOc.page.md | 167 | source |  |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Provokationstest/Dosis.page.md | 160 | source |  |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Diffusion/Observation/DLCOc.page.md | 157 | source |  |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Diffusion/Observation/KCO.page.md | 157 | source |  |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Bodyplethysmographie/Report.page.md | 153 | source |  |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Diffusion/Report.page.md | 153 | source |  |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Provokationstest/Report.page.md | 153 | source |  |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Report.page.md | 153 | source |  |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Bodyplethysmographie/Observation/RVLTLC.page.md | 151 | source |  |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Bodyplethysmographie/Observation/sG_tot.page.md | 149 | source |  |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Umgebungsvariablen/Umgebung.page.md | 149 | source |  |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Diffusion/Observation/DLCO.page.md | 148 | source |  |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Bodyplethysmographie/Observation/sR_eff.page.md | 147 | source |  |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Bodyplethysmographie/Observation/sR_tot.page.md | 147 | source |  |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Bodyplethysmographie/Procedure.page.md | 147 | source |  |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Diffusion/Procedure.page.md | 147 | source |  |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Provokationstest/Procedure.page.md | 147 | source |  |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Observation/FEV.page.md | 147 | source |  |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Procedure.page.md | 147 | source |  |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Umgebungsvariablen/CO2-Konzentration.page.md | 147 | source |  |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Umgebungsvariablen/Luftfeuchtigkeit.page.md | 147 | source |  |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Umgebungsvariablen/Lufttemperatur.page.md | 147 | source |  |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Bodyplethysmographie/Observation/R_tot.page.md | 146 | source |  |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Bodyplethysmographie/Observation/FRC.page.md | 145 | source |  |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Bodyplethysmographie/Observation/TLC.page.md | 145 | source |  |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Diffusion/Observation/VA.page.md | 145 | source |  |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Provokationstest/Provokationsgabe.page.md | 145 | source |  |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Observation/FVC.page.md | 145 | source |  |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Observation/IC.page.md | 145 | source |  |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Bodyplethysmographie/Observation/RVL.page.md | 144 | source |  |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Diffusion/Observation/Hb.page.md | 144 | source |  |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Observation/BF.page.md | 144 | source |  |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Observation/PEF.page.md | 144 | source |  |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Observation/RV.page.md | 144 | source |  |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Observation/VC.page.md | 144 | source |  |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Provokationstest/Medikation.page.md | 143 | source |  |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/AnwendungsflleInformationsmodell/Datensaetze_inkl._Beschreibungen.page.md | 128 | source |  |
 | implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Index.page.md | 120 | source |  |
 | implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/Terminologien.page.md | 117 | source |  |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/AnwendungsflleInformationsmodell/Datensaetze_inkl._Beschreibungen.page.md | 86 | source |  |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/Referenzen.page.md | 108 | source |  |
 | implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/CapabilityStatement.page.md | 85 | source |  |
 | implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/AnwendungsflleInformationsmodell/Index.page.md | 13 | source | ja |
 | implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/Index.page.md | 12 | source | ja |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Bodyplethysmographie/Index.page.md | 5 | source | ja |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Diffusion/Index.page.md | 5 | source | ja |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Provokationstest/Index.page.md | 5 | source | ja |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Index.page.md | 5 | source | ja |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/Release-Notes.page.md | 4 | source | ja |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Umgebungsvariablen/Index.page.md | 3 | source | ja |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Bodyplethysmographie/Index.page.md | 11 | source | ja |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Diffusion/Index.page.md | 11 | source | ja |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Provokationstest/Index.page.md | 11 | source | ja |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Index.page.md | 11 | source | ja |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Umgebungsvariablen/Index.page.md | 11 | source | ja |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/Release-Notes.page.md | 7 | source | ja |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/AnwendungsflleInformationsmodell/UML.page.md | 6 | source | ja |
 
 </div>
 
@@ -436,266 +498,264 @@ _Jede gefundene Direktive mit genauer Fundstelle und Originaltext zur weiteren B
 
 | Fundstelle | Direktive | Text (gekürzt) |
 |---|---|---|
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/AnwendungsflleInformationsmodell/Datensaetze_inkl._Beschreibungen.page.md:7 | tree | {{tree:MII_LM_Lungenfunktion}} |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/AnwendungsflleInformationsmodell/UML/Index.page.md:9 | render-image | {{render:implementation-guides/ImplementationGuide-Common/images/UML_Modul_Bildg |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/AnwendungsflleInformationsmodell/UML/Index.page.md:14 | render-image | {{render:implementation-guides/ImplementationGuide-Common/images/UML_Modul_Bildg |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/BeschreibungModul.page.md:3 | render-image | {{render:implementation-guides/ImplementationGuide-Common/images/Moduluebersicht |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/AnwendungsflleInformationsmodell/Datensaetze_inkl._Beschreibungen.page.md:6 | tree | {{tree:MII_LM_Lungenfunktion}} |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/AnwendungsflleInformationsmodell/UML.page.md:6 | render-image | {{render:implementation-guides/ImplementationGuide-Common/images/UML_Modul_Lufu. |
 | implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/Index.page.md:15 | index-root | {{index:root}} |
 | implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/Release-Notes.page.md:1 | page-title | ## {{page-title}} |
 | implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/CapabilityStatement.page.md:4 | page-title | ## {{page-title}} |
 | implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/CapabilityStatement.page.md:15 | render-resource | {{render:https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunkti |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Bodyplethysmographie/Observation/FRC.page.md:11 | fql-at | @``` |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Bodyplethysmographie/Observation/FRC.page.md:22 | tabs | <tabs> |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Bodyplethysmographie/Observation/FRC.page.md:23 | tree | <tab title="Darstellung">{{tree, buttons}}</tab> |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Bodyplethysmographie/Observation/FRC.page.md:23 | tabs | <tab title="Darstellung">{{tree, buttons}}</tab> |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Bodyplethysmographie/Observation/FRC.page.md:24 | tabs | <tab title="Beschreibung"> |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Bodyplethysmographie/Observation/FRC.page.md:25 | fql-at | @``` |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Bodyplethysmographie/Observation/FRC.page.md:35 | fql-at | @``` |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Bodyplethysmographie/Observation/FRC.page.md:46 | tabs | </tab> |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Bodyplethysmographie/Observation/FRC.page.md:47 | xml | <tab title="XML">{{xml}}</tab> |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Bodyplethysmographie/Observation/FRC.page.md:47 | tabs | <tab title="XML">{{xml}}</tab> |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Bodyplethysmographie/Observation/FRC.page.md:48 | json | <tab title="JSON">{{json}}</tab> |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Bodyplethysmographie/Observation/FRC.page.md:48 | tabs | <tab title="JSON">{{json}}</tab> |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Bodyplethysmographie/Observation/FRC.page.md:49 | link | <tab title="Link">{{link}}</tab> |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Bodyplethysmographie/Observation/FRC.page.md:49 | tabs | <tab title="Link">{{link}}</tab> |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Bodyplethysmographie/Observation/FRC.page.md:50 | tabs | </tabs> |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Bodyplethysmographie/Observation/FRC.page.md:54 | fql-at | @``` |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Bodyplethysmographie/Observation/FRC.page.md:71 | fql-at | @``` from CapabilityStatement where url = 'https://www.medizininformatik-initiat |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Bodyplethysmographie/Observation/FRC.page.md:81 | json | {{json:fsh-generated/resources/DiagnosticReport-mii-exa-bildgebung-radiologische |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Bodyplethysmographie/Observation/RVL.page.md:11 | fql-at | @``` |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Bodyplethysmographie/Observation/RVL.page.md:22 | tabs | <tabs> |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Bodyplethysmographie/Observation/RVL.page.md:23 | tree | <tab title="Darstellung">{{tree, buttons}}</tab> |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Bodyplethysmographie/Observation/RVL.page.md:23 | tabs | <tab title="Darstellung">{{tree, buttons}}</tab> |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Bodyplethysmographie/Observation/RVL.page.md:24 | tabs | <tab title="Beschreibung"> |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Bodyplethysmographie/Observation/RVL.page.md:25 | fql-at | @``` |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Bodyplethysmographie/Observation/RVL.page.md:35 | fql-at | @``` |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Bodyplethysmographie/Observation/RVL.page.md:46 | tabs | </tab> |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Bodyplethysmographie/Observation/RVL.page.md:47 | xml | <tab title="XML">{{xml}}</tab> |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Bodyplethysmographie/Observation/RVL.page.md:47 | tabs | <tab title="XML">{{xml}}</tab> |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Bodyplethysmographie/Observation/RVL.page.md:48 | json | <tab title="JSON">{{json}}</tab> |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Bodyplethysmographie/Observation/RVL.page.md:48 | tabs | <tab title="JSON">{{json}}</tab> |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Bodyplethysmographie/Observation/RVL.page.md:49 | link | <tab title="Link">{{link}}</tab> |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Bodyplethysmographie/Observation/RVL.page.md:49 | tabs | <tab title="Link">{{link}}</tab> |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Bodyplethysmographie/Observation/RVL.page.md:50 | tabs | </tabs> |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Bodyplethysmographie/Observation/RVL.page.md:54 | fql-at | @``` |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Bodyplethysmographie/Observation/RVL.page.md:71 | fql-at | @``` from CapabilityStatement where url = 'https://www.medizininformatik-initiat |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Bodyplethysmographie/Observation/RVL.page.md:81 | json | {{json:fsh-generated/resources/DiagnosticReport-mii-exa-bildgebung-radiologische |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Bodyplethysmographie/Observation/RVLTLC.page.md:11 | fql-at | @``` |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Bodyplethysmographie/Observation/RVLTLC.page.md:22 | tabs | <tabs> |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Bodyplethysmographie/Observation/RVLTLC.page.md:23 | tree | <tab title="Darstellung">{{tree, buttons}}</tab> |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Bodyplethysmographie/Observation/RVLTLC.page.md:23 | tabs | <tab title="Darstellung">{{tree, buttons}}</tab> |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Bodyplethysmographie/Observation/RVLTLC.page.md:24 | tabs | <tab title="Beschreibung"> |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Bodyplethysmographie/Observation/RVLTLC.page.md:25 | fql-at | @``` |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Bodyplethysmographie/Observation/RVLTLC.page.md:35 | fql-at | @``` |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Bodyplethysmographie/Observation/RVLTLC.page.md:46 | tabs | </tab> |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Bodyplethysmographie/Observation/RVLTLC.page.md:47 | xml | <tab title="XML">{{xml}}</tab> |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Bodyplethysmographie/Observation/RVLTLC.page.md:47 | tabs | <tab title="XML">{{xml}}</tab> |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Bodyplethysmographie/Observation/RVLTLC.page.md:48 | json | <tab title="JSON">{{json}}</tab> |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Bodyplethysmographie/Observation/RVLTLC.page.md:48 | tabs | <tab title="JSON">{{json}}</tab> |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Bodyplethysmographie/Observation/RVLTLC.page.md:49 | link | <tab title="Link">{{link}}</tab> |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Bodyplethysmographie/Observation/RVLTLC.page.md:49 | tabs | <tab title="Link">{{link}}</tab> |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Bodyplethysmographie/Observation/RVLTLC.page.md:50 | tabs | </tabs> |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Bodyplethysmographie/Observation/RVLTLC.page.md:54 | fql-at | @``` |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Bodyplethysmographie/Observation/RVLTLC.page.md:71 | fql-at | @``` from CapabilityStatement where url = 'https://www.medizininformatik-initiat |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Bodyplethysmographie/Observation/RVLTLC.page.md:81 | json | {{json:fsh-generated/resources/DiagnosticReport-mii-exa-bildgebung-radiologische |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Bodyplethysmographie/Observation/R_tot.page.md:11 | fql-at | @``` |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Bodyplethysmographie/Observation/R_tot.page.md:22 | tabs | <tabs> |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Bodyplethysmographie/Observation/R_tot.page.md:23 | tree | <tab title="Darstellung">{{tree, buttons}}</tab> |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Bodyplethysmographie/Observation/R_tot.page.md:23 | tabs | <tab title="Darstellung">{{tree, buttons}}</tab> |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Bodyplethysmographie/Observation/R_tot.page.md:24 | tabs | <tab title="Beschreibung"> |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Bodyplethysmographie/Observation/R_tot.page.md:25 | fql-at | @``` |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Bodyplethysmographie/Observation/R_tot.page.md:35 | fql-at | @``` |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Bodyplethysmographie/Observation/R_tot.page.md:46 | tabs | </tab> |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Bodyplethysmographie/Observation/R_tot.page.md:47 | xml | <tab title="XML">{{xml}}</tab> |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Bodyplethysmographie/Observation/R_tot.page.md:47 | tabs | <tab title="XML">{{xml}}</tab> |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Bodyplethysmographie/Observation/R_tot.page.md:48 | json | <tab title="JSON">{{json}}</tab> |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Bodyplethysmographie/Observation/R_tot.page.md:48 | tabs | <tab title="JSON">{{json}}</tab> |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Bodyplethysmographie/Observation/R_tot.page.md:49 | link | <tab title="Link">{{link}}</tab> |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Bodyplethysmographie/Observation/R_tot.page.md:49 | tabs | <tab title="Link">{{link}}</tab> |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Bodyplethysmographie/Observation/R_tot.page.md:50 | tabs | </tabs> |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Bodyplethysmographie/Observation/R_tot.page.md:54 | fql-at | @``` |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Bodyplethysmographie/Observation/R_tot.page.md:71 | fql-at | @``` from CapabilityStatement where url = 'https://www.medizininformatik-initiat |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Bodyplethysmographie/Observation/R_tot.page.md:81 | json | {{json:fsh-generated/resources/DiagnosticReport-mii-exa-bildgebung-radiologische |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Bodyplethysmographie/Observation/TLC.page.md:11 | fql-at | @``` |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Bodyplethysmographie/Observation/TLC.page.md:22 | tabs | <tabs> |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Bodyplethysmographie/Observation/TLC.page.md:23 | tree | <tab title="Darstellung">{{tree, buttons}}</tab> |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Bodyplethysmographie/Observation/TLC.page.md:23 | tabs | <tab title="Darstellung">{{tree, buttons}}</tab> |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Bodyplethysmographie/Observation/TLC.page.md:24 | tabs | <tab title="Beschreibung"> |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Bodyplethysmographie/Observation/TLC.page.md:25 | fql-at | @``` |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Bodyplethysmographie/Observation/TLC.page.md:35 | fql-at | @``` |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Bodyplethysmographie/Observation/TLC.page.md:46 | tabs | </tab> |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Bodyplethysmographie/Observation/TLC.page.md:47 | xml | <tab title="XML">{{xml}}</tab> |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Bodyplethysmographie/Observation/TLC.page.md:47 | tabs | <tab title="XML">{{xml}}</tab> |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Bodyplethysmographie/Observation/TLC.page.md:48 | json | <tab title="JSON">{{json}}</tab> |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Bodyplethysmographie/Observation/TLC.page.md:48 | tabs | <tab title="JSON">{{json}}</tab> |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Bodyplethysmographie/Observation/TLC.page.md:49 | link | <tab title="Link">{{link}}</tab> |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Bodyplethysmographie/Observation/TLC.page.md:49 | tabs | <tab title="Link">{{link}}</tab> |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Bodyplethysmographie/Observation/TLC.page.md:50 | tabs | </tabs> |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Bodyplethysmographie/Observation/TLC.page.md:54 | fql-at | @``` |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Bodyplethysmographie/Observation/TLC.page.md:71 | fql-at | @``` from CapabilityStatement where url = 'https://www.medizininformatik-initiat |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Bodyplethysmographie/Observation/TLC.page.md:81 | json | {{json:fsh-generated/resources/DiagnosticReport-mii-exa-bildgebung-radiologische |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Bodyplethysmographie/Observation/sG_tot.page.md:11 | fql-at | @``` |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Bodyplethysmographie/Observation/sG_tot.page.md:22 | tabs | <tabs> |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Bodyplethysmographie/Observation/sG_tot.page.md:23 | tree | <tab title="Darstellung">{{tree, buttons}}</tab> |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Bodyplethysmographie/Observation/sG_tot.page.md:23 | tabs | <tab title="Darstellung">{{tree, buttons}}</tab> |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Bodyplethysmographie/Observation/sG_tot.page.md:24 | tabs | <tab title="Beschreibung"> |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Bodyplethysmographie/Observation/sG_tot.page.md:25 | fql-at | @``` |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Bodyplethysmographie/Observation/sG_tot.page.md:35 | fql-at | @``` |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Bodyplethysmographie/Observation/sG_tot.page.md:46 | tabs | </tab> |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Bodyplethysmographie/Observation/sG_tot.page.md:47 | xml | <tab title="XML">{{xml}}</tab> |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Bodyplethysmographie/Observation/sG_tot.page.md:47 | tabs | <tab title="XML">{{xml}}</tab> |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Bodyplethysmographie/Observation/sG_tot.page.md:48 | json | <tab title="JSON">{{json}}</tab> |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Bodyplethysmographie/Observation/sG_tot.page.md:48 | tabs | <tab title="JSON">{{json}}</tab> |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Bodyplethysmographie/Observation/sG_tot.page.md:49 | link | <tab title="Link">{{link}}</tab> |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Bodyplethysmographie/Observation/sG_tot.page.md:49 | tabs | <tab title="Link">{{link}}</tab> |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Bodyplethysmographie/Observation/sG_tot.page.md:50 | tabs | </tabs> |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Bodyplethysmographie/Observation/sG_tot.page.md:54 | fql-at | @``` |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Bodyplethysmographie/Observation/sG_tot.page.md:71 | fql-at | @``` from CapabilityStatement where url = 'https://www.medizininformatik-initiat |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Bodyplethysmographie/Observation/sG_tot.page.md:81 | json | {{json:fsh-generated/resources/DiagnosticReport-mii-exa-bildgebung-radiologische |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Bodyplethysmographie/Observation/sR_eff.page.md:11 | fql-at | @``` |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Bodyplethysmographie/Observation/sR_eff.page.md:22 | tabs | <tabs> |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Bodyplethysmographie/Observation/sR_eff.page.md:23 | tree | <tab title="Darstellung">{{tree, buttons}}</tab> |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Bodyplethysmographie/Observation/sR_eff.page.md:23 | tabs | <tab title="Darstellung">{{tree, buttons}}</tab> |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Bodyplethysmographie/Observation/sR_eff.page.md:24 | tabs | <tab title="Beschreibung"> |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Bodyplethysmographie/Observation/sR_eff.page.md:25 | fql-at | @``` |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Bodyplethysmographie/Observation/sR_eff.page.md:35 | fql-at | @``` |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Bodyplethysmographie/Observation/sR_eff.page.md:46 | tabs | </tab> |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Bodyplethysmographie/Observation/sR_eff.page.md:47 | xml | <tab title="XML">{{xml}}</tab> |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Bodyplethysmographie/Observation/sR_eff.page.md:47 | tabs | <tab title="XML">{{xml}}</tab> |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Bodyplethysmographie/Observation/sR_eff.page.md:48 | json | <tab title="JSON">{{json}}</tab> |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Bodyplethysmographie/Observation/sR_eff.page.md:48 | tabs | <tab title="JSON">{{json}}</tab> |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Bodyplethysmographie/Observation/sR_eff.page.md:49 | link | <tab title="Link">{{link}}</tab> |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Bodyplethysmographie/Observation/sR_eff.page.md:49 | tabs | <tab title="Link">{{link}}</tab> |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Bodyplethysmographie/Observation/sR_eff.page.md:50 | tabs | </tabs> |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Bodyplethysmographie/Observation/sR_eff.page.md:54 | fql-at | @``` |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Bodyplethysmographie/Observation/sR_eff.page.md:71 | fql-at | @``` from CapabilityStatement where url = 'https://www.medizininformatik-initiat |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Bodyplethysmographie/Observation/sR_eff.page.md:81 | json | {{json:fsh-generated/resources/DiagnosticReport-mii-exa-bildgebung-radiologische |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Bodyplethysmographie/Observation/sR_tot.page.md:11 | fql-at | @``` |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Bodyplethysmographie/Observation/sR_tot.page.md:22 | tabs | <tabs> |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Bodyplethysmographie/Observation/sR_tot.page.md:23 | tree | <tab title="Darstellung">{{tree, buttons}}</tab> |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Bodyplethysmographie/Observation/sR_tot.page.md:23 | tabs | <tab title="Darstellung">{{tree, buttons}}</tab> |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Bodyplethysmographie/Observation/sR_tot.page.md:24 | tabs | <tab title="Beschreibung"> |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Bodyplethysmographie/Observation/sR_tot.page.md:25 | fql-at | @``` |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Bodyplethysmographie/Observation/sR_tot.page.md:35 | fql-at | @``` |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Bodyplethysmographie/Observation/sR_tot.page.md:46 | tabs | </tab> |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Bodyplethysmographie/Observation/sR_tot.page.md:47 | xml | <tab title="XML">{{xml}}</tab> |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Bodyplethysmographie/Observation/sR_tot.page.md:47 | tabs | <tab title="XML">{{xml}}</tab> |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Bodyplethysmographie/Observation/sR_tot.page.md:48 | json | <tab title="JSON">{{json}}</tab> |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Bodyplethysmographie/Observation/sR_tot.page.md:48 | tabs | <tab title="JSON">{{json}}</tab> |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Bodyplethysmographie/Observation/sR_tot.page.md:49 | link | <tab title="Link">{{link}}</tab> |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Bodyplethysmographie/Observation/sR_tot.page.md:49 | tabs | <tab title="Link">{{link}}</tab> |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Bodyplethysmographie/Observation/sR_tot.page.md:50 | tabs | </tabs> |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Bodyplethysmographie/Observation/sR_tot.page.md:54 | fql-at | @``` |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Bodyplethysmographie/Observation/sR_tot.page.md:71 | fql-at | @``` from CapabilityStatement where url = 'https://www.medizininformatik-initiat |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Bodyplethysmographie/Observation/sR_tot.page.md:81 | json | {{json:fsh-generated/resources/DiagnosticReport-mii-exa-bildgebung-radiologische |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Bodyplethysmographie/Procedure.page.md:11 | fql-at | @``` |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Bodyplethysmographie/Procedure.page.md:22 | tabs | <tabs> |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Bodyplethysmographie/Procedure.page.md:23 | tree | <tab title="Darstellung">{{tree, buttons}}</tab> |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Bodyplethysmographie/Procedure.page.md:23 | tabs | <tab title="Darstellung">{{tree, buttons}}</tab> |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Bodyplethysmographie/Procedure.page.md:24 | tabs | <tab title="Beschreibung"> |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Bodyplethysmographie/Procedure.page.md:25 | fql-at | @``` |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Bodyplethysmographie/Procedure.page.md:35 | fql-at | @``` |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Bodyplethysmographie/Procedure.page.md:46 | tabs | </tab> |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Bodyplethysmographie/Procedure.page.md:47 | xml | <tab title="XML">{{xml}}</tab> |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Bodyplethysmographie/Procedure.page.md:47 | tabs | <tab title="XML">{{xml}}</tab> |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Bodyplethysmographie/Procedure.page.md:48 | json | <tab title="JSON">{{json}}</tab> |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Bodyplethysmographie/Procedure.page.md:48 | tabs | <tab title="JSON">{{json}}</tab> |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Bodyplethysmographie/Procedure.page.md:49 | link | <tab title="Link">{{link}}</tab> |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Bodyplethysmographie/Procedure.page.md:49 | tabs | <tab title="Link">{{link}}</tab> |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Bodyplethysmographie/Procedure.page.md:50 | tabs | </tabs> |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Bodyplethysmographie/Procedure.page.md:54 | fql-at | @``` |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Bodyplethysmographie/Procedure.page.md:71 | fql-at | @``` from CapabilityStatement where url = 'https://www.medizininformatik-initiat |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Bodyplethysmographie/Procedure.page.md:81 | json | {{json:fsh-generated/resources/DiagnosticReport-mii-exa-bildgebung-radiologische |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Bodyplethysmographie/Report.page.md:11 | fql-at | @``` |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Bodyplethysmographie/Report.page.md:22 | tabs | <tabs> |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Bodyplethysmographie/Report.page.md:23 | tree | <tab title="Darstellung">{{tree, buttons}}</tab> |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Bodyplethysmographie/Report.page.md:23 | tabs | <tab title="Darstellung">{{tree, buttons}}</tab> |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Bodyplethysmographie/Report.page.md:24 | tabs | <tab title="Beschreibung"> |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Bodyplethysmographie/Report.page.md:25 | fql-at | @``` |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Bodyplethysmographie/Report.page.md:35 | fql-at | @``` |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Bodyplethysmographie/Report.page.md:46 | tabs | </tab> |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Bodyplethysmographie/Report.page.md:47 | xml | <tab title="XML">{{xml}}</tab> |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Bodyplethysmographie/Report.page.md:47 | tabs | <tab title="XML">{{xml}}</tab> |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Bodyplethysmographie/Report.page.md:48 | json | <tab title="JSON">{{json}}</tab> |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Bodyplethysmographie/Report.page.md:48 | tabs | <tab title="JSON">{{json}}</tab> |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Bodyplethysmographie/Report.page.md:49 | link | <tab title="Link">{{link}}</tab> |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Bodyplethysmographie/Report.page.md:49 | tabs | <tab title="Link">{{link}}</tab> |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Bodyplethysmographie/Report.page.md:50 | tabs | </tabs> |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Bodyplethysmographie/Report.page.md:54 | fql-at | @``` |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Bodyplethysmographie/Report.page.md:71 | fql-at | @``` from CapabilityStatement where url = 'https://www.medizininformatik-initiat |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Bodyplethysmographie/Report.page.md:81 | json | {{json:fsh-generated/resources/DiagnosticReport-mii-exa-bildgebung-radiologische |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Diffusion/Observation/DLCO.page.md:11 | fql-at | @``` |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Diffusion/Observation/DLCO.page.md:22 | tabs | <tabs> |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Diffusion/Observation/DLCO.page.md:23 | tree | <tab title="Darstellung">{{tree, buttons}}</tab> |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Diffusion/Observation/DLCO.page.md:23 | tabs | <tab title="Darstellung">{{tree, buttons}}</tab> |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Diffusion/Observation/DLCO.page.md:24 | tabs | <tab title="Beschreibung"> |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Diffusion/Observation/DLCO.page.md:25 | fql-at | @``` |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Diffusion/Observation/DLCO.page.md:35 | fql-at | @``` |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Diffusion/Observation/DLCO.page.md:46 | tabs | </tab> |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Diffusion/Observation/DLCO.page.md:47 | xml | <tab title="XML">{{xml}}</tab> |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Diffusion/Observation/DLCO.page.md:47 | tabs | <tab title="XML">{{xml}}</tab> |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Diffusion/Observation/DLCO.page.md:48 | json | <tab title="JSON">{{json}}</tab> |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Diffusion/Observation/DLCO.page.md:48 | tabs | <tab title="JSON">{{json}}</tab> |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Diffusion/Observation/DLCO.page.md:49 | link | <tab title="Link">{{link}}</tab> |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Diffusion/Observation/DLCO.page.md:49 | tabs | <tab title="Link">{{link}}</tab> |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Diffusion/Observation/DLCO.page.md:50 | tabs | </tabs> |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Diffusion/Observation/DLCO.page.md:54 | fql-at | @``` |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Diffusion/Observation/DLCO.page.md:71 | fql-at | @``` from CapabilityStatement where url = 'https://www.medizininformatik-initiat |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Diffusion/Observation/DLCO.page.md:81 | json | {{json:fsh-generated/resources/DiagnosticReport-mii-exa-bildgebung-radiologische |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Diffusion/Observation/DLCOc.page.md:11 | fql-at | @``` |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Diffusion/Observation/DLCOc.page.md:22 | tabs | <tabs> |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Diffusion/Observation/DLCOc.page.md:23 | tree | <tab title="Darstellung">{{tree, buttons}}</tab> |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Diffusion/Observation/DLCOc.page.md:23 | tabs | <tab title="Darstellung">{{tree, buttons}}</tab> |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Diffusion/Observation/DLCOc.page.md:24 | tabs | <tab title="Beschreibung"> |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Diffusion/Observation/DLCOc.page.md:25 | fql-at | @``` |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Diffusion/Observation/DLCOc.page.md:35 | fql-at | @``` |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Diffusion/Observation/DLCOc.page.md:46 | tabs | </tab> |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Diffusion/Observation/DLCOc.page.md:47 | xml | <tab title="XML">{{xml}}</tab> |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Diffusion/Observation/DLCOc.page.md:47 | tabs | <tab title="XML">{{xml}}</tab> |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Diffusion/Observation/DLCOc.page.md:48 | json | <tab title="JSON">{{json}}</tab> |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Diffusion/Observation/DLCOc.page.md:48 | tabs | <tab title="JSON">{{json}}</tab> |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Diffusion/Observation/DLCOc.page.md:49 | link | <tab title="Link">{{link}}</tab> |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Diffusion/Observation/DLCOc.page.md:49 | tabs | <tab title="Link">{{link}}</tab> |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Diffusion/Observation/DLCOc.page.md:50 | tabs | </tabs> |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Diffusion/Observation/DLCOc.page.md:54 | fql-at | @``` |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Diffusion/Observation/DLCOc.page.md:71 | fql-at | @``` from CapabilityStatement where url = 'https://www.medizininformatik-initiat |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Diffusion/Observation/DLCOc.page.md:81 | json | {{json:fsh-generated/resources/DiagnosticReport-mii-exa-bildgebung-radiologische |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Diffusion/Observation/Hb.page.md:11 | fql-at | @``` |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Diffusion/Observation/Hb.page.md:22 | tabs | <tabs> |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Diffusion/Observation/Hb.page.md:23 | tree | <tab title="Darstellung">{{tree, buttons}}</tab> |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Diffusion/Observation/Hb.page.md:23 | tabs | <tab title="Darstellung">{{tree, buttons}}</tab> |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Diffusion/Observation/Hb.page.md:24 | tabs | <tab title="Beschreibung"> |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Diffusion/Observation/Hb.page.md:25 | fql-at | @``` |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Diffusion/Observation/Hb.page.md:35 | fql-at | @``` |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Diffusion/Observation/Hb.page.md:46 | tabs | </tab> |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Diffusion/Observation/Hb.page.md:47 | xml | <tab title="XML">{{xml}}</tab> |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Diffusion/Observation/Hb.page.md:47 | tabs | <tab title="XML">{{xml}}</tab> |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Diffusion/Observation/Hb.page.md:48 | json | <tab title="JSON">{{json}}</tab> |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Diffusion/Observation/Hb.page.md:48 | tabs | <tab title="JSON">{{json}}</tab> |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Diffusion/Observation/Hb.page.md:49 | link | <tab title="Link">{{link}}</tab> |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Diffusion/Observation/Hb.page.md:49 | tabs | <tab title="Link">{{link}}</tab> |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Diffusion/Observation/Hb.page.md:50 | tabs | </tabs> |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Diffusion/Observation/Hb.page.md:54 | fql-at | @``` |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Diffusion/Observation/Hb.page.md:71 | fql-at | @``` from CapabilityStatement where url = 'https://www.medizininformatik-initiat |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Diffusion/Observation/Hb.page.md:81 | json | {{json:fsh-generated/resources/DiagnosticReport-mii-exa-bildgebung-radiologische |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Diffusion/Observation/KCO.page.md:11 | fql-at | @``` |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Diffusion/Observation/KCO.page.md:22 | tabs | <tabs> |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Diffusion/Observation/KCO.page.md:23 | tree | <tab title="Darstellung">{{tree, buttons}}</tab> |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Diffusion/Observation/KCO.page.md:23 | tabs | <tab title="Darstellung">{{tree, buttons}}</tab> |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Diffusion/Observation/KCO.page.md:24 | tabs | <tab title="Beschreibung"> |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Diffusion/Observation/KCO.page.md:25 | fql-at | @``` |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Diffusion/Observation/KCO.page.md:35 | fql-at | @``` |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Diffusion/Observation/KCO.page.md:46 | tabs | </tab> |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Diffusion/Observation/KCO.page.md:47 | xml | <tab title="XML">{{xml}}</tab> |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Diffusion/Observation/KCO.page.md:47 | tabs | <tab title="XML">{{xml}}</tab> |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Diffusion/Observation/KCO.page.md:48 | json | <tab title="JSON">{{json}}</tab> |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Diffusion/Observation/KCO.page.md:48 | tabs | <tab title="JSON">{{json}}</tab> |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Diffusion/Observation/KCO.page.md:49 | link | <tab title="Link">{{link}}</tab> |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Diffusion/Observation/KCO.page.md:49 | tabs | <tab title="Link">{{link}}</tab> |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Diffusion/Observation/KCO.page.md:50 | tabs | </tabs> |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Diffusion/Observation/KCO.page.md:54 | fql-at | @``` |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Diffusion/Observation/KCO.page.md:71 | fql-at | @``` from CapabilityStatement where url = 'https://www.medizininformatik-initiat |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Diffusion/Observation/KCO.page.md:81 | json | {{json:fsh-generated/resources/DiagnosticReport-mii-exa-bildgebung-radiologische |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Bodyplethysmographie/Observation/FRC.page.md:10 | fql-at | @``` |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Bodyplethysmographie/Observation/FRC.page.md:21 | tabs | <tabs> |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Bodyplethysmographie/Observation/FRC.page.md:22 | tree | <tab title="Darstellung">{{tree, buttons}}</tab> |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Bodyplethysmographie/Observation/FRC.page.md:22 | tabs | <tab title="Darstellung">{{tree, buttons}}</tab> |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Bodyplethysmographie/Observation/FRC.page.md:23 | tabs | <tab title="Beschreibung"> |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Bodyplethysmographie/Observation/FRC.page.md:24 | fql-at | @``` |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Bodyplethysmographie/Observation/FRC.page.md:34 | fql-at | @``` |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Bodyplethysmographie/Observation/FRC.page.md:45 | tabs | </tab> |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Bodyplethysmographie/Observation/FRC.page.md:46 | xml | <tab title="XML">{{xml}}</tab> |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Bodyplethysmographie/Observation/FRC.page.md:46 | tabs | <tab title="XML">{{xml}}</tab> |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Bodyplethysmographie/Observation/FRC.page.md:47 | json | <tab title="JSON">{{json}}</tab> |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Bodyplethysmographie/Observation/FRC.page.md:47 | tabs | <tab title="JSON">{{json}}</tab> |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Bodyplethysmographie/Observation/FRC.page.md:48 | link | <tab title="Link">{{link}}</tab> |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Bodyplethysmographie/Observation/FRC.page.md:48 | tabs | <tab title="Link">{{link}}</tab> |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Bodyplethysmographie/Observation/FRC.page.md:49 | tabs | </tabs> |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Bodyplethysmographie/Observation/FRC.page.md:53 | fql-at | @``` |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Bodyplethysmographie/Observation/FRC.page.md:70 | fql-at | @``` from CapabilityStatement where url = 'https://www.medizininformatik-initiat |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Bodyplethysmographie/Observation/FRC.page.md:80 | json | {{json:fsh-generated/resources/Observation-mii-exa-lungenfunktion-frc.json}} |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Bodyplethysmographie/Observation/RVL.page.md:10 | fql-at | @``` |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Bodyplethysmographie/Observation/RVL.page.md:21 | tabs | <tabs> |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Bodyplethysmographie/Observation/RVL.page.md:22 | tree | <tab title="Darstellung">{{tree, buttons}}</tab> |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Bodyplethysmographie/Observation/RVL.page.md:22 | tabs | <tab title="Darstellung">{{tree, buttons}}</tab> |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Bodyplethysmographie/Observation/RVL.page.md:23 | tabs | <tab title="Beschreibung"> |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Bodyplethysmographie/Observation/RVL.page.md:24 | fql-at | @``` |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Bodyplethysmographie/Observation/RVL.page.md:34 | fql-at | @``` |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Bodyplethysmographie/Observation/RVL.page.md:45 | tabs | </tab> |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Bodyplethysmographie/Observation/RVL.page.md:46 | xml | <tab title="XML">{{xml}}</tab> |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Bodyplethysmographie/Observation/RVL.page.md:46 | tabs | <tab title="XML">{{xml}}</tab> |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Bodyplethysmographie/Observation/RVL.page.md:47 | json | <tab title="JSON">{{json}}</tab> |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Bodyplethysmographie/Observation/RVL.page.md:47 | tabs | <tab title="JSON">{{json}}</tab> |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Bodyplethysmographie/Observation/RVL.page.md:48 | link | <tab title="Link">{{link}}</tab> |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Bodyplethysmographie/Observation/RVL.page.md:48 | tabs | <tab title="Link">{{link}}</tab> |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Bodyplethysmographie/Observation/RVL.page.md:49 | tabs | </tabs> |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Bodyplethysmographie/Observation/RVL.page.md:53 | fql-at | @``` |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Bodyplethysmographie/Observation/RVL.page.md:70 | fql-at | @``` from CapabilityStatement where url = 'https://www.medizininformatik-initiat |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Bodyplethysmographie/Observation/RVL.page.md:80 | json | {{json:fsh-generated/resources/Observation-mii-exa-lungenfunktion-rvl.json}} |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Bodyplethysmographie/Observation/RVLTLC.page.md:10 | fql-at | @``` |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Bodyplethysmographie/Observation/RVLTLC.page.md:21 | tabs | <tabs> |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Bodyplethysmographie/Observation/RVLTLC.page.md:22 | tree | <tab title="Darstellung">{{tree, buttons}}</tab> |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Bodyplethysmographie/Observation/RVLTLC.page.md:22 | tabs | <tab title="Darstellung">{{tree, buttons}}</tab> |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Bodyplethysmographie/Observation/RVLTLC.page.md:23 | tabs | <tab title="Beschreibung"> |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Bodyplethysmographie/Observation/RVLTLC.page.md:24 | fql-at | @``` |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Bodyplethysmographie/Observation/RVLTLC.page.md:34 | fql-at | @``` |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Bodyplethysmographie/Observation/RVLTLC.page.md:45 | tabs | </tab> |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Bodyplethysmographie/Observation/RVLTLC.page.md:46 | xml | <tab title="XML">{{xml}}</tab> |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Bodyplethysmographie/Observation/RVLTLC.page.md:46 | tabs | <tab title="XML">{{xml}}</tab> |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Bodyplethysmographie/Observation/RVLTLC.page.md:47 | json | <tab title="JSON">{{json}}</tab> |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Bodyplethysmographie/Observation/RVLTLC.page.md:47 | tabs | <tab title="JSON">{{json}}</tab> |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Bodyplethysmographie/Observation/RVLTLC.page.md:48 | link | <tab title="Link">{{link}}</tab> |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Bodyplethysmographie/Observation/RVLTLC.page.md:48 | tabs | <tab title="Link">{{link}}</tab> |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Bodyplethysmographie/Observation/RVLTLC.page.md:49 | tabs | </tabs> |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Bodyplethysmographie/Observation/RVLTLC.page.md:53 | fql-at | @``` |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Bodyplethysmographie/Observation/RVLTLC.page.md:70 | fql-at | @``` from CapabilityStatement where url = 'https://www.medizininformatik-initiat |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Bodyplethysmographie/Observation/RVLTLC.page.md:80 | json | {{json:fsh-generated/resources/Observation-mii-exa-lungenfunktion-rvl-tlc.json}} |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Bodyplethysmographie/Observation/R_tot.page.md:10 | fql-at | @``` |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Bodyplethysmographie/Observation/R_tot.page.md:21 | tabs | <tabs> |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Bodyplethysmographie/Observation/R_tot.page.md:22 | tree | <tab title="Darstellung">{{tree, buttons}}</tab> |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Bodyplethysmographie/Observation/R_tot.page.md:22 | tabs | <tab title="Darstellung">{{tree, buttons}}</tab> |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Bodyplethysmographie/Observation/R_tot.page.md:23 | tabs | <tab title="Beschreibung"> |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Bodyplethysmographie/Observation/R_tot.page.md:24 | fql-at | @``` |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Bodyplethysmographie/Observation/R_tot.page.md:34 | fql-at | @``` |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Bodyplethysmographie/Observation/R_tot.page.md:45 | tabs | </tab> |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Bodyplethysmographie/Observation/R_tot.page.md:46 | xml | <tab title="XML">{{xml}}</tab> |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Bodyplethysmographie/Observation/R_tot.page.md:46 | tabs | <tab title="XML">{{xml}}</tab> |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Bodyplethysmographie/Observation/R_tot.page.md:47 | json | <tab title="JSON">{{json}}</tab> |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Bodyplethysmographie/Observation/R_tot.page.md:47 | tabs | <tab title="JSON">{{json}}</tab> |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Bodyplethysmographie/Observation/R_tot.page.md:48 | link | <tab title="Link">{{link}}</tab> |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Bodyplethysmographie/Observation/R_tot.page.md:48 | tabs | <tab title="Link">{{link}}</tab> |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Bodyplethysmographie/Observation/R_tot.page.md:49 | tabs | </tabs> |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Bodyplethysmographie/Observation/R_tot.page.md:53 | fql-at | @``` |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Bodyplethysmographie/Observation/R_tot.page.md:70 | fql-at | @``` from CapabilityStatement where url = 'https://www.medizininformatik-initiat |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Bodyplethysmographie/Observation/R_tot.page.md:80 | json | {{json:fsh-generated/resources/Observation-mii-exa-lungenfunktion-r.json}} |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Bodyplethysmographie/Observation/TLC.page.md:10 | fql-at | @``` |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Bodyplethysmographie/Observation/TLC.page.md:21 | tabs | <tabs> |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Bodyplethysmographie/Observation/TLC.page.md:22 | tree | <tab title="Darstellung">{{tree, buttons}}</tab> |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Bodyplethysmographie/Observation/TLC.page.md:22 | tabs | <tab title="Darstellung">{{tree, buttons}}</tab> |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Bodyplethysmographie/Observation/TLC.page.md:23 | tabs | <tab title="Beschreibung"> |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Bodyplethysmographie/Observation/TLC.page.md:24 | fql-at | @``` |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Bodyplethysmographie/Observation/TLC.page.md:34 | fql-at | @``` |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Bodyplethysmographie/Observation/TLC.page.md:45 | tabs | </tab> |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Bodyplethysmographie/Observation/TLC.page.md:46 | xml | <tab title="XML">{{xml}}</tab> |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Bodyplethysmographie/Observation/TLC.page.md:46 | tabs | <tab title="XML">{{xml}}</tab> |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Bodyplethysmographie/Observation/TLC.page.md:47 | json | <tab title="JSON">{{json}}</tab> |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Bodyplethysmographie/Observation/TLC.page.md:47 | tabs | <tab title="JSON">{{json}}</tab> |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Bodyplethysmographie/Observation/TLC.page.md:48 | link | <tab title="Link">{{link}}</tab> |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Bodyplethysmographie/Observation/TLC.page.md:48 | tabs | <tab title="Link">{{link}}</tab> |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Bodyplethysmographie/Observation/TLC.page.md:49 | tabs | </tabs> |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Bodyplethysmographie/Observation/TLC.page.md:53 | fql-at | @``` |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Bodyplethysmographie/Observation/TLC.page.md:70 | fql-at | @``` from CapabilityStatement where url = 'https://www.medizininformatik-initiat |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Bodyplethysmographie/Observation/TLC.page.md:80 | json | {{json:fsh-generated/resources/Observation-mii-exa-lungenfunktion-tlc.json}} |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Bodyplethysmographie/Observation/sG_tot.page.md:10 | fql-at | @``` |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Bodyplethysmographie/Observation/sG_tot.page.md:21 | tabs | <tabs> |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Bodyplethysmographie/Observation/sG_tot.page.md:22 | tree | <tab title="Darstellung">{{tree, buttons}}</tab> |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Bodyplethysmographie/Observation/sG_tot.page.md:22 | tabs | <tab title="Darstellung">{{tree, buttons}}</tab> |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Bodyplethysmographie/Observation/sG_tot.page.md:23 | tabs | <tab title="Beschreibung"> |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Bodyplethysmographie/Observation/sG_tot.page.md:24 | fql-at | @``` |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Bodyplethysmographie/Observation/sG_tot.page.md:34 | fql-at | @``` |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Bodyplethysmographie/Observation/sG_tot.page.md:45 | tabs | </tab> |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Bodyplethysmographie/Observation/sG_tot.page.md:46 | xml | <tab title="XML">{{xml}}</tab> |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Bodyplethysmographie/Observation/sG_tot.page.md:46 | tabs | <tab title="XML">{{xml}}</tab> |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Bodyplethysmographie/Observation/sG_tot.page.md:47 | json | <tab title="JSON">{{json}}</tab> |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Bodyplethysmographie/Observation/sG_tot.page.md:47 | tabs | <tab title="JSON">{{json}}</tab> |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Bodyplethysmographie/Observation/sG_tot.page.md:48 | link | <tab title="Link">{{link}}</tab> |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Bodyplethysmographie/Observation/sG_tot.page.md:48 | tabs | <tab title="Link">{{link}}</tab> |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Bodyplethysmographie/Observation/sG_tot.page.md:49 | tabs | </tabs> |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Bodyplethysmographie/Observation/sG_tot.page.md:53 | fql-at | @``` |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Bodyplethysmographie/Observation/sG_tot.page.md:70 | fql-at | @``` from CapabilityStatement where url = 'https://www.medizininformatik-initiat |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Bodyplethysmographie/Observation/sG_tot.page.md:80 | json | {{json:fsh-generated/resources/Observation-mii-exa-lungenfunktion-sg-total.json} |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Bodyplethysmographie/Observation/sR_eff.page.md:10 | fql-at | @``` |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Bodyplethysmographie/Observation/sR_eff.page.md:21 | tabs | <tabs> |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Bodyplethysmographie/Observation/sR_eff.page.md:22 | tree | <tab title="Darstellung">{{tree, buttons}}</tab> |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Bodyplethysmographie/Observation/sR_eff.page.md:22 | tabs | <tab title="Darstellung">{{tree, buttons}}</tab> |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Bodyplethysmographie/Observation/sR_eff.page.md:23 | tabs | <tab title="Beschreibung"> |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Bodyplethysmographie/Observation/sR_eff.page.md:24 | fql-at | @``` |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Bodyplethysmographie/Observation/sR_eff.page.md:34 | fql-at | @``` |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Bodyplethysmographie/Observation/sR_eff.page.md:45 | tabs | </tab> |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Bodyplethysmographie/Observation/sR_eff.page.md:46 | xml | <tab title="XML">{{xml}}</tab> |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Bodyplethysmographie/Observation/sR_eff.page.md:46 | tabs | <tab title="XML">{{xml}}</tab> |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Bodyplethysmographie/Observation/sR_eff.page.md:47 | json | <tab title="JSON">{{json}}</tab> |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Bodyplethysmographie/Observation/sR_eff.page.md:47 | tabs | <tab title="JSON">{{json}}</tab> |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Bodyplethysmographie/Observation/sR_eff.page.md:48 | link | <tab title="Link">{{link}}</tab> |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Bodyplethysmographie/Observation/sR_eff.page.md:48 | tabs | <tab title="Link">{{link}}</tab> |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Bodyplethysmographie/Observation/sR_eff.page.md:49 | tabs | </tabs> |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Bodyplethysmographie/Observation/sR_eff.page.md:53 | fql-at | @``` |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Bodyplethysmographie/Observation/sR_eff.page.md:70 | fql-at | @``` from CapabilityStatement where url = 'https://www.medizininformatik-initiat |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Bodyplethysmographie/Observation/sR_eff.page.md:80 | json | {{json:fsh-generated/resources/Observation-mii-exa-lungenfunktion-sr-eff.json}} |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Bodyplethysmographie/Observation/sR_tot.page.md:10 | fql-at | @``` |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Bodyplethysmographie/Observation/sR_tot.page.md:21 | tabs | <tabs> |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Bodyplethysmographie/Observation/sR_tot.page.md:22 | tree | <tab title="Darstellung">{{tree, buttons}}</tab> |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Bodyplethysmographie/Observation/sR_tot.page.md:22 | tabs | <tab title="Darstellung">{{tree, buttons}}</tab> |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Bodyplethysmographie/Observation/sR_tot.page.md:23 | tabs | <tab title="Beschreibung"> |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Bodyplethysmographie/Observation/sR_tot.page.md:24 | fql-at | @``` |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Bodyplethysmographie/Observation/sR_tot.page.md:34 | fql-at | @``` |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Bodyplethysmographie/Observation/sR_tot.page.md:45 | tabs | </tab> |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Bodyplethysmographie/Observation/sR_tot.page.md:46 | xml | <tab title="XML">{{xml}}</tab> |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Bodyplethysmographie/Observation/sR_tot.page.md:46 | tabs | <tab title="XML">{{xml}}</tab> |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Bodyplethysmographie/Observation/sR_tot.page.md:47 | json | <tab title="JSON">{{json}}</tab> |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Bodyplethysmographie/Observation/sR_tot.page.md:47 | tabs | <tab title="JSON">{{json}}</tab> |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Bodyplethysmographie/Observation/sR_tot.page.md:48 | link | <tab title="Link">{{link}}</tab> |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Bodyplethysmographie/Observation/sR_tot.page.md:48 | tabs | <tab title="Link">{{link}}</tab> |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Bodyplethysmographie/Observation/sR_tot.page.md:49 | tabs | </tabs> |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Bodyplethysmographie/Observation/sR_tot.page.md:53 | fql-at | @``` |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Bodyplethysmographie/Observation/sR_tot.page.md:70 | fql-at | @``` from CapabilityStatement where url = 'https://www.medizininformatik-initiat |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Bodyplethysmographie/Observation/sR_tot.page.md:80 | json | {{json:fsh-generated/resources/Observation-mii-exa-lungenfunktion-sr-total.json} |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Bodyplethysmographie/Procedure.page.md:10 | fql-at | @``` |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Bodyplethysmographie/Procedure.page.md:21 | tabs | <tabs> |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Bodyplethysmographie/Procedure.page.md:22 | tree | <tab title="Darstellung">{{tree, buttons}}</tab> |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Bodyplethysmographie/Procedure.page.md:22 | tabs | <tab title="Darstellung">{{tree, buttons}}</tab> |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Bodyplethysmographie/Procedure.page.md:23 | tabs | <tab title="Beschreibung"> |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Bodyplethysmographie/Procedure.page.md:24 | fql-at | @``` |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Bodyplethysmographie/Procedure.page.md:34 | fql-at | @``` |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Bodyplethysmographie/Procedure.page.md:45 | tabs | </tab> |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Bodyplethysmographie/Procedure.page.md:46 | xml | <tab title="XML">{{xml}}</tab> |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Bodyplethysmographie/Procedure.page.md:46 | tabs | <tab title="XML">{{xml}}</tab> |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Bodyplethysmographie/Procedure.page.md:47 | json | <tab title="JSON">{{json}}</tab> |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Bodyplethysmographie/Procedure.page.md:47 | tabs | <tab title="JSON">{{json}}</tab> |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Bodyplethysmographie/Procedure.page.md:48 | link | <tab title="Link">{{link}}</tab> |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Bodyplethysmographie/Procedure.page.md:48 | tabs | <tab title="Link">{{link}}</tab> |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Bodyplethysmographie/Procedure.page.md:49 | tabs | </tabs> |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Bodyplethysmographie/Procedure.page.md:53 | fql-at | @``` |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Bodyplethysmographie/Procedure.page.md:70 | fql-at | @``` from CapabilityStatement where url = 'https://www.medizininformatik-initiat |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Bodyplethysmographie/Procedure.page.md:80 | json | {{json:fsh-generated/resources/Procedure-mii-exa-lungenfunktion-bodyplethysmogra |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Bodyplethysmographie/Report.page.md:10 | fql-at | @``` |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Bodyplethysmographie/Report.page.md:21 | tabs | <tabs> |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Bodyplethysmographie/Report.page.md:22 | tree | <tab title="Darstellung">{{tree, buttons}}</tab> |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Bodyplethysmographie/Report.page.md:22 | tabs | <tab title="Darstellung">{{tree, buttons}}</tab> |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Bodyplethysmographie/Report.page.md:23 | tabs | <tab title="Beschreibung"> |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Bodyplethysmographie/Report.page.md:24 | fql-at | @``` |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Bodyplethysmographie/Report.page.md:34 | fql-at | @``` |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Bodyplethysmographie/Report.page.md:45 | tabs | </tab> |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Bodyplethysmographie/Report.page.md:46 | xml | <tab title="XML">{{xml}}</tab> |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Bodyplethysmographie/Report.page.md:46 | tabs | <tab title="XML">{{xml}}</tab> |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Bodyplethysmographie/Report.page.md:47 | json | <tab title="JSON">{{json}}</tab> |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Bodyplethysmographie/Report.page.md:47 | tabs | <tab title="JSON">{{json}}</tab> |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Bodyplethysmographie/Report.page.md:48 | link | <tab title="Link">{{link}}</tab> |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Bodyplethysmographie/Report.page.md:48 | tabs | <tab title="Link">{{link}}</tab> |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Bodyplethysmographie/Report.page.md:49 | tabs | </tabs> |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Bodyplethysmographie/Report.page.md:53 | fql-at | @``` |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Bodyplethysmographie/Report.page.md:70 | fql-at | @``` from CapabilityStatement where url = 'https://www.medizininformatik-initiat |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Bodyplethysmographie/Report.page.md:80 | json | {{json:fsh-generated/resources/DiagnosticReport-mii-exa-lungenfunktion-bodypleth |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Diffusion/Observation/DLCO.page.md:10 | fql-at | @``` |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Diffusion/Observation/DLCO.page.md:21 | tabs | <tabs> |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Diffusion/Observation/DLCO.page.md:22 | tree | <tab title="Darstellung">{{tree, buttons}}</tab> |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Diffusion/Observation/DLCO.page.md:22 | tabs | <tab title="Darstellung">{{tree, buttons}}</tab> |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Diffusion/Observation/DLCO.page.md:23 | tabs | <tab title="Beschreibung"> |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Diffusion/Observation/DLCO.page.md:24 | fql-at | @``` |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Diffusion/Observation/DLCO.page.md:34 | fql-at | @``` |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Diffusion/Observation/DLCO.page.md:45 | tabs | </tab> |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Diffusion/Observation/DLCO.page.md:46 | xml | <tab title="XML">{{xml}}</tab> |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Diffusion/Observation/DLCO.page.md:46 | tabs | <tab title="XML">{{xml}}</tab> |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Diffusion/Observation/DLCO.page.md:47 | json | <tab title="JSON">{{json}}</tab> |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Diffusion/Observation/DLCO.page.md:47 | tabs | <tab title="JSON">{{json}}</tab> |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Diffusion/Observation/DLCO.page.md:48 | link | <tab title="Link">{{link}}</tab> |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Diffusion/Observation/DLCO.page.md:48 | tabs | <tab title="Link">{{link}}</tab> |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Diffusion/Observation/DLCO.page.md:49 | tabs | </tabs> |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Diffusion/Observation/DLCO.page.md:53 | fql-at | @``` |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Diffusion/Observation/DLCO.page.md:70 | fql-at | @``` from CapabilityStatement where url = 'https://www.medizininformatik-initiat |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Diffusion/Observation/DLCO.page.md:80 | json | {{json:fsh-generated/resources/Observation-mii-exa-lungenfunktion-dlco.json}} |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Diffusion/Observation/DLCOc.page.md:9 | fql-at | @``` |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Diffusion/Observation/DLCOc.page.md:20 | tabs | <tabs> |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Diffusion/Observation/DLCOc.page.md:21 | tree | <tab title="Darstellung">{{tree, buttons}}</tab> |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Diffusion/Observation/DLCOc.page.md:21 | tabs | <tab title="Darstellung">{{tree, buttons}}</tab> |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Diffusion/Observation/DLCOc.page.md:22 | tabs | <tab title="Beschreibung"> |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Diffusion/Observation/DLCOc.page.md:23 | fql-at | @``` |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Diffusion/Observation/DLCOc.page.md:33 | fql-at | @``` |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Diffusion/Observation/DLCOc.page.md:44 | tabs | </tab> |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Diffusion/Observation/DLCOc.page.md:45 | xml | <tab title="XML">{{xml}}</tab> |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Diffusion/Observation/DLCOc.page.md:45 | tabs | <tab title="XML">{{xml}}</tab> |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Diffusion/Observation/DLCOc.page.md:46 | json | <tab title="JSON">{{json}}</tab> |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Diffusion/Observation/DLCOc.page.md:46 | tabs | <tab title="JSON">{{json}}</tab> |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Diffusion/Observation/DLCOc.page.md:47 | link | <tab title="Link">{{link}}</tab> |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Diffusion/Observation/DLCOc.page.md:47 | tabs | <tab title="Link">{{link}}</tab> |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Diffusion/Observation/DLCOc.page.md:48 | tabs | </tabs> |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Diffusion/Observation/DLCOc.page.md:52 | fql-at | @``` |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Diffusion/Observation/DLCOc.page.md:69 | fql-at | @``` from CapabilityStatement where url = 'https://www.medizininformatik-initiat |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Diffusion/Observation/DLCOc.page.md:79 | json | {{json:fsh-generated/resources/Observation-mii-exa-lungenfunktion-dlcoc.json}} |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Diffusion/Observation/Hb.page.md:10 | fql-at | @``` |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Diffusion/Observation/Hb.page.md:21 | tabs | <tabs> |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Diffusion/Observation/Hb.page.md:22 | tree | <tab title="Darstellung">{{tree, buttons}}</tab> |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Diffusion/Observation/Hb.page.md:22 | tabs | <tab title="Darstellung">{{tree, buttons}}</tab> |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Diffusion/Observation/Hb.page.md:23 | tabs | <tab title="Beschreibung"> |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Diffusion/Observation/Hb.page.md:24 | fql-at | @``` |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Diffusion/Observation/Hb.page.md:34 | fql-at | @``` |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Diffusion/Observation/Hb.page.md:45 | tabs | </tab> |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Diffusion/Observation/Hb.page.md:46 | xml | <tab title="XML">{{xml}}</tab> |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Diffusion/Observation/Hb.page.md:46 | tabs | <tab title="XML">{{xml}}</tab> |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Diffusion/Observation/Hb.page.md:47 | json | <tab title="JSON">{{json}}</tab> |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Diffusion/Observation/Hb.page.md:47 | tabs | <tab title="JSON">{{json}}</tab> |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Diffusion/Observation/Hb.page.md:48 | link | <tab title="Link">{{link}}</tab> |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Diffusion/Observation/Hb.page.md:48 | tabs | <tab title="Link">{{link}}</tab> |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Diffusion/Observation/Hb.page.md:49 | tabs | </tabs> |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Diffusion/Observation/Hb.page.md:53 | fql-at | @``` |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Diffusion/Observation/Hb.page.md:70 | fql-at | @``` from CapabilityStatement where url = 'https://www.medizininformatik-initiat |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Diffusion/Observation/Hb.page.md:80 | json | {{json:fsh-generated/resources/Observation-mii-exa-lungenfunktion-hb.json}} |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Diffusion/Observation/KCO.page.md:10 | fql-at | @``` |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Diffusion/Observation/KCO.page.md:21 | tabs | <tabs> |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Diffusion/Observation/KCO.page.md:22 | tree | <tab title="Darstellung">{{tree, buttons}}</tab> |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Diffusion/Observation/KCO.page.md:22 | tabs | <tab title="Darstellung">{{tree, buttons}}</tab> |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Diffusion/Observation/KCO.page.md:23 | tabs | <tab title="Beschreibung"> |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Diffusion/Observation/KCO.page.md:24 | fql-at | @``` |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Diffusion/Observation/KCO.page.md:34 | fql-at | @``` |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Diffusion/Observation/KCO.page.md:45 | tabs | </tab> |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Diffusion/Observation/KCO.page.md:46 | xml | <tab title="XML">{{xml}}</tab> |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Diffusion/Observation/KCO.page.md:46 | tabs | <tab title="XML">{{xml}}</tab> |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Diffusion/Observation/KCO.page.md:47 | json | <tab title="JSON">{{json}}</tab> |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Diffusion/Observation/KCO.page.md:47 | tabs | <tab title="JSON">{{json}}</tab> |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Diffusion/Observation/KCO.page.md:48 | link | <tab title="Link">{{link}}</tab> |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Diffusion/Observation/KCO.page.md:48 | tabs | <tab title="Link">{{link}}</tab> |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Diffusion/Observation/KCO.page.md:49 | tabs | </tabs> |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Diffusion/Observation/KCO.page.md:53 | fql-at | @``` |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Diffusion/Observation/KCO.page.md:70 | fql-at | @``` from CapabilityStatement where url = 'https://www.medizininformatik-initiat |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Diffusion/Observation/KCO.page.md:80 | json | {{json:fsh-generated/resources/Observation-mii-exa-lungenfunktion-kco.json}} |
 | implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Diffusion/Observation/KCOc.page.md:11 | fql-at | @``` |
 | implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Diffusion/Observation/KCOc.page.md:22 | tabs | <tabs> |
 | implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Diffusion/Observation/KCOc.page.md:23 | tree | <tab title="Darstellung">{{tree, buttons}}</tab> |
@@ -713,440 +773,425 @@ _Jede gefundene Direktive mit genauer Fundstelle und Originaltext zur weiteren B
 | implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Diffusion/Observation/KCOc.page.md:50 | tabs | </tabs> |
 | implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Diffusion/Observation/KCOc.page.md:54 | fql-at | @``` |
 | implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Diffusion/Observation/KCOc.page.md:71 | fql-at | @``` from CapabilityStatement where url = 'https://www.medizininformatik-initiat |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Diffusion/Observation/KCOc.page.md:81 | json | {{json:fsh-generated/resources/DiagnosticReport-mii-exa-bildgebung-radiologische |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Diffusion/Observation/TA.page.md:11 | fql-at | @``` |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Diffusion/Observation/TA.page.md:22 | tabs | <tabs> |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Diffusion/Observation/TA.page.md:23 | tree | <tab title="Darstellung">{{tree, buttons}}</tab> |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Diffusion/Observation/TA.page.md:23 | tabs | <tab title="Darstellung">{{tree, buttons}}</tab> |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Diffusion/Observation/TA.page.md:24 | tabs | <tab title="Beschreibung"> |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Diffusion/Observation/TA.page.md:25 | fql-at | @``` |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Diffusion/Observation/TA.page.md:35 | fql-at | @``` |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Diffusion/Observation/TA.page.md:46 | tabs | </tab> |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Diffusion/Observation/TA.page.md:47 | xml | <tab title="XML">{{xml}}</tab> |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Diffusion/Observation/TA.page.md:47 | tabs | <tab title="XML">{{xml}}</tab> |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Diffusion/Observation/TA.page.md:48 | json | <tab title="JSON">{{json}}</tab> |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Diffusion/Observation/TA.page.md:48 | tabs | <tab title="JSON">{{json}}</tab> |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Diffusion/Observation/TA.page.md:49 | link | <tab title="Link">{{link}}</tab> |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Diffusion/Observation/TA.page.md:49 | tabs | <tab title="Link">{{link}}</tab> |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Diffusion/Observation/TA.page.md:50 | tabs | </tabs> |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Diffusion/Observation/TA.page.md:54 | fql-at | @``` |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Diffusion/Observation/TA.page.md:71 | fql-at | @``` from CapabilityStatement where url = 'https://www.medizininformatik-initiat |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Diffusion/Observation/TA.page.md:81 | json | {{json:fsh-generated/resources/DiagnosticReport-mii-exa-bildgebung-radiologische |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Diffusion/Observation/VA.page.md:11 | fql-at | @``` |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Diffusion/Observation/VA.page.md:22 | tabs | <tabs> |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Diffusion/Observation/VA.page.md:23 | tree | <tab title="Darstellung">{{tree, buttons}}</tab> |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Diffusion/Observation/VA.page.md:23 | tabs | <tab title="Darstellung">{{tree, buttons}}</tab> |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Diffusion/Observation/VA.page.md:24 | tabs | <tab title="Beschreibung"> |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Diffusion/Observation/VA.page.md:25 | fql-at | @``` |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Diffusion/Observation/VA.page.md:35 | fql-at | @``` |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Diffusion/Observation/VA.page.md:46 | tabs | </tab> |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Diffusion/Observation/VA.page.md:47 | xml | <tab title="XML">{{xml}}</tab> |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Diffusion/Observation/VA.page.md:47 | tabs | <tab title="XML">{{xml}}</tab> |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Diffusion/Observation/VA.page.md:48 | json | <tab title="JSON">{{json}}</tab> |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Diffusion/Observation/VA.page.md:48 | tabs | <tab title="JSON">{{json}}</tab> |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Diffusion/Observation/VA.page.md:49 | link | <tab title="Link">{{link}}</tab> |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Diffusion/Observation/VA.page.md:49 | tabs | <tab title="Link">{{link}}</tab> |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Diffusion/Observation/VA.page.md:50 | tabs | </tabs> |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Diffusion/Observation/VA.page.md:54 | fql-at | @``` |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Diffusion/Observation/VA.page.md:71 | fql-at | @``` from CapabilityStatement where url = 'https://www.medizininformatik-initiat |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Diffusion/Observation/VA.page.md:81 | json | {{json:fsh-generated/resources/DiagnosticReport-mii-exa-bildgebung-radiologische |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Diffusion/Procedure.page.md:11 | fql-at | @``` |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Diffusion/Procedure.page.md:22 | tabs | <tabs> |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Diffusion/Procedure.page.md:23 | tree | <tab title="Darstellung">{{tree, buttons}}</tab> |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Diffusion/Procedure.page.md:23 | tabs | <tab title="Darstellung">{{tree, buttons}}</tab> |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Diffusion/Procedure.page.md:24 | tabs | <tab title="Beschreibung"> |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Diffusion/Procedure.page.md:25 | fql-at | @``` |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Diffusion/Procedure.page.md:35 | fql-at | @``` |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Diffusion/Procedure.page.md:46 | tabs | </tab> |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Diffusion/Procedure.page.md:47 | xml | <tab title="XML">{{xml}}</tab> |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Diffusion/Procedure.page.md:47 | tabs | <tab title="XML">{{xml}}</tab> |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Diffusion/Procedure.page.md:48 | json | <tab title="JSON">{{json}}</tab> |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Diffusion/Procedure.page.md:48 | tabs | <tab title="JSON">{{json}}</tab> |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Diffusion/Procedure.page.md:49 | link | <tab title="Link">{{link}}</tab> |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Diffusion/Procedure.page.md:49 | tabs | <tab title="Link">{{link}}</tab> |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Diffusion/Procedure.page.md:50 | tabs | </tabs> |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Diffusion/Procedure.page.md:54 | fql-at | @``` |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Diffusion/Procedure.page.md:71 | fql-at | @``` from CapabilityStatement where url = 'https://www.medizininformatik-initiat |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Diffusion/Procedure.page.md:81 | json | {{json:fsh-generated/resources/DiagnosticReport-mii-exa-bildgebung-radiologische |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Diffusion/Report.page.md:11 | fql-at | @``` |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Diffusion/Report.page.md:22 | tabs | <tabs> |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Diffusion/Report.page.md:23 | tree | <tab title="Darstellung">{{tree, buttons}}</tab> |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Diffusion/Report.page.md:23 | tabs | <tab title="Darstellung">{{tree, buttons}}</tab> |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Diffusion/Report.page.md:24 | tabs | <tab title="Beschreibung"> |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Diffusion/Report.page.md:25 | fql-at | @``` |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Diffusion/Report.page.md:35 | fql-at | @``` |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Diffusion/Report.page.md:46 | tabs | </tab> |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Diffusion/Report.page.md:47 | xml | <tab title="XML">{{xml}}</tab> |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Diffusion/Report.page.md:47 | tabs | <tab title="XML">{{xml}}</tab> |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Diffusion/Report.page.md:48 | json | <tab title="JSON">{{json}}</tab> |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Diffusion/Report.page.md:48 | tabs | <tab title="JSON">{{json}}</tab> |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Diffusion/Report.page.md:49 | link | <tab title="Link">{{link}}</tab> |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Diffusion/Report.page.md:49 | tabs | <tab title="Link">{{link}}</tab> |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Diffusion/Report.page.md:50 | tabs | </tabs> |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Diffusion/Report.page.md:54 | fql-at | @``` |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Diffusion/Report.page.md:71 | fql-at | @``` from CapabilityStatement where url = 'https://www.medizininformatik-initiat |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Diffusion/Report.page.md:81 | json | {{json:fsh-generated/resources/DiagnosticReport-mii-exa-bildgebung-radiologische |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Diffusion/Observation/KCOc.page.md:81 | json | {{json:fsh-generated/resources/Observation-mii-exa-lungenfunktion-kco.json}} |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Diffusion/Observation/VA.page.md:10 | fql-at | @``` |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Diffusion/Observation/VA.page.md:21 | tabs | <tabs> |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Diffusion/Observation/VA.page.md:22 | tree | <tab title="Darstellung">{{tree, buttons}}</tab> |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Diffusion/Observation/VA.page.md:22 | tabs | <tab title="Darstellung">{{tree, buttons}}</tab> |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Diffusion/Observation/VA.page.md:23 | tabs | <tab title="Beschreibung"> |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Diffusion/Observation/VA.page.md:24 | fql-at | @``` |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Diffusion/Observation/VA.page.md:34 | fql-at | @``` |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Diffusion/Observation/VA.page.md:45 | tabs | </tab> |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Diffusion/Observation/VA.page.md:46 | xml | <tab title="XML">{{xml}}</tab> |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Diffusion/Observation/VA.page.md:46 | tabs | <tab title="XML">{{xml}}</tab> |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Diffusion/Observation/VA.page.md:47 | json | <tab title="JSON">{{json}}</tab> |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Diffusion/Observation/VA.page.md:47 | tabs | <tab title="JSON">{{json}}</tab> |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Diffusion/Observation/VA.page.md:48 | link | <tab title="Link">{{link}}</tab> |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Diffusion/Observation/VA.page.md:48 | tabs | <tab title="Link">{{link}}</tab> |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Diffusion/Observation/VA.page.md:49 | tabs | </tabs> |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Diffusion/Observation/VA.page.md:53 | fql-at | @``` |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Diffusion/Observation/VA.page.md:70 | fql-at | @``` from CapabilityStatement where url = 'https://www.medizininformatik-initiat |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Diffusion/Observation/VA.page.md:80 | json | {{json:fsh-generated/resources/Observation-mii-exa-lungenfunktion-va.json}} |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Diffusion/Procedure.page.md:10 | fql-at | @``` |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Diffusion/Procedure.page.md:21 | tabs | <tabs> |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Diffusion/Procedure.page.md:22 | tree | <tab title="Darstellung">{{tree, buttons}}</tab> |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Diffusion/Procedure.page.md:22 | tabs | <tab title="Darstellung">{{tree, buttons}}</tab> |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Diffusion/Procedure.page.md:23 | tabs | <tab title="Beschreibung"> |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Diffusion/Procedure.page.md:24 | fql-at | @``` |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Diffusion/Procedure.page.md:34 | fql-at | @``` |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Diffusion/Procedure.page.md:45 | tabs | </tab> |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Diffusion/Procedure.page.md:46 | xml | <tab title="XML">{{xml}}</tab> |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Diffusion/Procedure.page.md:46 | tabs | <tab title="XML">{{xml}}</tab> |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Diffusion/Procedure.page.md:47 | json | <tab title="JSON">{{json}}</tab> |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Diffusion/Procedure.page.md:47 | tabs | <tab title="JSON">{{json}}</tab> |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Diffusion/Procedure.page.md:48 | link | <tab title="Link">{{link}}</tab> |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Diffusion/Procedure.page.md:48 | tabs | <tab title="Link">{{link}}</tab> |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Diffusion/Procedure.page.md:49 | tabs | </tabs> |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Diffusion/Procedure.page.md:53 | fql-at | @``` |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Diffusion/Procedure.page.md:70 | fql-at | @``` from CapabilityStatement where url = 'https://www.medizininformatik-initiat |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Diffusion/Procedure.page.md:80 | json | {{json:fsh-generated/resources/Procedure-mii-exa-lungenfunktion-diffusion-messun |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Diffusion/Report.page.md:10 | fql-at | @``` |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Diffusion/Report.page.md:21 | tabs | <tabs> |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Diffusion/Report.page.md:22 | tree | <tab title="Darstellung">{{tree, buttons}}</tab> |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Diffusion/Report.page.md:22 | tabs | <tab title="Darstellung">{{tree, buttons}}</tab> |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Diffusion/Report.page.md:23 | tabs | <tab title="Beschreibung"> |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Diffusion/Report.page.md:24 | fql-at | @``` |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Diffusion/Report.page.md:34 | fql-at | @``` |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Diffusion/Report.page.md:45 | tabs | </tab> |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Diffusion/Report.page.md:46 | xml | <tab title="XML">{{xml}}</tab> |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Diffusion/Report.page.md:46 | tabs | <tab title="XML">{{xml}}</tab> |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Diffusion/Report.page.md:47 | json | <tab title="JSON">{{json}}</tab> |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Diffusion/Report.page.md:47 | tabs | <tab title="JSON">{{json}}</tab> |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Diffusion/Report.page.md:48 | link | <tab title="Link">{{link}}</tab> |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Diffusion/Report.page.md:48 | tabs | <tab title="Link">{{link}}</tab> |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Diffusion/Report.page.md:49 | tabs | </tabs> |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Diffusion/Report.page.md:53 | fql-at | @``` |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Diffusion/Report.page.md:70 | fql-at | @``` from CapabilityStatement where url = 'https://www.medizininformatik-initiat |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Diffusion/Report.page.md:80 | json | {{json:fsh-generated/resources/DiagnosticReport-mii-exa-lungenfunktion-diffusion |
 | implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Index.page.md:12 | render-image | \| {{render:implementation-guides/ImplementationGuide-Common/images/Warning.jpg}} |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Provokationstest/Observation/FEV.page.md:11 | fql-at | @``` |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Provokationstest/Observation/FEV.page.md:22 | tabs | <tabs> |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Provokationstest/Observation/FEV.page.md:23 | tree | <tab title="Darstellung">{{tree, buttons}}</tab> |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Provokationstest/Observation/FEV.page.md:23 | tabs | <tab title="Darstellung">{{tree, buttons}}</tab> |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Provokationstest/Observation/FEV.page.md:24 | tabs | <tab title="Beschreibung"> |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Provokationstest/Observation/FEV.page.md:25 | fql-at | @``` |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Provokationstest/Observation/FEV.page.md:35 | fql-at | @``` |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Provokationstest/Observation/FEV.page.md:46 | tabs | </tab> |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Provokationstest/Observation/FEV.page.md:47 | xml | <tab title="XML">{{xml}}</tab> |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Provokationstest/Observation/FEV.page.md:47 | tabs | <tab title="XML">{{xml}}</tab> |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Provokationstest/Observation/FEV.page.md:48 | json | <tab title="JSON">{{json}}</tab> |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Provokationstest/Observation/FEV.page.md:48 | tabs | <tab title="JSON">{{json}}</tab> |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Provokationstest/Observation/FEV.page.md:49 | link | <tab title="Link">{{link}}</tab> |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Provokationstest/Observation/FEV.page.md:49 | tabs | <tab title="Link">{{link}}</tab> |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Provokationstest/Observation/FEV.page.md:50 | tabs | </tabs> |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Provokationstest/Observation/FEV.page.md:54 | fql-at | @``` |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Provokationstest/Observation/FEV.page.md:71 | fql-at | @``` from CapabilityStatement where url = 'https://www.medizininformatik-initiat |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Provokationstest/Observation/FEV.page.md:81 | json | {{json:fsh-generated/resources/DiagnosticReport-mii-exa-bildgebung-radiologische |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Provokationstest/Procedure.page.md:11 | fql-at | @``` |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Provokationstest/Procedure.page.md:22 | tabs | <tabs> |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Provokationstest/Procedure.page.md:23 | tree | <tab title="Darstellung">{{tree, buttons}}</tab> |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Provokationstest/Procedure.page.md:23 | tabs | <tab title="Darstellung">{{tree, buttons}}</tab> |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Provokationstest/Procedure.page.md:24 | tabs | <tab title="Beschreibung"> |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Provokationstest/Procedure.page.md:25 | fql-at | @``` |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Provokationstest/Procedure.page.md:35 | fql-at | @``` |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Provokationstest/Procedure.page.md:46 | tabs | </tab> |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Provokationstest/Procedure.page.md:47 | xml | <tab title="XML">{{xml}}</tab> |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Provokationstest/Procedure.page.md:47 | tabs | <tab title="XML">{{xml}}</tab> |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Provokationstest/Procedure.page.md:48 | json | <tab title="JSON">{{json}}</tab> |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Provokationstest/Procedure.page.md:48 | tabs | <tab title="JSON">{{json}}</tab> |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Provokationstest/Procedure.page.md:49 | link | <tab title="Link">{{link}}</tab> |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Provokationstest/Procedure.page.md:49 | tabs | <tab title="Link">{{link}}</tab> |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Provokationstest/Procedure.page.md:50 | tabs | </tabs> |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Provokationstest/Procedure.page.md:54 | fql-at | @``` |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Provokationstest/Procedure.page.md:71 | fql-at | @``` from CapabilityStatement where url = 'https://www.medizininformatik-initiat |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Provokationstest/Procedure.page.md:81 | json | {{json:fsh-generated/resources/DiagnosticReport-mii-exa-bildgebung-radiologische |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Provokationstest/Report.page.md:11 | fql-at | @``` |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Provokationstest/Report.page.md:22 | tabs | <tabs> |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Provokationstest/Report.page.md:23 | tree | <tab title="Darstellung">{{tree, buttons}}</tab> |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Provokationstest/Report.page.md:23 | tabs | <tab title="Darstellung">{{tree, buttons}}</tab> |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Provokationstest/Report.page.md:24 | tabs | <tab title="Beschreibung"> |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Provokationstest/Report.page.md:25 | fql-at | @``` |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Provokationstest/Report.page.md:35 | fql-at | @``` |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Provokationstest/Report.page.md:46 | tabs | </tab> |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Provokationstest/Report.page.md:47 | xml | <tab title="XML">{{xml}}</tab> |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Provokationstest/Report.page.md:47 | tabs | <tab title="XML">{{xml}}</tab> |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Provokationstest/Report.page.md:48 | json | <tab title="JSON">{{json}}</tab> |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Provokationstest/Report.page.md:48 | tabs | <tab title="JSON">{{json}}</tab> |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Provokationstest/Report.page.md:49 | link | <tab title="Link">{{link}}</tab> |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Provokationstest/Report.page.md:49 | tabs | <tab title="Link">{{link}}</tab> |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Provokationstest/Report.page.md:50 | tabs | </tabs> |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Provokationstest/Report.page.md:54 | fql-at | @``` |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Provokationstest/Report.page.md:71 | fql-at | @``` from CapabilityStatement where url = 'https://www.medizininformatik-initiat |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Provokationstest/Report.page.md:81 | json | {{json:fsh-generated/resources/DiagnosticReport-mii-exa-bildgebung-radiologische |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Observation/BF.page.md:11 | fql-at | @``` |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Observation/BF.page.md:22 | tabs | <tabs> |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Observation/BF.page.md:23 | tree | <tab title="Darstellung">{{tree, buttons}}</tab> |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Observation/BF.page.md:23 | tabs | <tab title="Darstellung">{{tree, buttons}}</tab> |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Observation/BF.page.md:24 | tabs | <tab title="Beschreibung"> |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Observation/BF.page.md:25 | fql-at | @``` |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Observation/BF.page.md:35 | fql-at | @``` |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Observation/BF.page.md:46 | tabs | </tab> |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Observation/BF.page.md:47 | xml | <tab title="XML">{{xml}}</tab> |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Observation/BF.page.md:47 | tabs | <tab title="XML">{{xml}}</tab> |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Observation/BF.page.md:48 | json | <tab title="JSON">{{json}}</tab> |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Observation/BF.page.md:48 | tabs | <tab title="JSON">{{json}}</tab> |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Observation/BF.page.md:49 | link | <tab title="Link">{{link}}</tab> |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Observation/BF.page.md:49 | tabs | <tab title="Link">{{link}}</tab> |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Observation/BF.page.md:50 | tabs | </tabs> |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Observation/BF.page.md:54 | fql-at | @``` |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Observation/BF.page.md:70 | fql-at | @``` from CapabilityStatement where url = 'https://www.medizininformatik-initiat |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Observation/BF.page.md:80 | json | {{json:fsh-generated/resources/DiagnosticReport-mii-exa-bildgebung-radiologische |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Observation/FEV.page.md:11 | fql-at | @``` |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Observation/FEV.page.md:22 | tabs | <tabs> |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Observation/FEV.page.md:23 | tree | <tab title="Darstellung">{{tree, buttons}}</tab> |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Observation/FEV.page.md:23 | tabs | <tab title="Darstellung">{{tree, buttons}}</tab> |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Observation/FEV.page.md:24 | tabs | <tab title="Beschreibung"> |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Observation/FEV.page.md:25 | fql-at | @``` |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Observation/FEV.page.md:35 | fql-at | @``` |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Observation/FEV.page.md:46 | tabs | </tab> |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Observation/FEV.page.md:47 | xml | <tab title="XML">{{xml}}</tab> |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Observation/FEV.page.md:47 | tabs | <tab title="XML">{{xml}}</tab> |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Observation/FEV.page.md:48 | json | <tab title="JSON">{{json}}</tab> |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Observation/FEV.page.md:48 | tabs | <tab title="JSON">{{json}}</tab> |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Observation/FEV.page.md:49 | link | <tab title="Link">{{link}}</tab> |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Observation/FEV.page.md:49 | tabs | <tab title="Link">{{link}}</tab> |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Observation/FEV.page.md:50 | tabs | </tabs> |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Observation/FEV.page.md:54 | fql-at | @``` |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Observation/FEV.page.md:71 | fql-at | @``` from CapabilityStatement where url = 'https://www.medizininformatik-initiat |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Observation/FEV.page.md:81 | json | {{json:fsh-generated/resources/DiagnosticReport-mii-exa-bildgebung-radiologische |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Observation/FEVFVC.page.md:11 | fql-at | @``` |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Observation/FEVFVC.page.md:22 | tabs | <tabs> |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Observation/FEVFVC.page.md:23 | tree | <tab title="Darstellung">{{tree, buttons}}</tab> |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Observation/FEVFVC.page.md:23 | tabs | <tab title="Darstellung">{{tree, buttons}}</tab> |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Observation/FEVFVC.page.md:24 | tabs | <tab title="Beschreibung"> |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Observation/FEVFVC.page.md:25 | fql-at | @``` |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Observation/FEVFVC.page.md:35 | fql-at | @``` |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Observation/FEVFVC.page.md:46 | tabs | </tab> |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Observation/FEVFVC.page.md:47 | xml | <tab title="XML">{{xml}}</tab> |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Observation/FEVFVC.page.md:47 | tabs | <tab title="XML">{{xml}}</tab> |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Observation/FEVFVC.page.md:48 | json | <tab title="JSON">{{json}}</tab> |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Observation/FEVFVC.page.md:48 | tabs | <tab title="JSON">{{json}}</tab> |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Observation/FEVFVC.page.md:49 | link | <tab title="Link">{{link}}</tab> |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Observation/FEVFVC.page.md:49 | tabs | <tab title="Link">{{link}}</tab> |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Observation/FEVFVC.page.md:50 | tabs | </tabs> |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Observation/FEVFVC.page.md:54 | fql-at | @``` |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Observation/FEVFVC.page.md:71 | fql-at | @``` from CapabilityStatement where url = 'https://www.medizininformatik-initiat |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Observation/FEVFVC.page.md:81 | json | {{json:fsh-generated/resources/DiagnosticReport-mii-exa-bildgebung-radiologische |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Observation/FEVVC.page.md:11 | fql-at | @``` |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Observation/FEVVC.page.md:22 | tabs | <tabs> |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Observation/FEVVC.page.md:23 | tree | <tab title="Darstellung">{{tree, buttons}}</tab> |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Observation/FEVVC.page.md:23 | tabs | <tab title="Darstellung">{{tree, buttons}}</tab> |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Observation/FEVVC.page.md:24 | tabs | <tab title="Beschreibung"> |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Observation/FEVVC.page.md:25 | fql-at | @``` |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Observation/FEVVC.page.md:35 | fql-at | @``` |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Observation/FEVVC.page.md:46 | tabs | </tab> |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Observation/FEVVC.page.md:47 | xml | <tab title="XML">{{xml}}</tab> |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Observation/FEVVC.page.md:47 | tabs | <tab title="XML">{{xml}}</tab> |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Observation/FEVVC.page.md:48 | json | <tab title="JSON">{{json}}</tab> |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Observation/FEVVC.page.md:48 | tabs | <tab title="JSON">{{json}}</tab> |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Observation/FEVVC.page.md:49 | link | <tab title="Link">{{link}}</tab> |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Observation/FEVVC.page.md:49 | tabs | <tab title="Link">{{link}}</tab> |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Observation/FEVVC.page.md:50 | tabs | </tabs> |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Observation/FEVVC.page.md:54 | fql-at | @``` |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Observation/FEVVC.page.md:71 | fql-at | @``` from CapabilityStatement where url = 'https://www.medizininformatik-initiat |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Observation/FEVVC.page.md:81 | json | {{json:fsh-generated/resources/DiagnosticReport-mii-exa-bildgebung-radiologische |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Observation/FIV.page.md:11 | fql-at | @``` |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Observation/FIV.page.md:22 | tabs | <tabs> |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Observation/FIV.page.md:23 | tree | <tab title="Darstellung">{{tree, buttons}}</tab> |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Observation/FIV.page.md:23 | tabs | <tab title="Darstellung">{{tree, buttons}}</tab> |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Observation/FIV.page.md:24 | tabs | <tab title="Beschreibung"> |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Observation/FIV.page.md:25 | fql-at | @``` |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Observation/FIV.page.md:35 | fql-at | @``` |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Observation/FIV.page.md:46 | tabs | </tab> |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Observation/FIV.page.md:47 | xml | <tab title="XML">{{xml}}</tab> |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Observation/FIV.page.md:47 | tabs | <tab title="XML">{{xml}}</tab> |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Observation/FIV.page.md:48 | json | <tab title="JSON">{{json}}</tab> |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Observation/FIV.page.md:48 | tabs | <tab title="JSON">{{json}}</tab> |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Observation/FIV.page.md:49 | link | <tab title="Link">{{link}}</tab> |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Observation/FIV.page.md:49 | tabs | <tab title="Link">{{link}}</tab> |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Observation/FIV.page.md:50 | tabs | </tabs> |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Observation/FIV.page.md:54 | fql-at | @``` |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Observation/FIV.page.md:71 | fql-at | @``` from CapabilityStatement where url = 'https://www.medizininformatik-initiat |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Observation/FIV.page.md:81 | json | {{json:fsh-generated/resources/DiagnosticReport-mii-exa-bildgebung-radiologische |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Observation/FVC.page.md:11 | fql-at | @``` |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Observation/FVC.page.md:22 | tabs | <tabs> |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Observation/FVC.page.md:23 | tree | <tab title="Darstellung">{{tree, buttons}}</tab> |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Observation/FVC.page.md:23 | tabs | <tab title="Darstellung">{{tree, buttons}}</tab> |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Observation/FVC.page.md:24 | tabs | <tab title="Beschreibung"> |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Observation/FVC.page.md:25 | fql-at | @``` |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Observation/FVC.page.md:35 | fql-at | @``` |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Observation/FVC.page.md:46 | tabs | </tab> |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Observation/FVC.page.md:47 | xml | <tab title="XML">{{xml}}</tab> |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Observation/FVC.page.md:47 | tabs | <tab title="XML">{{xml}}</tab> |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Observation/FVC.page.md:48 | json | <tab title="JSON">{{json}}</tab> |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Observation/FVC.page.md:48 | tabs | <tab title="JSON">{{json}}</tab> |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Observation/FVC.page.md:49 | link | <tab title="Link">{{link}}</tab> |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Observation/FVC.page.md:49 | tabs | <tab title="Link">{{link}}</tab> |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Observation/FVC.page.md:50 | tabs | </tabs> |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Observation/FVC.page.md:54 | fql-at | @``` |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Observation/FVC.page.md:71 | fql-at | @``` from CapabilityStatement where url = 'https://www.medizininformatik-initiat |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Observation/FVC.page.md:81 | json | {{json:fsh-generated/resources/DiagnosticReport-mii-exa-bildgebung-radiologische |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Observation/IC.page.md:11 | fql-at | @``` |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Observation/IC.page.md:22 | tabs | <tabs> |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Observation/IC.page.md:23 | tree | <tab title="Darstellung">{{tree, buttons}}</tab> |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Observation/IC.page.md:23 | tabs | <tab title="Darstellung">{{tree, buttons}}</tab> |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Observation/IC.page.md:24 | tabs | <tab title="Beschreibung"> |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Observation/IC.page.md:25 | fql-at | @``` |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Observation/IC.page.md:35 | fql-at | @``` |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Observation/IC.page.md:46 | tabs | </tab> |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Observation/IC.page.md:47 | xml | <tab title="XML">{{xml}}</tab> |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Observation/IC.page.md:47 | tabs | <tab title="XML">{{xml}}</tab> |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Observation/IC.page.md:48 | json | <tab title="JSON">{{json}}</tab> |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Observation/IC.page.md:48 | tabs | <tab title="JSON">{{json}}</tab> |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Observation/IC.page.md:49 | link | <tab title="Link">{{link}}</tab> |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Observation/IC.page.md:49 | tabs | <tab title="Link">{{link}}</tab> |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Observation/IC.page.md:50 | tabs | </tabs> |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Observation/IC.page.md:54 | fql-at | @``` |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Observation/IC.page.md:71 | fql-at | @``` from CapabilityStatement where url = 'https://www.medizininformatik-initiat |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Observation/IC.page.md:81 | json | {{json:fsh-generated/resources/DiagnosticReport-mii-exa-bildgebung-radiologische |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Observation/MEF.page.md:11 | fql-at | @``` |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Observation/MEF.page.md:22 | tabs | <tabs> |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Observation/MEF.page.md:23 | tree | <tab title="Darstellung">{{tree, buttons}}</tab> |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Observation/MEF.page.md:23 | tabs | <tab title="Darstellung">{{tree, buttons}}</tab> |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Observation/MEF.page.md:24 | tabs | <tab title="Beschreibung"> |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Observation/MEF.page.md:25 | fql-at | @``` |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Observation/MEF.page.md:35 | fql-at | @``` |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Observation/MEF.page.md:46 | tabs | </tab> |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Observation/MEF.page.md:47 | xml | <tab title="XML">{{xml}}</tab> |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Observation/MEF.page.md:47 | tabs | <tab title="XML">{{xml}}</tab> |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Observation/MEF.page.md:48 | json | <tab title="JSON">{{json}}</tab> |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Observation/MEF.page.md:48 | tabs | <tab title="JSON">{{json}}</tab> |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Observation/MEF.page.md:49 | link | <tab title="Link">{{link}}</tab> |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Observation/MEF.page.md:49 | tabs | <tab title="Link">{{link}}</tab> |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Observation/MEF.page.md:50 | tabs | </tabs> |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Observation/MEF.page.md:54 | fql-at | @``` |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Observation/MEF.page.md:71 | fql-at | @``` from CapabilityStatement where url = 'https://www.medizininformatik-initiat |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Observation/MEF.page.md:81 | json | {{json:fsh-generated/resources/DiagnosticReport-mii-exa-bildgebung-radiologische |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Observation/PEF.page.md:11 | fql-at | @``` |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Observation/PEF.page.md:22 | tabs | <tabs> |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Observation/PEF.page.md:23 | tree | <tab title="Darstellung">{{tree, buttons}}</tab> |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Observation/PEF.page.md:23 | tabs | <tab title="Darstellung">{{tree, buttons}}</tab> |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Observation/PEF.page.md:24 | tabs | <tab title="Beschreibung"> |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Observation/PEF.page.md:25 | fql-at | @``` |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Observation/PEF.page.md:35 | fql-at | @``` |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Observation/PEF.page.md:46 | tabs | </tab> |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Observation/PEF.page.md:47 | xml | <tab title="XML">{{xml}}</tab> |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Observation/PEF.page.md:47 | tabs | <tab title="XML">{{xml}}</tab> |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Observation/PEF.page.md:48 | json | <tab title="JSON">{{json}}</tab> |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Observation/PEF.page.md:48 | tabs | <tab title="JSON">{{json}}</tab> |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Observation/PEF.page.md:49 | link | <tab title="Link">{{link}}</tab> |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Observation/PEF.page.md:49 | tabs | <tab title="Link">{{link}}</tab> |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Observation/PEF.page.md:50 | tabs | </tabs> |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Observation/PEF.page.md:54 | fql-at | @``` |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Observation/PEF.page.md:71 | fql-at | @``` from CapabilityStatement where url = 'https://www.medizininformatik-initiat |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Observation/PEF.page.md:81 | json | {{json:fsh-generated/resources/DiagnosticReport-mii-exa-bildgebung-radiologische |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Observation/RV.page.md:11 | fql-at | @``` |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Observation/RV.page.md:22 | tabs | <tabs> |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Observation/RV.page.md:23 | tree | <tab title="Darstellung">{{tree, buttons}}</tab> |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Observation/RV.page.md:23 | tabs | <tab title="Darstellung">{{tree, buttons}}</tab> |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Observation/RV.page.md:24 | tabs | <tab title="Beschreibung"> |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Observation/RV.page.md:25 | fql-at | @``` |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Observation/RV.page.md:35 | fql-at | @``` |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Observation/RV.page.md:46 | tabs | </tab> |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Observation/RV.page.md:47 | xml | <tab title="XML">{{xml}}</tab> |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Observation/RV.page.md:47 | tabs | <tab title="XML">{{xml}}</tab> |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Observation/RV.page.md:48 | json | <tab title="JSON">{{json}}</tab> |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Observation/RV.page.md:48 | tabs | <tab title="JSON">{{json}}</tab> |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Observation/RV.page.md:49 | link | <tab title="Link">{{link}}</tab> |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Observation/RV.page.md:49 | tabs | <tab title="Link">{{link}}</tab> |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Observation/RV.page.md:50 | tabs | </tabs> |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Observation/RV.page.md:54 | fql-at | @``` |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Observation/RV.page.md:71 | fql-at | @``` from CapabilityStatement where url = 'https://www.medizininformatik-initiat |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Observation/RV.page.md:81 | json | {{json:fsh-generated/resources/DiagnosticReport-mii-exa-bildgebung-radiologische |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Observation/VC.page.md:11 | fql-at | @``` |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Observation/VC.page.md:22 | tabs | <tabs> |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Observation/VC.page.md:23 | tree | <tab title="Darstellung">{{tree, buttons}}</tab> |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Observation/VC.page.md:23 | tabs | <tab title="Darstellung">{{tree, buttons}}</tab> |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Observation/VC.page.md:24 | tabs | <tab title="Beschreibung"> |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Observation/VC.page.md:25 | fql-at | @``` |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Observation/VC.page.md:35 | fql-at | @``` |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Observation/VC.page.md:46 | tabs | </tab> |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Observation/VC.page.md:47 | xml | <tab title="XML">{{xml}}</tab> |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Observation/VC.page.md:47 | tabs | <tab title="XML">{{xml}}</tab> |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Observation/VC.page.md:48 | json | <tab title="JSON">{{json}}</tab> |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Observation/VC.page.md:48 | tabs | <tab title="JSON">{{json}}</tab> |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Observation/VC.page.md:49 | link | <tab title="Link">{{link}}</tab> |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Observation/VC.page.md:49 | tabs | <tab title="Link">{{link}}</tab> |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Observation/VC.page.md:50 | tabs | </tabs> |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Observation/VC.page.md:54 | fql-at | @``` |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Observation/VC.page.md:71 | fql-at | @``` from CapabilityStatement where url = 'https://www.medizininformatik-initiat |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Observation/VC.page.md:81 | json | {{json:fsh-generated/resources/DiagnosticReport-mii-exa-bildgebung-radiologische |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Procedure.page.md:11 | fql-at | @``` |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Procedure.page.md:22 | tabs | <tabs> |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Procedure.page.md:23 | tree | <tab title="Darstellung">{{tree, buttons}}</tab> |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Procedure.page.md:23 | tabs | <tab title="Darstellung">{{tree, buttons}}</tab> |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Procedure.page.md:24 | tabs | <tab title="Beschreibung"> |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Procedure.page.md:25 | fql-at | @``` |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Procedure.page.md:35 | fql-at | @``` |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Procedure.page.md:46 | tabs | </tab> |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Procedure.page.md:47 | xml | <tab title="XML">{{xml}}</tab> |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Procedure.page.md:47 | tabs | <tab title="XML">{{xml}}</tab> |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Procedure.page.md:48 | json | <tab title="JSON">{{json}}</tab> |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Procedure.page.md:48 | tabs | <tab title="JSON">{{json}}</tab> |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Procedure.page.md:49 | link | <tab title="Link">{{link}}</tab> |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Procedure.page.md:49 | tabs | <tab title="Link">{{link}}</tab> |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Procedure.page.md:50 | tabs | </tabs> |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Procedure.page.md:54 | fql-at | @``` |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Procedure.page.md:71 | fql-at | @``` from CapabilityStatement where url = 'https://www.medizininformatik-initiat |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Procedure.page.md:81 | json | {{json:fsh-generated/resources/DiagnosticReport-mii-exa-bildgebung-radiologische |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Report.page.md:11 | fql-at | @``` |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Report.page.md:22 | tabs | <tabs> |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Report.page.md:23 | tree | <tab title="Darstellung">{{tree, buttons}}</tab> |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Report.page.md:23 | tabs | <tab title="Darstellung">{{tree, buttons}}</tab> |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Report.page.md:24 | tabs | <tab title="Beschreibung"> |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Report.page.md:25 | fql-at | @``` |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Report.page.md:35 | fql-at | @``` |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Report.page.md:46 | tabs | </tab> |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Report.page.md:47 | xml | <tab title="XML">{{xml}}</tab> |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Report.page.md:47 | tabs | <tab title="XML">{{xml}}</tab> |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Report.page.md:48 | json | <tab title="JSON">{{json}}</tab> |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Report.page.md:48 | tabs | <tab title="JSON">{{json}}</tab> |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Report.page.md:49 | link | <tab title="Link">{{link}}</tab> |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Report.page.md:49 | tabs | <tab title="Link">{{link}}</tab> |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Report.page.md:50 | tabs | </tabs> |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Report.page.md:54 | fql-at | @``` |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Report.page.md:71 | fql-at | @``` from CapabilityStatement where url = 'https://www.medizininformatik-initiat |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Report.page.md:81 | json | {{json:fsh-generated/resources/DiagnosticReport-mii-exa-bildgebung-radiologische |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Umgebungsvariablen/CO2-Konzentration.page.md:11 | fql-at | @``` |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Umgebungsvariablen/CO2-Konzentration.page.md:22 | tabs | <tabs> |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Umgebungsvariablen/CO2-Konzentration.page.md:23 | tree | <tab title="Darstellung">{{tree, buttons}}</tab> |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Umgebungsvariablen/CO2-Konzentration.page.md:23 | tabs | <tab title="Darstellung">{{tree, buttons}}</tab> |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Umgebungsvariablen/CO2-Konzentration.page.md:24 | tabs | <tab title="Beschreibung"> |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Umgebungsvariablen/CO2-Konzentration.page.md:25 | fql-at | @``` |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Umgebungsvariablen/CO2-Konzentration.page.md:35 | fql-at | @``` |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Umgebungsvariablen/CO2-Konzentration.page.md:46 | tabs | </tab> |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Umgebungsvariablen/CO2-Konzentration.page.md:47 | xml | <tab title="XML">{{xml}}</tab> |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Umgebungsvariablen/CO2-Konzentration.page.md:47 | tabs | <tab title="XML">{{xml}}</tab> |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Umgebungsvariablen/CO2-Konzentration.page.md:48 | json | <tab title="JSON">{{json}}</tab> |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Umgebungsvariablen/CO2-Konzentration.page.md:48 | tabs | <tab title="JSON">{{json}}</tab> |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Umgebungsvariablen/CO2-Konzentration.page.md:49 | link | <tab title="Link">{{link}}</tab> |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Umgebungsvariablen/CO2-Konzentration.page.md:49 | tabs | <tab title="Link">{{link}}</tab> |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Umgebungsvariablen/CO2-Konzentration.page.md:50 | tabs | </tabs> |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Umgebungsvariablen/CO2-Konzentration.page.md:54 | fql-at | @``` |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Umgebungsvariablen/CO2-Konzentration.page.md:71 | fql-at | @``` from CapabilityStatement where url = 'https://www.medizininformatik-initiat |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Umgebungsvariablen/CO2-Konzentration.page.md:81 | json | {{json:fsh-generated/resources/DiagnosticReport-mii-exa-bildgebung-radiologische |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Umgebungsvariablen/Luftfeuchtigkeit.page.md:11 | fql-at | @``` |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Umgebungsvariablen/Luftfeuchtigkeit.page.md:22 | tabs | <tabs> |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Umgebungsvariablen/Luftfeuchtigkeit.page.md:23 | tree | <tab title="Darstellung">{{tree, buttons}}</tab> |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Umgebungsvariablen/Luftfeuchtigkeit.page.md:23 | tabs | <tab title="Darstellung">{{tree, buttons}}</tab> |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Umgebungsvariablen/Luftfeuchtigkeit.page.md:24 | tabs | <tab title="Beschreibung"> |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Umgebungsvariablen/Luftfeuchtigkeit.page.md:25 | fql-at | @``` |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Umgebungsvariablen/Luftfeuchtigkeit.page.md:35 | fql-at | @``` |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Umgebungsvariablen/Luftfeuchtigkeit.page.md:46 | tabs | </tab> |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Umgebungsvariablen/Luftfeuchtigkeit.page.md:47 | xml | <tab title="XML">{{xml}}</tab> |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Umgebungsvariablen/Luftfeuchtigkeit.page.md:47 | tabs | <tab title="XML">{{xml}}</tab> |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Umgebungsvariablen/Luftfeuchtigkeit.page.md:48 | json | <tab title="JSON">{{json}}</tab> |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Umgebungsvariablen/Luftfeuchtigkeit.page.md:48 | tabs | <tab title="JSON">{{json}}</tab> |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Umgebungsvariablen/Luftfeuchtigkeit.page.md:49 | link | <tab title="Link">{{link}}</tab> |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Umgebungsvariablen/Luftfeuchtigkeit.page.md:49 | tabs | <tab title="Link">{{link}}</tab> |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Umgebungsvariablen/Luftfeuchtigkeit.page.md:50 | tabs | </tabs> |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Umgebungsvariablen/Luftfeuchtigkeit.page.md:54 | fql-at | @``` |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Umgebungsvariablen/Luftfeuchtigkeit.page.md:71 | fql-at | @``` from CapabilityStatement where url = 'https://www.medizininformatik-initiat |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Umgebungsvariablen/Luftfeuchtigkeit.page.md:81 | json | {{json:fsh-generated/resources/DiagnosticReport-mii-exa-bildgebung-radiologische |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Umgebungsvariablen/Lufttemperatur.page.md:11 | fql-at | @``` |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Umgebungsvariablen/Lufttemperatur.page.md:22 | tabs | <tabs> |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Umgebungsvariablen/Lufttemperatur.page.md:23 | tree | <tab title="Darstellung">{{tree, buttons}}</tab> |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Umgebungsvariablen/Lufttemperatur.page.md:23 | tabs | <tab title="Darstellung">{{tree, buttons}}</tab> |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Umgebungsvariablen/Lufttemperatur.page.md:24 | tabs | <tab title="Beschreibung"> |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Umgebungsvariablen/Lufttemperatur.page.md:25 | fql-at | @``` |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Umgebungsvariablen/Lufttemperatur.page.md:35 | fql-at | @``` |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Umgebungsvariablen/Lufttemperatur.page.md:46 | tabs | </tab> |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Umgebungsvariablen/Lufttemperatur.page.md:47 | xml | <tab title="XML">{{xml}}</tab> |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Umgebungsvariablen/Lufttemperatur.page.md:47 | tabs | <tab title="XML">{{xml}}</tab> |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Umgebungsvariablen/Lufttemperatur.page.md:48 | json | <tab title="JSON">{{json}}</tab> |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Umgebungsvariablen/Lufttemperatur.page.md:48 | tabs | <tab title="JSON">{{json}}</tab> |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Umgebungsvariablen/Lufttemperatur.page.md:49 | link | <tab title="Link">{{link}}</tab> |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Umgebungsvariablen/Lufttemperatur.page.md:49 | tabs | <tab title="Link">{{link}}</tab> |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Umgebungsvariablen/Lufttemperatur.page.md:50 | tabs | </tabs> |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Umgebungsvariablen/Lufttemperatur.page.md:54 | fql-at | @``` |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Umgebungsvariablen/Lufttemperatur.page.md:71 | fql-at | @``` from CapabilityStatement where url = 'https://www.medizininformatik-initiat |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Umgebungsvariablen/Lufttemperatur.page.md:81 | json | {{json:fsh-generated/resources/DiagnosticReport-mii-exa-bildgebung-radiologische |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Umgebungsvariablen/Umgebung.page.md:11 | fql-at | @``` |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Umgebungsvariablen/Umgebung.page.md:22 | tabs | <tabs> |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Umgebungsvariablen/Umgebung.page.md:23 | tree | <tab title="Darstellung">{{tree, buttons}}</tab> |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Umgebungsvariablen/Umgebung.page.md:23 | tabs | <tab title="Darstellung">{{tree, buttons}}</tab> |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Umgebungsvariablen/Umgebung.page.md:24 | tabs | <tab title="Beschreibung"> |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Umgebungsvariablen/Umgebung.page.md:25 | fql-at | @``` |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Umgebungsvariablen/Umgebung.page.md:35 | fql-at | @``` |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Umgebungsvariablen/Umgebung.page.md:46 | tabs | </tab> |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Umgebungsvariablen/Umgebung.page.md:47 | xml | <tab title="XML">{{xml}}</tab> |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Umgebungsvariablen/Umgebung.page.md:47 | tabs | <tab title="XML">{{xml}}</tab> |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Umgebungsvariablen/Umgebung.page.md:48 | json | <tab title="JSON">{{json}}</tab> |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Umgebungsvariablen/Umgebung.page.md:48 | tabs | <tab title="JSON">{{json}}</tab> |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Umgebungsvariablen/Umgebung.page.md:49 | link | <tab title="Link">{{link}}</tab> |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Umgebungsvariablen/Umgebung.page.md:49 | tabs | <tab title="Link">{{link}}</tab> |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Umgebungsvariablen/Umgebung.page.md:50 | tabs | </tabs> |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Umgebungsvariablen/Umgebung.page.md:54 | fql-at | @``` |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Umgebungsvariablen/Umgebung.page.md:71 | fql-at | @``` from CapabilityStatement where url = 'https://www.medizininformatik-initiat |
-| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Umgebungsvariablen/Umgebung.page.md:81 | json | {{json:fsh-generated/resources/DiagnosticReport-mii-exa-bildgebung-radiologische |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Provokationstest/Dosis.page.md:10 | fql-at | @``` |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Provokationstest/Dosis.page.md:21 | tabs | <tabs> |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Provokationstest/Dosis.page.md:22 | tree | <tab title="Darstellung">{{tree, buttons}}</tab> |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Provokationstest/Dosis.page.md:22 | tabs | <tab title="Darstellung">{{tree, buttons}}</tab> |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Provokationstest/Dosis.page.md:23 | tabs | <tab title="Beschreibung"> |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Provokationstest/Dosis.page.md:24 | fql-at | @``` |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Provokationstest/Dosis.page.md:34 | fql-at | @``` |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Provokationstest/Dosis.page.md:45 | tabs | </tab> |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Provokationstest/Dosis.page.md:46 | xml | <tab title="XML">{{xml}}</tab> |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Provokationstest/Dosis.page.md:46 | tabs | <tab title="XML">{{xml}}</tab> |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Provokationstest/Dosis.page.md:47 | json | <tab title="JSON">{{json}}</tab> |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Provokationstest/Dosis.page.md:47 | tabs | <tab title="JSON">{{json}}</tab> |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Provokationstest/Dosis.page.md:48 | link | <tab title="Link">{{link}}</tab> |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Provokationstest/Dosis.page.md:48 | tabs | <tab title="Link">{{link}}</tab> |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Provokationstest/Dosis.page.md:49 | tabs | </tabs> |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Provokationstest/Dosis.page.md:53 | fql-at | @``` |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Provokationstest/Dosis.page.md:70 | fql-at | @``` from CapabilityStatement where url = 'https://www.medizininformatik-initiat |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Provokationstest/Dosis.page.md:80 | json | {{json:fsh-generated/resources/Observation-mii-exa-lungenfunktion-dosis-kumulier |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Provokationstest/Dosis.page.md:82 | json | {{json:fsh-generated/resources/Observation-mii-exa-lungenfunktion-dosis-schwellw |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Provokationstest/Medikation.page.md:10 | fql-at | @``` |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Provokationstest/Medikation.page.md:21 | tabs | <tabs> |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Provokationstest/Medikation.page.md:22 | tree | <tab title="Darstellung">{{tree, buttons}}</tab> |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Provokationstest/Medikation.page.md:22 | tabs | <tab title="Darstellung">{{tree, buttons}}</tab> |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Provokationstest/Medikation.page.md:23 | tabs | <tab title="Beschreibung"> |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Provokationstest/Medikation.page.md:24 | fql-at | @``` |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Provokationstest/Medikation.page.md:34 | fql-at | @``` |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Provokationstest/Medikation.page.md:45 | tabs | </tab> |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Provokationstest/Medikation.page.md:46 | xml | <tab title="XML">{{xml}}</tab> |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Provokationstest/Medikation.page.md:46 | tabs | <tab title="XML">{{xml}}</tab> |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Provokationstest/Medikation.page.md:47 | json | <tab title="JSON">{{json}}</tab> |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Provokationstest/Medikation.page.md:47 | tabs | <tab title="JSON">{{json}}</tab> |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Provokationstest/Medikation.page.md:48 | link | <tab title="Link">{{link}}</tab> |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Provokationstest/Medikation.page.md:48 | tabs | <tab title="Link">{{link}}</tab> |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Provokationstest/Medikation.page.md:49 | tabs | </tabs> |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Provokationstest/Medikation.page.md:53 | fql-at | @``` |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Provokationstest/Medikation.page.md:70 | fql-at | @``` from CapabilityStatement where url = 'https://www.medizininformatik-initiat |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Provokationstest/Medikation.page.md:80 | json | {{json:fsh-generated/resources/Observation-mii-exa-lungenfunktion-methacholine.j |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Provokationstest/Procedure.page.md:10 | fql-at | @``` |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Provokationstest/Procedure.page.md:21 | tabs | <tabs> |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Provokationstest/Procedure.page.md:22 | tree | <tab title="Darstellung">{{tree, buttons}}</tab> |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Provokationstest/Procedure.page.md:22 | tabs | <tab title="Darstellung">{{tree, buttons}}</tab> |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Provokationstest/Procedure.page.md:23 | tabs | <tab title="Beschreibung"> |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Provokationstest/Procedure.page.md:24 | fql-at | @``` |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Provokationstest/Procedure.page.md:34 | fql-at | @``` |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Provokationstest/Procedure.page.md:45 | tabs | </tab> |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Provokationstest/Procedure.page.md:46 | xml | <tab title="XML">{{xml}}</tab> |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Provokationstest/Procedure.page.md:46 | tabs | <tab title="XML">{{xml}}</tab> |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Provokationstest/Procedure.page.md:47 | json | <tab title="JSON">{{json}}</tab> |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Provokationstest/Procedure.page.md:47 | tabs | <tab title="JSON">{{json}}</tab> |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Provokationstest/Procedure.page.md:48 | link | <tab title="Link">{{link}}</tab> |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Provokationstest/Procedure.page.md:48 | tabs | <tab title="Link">{{link}}</tab> |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Provokationstest/Procedure.page.md:49 | tabs | </tabs> |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Provokationstest/Procedure.page.md:53 | fql-at | @``` |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Provokationstest/Procedure.page.md:70 | fql-at | @``` from CapabilityStatement where url = 'https://www.medizininformatik-initiat |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Provokationstest/Procedure.page.md:80 | json | {{json:fsh-generated/resources/Procedure-mii-exa-lungenfunktion-provokationstest |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Provokationstest/Provokationsgabe.page.md:10 | fql-at | @``` |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Provokationstest/Provokationsgabe.page.md:21 | tabs | <tabs> |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Provokationstest/Provokationsgabe.page.md:22 | tree | <tab title="Darstellung">{{tree, buttons}}</tab> |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Provokationstest/Provokationsgabe.page.md:22 | tabs | <tab title="Darstellung">{{tree, buttons}}</tab> |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Provokationstest/Provokationsgabe.page.md:23 | tabs | <tab title="Beschreibung"> |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Provokationstest/Provokationsgabe.page.md:24 | fql-at | @``` |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Provokationstest/Provokationsgabe.page.md:34 | fql-at | @``` |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Provokationstest/Provokationsgabe.page.md:45 | tabs | </tab> |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Provokationstest/Provokationsgabe.page.md:46 | xml | <tab title="XML">{{xml}}</tab> |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Provokationstest/Provokationsgabe.page.md:46 | tabs | <tab title="XML">{{xml}}</tab> |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Provokationstest/Provokationsgabe.page.md:47 | json | <tab title="JSON">{{json}}</tab> |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Provokationstest/Provokationsgabe.page.md:47 | tabs | <tab title="JSON">{{json}}</tab> |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Provokationstest/Provokationsgabe.page.md:48 | link | <tab title="Link">{{link}}</tab> |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Provokationstest/Provokationsgabe.page.md:48 | tabs | <tab title="Link">{{link}}</tab> |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Provokationstest/Provokationsgabe.page.md:49 | tabs | </tabs> |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Provokationstest/Provokationsgabe.page.md:53 | fql-at | @``` |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Provokationstest/Provokationsgabe.page.md:70 | fql-at | @``` from CapabilityStatement where url = 'https://www.medizininformatik-initiat |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Provokationstest/Provokationsgabe.page.md:80 | json | {{json:fsh-generated/resources/Observation-mii-exa-lungenfunktion-dosis-gabe.jso |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Provokationstest/Report.page.md:10 | fql-at | @``` |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Provokationstest/Report.page.md:21 | tabs | <tabs> |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Provokationstest/Report.page.md:22 | tree | <tab title="Darstellung">{{tree, buttons}}</tab> |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Provokationstest/Report.page.md:22 | tabs | <tab title="Darstellung">{{tree, buttons}}</tab> |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Provokationstest/Report.page.md:23 | tabs | <tab title="Beschreibung"> |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Provokationstest/Report.page.md:24 | fql-at | @``` |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Provokationstest/Report.page.md:34 | fql-at | @``` |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Provokationstest/Report.page.md:45 | tabs | </tab> |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Provokationstest/Report.page.md:46 | xml | <tab title="XML">{{xml}}</tab> |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Provokationstest/Report.page.md:46 | tabs | <tab title="XML">{{xml}}</tab> |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Provokationstest/Report.page.md:47 | json | <tab title="JSON">{{json}}</tab> |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Provokationstest/Report.page.md:47 | tabs | <tab title="JSON">{{json}}</tab> |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Provokationstest/Report.page.md:48 | link | <tab title="Link">{{link}}</tab> |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Provokationstest/Report.page.md:48 | tabs | <tab title="Link">{{link}}</tab> |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Provokationstest/Report.page.md:49 | tabs | </tabs> |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Provokationstest/Report.page.md:53 | fql-at | @``` |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Provokationstest/Report.page.md:70 | fql-at | @``` from CapabilityStatement where url = 'https://www.medizininformatik-initiat |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Provokationstest/Report.page.md:80 | json | {{json:fsh-generated/resources/DiagnosticReport-mii-exa-lungenfunktion-provokati |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Observation/BF.page.md:10 | fql-at | @``` |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Observation/BF.page.md:21 | tabs | <tabs> |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Observation/BF.page.md:22 | tree | <tab title="Darstellung">{{tree, buttons}}</tab> |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Observation/BF.page.md:22 | tabs | <tab title="Darstellung">{{tree, buttons}}</tab> |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Observation/BF.page.md:23 | tabs | <tab title="Beschreibung"> |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Observation/BF.page.md:24 | fql-at | @``` |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Observation/BF.page.md:34 | fql-at | @``` |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Observation/BF.page.md:45 | tabs | </tab> |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Observation/BF.page.md:46 | xml | <tab title="XML">{{xml}}</tab> |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Observation/BF.page.md:46 | tabs | <tab title="XML">{{xml}}</tab> |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Observation/BF.page.md:47 | json | <tab title="JSON">{{json}}</tab> |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Observation/BF.page.md:47 | tabs | <tab title="JSON">{{json}}</tab> |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Observation/BF.page.md:48 | link | <tab title="Link">{{link}}</tab> |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Observation/BF.page.md:48 | tabs | <tab title="Link">{{link}}</tab> |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Observation/BF.page.md:49 | tabs | </tabs> |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Observation/BF.page.md:53 | fql-at | @``` |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Observation/BF.page.md:69 | fql-at | @``` from CapabilityStatement where url = 'https://www.medizininformatik-initiat |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Observation/BF.page.md:79 | json | {{json:fsh-generated/resources/Observation-mii-exa-lungenfunktion-bf.json}} |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Observation/FEV.page.md:10 | fql-at | @``` |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Observation/FEV.page.md:21 | tabs | <tabs> |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Observation/FEV.page.md:22 | tree | <tab title="Darstellung">{{tree, buttons}}</tab> |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Observation/FEV.page.md:22 | tabs | <tab title="Darstellung">{{tree, buttons}}</tab> |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Observation/FEV.page.md:23 | tabs | <tab title="Beschreibung"> |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Observation/FEV.page.md:24 | fql-at | @``` |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Observation/FEV.page.md:34 | fql-at | @``` |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Observation/FEV.page.md:45 | tabs | </tab> |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Observation/FEV.page.md:46 | xml | <tab title="XML">{{xml}}</tab> |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Observation/FEV.page.md:46 | tabs | <tab title="XML">{{xml}}</tab> |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Observation/FEV.page.md:47 | json | <tab title="JSON">{{json}}</tab> |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Observation/FEV.page.md:47 | tabs | <tab title="JSON">{{json}}</tab> |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Observation/FEV.page.md:48 | link | <tab title="Link">{{link}}</tab> |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Observation/FEV.page.md:48 | tabs | <tab title="Link">{{link}}</tab> |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Observation/FEV.page.md:49 | tabs | </tabs> |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Observation/FEV.page.md:53 | fql-at | @``` |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Observation/FEV.page.md:70 | fql-at | @``` from CapabilityStatement where url = 'https://www.medizininformatik-initiat |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Observation/FEV.page.md:80 | json | {{json:fsh-generated/resources/Observation-mii-exa-lungenfunktion-fev1.json}} |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Observation/FEVFVC.page.md:10 | fql-at | @``` |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Observation/FEVFVC.page.md:21 | tabs | <tabs> |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Observation/FEVFVC.page.md:22 | tree | <tab title="Darstellung">{{tree, buttons}}</tab> |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Observation/FEVFVC.page.md:22 | tabs | <tab title="Darstellung">{{tree, buttons}}</tab> |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Observation/FEVFVC.page.md:23 | tabs | <tab title="Beschreibung"> |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Observation/FEVFVC.page.md:24 | fql-at | @``` |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Observation/FEVFVC.page.md:34 | fql-at | @``` |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Observation/FEVFVC.page.md:45 | tabs | </tab> |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Observation/FEVFVC.page.md:46 | xml | <tab title="XML">{{xml}}</tab> |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Observation/FEVFVC.page.md:46 | tabs | <tab title="XML">{{xml}}</tab> |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Observation/FEVFVC.page.md:47 | json | <tab title="JSON">{{json}}</tab> |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Observation/FEVFVC.page.md:47 | tabs | <tab title="JSON">{{json}}</tab> |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Observation/FEVFVC.page.md:48 | link | <tab title="Link">{{link}}</tab> |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Observation/FEVFVC.page.md:48 | tabs | <tab title="Link">{{link}}</tab> |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Observation/FEVFVC.page.md:49 | tabs | </tabs> |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Observation/FEVFVC.page.md:53 | fql-at | @``` |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Observation/FEVFVC.page.md:70 | fql-at | @``` from CapabilityStatement where url = 'https://www.medizininformatik-initiat |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Observation/FEVFVC.page.md:80 | json | {{json:fsh-generated/resources/Observation-mii-exa-lungenfunktion-fev1-fvc.json} |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Observation/FVC.page.md:10 | fql-at | @``` |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Observation/FVC.page.md:21 | tabs | <tabs> |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Observation/FVC.page.md:22 | tree | <tab title="Darstellung">{{tree, buttons}}</tab> |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Observation/FVC.page.md:22 | tabs | <tab title="Darstellung">{{tree, buttons}}</tab> |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Observation/FVC.page.md:23 | tabs | <tab title="Beschreibung"> |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Observation/FVC.page.md:24 | fql-at | @``` |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Observation/FVC.page.md:34 | fql-at | @``` |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Observation/FVC.page.md:45 | tabs | </tab> |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Observation/FVC.page.md:46 | xml | <tab title="XML">{{xml}}</tab> |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Observation/FVC.page.md:46 | tabs | <tab title="XML">{{xml}}</tab> |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Observation/FVC.page.md:47 | json | <tab title="JSON">{{json}}</tab> |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Observation/FVC.page.md:47 | tabs | <tab title="JSON">{{json}}</tab> |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Observation/FVC.page.md:48 | link | <tab title="Link">{{link}}</tab> |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Observation/FVC.page.md:48 | tabs | <tab title="Link">{{link}}</tab> |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Observation/FVC.page.md:49 | tabs | </tabs> |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Observation/FVC.page.md:53 | fql-at | @``` |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Observation/FVC.page.md:70 | fql-at | @``` from CapabilityStatement where url = 'https://www.medizininformatik-initiat |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Observation/FVC.page.md:80 | json | {{json:fsh-generated/resources/Observation-mii-exa-lungenfunktion-fvc.json}} |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Observation/IC.page.md:10 | fql-at | @``` |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Observation/IC.page.md:21 | tabs | <tabs> |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Observation/IC.page.md:22 | tree | <tab title="Darstellung">{{tree, buttons}}</tab> |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Observation/IC.page.md:22 | tabs | <tab title="Darstellung">{{tree, buttons}}</tab> |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Observation/IC.page.md:23 | tabs | <tab title="Beschreibung"> |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Observation/IC.page.md:24 | fql-at | @``` |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Observation/IC.page.md:34 | fql-at | @``` |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Observation/IC.page.md:45 | tabs | </tab> |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Observation/IC.page.md:46 | xml | <tab title="XML">{{xml}}</tab> |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Observation/IC.page.md:46 | tabs | <tab title="XML">{{xml}}</tab> |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Observation/IC.page.md:47 | json | <tab title="JSON">{{json}}</tab> |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Observation/IC.page.md:47 | tabs | <tab title="JSON">{{json}}</tab> |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Observation/IC.page.md:48 | link | <tab title="Link">{{link}}</tab> |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Observation/IC.page.md:48 | tabs | <tab title="Link">{{link}}</tab> |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Observation/IC.page.md:49 | tabs | </tabs> |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Observation/IC.page.md:53 | fql-at | @``` |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Observation/IC.page.md:70 | fql-at | @``` from CapabilityStatement where url = 'https://www.medizininformatik-initiat |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Observation/IC.page.md:80 | json | {{json:fsh-generated/resources/Observation-mii-exa-lungenfunktion-ic.json}} |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Observation/MEF.page.md:10 | fql-at | @``` |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Observation/MEF.page.md:21 | tabs | <tabs> |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Observation/MEF.page.md:22 | tree | <tab title="Darstellung">{{tree, buttons}}</tab> |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Observation/MEF.page.md:22 | tabs | <tab title="Darstellung">{{tree, buttons}}</tab> |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Observation/MEF.page.md:23 | tabs | <tab title="Beschreibung"> |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Observation/MEF.page.md:24 | fql-at | @``` |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Observation/MEF.page.md:34 | fql-at | @``` |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Observation/MEF.page.md:45 | tabs | </tab> |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Observation/MEF.page.md:46 | xml | <tab title="XML">{{xml}}</tab> |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Observation/MEF.page.md:46 | tabs | <tab title="XML">{{xml}}</tab> |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Observation/MEF.page.md:47 | json | <tab title="JSON">{{json}}</tab> |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Observation/MEF.page.md:47 | tabs | <tab title="JSON">{{json}}</tab> |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Observation/MEF.page.md:48 | link | <tab title="Link">{{link}}</tab> |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Observation/MEF.page.md:48 | tabs | <tab title="Link">{{link}}</tab> |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Observation/MEF.page.md:49 | tabs | </tabs> |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Observation/MEF.page.md:53 | fql-at | @``` |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Observation/MEF.page.md:70 | fql-at | @``` from CapabilityStatement where url = 'https://www.medizininformatik-initiat |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Observation/MEF.page.md:80 | json | {{json:fsh-generated/resources/Observation-mii-exa-lungenfunktion-mef25.json}} |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Observation/MEF.page.md:82 | json | {{json:fsh-generated/resources/Observation-mii-exa-lungenfunktion-mef50.json}} |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Observation/MEF.page.md:84 | json | {{json:fsh-generated/resources/Observation-mii-exa-lungenfunktion-mef75.json}} |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Observation/PEF.page.md:10 | fql-at | @``` |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Observation/PEF.page.md:21 | tabs | <tabs> |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Observation/PEF.page.md:22 | tree | <tab title="Darstellung">{{tree, buttons}}</tab> |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Observation/PEF.page.md:22 | tabs | <tab title="Darstellung">{{tree, buttons}}</tab> |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Observation/PEF.page.md:23 | tabs | <tab title="Beschreibung"> |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Observation/PEF.page.md:24 | fql-at | @``` |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Observation/PEF.page.md:34 | fql-at | @``` |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Observation/PEF.page.md:45 | tabs | </tab> |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Observation/PEF.page.md:46 | xml | <tab title="XML">{{xml}}</tab> |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Observation/PEF.page.md:46 | tabs | <tab title="XML">{{xml}}</tab> |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Observation/PEF.page.md:47 | json | <tab title="JSON">{{json}}</tab> |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Observation/PEF.page.md:47 | tabs | <tab title="JSON">{{json}}</tab> |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Observation/PEF.page.md:48 | link | <tab title="Link">{{link}}</tab> |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Observation/PEF.page.md:48 | tabs | <tab title="Link">{{link}}</tab> |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Observation/PEF.page.md:49 | tabs | </tabs> |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Observation/PEF.page.md:53 | fql-at | @``` |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Observation/PEF.page.md:70 | fql-at | @``` from CapabilityStatement where url = 'https://www.medizininformatik-initiat |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Observation/PEF.page.md:80 | json | {{json:fsh-generated/resources/Observation-mii-exa-lungenfunktion-pef.json}} |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Observation/RV.page.md:10 | fql-at | @``` |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Observation/RV.page.md:21 | tabs | <tabs> |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Observation/RV.page.md:22 | tree | <tab title="Darstellung">{{tree, buttons}}</tab> |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Observation/RV.page.md:22 | tabs | <tab title="Darstellung">{{tree, buttons}}</tab> |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Observation/RV.page.md:23 | tabs | <tab title="Beschreibung"> |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Observation/RV.page.md:24 | fql-at | @``` |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Observation/RV.page.md:34 | fql-at | @``` |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Observation/RV.page.md:45 | tabs | </tab> |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Observation/RV.page.md:46 | xml | <tab title="XML">{{xml}}</tab> |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Observation/RV.page.md:46 | tabs | <tab title="XML">{{xml}}</tab> |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Observation/RV.page.md:47 | json | <tab title="JSON">{{json}}</tab> |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Observation/RV.page.md:47 | tabs | <tab title="JSON">{{json}}</tab> |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Observation/RV.page.md:48 | link | <tab title="Link">{{link}}</tab> |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Observation/RV.page.md:48 | tabs | <tab title="Link">{{link}}</tab> |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Observation/RV.page.md:49 | tabs | </tabs> |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Observation/RV.page.md:53 | fql-at | @``` |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Observation/RV.page.md:70 | fql-at | @``` from CapabilityStatement where url = 'https://www.medizininformatik-initiat |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Observation/RV.page.md:80 | json | {{json:fsh-generated/resources/Observation-mii-exa-lungenfunktion-erv.json}} |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Observation/VC.page.md:10 | fql-at | @``` |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Observation/VC.page.md:21 | tabs | <tabs> |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Observation/VC.page.md:22 | tree | <tab title="Darstellung">{{tree, buttons}}</tab> |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Observation/VC.page.md:22 | tabs | <tab title="Darstellung">{{tree, buttons}}</tab> |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Observation/VC.page.md:23 | tabs | <tab title="Beschreibung"> |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Observation/VC.page.md:24 | fql-at | @``` |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Observation/VC.page.md:34 | fql-at | @``` |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Observation/VC.page.md:45 | tabs | </tab> |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Observation/VC.page.md:46 | xml | <tab title="XML">{{xml}}</tab> |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Observation/VC.page.md:46 | tabs | <tab title="XML">{{xml}}</tab> |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Observation/VC.page.md:47 | json | <tab title="JSON">{{json}}</tab> |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Observation/VC.page.md:47 | tabs | <tab title="JSON">{{json}}</tab> |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Observation/VC.page.md:48 | link | <tab title="Link">{{link}}</tab> |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Observation/VC.page.md:48 | tabs | <tab title="Link">{{link}}</tab> |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Observation/VC.page.md:49 | tabs | </tabs> |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Observation/VC.page.md:53 | fql-at | @``` |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Observation/VC.page.md:70 | fql-at | @``` from CapabilityStatement where url = 'https://www.medizininformatik-initiat |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Observation/VC.page.md:80 | json | {{json:fsh-generated/resources/Observation-mii-exa-lungenfunktion-vc.json}} |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Procedure.page.md:10 | fql-at | @``` |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Procedure.page.md:21 | tabs | <tabs> |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Procedure.page.md:22 | tree | <tab title="Darstellung">{{tree, buttons}}</tab> |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Procedure.page.md:22 | tabs | <tab title="Darstellung">{{tree, buttons}}</tab> |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Procedure.page.md:23 | tabs | <tab title="Beschreibung"> |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Procedure.page.md:24 | fql-at | @``` |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Procedure.page.md:34 | fql-at | @``` |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Procedure.page.md:45 | tabs | </tab> |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Procedure.page.md:46 | xml | <tab title="XML">{{xml}}</tab> |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Procedure.page.md:46 | tabs | <tab title="XML">{{xml}}</tab> |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Procedure.page.md:47 | json | <tab title="JSON">{{json}}</tab> |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Procedure.page.md:47 | tabs | <tab title="JSON">{{json}}</tab> |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Procedure.page.md:48 | link | <tab title="Link">{{link}}</tab> |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Procedure.page.md:48 | tabs | <tab title="Link">{{link}}</tab> |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Procedure.page.md:49 | tabs | </tabs> |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Procedure.page.md:53 | fql-at | @``` |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Procedure.page.md:70 | fql-at | @``` from CapabilityStatement where url = 'https://www.medizininformatik-initiat |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Procedure.page.md:80 | json | {{json:fsh-generated/resources/Procedure-mii-exa-lungenfunktion-spirometrie-mess |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Report.page.md:10 | fql-at | @``` |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Report.page.md:21 | tabs | <tabs> |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Report.page.md:22 | tree | <tab title="Darstellung">{{tree, buttons}}</tab> |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Report.page.md:22 | tabs | <tab title="Darstellung">{{tree, buttons}}</tab> |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Report.page.md:23 | tabs | <tab title="Beschreibung"> |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Report.page.md:24 | fql-at | @``` |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Report.page.md:34 | fql-at | @``` |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Report.page.md:45 | tabs | </tab> |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Report.page.md:46 | xml | <tab title="XML">{{xml}}</tab> |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Report.page.md:46 | tabs | <tab title="XML">{{xml}}</tab> |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Report.page.md:47 | json | <tab title="JSON">{{json}}</tab> |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Report.page.md:47 | tabs | <tab title="JSON">{{json}}</tab> |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Report.page.md:48 | link | <tab title="Link">{{link}}</tab> |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Report.page.md:48 | tabs | <tab title="Link">{{link}}</tab> |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Report.page.md:49 | tabs | </tabs> |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Report.page.md:53 | fql-at | @``` |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Report.page.md:70 | fql-at | @``` from CapabilityStatement where url = 'https://www.medizininformatik-initiat |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Report.page.md:80 | json | {{json:fsh-generated/resources/DiagnosticReport-mii-exa-lungenfunktion-spirometr |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Umgebungsvariablen/CO2-Konzentration.page.md:10 | fql-at | @``` |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Umgebungsvariablen/CO2-Konzentration.page.md:21 | tabs | <tabs> |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Umgebungsvariablen/CO2-Konzentration.page.md:22 | tree | <tab title="Darstellung">{{tree, buttons}}</tab> |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Umgebungsvariablen/CO2-Konzentration.page.md:22 | tabs | <tab title="Darstellung">{{tree, buttons}}</tab> |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Umgebungsvariablen/CO2-Konzentration.page.md:23 | tabs | <tab title="Beschreibung"> |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Umgebungsvariablen/CO2-Konzentration.page.md:24 | fql-at | @``` |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Umgebungsvariablen/CO2-Konzentration.page.md:34 | fql-at | @``` |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Umgebungsvariablen/CO2-Konzentration.page.md:45 | tabs | </tab> |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Umgebungsvariablen/CO2-Konzentration.page.md:46 | xml | <tab title="XML">{{xml}}</tab> |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Umgebungsvariablen/CO2-Konzentration.page.md:46 | tabs | <tab title="XML">{{xml}}</tab> |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Umgebungsvariablen/CO2-Konzentration.page.md:47 | json | <tab title="JSON">{{json}}</tab> |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Umgebungsvariablen/CO2-Konzentration.page.md:47 | tabs | <tab title="JSON">{{json}}</tab> |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Umgebungsvariablen/CO2-Konzentration.page.md:48 | link | <tab title="Link">{{link}}</tab> |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Umgebungsvariablen/CO2-Konzentration.page.md:48 | tabs | <tab title="Link">{{link}}</tab> |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Umgebungsvariablen/CO2-Konzentration.page.md:49 | tabs | </tabs> |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Umgebungsvariablen/CO2-Konzentration.page.md:53 | fql-at | @``` |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Umgebungsvariablen/CO2-Konzentration.page.md:70 | fql-at | @``` from CapabilityStatement where url = 'https://www.medizininformatik-initiat |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Umgebungsvariablen/CO2-Konzentration.page.md:80 | json | {{json:fsh-generated/resources/Observation-mii-exa-lungenfunktion-co2.json}} |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Umgebungsvariablen/Luftfeuchtigkeit.page.md:10 | fql-at | @``` |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Umgebungsvariablen/Luftfeuchtigkeit.page.md:21 | tabs | <tabs> |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Umgebungsvariablen/Luftfeuchtigkeit.page.md:22 | tree | <tab title="Darstellung">{{tree, buttons}}</tab> |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Umgebungsvariablen/Luftfeuchtigkeit.page.md:22 | tabs | <tab title="Darstellung">{{tree, buttons}}</tab> |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Umgebungsvariablen/Luftfeuchtigkeit.page.md:23 | tabs | <tab title="Beschreibung"> |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Umgebungsvariablen/Luftfeuchtigkeit.page.md:24 | fql-at | @``` |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Umgebungsvariablen/Luftfeuchtigkeit.page.md:34 | fql-at | @``` |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Umgebungsvariablen/Luftfeuchtigkeit.page.md:45 | tabs | </tab> |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Umgebungsvariablen/Luftfeuchtigkeit.page.md:46 | xml | <tab title="XML">{{xml}}</tab> |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Umgebungsvariablen/Luftfeuchtigkeit.page.md:46 | tabs | <tab title="XML">{{xml}}</tab> |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Umgebungsvariablen/Luftfeuchtigkeit.page.md:47 | json | <tab title="JSON">{{json}}</tab> |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Umgebungsvariablen/Luftfeuchtigkeit.page.md:47 | tabs | <tab title="JSON">{{json}}</tab> |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Umgebungsvariablen/Luftfeuchtigkeit.page.md:48 | link | <tab title="Link">{{link}}</tab> |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Umgebungsvariablen/Luftfeuchtigkeit.page.md:48 | tabs | <tab title="Link">{{link}}</tab> |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Umgebungsvariablen/Luftfeuchtigkeit.page.md:49 | tabs | </tabs> |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Umgebungsvariablen/Luftfeuchtigkeit.page.md:53 | fql-at | @``` |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Umgebungsvariablen/Luftfeuchtigkeit.page.md:70 | fql-at | @``` from CapabilityStatement where url = 'https://www.medizininformatik-initiat |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Umgebungsvariablen/Luftfeuchtigkeit.page.md:80 | json | {{json:fsh-generated/resources/Observation-mii-exa-lungenfunktion-luftfeuchtigke |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Umgebungsvariablen/Lufttemperatur.page.md:10 | fql-at | @``` |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Umgebungsvariablen/Lufttemperatur.page.md:21 | tabs | <tabs> |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Umgebungsvariablen/Lufttemperatur.page.md:22 | tree | <tab title="Darstellung">{{tree, buttons}}</tab> |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Umgebungsvariablen/Lufttemperatur.page.md:22 | tabs | <tab title="Darstellung">{{tree, buttons}}</tab> |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Umgebungsvariablen/Lufttemperatur.page.md:23 | tabs | <tab title="Beschreibung"> |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Umgebungsvariablen/Lufttemperatur.page.md:24 | fql-at | @``` |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Umgebungsvariablen/Lufttemperatur.page.md:34 | fql-at | @``` |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Umgebungsvariablen/Lufttemperatur.page.md:45 | tabs | </tab> |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Umgebungsvariablen/Lufttemperatur.page.md:46 | xml | <tab title="XML">{{xml}}</tab> |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Umgebungsvariablen/Lufttemperatur.page.md:46 | tabs | <tab title="XML">{{xml}}</tab> |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Umgebungsvariablen/Lufttemperatur.page.md:47 | json | <tab title="JSON">{{json}}</tab> |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Umgebungsvariablen/Lufttemperatur.page.md:47 | tabs | <tab title="JSON">{{json}}</tab> |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Umgebungsvariablen/Lufttemperatur.page.md:48 | link | <tab title="Link">{{link}}</tab> |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Umgebungsvariablen/Lufttemperatur.page.md:48 | tabs | <tab title="Link">{{link}}</tab> |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Umgebungsvariablen/Lufttemperatur.page.md:49 | tabs | </tabs> |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Umgebungsvariablen/Lufttemperatur.page.md:53 | fql-at | @``` |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Umgebungsvariablen/Lufttemperatur.page.md:70 | fql-at | @``` from CapabilityStatement where url = 'https://www.medizininformatik-initiat |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Umgebungsvariablen/Lufttemperatur.page.md:80 | json | {{json:fsh-generated/resources/Observation-mii-exa-lungenfunktion-lufttemperatur |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Umgebungsvariablen/Umgebung.page.md:10 | fql-at | @``` |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Umgebungsvariablen/Umgebung.page.md:21 | tabs | <tabs> |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Umgebungsvariablen/Umgebung.page.md:22 | tree | <tab title="Darstellung">{{tree, buttons}}</tab> |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Umgebungsvariablen/Umgebung.page.md:22 | tabs | <tab title="Darstellung">{{tree, buttons}}</tab> |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Umgebungsvariablen/Umgebung.page.md:23 | tabs | <tab title="Beschreibung"> |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Umgebungsvariablen/Umgebung.page.md:24 | fql-at | @``` |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Umgebungsvariablen/Umgebung.page.md:34 | fql-at | @``` |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Umgebungsvariablen/Umgebung.page.md:45 | tabs | </tab> |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Umgebungsvariablen/Umgebung.page.md:46 | xml | <tab title="XML">{{xml}}</tab> |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Umgebungsvariablen/Umgebung.page.md:46 | tabs | <tab title="XML">{{xml}}</tab> |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Umgebungsvariablen/Umgebung.page.md:47 | json | <tab title="JSON">{{json}}</tab> |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Umgebungsvariablen/Umgebung.page.md:47 | tabs | <tab title="JSON">{{json}}</tab> |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Umgebungsvariablen/Umgebung.page.md:48 | link | <tab title="Link">{{link}}</tab> |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Umgebungsvariablen/Umgebung.page.md:48 | tabs | <tab title="Link">{{link}}</tab> |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Umgebungsvariablen/Umgebung.page.md:49 | tabs | </tabs> |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Umgebungsvariablen/Umgebung.page.md:53 | fql-at | @``` |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Umgebungsvariablen/Umgebung.page.md:70 | fql-at | @``` from CapabilityStatement where url = 'https://www.medizininformatik-initiat |
+| implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Umgebungsvariablen/Umgebung.page.md:80 | json | {{json:fsh-generated/resources/Location-mii-exa-lungenfunktion-location.json}} |
 
 </div>
 
@@ -1187,18 +1232,18 @@ _Konkrete Fundstellen doppelter Inhaltsblöcke sowie Listen nicht referenzierter
 
 | Doppelter Inhaltsblock (gekürzt) | Vorkommen |
 |---|---|
-| @ from capabilitystatement where url = 'https://www.medizininformatik initiative.de/fhir/e | implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Bodyplethysmographie/Observation/FRC.page.md · implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Bodyplethysmographie/Observation/RVL.page.md · implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Bodyplethysmographie/Observation/RVLTLC.page.md · implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Bodyplethysmographie/Observation/R_tot.page.md · implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Bodyplethysmographie/Observation/TLC.page.md · implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Bodyplethysmographie/Observation/sG_tot.page.md · implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Bodyplethysmographie/Observation/sR_eff.page.md · implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Bodyplethysmographie/Observation/sR_tot.page.md · implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Diffusion/Observation/DLCO.page.md · implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Diffusion/Observation/DLCOc.page.md · implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Diffusion/Observation/Hb.page.md · implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Diffusion/Observation/KCO.page.md · implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Diffusion/Observation/KCOc.page.md · implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Diffusion/Observation/TA.page.md · implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Diffusion/Observation/VA.page.md · implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Provokationstest/Observation/FEV.page.md · implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Observation/BF.page.md · implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Observation/FEV.page.md · implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Observation/FEVFVC.page.md · implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Observation/FEVVC.page.md · implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Observation/FIV.page.md · implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Observation/FVC.page.md · implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Observation/IC.page.md · implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Observation/MEF.page.md · implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Observation/PEF.page.md · implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Observation/RV.page.md · implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Observation/VC.page.md · implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Umgebungsvariablen/CO2-Konzentration.page.md · implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Umgebungsvariablen/Luftfeuchtigkeit.page.md · implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Umgebungsvariablen/Lufttemperatur.page.md |
-| @ from structuredefinition where url = 'https://www.medizininformatik initiative.de/fhir/e | implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Bodyplethysmographie/Observation/FRC.page.md · implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Bodyplethysmographie/Observation/RVL.page.md · implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Bodyplethysmographie/Observation/RVLTLC.page.md · implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Bodyplethysmographie/Observation/R_tot.page.md · implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Bodyplethysmographie/Observation/TLC.page.md · implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Bodyplethysmographie/Observation/sG_tot.page.md · implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Bodyplethysmographie/Observation/sR_eff.page.md · implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Bodyplethysmographie/Observation/sR_tot.page.md · implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Diffusion/Observation/DLCO.page.md · implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Diffusion/Observation/DLCOc.page.md · implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Diffusion/Observation/Hb.page.md · implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Diffusion/Observation/KCO.page.md · implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Diffusion/Observation/KCOc.page.md · implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Diffusion/Observation/TA.page.md · implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Diffusion/Observation/VA.page.md · implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Provokationstest/Observation/FEV.page.md · implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Observation/BF.page.md · implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Observation/FEV.page.md · implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Observation/FEVFVC.page.md · implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Observation/FEVVC.page.md · implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Observation/FIV.page.md · implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Observation/FVC.page.md · implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Observation/IC.page.md · implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Observation/MEF.page.md · implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Observation/PEF.page.md · implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Observation/RV.page.md · implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Observation/VC.page.md |
+| @ from capabilitystatement where url = 'https://www.medizininformatik initiative.de/fhir/e | implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Bodyplethysmographie/Observation/FRC.page.md · implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Bodyplethysmographie/Observation/RVL.page.md · implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Bodyplethysmographie/Observation/RVLTLC.page.md · implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Bodyplethysmographie/Observation/R_tot.page.md · implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Bodyplethysmographie/Observation/TLC.page.md · implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Bodyplethysmographie/Observation/sG_tot.page.md · implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Bodyplethysmographie/Observation/sR_eff.page.md · implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Bodyplethysmographie/Observation/sR_tot.page.md · implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Diffusion/Observation/DLCO.page.md · implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Diffusion/Observation/DLCOc.page.md · implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Diffusion/Observation/Hb.page.md · implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Diffusion/Observation/KCO.page.md · implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Diffusion/Observation/KCOc.page.md · implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Diffusion/Observation/VA.page.md · implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Provokationstest/Dosis.page.md · implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Observation/BF.page.md · implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Observation/FEV.page.md · implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Observation/FEVFVC.page.md · implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Observation/FVC.page.md · implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Observation/IC.page.md · implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Observation/MEF.page.md · implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Observation/PEF.page.md · implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Observation/RV.page.md · implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Observation/VC.page.md · implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Umgebungsvariablen/CO2-Konzentration.page.md · implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Umgebungsvariablen/Luftfeuchtigkeit.page.md · implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Umgebungsvariablen/Lufttemperatur.page.md |
+| @ from structuredefinition where url = 'https://www.medizininformatik initiative.de/fhir/e | implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Bodyplethysmographie/Observation/FRC.page.md · implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Bodyplethysmographie/Observation/RVL.page.md · implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Bodyplethysmographie/Observation/RVLTLC.page.md · implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Bodyplethysmographie/Observation/R_tot.page.md · implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Bodyplethysmographie/Observation/TLC.page.md · implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Bodyplethysmographie/Observation/sG_tot.page.md · implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Bodyplethysmographie/Observation/sR_eff.page.md · implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Bodyplethysmographie/Observation/sR_tot.page.md · implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Diffusion/Observation/DLCO.page.md · implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Diffusion/Observation/DLCOc.page.md · implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Diffusion/Observation/Hb.page.md · implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Diffusion/Observation/KCO.page.md · implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Diffusion/Observation/KCOc.page.md · implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Diffusion/Observation/VA.page.md · implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Provokationstest/Dosis.page.md · implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Provokationstest/Medikation.page.md · implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Provokationstest/Provokationsgabe.page.md · implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Observation/BF.page.md · implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Observation/FEV.page.md · implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Observation/FEVFVC.page.md · implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Observation/FVC.page.md · implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Observation/IC.page.md · implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Observation/MEF.page.md · implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Observation/PEF.page.md · implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Observation/RV.page.md · implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Observation/VC.page.md |
 | @ from structuredefinition where url = 'https://www.medizininformatik initiative.de/fhir/e | implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Bodyplethysmographie/Procedure.page.md · implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Diffusion/Procedure.page.md · implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Provokationstest/Procedure.page.md · implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Procedure.page.md |
 | @ from capabilitystatement where url = 'https://www.medizininformatik initiative.de/fhir/e | implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Bodyplethysmographie/Procedure.page.md · implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Diffusion/Procedure.page.md · implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Provokationstest/Procedure.page.md · implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Procedure.page.md |
 | @ from structuredefinition where url = 'https://www.medizininformatik initiative.de/fhir/e | implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Bodyplethysmographie/Report.page.md · implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Diffusion/Report.page.md · implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Provokationstest/Report.page.md · implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Report.page.md |
 | @ from capabilitystatement where url = 'https://www.medizininformatik initiative.de/fhir/e | implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Bodyplethysmographie/Report.page.md · implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Diffusion/Report.page.md · implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Provokationstest/Report.page.md · implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Report.page.md |
-| @ from structuredefinition where url = 'https://www.medizininformatik initiative.de/fhir/e | implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Provokationstest/Observation/FEV.page.md · implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Observation/FEV.page.md |
-| @ from structuredefinition where url = 'https://www.medizininformatik initiative.de/fhir/e | implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Provokationstest/Observation/FEV.page.md · implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Observation/FEV.page.md |
 
 </div>
 
-**Identische Seiten:** `implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Provokationstest/Observation/FEV.page.md` = `implementation-guides/mii-ig-lungenfunktion-de-v2026/MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Observation/FEV.page.md`
+**Nicht referenzierte Bilder (1):** `implementation-guides/ImplementationGuide-Common/images/UML_KDS_Lufu.png`
+
+**Beispiele nicht in Narrativen eingebunden (24):** `mii-exa-lungenfunktion-dosis-gabe-1`, `mii-exa-lungenfunktion-dosis-gabe-2`, `mii-exa-lungenfunktion-dosis-gabe-3`, `mii-exa-lungenfunktion-kcoc`, `mii-exa-lungenfunktion-fev1-b`, `mii-exa-lungenfunktion-fev1-p3`, `mii-exa-lungenfunktion-fev1-p4`, `mii-exa-lungenfunktion-fev1-p5`, `mii-exa-lungenfunktion-frc-b`, `mii-exa-lungenfunktion-frc-p3`, `mii-exa-lungenfunktion-frc-p4`, `mii-exa-lungenfunktion-frc-p5`, `mii-exa-lungenfunktion-pef-b`, `mii-exa-lungenfunktion-pef-p3`, `mii-exa-lungenfunktion-pef-p4`, `mii-exa-lungenfunktion-pef-p5`, `mii-exa-lungenfunktion-r-b`, `mii-exa-lungenfunktion-r-p3`, `mii-exa-lungenfunktion-r-p4`, `mii-exa-lungenfunktion-r-p5`, `mii-exa-lungenfunktion-sr-total-b`, `mii-exa-lungenfunktion-sr-total-p3`, `mii-exa-lungenfunktion-sr-total-p4`, `mii-exa-lungenfunktion-sr-total-p5`
 
 # Anhang: Methodik & Metrik-Erklärung
 

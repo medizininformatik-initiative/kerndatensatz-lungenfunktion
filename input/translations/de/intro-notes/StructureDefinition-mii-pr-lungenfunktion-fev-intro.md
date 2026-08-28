@@ -1,6 +1,4 @@
-<!-- Quelle: MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Provokationstest/Observation/FEV.page.md; MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Observation/FEV.page.md (Simplifier-Guide mii-ig-lungenfunktion-de-v2026); migriert 2026-08-28. -->
-<!-- TODO:REVIEW Quellseite traegt die Autoren-Markierung !!TODO!! - Beschreibung in der Quelle unvollstaendig. -->
+<!-- Quelle: MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Observation/FEV.page.md (Guide-Baum mii-ig-lungenfunktion-de-v2026, main@c2fe7fe); migriert 2026-08-28. Verbatim uebernommen - NICHT als DERIVED markiert. -->
+<!-- Die Beispiel-Anmoderation der Quellseite entfaellt: der IG Publisher listet die Beispiele selbst auf der Artefaktseite. -->
 
-FEV ...
-
-Beispiel einer FEV 1-Ressource:
+Diese Observation beschreibt das gemessene forcierte expiratorische Volumen.

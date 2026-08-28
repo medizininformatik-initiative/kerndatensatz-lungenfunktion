@@ -1,7 +1,1 @@
-usage: page-structure-advice.py [-h] --source SOURCE [--target TARGET]
-                                [--out OUT] [--map MAP]
-                                [--routing-table ROUTING_TABLE]
-                                [--guide-tree GUIDE_TREE]
-                                [--harvest-tsv HARVEST_TSV]
-                                [--harvest-dir HARVEST_DIR]
-page-structure-advice.py: error: refusing to write inside the --source repository: /Users/thome/code/fhir-profiling/kerndatensatz-lungenfunktion/migration-log/page-structure-advice.md (the source is read-only)
+page-structure-advice: 57 source pages (from guide-tree) + 0 union, 16 target pages, 84 artefacts; map 58 rows (1 retired) -> migration-log/page-map.tsv -> migration-log/page-structure-advice.md

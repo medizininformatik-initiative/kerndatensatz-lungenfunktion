@@ -4,14 +4,14 @@ info    /Users/thome/code/fhir-profiling/kerndatensatz-lungenfunktion
 info  No output path specified. Output to .
 info  Using configuration file: /Users/thome/code/fhir-profiling/kerndatensatz-lungenfunktion/sushi-config.yaml
 info  Importing FSH text...
-info  Preprocessed 99 documents with 63 aliases.
-info  Imported 83 definitions and 1 instances.
+info  Preprocessed 160 documents with 64 aliases.
+info  Imported 81 definitions and 64 instances.
 info  Loaded virtual package sushi-r5forR4#1.0.0 with 7 resources
 info  Resolved hl7.fhir.uv.tools.r4#latest to concrete version 1.1.2
 info  Loaded hl7.fhir.uv.tools.r4#1.1.2 with 119 resources
 info  Loaded hl7.terminology.r4#7.3.0 with 4176 resources
 info  Loaded de.medizininformatikinitiative.kerndatensatz.meta#2026.0.0 with 173 resources
-info  Loaded de.medizininformatikinitiative.kerndatensatz.base#2026.0.0 with 37 resources
+info  Loaded de.medizininformatikinitiative.kerndatensatz.base#2026.0.1 with 36 resources
 info  Loaded de.medizininformatikinitiative.kerndatensatz.medikation#2026.0.1 with 16 resources
 info  Loaded de.basisprofil.r4#1.5.4 with 168 resources
 info  Loaded hl7.fhir.uv.crmi#2.0.0 with 123 resources
@@ -21,11 +21,11 @@ info  Found 1 non-JSON / non-XML file(s) in directory: /Users/thome/code/fhir-pr
 info  Found 1 non-JSON / non-XML file(s) in directory: /Users/thome/code/fhir-profiling/kerndatensatz-lungenfunktion/input/resources. Only resource files with JSON or XML extensions are supported. To see the skipped files in the logs, use debug logging.
 info  Loaded virtual package sushi-local#LOCAL with 1 resources
 info  Converting FSH to FHIR resources...
-info  Converted 51 FHIR StructureDefinitions.
+info  Converted 49 FHIR StructureDefinitions.
 info  Converted 32 FHIR ValueSets.
-info  Converted 1 FHIR instances.
+info  Converted 64 FHIR instances.
 info  Exporting FHIR resources as JSON...
-info  Exported 84 FHIR resources as JSON.
+info  Exported 145 FHIR resources as JSON.
 info  Assembling Implementation Guide sources...
 info  Generated ImplementationGuide-mii-ig-lungenfunktion.json
 info  Assembled Implementation Guide sources; ready for IG Publisher.
@@ -35,16 +35,16 @@ info  The _build script hosted at https://github.com/HL7/ig-publisher-scripts is
 |  -------------------------------------------------------------  |
 | |    Profiles   |  Extensions  |   Logicals   |   Resources   | |
 | |-------------------------------------------------------------| |
-| |      50       |      0       |      1       |       0       | |
+| |      48       |      0       |      1       |       0       | |
 |  -------------------------------------------------------------  |
 |  -------------------------------------------------------------  |
 | |      ValueSets     |    CodeSystems    |     Instances      | |
 | |-------------------------------------------------------------| |
-| |         32         |         0         |         1          | |
+| |         32         |         0         |         64         | |
 |  -------------------------------------------------------------  |
 |                                                                 |
 ===================================================================
-| You really made a splash!              0 Errors      0 Warnings |
+| Swish! Nothing but fishnet.            0 Errors      0 Warnings |
 ===================================================================
 |    You are using SUSHI version 3.20.0, but the latest stable    |
 | release is version 3.20.1. To install the latest release, run:  |
