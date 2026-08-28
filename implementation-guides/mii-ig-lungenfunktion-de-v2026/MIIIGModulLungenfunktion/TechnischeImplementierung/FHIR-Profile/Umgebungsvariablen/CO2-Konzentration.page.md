@@ -4,7 +4,7 @@ topic: Observation
 subject: https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-co2-konzentration
 ---
 
-## Procedure
+## Observation
 Diese Observation beschreibt die gemessene CO2-Konzentration in der Patientenumgebung.
 
 @```

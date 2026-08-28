@@ -4,7 +4,7 @@ topic: Observation
 subject: https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-luftfeuchtigkeit
 ---
 
-## Procedure
+## Observation
 Diese Observation beschreibt die gemessene Luftfeuchtigkeit in der Patientenumgebung.
 
 @```

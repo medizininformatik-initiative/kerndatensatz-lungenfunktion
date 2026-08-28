@@ -4,7 +4,7 @@ topic: Observation
 subject: https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-lufttemperatur
 ---
 
-## Procedure
+## Observation
 Diese Observation beschreibt die gemessene Lufttemperatur in der Patientenumgebung.
 
 @```
