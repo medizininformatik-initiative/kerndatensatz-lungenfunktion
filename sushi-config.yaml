@@ -111,17 +111,29 @@ dependencies:
   # packages.simplifier.net am 2026-08-28, protokolliert in migration-log/run.log
   # (Schritt 2.1). Die Aufloesung aendert KEINE Quellentscheidung, sie macht sie
   # explizit; Bestaetigung bei Gate A (①-Queue).
-  de.medizininformatikinitiative.kerndatensatz.meta: 2026.0.0   # 2026.0.x -> einzige Release der Linie
-  de.medizininformatikinitiative.kerndatensatz.base: 2026.0.1   # 2026.0.x -> hoechste (vorher exakt 2026.0.0: Wirkungsaenderung, ①-Queue)
-  de.medizininformatikinitiative.kerndatensatz.medikation: 2026.0.1 # 2026.0.x -> hoechste
-  de.basisprofil.r4: 1.5.4                                      # 1.5.x -> hoechste (1.6.0 liegt ausserhalb)
+  # ACHTUNG: KEINE Inline-Kommentare hinter einem dependency-Wert. Der IG
+  # Publisher 2.3.2 liest die Werte dieses Blocks NICHT als YAML, sondern nimmt
+  # den Rest der Zeile als Version — gemessen 2026-08-28: "Invalid criteria:
+  # 2026.0.1 # 2026.0.x -> hoechste" und ein harter Abbruch mit
+  # "Illegal character in path" beim Paket-Download. SUSHI verarbeitet
+  # dieselbe Datei fehlerfrei, der Fehler faellt also erst im Publisher auf.
+  # 2026.0.x -> einzige Release der Linie:
+  de.medizininformatikinitiative.kerndatensatz.meta: 2026.0.0
+  # 2026.0.x -> hoechste (vorher exakt 2026.0.0: Wirkungsaenderung, ①-Queue):
+  de.medizininformatikinitiative.kerndatensatz.base: 2026.0.1
+  # 2026.0.x -> hoechste:
+  de.medizininformatikinitiative.kerndatensatz.medikation: 2026.0.1
+  # 1.5.x -> hoechste (1.6.0 liegt ausserhalb):
+  de.basisprofil.r4: 1.5.4
   # hl7.fhir.r4.core: 4.0.1 steht in der Quelle, wird hier NICHT wiederholt:
   # explizite r4.core-Dependency bricht den IG Publisher 2.3.2 (Duplikat-Bug,
   # gemessen Migration Bildgebung 2026-08-27); fhirVersion 4.0.1 deckt sie ab.
   # Template-Maschinerie (CRMI-Profile in meta.profile) + Injektionsschutz:
   hl7.fhir.uv.crmi: 2.0.0
-  hl7.terminology.r4: 7.3.0 # direkter Pin gegen silent-latest-Injektion (Template-Rationale)
-  hl7.fhir.uv.extensions.r4: 5.3.0 # direkter Pin, Quelle pinnt nicht (Template-Empfehlung)
+  # direkter Pin gegen silent-latest-Injektion (Template-Rationale):
+  hl7.terminology.r4: 7.3.0
+  # direkter Pin, Quelle pinnt nicht (Template-Empfehlung):
+  hl7.fhir.uv.extensions.r4: 5.3.0
 
 # Seitenbaum nach Template-Struktur (docs/page-structure.md); OPTIONAL-Seiten
 # per M9 GEMESSEN entfernt: extensions=0, search-parameters=0, operations=0,
