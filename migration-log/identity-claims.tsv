@@ -1,0 +1,13 @@
+2026-08-28T08:15:36Z	id	S	sushi-config.yaml	mii-ig-lungenfunktion	2.1	read
+2026-08-28T08:15:36Z	name	S	sushi-config.yaml	MII_IG_Lungenfunktion	2.1	read
+2026-08-28T08:15:36Z	canonical	S	sushi-config.yaml	https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion	2.1	read
+2026-08-28T08:15:36Z	packageId	S	sushi-config.yaml	de.medizininformatikinitiative.kerndatensatz.lungenfunktion	2.1	read
+2026-08-28T08:15:36Z	version	S	sushi-config.yaml	2026.0.0	2.1	read
+2026-08-28T08:15:36Z	status	S	sushi-config.yaml	active	2.1	read
+2026-08-28T08:15:36Z	releaseLabel	S	sushi-config.yaml	ci-build	2.1	read
+2026-08-28T08:15:37Z	copyrightYear	S	sushi-config.yaml	2024+	2.1	read
+2026-08-28T08:15:37Z	publisher	S	sushi-config.yaml	Medizininformatik Initiative|https://www.medizininformatik-initiative.de/	2.1	read
+2026-08-28T08:15:37Z	fhirVersion	S	sushi-config.yaml	4.0.1	2.1	read
+2026-08-28T08:15:37Z	title	R	README.md#L1	Medizininformatik-Initiative - Kerndatensatz - Modul Lungenfunktion	2.1	derive
+2026-08-28T08:15:37Z	license	-	no source declares a licence (sushi-config, package.json, LICENSE file all absent/silent) — DEC at Gate A, precedent biobank DEC-1	UNDECLARED	2.1	gate-a
+2026-08-28T08:15:37Z	dependencies	S	sushi-config.yaml	meta=2026.0.0 base=2026.0.0 medikation=2026.0.1 de.basisprofil.r4=1.5.4 hl7.fhir.r4.core=4.0.1	2.1	read
