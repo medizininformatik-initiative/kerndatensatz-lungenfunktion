@@ -4,7 +4,7 @@ topic: Location
 subject: https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-umgebung
 ---
 
-## Location
+## Procedure
 Diese Location beschreibt die Umgebung in der sich der Patient befindet.
 
 @```
