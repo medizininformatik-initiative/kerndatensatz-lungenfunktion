@@ -1,44 +1,3 @@
-2026-08-28T08:13:56Z  INFO   log  run-boundary  ===== run 1 starts  run=1 label=migration kerndatensatz-lungenfunktion 2026.0.0 (7a42ed7) → mii-kds-module-template v0.11.3, skill v0.23.0, shape A cwd=/Users/thome/code/fhir-profiling/kerndatensatz-lungenfunktion log=migration-log/run.log
-    Every line below belongs to run 1; the lines above are earlier invocations.
-    Per-step raw logs (migration-log/<ACTION>.log) hold THIS run only -- `run`
-    truncates each one and rolls the previous attempt over to <ACTION>.prev.log.
-2026-08-28T08:13:56Z  INFO   1  preflight-analysis  start  cmd=`python3 /Users/thome/code/fhir-profiling/kerndatensatzmodul-onkologie/.claude/skills/fhir-ig-analysis/scripts/ig-stats.py run . -o migration-log/preflight --label 'Lungenfunktion 2026.0.0 (Quelle)'`  raw_log=migration-log/preflight-analysis-run.log
-2026-08-28T08:13:57Z  INFO   1  preflight-analysis  done  cmd=`python3 /Users/thome/code/fhir-profiling/kerndatensatzmodul-onkologie/.claude/skills/fhir-ig-analysis/scripts/ig-stats.py run . -o migration-log/preflight --label 'Lungenfunktion 2026.0.0 (Quelle)'`  exit=0 raw_log=migration-log/preflight-analysis-run.log raw_log_lines=1
-2026-08-28T08:15:03Z  INFO   1  source-inventory  artefacts=84 (SD=51 VS=32 CPS=1) fsh_files=93 narrative_pages=57 tree=implementation-guides/mii-ig-lungenfunktion-de-v2026 out=migration-log/source-inventory.json
-2026-08-28T08:15:03Z  WARN   1  source-inventory  stray duplicate page 'Provokationstest/Observation/FEV.page copy.md' not in toc — triage queue
-2026-08-28T08:15:03Z  INFO   1  narrative-source  authoritative tree = in-repo implementation-guides/mii-ig-lungenfunktion-de-v2026 (single DE tree; precedent bildgebung: Quell-Guide-Baum statt Simplifier-Harvest)
-2026-08-28T08:15:36Z  INFO   2.1  read  identity-claim  field=id value=mii-ig-lungenfunktion tier=S source=sushi-config.yaml
-2026-08-28T08:15:36Z  INFO   2.1  read  identity-claim  field=name value=MII_IG_Lungenfunktion tier=S source=sushi-config.yaml
-2026-08-28T08:15:36Z  INFO   2.1  read  identity-claim  field=canonical value=https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion tier=S source=sushi-config.yaml
-2026-08-28T08:15:36Z  INFO   2.1  read  identity-claim  field=packageId value=de.medizininformatikinitiative.kerndatensatz.lungenfunktion tier=S source=sushi-config.yaml
-2026-08-28T08:15:36Z  INFO   2.1  read  identity-claim  field=version value=2026.0.0 tier=S source=sushi-config.yaml
-2026-08-28T08:15:36Z  INFO   2.1  read  identity-claim  field=status value=active tier=S source=sushi-config.yaml
-2026-08-28T08:15:36Z  INFO   2.1  read  identity-claim  field=releaseLabel value=ci-build tier=S source=sushi-config.yaml
-2026-08-28T08:15:37Z  INFO   2.1  read  identity-claim  field=copyrightYear value=2024+ tier=S source=sushi-config.yaml
-2026-08-28T08:15:37Z  INFO   2.1  read  identity-claim  field=publisher value=Medizininformatik Initiative|https://www.medizininformatik-initiative.de/ tier=S source=sushi-config.yaml
-2026-08-28T08:15:37Z  INFO   2.1  read  identity-claim  field=fhirVersion value=4.0.1 tier=S source=sushi-config.yaml
-2026-08-28T08:15:37Z  INFO   2.1  derive  identity-claim  field=title value=Medizininformatik-Initiative - Kerndatensatz - Modul Lungenfunktion tier=R source=README.md#L1
-2026-08-28T08:15:37Z  INFO   2.1  gate-a  identity-claim  field=license value=UNDECLARED tier=- source=no source declares a licence (sushi-config, package.json, LICENSE file all absent/silent) — DEC at Gate A, precedent biobank DEC-1
-2026-08-28T08:15:37Z  INFO   2.1  read  identity-claim  field=dependencies value=meta=2026.0.0 base=2026.0.0 medikation=2026.0.1 de.basisprofil.r4=1.5.4 hl7.fhir.r4.core=4.0.1 tier=S source=sushi-config.yaml
-2026-08-28T08:15:37Z  WARN   2.1  identity-divergence  package.json dependency key 'de.basiprofil.r4' (typo, missing s) vs sushi-config 'de.basisprofil.r4' — sushi-config wins (it is what the build reads); typo reported, not fixed (guardrail: never alter existing metadata)
-2026-08-28T08:15:37Z  WARN   2.1  identity-divergence  package.json author='lucasscherer' is a registry account, not a publisher — publisher stays 'Medizininformatik Initiative'
-2026-08-28T08:15:37Z  INFO   2.1  identity-note  sushi-config.yaml dependency key 'kerndatensatz.medikation ' carries a trailing space before the colon — YAML-tolerated, carried over WITHOUT the space in the target
-2026-08-28T08:23:56Z  INFO   5.2  skeleton-vendored  template=forschungsgruppe-digital-health/mii-kds-module-template@v0.11.3 in-place; NICHT kopiert: LICENSE (Relizenzierung=Gate A), CHANGELOG.md, README.md (Modul behaelt eigenes), release-please*/notify-zulip/release-demo-Workflows, .github/CODEOWNERS, Template-Beispiele example-patient*.fsh (Guardrail 5)
-2026-08-28T08:23:56Z  INFO   5.2  ruleset-collisions  SKIP (Modul gewinnt, per Datei): publisher.fsh version.fsh translation.fsh license-terms.fsh extension-context.fsh; APPEND (kollisionsfrei): license.fsh cps-rules.fsh meta-profile.fsh crmi.fsh test-data-label.fsh rulesets/README.md
-2026-08-28T08:23:56Z  INFO   5.2  alias-resolution  aliases.fsh per DEFINITION gefiltert: 42 Template-Aliase uebernommen, 3 uebersprungen (Modul definiert: $loinc $observation-category $v2-0203); $exp doppelt (Aliase.fsh + cps-rules.fsh, identischer Wert) — SUSHI-Lauf verifiziert
-2026-08-28T08:23:56Z  INFO   5.2  qc-rules  qc/custom.rules.yaml durch Template-Version (Slug lungenfunktion) ERSETZT — Quell-Datei war erkennbar aus Modul Bildgebung kopiert (Regex mii-...-bildgebung, Version 2025.0.0-ballot): ①-Queue
-2026-08-28T08:23:56Z  INFO   5.2  gitignore  ig.ini-Ignore entfernt (Falle Bildgebung); Template-Eintraege + !migration-log/** ergaenzt; fsh-generated/ bleibt getrackt (CI-Auto-Commit-Flow, Praezedenz Biobank)
-2026-08-28T08:23:56Z  INFO   5.4a  optional-page-decisions  M9 GEMESSEN (preflight artifacts): extensions=0->REMOVE search-parameters=0->REMOVE operations=0->REMOVE code-systems=0->REMOVE value-sets=32->KEEP metadata->KEEP examples=0->KEEP (Pflichtseite, Modul liefert bislang keine Beispiele: ③-Triage); researcher-guidance ohne Quellinhalt->REMOVE; rendering-artifacts (Demo)->REMOVE
-2026-08-28T08:23:56Z  INFO   5.2  sushi-skeleton  start  cmd=`npx --yes fsh-sushi@3.20.0 .`  raw_log=migration-log/sushi-skeleton.log
-2026-08-28T08:24:10Z  ERROR  5.2  sushi-skeleton  failed  cmd=`npx --yes fsh-sushi@3.20.0 .`  exit=5 raw_log=migration-log/sushi-skeleton.log raw_log_lines=68
-    The exit status is preserved and returned -- this step did NOT meet its
-    acceptance criterion. Read migration-log/sushi-skeleton.log, then either fix and re-run or take it
-    to the report's decision queue (spec §10.3).
-2026-08-28T08:24:41Z  INFO   5.2  ruleset-collisions  KORREKTUR: cps-rules.fsh ebenfalls SKIP — Modul definiert SupportResource/Profile/SupportProfile/SupportInteraction/SupportSearchParam selbst (in capabilitystatements/CapabilityStatement.fsh); damit ist auch $exp nicht mehr doppelt
-2026-08-28T08:24:41Z  INFO   5.2  sushi-skeleton  start  cmd=`npx --yes fsh-sushi@3.20.0 .`  raw_log=migration-log/sushi-skeleton.log prev_raw_log=migration-log/sushi-skeleton.prev.log
-2026-08-28T08:24:55Z  INFO   5.2  sushi-skeleton  done  cmd=`npx --yes fsh-sushi@3.20.0 .`  exit=0 raw_log=migration-log/sushi-skeleton.log raw_log_lines=53
-2026-08-28T08:25:14Z  INFO   5.3  artefact-transfer  in-place: Quell-FSH-Baum UNVERAENDERT (modified=0 deleted=0); Scaffold-Zugaenge laut fsh-delta.txt: aliases.fsh rulesets/{license,meta-profile,crmi,test-data-label}.fsh rulesets/README.md parameters/manifest.fsh README.md .gitkeep-Ordner
-2026-08-28T08:25:26Z  INFO   5.4  fql-scan  start  cmd=`bash /Users/thome/code/fhir-profiling/kerndatensatzmodul-onkologie/.claude/skills/mii-ig-migration/scripts/fql-scan.sh --strict`  raw_log=migration-log/fql-scan.log
 2026-08-28T08:25:27Z  INFO   5.4  fql-scan  params  rules=/Users/thome/code/fhir-profiling/kerndatensatzmodul-onkologie/.claude/skills/mii-ig-migration/references/fql-rules.tsv  targets=input/pagecontent implementation-guides  defaulted=1
 2026-08-28T08:25:27Z  INFO   5.4  fql-scan  target  path=input/pagecontent  kind=dir  files=16
 2026-08-28T08:25:27Z  INFO   5.4  fql-scan  target  path=implementation-guides  kind=dir  files=68
@@ -2177,23 +2136,3 @@
     action: <tabs>/<tab> (rendering/XML/JSON): replace with the matching {% include %} fragments.
 2026-08-28T08:25:34Z  INFO   5.4  fql-scan  result  mapped=711 unknown=0 files=84 strict=1  exit=1
     Transform per references/fql-crosswalk.md; when in doubt mark TODO:REVIEW.
-2026-08-28T08:25:34Z  WARN   5.4  fql-scan  anticipated-nonzero-exit: Findings erwartet (Simplifier-Direktiven im Quellbaum)  cmd=`bash /Users/thome/code/fhir-profiling/kerndatensatzmodul-onkologie/.claude/skills/mii-ig-migration/scripts/fql-scan.sh --strict`  exit=1 raw_log=migration-log/fql-scan.log raw_log_lines=2138
-    This non-zero status is this step's ANTICIPATED, documented outcome, not a
-    failure to fix -- the acceptance criterion is met AS QUALIFIED (spec
-    §5.1b.4). Escalated, not ignored: every item behind it belongs in the
-    report's ① decision queue, named individually (spec §10.3, §10.6).
-2026-08-28T08:25:57Z  INFO   5.4c  page-routing  start  cmd=`python3 /Users/thome/code/fhir-profiling/kerndatensatzmodul-onkologie/.claude/skills/mii-ig-migration/scripts/page-structure-advice.py --source . --target . --out migration-log/page-structure-advice.md --map migration-log/page-map.tsv`  raw_log=migration-log/page-routing.log
-usage: page-structure-advice.py [-h] --source SOURCE [--target TARGET]
-                                [--out OUT] [--map MAP]
-                                [--routing-table ROUTING_TABLE]
-                                [--guide-tree GUIDE_TREE]
-                                [--harvest-tsv HARVEST_TSV]
-                                [--harvest-dir HARVEST_DIR]
-page-structure-advice.py: error: refusing to write inside the --source repository: /Users/thome/code/fhir-profiling/kerndatensatz-lungenfunktion/migration-log/page-structure-advice.md (the source is read-only)
-2026-08-28T08:25:58Z  ERROR  5.4c  page-routing  failed  cmd=`python3 /Users/thome/code/fhir-profiling/kerndatensatzmodul-onkologie/.claude/skills/mii-ig-migration/scripts/page-structure-advice.py --source . --target . --out migration-log/page-structure-advice.md --map migration-log/page-map.tsv`  exit=2 raw_log=migration-log/page-routing.log raw_log_lines=7
-    The exit status is preserved and returned -- this step did NOT meet its
-    acceptance criterion. Read migration-log/page-routing.log, then either fix and re-run or take it
-    to the report's decision queue (spec §10.3).
-2026-08-28T08:26:17Z  INFO   5.4c  page-routing  start  cmd=`python3 /Users/thome/code/fhir-profiling/kerndatensatzmodul-onkologie/.claude/skills/mii-ig-migration/scripts/page-structure-advice.py --source /private/tmp/claude-501/-Users-thome-code-fhir-profiling-kerndatensatz-lungenfunktion/e51118b5-2071-4f11-b0c1-94b9697c5cb5/scratchpad/source-main --target . --out migration-log/page-structure-advice.md --map migration-log/page-map.tsv`  raw_log=migration-log/page-routing.log prev_raw_log=migration-log/page-routing.prev.log
-page-structure-advice: 57 source pages (from guide-tree) + 0 union, 16 target pages, 84 artefacts; map 58 rows (1 retired) -> migration-log/page-map.tsv -> migration-log/page-structure-advice.md
-2026-08-28T08:26:17Z  INFO   5.4c  page-routing  done  cmd=`python3 /Users/thome/code/fhir-profiling/kerndatensatzmodul-onkologie/.claude/skills/mii-ig-migration/scripts/page-structure-advice.py --source /private/tmp/claude-501/-Users-thome-code-fhir-profiling-kerndatensatz-lungenfunktion/e51118b5-2071-4f11-b0c1-94b9697c5cb5/scratchpad/source-main --target . --out migration-log/page-structure-advice.md --map migration-log/page-map.tsv`  exit=0 raw_log=migration-log/page-routing.log raw_log_lines=1
