@@ -3,9 +3,9 @@
 **Module:** MII KDS Modul Lungenfunktion (`de.medizininformatikinitiative.kerndatensatz.lungenfunktion`) · **Report author:** Claude Fable 5 via skill `mii-ig-migration` v0.23.0 · **Report date:** 2026-08-28
 **Written for:** the module's maintainers and TF KDS · **Decision requested by:** before the next release milestone
 **Decision requested:** approve with the listed conditions — **DEC-1 must be answered before the guide can be built at all**
-**State:** complete through step 6 (structure, artefacts, narrative, bilingual page set, menu, translation catalogue). **Step 7 (IG Publisher build) is BLOCKED by source content** — see DEC-1.
+**State:** complete through step 6 (structure, artefacts, narrative, bilingual page set, menu, translation catalogue). **Step 7 (IG Publisher build) is BLOCKED by source content** — see DEC-1, which now carries a measured, cheap resolution.
 **Published?** No package was released to the FHIR package registry. No rendered preview exists, because the build does not complete.
-**Recommendation:** merge the branch to bank the migration work, and treat DEC-1 as a separate, urgent module-team task — the module cannot be published on this template (or any IG-Publisher-based one) until its nested slicing is remodelled.
+**Recommendation:** merge the branch to bank the migration work, and treat DEC-1 as a separate, urgent module-team task. **Good news since the first draft of this report: DEC-1 has a cheap fix.** A purely formal change — moving the nested slicing declaration into each `component` slice, without touching slice names, cardinalities or bindings — was measured to make the publisher generate all 50 snapshots. Together with a synthetic stand-in Patient (the Bildgebung precedent) the build proceeds into rendering. Both changes touch the module's own FSH, so they are the module team's to apply; option (a) under DEC-1 has the detail.
 
 ## How to use this report
 
@@ -153,21 +153,41 @@ the same abort in a second complete run) and it is a normative change, so it was
   publisher, and the whole R (rendering) layer of the verification stays NICHT PRÜFBAR. Everything
   else in this migration is finished and would be publishable.
 - **Options:**
-  (a) **Remodel the nesting** — drop the `component.code.coding` slicing and constrain
-  `component[predicted].code`, `component[%predicted].code`, `component[z-score].code` directly
-  (pattern or binding per slice). This is the conventional MII shape and keeps the intent; it is a
-  normative change to the information model → **the module team decides, not the migration.**
-  (b) **Keep the model and stay on Simplifier** — the Firely toolchain accepts it. Rules out the
+  (a) **Move the slicing declaration into each `component` slice — MEASURED TO WORK, recommended.**
+  Instead of declaring `component.code.coding` once generically, declare it per slice:
+  `component[predicted].code.coding ^slicing…` + `contains sct/loinc` + the two bindings, and the
+  same for `[%predicted]` and `[z-score]`. **Slice names, cardinalities and bindings stay
+  identical** — only the *place* of the declaration changes, so the information model is unchanged.
+  Measured on a scratch copy with publisher 2.3.2 on 2026-08-28: **all 50 snapshots generated, the
+  DLCO exception gone**, SUSHI still 0 errors. Scope: the ten base profiles plus two lines in
+  `input/fsh/rulesets/translation.fsh`, which reference the generic path and must be rolled out per
+  slice. The `nested slicing is not supported` warning still appears ten times, but no longer
+  blocks. Evidence: run.log `5.6 dec1-loesung-gemessen`.
+  (b) **Remodel properly** — drop the `coding` slicing and constrain `component[x].code` directly.
+  The conventional MII shape, but it costs the statement "one SNOMED *and* one LOINC coding in the
+  same CodeableConcept" → a real normative change.
+  (c) **Keep the model and stay on Simplifier** — the Firely toolchain accepts it. Rules out the
   template.
-  (c) Raise it upstream with HL7 as a ProfileUtilities limitation and wait.
-  **Default applied now:** none. The source FSH is untouched and the build is left failing, visibly.
-- **Next action:** decide (a) vs (b). For (a), reproduce with
+  **Default applied now:** none. The source FSH on this branch is untouched and the build is left
+  failing, visibly — option (a) was measured on a scratch copy, not applied here, because even a
+  purely formal change to the module's profiles is the module team's call.
+
+- **A second blocker sits behind it, and it is already solved elsewhere.** Once (a) is applied, the
+  build runs into `DiagnosticReportRenderer.populateSubjectSummary` throwing an NPE: every example
+  references `Patient/PatExample`, but the module ships no Patient instance. On Simplifier that
+  reference simply stayed unresolved; the IG Publisher crashes on it. The Bildgebung module solved
+  this with a minimal synthetic stand-in (`input/fsh/instances/Example-Patient.fsh`). With that
+  added, the measured run produced **148 narratives and zero aborts** and proceeded into rendering.
+  Plan for both, not just the first.
+- **Next action:** decide between (a), (b) and (c). If (a): apply the per-slice declaration to the
+  ten base profiles, roll out the two `translation.fsh` inserts per slice, add the stand-in Patient,
+  and rebuild. Reproduce the current failure with
   `java -jar publisher.jar -ig ig.ini -tx https://tx.fhir.org/r4` and read
   `migration-log/ig-publisher.log` from the line `Exception generating snapshot`.
 - **Who decides:** the module's modelling authors — this is an information-model decision, and only
   they can say whether the inner slices carry meaning that must be preserved.
-- **Effort · impact:** hours to days (ten profiles plus every derived profile constraining an inner
-  slice) · **blocks release**.
+- **Effort · impact:** option (a) is roughly an hour — ten profiles, one line pair each, plus two
+  ruleset lines and the stand-in Patient; option (b) is days · **blocks release** either way.
 - **Reversible:** yes — it is FSH under version control. But note that changing slice structure
   changes the published profiles, so it is a modelling decision with consumer impact.
 - **Evidence:** run.log `5.6 build-blocked`, `5.6 source-blocker-slicing`; both publisher logs.
