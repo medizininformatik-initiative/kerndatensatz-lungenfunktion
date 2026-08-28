@@ -1,9 +1,35 @@
 <!-- markdownlint-disable MD041 -->
-<!-- Source: kerndatensatz-basis input/pagecontent/logical-models.md.
-     German mirror: input/translations/de/pagecontent/logical-models.md. -->
-### Logical Models
+<!--
+  LOGICAL MODELS — English is the IG's default language; the CONTENT is a
+  translation of input/translations/de/pagecontent/logical-models.md, which
+  carries the migrated original text (guide tree
+  mii-ig-lungenfunktion-de-v2026, main@c2fe7fe:
+  AnwendungsflleInformationsmodell/Datensaetze_inkl._Beschreibungen.page.md).
+  The Simplifier tree directive is replaced by the snapshot fragment the IG
+  Publisher generates (FQL crosswalk).
+  TODO:REVIEW — translation to be confirmed at Gate C. Migrated 2026-08-28.
+-->
 
-The logical data models of the **Lungenfunktion (Pulmonary Function)** module describe the domain dataset independently of its concrete FHIR representation.
+### Datasets and descriptions
 
-> [TODO: Add the logical models, or delete this page.]
-{: .ig-highlight .ig-highlight-grey}
+The Pulmonary Function Core Dataset module comprises profiles for representing
+the results of pulmonary function diagnostic procedures (among others
+spirometry, body plethysmography, diffusing capacity measurement and blood gas
+analysis) as well as a profile for the accompanying meta information of the
+measurement (measuring device, examination conditions, reference value set,
+reference quantities such as height, weight, age and sex, bronchodilation status
+etc.). The results may be present as individual parameters (e.g. FEV1, FVC,
+Tiffeneau index) or grouped within a summarizing examination; in addition, a
+clinical assessment can be represented as free text.
+
+Note that the logical model aims purely at representing the data elements and
+their description in a hierarchical structure. The data types and cardinalities
+used are not to be regarded as binding; this is finally determined by the FHIR
+profiles. For each element within the logical model there is a 1:1 mapping to an
+element of a concrete FHIR resource.
+
+The complete element structure is available on the artifact page
+[MII_LM_Lungenfunktion](StructureDefinition-mii-lm-lungenfunktion.html); a
+graphical representation is given by the [UML diagrams](uml-diagrams.html).
+
+{% include StructureDefinition-mii-lm-lungenfunktion-snapshot.xhtml %}

@@ -1,8 +1,19 @@
 <!-- markdownlint-disable MD041 -->
-<!-- Source: kerndatensatz-basis input/pagecontent/uml-diagrams.md.
-     German mirror: input/translations/de/pagecontent/uml-diagrams.md. -->
+<!--
+  UML — English is the IG's default language; the CONTENT is a translation of
+  input/translations/de/pagecontent/uml-diagrams.md, which carries the migrated
+  original text (guide tree mii-ig-lungenfunktion-de-v2026, main@c2fe7fe:
+  AnwendungsflleInformationsmodell/UML.page.md). The source's render directive
+  named "UML_Modul_Lufu.png"; the file in the repository is "UML_KDS_Lufu.png"
+  (source defect, corrected during transfer).
+  TODO:REVIEW — translation to be confirmed at Gate C. Migrated 2026-08-28.
+-->
 
-UML overviews of the data models of the **Lungenfunktion (Pulmonary Function)** module and their relationships. Editable sources (e.g. PlantUML) belong in `input/images-source/`, the rendered images in `input/images/`.
+### UML diagrams
 
-> [TODO: Add your module's UML diagrams, or delete this page if there are none.]
-{: .ig-highlight .ig-highlight-grey}
+The class diagram below shows the information model of the Pulmonary Function
+module with its domain concepts and their relationships. It serves as an
+overview; the normative artifacts are the [profiles](profiles.html), and the
+element structure is described by the [logical model](logical-models.html).
+
+![UML class diagram of the Pulmonary Function Core Dataset module](UML_KDS_Lufu.png)

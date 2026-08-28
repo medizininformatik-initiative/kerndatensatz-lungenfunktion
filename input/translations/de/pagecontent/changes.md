@@ -83,19 +83,18 @@ werden können.</p>
 
 #### Version 2027.0.0-ballot
 
-**Datum:** 2026-08-28
+**Datum:** 2026-09-01
 
 ##### Hinzugefügt
 
-* Erstveröffentlichung des Moduls **Lungenfunktion (Pulmonary Function)**.
+* Erstveröffentlichung des Moduls **Lungenfunktion** — Profile, ValueSets, das
+  logische Modell, das CapabilityStatement sowie die Beispielinstanzen für
+  Spirometrie, Bodyplethysmographie, Diffusionsmessung und
+  Broncho-Provokationstestung.
+* Erste Ausgabe dieses Implementierungsleitfadens auf dem MII-KDS-Modul-Template
+  (zweisprachig: Englisch als Standardsprache, Deutsch als Übersetzung).
 
-> [TODO: Ersetzen Sie diesen Abschnitt durch die echten Einträge Ihres ersten
-> Releases und ergänzen Sie für jede weitere Version oben einen neuen Abschnitt.
-> Bei einem Modul mit mehreren Teilbereichen gruppiert `kerndatensatz-basis` die
-> Einträge einer Version thematisch (etwa *Dokumentation*,
-> *Terminologie-Aktualisierungen* und je eine Überschrift pro Teilmodul) und
-> stellt jedem Stichpunkt **Hinzugefügt:** / **Geändert:** / **Entfernt:**
-> voran — nutzen Sie die für Ihr Modul passende der beiden Gruppierungen,
-> bleiben Sie dabei aber über alle Versionen hinweg und in beiden Sprachen
-> einheitlich.]
-{: .ig-highlight .ig-highlight-grey}
+<!-- Quelle: MIIIGModulLungenfunktion/Release-Notes.page.md (Guide-Baum
+     mii-ig-lungenfunktion-de-v2026, main@c2fe7fe), dort "Version:
+     2027.0.0-ballot / Initialer Release". Die Aufzählung oben expliziert, was
+     dieser Release enthält; TODO:REVIEW bei Gate B. -->

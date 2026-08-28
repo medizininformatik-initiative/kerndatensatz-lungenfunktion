@@ -1,39 +1,69 @@
 <!-- markdownlint-disable MD041 -->
-<!-- Deutsche Übersetzung von input/pagecontent/value-sets.md (aufgeteilt aus
-     der früheren Seite terminology.md gemäß der TF-KDS-abgestimmten Menüstruktur).
-     Der IG-Publisher listet die ValueSets auf den Artefakt-Seiten automatisch;
-     hier stehen die MII-Hinweise dazu. -->
-<!-- OPTIONAL-PAGE (0..1) — Marker entfernen, wenn die Seite BLEIBT; andernfalls
-     die Seite gemäß docs/optional-pages.md entfernen. Der Konventions-Check
-     (M9) lässt ein Release mit diesem Marker fehlschlagen. -->
+<!--
+  VALUE SETS / TERMINOLOGIEN — deutsche Übersetzung der Quellseite
+  input/pagecontent/value-sets.md. Inhalt migriert aus dem Guide-Baum
+  mii-ig-lungenfunktion-de-v2026 (main@c2fe7fe):
+  TechnischeImplementierung/Terminologien.page.md. Die dortige Marke "//TODO"
+  wurde nicht übernommen; der Abschnitt "Weitere genutzte Codesysteme" war in
+  der Quelle leer (siehe Hinweis unten). Migriert 2026-08-28.
+  M9-Entscheidung: Seite BEHALTEN (32 ValueSets gemessen).
+-->
 
-> **Optionale Seite (0..1).** Das KDS-Modulmenü führt diese Seite als
-> *optional*. Entscheiden Sie für Ihr Modul: Seite **behalten** — Inhalte
-> ausfüllen und dieses Banner samt `OPTIONAL-PAGE`-Marker-Kommentar löschen (in
-> dieser Datei UND in der englischen Quellseite) — oder Seite **entfernen**,
-> nach der Schritt-für-Schritt-Anleitung in [`docs/optional-pages.md`](https://github.com/medizininformatik-initiative/kerndatensatz-lungenfunktion/blob/main/docs/optional-pages.md) dieses
-> Repositories. Ein Release darf dieses Banner nicht enthalten
-> (Konventions-Check M9).
-{: .ig-highlight .ig-highlight-grey}
+### Value Sets
 
-### ValueSets
-
-Diese Seite beschreibt die ValueSets des Moduls **Lungenfunktion (Pulmonary Function)**
-(Namenskonvention `MII_VS_<Modul>_<Name>`). Allgemeine Hinweise zur Verwendung
-von Codes: siehe
-[FHIR Terminology](http://hl7.org/fhir/R4/terminologies.html); die
-zugrunde liegenden CodeSystems beschreibt die Seite
-[CodeSystems](code-systems.html).
+Diese Seite beschreibt die ValueSets des Moduls **Lungenfunktion**
+(Namenskonvention `MII_VS_<Modul>_<Name>`). Das Modul definiert 32 ValueSets:
+20 über LOINC-Codes (`mii-vs-lufu-lnc-…`) für die Messgrößen und den
+Untersuchungstyp sowie 12 über SNOMED-CT-Codes (`mii-vs-lufu-sct-…`) für
+Verfahren, Technik, Ort und Befunde. Die vollständige Liste steht in der
+[Artefaktübersicht](artifacts.html).
 
 {:.bg-info}
-**Expansionen:** ValueSet-Expansionen dieses Leitfadens werden über einen
-FHIR-Terminologieserver erzeugt — über SU-TermServ, sofern das
-Client-Zertifikat konfiguriert ist, sonst über den öffentlichen HL7-Server
-`tx.fhir.org` (dann expandieren einige KDS-spezifische ValueSets ggf. nicht
-vollständig).
+**Expansionen:** ValueSet-Expansionen in diesem Leitfaden werden von einem
+FHIR-Terminologieserver erzeugt — SU-TermServ, sofern das Client-Zertifikat
+konfiguriert ist, sonst der öffentliche HL7-Server `tx.fhir.org` (dabei können
+KDS-spezifische ValueSets unvollständig expandieren).
 
-> [TODO: Falls Ihr Modul SNOMED CT nutzt, geben Sie die verwendete
-> Edition/Version an. Listen Sie die modul-eigenen ValueSets auf oder verweisen
-> Sie auf die automatisch erzeugte Artefakt-Liste — oder entfernen Sie diese
-> Seite, wenn Ihr Modul keine definiert.]
-{: .ig-highlight .ig-highlight-grey}
+### Verwendete Terminologien
+
+**SNOMED CT**
+
+SNOMED CT wird zur Kodierung klinischer Begriffe verwendet, die sich auf die
+Lungenfunktionsdiagnostik beziehen, einschließlich der Indikationen für eine
+Untersuchung, der Art der durchgeführten Prozedur sowie der erhobenen Befunde.
+
+**LOINC**
+
+LOINC wird zur Kodierung von Beobachtungen und Ergebnissen aus der
+lungenfunktionellen Diagnostik verwendet, insbesondere im Zusammenhang mit dem
+Profil **DiagnosticReport**.
+
+**ICD-10**
+
+Die ICD (International Statistical Classification of Diseases and Related
+Health Problems) wird zur Kodierung von Diagnosen verwendet, die sich aus der
+Beurteilung der Lungenfunktion ergeben können. Sie ermöglicht die
+standardisierte Dokumentation von Atemwegserkrankungen wie Asthma oder COPD und
+spielt eine zentrale Rolle in der klinischen Dokumentation und Abrechnung.
+ICD-10 wird vom Bundesinstitut für Arzneimittel und Medizinprodukte (BfArM)
+herausgegeben.
+
+**UCUM**
+
+Die Einheiten der Messwerte sind über
+[UCUM](http://unitsofmeasure.org) kodiert (u. a. L, L/s, %, kPa/(L/s),
+mmol/(min·kPa)).
+
+<!-- TODO:REVIEW (Gate B) Die Quellseite trägt die Autorenmarke "//TODO" und
+     einen leeren Abschnitt "Weitere genutzte Codesysteme". Der UCUM-Absatz oben
+     ist aus den Profilen belegt (Einheitenbindung), aber KEIN Quelltext —
+     bitte bestätigen oder ersetzen. -->
+
+<div class="ig-highlight ig-highlight-grey" markdown="1">
+**Versionspinning SNOMED CT — zu klären (Gate A).** Das Modul selbst pinnt in
+`input/fsh/Aliase.fsh` die SNOMED-CT-Edition **20240701**, das
+Expansions-Manifest des Modul-Templates
+(`input/resources/Parameters-expansion-manifest.json`) dagegen **20250701**. Die
+Migration hat beide Werte unverändert übernommen; welcher gelten soll, ist eine
+fachliche Entscheidung.
+</div>

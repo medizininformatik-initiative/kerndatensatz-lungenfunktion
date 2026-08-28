@@ -13,5 +13,17 @@ as the English page); resource translations are `.po` files under
 `input/translations/de/`. Details:
 [`docs/recipes/add-translation.md`](https://github.com/medizininformatik-initiative/kerndatensatz-lungenfunktion/blob/main/docs/recipes/add-translation.md) in this repository.
 
-> [TODO: Record which parts of your module are already translated into German.]
-{: .ig-highlight .ig-highlight-grey}
+All narrative pages of this guide exist in both languages: English is the
+default rendering, German the translation under
+`input/translations/de/pagecontent/`. The same applies to the intro notes on
+the artifact pages (`input/intro-notes/` and its German mirror) and to the
+menu (`input/includes/menu.xml`).
+
+The **content of the FHIR artifacts** — profile and value set descriptions,
+element short texts and comments — is German, as authored in the source
+module; artifact identifiers (`name`, `id`, canonical URLs) are and remain
+English-neutral per the MII naming conventions.
+
+<!-- TODO:REVIEW (Gate C) The English pages of this guide are translations
+     produced during the migration of the German source guide. They have not
+     yet been reviewed by the module authors. -->

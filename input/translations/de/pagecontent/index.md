@@ -1,32 +1,37 @@
 <!-- markdownlint-disable MD041 -->
 <!--
-  HOME PAGE — GERMAN TRANSLATION of the source page input/pagecontent/index.md
-  (English is the IG's default language). The structure follows the standard MII
-  module IG page set (MII IG template and kerndatensatz-basis). Replace the
-  {{...}} placeholders and the bracketed [TODO ...] prompts with your module's
-  real content, then delete these HTML comments. Keep the section headings — a
-  reviewer expects them. See docs/recipes/add-translation.md; keep this file in
-  step with the English source.
+  HOME PAGE — DEUTSCHE ÜBERSETZUNG der Quellseite input/pagecontent/index.md
+  (Englisch ist die Standardsprache des IG). Inhalt migriert aus dem Guide-Baum
+  implementation-guides/mii-ig-lungenfunktion-de-v2026 (main@c2fe7fe), Seiten
+  MIIIGModulLungenfunktion/Index.page.md und BeschreibungModul.page.md.
+  Struktur folgt dem MII-Modul-Seitenset. Migriert 2026-08-28.
 -->
 
 ### Einleitung
 
 Diese Spezifikation beschreibt die FHIR-Repräsentation des
-Kerndatensatz-(KDS-)Moduls **Lungenfunktion (Pulmonary Function)** der Medizininformatik-Initiative
+Kerndatensatz-(KDS-)Moduls **Lungenfunktion** der Medizininformatik-Initiative
 (MII). Sie beschreibt die Anwendungsfälle des Moduls sowie die zugehörigen
-FHIR-Profile, Extensions und Terminologie-Ressourcen in ihrer verbindlichen
-Form. Der MII-Kerndatensatz dient der standardisierten Nutzung klinischer
-Routinedaten für die medizinische Forschung.
+FHIR-Profile und Terminologie-Ressourcen in ihrer verbindlichen Form. Der
+MII-Kerndatensatz dient der standardisierten Nutzung klinischer Routinedaten
+für die medizinische Forschung.
 
-> [TODO: Beschreiben Sie in ein bis zwei Sätzen den fachlichen Gegenstand Ihres
-> Moduls — welche Daten es abdeckt und wofür sie genutzt werden.]
-{: .ig-highlight .ig-highlight-grey}
+Das Kerndatensatzmodul Lungenfunktion umfasst Informationen zu Messungen und
+zur Einordnung von Funktionstests der Lunge. Es ist Bestandteil der
+Erweiterungsmodule des Kerndatensatzes. Die Lungenfunktionsdiagnostik ist das
+zentrale Instrument zur Erkennung, Klassifikation und Verlaufsbeurteilung von
+Ventilations- und Gasaustauschstörungen; das Modul unterstützt die klinische
+Entscheidungsfindung insbesondere bei chronisch-obstruktiven Lungenerkrankungen
+(z. B. COPD, Asthma bronchiale) und interstitiellen Lungenerkrankungen sowie in
+der präoperativen Risikoeinschätzung und in arbeitsmedizinischen Kontexten. Eine
+ausführliche fachliche Einordnung steht unter
+[Anleitung](guidance.html).
 
 | Veröffentlichung |               |
 |------------------|---------------|
-| Datum            | 2026-08-28 |
+| Datum            | 2026-09-01    |
 | Version          | 2027.0.0-ballot (CalVer `JJJJ.n.n`) |
-| Status           | active        |
+| Status           | Ballot        |
 | Realm            | DE            |
 
 ### Zielgruppe
@@ -39,22 +44,18 @@ Dieser Implementierungsleitfaden richtet sich an:
 → siehe <a href="profiles.html">Profile</a> und <a href="logical-models.html">Logische Modelle</a>.</p>
 </div>
 
-<div class="ig-highlight ig-highlight-green">
-<h5>Forschende</h5>
-<p>Wissenschaftler:innen, die KDS-Daten für die medizinische Forschung nutzen.<br/>
-→ siehe <a href="researcher-guidance.html">Anleitung für Forschende</a>.</p>
-</div>
-
 ### Inhalt dieses Leitfadens
 
-- **[Anleitung](guidance.html)** — Einstieg und fachliche Hinweise.
+- **[Anleitung](guidance.html)** — Einstieg, Anwendungsszenarien und fachliche
+  Einordnung des Moduls.
 - **Konformität** — die KDS-weiten Konformitätsregeln (Anforderungssprache,
   Must-Support, Umgang mit fehlenden Daten) pflegt zentral das
   [Meta-Modul](https://github.com/medizininformatik-initiative/kerndatensatz-meta/wiki/Conformance);
   die modul-spezifischen Aspekte zu
   [Sicherheit und Datenschutz](security-and-privacy.html) sind Teil dieses
   Leitfadens.
-- **[Profile](profiles.html)** und die weiteren
+- **[Profile](profiles.html)**, **[Value Sets](value-sets.html)**,
+  **[CapabilityStatements](capability-statements.html)** und die weiteren
   **[Artefakt-Seiten](artifacts.html)** — die technischen Artefakte.
 - **[Beispiele](examples.html)** — Beispielinstanzen.
 - **[Abhängigkeiten](ImplementationGuide-mii-ig-lungenfunktion.html)** — die
@@ -63,14 +64,13 @@ Dieser Implementierungsleitfaden richtet sich an:
 
 ### Verwandte Leitfäden
 
-Dieses Modul ist Teil des MII-Kerndatensatzes; die weiteren KDS-Module und ihre
-Abhängigkeiten sind unter
+Dieses Modul ist Teil des MII-Kerndatensatzes und nutzt die Module PERSON,
+FALL, LABOR, DIAGNOSE, PROZEDUR, MEDIKATION und INTENSIVMEDIZIN nach, statt
+deren Inhalte eigenständig zu profilieren; die Bezüge im Einzelnen beschreibt
+die [Anleitung für Implementierende](implementer-guidance.html). Die weiteren
+KDS-Module und ihre Abhängigkeiten sind unter
 [medizininformatik-initiative.de](https://www.medizininformatik-initiative.de/)
 beschrieben.
-
-> [TODO: Nennen Sie die formalen Abhängigkeiten (siehe `dependencies` in
-> `sushi-config.yaml`) und verwandte Leitfäden Ihres Moduls.]
-{: .ig-highlight .ig-highlight-grey}
 
 Weitere FHIR-Implementierungsleitfäden finden Sie im offiziellen
 **[FHIR IG Registry](https://fhir.org/guides/registry/)** (Quelle:
@@ -84,40 +84,57 @@ Interoperabilitätsforums und der Technischen Komitees von HL7 Deutschland e. V.
 
 ### Ansprechpartner
 
-Fragen zu dieser Publikation können im HL7-FHIR-Zulip
-[chat.fhir.org](https://chat.fhir.org) im Stream `german/mi-initiative` oder im
-MII-Zulip [mii.zulipchat.com](https://mii.zulipchat.com/) im Stream
-`MII-Kerndatensatz` gestellt werden.
-Anmerkungen und Kritik werden als *Issues* auf
-[GitHub](https://github.com/medizininformatik-initiative/kerndatensatz-lungenfunktion/issues) entgegengenommen.
+- Lena Raber, Universitätsklinikum Erlangen (UKER)
+- Karoline Buckow, TMF – Technologie- und Methodenplattform für die vernetzte
+  medizinische Forschung e. V.
+- Franziska Klepka, TMF – Technologie- und Methodenplattform für die vernetzte
+  medizinische Forschung e. V.
 
-> [TODO: Nennen Sie die fachlichen Ansprechpartner:innen Ihres Moduls.]
-{: .ig-highlight .ig-highlight-grey}
+Fragen zu dieser Publikation können im HL7-FHIR-Zulip
+[chat.fhir.org](https://chat.fhir.org) im Stream `german/mi-initiative` gestellt
+werden. Anmerkungen und Kritik werden als *Issues* auf
+[GitHub](https://github.com/medizininformatik-initiative/kerndatensatz-lungenfunktion/issues)
+entgegengenommen.
 
 ### Autor:innen (in alphabetischer Reihenfolge)
 
-> [TODO: Listen Sie die Autor:innen des Moduls mit Institution auf.]
-{: .ig-highlight .ig-highlight-grey}
+- Noemi Deppenwiese, Universitätsklinikum Erlangen (UKER)
+- Thimo Andre Hölter, Charité Berlin (CHA)
+- Jakub Lidke, Universitätsklinikum Marburg (UKMR)
+- Maximilian Meixner, Charité Berlin (CHA)
+- Dirk Meyer zum Büschefelde, Charité Berlin (CHA)
+- Lucas Mundo, Universitätsklinikum Erlangen (UKER)
+- Lena Raber, Universitätsklinikum Erlangen (UKER)
+- Alina Rehberg, Universitätsklinikum Hannover (MHH)
+- Dirk Westhölter, Universitätsklinikum Essen (UME)
 
 ### Urheberrecht und Lizenz
 
-© 2024+ TMF e. V., Charlottenstraße 42, 10117 Berlin
+Copyright © 2019+: TMF e. V., Charlottenstraße 42, 10117 Berlin
 
-Dieses Werk ist lizenziert unter der
-[Creative Commons Namensnennung 4.0 International Lizenz (CC BY 4.0)](https://creativecommons.org/licenses/by/4.0/deed.de).
+Der Inhalt dieser Spezifikation ist öffentlich. Die Nachnutzungs- bzw.
+Veröffentlichungsansprüche sind nicht beschränkt.
 
-Für die Nutzungsrechte der zugrunde liegenden FHIR-Technologie siehe die
+Zu den Nutzungsrechten der zugrunde liegenden FHIR-Technologie siehe die
 FHIR-Basisspezifikation.
 
-Einige der verwendeten Codesysteme werden von anderen Organisationen
-veröffentlicht und gepflegt; es gilt das Urheberrecht der jeweiligen Herausgeber.
+Einige verwendete Codesysteme werden von anderen Organisationen herausgegeben
+und gepflegt. Es gilt das Copyright der dort jeweils aufgeführten Herausgeber
+(Publisher).
+
+<!-- TODO:REVIEW (Gate A, DEC-1) Der Copyright-Text ist wortgleich aus der
+     Quelle übernommen. Er nennt KEINE SPDX-Lizenz; das Template-Standardfeld
+     CC-BY-4.0 wäre eine Relizenzierung und wurde deshalb in sushi-config.yaml
+     NICHT gesetzt. Zusätzlich divergiert das Copyright-Jahr: die Quellseite
+     sagt "2019+", sushi-config.yaml sagt "2024+". Beides ist eine menschliche
+     Entscheidung. -->
 
 ### Haftungsausschluss
 
-Der Inhalt dieses Dokuments ist öffentlich. Bitte beachten Sie, dass Teile
-dieses Dokuments auf FHIR Version R4 basieren, dessen Urheberrecht bei
-HL7 International liegt.
+Der Inhalt dieses Dokuments ist öffentlich. Zu beachten ist, dass Teile dieses
+Dokuments auf FHIR Version R4 beruhen, für die das Copyright von
+HL7 International gilt.
 
 Obwohl diese Publikation mit größter Sorgfalt erstellt wurde, können die
-Autor:innen keine Haftung für direkte oder indirekte Schäden übernehmen, die
-aus dem Inhalt dieser Spezifikation entstehen könnten.
+Autor:innen keinerlei Haftung für direkten oder indirekten Schaden übernehmen,
+der durch den Inhalt dieser Spezifikation entstehen könnte.

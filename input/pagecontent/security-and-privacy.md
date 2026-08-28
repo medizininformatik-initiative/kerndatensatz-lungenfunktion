@@ -3,11 +3,10 @@
      Structured in the TF-KDS-agreed THREE stages: (1) the overarching data
      protection concept, (2) DIMP in the data portal, (3) the
      module-specific aspects. Stages 1 and 2 are static overarching content —
-     keep them; stage 3 is where your module writes. Stage 3's CONTENT is
-     optional: a module with no aspects of its own adopts the default text in
-     the section. The Person example box is illustrative only and MUST be
-     removed before the first release (ILLUSTRATIVE-EXAMPLE marker, convention
-     check M11).
+     keep them; stage 3 is where the module writes.
+     M11 DECISION (migration 2026-08-28): section 3 is FILLED, not defaulted —
+     the module's ethnicity extension is a module-specific aspect. The
+     template's illustrative example and TODO box were removed accordingly.
      German mirror: input/translations/de/pagecontent/security-and-privacy.md —
      both files must say the same thing. -->
 
@@ -46,30 +45,32 @@ by the DIMP configuration, not by this guide.
 #### 3. Module-specific aspects
 
 This is the module's own contribution: the security and privacy properties
-that follow from the *kind of data this module carries*. **Its content is
-optional** — not every module has aspects of its own. If yours does not, the
-whole section body becomes the following default text (delete the example and
-TODO boxes below and adopt it verbatim):
+that follow from the *kind of data this module carries*.
 
-> Beyond the overarching framework above — the overarching data protection
-> concept, the Broad Consent it rests on, and DIMP — this module carries no
-> data category that raises security or privacy aspects of its own, and it
-> places no module-specific security or privacy requirements on implementers.
+<!-- DERIVED:suggestion source=none gate=B -->
+> **Written during migration - review before release.** The source guide ships
+> no security and privacy section. The aspect below was derived from the
+> module's own content (the ethnicity extension to Patient described in
+> [Guidance for Implementers](implementer-guidance.html)) and is a proposal, not
+> migrated text.
+{: .ig-highlight .ig-highlight-blue}
 
-<!-- ILLUSTRATIVE-EXAMPLE — decide this section and remove the example box
-     below (in this file AND the German mirror) before the first release;
-     the convention check (M11) fails a release branch while it is present. -->
-> **Illustrative example — remove before the first release.** How another KDS
-> module fills this section (*Person*): the patient identifiers are pseudonyms
-> from the trusted third party; systems must not let record linkage
-> re-identify a person, and the pseudonym's scope (site-wide vs
-> project-specific) must be respected when data is combined.
-{: .ig-highlight .ig-highlight-orange}
+Beyond the overarching framework above — the overarching data protection
+concept, the Broad Consent it rests on, and DIMP — the measured values carried
+by this module (volumes, flows, resistances and their predicted values) raise no
+security or privacy aspects beyond those of health data in general.
 
-> [TODO: State your module's specific aspects — the data categories it carries
-> and their sensitivity, risks that profile-level pseudonymisation does not
-> cover, and any security- or privacy-related SHALL/SHOULD/MAY requirements
-> this module places on implementers, each with the risk it addresses. Name
-> residual risks that must be handled in system design, deployment or policy —
-> or adopt the default text above if there are none.]
-{: .ig-highlight .ig-highlight-grey}
+One module-specific aspect does apply. Interpreting pulmonary function values
+requires the predicted values, and these are calculated from age, sex, height
+and **ethnicity**. For ethnicity the module provides an extension of the Patient
+resource (see [Guidance for Implementers](implementer-guidance.html)), because
+the base module does not represent it. Ethnicity is a special category of
+personal data under Art. 9 GDPR and is not covered by pseudonymisation at
+profile level: it stays in the record and, in small cohorts, can contribute to
+re-identification.
+
+Implementers SHOULD therefore treat the ethnicity extension as a
+release-relevant attribute in their own right — that is, decide per use and
+access request whether it is provided, rather than passing it on implicitly with
+the measurement. Where the predicted values are already available as their own
+Observations, the interpretation is possible without the attribute.

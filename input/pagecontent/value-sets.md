@@ -1,27 +1,21 @@
 <!-- markdownlint-disable MD041 -->
-<!-- Split from the former terminology.md per the TF-KDS-agreed menu structure (one
-     page per artifact type); SNOMED CT version policy from the meta wiki page
-     "Terminology Version Policy". The IG Publisher lists the ValueSets on the
-     artifact pages automatically; this page carries the MII notes on them.
-     German mirror: input/translations/de/pagecontent/value-sets.md. -->
-<!-- OPTIONAL-PAGE (0..1) — remove this marker when you KEEP the page; remove
-     the page per docs/optional-pages.md when you don't. The convention check
-     (M9) fails a release while this marker is present. -->
-
-> **Optional page (0..1).** The KDS module menu lists this page as *optional*.
-> Decide for your module: **keep** it — fill it in and delete this banner and
-> the `OPTIONAL-PAGE` marker comment (in this file AND the German mirror) — or
-> **remove** it, following the per-entry procedure in [`docs/optional-pages.md`](https://github.com/medizininformatik-initiative/kerndatensatz-lungenfunktion/blob/main/docs/optional-pages.md)
-> of this repository. A release must not ship with this banner (convention
-> check M9).
-{: .ig-highlight .ig-highlight-grey}
+<!--
+  VALUE SETS — English is the IG's default language; the CONTENT is a
+  translation of input/translations/de/pagecontent/value-sets.md, which carries
+  the migrated original text (guide tree mii-ig-lungenfunktion-de-v2026,
+  main@c2fe7fe: TechnischeImplementierung/Terminologien.page.md).
+  TODO:REVIEW — translation to be confirmed at Gate C. Migrated 2026-08-28.
+  M9 decision: page KEPT (32 value sets measured).
+-->
 
 ### Value Sets
 
-This page describes the ValueSets of the **Lungenfunktion (Pulmonary Function)** module (naming
-convention `MII_VS_<Module>_<Name>`). For general guidance on using codes, see
-[FHIR Terminology](http://hl7.org/fhir/R4/terminologies.html); the code systems
-the sets draw from are described on the [Code Systems](code-systems.html) page.
+This page describes the ValueSets of the **Lungenfunktion (Pulmonary Function)**
+module (naming convention `MII_VS_<Module>_<Name>`). The module defines 32
+ValueSets: 20 based on LOINC codes (`mii-vs-lufu-lnc-…`) for the measured
+quantities and the examination type, and 12 based on SNOMED CT codes
+(`mii-vs-lufu-sct-…`) for procedures, technique, location and findings. The
+complete list is available in the [artifact overview](artifacts.html).
 
 {:.bg-info}
 **Expansions:** ValueSet expansions in this guide are produced by a FHIR
@@ -29,7 +23,44 @@ terminology server — SU-TermServ if the client certificate is configured,
 otherwise the public HL7 server `tx.fhir.org` (in which case some KDS-specific
 ValueSets may not expand completely).
 
-> [TODO: If your module uses SNOMED CT, state the edition/version used. List
-> the module's own ValueSets, or refer to the automatically generated artifact
-> list — or remove this page if your module defines none.]
-{: .ig-highlight .ig-highlight-grey}
+### Terminologies used
+
+**SNOMED CT**
+
+SNOMED CT is used to code clinical concepts relating to pulmonary function
+diagnostics, including the indications for an examination, the type of procedure
+performed and the findings obtained.
+
+**LOINC**
+
+LOINC is used to code observations and results from pulmonary function
+diagnostics, in particular in connection with the **DiagnosticReport** profile.
+
+**ICD-10**
+
+The ICD (International Statistical Classification of Diseases and Related Health
+Problems) is used to code diagnoses that may result from the assessment of
+pulmonary function. It enables the standardized documentation of respiratory
+diseases such as asthma or COPD and plays a central role in clinical
+documentation and billing. ICD-10 is published by the German Federal Institute
+for Drugs and Medical Devices (BfArM).
+
+**UCUM**
+
+The units of the measured values are coded via
+[UCUM](http://unitsofmeasure.org) (among others L, L/s, %, kPa/(L/s),
+mmol/(min·kPa)).
+
+<!-- TODO:REVIEW (Gate B) The source page carries the author marker "//TODO"
+     and an empty section "Further code systems used". The UCUM paragraph above
+     is evidenced by the profiles (unit binding) but is NOT source text —
+     please confirm or replace. -->
+
+<div class="ig-highlight ig-highlight-grey" markdown="1">
+**SNOMED CT version pinning — to be clarified (Gate A).** The module itself pins
+the SNOMED CT edition **20240701** in `input/fsh/Aliase.fsh`, whereas the module
+template's expansion manifest
+(`input/resources/Parameters-expansion-manifest.json`) pins **20250701**. The
+migration carried both values over unchanged; which one applies is a domain
+decision.
+</div>

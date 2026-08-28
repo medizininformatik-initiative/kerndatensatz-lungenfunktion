@@ -111,13 +111,13 @@ In diesem Gerüst nicht aktiviert, aber als auskommentierte Blöcke in
   [CRMI-Manifest-Parameters](https://hl7.org/fhir/uv/crmi/STU2/en/StructureDefinition-crmi-manifestparameters.html)-Ressource
   und den Parametern `path-expansion-params` / `pin-manifest`.
 
-> [TODO: Aktivieren Sie die für Ihr Modul nötigen Blöcke und ziehen Sie die
-> Tabellen oben nach. Wenn Ihr Modul die CRMI-Shareable-/Publishable-Profile
-> zusätzlich auf seine eigenen StructureDefinitions, CapabilityStatements,
-> CodeSysteme und ValueSets anwendet — das Idiom aus `kerndatensatz-basis` ist
-> ein gemeinsames `RuleSet` in [`input/fsh/rulesets/crmi.fsh`](https://github.com/medizininformatik-initiative/kerndatensatz-lungenfunktion/blob/main/input/fsh/rulesets/crmi.fsh) —, ergänzen Sie die
-> entsprechenden Zeilen.]
-{: .ig-highlight .ig-highlight-grey}
+Die oben genannten CRMI-Profile werden von der **ImplementationGuide-Ressource**
+dieses Moduls beansprucht. Die eigenen StructureDefinitions, ValueSets und das
+CapabilityStatement beanspruchen die CRMI-Profile shareable/publishable
+**noch nicht**: Das Modul führt eine eigene RuleSet-Bibliothek
+(`input/fsh/rulesets/`); die Template-Datei `crmi.fsh` auf die Modul-Artefakte
+anzuwenden würde diese verändern — eine Entscheidung der Modulautor:innen, nicht
+der Migration.
 
 ##### CodeSystem-Supplements
 
@@ -170,11 +170,15 @@ Publisher mit `path-expansion-params` und `pin-manifest` darauf hin. Lesende wie
 Werkzeuge haben dann eine stabile Stelle, an der die Parameter für Expansion und
 Paket-Pinnung einsehbar sind.
 
-> [TODO: Ergänzen Sie das Manifest Ihres Moduls (siehe die auskommentierten
-> Blöcke in `sushi-config.yaml`) und verlinken Sie hier die erzeugte
-> `Parameters`-Seite — oder halten Sie ausdrücklich fest, dass dieses Modul
-> keine Expansions-Parameter pinnt.]
-{: .ig-highlight .ig-highlight-grey}
+Dieses Modul pinnt seine Expansionsparameter. Das Manifest liegt als
+vorgehaltene Ressource unter `input/resources/Parameters-expansion-manifest.json`
+mit der id `mii-param-lungenfunktion-manifest` und wird aus `sushi-config.yaml`
+über `cqf-expansionParameters`, `path-expansion-params` und `pin-manifest`
+referenziert.
+
+<!-- TODO:REVIEW (Gate A) Das Manifest pinnt SNOMED CT 20250701, der Modul-Alias
+     in input/fsh/Aliase.fsh dagegen 20240701. Siehe den Hinweis auf der Seite
+     Value Sets. -->
 
 #### Bezug zu FAIR
 
@@ -226,11 +230,9 @@ dauerhaft identifizierter FAIR-Datensatz behauptet.
 | R1.3 | RDA-R1.3-01D | Daten entsprechen einem Community-Standard | Die Beispiele deklarieren die Profile dieses Moduls. Produktiv muss die Konformität gegen Profile, Bindings und CapabilityStatement-Erwartungen validiert werden. |
 | R1.3 | RDA-R1.3-02M | Metadaten sind gemäß einem Community-Standard maschinenverständlich | CRMI-konforme FHIR-Metadaten als JSON/XML und als FHIR-Paket im NPM-Format des IG-Publisher-Ökosystems. |
 
-> [TODO: Die Tabelle führt die Indikatoren der Priorität *Essential* auf. Wenn
-> Ihr Modul die vollständige Selbsteinschätzung will, ergänzen Sie die
-> Indikatoren der Prioritäten *Important* und *Useful* — `kerndatensatz-basis`
-> führt die vollständige Tabelle.]
-{: .ig-highlight .ig-highlight-grey}
+Die Tabelle führt die Indikatoren der Priorität *Essential*; die vollständige
+Selbstbewertung einschließlich der Indikatoren *Important* und *Useful* ist nicht
+Teil dieses Releases.
 
 #### Praktische Nutzung
 

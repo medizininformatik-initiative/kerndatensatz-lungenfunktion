@@ -106,12 +106,13 @@ Not enabled in this scaffold, but prepared as commented blocks in
   [CRMI Manifest Parameters](https://hl7.org/fhir/uv/crmi/STU2/en/StructureDefinition-crmi-manifestparameters.html)
   resource and the `path-expansion-params` / `pin-manifest` parameters.
 
-> [TODO: Enable the blocks your module needs and then update the tables above.
-> If your module also applies the CRMI shareable/publishable profiles to its own
-> StructureDefinitions, CapabilityStatements, CodeSystems and ValueSets — the
-> `kerndatensatz-basis` idiom is a shared `RuleSet` in
-> [`input/fsh/rulesets/crmi.fsh`](https://github.com/medizininformatik-initiative/kerndatensatz-lungenfunktion/blob/main/input/fsh/rulesets/crmi.fsh) — add the corresponding rows here.]
-{: .ig-highlight .ig-highlight-grey}
+The CRMI profiles above are claimed by the **ImplementationGuide resource**
+of this module. Its own StructureDefinitions, ValueSets and the
+CapabilityStatement do **not** yet claim the CRMI shareable/publishable
+profiles: the module carries its own rule set library
+(`input/fsh/rulesets/`), and applying the template's `crmi.fsh` to the
+module's artifacts would change them — a decision for the module authors, not
+for the migration.
 
 ##### CodeSystem supplements
 
@@ -164,10 +165,14 @@ it with `path-expansion-params` and `pin-manifest`. Both readers and tooling
 then have one stable place to inspect the parameters used for expansion and
 package pinning.
 
-> [TODO: Add the manifest for your module (see the commented blocks in
-> `sushi-config.yaml`) and link the generated `Parameters` resource page here,
-> or state explicitly that this module does not pin expansion parameters.]
-{: .ig-highlight .ig-highlight-grey}
+This module pins its expansion parameters. The manifest ships as a predefined
+resource at `input/resources/Parameters-expansion-manifest.json` with the id
+`mii-param-lungenfunktion-manifest`, referenced from `sushi-config.yaml` via
+`cqf-expansionParameters`, `path-expansion-params` and `pin-manifest`.
+
+<!-- TODO:REVIEW (Gate A) The manifest pins SNOMED CT 20250701, whereas the
+     module's own alias in input/fsh/Aliase.fsh pins 20240701. See the note on
+     the Value Sets page. -->
 
 #### Relationship to FAIR
 
@@ -217,10 +222,9 @@ asserted to be a persistently identified FAIR dataset.
 | R1.3 | RDA-R1.3-01D | Data complies with a community standard | The examples declare this module's profiles. In production, conformance must be validated against the profiles, bindings and CapabilityStatement expectations. |
 | R1.3 | RDA-R1.3-02M | Metadata is machine-understandable per a community standard | CRMI-conformant FHIR metadata as JSON/XML and as a FHIR package in the NPM package format used by the IG Publisher ecosystem. |
 
-> [TODO: The table lists the indicators of priority *Essential*. If your module
-> wants the complete self-assessment, extend it with the *Important* and
-> *Useful* indicators — `kerndatensatz-basis` carries the full table.]
-{: .ig-highlight .ig-highlight-grey}
+The table lists the indicators of priority *Essential*; the complete
+self-assessment including the *Important* and *Useful* indicators is not part
+of this release.
 
 #### Practical use
 

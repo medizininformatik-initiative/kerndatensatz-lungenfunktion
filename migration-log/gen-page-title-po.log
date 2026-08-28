@@ -1,0 +1,10 @@
+2026-08-28T14:31:55Z  INFO   5.5  gen-page-title-po  params  ig=fsh-generated/resources/ImplementationGuide-mii-ig-lungenfunktion.json seed=migration-log/menu-titles-de.txt lang=de out=input/translations/de/ImplementationGuide-mii-ig-lungenfunktion.po
+2026-08-28T14:31:55Z  INFO   5.5  gen-page-title-po  seed  path=migration-log/menu-titles-de.txt  lines=16 entries=16 matched=16 applied=0 unused=0
+2026-08-28T14:31:55Z  INFO   5.5  gen-page-title-po  written  out=input/translations/de/ImplementationGuide-mii-ig-lungenfunktion.po pages=17 units=17 translated=17 untranslated=0 carried_over=17 preserved_foreign=2 header_preserved=False
+2026-08-28T14:31:55Z  WARN   5.5  gen-page-title-po  unit dropped (no longer in the pages: tree)  title='Code Systems'
+2026-08-28T14:31:55Z  WARN   5.5  gen-page-title-po  unit dropped (no longer in the pages: tree)  title='Extensions'
+2026-08-28T14:31:55Z  WARN   5.5  gen-page-title-po  unit dropped (no longer in the pages: tree)  title='Guidance for Researchers'
+2026-08-28T14:31:55Z  WARN   5.5  gen-page-title-po  unit dropped (no longer in the pages: tree)  title='Operations'
+2026-08-28T14:31:55Z  WARN   5.5  gen-page-title-po  unit dropped (no longer in the pages: tree)  title='Rendering Artifacts (demo)'
+2026-08-28T14:31:55Z  WARN   5.5  gen-page-title-po  unit dropped (no longer in the pages: tree)  title='Search Parameters'
+2026-08-28T14:31:55Z  INFO   5.5  gen-page-title-po  result  exit=0  every page title translated
