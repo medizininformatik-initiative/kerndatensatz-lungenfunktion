@@ -1,29 +1,214 @@
-canonical: https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion
-fhirVersion: 4.0.1
-FSHOnly: false
-applyExtensionMetadataToRoot: false
+# MII KDS Modul Lungenfunktion — sushi-config auf Basis des
+# mii-kds-module-template v0.11.3. Identität aus der Quelle (sushi-config vor
+# Migration, Commit c2fe7fe) UNVERÄNDERT übernommen; Template-Werte nur dort,
+# wo die Quelle nichts deklariert (jeweils kommentiert, Entscheidungen in
+# migration-log/migration-report.md, ①-Queue).
 id: mii-ig-lungenfunktion
+canonical: https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion # Quelle gewinnt: publizierter Canonical (ext-Raum), NICHT das Template-Muster (§2 Skill)
 name: MII_IG_Lungenfunktion
-status: active
-version: 2027.0.0-ballot
+title: MII IG Kerndatensatz-Modul Lungenfunktion # TODO:REVIEW abgeleitet — Quelle trägt keinen title (sushi-config/package.json); Muster analog Onkologie/Bildgebung (Gate A)
+description: "FHIR profiles for representing pulmonary function diagnostics - spirometry, body plethysmography, diffusion capacity and associated environmental parameters - as part of the MII core dataset." # TODO:REVIEW derived (EN-Beschreibung abgeleitet aus package.json-description 'Medizininformatik Initiative - Modul Lungenfunktion')
+status: active # draft | active | retired | unknown
+version: 2027.0.0-ballot # Quelle gewinnt (main@c2fe7fe)
 packageId: de.medizininformatikinitiative.kerndatensatz.lungenfunktion
-copyrightYear: 2024+
-releaseLabel: ci-build
+fhirVersion: 4.0.1 # https://www.hl7.org/fhir/valueset-FHIR-version.html
+copyrightYear: "2024+" # Quelle gewinnt (sushi-config); Divergenz: Guide-Impressum sagt '© 2019+ TMF e. V.' — ①-Queue
+releaseLabel: ci-build # Quelle gewinnt (kein formales Release)
+# license: BEWUSST NICHT GESETZT — die Quelle deklariert nirgends eine Lizenz
+# (kein license-Feld, keine LICENSE-Datei, Impressum nennt kein CC-Kürzel,
+# nur 'Inhalt öffentlich, Nachnutzung nicht beschränkt'). Das Template-Default
+# CC-BY-4.0 wäre eine Relizenzierung = menschliche Entscheidung (DEC-1, Gate A).
+date: "2026-08-28" # TODO:REVIEW ci-build-Stand, kein Publikationsdatum (Gate A)
+jurisdiction: urn:iso:std:iso:3166#DE "Germany" # https://www.hl7.org/fhir/valueset-jurisdiction.html
 publisher:
-  name: Medizininformatik Initiative
+  name: Medizininformatik Initiative # Quelle gewinnt (Template v0.11.x: NUM-DIZ per TF-KDS 2026-08-14 — Übernahme = ①-Queue-Entscheidung)
   url: https://www.medizininformatik-initiative.de/
+
+# CRMI conformance (Template-Maschinerie, kerndatensatz-basis-Idiom)
+meta:
+  profile:
+    - http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-shareableimplementationguide
+    - http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-publishableimplementationguide
+    - http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-implementationguide
+experimental: false
+extension:
+  - url: http://hl7.org/fhir/StructureDefinition/resource-approvalDate
+    valueDate: "2026-08-28" # TODO:REVIEW kein dokumentiertes Approval-Datum (Gate A)
+  - url: http://hl7.org/fhir/StructureDefinition/cqf-knowledgeCapability
+    valueCode: shareable
+  - url: http://hl7.org/fhir/StructureDefinition/cqf-knowledgeCapability
+    valueCode: publishable
+  - url: http://hl7.org/fhir/StructureDefinition/artifact-versionPolicy
+    valueCodeableConcept:
+      coding:
+        - system: http://terminology.hl7.org/CodeSystem/artifact-version-policy-codes
+          code: package
+          display: Package
+  - url: http://hl7.org/fhir/StructureDefinition/package-source
+    extension:
+      - url: packageId
+        valueId: de.medizininformatikinitiative.kerndatensatz.lungenfunktion
+      - url: version
+        valueString: "2027.0.0-ballot"
+      - url: uri
+        valueUri: https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion
+  - url: http://hl7.org/fhir/StructureDefinition/resource-effectivePeriod
+    valuePeriod:
+      start: "2027"
+  - url: http://hl7.org/fhir/StructureDefinition/artifact-author
+    valueContactDetail:
+      telecom:
+        - system: email
+          value: "TODO:REVIEW" # Autor-E-Mail unbekannt (package.json author=lucasscherer ist Registry-Account) — Gate A
+  - url: http://hl7.org/fhir/StructureDefinition/artifact-editor
+    valueContactDetail:
+      name: Taskforce Core Data Set
+  - url: http://hl7.org/fhir/StructureDefinition/artifact-reviewer
+    valueContactDetail:
+      name: Interoperability Working Group
+      telecom:
+        - system: url
+          value: https://www.medizininformatik-initiative.de/en/collaboration/interoperability-working-group
+  - url: http://hl7.org/fhir/StructureDefinition/artifact-reviewer
+    valueContactDetail:
+      name: National Steering Committee
+      telecom:
+        - system: url
+          value: https://www.medizininformatik-initiative.de/en/collaboration/national-steering-committee
+  - url: http://hl7.org/fhir/StructureDefinition/artifact-endorser
+    valueContactDetail:
+      name: Interoperability Working Group
+      telecom:
+        - system: url
+          value: https://www.medizininformatik-initiative.de/en/collaboration/interoperability-working-group
+  - url: http://hl7.org/fhir/StructureDefinition/artifact-endorser
+    valueContactDetail:
+      name: National Steering Committee
+      telecom:
+        - system: url
+          value: https://www.medizininformatik-initiative.de/en/collaboration/national-steering-committee
+  - url: http://hl7.org/fhir/StructureDefinition/cqf-expansionParameters
+    valueReference:
+      reference: Parameters/mii-param-lungenfunktion-manifest
+  - url: http://hl7.org/fhir/StructureDefinition/artifact-versionAlgorithm
+    valueCoding:
+      system: http://hl7.org/fhir/version-algorithm
+      code: semver
+  - url: http://hl7.org/fhir/StructureDefinition/artifact-usage
+    valueMarkdown: "Use this ImplementationGuide resource as a computable definition of all the parts of the corresponding module of the Medical Informatics Initiative core data set."
+  - url: http://hl7.org/fhir/StructureDefinition/artifact-purpose
+    valueMarkdown: "Provide the computable publication unit for the MII Core Dataset Lungenfunktion (Pulmonary Function) module, enabling implementers to discover, validate, version, and apply the specification consistently."
+  - url: http://hl7.org/fhir/StructureDefinition/artifact-topic
+    valueCodeableConcept:
+      coding:
+        - system: http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl
+          code: "C38081" # Pulmonary Function Test (NCI Thesaurus) — TODO:REVIEW Gate A
+
 dependencies:
-  de.medizininformatikinitiative.kerndatensatz.meta: 2026.0.x
-  de.medizininformatikinitiative.kerndatensatz.base: 2026.0.x
-  de.medizininformatikinitiative.kerndatensatz.medikation : 2026.0.x
-  de.basisprofil.r4: 1.5.x
-  hl7.fhir.r4.core: 4.0.1
+  # Quelle (main@c2fe7fe) pinnt FLOATING (2026.0.x / 1.5.x). Das Template und die
+  # go-publish-Pruefung lehnen schwebende Versionen ab, also hier auf die
+  # hoechste passende Release-Version aufgeloest — Evidenz: Abfrage von
+  # packages.simplifier.net am 2026-08-28, protokolliert in migration-log/run.log
+  # (Schritt 2.1). Die Aufloesung aendert KEINE Quellentscheidung, sie macht sie
+  # explizit; Bestaetigung bei Gate A (①-Queue).
+  # ACHTUNG: KEINE Inline-Kommentare hinter einem dependency-Wert. Der IG
+  # Publisher 2.3.2 liest die Werte dieses Blocks NICHT als YAML, sondern nimmt
+  # den Rest der Zeile als Version — gemessen 2026-08-28: "Invalid criteria:
+  # 2026.0.1 # 2026.0.x -> hoechste" und ein harter Abbruch mit
+  # "Illegal character in path" beim Paket-Download. SUSHI verarbeitet
+  # dieselbe Datei fehlerfrei, der Fehler faellt also erst im Publisher auf.
+  # 2026.0.x -> einzige Release der Linie:
+  de.medizininformatikinitiative.kerndatensatz.meta: 2026.0.0
+  # 2026.0.x -> hoechste (vorher exakt 2026.0.0: Wirkungsaenderung, ①-Queue):
+  de.medizininformatikinitiative.kerndatensatz.base: 2026.0.1
+  # 2026.0.x -> hoechste:
+  de.medizininformatikinitiative.kerndatensatz.medikation: 2026.0.1
+  # 1.5.x -> hoechste (1.6.0 liegt ausserhalb):
+  de.basisprofil.r4: 1.5.4
+  # hl7.fhir.r4.core: 4.0.1 steht in der Quelle, wird hier NICHT wiederholt:
+  # explizite r4.core-Dependency bricht den IG Publisher 2.3.2 (Duplikat-Bug,
+  # gemessen Migration Bildgebung 2026-08-27); fhirVersion 4.0.1 deckt sie ab.
+  # Template-Maschinerie (CRMI-Profile in meta.profile) + Injektionsschutz:
+  hl7.fhir.uv.crmi: 2.0.0
+  # direkter Pin gegen silent-latest-Injektion (Template-Rationale):
+  hl7.terminology.r4: 7.3.0
+  # direkter Pin, Quelle pinnt nicht (Template-Empfehlung):
+  hl7.fhir.uv.extensions.r4: 5.3.0
 
+# Seitenbaum nach Template-Struktur (docs/page-structure.md); OPTIONAL-Seiten
+# per M9 GEMESSEN entfernt: extensions=0, search-parameters=0, operations=0,
+# code-systems=0, researcher-guidance ohne Quell-Inhalt (5.4a im run.log).
+pages:
+  index.md:
+    title: Home
 
+  guidance.md:
+    title: Guidance
+    implementer-guidance.md:
+      title: Guidance for Implementers
+    uml-diagrams.md:
+      title: UML Diagrams
 
-# ╭────────────────────────────────────────────menu.xml────────────────────────────────────────────╮
-# │  To use a provided input/includes/menu.xml file, delete the "menu" property below.             │
-# ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
-menu:
-  Home: index.html
-  Artifacts: artifacts.html
+  security-and-privacy.md:
+    title: Security and Privacy
+
+  profiles.md:
+    title: Profiles
+  capability-statements.md:
+    title: Capability Statements
+  logical-models.md:
+    title: Logical Models
+  value-sets.md:
+    title: Value Sets
+  examples.md:
+    title: Examples
+
+  downloads.md:
+    title: Downloads
+
+  changes.md:
+    title: Changelog
+
+  metadata.md:
+    title: Metadata Overview
+  version-history.md:
+    title: Versioning
+
+  ImplementationGuide-mii-ig-lungenfunktion.md:
+    title: MII ImplementationGuide Resource
+
+  translationinfo.md:
+    title: Translation Information
+
+parameters:
+  path-resource:
+    - input/predefined-resources
+  path-pages:
+    - input/intro-notes # Custom introductory notes
+  i18n-default-lang: en # Default language
+  i18n-lang:
+    - de # Additional languages
+  translation-sources:
+    - input/translations/de # Path to German translations
+  excludexml: false
+  excludejson: false
+  excludettl: true
+  excludemap: false
+  logging:
+    - init
+    - progress
+    - context
+    - html
+    - tx
+  pin-canonicals: pin-all
+  path-expansion-params: '../../input/resources/Parameters-expansion-manifest.json'
+  pin-manifest: 'mii-param-lungenfunktion-manifest'
+  suppress-mappings:
+    - http://hl7.org/v3
+    - http://hl7.org/v3/cda
+  # special-url: wird nach dem ersten SUSHI-Lauf mechanisch abgeleitet
+  # (docs/recipes/regenerate-special-url.md); Kandidaten laut Preflight: 3
+  # id↔url-Sonderfälle — Ableitung in Schritt 7 protokolliert.
+
+instanceOptions:
+  manualSliceOrdering: false # Quelle kompilierte mit SUSHI-Default false — Migration ändert Build-Semantik nicht; Template-Empfehlung true = Folgearbeit (①-Queue)

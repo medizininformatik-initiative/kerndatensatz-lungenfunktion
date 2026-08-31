@@ -132,7 +132,7 @@ fabric.properties
 # User-specific stuff
 
 # Generated files
-ig.ini
+# ig.ini wird auf dem Modul-Template GETRACKT (Migration 2026-08-28); vormals ignoriert
 fsh-generated/includes/fsh-link-references.md
 fsh-generated/includes/menu.xml
 fsh-index.json
@@ -212,3 +212,17 @@ package-lock.json
 # package.json
 .idea/*
 .history
+
+
+# --- MII KDS module template (Migration 2026-08-28) ---
+# IG-Publisher-/Build-Artefakte (Template-.gitignore, selektiv uebernommen:
+# fsh-generated/ bleibt GETRACKT — der CI-Auto-Commit-Flow braucht es; nur die
+# volatilen Index-Dateien sind oben bereits ignoriert)
+temp/
+template/
+input-cache/
+publisher.jar
+node_modules/
+*.log
+# Der Migrations-Audit-Trail ist von *.log ausdruecklich ausgenommen:
+!migration-log/**

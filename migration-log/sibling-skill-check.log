@@ -1,0 +1,4 @@
+2026-08-28T14:35:07Z  INFO   5.6a  sibling-skill-check  sibling-skill-present  skill=fhir-ig-analysis path=/Users/thome/code/fhir-profiling/kerndatensatzmodul-onkologie/.claude/skills/fhir-ig-analysis roots_examined=1 ref=v0.15.1 ref_source=skills-lock.json (entry fhir-ig-analysis)
+    Identified by its frontmatter name, not by its directory name. §5.6's
+    same-module verification can run; its IDENTISCH lines are the evidence, not
+    this line.

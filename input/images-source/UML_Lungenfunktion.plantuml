@@ -1,0 +1,101 @@
+@startuml
+package "Grundstruktur"{
+    class Lungenfunktionstest <<DiagnosticReport>>{
+        {field} Referenz(Anamnese/Patient)
+        {field} Referenz(Procedure)
+        {field} Referenz(Observation)
+    }
+    class Lungenfunktionsmessung <<Procedure>>
+    class Lungenfunktions_Messergebnis <<Observation>>
+}
+package "Funktionstest" {
+    class Bodyplethysmographie <<Funktionstest>>{
+        {field} Procedure(Bodyplethysmographie)
+        {field} DiagnosticReport(Bodyplethysmographie)
+        {field} DiagnosticReport(Spirometrie)(optional)
+        {field} Observation(R_tot)
+        {field} Observation(sR_tot)
+        {field} Observation(sR_eff)
+        {field} Observation(sG_tot)
+        {field} Observation(FRCpleth)
+        {field} Observation(RV)
+        {field} Observation(TLC)
+        {field} Observation(RV/TLC)
+    }
+    class Spirometrie <<DiagnosticReport and Procedure>>{
+        {field} Procedure(Spirometrie)
+        {field} DiagnosticReport(Spirometrie)
+        {field} Observation(VC)
+        {field} Observation(FVC)
+        {field} Observation(FEV)
+        {field} Observation(PEF)
+        {field} Observation(MEF)
+        {field} Observation(FIV_1)
+        {field} Observation(BF)
+        {field} Observation(RV)
+        {field} Observation(FEV1/FVC)
+        {field} Observation(FEV1/VC)
+    }
+    class Diffusion <<DiagnosticReport and Procedure>> {
+        {field} Procedure(Diffusion)
+        {field} DiagnosticReport(Diffusion)
+        {field} Observation(DLCO)
+        {field} Observation(KCO)
+        {field} Observation(VA)
+        {field} Observation(Hb)
+        {field} Observation(DLCOc)
+        {field} Observation(KCOc)
+        {field} Observation(TA)
+        {field} Observation(VC)
+        {field} Observation(TLC)
+        {field} Observation(FRC)
+        {field} Observation(ERV)
+        {field} Observation(RV)
+        {field} Observation(RV%TLC)
+    }
+    class Provokationstestung <<DiagnosticReport and Procedure>> {
+        {field} Procedure(Provokationstestung)
+        {field} DiagnosticReport(Provokationstestung)
+        {field} Observation(Sequenznummer)
+        {field} Observation(Durchführungstyp)
+        {field} Observation(Substanz)
+        {field} Observation(Kumulierte Dosis)
+        {field} Observation(Dosis)
+        {field} Observation(FEV 1 Wert)
+        {field} Observation(Threshold Dose Wert erreicht)
+    }
+}
+
+package "Anamnese"{
+    class Vitalparameter_Körpermaße <<Observation from ISIK/ICU>>
+
+    class DemografischeDaten <<plus Modul Patient>> {
+        {field} Extension(Ethnie)
+        {field} Extension(Biologisches Geschlecht)
+    }
+
+    class Risikofaktoren <<Observation>> {
+        {field} Observation(Raucher)
+        {field} Observation(Allergie)
+    }
+    class Blutgase_arteriell <<Observation from KDS_Labor>> {
+        {field} Observation(pHa)
+        {field} Observation(PaCO2)
+        {field} Observation(PaO2)
+        {field} Observation(SaO2)
+        {field} Observation(Hb)
+        {field} Observation(CoHb)
+        {field} Observation(STB)
+        {field} Observation(BE)
+        {field} Observation(Glu)
+        {field} Observation(Lac)
+    }
+}
+
+Lungenfunktionstest -- "0..1" Lungenfunktionsmessung
+Lungenfunktionstest -- "0..*" Lungenfunktions_Messergebnis
+Vitalparameter_Körpermaße -[hidden]d- Risikofaktoren
+DemografischeDaten -[hidden]d- Blutgase_arteriell
+Spirometrie -[hidden]d- Diffusion_single_breath
+Bodyplethysmographie -[hidden]d- Provokationstestung
+Lungenfunktionsmessung -[hidden]d- Spirometrie

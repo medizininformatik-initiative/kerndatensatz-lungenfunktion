@@ -1,0 +1,1260 @@
+{
+ "source_commit": "c2fe7fe",
+ "source_version": "2027.0.0-ballot",
+ "shape": "A",
+ "artefacts": [
+  {
+   "type": "CapabilityStatement",
+   "id": "mii-cps-lungenfunktion-capabilitystatement",
+   "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/CapabilityStatement/metadata",
+   "name": "MII_CPS_Lungenfunktion_CapabilityStatement",
+   "generated_from": "fsh-generated/resources/CapabilityStatement-mii-cps-lungenfunktion-capabilitystatement.json"
+  },
+  {
+   "type": "DiagnosticReport",
+   "id": "mii-exa-lungenfunktion-bodyplethysmographie-befund",
+   "url": null,
+   "name": null,
+   "generated_from": "fsh-generated/resources/DiagnosticReport-mii-exa-lungenfunktion-bodyplethysmographie-befund.json"
+  },
+  {
+   "type": "DiagnosticReport",
+   "id": "mii-exa-lungenfunktion-diffusion-befund",
+   "url": null,
+   "name": null,
+   "generated_from": "fsh-generated/resources/DiagnosticReport-mii-exa-lungenfunktion-diffusion-befund.json"
+  },
+  {
+   "type": "DiagnosticReport",
+   "id": "mii-exa-lungenfunktion-provokationstest-befund",
+   "url": null,
+   "name": null,
+   "generated_from": "fsh-generated/resources/DiagnosticReport-mii-exa-lungenfunktion-provokationstest-befund.json"
+  },
+  {
+   "type": "DiagnosticReport",
+   "id": "mii-exa-lungenfunktion-spirometrie-befund",
+   "url": null,
+   "name": null,
+   "generated_from": "fsh-generated/resources/DiagnosticReport-mii-exa-lungenfunktion-spirometrie-befund.json"
+  },
+  {
+   "type": "Location",
+   "id": "mii-exa-lungenfunktion-location",
+   "url": null,
+   "name": null,
+   "generated_from": "fsh-generated/resources/Location-mii-exa-lungenfunktion-location.json"
+  },
+  {
+   "type": "Medication",
+   "id": "mii-exa-lungenfunktion-methacholine",
+   "url": null,
+   "name": null,
+   "generated_from": "fsh-generated/resources/Medication-mii-exa-lungenfunktion-methacholine.json"
+  },
+  {
+   "type": "MedicationAdministration",
+   "id": "mii-exa-lungenfunktion-dosis-gabe-1",
+   "url": null,
+   "name": null,
+   "generated_from": "fsh-generated/resources/MedicationAdministration-mii-exa-lungenfunktion-dosis-gabe-1.json"
+  },
+  {
+   "type": "MedicationAdministration",
+   "id": "mii-exa-lungenfunktion-dosis-gabe-2",
+   "url": null,
+   "name": null,
+   "generated_from": "fsh-generated/resources/MedicationAdministration-mii-exa-lungenfunktion-dosis-gabe-2.json"
+  },
+  {
+   "type": "MedicationAdministration",
+   "id": "mii-exa-lungenfunktion-dosis-gabe-3",
+   "url": null,
+   "name": null,
+   "generated_from": "fsh-generated/resources/MedicationAdministration-mii-exa-lungenfunktion-dosis-gabe-3.json"
+  },
+  {
+   "type": "Observation",
+   "id": "mii-exa-lungenfunktion-bf",
+   "url": null,
+   "name": null,
+   "generated_from": "fsh-generated/resources/Observation-mii-exa-lungenfunktion-bf.json"
+  },
+  {
+   "type": "Observation",
+   "id": "mii-exa-lungenfunktion-co2",
+   "url": null,
+   "name": null,
+   "generated_from": "fsh-generated/resources/Observation-mii-exa-lungenfunktion-co2.json"
+  },
+  {
+   "type": "Observation",
+   "id": "mii-exa-lungenfunktion-dlco",
+   "url": null,
+   "name": null,
+   "generated_from": "fsh-generated/resources/Observation-mii-exa-lungenfunktion-dlco.json"
+  },
+  {
+   "type": "Observation",
+   "id": "mii-exa-lungenfunktion-dlcoc",
+   "url": null,
+   "name": null,
+   "generated_from": "fsh-generated/resources/Observation-mii-exa-lungenfunktion-dlcoc.json"
+  },
+  {
+   "type": "Observation",
+   "id": "mii-exa-lungenfunktion-dosis-kumuliert",
+   "url": null,
+   "name": null,
+   "generated_from": "fsh-generated/resources/Observation-mii-exa-lungenfunktion-dosis-kumuliert.json"
+  },
+  {
+   "type": "Observation",
+   "id": "mii-exa-lungenfunktion-dosis-schwellwert",
+   "url": null,
+   "name": null,
+   "generated_from": "fsh-generated/resources/Observation-mii-exa-lungenfunktion-dosis-schwellwert.json"
+  },
+  {
+   "type": "Observation",
+   "id": "mii-exa-lungenfunktion-erv",
+   "url": null,
+   "name": null,
+   "generated_from": "fsh-generated/resources/Observation-mii-exa-lungenfunktion-erv.json"
+  },
+  {
+   "type": "Observation",
+   "id": "mii-exa-lungenfunktion-fev1-b",
+   "url": null,
+   "name": null,
+   "generated_from": "fsh-generated/resources/Observation-mii-exa-lungenfunktion-fev1-b.json"
+  },
+  {
+   "type": "Observation",
+   "id": "mii-exa-lungenfunktion-fev1-fvc",
+   "url": null,
+   "name": null,
+   "generated_from": "fsh-generated/resources/Observation-mii-exa-lungenfunktion-fev1-fvc.json"
+  },
+  {
+   "type": "Observation",
+   "id": "mii-exa-lungenfunktion-fev1-p3",
+   "url": null,
+   "name": null,
+   "generated_from": "fsh-generated/resources/Observation-mii-exa-lungenfunktion-fev1-p3.json"
+  },
+  {
+   "type": "Observation",
+   "id": "mii-exa-lungenfunktion-fev1-p4",
+   "url": null,
+   "name": null,
+   "generated_from": "fsh-generated/resources/Observation-mii-exa-lungenfunktion-fev1-p4.json"
+  },
+  {
+   "type": "Observation",
+   "id": "mii-exa-lungenfunktion-fev1-p5",
+   "url": null,
+   "name": null,
+   "generated_from": "fsh-generated/resources/Observation-mii-exa-lungenfunktion-fev1-p5.json"
+  },
+  {
+   "type": "Observation",
+   "id": "mii-exa-lungenfunktion-fev1",
+   "url": null,
+   "name": null,
+   "generated_from": "fsh-generated/resources/Observation-mii-exa-lungenfunktion-fev1.json"
+  },
+  {
+   "type": "Observation",
+   "id": "mii-exa-lungenfunktion-frc-b",
+   "url": null,
+   "name": null,
+   "generated_from": "fsh-generated/resources/Observation-mii-exa-lungenfunktion-frc-b.json"
+  },
+  {
+   "type": "Observation",
+   "id": "mii-exa-lungenfunktion-frc-p3",
+   "url": null,
+   "name": null,
+   "generated_from": "fsh-generated/resources/Observation-mii-exa-lungenfunktion-frc-p3.json"
+  },
+  {
+   "type": "Observation",
+   "id": "mii-exa-lungenfunktion-frc-p4",
+   "url": null,
+   "name": null,
+   "generated_from": "fsh-generated/resources/Observation-mii-exa-lungenfunktion-frc-p4.json"
+  },
+  {
+   "type": "Observation",
+   "id": "mii-exa-lungenfunktion-frc-p5",
+   "url": null,
+   "name": null,
+   "generated_from": "fsh-generated/resources/Observation-mii-exa-lungenfunktion-frc-p5.json"
+  },
+  {
+   "type": "Observation",
+   "id": "mii-exa-lungenfunktion-frc",
+   "url": null,
+   "name": null,
+   "generated_from": "fsh-generated/resources/Observation-mii-exa-lungenfunktion-frc.json"
+  },
+  {
+   "type": "Observation",
+   "id": "mii-exa-lungenfunktion-fvc",
+   "url": null,
+   "name": null,
+   "generated_from": "fsh-generated/resources/Observation-mii-exa-lungenfunktion-fvc.json"
+  },
+  {
+   "type": "Observation",
+   "id": "mii-exa-lungenfunktion-hb",
+   "url": null,
+   "name": null,
+   "generated_from": "fsh-generated/resources/Observation-mii-exa-lungenfunktion-hb.json"
+  },
+  {
+   "type": "Observation",
+   "id": "mii-exa-lungenfunktion-ic",
+   "url": null,
+   "name": null,
+   "generated_from": "fsh-generated/resources/Observation-mii-exa-lungenfunktion-ic.json"
+  },
+  {
+   "type": "Observation",
+   "id": "mii-exa-lungenfunktion-kco",
+   "url": null,
+   "name": null,
+   "generated_from": "fsh-generated/resources/Observation-mii-exa-lungenfunktion-kco.json"
+  },
+  {
+   "type": "Observation",
+   "id": "mii-exa-lungenfunktion-kcoc",
+   "url": null,
+   "name": null,
+   "generated_from": "fsh-generated/resources/Observation-mii-exa-lungenfunktion-kcoc.json"
+  },
+  {
+   "type": "Observation",
+   "id": "mii-exa-lungenfunktion-luftfeuchtigkeit",
+   "url": null,
+   "name": null,
+   "generated_from": "fsh-generated/resources/Observation-mii-exa-lungenfunktion-luftfeuchtigkeit.json"
+  },
+  {
+   "type": "Observation",
+   "id": "mii-exa-lungenfunktion-lufttemperatur",
+   "url": null,
+   "name": null,
+   "generated_from": "fsh-generated/resources/Observation-mii-exa-lungenfunktion-lufttemperatur.json"
+  },
+  {
+   "type": "Observation",
+   "id": "mii-exa-lungenfunktion-mef25",
+   "url": null,
+   "name": null,
+   "generated_from": "fsh-generated/resources/Observation-mii-exa-lungenfunktion-mef25.json"
+  },
+  {
+   "type": "Observation",
+   "id": "mii-exa-lungenfunktion-mef50",
+   "url": null,
+   "name": null,
+   "generated_from": "fsh-generated/resources/Observation-mii-exa-lungenfunktion-mef50.json"
+  },
+  {
+   "type": "Observation",
+   "id": "mii-exa-lungenfunktion-mef75",
+   "url": null,
+   "name": null,
+   "generated_from": "fsh-generated/resources/Observation-mii-exa-lungenfunktion-mef75.json"
+  },
+  {
+   "type": "Observation",
+   "id": "mii-exa-lungenfunktion-pef-b",
+   "url": null,
+   "name": null,
+   "generated_from": "fsh-generated/resources/Observation-mii-exa-lungenfunktion-pef-b.json"
+  },
+  {
+   "type": "Observation",
+   "id": "mii-exa-lungenfunktion-pef-p3",
+   "url": null,
+   "name": null,
+   "generated_from": "fsh-generated/resources/Observation-mii-exa-lungenfunktion-pef-p3.json"
+  },
+  {
+   "type": "Observation",
+   "id": "mii-exa-lungenfunktion-pef-p4",
+   "url": null,
+   "name": null,
+   "generated_from": "fsh-generated/resources/Observation-mii-exa-lungenfunktion-pef-p4.json"
+  },
+  {
+   "type": "Observation",
+   "id": "mii-exa-lungenfunktion-pef-p5",
+   "url": null,
+   "name": null,
+   "generated_from": "fsh-generated/resources/Observation-mii-exa-lungenfunktion-pef-p5.json"
+  },
+  {
+   "type": "Observation",
+   "id": "mii-exa-lungenfunktion-pef",
+   "url": null,
+   "name": null,
+   "generated_from": "fsh-generated/resources/Observation-mii-exa-lungenfunktion-pef.json"
+  },
+  {
+   "type": "Observation",
+   "id": "mii-exa-lungenfunktion-r-b",
+   "url": null,
+   "name": null,
+   "generated_from": "fsh-generated/resources/Observation-mii-exa-lungenfunktion-r-b.json"
+  },
+  {
+   "type": "Observation",
+   "id": "mii-exa-lungenfunktion-r-p3",
+   "url": null,
+   "name": null,
+   "generated_from": "fsh-generated/resources/Observation-mii-exa-lungenfunktion-r-p3.json"
+  },
+  {
+   "type": "Observation",
+   "id": "mii-exa-lungenfunktion-r-p4",
+   "url": null,
+   "name": null,
+   "generated_from": "fsh-generated/resources/Observation-mii-exa-lungenfunktion-r-p4.json"
+  },
+  {
+   "type": "Observation",
+   "id": "mii-exa-lungenfunktion-r-p5",
+   "url": null,
+   "name": null,
+   "generated_from": "fsh-generated/resources/Observation-mii-exa-lungenfunktion-r-p5.json"
+  },
+  {
+   "type": "Observation",
+   "id": "mii-exa-lungenfunktion-r",
+   "url": null,
+   "name": null,
+   "generated_from": "fsh-generated/resources/Observation-mii-exa-lungenfunktion-r.json"
+  },
+  {
+   "type": "Observation",
+   "id": "mii-exa-lungenfunktion-rvl-tlc",
+   "url": null,
+   "name": null,
+   "generated_from": "fsh-generated/resources/Observation-mii-exa-lungenfunktion-rvl-tlc.json"
+  },
+  {
+   "type": "Observation",
+   "id": "mii-exa-lungenfunktion-rvl",
+   "url": null,
+   "name": null,
+   "generated_from": "fsh-generated/resources/Observation-mii-exa-lungenfunktion-rvl.json"
+  },
+  {
+   "type": "Observation",
+   "id": "mii-exa-lungenfunktion-sg-total",
+   "url": null,
+   "name": null,
+   "generated_from": "fsh-generated/resources/Observation-mii-exa-lungenfunktion-sg-total.json"
+  },
+  {
+   "type": "Observation",
+   "id": "mii-exa-lungenfunktion-sr-eff",
+   "url": null,
+   "name": null,
+   "generated_from": "fsh-generated/resources/Observation-mii-exa-lungenfunktion-sr-eff.json"
+  },
+  {
+   "type": "Observation",
+   "id": "mii-exa-lungenfunktion-sr-total-b",
+   "url": null,
+   "name": null,
+   "generated_from": "fsh-generated/resources/Observation-mii-exa-lungenfunktion-sr-total-b.json"
+  },
+  {
+   "type": "Observation",
+   "id": "mii-exa-lungenfunktion-sr-total-p3",
+   "url": null,
+   "name": null,
+   "generated_from": "fsh-generated/resources/Observation-mii-exa-lungenfunktion-sr-total-p3.json"
+  },
+  {
+   "type": "Observation",
+   "id": "mii-exa-lungenfunktion-sr-total-p4",
+   "url": null,
+   "name": null,
+   "generated_from": "fsh-generated/resources/Observation-mii-exa-lungenfunktion-sr-total-p4.json"
+  },
+  {
+   "type": "Observation",
+   "id": "mii-exa-lungenfunktion-sr-total-p5",
+   "url": null,
+   "name": null,
+   "generated_from": "fsh-generated/resources/Observation-mii-exa-lungenfunktion-sr-total-p5.json"
+  },
+  {
+   "type": "Observation",
+   "id": "mii-exa-lungenfunktion-sr-total",
+   "url": null,
+   "name": null,
+   "generated_from": "fsh-generated/resources/Observation-mii-exa-lungenfunktion-sr-total.json"
+  },
+  {
+   "type": "Observation",
+   "id": "mii-exa-lungenfunktion-tlc",
+   "url": null,
+   "name": null,
+   "generated_from": "fsh-generated/resources/Observation-mii-exa-lungenfunktion-tlc.json"
+  },
+  {
+   "type": "Observation",
+   "id": "mii-exa-lungenfunktion-va",
+   "url": null,
+   "name": null,
+   "generated_from": "fsh-generated/resources/Observation-mii-exa-lungenfunktion-va.json"
+  },
+  {
+   "type": "Observation",
+   "id": "mii-exa-lungenfunktion-vc",
+   "url": null,
+   "name": null,
+   "generated_from": "fsh-generated/resources/Observation-mii-exa-lungenfunktion-vc.json"
+  },
+  {
+   "type": "Procedure",
+   "id": "mii-exa-lungenfunktion-bodyplethysmographie-messung",
+   "url": null,
+   "name": null,
+   "generated_from": "fsh-generated/resources/Procedure-mii-exa-lungenfunktion-bodyplethysmographie-messung.json"
+  },
+  {
+   "type": "Procedure",
+   "id": "mii-exa-lungenfunktion-diffusion-messung",
+   "url": null,
+   "name": null,
+   "generated_from": "fsh-generated/resources/Procedure-mii-exa-lungenfunktion-diffusion-messung.json"
+  },
+  {
+   "type": "Procedure",
+   "id": "mii-exa-lungenfunktion-provokationstest-messung",
+   "url": null,
+   "name": null,
+   "generated_from": "fsh-generated/resources/Procedure-mii-exa-lungenfunktion-provokationstest-messung.json"
+  },
+  {
+   "type": "Procedure",
+   "id": "mii-exa-lungenfunktion-spirometrie-messung",
+   "url": null,
+   "name": null,
+   "generated_from": "fsh-generated/resources/Procedure-mii-exa-lungenfunktion-spirometrie-messung.json"
+  },
+  {
+   "type": "StructureDefinition",
+   "id": "mii-lm-lungenfunktion",
+   "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/LogicalModel/Lungenfunktion",
+   "name": "MII_LM_Lungenfunktion",
+   "generated_from": "fsh-generated/resources/StructureDefinition-mii-lm-lungenfunktion.json"
+  },
+  {
+   "type": "StructureDefinition",
+   "id": "mii-pr-lungenfunktion-1-viskositaet",
+   "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-1-viskositaet",
+   "name": "MII_PR_Lungenfunktion_1_Viskositaet",
+   "generated_from": "fsh-generated/resources/StructureDefinition-mii-pr-lungenfunktion-1-viskositaet.json"
+  },
+  {
+   "type": "StructureDefinition",
+   "id": "mii-pr-lungenfunktion-befund",
+   "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-befund",
+   "name": "MII_PR_Lungenfunktion_Befund",
+   "generated_from": "fsh-generated/resources/StructureDefinition-mii-pr-lungenfunktion-befund.json"
+  },
+  {
+   "type": "StructureDefinition",
+   "id": "mii-pr-lungenfunktion-bf",
+   "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-bf",
+   "name": "MII_PR_Lungenfunktion_BF",
+   "generated_from": "fsh-generated/resources/StructureDefinition-mii-pr-lungenfunktion-bf.json"
+  },
+  {
+   "type": "StructureDefinition",
+   "id": "mii-pr-lungenfunktion-bodyplethysmographie-messung",
+   "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-bodyplethysmographie-messung",
+   "name": "MII_PR_Lungenfunktion_Bodyplethysmographie_Messung",
+   "generated_from": "fsh-generated/resources/StructureDefinition-mii-pr-lungenfunktion-bodyplethysmographie-messung.json"
+  },
+  {
+   "type": "StructureDefinition",
+   "id": "mii-pr-lungenfunktion-bodyplethysmographie",
+   "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-bodyplethysmographie",
+   "name": "MII_PR_Lungenfunktion_Bodyplethysmographie",
+   "generated_from": "fsh-generated/resources/StructureDefinition-mii-pr-lungenfunktion-bodyplethysmographie.json"
+  },
+  {
+   "type": "StructureDefinition",
+   "id": "mii-pr-lungenfunktion-co2-konzentration",
+   "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-co2-konzentration",
+   "name": "MII_PR_Lungenfunktion_CO2_Konzentration",
+   "generated_from": "fsh-generated/resources/StructureDefinition-mii-pr-lungenfunktion-co2-konzentration.json"
+  },
+  {
+   "type": "StructureDefinition",
+   "id": "mii-pr-lungenfunktion-diffusion-messung",
+   "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-diffusion-messung",
+   "name": "MII_PR_Lungenfunktion_Diffusion_Messung",
+   "generated_from": "fsh-generated/resources/StructureDefinition-mii-pr-lungenfunktion-diffusion-messung.json"
+  },
+  {
+   "type": "StructureDefinition",
+   "id": "mii-pr-lungenfunktion-diffusion",
+   "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-diffusion",
+   "name": "MII_PR_Lungenfunktion_Diffusion",
+   "generated_from": "fsh-generated/resources/StructureDefinition-mii-pr-lungenfunktion-diffusion.json"
+  },
+  {
+   "type": "StructureDefinition",
+   "id": "mii-pr-lungenfunktion-diffusionskapazitaet",
+   "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-diffusionskapazitaet",
+   "name": "MII_PR_Lungenfunktion_Diffusionskapzitaet",
+   "generated_from": "fsh-generated/resources/StructureDefinition-mii-pr-lungenfunktion-diffusionskapazitaet.json"
+  },
+  {
+   "type": "StructureDefinition",
+   "id": "mii-pr-lungenfunktion-dlco",
+   "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-dlco",
+   "name": "MII_PR_Lungenfunktion_DLCO",
+   "generated_from": "fsh-generated/resources/StructureDefinition-mii-pr-lungenfunktion-dlco.json"
+  },
+  {
+   "type": "StructureDefinition",
+   "id": "mii-pr-lungenfunktion-dlcoc",
+   "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-dlcoc",
+   "name": "MII_PR_Lungenfunktion_DLCOc",
+   "generated_from": "fsh-generated/resources/StructureDefinition-mii-pr-lungenfunktion-dlcoc.json"
+  },
+  {
+   "type": "StructureDefinition",
+   "id": "mii-pr-lungenfunktion-dosis-gabe",
+   "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-dosis-gabe",
+   "name": "MII_PR_Lungenfunktion_Dosis_Gabe",
+   "generated_from": "fsh-generated/resources/StructureDefinition-mii-pr-lungenfunktion-dosis-gabe.json"
+  },
+  {
+   "type": "StructureDefinition",
+   "id": "mii-pr-lungenfunktion-dosis",
+   "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-dosis",
+   "name": "MII_PR_Lungenfunktion_Dosis",
+   "generated_from": "fsh-generated/resources/StructureDefinition-mii-pr-lungenfunktion-dosis.json"
+  },
+  {
+   "type": "StructureDefinition",
+   "id": "mii-pr-lungenfunktion-fev-fvc",
+   "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-fev-fvc",
+   "name": "MII_PR_Lungenfunktion_FEV_FVC",
+   "generated_from": "fsh-generated/resources/StructureDefinition-mii-pr-lungenfunktion-fev-fvc.json"
+  },
+  {
+   "type": "StructureDefinition",
+   "id": "mii-pr-lungenfunktion-fev",
+   "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-fev",
+   "name": "MII_PR_Lungenfunktion_FEV",
+   "generated_from": "fsh-generated/resources/StructureDefinition-mii-pr-lungenfunktion-fev.json"
+  },
+  {
+   "type": "StructureDefinition",
+   "id": "mii-pr-lungenfunktion-fluss",
+   "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-fluss",
+   "name": "MII_PR_Lungenfunktion_Fluss",
+   "generated_from": "fsh-generated/resources/StructureDefinition-mii-pr-lungenfunktion-fluss.json"
+  },
+  {
+   "type": "StructureDefinition",
+   "id": "mii-pr-lungenfunktion-frc",
+   "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-frc",
+   "name": "MII_PR_Lungenfunktion_FRC",
+   "generated_from": "fsh-generated/resources/StructureDefinition-mii-pr-lungenfunktion-frc.json"
+  },
+  {
+   "type": "StructureDefinition",
+   "id": "mii-pr-lungenfunktion-fvc",
+   "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-fvc",
+   "name": "MII_PR_Lungenfunktion_FVC",
+   "generated_from": "fsh-generated/resources/StructureDefinition-mii-pr-lungenfunktion-fvc.json"
+  },
+  {
+   "type": "StructureDefinition",
+   "id": "mii-pr-lungenfunktion-gewicht",
+   "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-gewicht",
+   "name": "MII_PR_Lungenfunktion_Gewicht",
+   "generated_from": "fsh-generated/resources/StructureDefinition-mii-pr-lungenfunktion-gewicht.json"
+  },
+  {
+   "type": "StructureDefinition",
+   "id": "mii-pr-lungenfunktion-hb",
+   "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-hb",
+   "name": "MII_PR_Lungenfunktion_Hb",
+   "generated_from": "fsh-generated/resources/StructureDefinition-mii-pr-lungenfunktion-hb.json"
+  },
+  {
+   "type": "StructureDefinition",
+   "id": "mii-pr-lungenfunktion-ic",
+   "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-ic",
+   "name": "MII_PR_Lungenfunktion_IC",
+   "generated_from": "fsh-generated/resources/StructureDefinition-mii-pr-lungenfunktion-ic.json"
+  },
+  {
+   "type": "StructureDefinition",
+   "id": "mii-pr-lungenfunktion-irv",
+   "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-rv",
+   "name": "MII_PR_Lungenfunktion_RV",
+   "generated_from": "fsh-generated/resources/StructureDefinition-mii-pr-lungenfunktion-irv.json"
+  },
+  {
+   "type": "StructureDefinition",
+   "id": "mii-pr-lungenfunktion-kco",
+   "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-kco",
+   "name": "MII_PR_Lungenfunktion_KCO",
+   "generated_from": "fsh-generated/resources/StructureDefinition-mii-pr-lungenfunktion-kco.json"
+  },
+  {
+   "type": "StructureDefinition",
+   "id": "mii-pr-lungenfunktion-kcoc",
+   "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-kcoc",
+   "name": "MII_PR_Lungenfunktion_KCOc",
+   "generated_from": "fsh-generated/resources/StructureDefinition-mii-pr-lungenfunktion-kcoc.json"
+  },
+  {
+   "type": "StructureDefinition",
+   "id": "mii-pr-lungenfunktion-luftfeuchtigkeit",
+   "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-luftfeuchtigkeit",
+   "name": "MII_PR_Lungenfunktion_Luftfeuchtigkeit",
+   "generated_from": "fsh-generated/resources/StructureDefinition-mii-pr-lungenfunktion-luftfeuchtigkeit.json"
+  },
+  {
+   "type": "StructureDefinition",
+   "id": "mii-pr-lungenfunktion-lufttemperatur",
+   "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-lufttemperatur",
+   "name": "MII_PR_Lungenfunktion_Lufttemperatur",
+   "generated_from": "fsh-generated/resources/StructureDefinition-mii-pr-lungenfunktion-lufttemperatur.json"
+  },
+  {
+   "type": "StructureDefinition",
+   "id": "mii-pr-lungenfunktion-mef",
+   "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-mef",
+   "name": "MII_PR_Lungenfunktion_MEF",
+   "generated_from": "fsh-generated/resources/StructureDefinition-mii-pr-lungenfunktion-mef.json"
+  },
+  {
+   "type": "StructureDefinition",
+   "id": "mii-pr-lungenfunktion-methacholine",
+   "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-methacholine",
+   "name": "MII_PR_Lungenfunktion_Methacholine",
+   "generated_from": "fsh-generated/resources/StructureDefinition-mii-pr-lungenfunktion-methacholine.json"
+  },
+  {
+   "type": "StructureDefinition",
+   "id": "mii-pr-lungenfunktion-pef",
+   "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-pef",
+   "name": "MII_PR_Lungenfunktion_PEF",
+   "generated_from": "fsh-generated/resources/StructureDefinition-mii-pr-lungenfunktion-pef.json"
+  },
+  {
+   "type": "StructureDefinition",
+   "id": "mii-pr-lungenfunktion-provokationstest-messung",
+   "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-provokationstest-messung",
+   "name": "MII_PR_Lungenfunktion_Provokationstest_Messung",
+   "generated_from": "fsh-generated/resources/StructureDefinition-mii-pr-lungenfunktion-provokationstest-messung.json"
+  },
+  {
+   "type": "StructureDefinition",
+   "id": "mii-pr-lungenfunktion-provokationstest",
+   "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-provokationstest",
+   "name": "MII_PR_Lungenfunktion_Provokationstest",
+   "generated_from": "fsh-generated/resources/StructureDefinition-mii-pr-lungenfunktion-provokationstest.json"
+  },
+  {
+   "type": "StructureDefinition",
+   "id": "mii-pr-lungenfunktion-prozent",
+   "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-prozent",
+   "name": "MII_PR_Lungenfunktion_Prozent",
+   "generated_from": "fsh-generated/resources/StructureDefinition-mii-pr-lungenfunktion-prozent.json"
+  },
+  {
+   "type": "StructureDefinition",
+   "id": "mii-pr-lungenfunktion-r-effektiv",
+   "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-r-effektiv",
+   "name": "MII_PR_Lungenfunktion_R_Effektiv",
+   "generated_from": "fsh-generated/resources/StructureDefinition-mii-pr-lungenfunktion-r-effektiv.json"
+  },
+  {
+   "type": "StructureDefinition",
+   "id": "mii-pr-lungenfunktion-r-spezifisch",
+   "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-r-spezifisch",
+   "name": "MII_PR_Lungenfunktion_R_Spezifisch",
+   "generated_from": "fsh-generated/resources/StructureDefinition-mii-pr-lungenfunktion-r-spezifisch.json"
+  },
+  {
+   "type": "StructureDefinition",
+   "id": "mii-pr-lungenfunktion-r",
+   "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-r",
+   "name": "MII_PR_Lungenfunktion_R",
+   "generated_from": "fsh-generated/resources/StructureDefinition-mii-pr-lungenfunktion-r.json"
+  },
+  {
+   "type": "StructureDefinition",
+   "id": "mii-pr-lungenfunktion-rvl-tlc",
+   "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-rvl-tlc",
+   "name": "MII_PR_Lungenfunktion_RVL_TLC",
+   "generated_from": "fsh-generated/resources/StructureDefinition-mii-pr-lungenfunktion-rvl-tlc.json"
+  },
+  {
+   "type": "StructureDefinition",
+   "id": "mii-pr-lungenfunktion-rvl",
+   "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-rvl",
+   "name": "MII_PR_Lungenfunktion_RVL",
+   "generated_from": "fsh-generated/resources/StructureDefinition-mii-pr-lungenfunktion-rvl.json"
+  },
+  {
+   "type": "StructureDefinition",
+   "id": "mii-pr-lungenfunktion-sg-total",
+   "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-sg-total",
+   "name": "MII_PR_Lungenfunktion_sG_Total",
+   "generated_from": "fsh-generated/resources/StructureDefinition-mii-pr-lungenfunktion-sg-total.json"
+  },
+  {
+   "type": "StructureDefinition",
+   "id": "mii-pr-lungenfunktion-spirometrie-messung",
+   "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-spirometrie-messung",
+   "name": "MII_PR_Lungenfunktion_Spirometrie_Messung",
+   "generated_from": "fsh-generated/resources/StructureDefinition-mii-pr-lungenfunktion-spirometrie-messung.json"
+  },
+  {
+   "type": "StructureDefinition",
+   "id": "mii-pr-lungenfunktion-spirometrie",
+   "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-spirometrie",
+   "name": "MII_PR_Lungenfunktion_Spirometrie",
+   "generated_from": "fsh-generated/resources/StructureDefinition-mii-pr-lungenfunktion-spirometrie.json"
+  },
+  {
+   "type": "StructureDefinition",
+   "id": "mii-pr-lungenfunktion-tlc",
+   "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-tlc",
+   "name": "MII_PR_Lungenfunktion_TLC",
+   "generated_from": "fsh-generated/resources/StructureDefinition-mii-pr-lungenfunktion-tlc.json"
+  },
+  {
+   "type": "StructureDefinition",
+   "id": "mii-pr-lungenfunktion-transferkoeffizient",
+   "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-transferkoeffizient",
+   "name": "MII_PR_Lungenfunktion_Transferkoeffizient",
+   "generated_from": "fsh-generated/resources/StructureDefinition-mii-pr-lungenfunktion-transferkoeffizient.json"
+  },
+  {
+   "type": "StructureDefinition",
+   "id": "mii-pr-lungenfunktion-umgebung",
+   "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-umgebung",
+   "name": "MII_PR_Lungenfunktion_Umgebung",
+   "generated_from": "fsh-generated/resources/StructureDefinition-mii-pr-lungenfunktion-umgebung.json"
+  },
+  {
+   "type": "StructureDefinition",
+   "id": "mii-pr-lungenfunktion-va",
+   "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-va",
+   "name": "MII_PR_Lungenfunktion_VA",
+   "generated_from": "fsh-generated/resources/StructureDefinition-mii-pr-lungenfunktion-va.json"
+  },
+  {
+   "type": "StructureDefinition",
+   "id": "mii-pr-lungenfunktion-vc",
+   "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-vc",
+   "name": "MII_PR_Lungenfunktion_VC",
+   "generated_from": "fsh-generated/resources/StructureDefinition-mii-pr-lungenfunktion-vc.json"
+  },
+  {
+   "type": "StructureDefinition",
+   "id": "mii-pr-lungenfunktion-viskositaet",
+   "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-viskositaet",
+   "name": "MII_PR_Lungenfunktion_Viskositaet",
+   "generated_from": "fsh-generated/resources/StructureDefinition-mii-pr-lungenfunktion-viskositaet.json"
+  },
+  {
+   "type": "StructureDefinition",
+   "id": "mii-pr-lungenfunktion-volumen",
+   "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-volumen",
+   "name": "MII_PR_Lungenfunktion_Volumen",
+   "generated_from": "fsh-generated/resources/StructureDefinition-mii-pr-lungenfunktion-volumen.json"
+  },
+  {
+   "type": "StructureDefinition",
+   "id": "mii-pr-lungenfunktion-widerstand",
+   "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-widerstand",
+   "name": "MII_PR_Lungenfunktion_Widerstand",
+   "generated_from": "fsh-generated/resources/StructureDefinition-mii-pr-lungenfunktion-widerstand.json"
+  },
+  {
+   "type": "ValueSet",
+   "id": "mii-vs-lufu-lnc-dlco",
+   "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/ValueSet/mii-vs-lufu-lnc-dlco",
+   "name": "MII_VS_Lufu_LNC_DLCO",
+   "generated_from": "fsh-generated/resources/ValueSet-mii-vs-lufu-lnc-dlco.json"
+  },
+  {
+   "type": "ValueSet",
+   "id": "mii-vs-lufu-lnc-dlcoc",
+   "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/ValueSet/mii-vs-lufu-lnc-dlcoc",
+   "name": "MII_VS_Lufu_LNC_DLCOc",
+   "generated_from": "fsh-generated/resources/ValueSet-mii-vs-lufu-lnc-dlcoc.json"
+  },
+  {
+   "type": "ValueSet",
+   "id": "mii-vs-lufu-lnc-fev-fvc",
+   "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/ValueSet/mii-vs-lufu-lnc-fev-fvc",
+   "name": "MII_VS_Lufu_LNC_FEV_FVC",
+   "generated_from": "fsh-generated/resources/ValueSet-mii-vs-lufu-lnc-fev-fvc.json"
+  },
+  {
+   "type": "ValueSet",
+   "id": "mii-vs-lufu-lnc-fev",
+   "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/ValueSet/mii-vs-lufu-lnc-fev",
+   "name": "MII_VS_Lufu_LNC_FEV",
+   "generated_from": "fsh-generated/resources/ValueSet-mii-vs-lufu-lnc-fev.json"
+  },
+  {
+   "type": "ValueSet",
+   "id": "mii-vs-lufu-lnc-frc",
+   "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/ValueSet/mii-vs-lufu-lnc-frc",
+   "name": "MII_VS_Lufu_LNC_FRC",
+   "generated_from": "fsh-generated/resources/ValueSet-mii-vs-lufu-lnc-frc.json"
+  },
+  {
+   "type": "ValueSet",
+   "id": "mii-vs-lufu-lnc-fvc",
+   "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/ValueSet/mii-vs-lufu-lnc-fvc",
+   "name": "MII_VS_Lufu_LNC_FVC",
+   "generated_from": "fsh-generated/resources/ValueSet-mii-vs-lufu-lnc-fvc.json"
+  },
+  {
+   "type": "ValueSet",
+   "id": "mii-vs-lufu-lnc-ic",
+   "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/ValueSet/mii-vs-lufu-lnc-ic",
+   "name": "MII_VS_Lufu_LNC_IC",
+   "generated_from": "fsh-generated/resources/ValueSet-mii-vs-lufu-lnc-ic.json"
+  },
+  {
+   "type": "ValueSet",
+   "id": "mii-vs-lufu-lnc-kco",
+   "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/ValueSet/mii-vs-lufu-lnc-kco",
+   "name": "MII_VS_Lufu_LNC_KCO",
+   "generated_from": "fsh-generated/resources/ValueSet-mii-vs-lufu-lnc-kco.json"
+  },
+  {
+   "type": "ValueSet",
+   "id": "mii-vs-lufu-lnc-mef",
+   "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/ValueSet/mii-vs-lufu-lnc-mef",
+   "name": "MII_VS_Lufu_LNC_MEF",
+   "generated_from": "fsh-generated/resources/ValueSet-mii-vs-lufu-lnc-mef.json"
+  },
+  {
+   "type": "ValueSet",
+   "id": "mii-vs-lufu-lnc-observable",
+   "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/ValueSet/mii-vs-lufu-lnc-observable",
+   "name": "MII_VS_Lufu_LNC_Observable",
+   "generated_from": "fsh-generated/resources/ValueSet-mii-vs-lufu-lnc-observable.json"
+  },
+  {
+   "type": "ValueSet",
+   "id": "mii-vs-lufu-lnc-pef",
+   "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/ValueSet/mii-vs-lufu-lnc-pef",
+   "name": "MII_VS_Lufu_LNC_PEF",
+   "generated_from": "fsh-generated/resources/ValueSet-mii-vs-lufu-lnc-pef.json"
+  },
+  {
+   "type": "ValueSet",
+   "id": "mii-vs-lufu-lnc-procedure",
+   "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/ValueSet/mii-vs-lufu-lnc-procedure",
+   "name": "MII_VS_Lufu_LNC_Procedure",
+   "generated_from": "fsh-generated/resources/ValueSet-mii-vs-lufu-lnc-procedure.json"
+  },
+  {
+   "type": "ValueSet",
+   "id": "mii-vs-lufu-lnc-r",
+   "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/ValueSet/mii-vs-lufu-lnc-r",
+   "name": "MII_VS_Lufu_LNC_R",
+   "generated_from": "fsh-generated/resources/ValueSet-mii-vs-lufu-lnc-r.json"
+  },
+  {
+   "type": "ValueSet",
+   "id": "mii-vs-lufu-lnc-rv",
+   "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/ValueSet/mii-vs-lufu-lnc-rv",
+   "name": "MII_VS_Lufu_LNC_RV",
+   "generated_from": "fsh-generated/resources/ValueSet-mii-vs-lufu-lnc-rv.json"
+  },
+  {
+   "type": "ValueSet",
+   "id": "mii-vs-lufu-lnc-rvl-tlc",
+   "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/ValueSet/mii-vs-lufu-lnc-rvl-tlc",
+   "name": "MII_VS_Lufu_LNC_RVL_TLC",
+   "generated_from": "fsh-generated/resources/ValueSet-mii-vs-lufu-lnc-rvl-tlc.json"
+  },
+  {
+   "type": "ValueSet",
+   "id": "mii-vs-lufu-lnc-rvl",
+   "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/ValueSet/mii-vs-lufu-lnc-rvl",
+   "name": "MII_VS_Lufu_LNC_RVL",
+   "generated_from": "fsh-generated/resources/ValueSet-mii-vs-lufu-lnc-rvl.json"
+  },
+  {
+   "type": "ValueSet",
+   "id": "mii-vs-lufu-lnc-sr-eff",
+   "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/ValueSet/mii-vs-lufu-lnc-sr-eff",
+   "name": "MII_VS_Lufu_LNC_sR_eff",
+   "generated_from": "fsh-generated/resources/ValueSet-mii-vs-lufu-lnc-sr-eff.json"
+  },
+  {
+   "type": "ValueSet",
+   "id": "mii-vs-lufu-lnc-sr",
+   "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/ValueSet/mii-vs-lufu-lnc-sr",
+   "name": "MII_VS_Lufu_LNC_sR",
+   "generated_from": "fsh-generated/resources/ValueSet-mii-vs-lufu-lnc-sr.json"
+  },
+  {
+   "type": "ValueSet",
+   "id": "mii-vs-lufu-lnc-tlc",
+   "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/ValueSet/mii-vs-lufu-lnc-tlc",
+   "name": "MII_VS_Lufu_LNC_TLC",
+   "generated_from": "fsh-generated/resources/ValueSet-mii-vs-lufu-lnc-tlc.json"
+  },
+  {
+   "type": "ValueSet",
+   "id": "mii-vs-lufu-lnc-vc",
+   "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/ValueSet/mii-vs-lufu-lnc-vc",
+   "name": "MII_VS_Lufu_LNC_VC",
+   "generated_from": "fsh-generated/resources/ValueSet-mii-vs-lufu-lnc-vc.json"
+  },
+  {
+   "type": "ValueSet",
+   "id": "mii-vs-lufu-sct-fev-fvc",
+   "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/ValueSet/mii-vs-lufu-sct-fev-fvc",
+   "name": "MII_VS_Lufu_SCT_FEV_FVC",
+   "generated_from": "fsh-generated/resources/ValueSet-mii-vs-lufu-sct-fev-fvc.json"
+  },
+  {
+   "type": "ValueSet",
+   "id": "mii-vs-lufu-sct-fev",
+   "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/ValueSet/mii-vs-lufu-sct-fev",
+   "name": "MII_VS_Lufu_SCT_FEV",
+   "generated_from": "fsh-generated/resources/ValueSet-mii-vs-lufu-sct-fev.json"
+  },
+  {
+   "type": "ValueSet",
+   "id": "mii-vs-lufu-sct-findings",
+   "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/ValueSet/mii-vs-lufu-sct-findings",
+   "name": "MII_VS_Lufu_SCT_Findings",
+   "generated_from": "fsh-generated/resources/ValueSet-mii-vs-lufu-sct-findings.json"
+  },
+  {
+   "type": "ValueSet",
+   "id": "mii-vs-lufu-sct-fvc",
+   "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/ValueSet/mii-vs-lufu-sct-fvc",
+   "name": "MII_VS_Lufu_SCT_FVC",
+   "generated_from": "fsh-generated/resources/ValueSet-mii-vs-lufu-sct-fvc.json"
+  },
+  {
+   "type": "ValueSet",
+   "id": "mii-vs-lufu-sct-location",
+   "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/ValueSet/mii-vs-lufu-sct-location",
+   "name": "MII_VS_Lufu_SCT_Location",
+   "generated_from": "fsh-generated/resources/ValueSet-mii-vs-lufu-sct-location.json"
+  },
+  {
+   "type": "ValueSet",
+   "id": "mii-vs-lufu-sct-mef",
+   "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/ValueSet/mii-vs-lufu-sct-mef",
+   "name": "MII_VS_Lufu_SCT_MEF",
+   "generated_from": "fsh-generated/resources/ValueSet-mii-vs-lufu-sct-mef.json"
+  },
+  {
+   "type": "ValueSet",
+   "id": "mii-vs-lufu-sct-observable",
+   "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/ValueSet/mii-vs-lufu-sct-observable",
+   "name": "MII_VS_Lufu_SCT_Observable",
+   "generated_from": "fsh-generated/resources/ValueSet-mii-vs-lufu-sct-observable.json"
+  },
+  {
+   "type": "ValueSet",
+   "id": "mii-vs-lufu-sct-pef",
+   "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/ValueSet/mii-vs-lufu-sct-pef",
+   "name": "MII_VS_Lufu_SCT_PEF",
+   "generated_from": "fsh-generated/resources/ValueSet-mii-vs-lufu-sct-pef.json"
+  },
+  {
+   "type": "ValueSet",
+   "id": "mii-vs-lufu-sct-procedure",
+   "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/ValueSet/mii-vs-lufu-sct-procedure",
+   "name": "MII_VS_Lufu_SCT_Procedure",
+   "generated_from": "fsh-generated/resources/ValueSet-mii-vs-lufu-sct-procedure.json"
+  },
+  {
+   "type": "ValueSet",
+   "id": "mii-vs-lufu-sct-rv",
+   "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/ValueSet/mii-vs-lufu-sct-rv",
+   "name": "MII_VS_Lufu_SCT_RV",
+   "generated_from": "fsh-generated/resources/ValueSet-mii-vs-lufu-sct-rv.json"
+  },
+  {
+   "type": "ValueSet",
+   "id": "mii-vs-lufu-sct-technique",
+   "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/ValueSet/mii-vs-lufu-sct-technique",
+   "name": "MII_VS_Lufu_SCT_Technique",
+   "generated_from": "fsh-generated/resources/ValueSet-mii-vs-lufu-sct-technique.json"
+  },
+  {
+   "type": "ValueSet",
+   "id": "mii-vs-lufu-sct-vc",
+   "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/ValueSet/mii-vs-lufu-sct-vc",
+   "name": "MII_VS_Lufu_SCT_VC",
+   "generated_from": "fsh-generated/resources/ValueSet-mii-vs-lufu-sct-vc.json"
+  }
+ ],
+ "fsh_files": [
+  "input/fsh/Aliase.fsh",
+  "input/fsh/capabilitystatements/CapabilityStatement.fsh",
+  "input/fsh/instances/Example-BF.fsh",
+  "input/fsh/instances/Example-BodyplethysmograghyReport.fsh",
+  "input/fsh/instances/Example-BodyplethysmographyProcedure.fsh",
+  "input/fsh/instances/Example-CO2.fsh",
+  "input/fsh/instances/Example-DLCO.fsh",
+  "input/fsh/instances/Example-DLCOc.fsh",
+  "input/fsh/instances/Example-DiffusionProcedure.fsh",
+  "input/fsh/instances/Example-DiffusionReport.fsh",
+  "input/fsh/instances/Example-Dose-kumulated.fsh",
+  "input/fsh/instances/Example-Dose-threshold.fsh",
+  "input/fsh/instances/Example-DoseAdministration-1.fsh",
+  "input/fsh/instances/Example-DoseAdministration-2.fsh",
+  "input/fsh/instances/Example-DoseAdministration-3.fsh",
+  "input/fsh/instances/Example-ERV.fsh",
+  "input/fsh/instances/Example-FEV.fsh",
+  "input/fsh/instances/Example-FEV1FVC.fsh",
+  "input/fsh/instances/Example-FRC.fsh",
+  "input/fsh/instances/Example-FVC.fsh",
+  "input/fsh/instances/Example-Hb.fsh",
+  "input/fsh/instances/Example-Hum.fsh",
+  "input/fsh/instances/Example-IC.fsh",
+  "input/fsh/instances/Example-KCO.fsh",
+  "input/fsh/instances/Example-KCOc.fsh",
+  "input/fsh/instances/Example-Location.fsh",
+  "input/fsh/instances/Example-MEF25.fsh",
+  "input/fsh/instances/Example-MEF50.fsh",
+  "input/fsh/instances/Example-MEF75.fsh",
+  "input/fsh/instances/Example-Methacholin.fsh",
+  "input/fsh/instances/Example-PEF.fsh",
+  "input/fsh/instances/Example-Provocation-FEV1-B.fsh",
+  "input/fsh/instances/Example-Provocation-FEV1-P3.fsh",
+  "input/fsh/instances/Example-Provocation-FEV1-P4.fsh",
+  "input/fsh/instances/Example-Provocation-FEV1-P5.fsh",
+  "input/fsh/instances/Example-Provocation-FRC-B.fsh",
+  "input/fsh/instances/Example-Provocation-FRC-P3.fsh",
+  "input/fsh/instances/Example-Provocation-FRC-P4.fsh",
+  "input/fsh/instances/Example-Provocation-FRC-P5.fsh",
+  "input/fsh/instances/Example-Provocation-PEF-B.fsh",
+  "input/fsh/instances/Example-Provocation-PEF-P3.fsh",
+  "input/fsh/instances/Example-Provocation-PEF-P4.fsh",
+  "input/fsh/instances/Example-Provocation-PEF-P5.fsh",
+  "input/fsh/instances/Example-Provocation-R-B.fsh",
+  "input/fsh/instances/Example-Provocation-R-P3.fsh",
+  "input/fsh/instances/Example-Provocation-R-P4.fsh",
+  "input/fsh/instances/Example-Provocation-R-P5.fsh",
+  "input/fsh/instances/Example-Provocation-sRtot-B.fsh",
+  "input/fsh/instances/Example-Provocation-sRtot-P3.fsh",
+  "input/fsh/instances/Example-Provocation-sRtot-P4.fsh",
+  "input/fsh/instances/Example-Provocation-sRtot-P5.fsh",
+  "input/fsh/instances/Example-ProvocationProcedure.fsh",
+  "input/fsh/instances/Example-ProvocationReport.fsh",
+  "input/fsh/instances/Example-R.fsh",
+  "input/fsh/instances/Example-RVL.fsh",
+  "input/fsh/instances/Example-RVLTLC.fsh",
+  "input/fsh/instances/Example-SpirometryProcedure.fsh",
+  "input/fsh/instances/Example-SpirometryReport.fsh",
+  "input/fsh/instances/Example-TLC.fsh",
+  "input/fsh/instances/Example-Temp.fsh",
+  "input/fsh/instances/Example-VA.fsh",
+  "input/fsh/instances/Example-VC.fsh",
+  "input/fsh/instances/Example-sGtot.fsh",
+  "input/fsh/instances/Example-sReff.fsh",
+  "input/fsh/instances/Example-sRtot.fsh",
+  "input/fsh/logicals/LogicalModelLungenfunktion.fsh",
+  "input/fsh/profiles/Bodyplethysmographie/BodyplethymograhpyReport.fsh",
+  "input/fsh/profiles/Bodyplethysmographie/BodyplethymographyProcedure.fsh",
+  "input/fsh/profiles/Bodyplethysmographie/Observation_FRC.fsh",
+  "input/fsh/profiles/Bodyplethysmographie/Observation_RVL.fsh",
+  "input/fsh/profiles/Bodyplethysmographie/Observation_RVL_TLC.fsh",
+  "input/fsh/profiles/Bodyplethysmographie/Observation_R_tot.fsh",
+  "input/fsh/profiles/Bodyplethysmographie/Observation_TLC.fsh",
+  "input/fsh/profiles/Bodyplethysmographie/Observation_sG_tot.fsh",
+  "input/fsh/profiles/Bodyplethysmographie/Observation_sR_eff.fsh",
+  "input/fsh/profiles/Bodyplethysmographie/Observation_sR_tot.fsh",
+  "input/fsh/profiles/DiagnosticReport.fsh",
+  "input/fsh/profiles/Diffusion/DiffusionProcedure.fsh",
+  "input/fsh/profiles/Diffusion/DiffusionReport.fsh",
+  "input/fsh/profiles/Diffusion/Observation_DLCO.fsh",
+  "input/fsh/profiles/Diffusion/Observation_DLCOc.fsh",
+  "input/fsh/profiles/Diffusion/Observation_Hb.fsh",
+  "input/fsh/profiles/Diffusion/Observation_KCO.fsh",
+  "input/fsh/profiles/Diffusion/Observation_KCOc.fsh",
+  "input/fsh/profiles/Diffusion/Observation_VA.fsh",
+  "input/fsh/profiles/Observation_1_Viscosity.fsh",
+  "input/fsh/profiles/Observation_Diffcapacity.fsh",
+  "input/fsh/profiles/Observation_Flow.fsh",
+  "input/fsh/profiles/Observation_Percent.fsh",
+  "input/fsh/profiles/Observation_Resistance.fsh",
+  "input/fsh/profiles/Observation_Transcoefficient.fsh",
+  "input/fsh/profiles/Observation_Viscosity.fsh",
+  "input/fsh/profiles/Observation_Volume.fsh",
+  "input/fsh/profiles/Observation_Weight.fsh",
+  "input/fsh/profiles/Provakationstest/Administration_Dosis.fsh",
+  "input/fsh/profiles/Provakationstest/Medication_Methacholine.fsh",
+  "input/fsh/profiles/Provakationstest/Observation_Dosis.fsh",
+  "input/fsh/profiles/Provakationstest/ProvocationProcedure.fsh",
+  "input/fsh/profiles/Provakationstest/ProvocationReport.fsh",
+  "input/fsh/profiles/Spirometrie/Observation_BF.fsh",
+  "input/fsh/profiles/Spirometrie/Observation_FEV.fsh",
+  "input/fsh/profiles/Spirometrie/Observation_FEV_FVC.fsh",
+  "input/fsh/profiles/Spirometrie/Observation_FVC.fsh",
+  "input/fsh/profiles/Spirometrie/Observation_IC.fsh",
+  "input/fsh/profiles/Spirometrie/Observation_MEF.fsh",
+  "input/fsh/profiles/Spirometrie/Observation_PEF.fsh",
+  "input/fsh/profiles/Spirometrie/Observation_RV.fsh",
+  "input/fsh/profiles/Spirometrie/Observation_VC.fsh",
+  "input/fsh/profiles/Spirometrie/SpirometryReport.fsh",
+  "input/fsh/profiles/Spirometrie/SpriometryProcedure.fsh",
+  "input/fsh/profiles/Umgebungsvariablen/Location.fsh",
+  "input/fsh/profiles/Umgebungsvariablen/Observation_Humidity.fsh",
+  "input/fsh/profiles/Umgebungsvariablen/Observation_Temperature.fsh",
+  "input/fsh/profiles/Umgebungsvariablen/Observavtion_CO2_concentration.fsh",
+  "input/fsh/rulesets/copyright.fsh",
+  "input/fsh/rulesets/date.fsh",
+  "input/fsh/rulesets/extensions-context.fsh",
+  "input/fsh/rulesets/license-terms.fsh",
+  "input/fsh/rulesets/publisher.fsh",
+  "input/fsh/rulesets/translation.fsh",
+  "input/fsh/rulesets/version.fsh",
+  "input/fsh/searchparameters/SearchParameter.fsh",
+  "input/fsh/valuesets/ValueSet-LuFu-SCT_Technique.fsh",
+  "input/fsh/valuesets/ValueSet-LuFu_LNC_DLCO.fsh",
+  "input/fsh/valuesets/ValueSet-LuFu_LNC_DLCOc.fsh",
+  "input/fsh/valuesets/ValueSet-LuFu_LNC_FEV.fsh",
+  "input/fsh/valuesets/ValueSet-LuFu_LNC_FEVFVC.fsh",
+  "input/fsh/valuesets/ValueSet-LuFu_LNC_FRC.fsh",
+  "input/fsh/valuesets/ValueSet-LuFu_LNC_FVC.fsh",
+  "input/fsh/valuesets/ValueSet-LuFu_LNC_IC.fsh",
+  "input/fsh/valuesets/ValueSet-LuFu_LNC_KCO.fsh",
+  "input/fsh/valuesets/ValueSet-LuFu_LNC_MEF.fsh",
+  "input/fsh/valuesets/ValueSet-LuFu_LNC_Observable.fsh",
+  "input/fsh/valuesets/ValueSet-LuFu_LNC_PEF.fsh",
+  "input/fsh/valuesets/ValueSet-LuFu_LNC_Procedure.fsh",
+  "input/fsh/valuesets/ValueSet-LuFu_LNC_R.fsh",
+  "input/fsh/valuesets/ValueSet-LuFu_LNC_RV.fsh",
+  "input/fsh/valuesets/ValueSet-LuFu_LNC_RVL.fsh",
+  "input/fsh/valuesets/ValueSet-LuFu_LNC_RVL_TLC.fsh",
+  "input/fsh/valuesets/ValueSet-LuFu_LNC_TLC.fsh",
+  "input/fsh/valuesets/ValueSet-LuFu_LNC_VC.fsh",
+  "input/fsh/valuesets/ValueSet-LuFu_LNC_sR.fsh",
+  "input/fsh/valuesets/ValueSet-LuFu_LNC_sR_eff.fsh",
+  "input/fsh/valuesets/ValueSet-LuFu_SCT_FEV.fsh",
+  "input/fsh/valuesets/ValueSet-LuFu_SCT_FEVFVC.fsh",
+  "input/fsh/valuesets/ValueSet-LuFu_SCT_FVC.fsh",
+  "input/fsh/valuesets/ValueSet-LuFu_SCT_MEF.fsh",
+  "input/fsh/valuesets/ValueSet-LuFu_SCT_Observable.fsh",
+  "input/fsh/valuesets/ValueSet-LuFu_SCT_PEF.fsh",
+  "input/fsh/valuesets/ValueSet-LuFu_SCT_RV.fsh",
+  "input/fsh/valuesets/ValueSet-LuFu_SCT_VC.fsh",
+  "input/fsh/valuesets/ValueSet-Lufu_SCT_Findings.fsh",
+  "input/fsh/valuesets/ValueSet-Lufu_SCT_Location.fsh",
+  "input/fsh/valuesets/ValueSet-Lufu_SCT_Procedure.fsh"
+ ],
+ "narrative_pages": [
+  "MIIIGModulLungenfunktion/BeschreibungModul.page.md",
+  "MIIIGModulLungenfunktion/Index.page.md",
+  "MIIIGModulLungenfunktion/KontextimGesamtprojektBezgezuanderenModulen.page.md",
+  "MIIIGModulLungenfunktion/Referenzen.page.md",
+  "MIIIGModulLungenfunktion/Release-Notes.page.md",
+  "MIIIGModulLungenfunktion/TechnischeImplementierung/CapabilityStatement.page.md",
+  "MIIIGModulLungenfunktion/TechnischeImplementierung/Index.page.md",
+  "MIIIGModulLungenfunktion/TechnischeImplementierung/Terminologien.page.md",
+  "MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Index.page.md",
+  "MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Umgebungsvariablen/CO2-Konzentration.page.md",
+  "MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Umgebungsvariablen/Index.page.md",
+  "MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Umgebungsvariablen/Luftfeuchtigkeit.page.md",
+  "MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Umgebungsvariablen/Lufttemperatur.page.md",
+  "MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Umgebungsvariablen/Umgebung.page.md",
+  "MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Diffusion/Index.page.md",
+  "MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Diffusion/Procedure.page.md",
+  "MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Diffusion/Report.page.md",
+  "MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Diffusion/Observation/DLCO.page.md",
+  "MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Diffusion/Observation/DLCOc.page.md",
+  "MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Diffusion/Observation/Hb.page.md",
+  "MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Diffusion/Observation/KCO.page.md",
+  "MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Diffusion/Observation/KCOc.page.md",
+  "MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Diffusion/Observation/VA.page.md",
+  "MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Bodyplethysmographie/Index.page.md",
+  "MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Bodyplethysmographie/Procedure.page.md",
+  "MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Bodyplethysmographie/Report.page.md",
+  "MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Bodyplethysmographie/Observation/FRC.page.md",
+  "MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Bodyplethysmographie/Observation/RVL.page.md",
+  "MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Bodyplethysmographie/Observation/RVLTLC.page.md",
+  "MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Bodyplethysmographie/Observation/R_tot.page.md",
+  "MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Bodyplethysmographie/Observation/TLC.page.md",
+  "MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Bodyplethysmographie/Observation/sG_tot.page.md",
+  "MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Bodyplethysmographie/Observation/sR_eff.page.md",
+  "MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Bodyplethysmographie/Observation/sR_tot.page.md",
+  "MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Index.page.md",
+  "MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Procedure.page.md",
+  "MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Report.page.md",
+  "MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Observation/BF.page.md",
+  "MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Observation/FEV.page.md",
+  "MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Observation/FEVFVC.page.md",
+  "MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Observation/FVC.page.md",
+  "MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Observation/IC.page.md",
+  "MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Observation/MEF.page.md",
+  "MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Observation/PEF.page.md",
+  "MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Observation/RV.page.md",
+  "MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Observation/VC.page.md",
+  "MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Provokationstest/Dosis.page.md",
+  "MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Provokationstest/Index.page.md",
+  "MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Provokationstest/Medikation.page.md",
+  "MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Provokationstest/Procedure.page.md",
+  "MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Provokationstest/Provokationsgabe.page.md",
+  "MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Provokationstest/Report.page.md",
+  "MIIIGModulLungenfunktion/AnwendungsflleInformationsmodell/BeschreibungvonSzenarienfrdieAnwendungderModule.page.md",
+  "MIIIGModulLungenfunktion/AnwendungsflleInformationsmodell/Datensaetze_inkl._Beschreibungen.page.md",
+  "MIIIGModulLungenfunktion/AnwendungsflleInformationsmodell/Index.page.md",
+  "MIIIGModulLungenfunktion/AnwendungsflleInformationsmodell/UML.page.md"
+ ],
+ "narrative_other": [
+  "guide.yaml",
+  "toc.yaml",
+  "styles/styles/master.html",
+  "styles/styles/settings.style",
+  "styles/styles/style.css",
+  "MIIIGModulLungenfunktion/toc.yaml",
+  "MIIIGModulLungenfunktion/TechnischeImplementierung/toc.yaml",
+  "MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/toc.yaml",
+  "MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Umgebungsvariablen/toc.yaml",
+  "MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Diffusion/toc.yaml",
+  "MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Diffusion/Observation/toc.yaml",
+  "MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Bodyplethysmographie/toc.yaml",
+  "MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Bodyplethysmographie/Observation/toc.yaml",
+  "MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/toc.yaml",
+  "MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Spirometrie/Observation/toc.yaml",
+  "MIIIGModulLungenfunktion/TechnischeImplementierung/FHIR-Profile/Provokationstest/toc.yaml",
+  "MIIIGModulLungenfunktion/AnwendungsflleInformationsmodell/toc.yaml"
+ ],
+ "counts": {
+  "artefacts": 145,
+  "fsh_files": 154,
+  "narrative_pages": 56
+ }
+}
