@@ -6,7 +6,7 @@ Title: "MII Example Lungenfunktion DLCOc"
 * status = #final
 * category.coding = $obs-category#procedure
 * code = $loinc#19911-7 "Diffusion capacity.carbon monoxide"
-* subject = Reference(Patient/PatExample)
+* subject = Reference(Patient/mii-exa-person-patient-1)
 * issued = "2024-07-19T13:03:20+02:00"
 * valueQuantity = 8.27 'mmol/(min.kPa)'
 * interpretation = $interpretation#N
@@ -15,8 +15,8 @@ Title: "MII Example Lungenfunktion DLCOc"
 * derivedFrom[0] = Reference(Observation/mii-exa-lungenfunktion-hb)
 * derivedFrom[+] = Reference(Observation/mii-exa-lungenfunktion-dlco)
 * component[predicted].code = $loinc#19910-9 "Diffusion capacity.carbon monoxide Predicted"
-* component[%predicted].code = $loinc#98130-8 "Diffusion capacity.carbon monoxide/Predicted"
+* component[percentPredicted].code = $loinc#98130-8 "Diffusion capacity.carbon monoxide/Predicted"
 * component[z-score].code = $SCT#1078210003 "Z-score calculation technique (qualifier value)"
 * component[predicted].valueQuantity = 9.50 'mmol/(min.kPa)'
-* component[%predicted].valueQuantity = 87 '%'
+* component[percentPredicted].valueQuantity = 87 '%'
 * component[z-score].valueQuantity = -0.9 ''

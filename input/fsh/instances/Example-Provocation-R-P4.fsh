@@ -7,7 +7,7 @@ Title: "MII Example Lungenfunktion Provokation R tot P4"
 * status = #final
 * category.coding = $obs-category#procedure
 * code = $loinc#75946-4 "Airway resistance"
-* subject = Reference(Patient/PatExample)
+* subject = Reference(Patient/mii-exa-person-patient-1)
 * issued = "2024-07-19T13:03:20+02:00"
 * valueQuantity = 0.23 'kPa/(L/s)'
 * interpretation = $interpretation#N

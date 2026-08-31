@@ -6,12 +6,12 @@ Title: "MII Example Lungenfunktion sG total"
 * status = #final
 * category.coding = $obs-category#procedure
 * code = $SCT-version#79412009 "Specific airway conductance (observable entity)"
-* subject = Reference(Patient/PatExample)
+* subject = Reference(Patient/mii-exa-person-patient-1)
 * issued = "2024-07-19T13:03:20+02:00"
 * valueQuantity = 0.92 '/kPA.s'
 * interpretation = $interpretation#N
 * method = $SCT#249862003 "Sitting upright (finding)"
 * component[predicted].code = $SCT#TODO
-* component[%predicted].code = $SCT#TODO
+* component[percentPredicted].code = $SCT#TODO
 * component[predicted].valueQuantity = 0.85 '/kPA.s'
-* component[%predicted].valueQuantity = 108 '%'
+* component[percentPredicted].valueQuantity = 108 '%'

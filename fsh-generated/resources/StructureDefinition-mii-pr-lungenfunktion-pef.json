@@ -16,7 +16,7 @@
     }
   ],
   "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-pef",
-  "version": "2027.0.0-ballot",
+  "version": "2027.0.0-ballot.rc1",
   "name": "MII_PR_Lungenfunktion_PEF",
   "_name": {
     "extension": [
@@ -146,12 +146,12 @@
         }
       },
       {
-        "id": "Observation.component:%predicted",
+        "id": "Observation.component:percentPredicted",
         "path": "Observation.component",
-        "sliceName": "%predicted"
+        "sliceName": "percentPredicted"
       },
       {
-        "id": "Observation.component:%predicted.code.coding:sct",
+        "id": "Observation.component:percentPredicted.code.coding:sct",
         "path": "Observation.component.code.coding",
         "sliceName": "sct",
         "binding": {
@@ -160,7 +160,7 @@
         }
       },
       {
-        "id": "Observation.component:%predicted.code.coding:loinc",
+        "id": "Observation.component:percentPredicted.code.coding:loinc",
         "path": "Observation.component.code.coding",
         "sliceName": "loinc",
         "binding": {

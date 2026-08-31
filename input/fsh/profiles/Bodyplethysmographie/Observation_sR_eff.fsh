@@ -20,5 +20,5 @@ Description: "Dieses Profil beschreibt die Messung des effektiven, spezifischen 
 * code.coding[sct] = $SCT-version#1366667009 "Specific airway resistance (observable entity)"
 * component[predicted].code.coding[sct] = $SCT-version#TODO
 * component[predicted].code.coding[loinc] = $loinc#TODO
-* component[%predicted].code.coding[sct] = $SCT-version#TODO
-* component[%predicted].code.coding[loinc] from MII_VS_Lufu_LNC_sR_eff (required)
+* component[percentPredicted].code.coding[sct] = $SCT-version#TODO
+* component[percentPredicted].code.coding[loinc] from MII_VS_Lufu_LNC_sR_eff (required)

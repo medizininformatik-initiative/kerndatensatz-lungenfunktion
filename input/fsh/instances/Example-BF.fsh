@@ -6,7 +6,7 @@ Title: "MII Example Lungenfunktion BF"
 * status = #final
 * category[VSCat] = $obs-category#vital-signs
 * code = $SCT#271625008 "Rate of spontaneous respiration (observable entity)"
-* subject = Reference(Patient/PatExample)
+* subject = Reference(Patient/mii-exa-person-patient-1)
 * effectiveDateTime = "2024-07-18T13:03:20+02:00"
 * issued = "2024-07-19T13:03:20+02:00"
 * valueQuantity = 12 '/min'

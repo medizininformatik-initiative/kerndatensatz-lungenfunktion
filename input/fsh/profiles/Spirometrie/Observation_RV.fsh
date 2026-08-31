@@ -20,5 +20,5 @@ Description: "Dieses Profil beschreibt die Messung des Reservevolumen."
 * code.coding[sct] from MII_VS_Lufu_SCT_RV (required)
 * component[predicted].code.coding[sct] = $SCT-version#TODO
 * component[predicted].code.coding[loinc] from MII_VS_Lufu_LNC_RV
-* component[%predicted].code.coding[sct] = $SCT-version#TODO
-* component[%predicted].code.coding[loinc] = $loinc#TODO
+* component[percentPredicted].code.coding[sct] = $SCT-version#TODO
+* component[percentPredicted].code.coding[loinc] = $loinc#TODO

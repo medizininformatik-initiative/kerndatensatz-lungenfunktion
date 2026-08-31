@@ -54,8 +54,8 @@ RuleSet: AddObservationTranslation
 * component ^definition = "detailierte Bestandteile der Beobachtung"
 * component[predicted] ^short = "Vorhersage"
 * component[predicted] ^definition = "vorhergesagtes Messergebnis"
-* component[%predicted] ^short = "Verhältnis"
-* component[%predicted] ^definition = "Verhältnis von Messwert zu vorhergesagtem Ergebnis"
+* component[percentPredicted] ^short = "Verhältnis"
+* component[percentPredicted] ^definition = "Verhältnis von Messwert zu vorhergesagtem Ergebnis"
 * component[z-score] ^short = "Z-Score"
 * component[z-score] ^definition = "Z-Score mit GLI-Referenztabellen"
 * insert Translation(partOf ^short, de-DE, Teil von)
@@ -120,20 +120,23 @@ RuleSet: AddObservationTranslation
 * insert Translation(component ^short, en-US, components)
 * insert Translation(component ^definition, de-DE, detailierte Bestandteile der Beobachtung)
 * insert Translation(component ^definition, en-US, detailed components of this observation)
-* insert AddLoincCodingTranslation(component.code.coding[loinc])
-* insert AddSnomedCodingTranslation(component.code.coding[sct])
 * insert Translation(component[predicted] ^short, de-DE, Vorhersage)
 * insert Translation(component[predicted] ^short, en-US, prediction)
 * insert Translation(component[predicted] ^definition, de-DE, vorhergesagtes Messergebnis)
 * insert Translation(component[predicted] ^definition, en-US, predicted measured value)
-* insert Translation(component[%predicted] ^short, de-DE, Verhältnis)
-* insert Translation(component[%predicted] ^short, en-US, ratio)
-* insert Translation(component[%predicted] ^definition, de-DE, Verhältnis von Messwert zu vorhergesagtem Ergebnis)
-* insert Translation(component[%predicted] ^definition, en-US, ratio of measured value to prediction)
+* insert AddLoincCodingTranslation(component[predicted].code.coding[loinc])
+* insert AddSnomedCodingTranslation(component[predicted].code.coding[sct])
+* insert Translation(component[percentPredicted] ^short, de-DE, Verhältnis)
+* insert Translation(component[percentPredicted] ^short, en-US, ratio)
+* insert Translation(component[percentPredicted] ^definition, de-DE, Verhältnis von Messwert zu vorhergesagtem Ergebnis)
+* insert Translation(component[percentPredicted] ^definition, en-US, ratio of measured value to prediction)
+* insert AddLoincCodingTranslation(component[percentPredicted].code.coding[loinc])
+* insert AddSnomedCodingTranslation(component[percentPredicted].code.coding[sct])
 * insert Translation(component[z-score] ^short, de-DE, z-Score)
 * insert Translation(component[z-score] ^short, en-US, z-score)
 * insert Translation(component[z-score] ^definition, de-DE, z-Score der Messung)
 * insert Translation(component[z-score] ^definition, en-US, z-score of measurement)
+* insert AddSnomedCodingTranslation(component[z-score].code.coding[sct])
 
 RuleSet: AddDiagnosticReportTranslation
 * status ^short = "Status"
