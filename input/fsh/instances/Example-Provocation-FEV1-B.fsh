@@ -6,7 +6,7 @@ Title: "MII Example Lungenfunktion Provokation FEV 1 B"
 * status = #final
 * category.coding = $obs-category#procedure
 * code = $SCT#59328004 "Forced expired volume in 1 second (observable entity)"
-* subject = Reference(Patient/mii-exa-person-patient-1)
+* subject = Reference(Patient/mii-exa-lungenfunktion-patient)
 * issued = "2024-07-19T13:03:20+02:00"
 * valueQuantity = 2.69 'L'
 * interpretation = $interpretation#N

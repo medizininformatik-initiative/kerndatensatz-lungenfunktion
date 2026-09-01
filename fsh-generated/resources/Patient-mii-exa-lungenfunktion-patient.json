@@ -1,6 +1,6 @@
 {
   "resourceType": "Patient",
-  "id": "mii-exa-person-patient-1",
+  "id": "mii-exa-lungenfunktion-patient",
   "name": [
     {
       "family": "Beispielpatientin",

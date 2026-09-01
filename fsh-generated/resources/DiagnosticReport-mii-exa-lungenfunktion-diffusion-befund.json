@@ -28,7 +28,7 @@
     ]
   },
   "subject": {
-    "reference": "Patient/mii-exa-person-patient-1"
+    "reference": "Patient/mii-exa-lungenfunktion-patient"
   },
   "encounter": {
     "reference": "Encounter/mii-exa-fall-kontakt-gesundheitseinrichtung-11"

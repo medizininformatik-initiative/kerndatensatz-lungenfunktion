@@ -6,7 +6,7 @@ Title: "MII Example Lungenfunktion ERV"
 * status = #final
 * category.coding = $obs-category#procedure
 * code = $SCT#55532004 "Expiratory reserve volume (observable entity)"
-* subject = Reference(Patient/mii-exa-person-patient-1)
+* subject = Reference(Patient/mii-exa-lungenfunktion-patient)
 * issued = "2024-07-19T13:03:20+02:00"
 * valueQuantity = 0.23 'L'
 * interpretation = $interpretation#N

@@ -6,7 +6,7 @@ Title: "MII Example Lungenfunktion MEF 50"
 * status = #final
 * category.coding = $obs-category#procedure
 * code = $SCT#251920002 "Maximum expiratory flow rate at 50 percent of vital capacity (observable entity)"
-* subject = Reference(Patient/mii-exa-person-patient-1)
+* subject = Reference(Patient/mii-exa-lungenfunktion-patient)
 * issued = "2024-07-19T13:03:20+02:00"
 * valueQuantity = 2.81 'L/s'
 * interpretation = $interpretation#N

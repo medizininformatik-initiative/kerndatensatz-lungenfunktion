@@ -1,29 +1,27 @@
-// MIGRATIONS-/BUILD-STAND-IN — bitte bestaetigen oder ersetzen.
+// Beispiel-Patientin des Moduls Lungenfunktion.
 //
-// Warum diese Datei existiert: Die Beispielinstanzen dieses Moduls referenzieren
-// durchgaengig Patient/mii-exa-person-patient-1, also eine Beispielinstanz des
-// Moduls PERSON. Beispiele werden von einem abhaengigen Paket NICHT mitgeliefert
-// (Dependencies liefern Profile, keine Examples), und das Modul PERSON steht
-// ohnehin nicht in den dependencies. Die Referenz ist damit im gerenderten
-// Leitfaden nicht aufloesbar.
+// Die Beispielinstanzen dieses Moduls brauchen ein Subject, das im gerenderten
+// Leitfaden aufloesbar ist. Zuvor referenzierten sie Patient/mii-exa-lungenfunktion-patient,
+// also eine Beispielinstanz des Moduls PERSON — Beispiele werden von abhaengigen
+// Paketen aber nicht mitgeliefert (Dependencies liefern Profile, keine Examples),
+// und das Modul PERSON steht nicht in den dependencies. Der IG Publisher bricht
+// deshalb beim Rendern der DiagnosticReport-Beispiele mit einer
+// NullPointerException in DiagnosticReportRenderer.populateSubjectSummary ab.
 //
-// Auf Simplifier blieb eine solche Referenz einfach unaufgeloest. Der HL7 IG
-// Publisher bricht dagegen beim Rendern der DiagnosticReport-Beispiele hart ab:
-//   NullPointerException in DiagnosticReportRenderer.populateSubjectSummary
-// (gemessen im CI-Lauf 33514103351 sowie lokal mit Publisher 2.3.2).
+// Alter und Geschlecht sind bewusst gesetzt: Beide gehen in die Sollwert- und
+// Z-Score-Berechnung ein, die dieses Modul durchgaengig mitfuehrt (siehe die
+// Anleitung fuer Implementierende). Koerpergroesse und -gewicht gehoeren laut
+// Informationsmodell nicht auf die Patient-Ressource, sondern werden als
+// Vitalparameter-Observations aus ISiK bzw. dem Modul INTENSIVMEDIZIN
+// referenziert — deshalb stehen sie hier nicht.
 //
-// Diese minimale, rein synthetische Instanz traegt genau die referenzierte id und
-// macht die vorhandenen Referenzen damit aufloesbar, ohne eine einzige der 61
-// bestehenden Referenzen anzufassen. Vorbild: Modul Bildgebung (PatExample).
-//
-// Alternative, falls das Modul keine eigene Patient-Instanz publizieren will:
-// die subject-Referenzen der Beispiele auf eine lokal definierte Patient-Instanz
-// umstellen — das beruehrt dann allerdings 61 Stellen.
-Instance: mii-exa-person-patient-1
+// Kein Profil-Claim: Das Modul haengt nicht vom Modul PERSON ab und kann dessen
+// Patient-Profil daher nicht beanspruchen. Rein synthetische Daten.
+Instance: mii-exa-lungenfunktion-patient
 InstanceOf: Patient
 Usage: #example
-Title: "Beispiel-Patientin (synthetisch, Stand-in)"
-Description: "Synthetische Beispiel-Patientin als Ziel der Patient-Referenzen der Beispielinstanzen dieses Moduls. Kein normativer Bestandteil der Spezifikation — dient ausschliesslich dazu, die Beispiel-Referenzen im gerenderten Leitfaden aufloesbar zu machen."
+Title: "MII EXA Lungenfunktion Patientin"
+Description: "Synthetische Beispiel-Patientin dieses Moduls. Sie ist das Subject saemtlicher Beispielinstanzen (Befunde, Messungen, Messergebnisse) und traegt mit Geschlecht und Geburtsdatum die beiden Eingangsgroessen der Sollwertberechnung, die auf der Patient-Ressource abgebildet werden."
 * name.family = "Beispielpatientin"
 * name.given = "Erika"
 * gender = #female

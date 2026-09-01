@@ -6,7 +6,7 @@ Title: "MII Example Lungenfunktion RV/TLC"
 * status = #final
 * category.coding = $obs-category#procedure
 * code = $SCT#1366666000 "Residual volume/total lung capacity ratio (observable entity)"
-* subject = Reference(Patient/mii-exa-person-patient-1)
+* subject = Reference(Patient/mii-exa-lungenfunktion-patient)
 * issued = "2024-07-19T13:03:20+02:00"
 * valueQuantity = 50.95 '%'
 * interpretation = $interpretation#N

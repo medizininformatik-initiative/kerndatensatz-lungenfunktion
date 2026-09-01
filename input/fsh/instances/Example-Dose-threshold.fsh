@@ -7,7 +7,7 @@ Title: "MII Example Lungenfunktion ERV"
 * status = #final
 * category.coding = $obs-category#procedure
 * code = $SCT#1376040001 "Dose of methacholine to achieve maximal drop of forced expired volume in 1 second (observable entity)"
-* subject = Reference(Patient/mii-exa-person-patient-1)
+* subject = Reference(Patient/mii-exa-lungenfunktion-patient)
 * issued = "2024-07-19T13:03:20+02:00"
 * valueQuantity = 0.12 'mg'
 * interpretation = $interpretation#N

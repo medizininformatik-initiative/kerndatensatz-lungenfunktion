@@ -7,7 +7,7 @@ Title: "MII Example Lungenfunktion Provokation FRC P3"
 * status = #final
 * category.coding = $obs-category#procedure
 * code = $loinc#19843-2 "Functional residual capacity"
-* subject = Reference(Patient/mii-exa-person-patient-1)
+* subject = Reference(Patient/mii-exa-lungenfunktion-patient)
 * issued = "2024-07-19T13:03:20+02:00"
 * valueQuantity = 3.73 'L'
 * interpretation = $interpretation#N
