@@ -20,5 +20,5 @@ Description: "Dieses Profil beschreibt die Messung der funktionellen Residualkap
 * code.coding[sct] = $SCT-version#65825000 "Functional residual capacity (observable entity)"
 * component[predicted].code.coding[sct] = $SCT-version#TODO
 * component[predicted].code.coding[loinc] from MII_VS_Lufu_LNC_FRC (required)
-* component[%predicted].code.coding[sct] = $SCT-version#TODO
-* component[%predicted].code.coding[loinc] = $loinc#TODO
+* component[percentPredicted].code.coding[sct] = $SCT-version#TODO
+* component[percentPredicted].code.coding[loinc] = $loinc#TODO

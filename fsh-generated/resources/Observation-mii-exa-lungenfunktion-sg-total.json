@@ -27,13 +27,13 @@
       {
         "code": "79412009",
         "system": "http://snomed.info/sct",
-        "version": "http://snomed.info/sct/900000000000207008/version/20240701",
+        "version": "http://snomed.info/sct/900000000000207008/version/20250701",
         "display": "Specific airway conductance (observable entity)"
       }
     ]
   },
   "subject": {
-    "reference": "Patient/PatExample"
+    "reference": "Patient/mii-exa-person-patient-1"
   },
   "issued": "2024-07-19T13:03:20+02:00",
   "valueQuantity": {

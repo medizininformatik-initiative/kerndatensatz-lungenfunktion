@@ -20,5 +20,5 @@ Description: "Dieses Profil beschreibt die Messung des exspiratorischen Spitzenf
 * code.coding[sct] from MII_VS_Lufu_SCT_PEF (required)
 * component[predicted].code.coding[sct] from MII_VS_Lufu_SCT_PEF (required)
 * component[predicted].code.coding[loinc] from MII_VS_Lufu_LNC_PEF (required)
-* component[%predicted].code.coding[sct] from MII_VS_Lufu_SCT_PEF (required)
-* component[%predicted].code.coding[loinc] from MII_VS_Lufu_LNC_PEF (required)
+* component[percentPredicted].code.coding[sct] from MII_VS_Lufu_SCT_PEF (required)
+* component[percentPredicted].code.coding[loinc] from MII_VS_Lufu_LNC_PEF (required)

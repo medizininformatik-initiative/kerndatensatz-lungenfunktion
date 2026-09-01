@@ -22,5 +22,5 @@ Description: "Dieses Profil beschreibt die Messung der Transferkapzität von Koh
 * derivedFrom only Reference(MII_PR_Lungenfunktion_DLCO or MII_PR_Lungenfunktion_VA)
 * component[predicted].code.coding[sct] = $SCT-version#TODO
 * component[predicted].code.coding[loinc] from MII_VS_Lufu_LNC_KCO (required)
-* component[%predicted].code.coding[sct] = $SCT-version#TODO
-* component[%predicted].code.coding[loinc] from MII_VS_Lufu_LNC_KCO (required)
+* component[percentPredicted].code.coding[sct] = $SCT-version#TODO
+* component[percentPredicted].code.coding[loinc] from MII_VS_Lufu_LNC_KCO (required)

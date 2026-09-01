@@ -16,7 +16,7 @@
     }
   ],
   "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-diffusion",
-  "version": "2027.0.0-ballot",
+  "version": "2027.0.0-ballot.rc1",
   "name": "MII_PR_Lungenfunktion_Diffusion",
   "_name": {
     "extension": [
@@ -99,7 +99,7 @@
         "patternCoding": {
           "code": "36421003",
           "system": "http://snomed.info/sct",
-          "version": "http://snomed.info/sct/900000000000207008/version/20240701",
+          "version": "http://snomed.info/sct/900000000000207008/version/20250701",
           "display": "Carbon monoxide diffusing capacity measurement (procedure)"
         }
       },
@@ -118,7 +118,7 @@
         "slicing": {
           "discriminator": [
             {
-              "type": "pattern",
+              "type": "type",
               "path": "$this"
             }
           ],

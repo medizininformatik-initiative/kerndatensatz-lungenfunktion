@@ -17,7 +17,7 @@ Description: "Diese Ressource beschreibt einen Befunde der Diffusions-Messung"
 //Profile
 * code.coding[loinc] = $loinc#TODO
 * code.coding[sct] = $SCT-version#36421003 "Carbon monoxide diffusing capacity measurement (procedure)"
-* result ^slicing.discriminator.type = #pattern
+* result ^slicing.discriminator.type = #type
 * result ^slicing.discriminator.path = "$this"
 * result ^slicing.rules = #open
 * result contains

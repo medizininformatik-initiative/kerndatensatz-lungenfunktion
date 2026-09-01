@@ -6,7 +6,7 @@ Title: "MII Example Lungenfunktion FEV1/FVC"
 * status = #final
 * category.coding = $obs-category#procedure
 * code = $SCT#251944000 "Forced expired volume in one second/forced vital capacity ratio (observable entity)"
-* subject = Reference(Patient/PatExample)
+* subject = Reference(Patient/mii-exa-person-patient-1)
 * issued = "2024-07-19T13:03:20+02:00"
 * valueQuantity = 83.93 '%'
 * interpretation = $interpretation#N

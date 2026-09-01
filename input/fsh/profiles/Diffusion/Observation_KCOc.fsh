@@ -23,5 +23,5 @@ Description: "Dieses Profil beschreibt die Messung der korrigierten Transferkapz
 * derivedFrom only Reference(MII_PR_Lungenfunktion_DLCO or MII_PR_Lungenfunktion_VA or MII_PR_Lungenfunktion_Hb)
 * component[predicted].code.coding[sct] = $SCT-version#TODO
 * component[predicted].code.coding[loinc] = $loinc#TODO
-* component[%predicted].code.coding[sct] = $SCT-version#TODO
-* component[%predicted].code.coding[loinc] = $loinc#TODO
+* component[percentPredicted].code.coding[sct] = $SCT-version#TODO
+* component[percentPredicted].code.coding[loinc] = $loinc#TODO

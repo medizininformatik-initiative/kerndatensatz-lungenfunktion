@@ -80,29 +80,37 @@ Description: "Dieses Profil beschreibt die Messung der Atemfrequenz."
 * component ^slicing.rules = #open
 * component contains
     predicted 0..1 MS and
-    %predicted 0..1 MS
-* component.code.coding ^slicing.discriminator.type = #pattern
-* component.code.coding ^slicing.discriminator.path = "$this"
-* component.code.coding ^slicing.rules = #open
-* component.code.coding contains
-    sct 0..1 MS and
-    loinc 0..1 MS
-* component.code.coding[loinc].code from MII_VS_Lufu_LNC_Observable (required)
-* component.code.coding[sct].code from MII_VS_Lufu_SCT_Observable (required)
+    percentPredicted 0..1 MS
 * component.valueQuantity.value MS
 * component.valueQuantity.unit MS
 * component.valueQuantity.system MS
 * component.valueQuantity.code MS
+* component[predicted].code.coding ^slicing.discriminator.type = #value
+* component[predicted].code.coding ^slicing.discriminator.path = "$this"
+* component[predicted].code.coding ^slicing.rules = #open
+* component[predicted].code.coding contains
+    sct 0..1 MS and
+    loinc 0..1 MS
+* component[predicted].code.coding[loinc].code from MII_VS_Lufu_LNC_Observable (required)
+* component[predicted].code.coding[sct].code from MII_VS_Lufu_SCT_Observable (required)
+* component[percentPredicted].code.coding ^slicing.discriminator.type = #value
+* component[percentPredicted].code.coding ^slicing.discriminator.path = "$this"
+* component[percentPredicted].code.coding ^slicing.rules = #open
+* component[percentPredicted].code.coding contains
+    sct 0..1 MS and
+    loinc 0..1 MS
+* component[percentPredicted].code.coding[loinc].code from MII_VS_Lufu_LNC_Observable (required)
+* component[percentPredicted].code.coding[sct].code from MII_VS_Lufu_SCT_Observable (required)
 * component[predicted] ^short = "Vorhersage"
 * component[predicted] ^definition = "vorhergesagtes Messergebnis"
 * component[predicted].valueQuantity.unit = "L"
 * component[predicted].valueQuantity.system = $ucum
 * component[predicted].valueQuantity.code = $ucum#L
-* component[%predicted] ^short = "Verhältnis"
-* component[%predicted] ^definition = "Verhältnis von Messwert zu vorhergesagtem Ergebnis"
-* component[%predicted].valueQuantity.unit = "%"
-* component[%predicted].valueQuantity.system = $ucum
-* component[%predicted].valueQuantity.code = $ucum#%
+* component[percentPredicted] ^short = "Verhältnis"
+* component[percentPredicted] ^definition = "Verhältnis von Messwert zu vorhergesagtem Ergebnis"
+* component[percentPredicted].valueQuantity.unit = "%"
+* component[percentPredicted].valueQuantity.system = $ucum
+* component[percentPredicted].valueQuantity.code = $ucum#%
 
 //Translation Profile
 * insert Translation(partOf ^short, de-DE, Teil von)
@@ -169,7 +177,11 @@ Description: "Dieses Profil beschreibt die Messung der Atemfrequenz."
 * insert Translation(component[predicted] ^short, en-US, prediction)
 * insert Translation(component[predicted] ^definition, de-DE, vorhergesagtes Messergebnis)
 * insert Translation(component[predicted] ^definition, en-US, predicted measured value)
-* insert Translation(component[%predicted] ^short, de-DE, Verhältnis)
-* insert Translation(component[%predicted] ^short, en-US, ratio)
-* insert Translation(component[%predicted] ^definition, de-DE, Verhältnis von Messwert zu vorhergesagtem Ergebnis)
-* insert Translation(component[%predicted] ^definition, en-US, ratio of measured value to prediction)
+* insert AddLoincCodingTranslation(component[predicted].code.coding[loinc])
+* insert AddSnomedCodingTranslation(component[predicted].code.coding[sct])
+* insert Translation(component[percentPredicted] ^short, de-DE, Verhältnis)
+* insert Translation(component[percentPredicted] ^short, en-US, ratio)
+* insert Translation(component[percentPredicted] ^definition, de-DE, Verhältnis von Messwert zu vorhergesagtem Ergebnis)
+* insert Translation(component[percentPredicted] ^definition, en-US, ratio of measured value to prediction)
+* insert AddLoincCodingTranslation(component[percentPredicted].code.coding[loinc])
+* insert AddSnomedCodingTranslation(component[percentPredicted].code.coding[sct])

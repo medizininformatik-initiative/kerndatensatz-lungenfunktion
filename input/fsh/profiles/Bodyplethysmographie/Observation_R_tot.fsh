@@ -20,5 +20,5 @@ Description: "Dieses Profil beschreibt die Messung des Atemwegswiderstand."
 * code.coding[sct] = $SCT-version#16162007 "Total airway resistance (observable entity)"
 * component[predicted].code.coding[sct] = $SCT-version#TODO
 * component[predicted].code.coding[loinc] = $loinc#TODO
-* component[%predicted].code.coding[sct] = $SCT-version#TODO
-* component[%predicted].code.coding[loinc] from MII_VS_Lufu_LNC_R (required)
+* component[percentPredicted].code.coding[sct] = $SCT-version#TODO
+* component[percentPredicted].code.coding[loinc] from MII_VS_Lufu_LNC_R (required)

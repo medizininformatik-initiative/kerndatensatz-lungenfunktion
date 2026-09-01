@@ -6,19 +6,16 @@
 id: mii-ig-lungenfunktion
 canonical: https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion # Quelle gewinnt: publizierter Canonical (ext-Raum), NICHT das Template-Muster (§2 Skill)
 name: MII_IG_Lungenfunktion
-title: MII IG Kerndatensatz-Modul Lungenfunktion # TODO:REVIEW abgeleitet — Quelle trägt keinen title (sushi-config/package.json); Muster analog Onkologie/Bildgebung (Gate A)
+title: MII IG Kerndatensatz-Modul Lungenfunktion
 description: "FHIR profiles for representing pulmonary function diagnostics - spirometry, body plethysmography, diffusion capacity and associated environmental parameters - as part of the MII core dataset." # TODO:REVIEW derived (EN-Beschreibung abgeleitet aus package.json-description 'Medizininformatik Initiative - Modul Lungenfunktion')
 status: active # draft | active | retired | unknown
-version: 2027.0.0-ballot # Quelle gewinnt (main@c2fe7fe)
+version: 2027.0.0-ballot.rc1
 packageId: de.medizininformatikinitiative.kerndatensatz.lungenfunktion
 fhirVersion: 4.0.1 # https://www.hl7.org/fhir/valueset-FHIR-version.html
 copyrightYear: "2024+" # Quelle gewinnt (sushi-config); Divergenz: Guide-Impressum sagt '© 2019+ TMF e. V.' — ①-Queue
 releaseLabel: ci-build # Quelle gewinnt (kein formales Release)
-# license: BEWUSST NICHT GESETZT — die Quelle deklariert nirgends eine Lizenz
-# (kein license-Feld, keine LICENSE-Datei, Impressum nennt kein CC-Kürzel,
-# nur 'Inhalt öffentlich, Nachnutzung nicht beschränkt'). Das Template-Default
-# CC-BY-4.0 wäre eine Relizenzierung = menschliche Entscheidung (DEC-1, Gate A).
-date: "2026-08-28" # TODO:REVIEW ci-build-Stand, kein Publikationsdatum (Gate A)
+license: CC-BY-4.0 # Evidenz Tier R (KEIN Default): Quell-Guide-Impressum (Index.page.md) deklariert '© 2019+ TMF e. V. ... CC BY 4.0'; kein license-Feld in sushi-config/package.json/publiziertem Paket, keine LICENSE-Datei -> Bestätigung Gate A / ①
+date: "2026-08-28"
 jurisdiction: urn:iso:std:iso:3166#DE "Germany" # https://www.hl7.org/fhir/valueset-jurisdiction.html
 publisher:
   name: Medizininformatik Initiative # Quelle gewinnt (Template v0.11.x: NUM-DIZ per TF-KDS 2026-08-14 — Übernahme = ①-Queue-Entscheidung)

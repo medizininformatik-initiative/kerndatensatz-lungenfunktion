@@ -27,7 +27,7 @@
     ]
   },
   "subject": {
-    "reference": "Patient/PatExample"
+    "reference": "Patient/mii-exa-person-patient-1"
   },
   "focus": [
     {

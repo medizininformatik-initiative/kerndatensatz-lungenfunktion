@@ -20,5 +20,5 @@ Description: "Dieses Profil beschreibt die Messung der spezifischen, totalen Ate
 * code.coding[sct] = $SCT-version#79412009 "Specific airway conductance (observable entity)"
 * component[predicted].code.coding[sct] = $SCT-version#TODO
 * component[predicted].code.coding[loinc] = $loinc#TODO
-* component[%predicted].code.coding[sct] = $SCT-version#TODO
-* component[%predicted].code.coding[loinc] = $loinc#TODO
+* component[percentPredicted].code.coding[sct] = $SCT-version#TODO
+* component[percentPredicted].code.coding[loinc] = $loinc#TODO

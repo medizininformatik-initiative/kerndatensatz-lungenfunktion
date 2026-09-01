@@ -4,8 +4,8 @@ Usage: #example
 Title: "MII Example Lungenfunktion Diffusion Befund"
 * status = #final
 * code = $SCT#36421003 "Carbon monoxide diffusing capacity measurement (procedure)"
-* subject = Reference(Patient/PatExample)
-* encounter = Reference(Encounter/EncExample)
+* subject = Reference(Patient/mii-exa-person-patient-1)
+* encounter = Reference(Encounter/mii-exa-fall-kontakt-gesundheitseinrichtung-11)
 * effectiveDateTime = "2024-07-19T12:03:30+02:00"
 * issued = "2024-07-19T13:03:20+02:00"
 * result[0] = Reference(Observation/mii-exa-lungenfunktion-dlco)

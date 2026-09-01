@@ -6,13 +6,13 @@ Title: "MII Example Lungenfunktion ERV"
 * status = #final
 * category.coding = $obs-category#procedure
 * code = $SCT#55532004 "Expiratory reserve volume (observable entity)"
-* subject = Reference(Patient/PatExample)
+* subject = Reference(Patient/mii-exa-person-patient-1)
 * issued = "2024-07-19T13:03:20+02:00"
 * valueQuantity = 0.23 'L'
 * interpretation = $interpretation#N
 * method = $SCT#249862003 "Sitting upright (finding)"
 * referenceRange.low = 1.31 'L'
 * component[predicted].code = $loinc#19923-2 "Expiratory reserve Predicted"
-* component[%predicted].code = $SCT#TODO
+* component[percentPredicted].code = $SCT#TODO
 * component[predicted].valueQuantity = 1.31 'L'
-* component[%predicted].valueQuantity = 18 '%'
+* component[percentPredicted].valueQuantity = 18 '%'

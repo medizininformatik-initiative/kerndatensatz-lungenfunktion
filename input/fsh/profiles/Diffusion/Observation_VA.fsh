@@ -23,5 +23,5 @@ Description: "Dieses Profil beschreibt die Messung des alveolärer Volumen."
 * method from MII_VS_Lufu_SCT_Technique (required)
 * component[predicted].code.coding[sct] = $SCT-version#TODO
 * component[predicted].code.coding[loinc] = $loinc#TODO
-* component[%predicted].code.coding[sct] = $SCT-version#TODO
-* component[%predicted].code.coding[loinc] = $loinc#TODO
+* component[percentPredicted].code.coding[sct] = $SCT-version#TODO
+* component[percentPredicted].code.coding[loinc] = $loinc#TODO
