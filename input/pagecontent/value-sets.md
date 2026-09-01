@@ -8,8 +8,6 @@
   M9 decision: page KEPT (32 value sets measured).
 -->
 
-### Value Sets
-
 This page describes the ValueSets of the **Lungenfunktion (Pulmonary Function)**
 module (naming convention `MII_VS_<Module>_<Name>`). The module defines 32
 ValueSets: 20 based on LOINC codes (`mii-vs-lufu-lnc-…`) for the measured

@@ -10,8 +10,6 @@
   TODO:REVIEW — translation to be confirmed at Gate C. Migrated 2026-08-28.
 -->
 
-### Capability Statements
-
 To enable decentralized data analysis via the German Health Research Data Portal
 of the Medical Informatics Initiative, the
 [capabilities interaction](https://www.hl7.org/fhir/R4/http.html#capabilities)

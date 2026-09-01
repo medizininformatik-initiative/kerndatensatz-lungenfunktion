@@ -9,8 +9,6 @@
   TODO:REVIEW — translation to be confirmed at Gate C. Migrated 2026-08-28.
 -->
 
-### UML diagrams
-
 The class diagram below shows the information model of the Pulmonary Function
 module with its domain concepts and their relationships. It serves as an
 overview; the normative artifacts are the [profiles](profiles.html), and the
