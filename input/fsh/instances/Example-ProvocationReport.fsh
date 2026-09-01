@@ -5,7 +5,7 @@ Title: "MII Example Lungenfunktion Provokationstest Befund"
 * status = #final
 * code = $SCT#252520007 "Methacholine challenge (procedure)"
 * subject = Reference(Patient/mii-exa-lungenfunktion-patient)
-* encounter = Reference(Encounter/mii-exa-fall-kontakt-gesundheitseinrichtung-11)
+* encounter = Reference(Encounter/mii-exa-lungenfunktion-kontakt)
 * effectiveDateTime = "2024-07-19T12:03:30+02:00"
 * issued = "2024-07-19T13:03:20+02:00"
 * result[0] = Reference(Observation/mii-exa-lungenfunktion-fev1-b)
