@@ -20,7 +20,7 @@ Profile: [MII PR Lungenfunktion Luftfeuchtigkeit](StructureDefinition-mii-pr-lun
 
 **code**: Humidity (physical force)
 
-**subject**: [Erika Beispielpatientin Female, DoB: 1970-01-01](Patient-mii-exa-person-patient-1.md)
+**subject**: [Erika Beispielpatientin Female, DoB: 1970-01-01](Patient-mii-exa-lungenfunktion-patient.md)
 
 **focus**: [Location: type = Patient's Residence; physicalType = Location inside building (environment)](Location-mii-exa-lungenfunktion-location.md)
 
@@ -54,7 +54,7 @@ Profile: [MII PR Lungenfunktion Luftfeuchtigkeit](StructureDefinition-mii-pr-lun
     }]
   },
   "subject" : {
-    "reference" : "Patient/mii-exa-person-patient-1"
+    "reference" : "Patient/mii-exa-lungenfunktion-patient"
   },
   "focus" : [{
     "reference" : "Location/mii-exa-lungenfunktion-location"

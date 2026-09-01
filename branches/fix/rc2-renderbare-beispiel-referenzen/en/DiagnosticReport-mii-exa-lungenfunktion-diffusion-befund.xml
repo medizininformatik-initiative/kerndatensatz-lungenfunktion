@@ -25,10 +25,10 @@
     </coding>
   </code>
   <subject>
-    <reference value="Patient/mii-exa-person-patient-1"/>
+    <reference value="Patient/mii-exa-lungenfunktion-patient"/>
   </subject>
   <encounter>
-    <reference value="Encounter/mii-exa-fall-kontakt-gesundheitseinrichtung-11"/>
+    <reference value="Encounter/mii-exa-lungenfunktion-kontakt"/>
   </encounter>
   <effectiveDateTime value="2024-07-19T12:03:30+02:00"/>
   <issued value="2024-07-19T13:03:20+02:00"/>

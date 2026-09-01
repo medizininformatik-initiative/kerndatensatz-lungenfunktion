@@ -90,10 +90,10 @@ Increased lung compliance
     }]
   },
   "subject" : {
-    "reference" : "Patient/mii-exa-person-patient-1"
+    "reference" : "Patient/mii-exa-lungenfunktion-patient"
   },
   "encounter" : {
-    "reference" : "Encounter/mii-exa-fall-kontakt-gesundheitseinrichtung-11"
+    "reference" : "Encounter/mii-exa-lungenfunktion-kontakt"
   },
   "effectiveDateTime" : "2024-07-19T12:03:30+02:00",
   "issued" : "2024-07-19T13:03:20+02:00",

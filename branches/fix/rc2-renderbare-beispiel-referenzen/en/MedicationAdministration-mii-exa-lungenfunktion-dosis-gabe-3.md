@@ -20,7 +20,7 @@ Profile: [MII PR Lungenfunktion Dosisgabe](StructureDefinition-mii-pr-lungenfunk
 
 **medication**: [Medication Provokit® 0,33%](Medication-mii-exa-lungenfunktion-methacholine.md)
 
-**subject**: [Erika Beispielpatientin Female, DoB: 1970-01-01](Patient-mii-exa-person-patient-1.md)
+**subject**: [Erika Beispielpatientin Female, DoB: 1970-01-01](Patient-mii-exa-lungenfunktion-patient.md)
 
 **effective**: 2024-07-19 13:03:20+0200
 
@@ -50,7 +50,7 @@ Profile: [MII PR Lungenfunktion Dosisgabe](StructureDefinition-mii-pr-lungenfunk
     "reference" : "Medication/mii-exa-lungenfunktion-methacholine"
   },
   "subject" : {
-    "reference" : "Patient/mii-exa-person-patient-1"
+    "reference" : "Patient/mii-exa-lungenfunktion-patient"
   },
   "effectiveDateTime" : "2024-07-19T13:03:20+02:00",
   "dosage" : {

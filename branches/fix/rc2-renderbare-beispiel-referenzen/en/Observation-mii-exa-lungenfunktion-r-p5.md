@@ -25,7 +25,7 @@ Profile: [MII PR Lungenfunktion R](StructureDefinition-mii-pr-lungenfunktion-r.m
 
 **code**: Airway resistance
 
-**subject**: [Erika Beispielpatientin Female, DoB: 1970-01-01](Patient-mii-exa-person-patient-1.md)
+**subject**: [Erika Beispielpatientin Female, DoB: 1970-01-01](Patient-mii-exa-lungenfunktion-patient.md)
 
 **issued**: 2024-07-19 13:03:20+0200
 
@@ -74,7 +74,7 @@ Profile: [MII PR Lungenfunktion R](StructureDefinition-mii-pr-lungenfunktion-r.m
     }]
   },
   "subject" : {
-    "reference" : "Patient/mii-exa-person-patient-1"
+    "reference" : "Patient/mii-exa-lungenfunktion-patient"
   },
   "issued" : "2024-07-19T13:03:20+02:00",
   "valueQuantity" : {

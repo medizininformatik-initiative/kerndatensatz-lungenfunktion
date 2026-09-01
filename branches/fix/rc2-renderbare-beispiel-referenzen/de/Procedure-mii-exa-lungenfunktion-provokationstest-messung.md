@@ -20,9 +20,9 @@ Profile: [MII PR Lungenfunktion Provokations Messung](StructureDefinition-mii-pr
 
 **code**: Methacholine challenge (procedure)
 
-**subject**: [Erika Beispielpatientin Female, DoB: 1970-01-01](Patient-mii-exa-person-patient-1.md)
+**subject**: [Erika Beispielpatientin Female, DoB: 1970-01-01](Patient-mii-exa-lungenfunktion-patient.md)
 
-**encounter**: [Encounter/mii-exa-fall-kontakt-gesundheitseinrichtung-11](https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.meta@2026.0.0&canonical=https://www.medizininformatik-initiative.de/fhir/modul-meta/Encounter/mii-exa-fall-kontakt-gesundheitseinrichtung-11)
+**encounter**: [Encounter: status = finished; class = ambulatory (ActCode#AMB)](Encounter-mii-exa-lungenfunktion-kontakt.md)
 
 **performed**: 2024-07-19 12:03:30+0200
 
@@ -57,10 +57,10 @@ Profile: [MII PR Lungenfunktion Provokations Messung](StructureDefinition-mii-pr
     }]
   },
   "subject" : {
-    "reference" : "Patient/mii-exa-person-patient-1"
+    "reference" : "Patient/mii-exa-lungenfunktion-patient"
   },
   "encounter" : {
-    "reference" : "Encounter/mii-exa-fall-kontakt-gesundheitseinrichtung-11"
+    "reference" : "Encounter/mii-exa-lungenfunktion-kontakt"
   },
   "performedDateTime" : "2024-07-19T12:03:30+02:00",
   "outcome" : {

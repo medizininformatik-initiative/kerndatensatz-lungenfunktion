@@ -896,17 +896,6 @@
     </extension>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Patient"/>
-      </extension>
-      <reference>
-        <reference value="Patient/mii-exa-person-patient-1"/>
-      </reference>
-      <name value="Beispiel-Patientin (synthetisch, Stand-in)"/>
-      <description value="Synthetische Beispiel-Patientin als Ziel der Patient-Referenzen der Beispielinstanzen dieses Moduls. Kein normativer Bestandteil der Spezifikation — dient ausschliesslich dazu, die Beispiel-Referenzen im gerenderten Leitfaden aufloesbar zu machen."/>
-      <exampleBoolean value="true"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="CapabilityStatement"/>
       </extension>
       <reference>
@@ -915,6 +904,28 @@
       <name value="MII CPS Lungenfunktion CapabilityStatement"/>
       <description value="Das vorliegende CapabilityStatement beschreibt alle verpflichtenden Interaktionen die ein konformes System unterstützen muss, um das Modul Lungenfunktion der Medizininformatik Initiative zu implementieren."/>
       <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Encounter"/>
+      </extension>
+      <reference>
+        <reference value="Encounter/mii-exa-lungenfunktion-kontakt"/>
+      </reference>
+      <name value="MII EXA Lungenfunktion Kontakt"/>
+      <description value="Synthetischer ambulanter Behandlungskontakt, in dem die Beispiel-Lungenfunktionstests dieses Moduls stattfinden. Kein normativer Bestandteil der Spezifikation — macht die encounter-Referenzen der Beispielinstanzen im gerenderten Leitfaden aufloesbar."/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Patient"/>
+      </extension>
+      <reference>
+        <reference value="Patient/mii-exa-lungenfunktion-patient"/>
+      </reference>
+      <name value="MII EXA Lungenfunktion Patientin"/>
+      <description value="Synthetische Beispiel-Patientin dieses Moduls. Sie ist das Subject saemtlicher Beispielinstanzen (Befunde, Messungen, Messergebnisse) und traegt mit Geschlecht und Geburtsdatum die beiden Eingangsgroessen der Sollwertberechnung, die auf der Patient-Ressource abgebildet werden."/>
+      <exampleBoolean value="true"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">

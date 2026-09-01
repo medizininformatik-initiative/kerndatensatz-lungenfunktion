@@ -123,7 +123,8 @@ These are example instances that show what data produced and consumed by systems
 
 | | |
 | :--- | :--- |
-| [ Beispiel-Patientin (synthetisch, Stand-in)  ](Patient-mii-exa-person-patient-1.md) | Synthetische Beispiel-Patientin als Ziel der Patient-Referenzen der Beispielinstanzen dieses Moduls. Kein normativer Bestandteil der Spezifikation — dient ausschliesslich dazu, die Beispiel-Referenzen im gerenderten Leitfaden aufloesbar zu machen. |
+| [ MII EXA Lungenfunktion Kontakt  ](Encounter-mii-exa-lungenfunktion-kontakt.md) | Synthetischer ambulanter Behandlungskontakt, in dem die Beispiel-Lungenfunktionstests dieses Moduls stattfinden. Kein normativer Bestandteil der Spezifikation — macht die encounter-Referenzen der Beispielinstanzen im gerenderten Leitfaden aufloesbar. |
+| [ MII EXA Lungenfunktion Patientin  ](Patient-mii-exa-lungenfunktion-patient.md) | Synthetische Beispiel-Patientin dieses Moduls. Sie ist das Subject saemtlicher Beispielinstanzen (Befunde, Messungen, Messergebnisse) und traegt mit Geschlecht und Geburtsdatum die beiden Eingangsgroessen der Sollwertberechnung, die auf der Patient-Ressource abgebildet werden. |
 | [ MII Example Lungenfunktion BF  ](Observation-mii-exa-lungenfunktion-bf.md) |  |
 | [ MII Example Lungenfunktion Bodyplethysmographie Befund  ](DiagnosticReport-mii-exa-lungenfunktion-bodyplethysmographie-befund.md) |  |
 | [ MII Example Lungenfunktion Bodyplethysmographie Messung  ](Procedure-mii-exa-lungenfunktion-bodyplethysmographie-messung.md) |  |

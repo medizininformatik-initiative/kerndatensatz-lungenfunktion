@@ -27,7 +27,7 @@ Profile: [MII PR Lungenfunktion Dosis](StructureDefinition-mii-pr-lungenfunktion
 
 **code**: Dose of methacholine to achieve maximal drop of forced expired volume in 1 second (observable entity)
 
-**subject**: [Erika Beispielpatientin Female, DoB: 1970-01-01](Patient-mii-exa-person-patient-1.md)
+**subject**: [Erika Beispielpatientin Female, DoB: 1970-01-01](Patient-mii-exa-lungenfunktion-patient.md)
 
 **issued**: 2024-07-19 13:03:20+0200
 
@@ -73,7 +73,7 @@ Profile: [MII PR Lungenfunktion Dosis](StructureDefinition-mii-pr-lungenfunktion
     }]
   },
   "subject" : {
-    "reference" : "Patient/mii-exa-person-patient-1"
+    "reference" : "Patient/mii-exa-lungenfunktion-patient"
   },
   "issued" : "2024-07-19T13:03:20+02:00",
   "valueQuantity" : {

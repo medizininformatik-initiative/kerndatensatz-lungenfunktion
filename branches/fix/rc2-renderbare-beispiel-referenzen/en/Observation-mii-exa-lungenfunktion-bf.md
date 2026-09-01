@@ -22,7 +22,7 @@ Profile: [MII PR Lungenfunktion BF](StructureDefinition-mii-pr-lungenfunktion-bf
 
 **code**: Rate of spontaneous respiration (observable entity)
 
-**subject**: [Erika Beispielpatientin Female, DoB: 1970-01-01](Patient-mii-exa-person-patient-1.md)
+**subject**: [Erika Beispielpatientin Female, DoB: 1970-01-01](Patient-mii-exa-lungenfunktion-patient.md)
 
 **effective**: 2024-07-18 13:03:20+0200
 
@@ -67,7 +67,7 @@ Profile: [MII PR Lungenfunktion BF](StructureDefinition-mii-pr-lungenfunktion-bf
     }]
   },
   "subject" : {
-    "reference" : "Patient/mii-exa-person-patient-1"
+    "reference" : "Patient/mii-exa-lungenfunktion-patient"
   },
   "effectiveDateTime" : "2024-07-18T13:03:20+02:00",
   "issued" : "2024-07-19T13:03:20+02:00",

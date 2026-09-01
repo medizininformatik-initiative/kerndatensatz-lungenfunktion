@@ -1,10 +1,10 @@
-# Beispiel-Patientin (synthetisch, Stand-in) - MII IG Kerndatensatz-Modul Lungenfunktion v2027.0.0-ballot.rc1
+# MII EXA Lungenfunktion Patientin - MII IG Kerndatensatz-Modul Lungenfunktion v2027.0.0-ballot.rc1
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
-* **Beispiel-Patientin (synthetisch, Stand-in)**
+* **MII EXA Lungenfunktion Patientin**
 
-## Example Patient: Beispiel-Patientin (synthetisch, Stand-in)
+## Example Patient: MII EXA Lungenfunktion Patientin
 
 -------
 
@@ -23,7 +23,7 @@ Erika Beispielpatientin Female, DoB: 1970-01-01
 ```json
 {
   "resourceType" : "Patient",
-  "id" : "mii-exa-person-patient-1",
+  "id" : "mii-exa-lungenfunktion-patient",
   "name" : [{
     "family" : "Beispielpatientin",
     "given" : ["Erika"]

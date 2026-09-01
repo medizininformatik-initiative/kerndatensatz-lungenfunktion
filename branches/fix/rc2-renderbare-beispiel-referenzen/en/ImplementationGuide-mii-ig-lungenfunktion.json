@@ -1189,18 +1189,6 @@
     "resource" : [{
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "Patient"
-      }],
-      "reference" : {
-        "reference" : "Patient/mii-exa-person-patient-1"
-      },
-      "name" : "Beispiel-Patientin (synthetisch, Stand-in)",
-      "description" : "Synthetische Beispiel-Patientin als Ziel der Patient-Referenzen der Beispielinstanzen dieses Moduls. Kein normativer Bestandteil der Spezifikation — dient ausschliesslich dazu, die Beispiel-Referenzen im gerenderten Leitfaden aufloesbar zu machen.",
-      "exampleBoolean" : true
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "CapabilityStatement"
       }],
       "reference" : {
@@ -1209,6 +1197,30 @@
       "name" : "MII CPS Lungenfunktion CapabilityStatement",
       "description" : "Das vorliegende CapabilityStatement beschreibt alle verpflichtenden Interaktionen die ein konformes System unterstützen muss, um das Modul Lungenfunktion der Medizininformatik Initiative zu implementieren.",
       "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Encounter"
+      }],
+      "reference" : {
+        "reference" : "Encounter/mii-exa-lungenfunktion-kontakt"
+      },
+      "name" : "MII EXA Lungenfunktion Kontakt",
+      "description" : "Synthetischer ambulanter Behandlungskontakt, in dem die Beispiel-Lungenfunktionstests dieses Moduls stattfinden. Kein normativer Bestandteil der Spezifikation — macht die encounter-Referenzen der Beispielinstanzen im gerenderten Leitfaden aufloesbar.",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Patient"
+      }],
+      "reference" : {
+        "reference" : "Patient/mii-exa-lungenfunktion-patient"
+      },
+      "name" : "MII EXA Lungenfunktion Patientin",
+      "description" : "Synthetische Beispiel-Patientin dieses Moduls. Sie ist das Subject saemtlicher Beispielinstanzen (Befunde, Messungen, Messergebnisse) und traegt mit Geschlecht und Geburtsdatum die beiden Eingangsgroessen der Sollwertberechnung, die auf der Patient-Ressource abgebildet werden.",
+      "exampleBoolean" : true
     },
     {
       "extension" : [{
