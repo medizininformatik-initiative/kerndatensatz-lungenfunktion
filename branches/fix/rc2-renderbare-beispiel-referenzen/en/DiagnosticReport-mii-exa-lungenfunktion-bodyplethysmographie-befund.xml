@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<DiagnosticReport xmlns="http://hl7.org/fhir">
+  <id value="mii-exa-lungenfunktion-bodyplethysmographie-befund"/>
+  <meta>
+    <profile value="https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-bodyplethysmographie"/>
+  </meta>
+  <language value="en"/>
+  <text>
+    <status value="generated"/><div xml:lang="en" lang="en"><hr/><p><b>English</b></p><hr/><p class="res-header-id"><b>Generated Narrative: DiagnosticReport mii-exa-lungenfunktion-bodyplethysmographie-befund</b></p><a name="mii-exa-lungenfunktion-bodyplethysmographie-befund"> </a><a name="hcmii-exa-lungenfunktion-bodyplethysmographie-befund"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-mii-pr-lungenfunktion-bodyplethysmographie.html">MII PR Lungenfunktion Bodyplethysmographie</a></p></div><h2><span title="Codes:{http://snomed.info/sct 28275007}">Total body plethysmography (procedure)</span> (<span title="Codes:{http://snomed.info/sct 720449003}">Pulmonary function report (record artifact)</span>) </h2><table class="grid"><tr><td>Subject</td><td>Erika Beispielpatientin  Female, DoB: 1970-01-01</td></tr><tr><td>Relevant Time</td><td>2024-07-19 12:03:30+0200</td></tr><tr><td>Reported</td><td>2024-07-19 13:03:20+0200</td></tr></table><p><b>Report Details</b></p><table class="grid"><tr><td><b>Code</b></td><td><b>Value</b></td><td><b>Reference Range</b></td><td><b>Flags</b></td></tr><tr><td><a href="Observation-mii-exa-lungenfunktion-fev1.html"><span title="Codes:{http://snomed.info/sct 59328004}">Forced expired volume in 1 second (observable entity)</span></a></td><td>2.23 L<span style="background: LightGoldenRodYellow"> (Details: UCUM  codeL = 'L')</span></td><td>&gt;2.98 L<span style="background: LightGoldenRodYellow"> (Details: UCUM  codeL = 'L')</span></td><td>Final, <span title="Codes:{http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation N}">Normal</span></td></tr><tr><td><a href="Observation-mii-exa-lungenfunktion-fvc.html"><span title="Codes:{http://snomed.info/sct 50834005}">Forced vital capacity (observable entity)</span></a></td><td>2.65 L<span style="background: LightGoldenRodYellow"> (Details: UCUM  codeL = 'L')</span></td><td>&gt;3.76 L<span style="background: LightGoldenRodYellow"> (Details: UCUM  codeL = 'L')</span></td><td>Final, <span title="Codes:{http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation N}">Normal</span></td></tr><tr><td><a href="Observation-mii-exa-lungenfunktion-fev1-fvc.html"><span title="Codes:{http://snomed.info/sct 251944000}">Forced expired volume in one second/forced vital capacity ratio (observable entity)</span></a></td><td>83.93 %<span style="background: LightGoldenRodYellow"> (Details: UCUM  code% = '%')</span></td><td>&gt;68.88 %<span style="background: LightGoldenRodYellow"> (Details: UCUM  code% = '%')</span></td><td>Final, <span title="Codes:{http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation N}">Normal</span></td></tr><tr><td><a href="Observation-mii-exa-lungenfunktion-mef25.html"><span title="Codes:{http://snomed.info/sct 251919008}">Maximum expiratory flow rate at 25 percent of vital capacity (observable entity)</span></a></td><td>1.21 L/s<span style="background: LightGoldenRodYellow"> (Details: UCUM  codeL/s = 'L/s')</span></td><td>&gt;0.57 L/s<span style="background: LightGoldenRodYellow"> (Details: UCUM  codeL/s = 'L/s')</span></td><td>Final, <span title="Codes:{http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation N}">Normal</span></td></tr><tr><td><a href="Observation-mii-exa-lungenfunktion-mef50.html"><span title="Codes:{http://snomed.info/sct 251920002}">Maximum expiratory flow rate at 50 percent of vital capacity (observable entity)</span></a></td><td>2.81 L/s<span style="background: LightGoldenRodYellow"> (Details: UCUM  codeL/s = 'L/s')</span></td><td>&gt;2.59 L/s<span style="background: LightGoldenRodYellow"> (Details: UCUM  codeL/s = 'L/s')</span></td><td>Final, <span title="Codes:{http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation N}">Normal</span></td></tr><tr><td><a href="Observation-mii-exa-lungenfunktion-mef75.html"><span title="Codes:{http://snomed.info/sct 251921003}">Maximum expiratory flow rate at 75 percent of vital capacity (observable entity)</span></a></td><td>3.74 L/s<span style="background: LightGoldenRodYellow"> (Details: UCUM  codeL/s = 'L/s')</span></td><td>&gt;4.83 L/s<span style="background: LightGoldenRodYellow"> (Details: UCUM  codeL/s = 'L/s')</span></td><td>Final, <span title="Codes:{http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation N}">Normal</span></td></tr><tr><td><a href="Observation-mii-exa-lungenfunktion-frc.html"><span title="Codes:{http://loinc.org 19843-2}">Functional residual capacity</span></a></td><td>3.48 L<span style="background: LightGoldenRodYellow"> (Details: UCUM  codeL = 'L')</span></td><td>&gt;2.43 L<span style="background: LightGoldenRodYellow"> (Details: UCUM  codeL = 'L')</span></td><td>Final, <span title="Codes:{http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation N}">Normal</span></td></tr><tr><td><a href="Observation-mii-exa-lungenfunktion-rvl.html"><span title="Codes:{http://loinc.org 20146-7}">Residual volume</span></a></td><td>3.01 L<span style="background: LightGoldenRodYellow"> (Details: UCUM  codeL = 'L')</span></td><td>&gt;1.43 L<span style="background: LightGoldenRodYellow"> (Details: UCUM  codeL = 'L')</span></td><td>Final, <span title="Codes:{http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation N}">Normal</span></td></tr><tr><td><a href="Observation-mii-exa-lungenfunktion-tlc.html"><span title="Codes:{http://snomed.info/sct 57566009}">Total lung capacity (observable entity)</span></a></td><td>5 L<span style="background: LightGoldenRodYellow"> (Details: UCUM  codeL = 'L')</span></td><td>&gt;5.67 L<span style="background: LightGoldenRodYellow"> (Details: UCUM  codeL = 'L')</span></td><td>Final, <span title="Codes:{http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation N}">Normal</span></td></tr><tr><td><a href="Observation-mii-exa-lungenfunktion-rvl-tlc.html"><span title="Codes:{http://snomed.info/sct 1366666000}">Residual volume/total lung capacity ratio (observable entity)</span></a></td><td>50.95 %<span style="background: LightGoldenRodYellow"> (Details: UCUM  code% = '%')</span></td><td>&gt;23.73 %<span style="background: LightGoldenRodYellow"> (Details: UCUM  code% = '%')</span></td><td>Final, <span title="Codes:{http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation N}">Normal</span></td></tr><tr><td><a href="Observation-mii-exa-lungenfunktion-r.html"><span title="Codes:{http://loinc.org 75946-4}">Airway resistance</span></a></td><td>0.45 kPa/(L/s)<span style="background: LightGoldenRodYellow"> (Details: UCUM  codekPa/(L/s) = 'kPa/(L/s)')</span></td><td/><td>Final, <span title="Codes:{http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation N}">Normal</span></td></tr><tr><td><a href="Observation-mii-exa-lungenfunktion-sg-total.html"><span title="Codes:{http://snomed.info/sct 79412009}">Specific airway conductance (observable entity)</span></a></td><td>0.92 /kPA.s<span style="background: LightGoldenRodYellow"> (Details: UCUM  code/kPA.s = '/kPA.s')</span></td><td/><td>Final, <span title="Codes:{http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation N}">Normal</span></td></tr><tr><td><a href="Observation-mii-exa-lungenfunktion-sr-eff.html"><span title="Codes:{http://loinc.org 75946-4}">Airway resistance</span></a></td><td>1.08 kPa.s<span style="background: LightGoldenRodYellow"> (Details: UCUM  codekPa.s = 'kPa.s')</span></td><td/><td>Final, <span title="Codes:{http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation N}">Normal</span></td></tr><tr><td><a href="Observation-mii-exa-lungenfunktion-sr-total.html"><span title="Codes:{http://loinc.org 75946-4}">Airway resistance</span></a></td><td>0.45 kPa.s<span style="background: LightGoldenRodYellow"> (Details: UCUM  codekPa.s = 'kPa.s')</span></td><td/><td>Final, <span title="Codes:{http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation N}">Normal</span></td></tr></table><p>Increased lung compliance</p><p><b>Coded Conclusions:</b></p><ul><li><span title="Codes:{http://snomed.info/sct 21368004}">Increased lung compliance (finding)</span></li></ul></div>
+  </text>
+  <status value="final"/>
+  <category>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="720449003"/>
+      <display value="Pulmonary function report (record artifact)"/>
+    </coding>
+  </category>
+  <code>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="28275007"/>
+      <display value="Total body plethysmography (procedure)"/>
+    </coding>
+  </code>
+  <subject>
+    <reference value="Patient/mii-exa-person-patient-1"/>
+  </subject>
+  <encounter>
+    <reference value="Encounter/mii-exa-fall-kontakt-gesundheitseinrichtung-11"/>
+  </encounter>
+  <effectiveDateTime value="2024-07-19T12:03:30+02:00"/>
+  <issued value="2024-07-19T13:03:20+02:00"/>
+  <result>
+    <reference value="Observation/mii-exa-lungenfunktion-fev1"/>
+  </result>
+  <result>
+    <reference value="Observation/mii-exa-lungenfunktion-fvc"/>
+  </result>
+  <result>
+    <reference value="Observation/mii-exa-lungenfunktion-fev1-fvc"/>
+  </result>
+  <result>
+    <reference value="Observation/mii-exa-lungenfunktion-mef25"/>
+  </result>
+  <result>
+    <reference value="Observation/mii-exa-lungenfunktion-mef50"/>
+  </result>
+  <result>
+    <reference value="Observation/mii-exa-lungenfunktion-mef75"/>
+  </result>
+  <result>
+    <reference value="Observation/mii-exa-lungenfunktion-frc"/>
+  </result>
+  <result>
+    <reference value="Observation/mii-exa-lungenfunktion-rvl"/>
+  </result>
+  <result>
+    <reference value="Observation/mii-exa-lungenfunktion-tlc"/>
+  </result>
+  <result>
+    <reference value="Observation/mii-exa-lungenfunktion-rvl-tlc"/>
+  </result>
+  <result>
+    <reference value="Observation/mii-exa-lungenfunktion-r"/>
+  </result>
+  <result>
+    <reference value="Observation/mii-exa-lungenfunktion-sg-total"/>
+  </result>
+  <result>
+    <reference value="Observation/mii-exa-lungenfunktion-sr-eff"/>
+  </result>
+  <result>
+    <reference value="Observation/mii-exa-lungenfunktion-sr-total"/>
+  </result>
+  <conclusion value="Increased lung compliance"/>
+  <conclusionCode>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="21368004"/>
+      <display value="Increased lung compliance (finding)"/>
+    </coding>
+  </conclusionCode>
+</DiagnosticReport>

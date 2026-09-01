@@ -1,0 +1,462 @@
+{
+  "codeSystems" : [{
+    "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/ValueSet/mii-vs-lufu-lnc-dlco",
+    "version" : "2027.0.0-ballot.rc1",
+    "status" : "active",
+    "name" : "MII_VS_Lufu_LNC_DLCO",
+    "title" : "MII VS Lufu LNC DLCO",
+    "description" : "Import the ValueSet for lungfunction functional residual capacity",
+    "systems" : ["http://loinc.org"],
+    "uses" : {
+    },
+    "StructureDefinition-mii-pr-lungenfunktion-dlco.html" : "MII PR Lungenfunktion DLCO"
+  },
+  {
+    "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/ValueSet/mii-vs-lufu-lnc-dlcoc",
+    "version" : "2027.0.0-ballot.rc1",
+    "status" : "active",
+    "name" : "MII_VS_Lufu_LNC_DLCOc",
+    "title" : "MII VS Lufu LNC DLCOc",
+    "description" : "Import the ValueSet for lungfunction functional residual capacity",
+    "systems" : ["http://loinc.org"],
+    "uses" : {
+    },
+    "StructureDefinition-mii-pr-lungenfunktion-dlcoc.html" : "MII PR Lungenfunktion DLCOc"
+  },
+  {
+    "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/ValueSet/mii-vs-lufu-lnc-fev",
+    "version" : "2027.0.0-ballot.rc1",
+    "status" : "active",
+    "name" : "MII_VS_Lufu_LNC_FEV",
+    "title" : "MII VS Lufu LNC FEV",
+    "description" : "Import the ValueSet for lungfunction forced expiratory volume",
+    "systems" : ["http://loinc.org"],
+    "uses" : {
+    },
+    "StructureDefinition-mii-pr-lungenfunktion-fev.html" : "MII PR Lungenfunktion FEV"
+  },
+  {
+    "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/ValueSet/mii-vs-lufu-lnc-fev-fvc",
+    "version" : "2027.0.0-ballot.rc1",
+    "status" : "active",
+    "name" : "MII_VS_Lufu_LNC_FEV_FVC",
+    "title" : "MII VS Lufu LNC FEV FVC",
+    "description" : "Import the ValueSet for lungfunction Tiffeneau-Index",
+    "systems" : ["http://loinc.org"],
+    "uses" : {
+    },
+    "StructureDefinition-mii-pr-lungenfunktion-fev-fvc.html" : "MII PR Lungenfunktion FEV/FVC"
+  },
+  {
+    "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/ValueSet/mii-vs-lufu-lnc-frc",
+    "version" : "2027.0.0-ballot.rc1",
+    "status" : "active",
+    "name" : "MII_VS_Lufu_LNC_FRC",
+    "title" : "MII VS Lufu LNC FRC",
+    "description" : "Import the ValueSet for lungfunction functional residual capacity",
+    "systems" : ["http://loinc.org"],
+    "uses" : {
+    },
+    "StructureDefinition-mii-pr-lungenfunktion-frc.html" : "MII PR Lungenfunktion FRC"
+  },
+  {
+    "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/ValueSet/mii-vs-lufu-lnc-fvc",
+    "version" : "2027.0.0-ballot.rc1",
+    "status" : "active",
+    "name" : "MII_VS_Lufu_LNC_FVC",
+    "title" : "MII VS Lufu LNC Forced Vital Capacity",
+    "description" : "Import the ValueSet for lungfunction forced vital capacity",
+    "systems" : ["http://loinc.org"],
+    "uses" : {
+    },
+    "StructureDefinition-mii-pr-lungenfunktion-fvc.html" : "MII PR Lungenfunktion FVC"
+  },
+  {
+    "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/ValueSet/mii-vs-lufu-lnc-ic",
+    "version" : "2027.0.0-ballot.rc1",
+    "status" : "active",
+    "name" : "MII_VS_Lufu_LNC_IC",
+    "title" : "MII VS Lufu LNC Inspiratory Capacity",
+    "description" : "Import the ValueSet for lungfunction inspiratory capacity",
+    "systems" : ["http://loinc.org"],
+    "uses" : {
+    },
+    "StructureDefinition-mii-pr-lungenfunktion-ic.html" : "MII PR Lungenfunktion IC"
+  },
+  {
+    "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/ValueSet/mii-vs-lufu-lnc-kco",
+    "version" : "2027.0.0-ballot.rc1",
+    "status" : "active",
+    "name" : "MII_VS_Lufu_LNC_KCO",
+    "title" : "MII VS Lufu LNC KCO",
+    "description" : "Import the ValueSet for lungfunction functional residual capacity",
+    "systems" : ["http://loinc.org"],
+    "uses" : {
+    },
+    "StructureDefinition-mii-pr-lungenfunktion-kco.html" : "MII PR Lungenfunktion KCO"
+  },
+  {
+    "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/ValueSet/mii-vs-lufu-lnc-mef",
+    "version" : "2027.0.0-ballot.rc1",
+    "status" : "active",
+    "name" : "MII_VS_Lufu_LNC_MEF",
+    "title" : "MII VS Lufu LNC MEF",
+    "description" : "Import the ValueSet for lungfunction maximum expiratory flow",
+    "systems" : ["http://loinc.org"],
+    "uses" : {
+    },
+    "StructureDefinition-mii-pr-lungenfunktion-mef.html" : "MII PR Lungenfunktion MEF"
+  },
+  {
+    "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/ValueSet/mii-vs-lufu-lnc-observable",
+    "version" : "2027.0.0-ballot.rc1",
+    "status" : "active",
+    "name" : "MII_VS_Lufu_LNC_Observable",
+    "title" : "MII VS Lufu SCT Observable",
+    "description" : "Import the ValueSet for lungfunction",
+    "systems" : ["http://loinc.org"],
+    "uses" : {
+    },
+    "StructureDefinition-mii-pr-lungenfunktion-1-viskositaet.html" : "MII PR Lungenfunktion 1/Viscosity",
+    "StructureDefinition-mii-pr-lungenfunktion-sg-total.html" : "MII PR Lungenfunktion sG Total",
+    "StructureDefinition-mii-pr-lungenfunktion-fvc.html" : "MII PR Lungenfunktion FVC",
+    "StructureDefinition-mii-pr-lungenfunktion-mef.html" : "MII PR Lungenfunktion MEF",
+    "StructureDefinition-mii-pr-lungenfunktion-rvl.html" : "MII PR Lungenfunktion RVL",
+    "StructureDefinition-mii-pr-lungenfunktion-dlco.html" : "MII PR Lungenfunktion DLCO",
+    "StructureDefinition-mii-pr-lungenfunktion-vc.html" : "MII PR Lungenfunktion VC",
+    "StructureDefinition-mii-pr-lungenfunktion-pef.html" : "MII PR Lungenfunktion PEF",
+    "StructureDefinition-mii-pr-lungenfunktion-transferkoeffizient.html" : "MII PR Lungenfunktion Transferkoeffizient",
+    "StructureDefinition-mii-pr-lungenfunktion-r-spezifisch.html" : "MII PR Lungenfunktion R Spezifisch",
+    "StructureDefinition-mii-pr-lungenfunktion-kco.html" : "MII PR Lungenfunktion KCO",
+    "StructureDefinition-mii-pr-lungenfunktion-rvl-tlc.html" : "MII PR Lungenfunktion Anteil Residualvolumen an Lungenkapazität",
+    "StructureDefinition-mii-pr-lungenfunktion-viskositaet.html" : "MII PR Lungenfunktion Fluss",
+    "StructureDefinition-mii-pr-lungenfunktion-irv.html" : "MII PR Lungenfunktion RV",
+    "StructureDefinition-mii-pr-lungenfunktion-fluss.html" : "MII PR Lungenfunktion Fluss",
+    "StructureDefinition-mii-pr-lungenfunktion-bf.html" : "MII PR Lungenfunktion BF",
+    "StructureDefinition-mii-pr-lungenfunktion-prozent.html" : "MII PR Lungenfunktion Prozent",
+    "StructureDefinition-mii-pr-lungenfunktion-volumen.html" : "MII PR Lungenfunktion Volumen",
+    "StructureDefinition-mii-pr-lungenfunktion-va.html" : "MII PR Lungenfunktion VA",
+    "StructureDefinition-mii-pr-lungenfunktion-ic.html" : "MII PR Lungenfunktion IC",
+    "StructureDefinition-mii-pr-lungenfunktion-r-effektiv.html" : "MII PR Lungenfunktion R Effektiv",
+    "StructureDefinition-mii-pr-lungenfunktion-fev.html" : "MII PR Lungenfunktion FEV",
+    "StructureDefinition-mii-pr-lungenfunktion-dlcoc.html" : "MII PR Lungenfunktion DLCOc",
+    "StructureDefinition-mii-pr-lungenfunktion-tlc.html" : "MII PR Lungenfunktion TLC",
+    "StructureDefinition-mii-pr-lungenfunktion-gewicht.html" : "MII PR Lungenfunktion Gewicht",
+    "StructureDefinition-mii-pr-lungenfunktion-frc.html" : "MII PR Lungenfunktion FRC",
+    "StructureDefinition-mii-pr-lungenfunktion-r.html" : "MII PR Lungenfunktion R",
+    "StructureDefinition-mii-pr-lungenfunktion-diffusionskapazitaet.html" : "MII PR Lungenfunktion Fluss",
+    "StructureDefinition-mii-pr-lungenfunktion-kcoc.html" : "MII PR Lungenfunktion KCOc",
+    "StructureDefinition-mii-pr-lungenfunktion-fev-fvc.html" : "MII PR Lungenfunktion FEV/FVC",
+    "StructureDefinition-mii-pr-lungenfunktion-widerstand.html" : "MII PR Lungenfunktion Widerstand"
+  },
+  {
+    "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/ValueSet/mii-vs-lufu-lnc-pef",
+    "version" : "2027.0.0-ballot.rc1",
+    "status" : "active",
+    "name" : "MII_VS_Lufu_LNC_PEF",
+    "title" : "MII VS Lufu LNC PEF",
+    "description" : "Import the ValueSet for lungfunction peak expiratory flow",
+    "systems" : ["http://loinc.org"],
+    "uses" : {
+    },
+    "StructureDefinition-mii-pr-lungenfunktion-pef.html" : "MII PR Lungenfunktion PEF"
+  },
+  {
+    "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/ValueSet/mii-vs-lufu-lnc-procedure",
+    "version" : "2027.0.0-ballot.rc1",
+    "status" : "active",
+    "name" : "MII_VS_Lufu_LNC_Procedure",
+    "title" : "MII VS Lufu SCT Procedure Report",
+    "description" : "Import the ValueSet for lungfunction",
+    "systems" : ["http://loinc.org"],
+    "uses" : {
+    },
+    "StructureDefinition-mii-pr-lungenfunktion-bodyplethysmographie.html" : "MII PR Lungenfunktion Bodyplethysmographie",
+    "StructureDefinition-mii-pr-lungenfunktion-befund.html" : "MII PR Lungenfunktion Template",
+    "StructureDefinition-mii-pr-lungenfunktion-diffusion.html" : "MII PR Lungenfunktion Diffusion",
+    "StructureDefinition-mii-pr-lungenfunktion-provokationstest.html" : "MII PR Lungenfunktion Provokationstest",
+    "StructureDefinition-mii-pr-lungenfunktion-spirometrie.html" : "MII PR Lungenfunktion Spirometrie"
+  },
+  {
+    "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/ValueSet/mii-vs-lufu-lnc-r",
+    "version" : "2027.0.0-ballot.rc1",
+    "status" : "active",
+    "name" : "MII_VS_Lufu_LNC_R",
+    "title" : "MII VS Lufu LNC R",
+    "description" : "Import the ValueSet for lungfunction total airway resistance",
+    "systems" : ["http://loinc.org"],
+    "uses" : {
+    },
+    "StructureDefinition-mii-pr-lungenfunktion-r.html" : "MII PR Lungenfunktion R"
+  },
+  {
+    "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/ValueSet/mii-vs-lufu-lnc-rv",
+    "version" : "2027.0.0-ballot.rc1",
+    "status" : "active",
+    "name" : "MII_VS_Lufu_LNC_RV",
+    "title" : "MII VS Lufu LNC RV",
+    "description" : "Import the ValueSet for lungfunction reserve volume",
+    "systems" : ["http://loinc.org"],
+    "uses" : {
+    },
+    "StructureDefinition-mii-pr-lungenfunktion-irv.html" : "MII PR Lungenfunktion RV"
+  },
+  {
+    "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/ValueSet/mii-vs-lufu-lnc-rvl",
+    "version" : "2027.0.0-ballot.rc1",
+    "status" : "active",
+    "name" : "MII_VS_Lufu_LNC_RVL",
+    "title" : "MII VS Lufu LNC RVL",
+    "description" : "Import the ValueSet for lungfunction Residual Volume",
+    "systems" : ["http://loinc.org"],
+    "uses" : {
+    },
+    "StructureDefinition-mii-pr-lungenfunktion-rvl.html" : "MII PR Lungenfunktion RVL"
+  },
+  {
+    "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/ValueSet/mii-vs-lufu-lnc-rvl-tlc",
+    "version" : "2027.0.0-ballot.rc1",
+    "status" : "active",
+    "name" : "MII_VS_Lufu_LNC_RVL_TLC",
+    "title" : "MII VS Lufu LNC RVL TLC",
+    "description" : "Import the ValueSet for lungfunction Residual Volume/Total Lung Capacity",
+    "systems" : ["http://loinc.org"],
+    "uses" : {
+    },
+    "StructureDefinition-mii-pr-lungenfunktion-rvl-tlc.html" : "MII PR Lungenfunktion Anteil Residualvolumen an Lungenkapazität"
+  },
+  {
+    "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/ValueSet/mii-vs-lufu-lnc-sr",
+    "version" : "2027.0.0-ballot.rc1",
+    "status" : "active",
+    "name" : "MII_VS_Lufu_LNC_sR",
+    "title" : "MII VS Lufu LNC sR",
+    "description" : "Import the ValueSet for lungfunction specific airway resistence",
+    "systems" : ["http://loinc.org"],
+    "uses" : {
+    },
+    "StructureDefinition-mii-pr-lungenfunktion-r-spezifisch.html" : "MII PR Lungenfunktion R Spezifisch"
+  },
+  {
+    "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/ValueSet/mii-vs-lufu-lnc-sr-eff",
+    "version" : "2027.0.0-ballot.rc1",
+    "status" : "active",
+    "name" : "MII_VS_Lufu_LNC_sR_eff",
+    "title" : "MII VS Lufu LNC sR eff",
+    "description" : "Import the ValueSet for lungfunction effective specific airway resistence",
+    "systems" : ["http://loinc.org"],
+    "uses" : {
+    },
+    "StructureDefinition-mii-pr-lungenfunktion-r-effektiv.html" : "MII PR Lungenfunktion R Effektiv"
+  },
+  {
+    "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/ValueSet/mii-vs-lufu-lnc-tlc",
+    "version" : "2027.0.0-ballot.rc1",
+    "status" : "active",
+    "name" : "MII_VS_Lufu_LNC_TLC",
+    "title" : "MII VS Lufu LNC TLC",
+    "description" : "Import the ValueSet for lungfunction total lung capacity",
+    "systems" : ["http://loinc.org"],
+    "uses" : {
+    },
+    "StructureDefinition-mii-pr-lungenfunktion-tlc.html" : "MII PR Lungenfunktion TLC"
+  },
+  {
+    "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/ValueSet/mii-vs-lufu-lnc-vc",
+    "version" : "2027.0.0-ballot.rc1",
+    "status" : "active",
+    "name" : "MII_VS_Lufu_LNC_VC",
+    "title" : "MII VS Lufu LNC Vital Capacity",
+    "description" : "Import the ValueSet for lungfunction vital capacity",
+    "systems" : ["http://loinc.org"],
+    "uses" : {
+    },
+    "StructureDefinition-mii-pr-lungenfunktion-vc.html" : "MII PR Lungenfunktion VC"
+  },
+  {
+    "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/ValueSet/mii-vs-lufu-sct-fev",
+    "version" : "2027.0.0-ballot.rc1",
+    "status" : "active",
+    "name" : "MII_VS_Lufu_SCT_FEV",
+    "title" : "MII VS Lufu SCT FEV",
+    "description" : "Import the ValueSet for lungfunction forced expiratory volume",
+    "systems" : ["http://snomed.info/sct"],
+    "uses" : {
+    },
+    "StructureDefinition-mii-pr-lungenfunktion-fev.html" : "MII PR Lungenfunktion FEV"
+  },
+  {
+    "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/ValueSet/mii-vs-lufu-sct-fev-fvc",
+    "version" : "2027.0.0-ballot.rc1",
+    "status" : "active",
+    "name" : "MII_VS_Lufu_SCT_FEV_FVC",
+    "title" : "MII VS Lufu SCT FEV FVC",
+    "description" : "Import the ValueSet for lungfunction Tiffeneau-Index",
+    "systems" : ["http://snomed.info/sct"],
+    "uses" : {
+    },
+    "StructureDefinition-mii-pr-lungenfunktion-fev-fvc.html" : "MII PR Lungenfunktion FEV/FVC"
+  },
+  {
+    "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/ValueSet/mii-vs-lufu-sct-findings",
+    "version" : "2027.0.0-ballot.rc1",
+    "status" : "active",
+    "name" : "MII_VS_Lufu_SCT_Findings",
+    "title" : "MII VS Lufu SCT Findings",
+    "description" : "Import the ValueSet for lungfunction findings",
+    "systems" : ["http://snomed.info/sct"],
+    "uses" : {
+    },
+    "StructureDefinition-mii-pr-lungenfunktion-bodyplethysmographie.html" : "MII PR Lungenfunktion Bodyplethysmographie",
+    "StructureDefinition-mii-pr-lungenfunktion-befund.html" : "MII PR Lungenfunktion Template",
+    "StructureDefinition-mii-pr-lungenfunktion-diffusion.html" : "MII PR Lungenfunktion Diffusion",
+    "StructureDefinition-mii-pr-lungenfunktion-provokationstest.html" : "MII PR Lungenfunktion Provokationstest",
+    "StructureDefinition-mii-pr-lungenfunktion-spirometrie.html" : "MII PR Lungenfunktion Spirometrie"
+  },
+  {
+    "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/ValueSet/mii-vs-lufu-sct-fvc",
+    "version" : "2027.0.0-ballot.rc1",
+    "status" : "active",
+    "name" : "MII_VS_Lufu_SCT_FVC",
+    "title" : "MII VS Lufu SCT Forced Vital Capacity",
+    "description" : "Import the ValueSet for lungfunction forced vital capacity",
+    "systems" : ["http://snomed.info/sct"],
+    "uses" : {
+    },
+    "StructureDefinition-mii-pr-lungenfunktion-fvc.html" : "MII PR Lungenfunktion FVC"
+  },
+  {
+    "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/ValueSet/mii-vs-lufu-sct-location",
+    "version" : "2027.0.0-ballot.rc1",
+    "status" : "active",
+    "name" : "MII_VS_Lufu_SCT_Location",
+    "title" : "MII VS Lufu SCT Location",
+    "description" : "Import the ValueSet for patients location",
+    "systems" : ["http://snomed.info/sct"],
+    "uses" : {
+    },
+    "StructureDefinition-mii-pr-lungenfunktion-umgebung.html" : "MII PR Lungenfunktion Umgebung"
+  },
+  {
+    "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/ValueSet/mii-vs-lufu-sct-mef",
+    "version" : "2027.0.0-ballot.rc1",
+    "status" : "active",
+    "name" : "MII_VS_Lufu_SCT_MEF",
+    "title" : "MII VS Lufu SCT MEF",
+    "description" : "Import the ValueSet for lungfunction maximum expiratory flow",
+    "systems" : ["http://snomed.info/sct"],
+    "uses" : {
+    },
+    "StructureDefinition-mii-pr-lungenfunktion-mef.html" : "MII PR Lungenfunktion MEF"
+  },
+  {
+    "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/ValueSet/mii-vs-lufu-sct-observable",
+    "version" : "2027.0.0-ballot.rc1",
+    "status" : "active",
+    "name" : "MII_VS_Lufu_SCT_Observable",
+    "title" : "MII VS Lufu SCT Observable",
+    "description" : "Import the ValueSet for lungfunction",
+    "systems" : ["http://snomed.info/sct"],
+    "uses" : {
+    },
+    "StructureDefinition-mii-pr-lungenfunktion-1-viskositaet.html" : "MII PR Lungenfunktion 1/Viscosity",
+    "StructureDefinition-mii-pr-lungenfunktion-sg-total.html" : "MII PR Lungenfunktion sG Total",
+    "StructureDefinition-mii-pr-lungenfunktion-fvc.html" : "MII PR Lungenfunktion FVC",
+    "StructureDefinition-mii-pr-lungenfunktion-mef.html" : "MII PR Lungenfunktion MEF",
+    "StructureDefinition-mii-pr-lungenfunktion-rvl.html" : "MII PR Lungenfunktion RVL",
+    "StructureDefinition-mii-pr-lungenfunktion-dlco.html" : "MII PR Lungenfunktion DLCO",
+    "StructureDefinition-mii-pr-lungenfunktion-vc.html" : "MII PR Lungenfunktion VC",
+    "StructureDefinition-mii-pr-lungenfunktion-pef.html" : "MII PR Lungenfunktion PEF",
+    "StructureDefinition-mii-pr-lungenfunktion-transferkoeffizient.html" : "MII PR Lungenfunktion Transferkoeffizient",
+    "StructureDefinition-mii-pr-lungenfunktion-r-spezifisch.html" : "MII PR Lungenfunktion R Spezifisch",
+    "StructureDefinition-mii-pr-lungenfunktion-kco.html" : "MII PR Lungenfunktion KCO",
+    "StructureDefinition-mii-pr-lungenfunktion-rvl-tlc.html" : "MII PR Lungenfunktion Anteil Residualvolumen an Lungenkapazität",
+    "StructureDefinition-mii-pr-lungenfunktion-viskositaet.html" : "MII PR Lungenfunktion Fluss",
+    "StructureDefinition-mii-pr-lungenfunktion-irv.html" : "MII PR Lungenfunktion RV",
+    "StructureDefinition-mii-pr-lungenfunktion-fluss.html" : "MII PR Lungenfunktion Fluss",
+    "StructureDefinition-mii-pr-lungenfunktion-bf.html" : "MII PR Lungenfunktion BF",
+    "StructureDefinition-mii-pr-lungenfunktion-prozent.html" : "MII PR Lungenfunktion Prozent",
+    "StructureDefinition-mii-pr-lungenfunktion-volumen.html" : "MII PR Lungenfunktion Volumen",
+    "StructureDefinition-mii-pr-lungenfunktion-va.html" : "MII PR Lungenfunktion VA",
+    "StructureDefinition-mii-pr-lungenfunktion-ic.html" : "MII PR Lungenfunktion IC",
+    "StructureDefinition-mii-pr-lungenfunktion-r-effektiv.html" : "MII PR Lungenfunktion R Effektiv",
+    "StructureDefinition-mii-pr-lungenfunktion-fev.html" : "MII PR Lungenfunktion FEV",
+    "StructureDefinition-mii-pr-lungenfunktion-dlcoc.html" : "MII PR Lungenfunktion DLCOc",
+    "StructureDefinition-mii-pr-lungenfunktion-tlc.html" : "MII PR Lungenfunktion TLC",
+    "StructureDefinition-mii-pr-lungenfunktion-gewicht.html" : "MII PR Lungenfunktion Gewicht",
+    "StructureDefinition-mii-pr-lungenfunktion-frc.html" : "MII PR Lungenfunktion FRC",
+    "StructureDefinition-mii-pr-lungenfunktion-r.html" : "MII PR Lungenfunktion R",
+    "StructureDefinition-mii-pr-lungenfunktion-diffusionskapazitaet.html" : "MII PR Lungenfunktion Fluss",
+    "StructureDefinition-mii-pr-lungenfunktion-kcoc.html" : "MII PR Lungenfunktion KCOc",
+    "StructureDefinition-mii-pr-lungenfunktion-fev-fvc.html" : "MII PR Lungenfunktion FEV/FVC",
+    "StructureDefinition-mii-pr-lungenfunktion-widerstand.html" : "MII PR Lungenfunktion Widerstand"
+  },
+  {
+    "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/ValueSet/mii-vs-lufu-sct-pef",
+    "version" : "2027.0.0-ballot.rc1",
+    "status" : "active",
+    "name" : "MII_VS_Lufu_SCT_PEF",
+    "title" : "MII VS Lufu SCT PEF",
+    "description" : "Import the ValueSet for lungfunction peak expiratory flow",
+    "systems" : ["http://snomed.info/sct"],
+    "uses" : {
+    },
+    "StructureDefinition-mii-pr-lungenfunktion-pef.html" : "MII PR Lungenfunktion PEF"
+  },
+  {
+    "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/ValueSet/mii-vs-lufu-sct-procedure",
+    "version" : "2027.0.0-ballot.rc1",
+    "status" : "active",
+    "name" : "MII_VS_Lufu_SCT_Procedure",
+    "title" : "MII VS Lufu SCT Procedure",
+    "description" : "Import the ValueSet for lungfunction",
+    "systems" : ["http://snomed.info/sct"],
+    "uses" : {
+    },
+    "StructureDefinition-mii-pr-lungenfunktion-bodyplethysmographie.html" : "MII PR Lungenfunktion Bodyplethysmographie",
+    "StructureDefinition-mii-pr-lungenfunktion-befund.html" : "MII PR Lungenfunktion Template",
+    "StructureDefinition-mii-pr-lungenfunktion-diffusion.html" : "MII PR Lungenfunktion Diffusion",
+    "StructureDefinition-mii-pr-lungenfunktion-provokationstest.html" : "MII PR Lungenfunktion Provokationstest",
+    "StructureDefinition-mii-pr-lungenfunktion-spirometrie.html" : "MII PR Lungenfunktion Spirometrie"
+  },
+  {
+    "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/ValueSet/mii-vs-lufu-sct-rv",
+    "version" : "2027.0.0-ballot.rc1",
+    "status" : "active",
+    "name" : "MII_VS_Lufu_SCT_RV",
+    "title" : "MII VS Lufu SCT RV",
+    "description" : "Import the ValueSet for lungfunction reserve volume",
+    "systems" : ["http://snomed.info/sct"],
+    "uses" : {
+    },
+    "StructureDefinition-mii-pr-lungenfunktion-irv.html" : "MII PR Lungenfunktion RV"
+  },
+  {
+    "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/ValueSet/mii-vs-lufu-sct-technique",
+    "version" : "2027.0.0-ballot.rc1",
+    "status" : "active",
+    "name" : "MII_VS_Lufu_SCT_Technique",
+    "title" : "MII VS Lufu SCT Technique",
+    "description" : "Import the ValueSet for lungfunction",
+    "systems" : ["http://snomed.info/sct"],
+    "uses" : {
+    },
+    "StructureDefinition-mii-pr-lungenfunktion-dlcoc.html" : "MII PR Lungenfunktion DLCOc",
+    "StructureDefinition-mii-pr-lungenfunktion-kco.html" : "MII PR Lungenfunktion KCO",
+    "StructureDefinition-mii-pr-lungenfunktion-kcoc.html" : "MII PR Lungenfunktion KCOc",
+    "StructureDefinition-mii-pr-lungenfunktion-dlco.html" : "MII PR Lungenfunktion DLCO",
+    "StructureDefinition-mii-pr-lungenfunktion-va.html" : "MII PR Lungenfunktion VA"
+  },
+  {
+    "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/ValueSet/mii-vs-lufu-sct-vc",
+    "version" : "2027.0.0-ballot.rc1",
+    "status" : "active",
+    "name" : "MII_VS_Lufu_SCT_VC",
+    "title" : "MII VS Lufu SCT Vital Capacity",
+    "description" : "Import the ValueSet for lungfunction vital capacity",
+    "systems" : ["http://snomed.info/sct"],
+    "uses" : {
+    },
+    "StructureDefinition-mii-pr-lungenfunktion-vc.html" : "MII PR Lungenfunktion VC"
+  }]
+}

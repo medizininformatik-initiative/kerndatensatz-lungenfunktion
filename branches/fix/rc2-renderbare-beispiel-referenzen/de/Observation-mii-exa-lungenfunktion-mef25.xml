@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Observation xmlns="http://hl7.org/fhir">
+  <id value="mii-exa-lungenfunktion-mef25"/>
+  <meta>
+    <profile value="https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-mef"/>
+  </meta>
+  <language value="de"/>
+  <text>
+    <status value="generated"/><div xml:lang="de" lang="de"><hr/><p><b>German</b></p><hr/><p class="res-header-id"><b>Generated Narrative: Observation mii-exa-lungenfunktion-mef25</b></p><a name="de-mii-exa-lungenfunktion-mef25"> </a><a name="de-hcmii-exa-lungenfunktion-mef25"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-mii-pr-lungenfunktion-mef.html">MII PR Lungenfunktion MEF</a></p></div><p><b>partOf</b>: <a href="Procedure-mii-exa-lungenfunktion-spirometrie-messung.html">Procedure Spirometry (procedure)</a></p><p><b>status</b>: Final</p><p><b>category</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/observation-category procedure}">Procedure</span></p><p><b>code</b>: <span title="Codes:{http://snomed.info/sct 251919008}">Maximum expiratory flow rate at 25 percent of vital capacity (observable entity)</span></p><p><b>subject</b>: <a href="Patient-mii-exa-person-patient-1.html">Erika Beispielpatientin  Female, DoB: 1970-01-01</a></p><p><b>issued</b>: 2024-07-19 13:03:20+0200</p><p><b>value</b>: 1.21 L/s<span style="background: LightGoldenRodYellow"> (Details: UCUM  codeL/s = 'L/s')</span></p><p><b>interpretation</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation N}">Normal</span></p><p><b>method</b>: <span title="Codes:{http://snomed.info/sct 249862003}">Sitting upright (finding)</span></p><h3>ReferenceRanges</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Low</b></td></tr><tr><td style="display: none">*</td><td>0.57 L/s<span style="background: LightGoldenRodYellow"> (Details: UCUM  codeL/s = 'L/s')</span></td></tr></table><blockquote><p><b>component</b></p><p><b>code</b>: <span title="Codes:{http://snomed.info/sct TODO}">TODO</span></p><p><b>value</b>: 1.25 L/s<span style="background: LightGoldenRodYellow"> (Details: UCUM  codeL/s = 'L/s')</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title="Codes:{http://snomed.info/sct TODO}">TODO</span></p><p><b>value</b>: 97 %<span style="background: LightGoldenRodYellow"> (Details: UCUM  code% = '%')</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title="Codes:{http://snomed.info/sct 1078210003}">Z-score calculation technique (qualifier value)</span></p><p><b>value</b>: -0.1</p></blockquote></div>
+  </text>
+  <partOf>
+    <reference value="Procedure/mii-exa-lungenfunktion-spirometrie-messung"/>
+  </partOf>
+  <status value="final"/>
+  <category>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
+      <code value="procedure"/>
+    </coding>
+  </category>
+  <code>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="251919008"/>
+      <display value="Maximum expiratory flow rate at 25 percent of vital capacity (observable entity)"/>
+    </coding>
+  </code>
+  <subject>
+    <reference value="Patient/mii-exa-person-patient-1"/>
+  </subject>
+  <issued value="2024-07-19T13:03:20+02:00"/>
+  <valueQuantity>
+    <value value="1.21"/>
+    <system value="http://unitsofmeasure.org"/>
+    <code value="L/s"/>
+  </valueQuantity>
+  <interpretation>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation"/>
+      <code value="N"/>
+    </coding>
+  </interpretation>
+  <method>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="249862003"/>
+      <display value="Sitting upright (finding)"/>
+    </coding>
+  </method>
+  <referenceRange>
+    <low>
+      <value value="0.57"/>
+      <system value="http://unitsofmeasure.org"/>
+      <code value="L/s"/>
+    </low>
+  </referenceRange>
+  <component>
+    <code>
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <code value="TODO"/>
+      </coding>
+    </code>
+    <valueQuantity>
+      <value value="1.25"/>
+      <system value="http://unitsofmeasure.org"/>
+      <code value="L/s"/>
+    </valueQuantity>
+  </component>
+  <component>
+    <code>
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <code value="TODO"/>
+      </coding>
+    </code>
+    <valueQuantity>
+      <value value="97"/>
+      <system value="http://unitsofmeasure.org"/>
+      <code value="%"/>
+    </valueQuantity>
+  </component>
+  <component>
+    <code>
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <code value="1078210003"/>
+        <display value="Z-score calculation technique (qualifier value)"/>
+      </coding>
+    </code>
+    <valueQuantity>
+      <value value="-0.1"/>
+      <system value="http://unitsofmeasure.org"/>
+    </valueQuantity>
+  </component>
+</Observation>

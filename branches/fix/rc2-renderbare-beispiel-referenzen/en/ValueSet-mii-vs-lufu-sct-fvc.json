@@ -1,0 +1,61 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "mii-vs-lufu-sct-fvc",
+  "meta" : {
+    "profile" : ["http://hl7.org/fhir/StructureDefinition/shareablevalueset"]
+  },
+  "language" : "en",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xml:lang=\"en\" lang=\"en\"><hr/><p><b>English</b></p><hr/><p class=\"res-header-id\"><b>Generated Narrative: ValueSet mii-vs-lufu-sct-fvc</b></p><a name=\"mii-vs-lufu-sct-fvc\"> </a><a name=\"hcmii-vs-lufu-sct-fvc\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"http://hl7.org/fhir/uv/crmi/STU2/StructureDefinition-shareablevalueset.html\">Shareable ValueSet</a></p></div><ul><li>Include these codes as defined in <a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a><span title=\"Version is not explicitly stated. No matching Code System found\"> version Not Stated (use latest from terminology server)</span><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"http://snomed.info/id/50834005\">50834005</a></td><td>Forced vital capacity (observable entity)</td></tr><tr><td><a href=\"http://snomed.info/id/310521000\">310521000</a></td><td>Expected forced vital capacity (observable entity)</td></tr><tr><td><a href=\"http://snomed.info/id/407561008\">407561008</a></td><td>Forced vital capacity after bronchodilation (observable entity)</td></tr><tr><td><a href=\"http://snomed.info/id/441857000\">441857000</a></td><td>Forced vital capacity before bronchodilation (observable entity)</td></tr><tr><td><a href=\"http://snomed.info/id/445210000\">445210000</a></td><td>Percentage of predicted forced vital capacity (observable entity)</td></tr></table></li></ul></div>"
+  },
+  "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/ValueSet/mii-vs-lufu-sct-fvc",
+  "version" : "2027.0.0-ballot.rc1",
+  "name" : "MII_VS_Lufu_SCT_FVC",
+  "title" : "MII VS Lufu SCT Forced Vital Capacity",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2026-09-01",
+  "publisher" : "Medizininformatik Initiative",
+  "contact" : [{
+    "name" : "Medizininformatik Initiative",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://www.medizininformatik-initiative.de/"
+    }]
+  }],
+  "description" : "Import the ValueSet for lungfunction forced vital capacity",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "DE",
+      "display" : "Germany"
+    }]
+  }],
+  "copyright" : "This value set includes content from SNOMED CT, which is copyright © 2002+ International Health Terminology Standards Development Organisation (IHTSDO), and distributed by agreement between IHTSDO and HL7. Implementer use of SNOMED CT is not covered by this agreement",
+  "compose" : {
+    "include" : [{
+      "system" : "http://snomed.info/sct",
+      "concept" : [{
+        "code" : "50834005",
+        "display" : "Forced vital capacity (observable entity)"
+      },
+      {
+        "code" : "310521000",
+        "display" : "Expected forced vital capacity (observable entity)"
+      },
+      {
+        "code" : "407561008",
+        "display" : "Forced vital capacity after bronchodilation (observable entity)"
+      },
+      {
+        "code" : "441857000",
+        "display" : "Forced vital capacity before bronchodilation (observable entity)"
+      },
+      {
+        "code" : "445210000",
+        "display" : "Percentage of predicted forced vital capacity (observable entity)"
+      }]
+    }]
+  }
+}

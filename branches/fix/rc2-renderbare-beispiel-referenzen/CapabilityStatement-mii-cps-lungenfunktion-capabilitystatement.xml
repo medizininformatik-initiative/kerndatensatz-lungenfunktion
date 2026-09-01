@@ -1,0 +1,986 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CapabilityStatement xmlns="http://hl7.org/fhir">
+  <id value="mii-cps-lungenfunktion-capabilitystatement"/>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><div xml:lang="en" lang="en"><hr/><p><b>English</b></p><hr/><p class="res-header-id"><b>Generated Narrative: CapabilityStatement mii-cps-lungenfunktion-capabilitystatement</b></p><a name="mii-cps-lungenfunktion-capabilitystatement"> </a><a name="hcmii-cps-lungenfunktion-capabilitystatement"> </a><h2 id="title">MII CPS Lungenfunktion CapabilityStatement</h2><ul><li>Implementation Guide Version: 2027.0.0-ballot.rc1 </li><li>FHIR Version: 4.0.1 </li><li>Supported Formats: <code>xml</code>, <code>json</code></li><li>Published on: 2026-09-01 </li><li>Published by: Medizininformatik Initiative </li></ul><blockquote class="impl-note"><p><strong>Note to Implementers: FHIR Capabilities</strong></p><p>Any FHIR capability may be 'allowed' by the system unless explicitly marked as 'SHALL NOT'. A few items are marked as MAY in the Implementation Guide to highlight their potential relevance to the use case.</p></blockquote><h2 id="rest">FHIR RESTful Capabilities</h2><div class="panel panel-default"><div class="panel-heading"><h3 id="mode1" class="panel-title">Mode: <code>server</code></h3></div><div class="panel-body"/></div><h3 id="resourcesCap1">Capabilities by Resource/Profile</h3><h4 id="resourcesSummary1">Summary</h4><p>The summary table lists the resources that are part of this configuration, and for each resource it lists:</p><ul><li>The relevant profiles (if any)</li><li>The interactions supported by each resource (<b><span class="bg-info">R</span></b>ead, <b><span class="bg-info">S</span></b>earch, <b><span class="bg-info">U</span></b>pdate, and <b><span class="bg-info">C</span></b>reate, are always shown, while <b><span class="bg-info">VR</span></b>ead, <b><span class="bg-info">P</span></b>atch, <b><span class="bg-info">D</span></b>elete, <b><span class="bg-info">H</span></b>istory on <b><span class="bg-info">I</span></b>nstance, or <b><span class="bg-info">H</span></b>istory on <b><span class="bg-info">T</span></b>ype are only present if at least one of the resources has support for them.</li><li><span>The required, recommended, and some optional search parameters (if any). </span></li><li>The linked resources enabled for <code>_include</code></li><li>The other resources enabled for <code>_revinclude</code></li><li>The operations on the resource (if any)</li></ul><div class="table-responsive"><table class="table table-condensed table-hover"><thead><tr><th><b>Resource Type</b></th><th><b>Profile</b></th><th class="text-center"><b title="GET a resource (read interaction)">R</b></th><th class="text-center"><b title="GET all set of resources of the type (search interaction)">S</b></th><th class="text-center"><b title="PUT a new resource version (update interaction)">U</b></th><th class="text-center"><b title="POST a new resource (create interaction)">C</b></th><th><b title="Required and recommended search parameters">Searches</b></th><th><code><b>_include</b></code></th><th><code><b>_revinclude</b></code></th><th><b>Operations</b></th></tr></thead><tbody><tr><td><a href="#DiagnosticReport1-1">DiagnosticReport</a></td><td>Supported Profiles<br/>  <a href="StructureDefinition-mii-pr-lungenfunktion-befund.html">MII PR Lungenfunktion Templateversion: 2027.0.0-ballot.rc1)</a><br/>  <a href="StructureDefinition-mii-pr-lungenfunktion-bodyplethysmographie.html">MII PR Lungenfunktion Bodyplethysmographieversion: 2027.0.0-ballot.rc1)</a><br/>  <a href="StructureDefinition-mii-pr-lungenfunktion-diffusion.html">MII PR Lungenfunktion Diffusionversion: 2027.0.0-ballot.rc1)</a><br/>  <a href="StructureDefinition-mii-pr-lungenfunktion-spirometrie.html">MII PR Lungenfunktion Spirometrieversion: 2027.0.0-ballot.rc1)</a><br/>  <a href="StructureDefinition-mii-pr-lungenfunktion-provokationstest.html">MII PR Lungenfunktion Provokationstestversion: 2027.0.0-ballot.rc1)</a></td><td class="text-center"><span title="SHALL"><b>Y</b></span></td><td class="text-center"><span title="SHALL"><b>Y</b></span></td><td class="text-center"/><td class="text-center"/><td>_id, _lastUpdated, _profile, _source, status, category, code, patient, encounter, date, issued, result, conclusion-text, conclusion</td><td/><td/><td/></tr><tr><td><a href="#Procedure1-2">Procedure</a></td><td>Supported Profiles<br/>  <a href="StructureDefinition-mii-pr-lungenfunktion-spirometrie-messung.html">MII PR Lungenfunktion Spirometire Messungversion: 2027.0.0-ballot.rc1)</a><br/>  <a href="StructureDefinition-mii-pr-lungenfunktion-provokationstest-messung.html">MII PR Lungenfunktion Provokations Messungversion: 2027.0.0-ballot.rc1)</a><br/>  <a href="StructureDefinition-mii-pr-lungenfunktion-diffusion-messung.html">MII PR Lungenfunktion Diffusion Messungversion: 2027.0.0-ballot.rc1)</a><br/>  <a href="StructureDefinition-mii-pr-lungenfunktion-bodyplethysmographie-messung.html">MII PR Lungenfunktion Bodyplethysmographie Messungversion: 2027.0.0-ballot.rc1)</a></td><td class="text-center"><span title="SHALL"><b>Y</b></span></td><td class="text-center"><span title="SHALL"><b>Y</b></span></td><td class="text-center"/><td class="text-center"/><td>_id, _lastUpdated, _profile, _source, part-of, status, category, code, patient, date, outcome, report</td><td/><td/><td/></tr><tr><td><a href="#Observation1-3">Observation</a></td><td>Supported Profiles<br/>  <a href="StructureDefinition-mii-pr-lungenfunktion-gewicht.html">MII PR Lungenfunktion Gewichtversion: 2027.0.0-ballot.rc1)</a><br/>  <a href="StructureDefinition-mii-pr-lungenfunktion-volumen.html">MII PR Lungenfunktion Volumenversion: 2027.0.0-ballot.rc1)</a><br/>  <a href="StructureDefinition-mii-pr-lungenfunktion-viskositaet.html">MII PR Lungenfunktion Flussversion: 2027.0.0-ballot.rc1)</a><br/>  <a href="StructureDefinition-mii-pr-lungenfunktion-transferkoeffizient.html">MII PR Lungenfunktion Transferkoeffizientversion: 2027.0.0-ballot.rc1)</a><br/>  <a href="StructureDefinition-mii-pr-lungenfunktion-widerstand.html">MII PR Lungenfunktion Widerstandversion: 2027.0.0-ballot.rc1)</a><br/>  <a href="StructureDefinition-mii-pr-lungenfunktion-prozent.html">MII PR Lungenfunktion Prozentversion: 2027.0.0-ballot.rc1)</a><br/>  <a href="StructureDefinition-mii-pr-lungenfunktion-fluss.html">MII PR Lungenfunktion Flussversion: 2027.0.0-ballot.rc1)</a><br/>  <a href="StructureDefinition-mii-pr-lungenfunktion-diffusionskapazitaet.html">MII PR Lungenfunktion Flussversion: 2027.0.0-ballot.rc1)</a><br/>  <a href="StructureDefinition-mii-pr-lungenfunktion-1-viskositaet.html">MII PR Lungenfunktion 1/Viscosityversion: 2027.0.0-ballot.rc1)</a><br/>  <a href="StructureDefinition-mii-pr-lungenfunktion-frc.html">MII PR Lungenfunktion FRCversion: 2027.0.0-ballot.rc1)</a><br/>  <a href="StructureDefinition-mii-pr-lungenfunktion-r.html">MII PR Lungenfunktion Rversion: 2027.0.0-ballot.rc1)</a><br/>  <a href="StructureDefinition-mii-pr-lungenfunktion-rvl-tlc.html">MII PR Lungenfunktion Anteil Residualvolumen an Lungenkapazitätversion: 2027.0.0-ballot.rc1)</a><br/>  <a href="StructureDefinition-mii-pr-lungenfunktion-rvl.html">MII PR Lungenfunktion RVLversion: 2027.0.0-ballot.rc1)</a><br/>  <a href="StructureDefinition-mii-pr-lungenfunktion-sg-total.html">MII PR Lungenfunktion sG Totalversion: 2027.0.0-ballot.rc1)</a><br/>  <a href="StructureDefinition-mii-pr-lungenfunktion-r-effektiv.html">MII PR Lungenfunktion R Effektivversion: 2027.0.0-ballot.rc1)</a><br/>  <a href="StructureDefinition-mii-pr-lungenfunktion-r-spezifisch.html">MII PR Lungenfunktion R Spezifischversion: 2027.0.0-ballot.rc1)</a><br/>  <a href="StructureDefinition-mii-pr-lungenfunktion-tlc.html">MII PR Lungenfunktion TLCversion: 2027.0.0-ballot.rc1)</a><br/>  <a href="StructureDefinition-mii-pr-lungenfunktion-dlco.html">MII PR Lungenfunktion DLCOversion: 2027.0.0-ballot.rc1)</a><br/>  <a href="StructureDefinition-mii-pr-lungenfunktion-dlcoc.html">MII PR Lungenfunktion DLCOcversion: 2027.0.0-ballot.rc1)</a><br/>  <a href="StructureDefinition-mii-pr-lungenfunktion-hb.html">MII PR Lungenfunktion Hbversion: 2027.0.0-ballot.rc1)</a><br/>  <a href="StructureDefinition-mii-pr-lungenfunktion-kco.html">MII PR Lungenfunktion KCOversion: 2027.0.0-ballot.rc1)</a><br/>  <a href="StructureDefinition-mii-pr-lungenfunktion-kcoc.html">MII PR Lungenfunktion KCOcversion: 2027.0.0-ballot.rc1)</a><br/>  <code>https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-ta|2027.0.0-ballot</code><br/>  <a href="StructureDefinition-mii-pr-lungenfunktion-va.html">MII PR Lungenfunktion VAversion: 2027.0.0-ballot.rc1)</a><br/>  <a href="StructureDefinition-mii-pr-lungenfunktion-dosis.html">MII PR Lungenfunktion Dosisversion: 2027.0.0-ballot.rc1)</a><br/>  <a href="StructureDefinition-mii-pr-lungenfunktion-bf.html">MII PR Lungenfunktion BFversion: 2027.0.0-ballot.rc1)</a><br/>  <a href="StructureDefinition-mii-pr-lungenfunktion-fev-fvc.html">MII PR Lungenfunktion FEV/FVCversion: 2027.0.0-ballot.rc1)</a><br/>  <a href="StructureDefinition-mii-pr-lungenfunktion-fev.html">MII PR Lungenfunktion FEVversion: 2027.0.0-ballot.rc1)</a><br/>  <code>https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-fev1-vc|2027.0.0-ballot</code><br/>  <code>https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-fiv|2027.0.0-ballot</code><br/>  <a href="StructureDefinition-mii-pr-lungenfunktion-fvc.html">MII PR Lungenfunktion FVCversion: 2027.0.0-ballot.rc1)</a><br/>  <a href="StructureDefinition-mii-pr-lungenfunktion-ic.html">MII PR Lungenfunktion ICversion: 2027.0.0-ballot.rc1)</a><br/>  <a href="StructureDefinition-mii-pr-lungenfunktion-mef.html">MII PR Lungenfunktion MEFversion: 2027.0.0-ballot.rc1)</a><br/>  <a href="StructureDefinition-mii-pr-lungenfunktion-pef.html">MII PR Lungenfunktion PEFversion: 2027.0.0-ballot.rc1)</a><br/>  <a href="StructureDefinition-mii-pr-lungenfunktion-irv.html">MII PR Lungenfunktion RVversion: 2027.0.0-ballot.rc1)</a><br/>  <a href="StructureDefinition-mii-pr-lungenfunktion-vc.html">MII PR Lungenfunktion VCversion: 2027.0.0-ballot.rc1)</a><br/>  <a href="StructureDefinition-mii-pr-lungenfunktion-luftfeuchtigkeit.html">MII PR Lungenfunktion Luftfeuchtigkeitversion: 2027.0.0-ballot.rc1)</a><br/>  <a href="StructureDefinition-mii-pr-lungenfunktion-lufttemperatur.html">MII PR Lungenfunktion Lufttemperaturversion: 2027.0.0-ballot.rc1)</a><br/>  <a href="StructureDefinition-mii-pr-lungenfunktion-co2-konzentration.html">MII PR Lungenfunktion CO2 Konzentrationversion: 2027.0.0-ballot.rc1)</a></td><td class="text-center"><span title="SHALL"><b>Y</b></span></td><td class="text-center"><span title="SHALL"><b>Y</b></span></td><td class="text-center"/><td class="text-center"/><td>_id, _lastUpdated, _profile, _source, part-of, status, category, code, patient, issued, value-quantity, interpretation, method, reference-range-low, reference-range-high, reference-range, has-member, derived-from, code-value-quantity, combo-code, combo-code-value-quantity, combo-value-quantity, component-code, component-code-value-quantity, component-value-quantity</td><td/><td/><td/></tr><tr><td><a href="#MedicationAdministration1-4">MedicationAdministration</a></td><td>Supported Profiles<br/>  <a href="StructureDefinition-mii-pr-lungenfunktion-dosis-gabe.html">MII PR Lungenfunktion Dosisgabeversion: 2027.0.0-ballot.rc1)</a></td><td class="text-center"><span title="SHALL"><b>Y</b></span></td><td class="text-center"><span title="SHALL"><b>Y</b></span></td><td class="text-center"/><td class="text-center"/><td>_id, _lastUpdated, _profile, _source, part-of, medication, dose-quantity</td><td/><td/><td/></tr><tr><td><a href="#Medication1-5">Medication</a></td><td>Supported Profiles<br/>  <a href="StructureDefinition-mii-pr-lungenfunktion-methacholine.html">MII PR Lungenfunktion Methacholineversion: 2027.0.0-ballot.rc1)</a></td><td class="text-center"><span title="SHALL"><b>Y</b></span></td><td class="text-center"><span title="SHALL"><b>Y</b></span></td><td class="text-center"/><td class="text-center"/><td>_id, _lastUpdated, _profile, _source, code, ingredient-code, ingredient-strength, ingredient-strength-numerator, ingredient-strength-denominator</td><td/><td/><td/></tr><tr><td><a href="#Location1-6">Location</a></td><td>Supported Profiles<br/>  <a href="StructureDefinition-mii-pr-lungenfunktion-umgebung.html">MII PR Lungenfunktion Umgebungversion: 2027.0.0-ballot.rc1)</a></td><td class="text-center"><span title="SHALL"><b>Y</b></span></td><td class="text-center"><span title="SHALL"><b>Y</b></span></td><td class="text-center"/><td class="text-center"/><td>_id, _lastUpdated, _profile, _source, type</td><td/><td/><td/></tr></tbody></table></div><hr/><div class="panel panel-default"><div class="panel-heading"><h4 id="DiagnosticReport1-1" class="panel-title"><span style="float: right;">Resource Conformance: SHALL </span>DiagnosticReport</h4></div><div class="panel-body"><div class="container"><div class="row"><div class="col-lg-4"><span class="lead">Core FHIR Resource</span><br/><a href="http://hl7.org/fhir/R4/diagnosticreport.html">DiagnosticReport</a></div><div class="col-lg-4"><span class="lead">Reference Policy</span><br/></div><div class="col-lg-4"><span class="lead">Interaction summary</span><br/><ul><li><strong>SHALL</strong> support <code>read</code>, <code>search-type</code>.</li></ul></div></div><p/><div class="row"><div class="col-6"><span class="lead">Supported Profiles</span><p><a href="StructureDefinition-mii-pr-lungenfunktion-befund.html">MII PR Lungenfunktion Templateversion: 2027.0.0-ballot.rc1)</a><br/><a href="StructureDefinition-mii-pr-lungenfunktion-bodyplethysmographie.html">MII PR Lungenfunktion Bodyplethysmographieversion: 2027.0.0-ballot.rc1)</a><br/><a href="StructureDefinition-mii-pr-lungenfunktion-diffusion.html">MII PR Lungenfunktion Diffusionversion: 2027.0.0-ballot.rc1)</a><br/><a href="StructureDefinition-mii-pr-lungenfunktion-spirometrie.html">MII PR Lungenfunktion Spirometrieversion: 2027.0.0-ballot.rc1)</a><br/><a href="StructureDefinition-mii-pr-lungenfunktion-provokationstest.html">MII PR Lungenfunktion Provokationstestversion: 2027.0.0-ballot.rc1)</a></p></div></div><p/><div class="row"><div class="col-lg-7"><span class="lead">Search Parameters</span><table class="table table-condensed table-hover"><thead><tr><th>Conformance</th><th>Parameter</th><th>Type</th><th>Documentation</th></tr></thead><tbody><tr><td><b>SHALL</b></td><td><a href="http://hl7.org/fhir/R4/resource.html#search">_id</a></td><td><code>token</code></td><td><div/></td></tr><tr><td><b>SHALL</b></td><td><a href="http://hl7.org/fhir/R4/resource.html#search">_lastUpdated</a></td><td><code>date</code></td><td><div/></td></tr><tr><td><b>SHALL</b></td><td><a href="http://hl7.org/fhir/R4/resource.html#search">_profile</a></td><td><code>uri</code></td><td><div/></td></tr><tr><td><b>SHALL</b></td><td><a href="http://hl7.org/fhir/R4/resource.html#search">_source</a></td><td><code>uri</code></td><td><div/></td></tr><tr><td><b>SHALL</b></td><td><a href="http://hl7.org/fhir/R4/diagnosticreport.html#search">status</a></td><td><code>token</code></td><td><div/></td></tr><tr><td><b>SHALL</b></td><td><a href="http://hl7.org/fhir/R4/diagnosticreport.html#search">category</a></td><td><code>token</code></td><td><div/></td></tr><tr><td><b>SHALL</b></td><td><a href="http://hl7.org/fhir/R4/diagnosticreport.html#search">code</a></td><td><code>token</code></td><td><div/></td></tr><tr><td><b>SHALL</b></td><td><a href="http://hl7.org/fhir/R4/diagnosticreport.html#search">patient</a></td><td><code>reference</code></td><td><div/></td></tr><tr><td><b>SHALL</b></td><td><a href="http://hl7.org/fhir/R4/diagnosticreport.html#search">encounter</a></td><td><code>reference</code></td><td><div/></td></tr><tr><td><b>SHALL</b></td><td><a href="http://hl7.org/fhir/R4/diagnosticreport.html#search">date</a></td><td><code>date</code></td><td><div/></td></tr><tr><td><b>SHALL</b></td><td><a href="http://hl7.org/fhir/R4/diagnosticreport.html#search">issued</a></td><td><code>date</code></td><td><div/></td></tr><tr><td><b>SHALL</b></td><td><a href="http://hl7.org/fhir/R4/diagnosticreport.html#search">result</a></td><td><code>reference</code></td><td><div/></td></tr><tr><td><b>SHALL</b></td><td><a href="https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.meta@2026.0.0&amp;canonical=https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-diagnostic-report-conclusion">conclusion-text</a></td><td><code>string</code></td><td><div/></td></tr><tr><td><b>SHALL</b></td><td><a href="http://hl7.org/fhir/R4/diagnosticreport.html#search">conclusion</a></td><td><code>token</code></td><td><div/></td></tr></tbody></table></div><div class="col-lg-5"> </div></div></div></div></div><div class="panel panel-default"><div class="panel-heading"><h4 id="Procedure1-2" class="panel-title"><span style="float: right;">Resource Conformance: SHALL </span>Procedure</h4></div><div class="panel-body"><div class="container"><div class="row"><div class="col-lg-4"><span class="lead">Core FHIR Resource</span><br/><a href="http://hl7.org/fhir/R4/procedure.html">Procedure</a></div><div class="col-lg-4"><span class="lead">Reference Policy</span><br/></div><div class="col-lg-4"><span class="lead">Interaction summary</span><br/><ul><li><strong>SHALL</strong> support <code>read</code>, <code>search-type</code>.</li></ul></div></div><p/><div class="row"><div class="col-6"><span class="lead">Supported Profiles</span><p><a href="StructureDefinition-mii-pr-lungenfunktion-spirometrie-messung.html">MII PR Lungenfunktion Spirometire Messungversion: 2027.0.0-ballot.rc1)</a><br/><a href="StructureDefinition-mii-pr-lungenfunktion-provokationstest-messung.html">MII PR Lungenfunktion Provokations Messungversion: 2027.0.0-ballot.rc1)</a><br/><a href="StructureDefinition-mii-pr-lungenfunktion-diffusion-messung.html">MII PR Lungenfunktion Diffusion Messungversion: 2027.0.0-ballot.rc1)</a><br/><a href="StructureDefinition-mii-pr-lungenfunktion-bodyplethysmographie-messung.html">MII PR Lungenfunktion Bodyplethysmographie Messungversion: 2027.0.0-ballot.rc1)</a></p></div></div><p/><div class="row"><div class="col-lg-7"><span class="lead">Search Parameters</span><table class="table table-condensed table-hover"><thead><tr><th>Conformance</th><th>Parameter</th><th>Type</th><th>Documentation</th></tr></thead><tbody><tr><td><b>SHALL</b></td><td><a href="http://hl7.org/fhir/R4/resource.html#search">_id</a></td><td><code>token</code></td><td><div/></td></tr><tr><td><b>SHALL</b></td><td><a href="http://hl7.org/fhir/R4/resource.html#search">_lastUpdated</a></td><td><code>date</code></td><td><div/></td></tr><tr><td><b>SHALL</b></td><td><a href="http://hl7.org/fhir/R4/resource.html#search">_profile</a></td><td><code>uri</code></td><td><div/></td></tr><tr><td><b>SHALL</b></td><td><a href="http://hl7.org/fhir/R4/resource.html#search">_source</a></td><td><code>uri</code></td><td><div/></td></tr><tr><td><b>SHALL</b></td><td><a href="http://hl7.org/fhir/R4/procedure.html#search">part-of</a></td><td><code>reference</code></td><td><div/></td></tr><tr><td><b>SHALL</b></td><td><a href="http://hl7.org/fhir/R4/procedure.html#search">status</a></td><td><code>token</code></td><td><div/></td></tr><tr><td><b>SHALL</b></td><td><a href="http://hl7.org/fhir/R4/procedure.html#search">category</a></td><td><code>token</code></td><td><div/></td></tr><tr><td><b>SHALL</b></td><td><a href="http://hl7.org/fhir/R4/procedure.html#search">code</a></td><td><code>token</code></td><td><div/></td></tr><tr><td><b>SHALL</b></td><td><a href="http://hl7.org/fhir/R4/procedure.html#search">patient</a></td><td><code>reference</code></td><td><div/></td></tr><tr><td><b>SHALL</b></td><td><a href="http://hl7.org/fhir/R4/procedure.html#search">date</a></td><td><code>date</code></td><td><div/></td></tr><tr><td><b>SHALL</b></td><td><a href="https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.meta@2026.0.0&amp;canonical=https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-procedure-outcome">outcome</a></td><td><code>token</code></td><td><div/></td></tr><tr><td><b>SHALL</b></td><td><a href="https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.meta@2026.0.0&amp;canonical=https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-read-proc-report">report</a></td><td><code>reference</code></td><td><div/></td></tr></tbody></table></div><div class="col-lg-5"> </div></div></div></div></div><div class="panel panel-default"><div class="panel-heading"><h4 id="Observation1-3" class="panel-title"><span style="float: right;">Resource Conformance: SHALL </span>Observation</h4></div><div class="panel-body"><div class="container"><div class="row"><div class="col-lg-4"><span class="lead">Core FHIR Resource</span><br/><a href="http://hl7.org/fhir/R4/observation.html">Observation</a></div><div class="col-lg-4"><span class="lead">Reference Policy</span><br/></div><div class="col-lg-4"><span class="lead">Interaction summary</span><br/><ul><li><strong>SHALL</strong> support <code>read</code>, <code>search-type</code>.</li></ul></div></div><p/><div class="row"><div class="col-6"><span class="lead">Supported Profiles</span><p><a href="StructureDefinition-mii-pr-lungenfunktion-gewicht.html">MII PR Lungenfunktion Gewichtversion: 2027.0.0-ballot.rc1)</a><br/><a href="StructureDefinition-mii-pr-lungenfunktion-volumen.html">MII PR Lungenfunktion Volumenversion: 2027.0.0-ballot.rc1)</a><br/><a href="StructureDefinition-mii-pr-lungenfunktion-viskositaet.html">MII PR Lungenfunktion Flussversion: 2027.0.0-ballot.rc1)</a><br/><a href="StructureDefinition-mii-pr-lungenfunktion-transferkoeffizient.html">MII PR Lungenfunktion Transferkoeffizientversion: 2027.0.0-ballot.rc1)</a><br/><a href="StructureDefinition-mii-pr-lungenfunktion-widerstand.html">MII PR Lungenfunktion Widerstandversion: 2027.0.0-ballot.rc1)</a><br/><a href="StructureDefinition-mii-pr-lungenfunktion-prozent.html">MII PR Lungenfunktion Prozentversion: 2027.0.0-ballot.rc1)</a><br/><a href="StructureDefinition-mii-pr-lungenfunktion-fluss.html">MII PR Lungenfunktion Flussversion: 2027.0.0-ballot.rc1)</a><br/><a href="StructureDefinition-mii-pr-lungenfunktion-diffusionskapazitaet.html">MII PR Lungenfunktion Flussversion: 2027.0.0-ballot.rc1)</a><br/><a href="StructureDefinition-mii-pr-lungenfunktion-1-viskositaet.html">MII PR Lungenfunktion 1/Viscosityversion: 2027.0.0-ballot.rc1)</a><br/><a href="StructureDefinition-mii-pr-lungenfunktion-frc.html">MII PR Lungenfunktion FRCversion: 2027.0.0-ballot.rc1)</a><br/><a href="StructureDefinition-mii-pr-lungenfunktion-r.html">MII PR Lungenfunktion Rversion: 2027.0.0-ballot.rc1)</a><br/><a href="StructureDefinition-mii-pr-lungenfunktion-rvl-tlc.html">MII PR Lungenfunktion Anteil Residualvolumen an Lungenkapazitätversion: 2027.0.0-ballot.rc1)</a><br/><a href="StructureDefinition-mii-pr-lungenfunktion-rvl.html">MII PR Lungenfunktion RVLversion: 2027.0.0-ballot.rc1)</a><br/><a href="StructureDefinition-mii-pr-lungenfunktion-sg-total.html">MII PR Lungenfunktion sG Totalversion: 2027.0.0-ballot.rc1)</a><br/><a href="StructureDefinition-mii-pr-lungenfunktion-r-effektiv.html">MII PR Lungenfunktion R Effektivversion: 2027.0.0-ballot.rc1)</a><br/><a href="StructureDefinition-mii-pr-lungenfunktion-r-spezifisch.html">MII PR Lungenfunktion R Spezifischversion: 2027.0.0-ballot.rc1)</a><br/><a href="StructureDefinition-mii-pr-lungenfunktion-tlc.html">MII PR Lungenfunktion TLCversion: 2027.0.0-ballot.rc1)</a><br/><a href="StructureDefinition-mii-pr-lungenfunktion-dlco.html">MII PR Lungenfunktion DLCOversion: 2027.0.0-ballot.rc1)</a><br/><a href="StructureDefinition-mii-pr-lungenfunktion-dlcoc.html">MII PR Lungenfunktion DLCOcversion: 2027.0.0-ballot.rc1)</a><br/><a href="StructureDefinition-mii-pr-lungenfunktion-hb.html">MII PR Lungenfunktion Hbversion: 2027.0.0-ballot.rc1)</a><br/><a href="StructureDefinition-mii-pr-lungenfunktion-kco.html">MII PR Lungenfunktion KCOversion: 2027.0.0-ballot.rc1)</a><br/><a href="StructureDefinition-mii-pr-lungenfunktion-kcoc.html">MII PR Lungenfunktion KCOcversion: 2027.0.0-ballot.rc1)</a><br/><code>https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-ta|2027.0.0-ballot</code><br/><a href="StructureDefinition-mii-pr-lungenfunktion-va.html">MII PR Lungenfunktion VAversion: 2027.0.0-ballot.rc1)</a><br/><a href="StructureDefinition-mii-pr-lungenfunktion-dosis.html">MII PR Lungenfunktion Dosisversion: 2027.0.0-ballot.rc1)</a><br/><a href="StructureDefinition-mii-pr-lungenfunktion-bf.html">MII PR Lungenfunktion BFversion: 2027.0.0-ballot.rc1)</a><br/><a href="StructureDefinition-mii-pr-lungenfunktion-fev-fvc.html">MII PR Lungenfunktion FEV/FVCversion: 2027.0.0-ballot.rc1)</a><br/><a href="StructureDefinition-mii-pr-lungenfunktion-fev.html">MII PR Lungenfunktion FEVversion: 2027.0.0-ballot.rc1)</a><br/><code>https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-fev1-vc|2027.0.0-ballot</code><br/><code>https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-fiv|2027.0.0-ballot</code><br/><a href="StructureDefinition-mii-pr-lungenfunktion-fvc.html">MII PR Lungenfunktion FVCversion: 2027.0.0-ballot.rc1)</a><br/><a href="StructureDefinition-mii-pr-lungenfunktion-ic.html">MII PR Lungenfunktion ICversion: 2027.0.0-ballot.rc1)</a><br/><a href="StructureDefinition-mii-pr-lungenfunktion-mef.html">MII PR Lungenfunktion MEFversion: 2027.0.0-ballot.rc1)</a><br/><a href="StructureDefinition-mii-pr-lungenfunktion-pef.html">MII PR Lungenfunktion PEFversion: 2027.0.0-ballot.rc1)</a><br/><a href="StructureDefinition-mii-pr-lungenfunktion-irv.html">MII PR Lungenfunktion RVversion: 2027.0.0-ballot.rc1)</a><br/><a href="StructureDefinition-mii-pr-lungenfunktion-vc.html">MII PR Lungenfunktion VCversion: 2027.0.0-ballot.rc1)</a><br/><a href="StructureDefinition-mii-pr-lungenfunktion-luftfeuchtigkeit.html">MII PR Lungenfunktion Luftfeuchtigkeitversion: 2027.0.0-ballot.rc1)</a><br/><a href="StructureDefinition-mii-pr-lungenfunktion-lufttemperatur.html">MII PR Lungenfunktion Lufttemperaturversion: 2027.0.0-ballot.rc1)</a><br/><a href="StructureDefinition-mii-pr-lungenfunktion-co2-konzentration.html">MII PR Lungenfunktion CO2 Konzentrationversion: 2027.0.0-ballot.rc1)</a></p></div></div><p/><div class="row"><div class="col-lg-7"><span class="lead">Search Parameters</span><table class="table table-condensed table-hover"><thead><tr><th>Conformance</th><th>Parameter</th><th>Type</th><th>Documentation</th></tr></thead><tbody><tr><td><b>SHALL</b></td><td><a href="http://hl7.org/fhir/R4/resource.html#search">_id</a></td><td><code>token</code></td><td><div/></td></tr><tr><td><b>SHALL</b></td><td><a href="http://hl7.org/fhir/R4/resource.html#search">_lastUpdated</a></td><td><code>date</code></td><td><div/></td></tr><tr><td><b>SHALL</b></td><td><a href="http://hl7.org/fhir/R4/resource.html#search">_profile</a></td><td><code>uri</code></td><td><div/></td></tr><tr><td><b>SHALL</b></td><td><a href="http://hl7.org/fhir/R4/resource.html#search">_source</a></td><td><code>uri</code></td><td><div/></td></tr><tr><td><b>SHALL</b></td><td><a href="http://hl7.org/fhir/R4/observation.html#search">part-of</a></td><td><code>reference</code></td><td><div/></td></tr><tr><td><b>SHALL</b></td><td><a href="http://hl7.org/fhir/R4/observation.html#search">status</a></td><td><code>token</code></td><td><div/></td></tr><tr><td><b>SHALL</b></td><td><a href="http://hl7.org/fhir/R4/observation.html#search">category</a></td><td><code>token</code></td><td><div/></td></tr><tr><td><b>SHALL</b></td><td><a href="http://hl7.org/fhir/R4/observation.html#search">code</a></td><td><code>token</code></td><td><div/></td></tr><tr><td><b>SHALL</b></td><td><a href="http://hl7.org/fhir/R4/observation.html#search">patient</a></td><td><code>reference</code></td><td><div/></td></tr><tr><td><b>SHALL</b></td><td><a href="https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.meta@2026.0.0&amp;canonical=https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-observation-issued">issued</a></td><td><code>date</code></td><td><div/></td></tr><tr><td><b>SHALL</b></td><td><a href="http://hl7.org/fhir/R4/observation.html#search">value-quantity</a></td><td><code>quantity</code></td><td><div/></td></tr><tr><td><b>SHALL</b></td><td><a href="https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.meta@2026.0.0&amp;canonical=https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-observation-interpretation">interpretation</a></td><td><code>token</code></td><td><div/></td></tr><tr><td><b>SHALL</b></td><td><a href="http://hl7.org/fhir/R4/observation.html#search">method</a></td><td><code>token</code></td><td><div/></td></tr><tr><td><b>SHALL</b></td><td><a href="https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.meta@2026.0.0&amp;canonical=https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-observation-referencerange-low">reference-range-low</a></td><td><code>quantity</code></td><td><div/></td></tr><tr><td><b>SHALL</b></td><td><a href="https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.meta@2026.0.0&amp;canonical=https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-observation-referencerange-high">reference-range-high</a></td><td><code>quantity</code></td><td><div/></td></tr><tr><td><b>SHALL</b></td><td><a href="https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.meta@2026.0.0&amp;canonical=https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-observation-referencerange">reference-range</a></td><td><code>composite</code></td><td><div/></td></tr><tr><td><b>SHALL</b></td><td><a href="http://hl7.org/fhir/R4/observation.html#search">has-member</a></td><td><code>reference</code></td><td><div/></td></tr><tr><td><b>SHALL</b></td><td><a href="http://hl7.org/fhir/R4/observation.html#search">derived-from</a></td><td><code>reference</code></td><td><div/></td></tr><tr><td><b>SHALL</b></td><td><a href="http://hl7.org/fhir/R4/observation.html#search">code-value-quantity</a></td><td><code>composite</code></td><td><div/></td></tr><tr><td><b>SHALL</b></td><td><a href="http://hl7.org/fhir/R4/observation.html#search">combo-code</a></td><td><code>token</code></td><td><div/></td></tr><tr><td><b>SHALL</b></td><td><a href="http://hl7.org/fhir/R4/observation.html#search">combo-code-value-quantity</a></td><td><code>composite</code></td><td><div/></td></tr><tr><td><b>SHALL</b></td><td><a href="http://hl7.org/fhir/R4/observation.html#search">combo-value-quantity</a></td><td><code>quantity</code></td><td><div/></td></tr><tr><td><b>SHALL</b></td><td><a href="http://hl7.org/fhir/R4/observation.html#search">component-code</a></td><td><code>token</code></td><td><div/></td></tr><tr><td><b>SHALL</b></td><td><a href="http://hl7.org/fhir/R4/observation.html#search">component-code-value-quantity</a></td><td><code>composite</code></td><td><div/></td></tr><tr><td><b>SHALL</b></td><td><a href="http://hl7.org/fhir/R4/observation.html#search">component-value-quantity</a></td><td><code>quantity</code></td><td><div/></td></tr></tbody></table></div><div class="col-lg-5"> </div></div></div></div></div><div class="panel panel-default"><div class="panel-heading"><h4 id="MedicationAdministration1-4" class="panel-title"><span style="float: right;">Resource Conformance: SHALL </span>MedicationAdministration</h4></div><div class="panel-body"><div class="container"><div class="row"><div class="col-lg-4"><span class="lead">Core FHIR Resource</span><br/><a href="http://hl7.org/fhir/R4/medicationadministration.html">MedicationAdministration</a></div><div class="col-lg-4"><span class="lead">Reference Policy</span><br/></div><div class="col-lg-4"><span class="lead">Interaction summary</span><br/><ul><li><strong>SHALL</strong> support <code>read</code>, <code>search-type</code>.</li></ul></div></div><p/><div class="row"><div class="col-6"><span class="lead">Supported Profiles</span><p><a href="StructureDefinition-mii-pr-lungenfunktion-dosis-gabe.html">MII PR Lungenfunktion Dosisgabeversion: 2027.0.0-ballot.rc1)</a></p></div></div><p/><div class="row"><div class="col-lg-7"><span class="lead">Search Parameters</span><table class="table table-condensed table-hover"><thead><tr><th>Conformance</th><th>Parameter</th><th>Type</th><th>Documentation</th></tr></thead><tbody><tr><td><b>SHALL</b></td><td><a href="http://hl7.org/fhir/R4/resource.html#search">_id</a></td><td><code>token</code></td><td><div/></td></tr><tr><td><b>SHALL</b></td><td><a href="http://hl7.org/fhir/R4/resource.html#search">_lastUpdated</a></td><td><code>date</code></td><td><div/></td></tr><tr><td><b>SHALL</b></td><td><a href="http://hl7.org/fhir/R4/resource.html#search">_profile</a></td><td><code>uri</code></td><td><div/></td></tr><tr><td><b>SHALL</b></td><td><a href="http://hl7.org/fhir/R4/resource.html#search">_source</a></td><td><code>uri</code></td><td><div/></td></tr><tr><td><b>SHALL</b></td><td><a href="https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.meta@2026.0.0&amp;canonical=https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-medication-partof">part-of</a></td><td><code>reference</code></td><td><div/></td></tr><tr><td><b>SHALL</b></td><td>medication</td><td><code>reference</code></td><td><div/></td></tr><tr><td><b>SHALL</b></td><td><a href="https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.meta@2026.0.0&amp;canonical=https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-medication-dosage-dosequantity">dose-quantity</a></td><td><code>quantity</code></td><td><div/></td></tr></tbody></table></div><div class="col-lg-5"> </div></div></div></div></div><div class="panel panel-default"><div class="panel-heading"><h4 id="Medication1-5" class="panel-title"><span style="float: right;">Resource Conformance: SHALL </span>Medication</h4></div><div class="panel-body"><div class="container"><div class="row"><div class="col-lg-4"><span class="lead">Core FHIR Resource</span><br/><a href="http://hl7.org/fhir/R4/medication.html">Medication</a></div><div class="col-lg-4"><span class="lead">Reference Policy</span><br/></div><div class="col-lg-4"><span class="lead">Interaction summary</span><br/><ul><li><strong>SHALL</strong> support <code>read</code>, <code>search-type</code>.</li></ul></div></div><p/><div class="row"><div class="col-6"><span class="lead">Supported Profiles</span><p><a href="StructureDefinition-mii-pr-lungenfunktion-methacholine.html">MII PR Lungenfunktion Methacholineversion: 2027.0.0-ballot.rc1)</a></p></div></div><p/><div class="row"><div class="col-lg-7"><span class="lead">Search Parameters</span><table class="table table-condensed table-hover"><thead><tr><th>Conformance</th><th>Parameter</th><th>Type</th><th>Documentation</th></tr></thead><tbody><tr><td><b>SHALL</b></td><td><a href="http://hl7.org/fhir/R4/resource.html#search">_id</a></td><td><code>token</code></td><td><div/></td></tr><tr><td><b>SHALL</b></td><td><a href="http://hl7.org/fhir/R4/resource.html#search">_lastUpdated</a></td><td><code>date</code></td><td><div/></td></tr><tr><td><b>SHALL</b></td><td><a href="http://hl7.org/fhir/R4/resource.html#search">_profile</a></td><td><code>uri</code></td><td><div/></td></tr><tr><td><b>SHALL</b></td><td><a href="http://hl7.org/fhir/R4/resource.html#search">_source</a></td><td><code>uri</code></td><td><div/></td></tr><tr><td><b>SHALL</b></td><td>code</td><td><code>token</code></td><td><div/></td></tr><tr><td><b>SHALL</b></td><td><a href="http://hl7.org/fhir/R4/medication.html#search">ingredient-code</a></td><td><code>token</code></td><td><div/></td></tr><tr><td><b>SHALL</b></td><td><a href="https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.meta@2026.0.0&amp;canonical=https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-medication-ingredient-strength">ingredient-strength</a></td><td><code>composite</code></td><td><div/></td></tr><tr><td><b>SHALL</b></td><td><a href="https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.meta@2026.0.0&amp;canonical=https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-medication-ingredient-strength-numerator">ingredient-strength-numerator</a></td><td><code>quantity</code></td><td><div/></td></tr><tr><td><b>SHALL</b></td><td><a href="https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.meta@2026.0.0&amp;canonical=https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-medication-ingredient-strength-denominator">ingredient-strength-denominator</a></td><td><code>quantity</code></td><td><div/></td></tr></tbody></table></div><div class="col-lg-5"> </div></div></div></div></div><div class="panel panel-default"><div class="panel-heading"><h4 id="Location1-6" class="panel-title"><span style="float: right;">Resource Conformance: SHALL </span>Location</h4></div><div class="panel-body"><div class="container"><div class="row"><div class="col-lg-4"><span class="lead">Core FHIR Resource</span><br/><a href="http://hl7.org/fhir/R4/location.html">Location</a></div><div class="col-lg-4"><span class="lead">Reference Policy</span><br/></div><div class="col-lg-4"><span class="lead">Interaction summary</span><br/><ul><li><strong>SHALL</strong> support <code>read</code>, <code>search-type</code>.</li></ul></div></div><p/><div class="row"><div class="col-6"><span class="lead">Supported Profiles</span><p><a href="StructureDefinition-mii-pr-lungenfunktion-umgebung.html">MII PR Lungenfunktion Umgebungversion: 2027.0.0-ballot.rc1)</a></p></div></div><p/><div class="row"><div class="col-lg-7"><span class="lead">Search Parameters</span><table class="table table-condensed table-hover"><thead><tr><th>Conformance</th><th>Parameter</th><th>Type</th><th>Documentation</th></tr></thead><tbody><tr><td><b>SHALL</b></td><td><a href="http://hl7.org/fhir/R4/resource.html#search">_id</a></td><td><code>token</code></td><td><div/></td></tr><tr><td><b>SHALL</b></td><td><a href="http://hl7.org/fhir/R4/resource.html#search">_lastUpdated</a></td><td><code>date</code></td><td><div/></td></tr><tr><td><b>SHALL</b></td><td><a href="http://hl7.org/fhir/R4/resource.html#search">_profile</a></td><td><code>uri</code></td><td><div/></td></tr><tr><td><b>SHALL</b></td><td><a href="http://hl7.org/fhir/R4/resource.html#search">_source</a></td><td><code>uri</code></td><td><div/></td></tr><tr><td><b>SHALL</b></td><td><a href="http://hl7.org/fhir/R4/location.html#search">type</a></td><td><code>token</code></td><td><div/></td></tr></tbody></table></div><div class="col-lg-5"> </div></div></div></div></div></div><div xml:lang="de" lang="de"><hr/><p><b>German</b></p><hr/><p class="res-header-id"><b>Generated Narrative: CapabilityStatement mii-cps-lungenfunktion-capabilitystatement</b></p><a name="de-mii-cps-lungenfunktion-capabilitystatement"> </a><a name="de-hcmii-cps-lungenfunktion-capabilitystatement"> </a><h2 id="de-title">MII CPS Lungenfunktion CapabilityStatement</h2><ul><li>Implementation Guide Version: 2027.0.0-ballot.rc1 </li><li>FHIR Version: 4.0.1 </li><li>Supported Formats: <code>xml</code>, <code>json</code></li><li>Published on: 2026-09-01 </li><li>Published by: Medizininformatik Initiative </li></ul><blockquote class="impl-note"><p><strong>Note to Implementers: FHIR Capabilities</strong></p><p>Any FHIR capability may be 'allowed' by the system unless explicitly marked as 'SHALL NOT'. A few items are marked as MAY in the Implementation Guide to highlight their potential relevance to the use case.</p></blockquote><h2 id="de-rest">FHIR RESTful Capabilities</h2><div class="panel panel-default"><div class="panel-heading"><h3 id="de-mode1" class="panel-title">Mode: <code>server</code></h3></div><div class="panel-body"/></div><h3 id="de-resourcesCap1">Capabilities by Resource/Profile</h3><h4 id="de-resourcesSummary1">Summary</h4><p>The summary table lists the resources that are part of this configuration, and for each resource it lists:</p><ul><li>The relevant profiles (if any)</li><li>The interactions supported by each resource (<b><span class="bg-info">R</span></b>ead, <b><span class="bg-info">S</span></b>earch, <b><span class="bg-info">U</span></b>pdate, and <b><span class="bg-info">C</span></b>reate, are always shown, while <b><span class="bg-info">VR</span></b>ead, <b><span class="bg-info">P</span></b>atch, <b><span class="bg-info">D</span></b>elete, <b><span class="bg-info">H</span></b>istory on <b><span class="bg-info">I</span></b>nstance, or <b><span class="bg-info">H</span></b>istory on <b><span class="bg-info">T</span></b>ype are only present if at least one of the resources has support for them.</li><li><span>The required, recommended, and some optional search parameters (if any). </span></li><li>The linked resources enabled for <code>_include</code></li><li>The other resources enabled for <code>_revinclude</code></li><li>The operations on the resource (if any)</li></ul><div class="table-responsive"><table class="table table-condensed table-hover"><thead><tr><th><b>Resource Type</b></th><th><b>Profile</b></th><th class="text-center"><b title="GET a resource (read interaction)">R</b></th><th class="text-center"><b title="GET all set of resources of the type (search interaction)">S</b></th><th class="text-center"><b title="PUT a new resource version (update interaction)">U</b></th><th class="text-center"><b title="POST a new resource (create interaction)">C</b></th><th><b title="Required and recommended search parameters">Searches</b></th><th><code><b>_include</b></code></th><th><code><b>_revinclude</b></code></th><th><b>Operations</b></th></tr></thead><tbody><tr><td><a href="#de-DiagnosticReport1-1">DiagnosticReport</a></td><td>Supported Profiles<br/>  <a href="StructureDefinition-mii-pr-lungenfunktion-befund.html">MII PR Lungenfunktion Templateversion: 2027.0.0-ballot.rc1)</a><br/>  <a href="StructureDefinition-mii-pr-lungenfunktion-bodyplethysmographie.html">MII PR Lungenfunktion Bodyplethysmographieversion: 2027.0.0-ballot.rc1)</a><br/>  <a href="StructureDefinition-mii-pr-lungenfunktion-diffusion.html">MII PR Lungenfunktion Diffusionversion: 2027.0.0-ballot.rc1)</a><br/>  <a href="StructureDefinition-mii-pr-lungenfunktion-spirometrie.html">MII PR Lungenfunktion Spirometrieversion: 2027.0.0-ballot.rc1)</a><br/>  <a href="StructureDefinition-mii-pr-lungenfunktion-provokationstest.html">MII PR Lungenfunktion Provokationstestversion: 2027.0.0-ballot.rc1)</a></td><td class="text-center"><span title="SHALL"><b>Y</b></span></td><td class="text-center"><span title="SHALL"><b>Y</b></span></td><td class="text-center"/><td class="text-center"/><td>_id, _lastUpdated, _profile, _source, status, category, code, patient, encounter, date, issued, result, conclusion-text, conclusion</td><td/><td/><td/></tr><tr><td><a href="#de-Procedure1-2">Procedure</a></td><td>Supported Profiles<br/>  <a href="StructureDefinition-mii-pr-lungenfunktion-spirometrie-messung.html">MII PR Lungenfunktion Spirometire Messungversion: 2027.0.0-ballot.rc1)</a><br/>  <a href="StructureDefinition-mii-pr-lungenfunktion-provokationstest-messung.html">MII PR Lungenfunktion Provokations Messungversion: 2027.0.0-ballot.rc1)</a><br/>  <a href="StructureDefinition-mii-pr-lungenfunktion-diffusion-messung.html">MII PR Lungenfunktion Diffusion Messungversion: 2027.0.0-ballot.rc1)</a><br/>  <a href="StructureDefinition-mii-pr-lungenfunktion-bodyplethysmographie-messung.html">MII PR Lungenfunktion Bodyplethysmographie Messungversion: 2027.0.0-ballot.rc1)</a></td><td class="text-center"><span title="SHALL"><b>Y</b></span></td><td class="text-center"><span title="SHALL"><b>Y</b></span></td><td class="text-center"/><td class="text-center"/><td>_id, _lastUpdated, _profile, _source, part-of, status, category, code, patient, date, outcome, report</td><td/><td/><td/></tr><tr><td><a href="#de-Observation1-3">Observation</a></td><td>Supported Profiles<br/>  <a href="StructureDefinition-mii-pr-lungenfunktion-gewicht.html">MII PR Lungenfunktion Gewichtversion: 2027.0.0-ballot.rc1)</a><br/>  <a href="StructureDefinition-mii-pr-lungenfunktion-volumen.html">MII PR Lungenfunktion Volumenversion: 2027.0.0-ballot.rc1)</a><br/>  <a href="StructureDefinition-mii-pr-lungenfunktion-viskositaet.html">MII PR Lungenfunktion Flussversion: 2027.0.0-ballot.rc1)</a><br/>  <a href="StructureDefinition-mii-pr-lungenfunktion-transferkoeffizient.html">MII PR Lungenfunktion Transferkoeffizientversion: 2027.0.0-ballot.rc1)</a><br/>  <a href="StructureDefinition-mii-pr-lungenfunktion-widerstand.html">MII PR Lungenfunktion Widerstandversion: 2027.0.0-ballot.rc1)</a><br/>  <a href="StructureDefinition-mii-pr-lungenfunktion-prozent.html">MII PR Lungenfunktion Prozentversion: 2027.0.0-ballot.rc1)</a><br/>  <a href="StructureDefinition-mii-pr-lungenfunktion-fluss.html">MII PR Lungenfunktion Flussversion: 2027.0.0-ballot.rc1)</a><br/>  <a href="StructureDefinition-mii-pr-lungenfunktion-diffusionskapazitaet.html">MII PR Lungenfunktion Flussversion: 2027.0.0-ballot.rc1)</a><br/>  <a href="StructureDefinition-mii-pr-lungenfunktion-1-viskositaet.html">MII PR Lungenfunktion 1/Viscosityversion: 2027.0.0-ballot.rc1)</a><br/>  <a href="StructureDefinition-mii-pr-lungenfunktion-frc.html">MII PR Lungenfunktion FRCversion: 2027.0.0-ballot.rc1)</a><br/>  <a href="StructureDefinition-mii-pr-lungenfunktion-r.html">MII PR Lungenfunktion Rversion: 2027.0.0-ballot.rc1)</a><br/>  <a href="StructureDefinition-mii-pr-lungenfunktion-rvl-tlc.html">MII PR Lungenfunktion Anteil Residualvolumen an Lungenkapazitätversion: 2027.0.0-ballot.rc1)</a><br/>  <a href="StructureDefinition-mii-pr-lungenfunktion-rvl.html">MII PR Lungenfunktion RVLversion: 2027.0.0-ballot.rc1)</a><br/>  <a href="StructureDefinition-mii-pr-lungenfunktion-sg-total.html">MII PR Lungenfunktion sG Totalversion: 2027.0.0-ballot.rc1)</a><br/>  <a href="StructureDefinition-mii-pr-lungenfunktion-r-effektiv.html">MII PR Lungenfunktion R Effektivversion: 2027.0.0-ballot.rc1)</a><br/>  <a href="StructureDefinition-mii-pr-lungenfunktion-r-spezifisch.html">MII PR Lungenfunktion R Spezifischversion: 2027.0.0-ballot.rc1)</a><br/>  <a href="StructureDefinition-mii-pr-lungenfunktion-tlc.html">MII PR Lungenfunktion TLCversion: 2027.0.0-ballot.rc1)</a><br/>  <a href="StructureDefinition-mii-pr-lungenfunktion-dlco.html">MII PR Lungenfunktion DLCOversion: 2027.0.0-ballot.rc1)</a><br/>  <a href="StructureDefinition-mii-pr-lungenfunktion-dlcoc.html">MII PR Lungenfunktion DLCOcversion: 2027.0.0-ballot.rc1)</a><br/>  <a href="StructureDefinition-mii-pr-lungenfunktion-hb.html">MII PR Lungenfunktion Hbversion: 2027.0.0-ballot.rc1)</a><br/>  <a href="StructureDefinition-mii-pr-lungenfunktion-kco.html">MII PR Lungenfunktion KCOversion: 2027.0.0-ballot.rc1)</a><br/>  <a href="StructureDefinition-mii-pr-lungenfunktion-kcoc.html">MII PR Lungenfunktion KCOcversion: 2027.0.0-ballot.rc1)</a><br/>  <code>https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-ta|2027.0.0-ballot</code><br/>  <a href="StructureDefinition-mii-pr-lungenfunktion-va.html">MII PR Lungenfunktion VAversion: 2027.0.0-ballot.rc1)</a><br/>  <a href="StructureDefinition-mii-pr-lungenfunktion-dosis.html">MII PR Lungenfunktion Dosisversion: 2027.0.0-ballot.rc1)</a><br/>  <a href="StructureDefinition-mii-pr-lungenfunktion-bf.html">MII PR Lungenfunktion BFversion: 2027.0.0-ballot.rc1)</a><br/>  <a href="StructureDefinition-mii-pr-lungenfunktion-fev-fvc.html">MII PR Lungenfunktion FEV/FVCversion: 2027.0.0-ballot.rc1)</a><br/>  <a href="StructureDefinition-mii-pr-lungenfunktion-fev.html">MII PR Lungenfunktion FEVversion: 2027.0.0-ballot.rc1)</a><br/>  <code>https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-fev1-vc|2027.0.0-ballot</code><br/>  <code>https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-fiv|2027.0.0-ballot</code><br/>  <a href="StructureDefinition-mii-pr-lungenfunktion-fvc.html">MII PR Lungenfunktion FVCversion: 2027.0.0-ballot.rc1)</a><br/>  <a href="StructureDefinition-mii-pr-lungenfunktion-ic.html">MII PR Lungenfunktion ICversion: 2027.0.0-ballot.rc1)</a><br/>  <a href="StructureDefinition-mii-pr-lungenfunktion-mef.html">MII PR Lungenfunktion MEFversion: 2027.0.0-ballot.rc1)</a><br/>  <a href="StructureDefinition-mii-pr-lungenfunktion-pef.html">MII PR Lungenfunktion PEFversion: 2027.0.0-ballot.rc1)</a><br/>  <a href="StructureDefinition-mii-pr-lungenfunktion-irv.html">MII PR Lungenfunktion RVversion: 2027.0.0-ballot.rc1)</a><br/>  <a href="StructureDefinition-mii-pr-lungenfunktion-vc.html">MII PR Lungenfunktion VCversion: 2027.0.0-ballot.rc1)</a><br/>  <a href="StructureDefinition-mii-pr-lungenfunktion-luftfeuchtigkeit.html">MII PR Lungenfunktion Luftfeuchtigkeitversion: 2027.0.0-ballot.rc1)</a><br/>  <a href="StructureDefinition-mii-pr-lungenfunktion-lufttemperatur.html">MII PR Lungenfunktion Lufttemperaturversion: 2027.0.0-ballot.rc1)</a><br/>  <a href="StructureDefinition-mii-pr-lungenfunktion-co2-konzentration.html">MII PR Lungenfunktion CO2 Konzentrationversion: 2027.0.0-ballot.rc1)</a></td><td class="text-center"><span title="SHALL"><b>Y</b></span></td><td class="text-center"><span title="SHALL"><b>Y</b></span></td><td class="text-center"/><td class="text-center"/><td>_id, _lastUpdated, _profile, _source, part-of, status, category, code, patient, issued, value-quantity, interpretation, method, reference-range-low, reference-range-high, reference-range, has-member, derived-from, code-value-quantity, combo-code, combo-code-value-quantity, combo-value-quantity, component-code, component-code-value-quantity, component-value-quantity</td><td/><td/><td/></tr><tr><td><a href="#de-MedicationAdministration1-4">MedicationAdministration</a></td><td>Supported Profiles<br/>  <a href="StructureDefinition-mii-pr-lungenfunktion-dosis-gabe.html">MII PR Lungenfunktion Dosisgabeversion: 2027.0.0-ballot.rc1)</a></td><td class="text-center"><span title="SHALL"><b>Y</b></span></td><td class="text-center"><span title="SHALL"><b>Y</b></span></td><td class="text-center"/><td class="text-center"/><td>_id, _lastUpdated, _profile, _source, part-of, medication, dose-quantity</td><td/><td/><td/></tr><tr><td><a href="#de-Medication1-5">Medication</a></td><td>Supported Profiles<br/>  <a href="StructureDefinition-mii-pr-lungenfunktion-methacholine.html">MII PR Lungenfunktion Methacholineversion: 2027.0.0-ballot.rc1)</a></td><td class="text-center"><span title="SHALL"><b>Y</b></span></td><td class="text-center"><span title="SHALL"><b>Y</b></span></td><td class="text-center"/><td class="text-center"/><td>_id, _lastUpdated, _profile, _source, code, ingredient-code, ingredient-strength, ingredient-strength-numerator, ingredient-strength-denominator</td><td/><td/><td/></tr><tr><td><a href="#de-Location1-6">Location</a></td><td>Supported Profiles<br/>  <a href="StructureDefinition-mii-pr-lungenfunktion-umgebung.html">MII PR Lungenfunktion Umgebungversion: 2027.0.0-ballot.rc1)</a></td><td class="text-center"><span title="SHALL"><b>Y</b></span></td><td class="text-center"><span title="SHALL"><b>Y</b></span></td><td class="text-center"/><td class="text-center"/><td>_id, _lastUpdated, _profile, _source, type</td><td/><td/><td/></tr></tbody></table></div><hr/><div class="panel panel-default"><div class="panel-heading"><h4 id="de-DiagnosticReport1-1" class="panel-title"><span style="float: right;">Resource Conformance: SHALL </span>DiagnosticReport</h4></div><div class="panel-body"><div class="container"><div class="row"><div class="col-lg-4"><span class="lead">Core FHIR Resource</span><br/><a href="http://hl7.org/fhir/R4/diagnosticreport.html">DiagnosticReport</a></div><div class="col-lg-4"><span class="lead">Reference Policy</span><br/></div><div class="col-lg-4"><span class="lead">Interaction summary</span><br/><ul><li><strong>SHALL</strong> support <code>read</code>, <code>search-type</code>.</li></ul></div></div><p/><div class="row"><div class="col-6"><span class="lead">Supported Profiles</span><p><a href="StructureDefinition-mii-pr-lungenfunktion-befund.html">MII PR Lungenfunktion Templateversion: 2027.0.0-ballot.rc1)</a><br/><a href="StructureDefinition-mii-pr-lungenfunktion-bodyplethysmographie.html">MII PR Lungenfunktion Bodyplethysmographieversion: 2027.0.0-ballot.rc1)</a><br/><a href="StructureDefinition-mii-pr-lungenfunktion-diffusion.html">MII PR Lungenfunktion Diffusionversion: 2027.0.0-ballot.rc1)</a><br/><a href="StructureDefinition-mii-pr-lungenfunktion-spirometrie.html">MII PR Lungenfunktion Spirometrieversion: 2027.0.0-ballot.rc1)</a><br/><a href="StructureDefinition-mii-pr-lungenfunktion-provokationstest.html">MII PR Lungenfunktion Provokationstestversion: 2027.0.0-ballot.rc1)</a></p></div></div><p/><div class="row"><div class="col-lg-7"><span class="lead">Search Parameters</span><table class="table table-condensed table-hover"><thead><tr><th>Conformance</th><th>Parameter</th><th>Type</th><th>Documentation</th></tr></thead><tbody><tr><td><b>SHALL</b></td><td><a href="http://hl7.org/fhir/R4/resource.html#search">_id</a></td><td><code>token</code></td><td><div/></td></tr><tr><td><b>SHALL</b></td><td><a href="http://hl7.org/fhir/R4/resource.html#search">_lastUpdated</a></td><td><code>date</code></td><td><div/></td></tr><tr><td><b>SHALL</b></td><td><a href="http://hl7.org/fhir/R4/resource.html#search">_profile</a></td><td><code>uri</code></td><td><div/></td></tr><tr><td><b>SHALL</b></td><td><a href="http://hl7.org/fhir/R4/resource.html#search">_source</a></td><td><code>uri</code></td><td><div/></td></tr><tr><td><b>SHALL</b></td><td><a href="http://hl7.org/fhir/R4/diagnosticreport.html#search">status</a></td><td><code>token</code></td><td><div/></td></tr><tr><td><b>SHALL</b></td><td><a href="http://hl7.org/fhir/R4/diagnosticreport.html#search">category</a></td><td><code>token</code></td><td><div/></td></tr><tr><td><b>SHALL</b></td><td><a href="http://hl7.org/fhir/R4/diagnosticreport.html#search">code</a></td><td><code>token</code></td><td><div/></td></tr><tr><td><b>SHALL</b></td><td><a href="http://hl7.org/fhir/R4/diagnosticreport.html#search">patient</a></td><td><code>reference</code></td><td><div/></td></tr><tr><td><b>SHALL</b></td><td><a href="http://hl7.org/fhir/R4/diagnosticreport.html#search">encounter</a></td><td><code>reference</code></td><td><div/></td></tr><tr><td><b>SHALL</b></td><td><a href="http://hl7.org/fhir/R4/diagnosticreport.html#search">date</a></td><td><code>date</code></td><td><div/></td></tr><tr><td><b>SHALL</b></td><td><a href="http://hl7.org/fhir/R4/diagnosticreport.html#search">issued</a></td><td><code>date</code></td><td><div/></td></tr><tr><td><b>SHALL</b></td><td><a href="http://hl7.org/fhir/R4/diagnosticreport.html#search">result</a></td><td><code>reference</code></td><td><div/></td></tr><tr><td><b>SHALL</b></td><td><a href="https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.meta@2026.0.0&amp;canonical=https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-diagnostic-report-conclusion">conclusion-text</a></td><td><code>string</code></td><td><div/></td></tr><tr><td><b>SHALL</b></td><td><a href="http://hl7.org/fhir/R4/diagnosticreport.html#search">conclusion</a></td><td><code>token</code></td><td><div/></td></tr></tbody></table></div><div class="col-lg-5"> </div></div></div></div></div><div class="panel panel-default"><div class="panel-heading"><h4 id="de-Procedure1-2" class="panel-title"><span style="float: right;">Resource Conformance: SHALL </span>Procedure</h4></div><div class="panel-body"><div class="container"><div class="row"><div class="col-lg-4"><span class="lead">Core FHIR Resource</span><br/><a href="http://hl7.org/fhir/R4/procedure.html">Procedure</a></div><div class="col-lg-4"><span class="lead">Reference Policy</span><br/></div><div class="col-lg-4"><span class="lead">Interaction summary</span><br/><ul><li><strong>SHALL</strong> support <code>read</code>, <code>search-type</code>.</li></ul></div></div><p/><div class="row"><div class="col-6"><span class="lead">Supported Profiles</span><p><a href="StructureDefinition-mii-pr-lungenfunktion-spirometrie-messung.html">MII PR Lungenfunktion Spirometire Messungversion: 2027.0.0-ballot.rc1)</a><br/><a href="StructureDefinition-mii-pr-lungenfunktion-provokationstest-messung.html">MII PR Lungenfunktion Provokations Messungversion: 2027.0.0-ballot.rc1)</a><br/><a href="StructureDefinition-mii-pr-lungenfunktion-diffusion-messung.html">MII PR Lungenfunktion Diffusion Messungversion: 2027.0.0-ballot.rc1)</a><br/><a href="StructureDefinition-mii-pr-lungenfunktion-bodyplethysmographie-messung.html">MII PR Lungenfunktion Bodyplethysmographie Messungversion: 2027.0.0-ballot.rc1)</a></p></div></div><p/><div class="row"><div class="col-lg-7"><span class="lead">Search Parameters</span><table class="table table-condensed table-hover"><thead><tr><th>Conformance</th><th>Parameter</th><th>Type</th><th>Documentation</th></tr></thead><tbody><tr><td><b>SHALL</b></td><td><a href="http://hl7.org/fhir/R4/resource.html#search">_id</a></td><td><code>token</code></td><td><div/></td></tr><tr><td><b>SHALL</b></td><td><a href="http://hl7.org/fhir/R4/resource.html#search">_lastUpdated</a></td><td><code>date</code></td><td><div/></td></tr><tr><td><b>SHALL</b></td><td><a href="http://hl7.org/fhir/R4/resource.html#search">_profile</a></td><td><code>uri</code></td><td><div/></td></tr><tr><td><b>SHALL</b></td><td><a href="http://hl7.org/fhir/R4/resource.html#search">_source</a></td><td><code>uri</code></td><td><div/></td></tr><tr><td><b>SHALL</b></td><td><a href="http://hl7.org/fhir/R4/procedure.html#search">part-of</a></td><td><code>reference</code></td><td><div/></td></tr><tr><td><b>SHALL</b></td><td><a href="http://hl7.org/fhir/R4/procedure.html#search">status</a></td><td><code>token</code></td><td><div/></td></tr><tr><td><b>SHALL</b></td><td><a href="http://hl7.org/fhir/R4/procedure.html#search">category</a></td><td><code>token</code></td><td><div/></td></tr><tr><td><b>SHALL</b></td><td><a href="http://hl7.org/fhir/R4/procedure.html#search">code</a></td><td><code>token</code></td><td><div/></td></tr><tr><td><b>SHALL</b></td><td><a href="http://hl7.org/fhir/R4/procedure.html#search">patient</a></td><td><code>reference</code></td><td><div/></td></tr><tr><td><b>SHALL</b></td><td><a href="http://hl7.org/fhir/R4/procedure.html#search">date</a></td><td><code>date</code></td><td><div/></td></tr><tr><td><b>SHALL</b></td><td><a href="https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.meta@2026.0.0&amp;canonical=https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-procedure-outcome">outcome</a></td><td><code>token</code></td><td><div/></td></tr><tr><td><b>SHALL</b></td><td><a href="https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.meta@2026.0.0&amp;canonical=https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-read-proc-report">report</a></td><td><code>reference</code></td><td><div/></td></tr></tbody></table></div><div class="col-lg-5"> </div></div></div></div></div><div class="panel panel-default"><div class="panel-heading"><h4 id="de-Observation1-3" class="panel-title"><span style="float: right;">Resource Conformance: SHALL </span>Observation</h4></div><div class="panel-body"><div class="container"><div class="row"><div class="col-lg-4"><span class="lead">Core FHIR Resource</span><br/><a href="http://hl7.org/fhir/R4/observation.html">Observation</a></div><div class="col-lg-4"><span class="lead">Reference Policy</span><br/></div><div class="col-lg-4"><span class="lead">Interaction summary</span><br/><ul><li><strong>SHALL</strong> support <code>read</code>, <code>search-type</code>.</li></ul></div></div><p/><div class="row"><div class="col-6"><span class="lead">Supported Profiles</span><p><a href="StructureDefinition-mii-pr-lungenfunktion-gewicht.html">MII PR Lungenfunktion Gewichtversion: 2027.0.0-ballot.rc1)</a><br/><a href="StructureDefinition-mii-pr-lungenfunktion-volumen.html">MII PR Lungenfunktion Volumenversion: 2027.0.0-ballot.rc1)</a><br/><a href="StructureDefinition-mii-pr-lungenfunktion-viskositaet.html">MII PR Lungenfunktion Flussversion: 2027.0.0-ballot.rc1)</a><br/><a href="StructureDefinition-mii-pr-lungenfunktion-transferkoeffizient.html">MII PR Lungenfunktion Transferkoeffizientversion: 2027.0.0-ballot.rc1)</a><br/><a href="StructureDefinition-mii-pr-lungenfunktion-widerstand.html">MII PR Lungenfunktion Widerstandversion: 2027.0.0-ballot.rc1)</a><br/><a href="StructureDefinition-mii-pr-lungenfunktion-prozent.html">MII PR Lungenfunktion Prozentversion: 2027.0.0-ballot.rc1)</a><br/><a href="StructureDefinition-mii-pr-lungenfunktion-fluss.html">MII PR Lungenfunktion Flussversion: 2027.0.0-ballot.rc1)</a><br/><a href="StructureDefinition-mii-pr-lungenfunktion-diffusionskapazitaet.html">MII PR Lungenfunktion Flussversion: 2027.0.0-ballot.rc1)</a><br/><a href="StructureDefinition-mii-pr-lungenfunktion-1-viskositaet.html">MII PR Lungenfunktion 1/Viscosityversion: 2027.0.0-ballot.rc1)</a><br/><a href="StructureDefinition-mii-pr-lungenfunktion-frc.html">MII PR Lungenfunktion FRCversion: 2027.0.0-ballot.rc1)</a><br/><a href="StructureDefinition-mii-pr-lungenfunktion-r.html">MII PR Lungenfunktion Rversion: 2027.0.0-ballot.rc1)</a><br/><a href="StructureDefinition-mii-pr-lungenfunktion-rvl-tlc.html">MII PR Lungenfunktion Anteil Residualvolumen an Lungenkapazitätversion: 2027.0.0-ballot.rc1)</a><br/><a href="StructureDefinition-mii-pr-lungenfunktion-rvl.html">MII PR Lungenfunktion RVLversion: 2027.0.0-ballot.rc1)</a><br/><a href="StructureDefinition-mii-pr-lungenfunktion-sg-total.html">MII PR Lungenfunktion sG Totalversion: 2027.0.0-ballot.rc1)</a><br/><a href="StructureDefinition-mii-pr-lungenfunktion-r-effektiv.html">MII PR Lungenfunktion R Effektivversion: 2027.0.0-ballot.rc1)</a><br/><a href="StructureDefinition-mii-pr-lungenfunktion-r-spezifisch.html">MII PR Lungenfunktion R Spezifischversion: 2027.0.0-ballot.rc1)</a><br/><a href="StructureDefinition-mii-pr-lungenfunktion-tlc.html">MII PR Lungenfunktion TLCversion: 2027.0.0-ballot.rc1)</a><br/><a href="StructureDefinition-mii-pr-lungenfunktion-dlco.html">MII PR Lungenfunktion DLCOversion: 2027.0.0-ballot.rc1)</a><br/><a href="StructureDefinition-mii-pr-lungenfunktion-dlcoc.html">MII PR Lungenfunktion DLCOcversion: 2027.0.0-ballot.rc1)</a><br/><a href="StructureDefinition-mii-pr-lungenfunktion-hb.html">MII PR Lungenfunktion Hbversion: 2027.0.0-ballot.rc1)</a><br/><a href="StructureDefinition-mii-pr-lungenfunktion-kco.html">MII PR Lungenfunktion KCOversion: 2027.0.0-ballot.rc1)</a><br/><a href="StructureDefinition-mii-pr-lungenfunktion-kcoc.html">MII PR Lungenfunktion KCOcversion: 2027.0.0-ballot.rc1)</a><br/><code>https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-ta|2027.0.0-ballot</code><br/><a href="StructureDefinition-mii-pr-lungenfunktion-va.html">MII PR Lungenfunktion VAversion: 2027.0.0-ballot.rc1)</a><br/><a href="StructureDefinition-mii-pr-lungenfunktion-dosis.html">MII PR Lungenfunktion Dosisversion: 2027.0.0-ballot.rc1)</a><br/><a href="StructureDefinition-mii-pr-lungenfunktion-bf.html">MII PR Lungenfunktion BFversion: 2027.0.0-ballot.rc1)</a><br/><a href="StructureDefinition-mii-pr-lungenfunktion-fev-fvc.html">MII PR Lungenfunktion FEV/FVCversion: 2027.0.0-ballot.rc1)</a><br/><a href="StructureDefinition-mii-pr-lungenfunktion-fev.html">MII PR Lungenfunktion FEVversion: 2027.0.0-ballot.rc1)</a><br/><code>https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-fev1-vc|2027.0.0-ballot</code><br/><code>https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-fiv|2027.0.0-ballot</code><br/><a href="StructureDefinition-mii-pr-lungenfunktion-fvc.html">MII PR Lungenfunktion FVCversion: 2027.0.0-ballot.rc1)</a><br/><a href="StructureDefinition-mii-pr-lungenfunktion-ic.html">MII PR Lungenfunktion ICversion: 2027.0.0-ballot.rc1)</a><br/><a href="StructureDefinition-mii-pr-lungenfunktion-mef.html">MII PR Lungenfunktion MEFversion: 2027.0.0-ballot.rc1)</a><br/><a href="StructureDefinition-mii-pr-lungenfunktion-pef.html">MII PR Lungenfunktion PEFversion: 2027.0.0-ballot.rc1)</a><br/><a href="StructureDefinition-mii-pr-lungenfunktion-irv.html">MII PR Lungenfunktion RVversion: 2027.0.0-ballot.rc1)</a><br/><a href="StructureDefinition-mii-pr-lungenfunktion-vc.html">MII PR Lungenfunktion VCversion: 2027.0.0-ballot.rc1)</a><br/><a href="StructureDefinition-mii-pr-lungenfunktion-luftfeuchtigkeit.html">MII PR Lungenfunktion Luftfeuchtigkeitversion: 2027.0.0-ballot.rc1)</a><br/><a href="StructureDefinition-mii-pr-lungenfunktion-lufttemperatur.html">MII PR Lungenfunktion Lufttemperaturversion: 2027.0.0-ballot.rc1)</a><br/><a href="StructureDefinition-mii-pr-lungenfunktion-co2-konzentration.html">MII PR Lungenfunktion CO2 Konzentrationversion: 2027.0.0-ballot.rc1)</a></p></div></div><p/><div class="row"><div class="col-lg-7"><span class="lead">Search Parameters</span><table class="table table-condensed table-hover"><thead><tr><th>Conformance</th><th>Parameter</th><th>Type</th><th>Documentation</th></tr></thead><tbody><tr><td><b>SHALL</b></td><td><a href="http://hl7.org/fhir/R4/resource.html#search">_id</a></td><td><code>token</code></td><td><div/></td></tr><tr><td><b>SHALL</b></td><td><a href="http://hl7.org/fhir/R4/resource.html#search">_lastUpdated</a></td><td><code>date</code></td><td><div/></td></tr><tr><td><b>SHALL</b></td><td><a href="http://hl7.org/fhir/R4/resource.html#search">_profile</a></td><td><code>uri</code></td><td><div/></td></tr><tr><td><b>SHALL</b></td><td><a href="http://hl7.org/fhir/R4/resource.html#search">_source</a></td><td><code>uri</code></td><td><div/></td></tr><tr><td><b>SHALL</b></td><td><a href="http://hl7.org/fhir/R4/observation.html#search">part-of</a></td><td><code>reference</code></td><td><div/></td></tr><tr><td><b>SHALL</b></td><td><a href="http://hl7.org/fhir/R4/observation.html#search">status</a></td><td><code>token</code></td><td><div/></td></tr><tr><td><b>SHALL</b></td><td><a href="http://hl7.org/fhir/R4/observation.html#search">category</a></td><td><code>token</code></td><td><div/></td></tr><tr><td><b>SHALL</b></td><td><a href="http://hl7.org/fhir/R4/observation.html#search">code</a></td><td><code>token</code></td><td><div/></td></tr><tr><td><b>SHALL</b></td><td><a href="http://hl7.org/fhir/R4/observation.html#search">patient</a></td><td><code>reference</code></td><td><div/></td></tr><tr><td><b>SHALL</b></td><td><a href="https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.meta@2026.0.0&amp;canonical=https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-observation-issued">issued</a></td><td><code>date</code></td><td><div/></td></tr><tr><td><b>SHALL</b></td><td><a href="http://hl7.org/fhir/R4/observation.html#search">value-quantity</a></td><td><code>quantity</code></td><td><div/></td></tr><tr><td><b>SHALL</b></td><td><a href="https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.meta@2026.0.0&amp;canonical=https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-observation-interpretation">interpretation</a></td><td><code>token</code></td><td><div/></td></tr><tr><td><b>SHALL</b></td><td><a href="http://hl7.org/fhir/R4/observation.html#search">method</a></td><td><code>token</code></td><td><div/></td></tr><tr><td><b>SHALL</b></td><td><a href="https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.meta@2026.0.0&amp;canonical=https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-observation-referencerange-low">reference-range-low</a></td><td><code>quantity</code></td><td><div/></td></tr><tr><td><b>SHALL</b></td><td><a href="https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.meta@2026.0.0&amp;canonical=https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-observation-referencerange-high">reference-range-high</a></td><td><code>quantity</code></td><td><div/></td></tr><tr><td><b>SHALL</b></td><td><a href="https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.meta@2026.0.0&amp;canonical=https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-observation-referencerange">reference-range</a></td><td><code>composite</code></td><td><div/></td></tr><tr><td><b>SHALL</b></td><td><a href="http://hl7.org/fhir/R4/observation.html#search">has-member</a></td><td><code>reference</code></td><td><div/></td></tr><tr><td><b>SHALL</b></td><td><a href="http://hl7.org/fhir/R4/observation.html#search">derived-from</a></td><td><code>reference</code></td><td><div/></td></tr><tr><td><b>SHALL</b></td><td><a href="http://hl7.org/fhir/R4/observation.html#search">code-value-quantity</a></td><td><code>composite</code></td><td><div/></td></tr><tr><td><b>SHALL</b></td><td><a href="http://hl7.org/fhir/R4/observation.html#search">combo-code</a></td><td><code>token</code></td><td><div/></td></tr><tr><td><b>SHALL</b></td><td><a href="http://hl7.org/fhir/R4/observation.html#search">combo-code-value-quantity</a></td><td><code>composite</code></td><td><div/></td></tr><tr><td><b>SHALL</b></td><td><a href="http://hl7.org/fhir/R4/observation.html#search">combo-value-quantity</a></td><td><code>quantity</code></td><td><div/></td></tr><tr><td><b>SHALL</b></td><td><a href="http://hl7.org/fhir/R4/observation.html#search">component-code</a></td><td><code>token</code></td><td><div/></td></tr><tr><td><b>SHALL</b></td><td><a href="http://hl7.org/fhir/R4/observation.html#search">component-code-value-quantity</a></td><td><code>composite</code></td><td><div/></td></tr><tr><td><b>SHALL</b></td><td><a href="http://hl7.org/fhir/R4/observation.html#search">component-value-quantity</a></td><td><code>quantity</code></td><td><div/></td></tr></tbody></table></div><div class="col-lg-5"> </div></div></div></div></div><div class="panel panel-default"><div class="panel-heading"><h4 id="de-MedicationAdministration1-4" class="panel-title"><span style="float: right;">Resource Conformance: SHALL </span>MedicationAdministration</h4></div><div class="panel-body"><div class="container"><div class="row"><div class="col-lg-4"><span class="lead">Core FHIR Resource</span><br/><a href="http://hl7.org/fhir/R4/medicationadministration.html">MedicationAdministration</a></div><div class="col-lg-4"><span class="lead">Reference Policy</span><br/></div><div class="col-lg-4"><span class="lead">Interaction summary</span><br/><ul><li><strong>SHALL</strong> support <code>read</code>, <code>search-type</code>.</li></ul></div></div><p/><div class="row"><div class="col-6"><span class="lead">Supported Profiles</span><p><a href="StructureDefinition-mii-pr-lungenfunktion-dosis-gabe.html">MII PR Lungenfunktion Dosisgabeversion: 2027.0.0-ballot.rc1)</a></p></div></div><p/><div class="row"><div class="col-lg-7"><span class="lead">Search Parameters</span><table class="table table-condensed table-hover"><thead><tr><th>Conformance</th><th>Parameter</th><th>Type</th><th>Documentation</th></tr></thead><tbody><tr><td><b>SHALL</b></td><td><a href="http://hl7.org/fhir/R4/resource.html#search">_id</a></td><td><code>token</code></td><td><div/></td></tr><tr><td><b>SHALL</b></td><td><a href="http://hl7.org/fhir/R4/resource.html#search">_lastUpdated</a></td><td><code>date</code></td><td><div/></td></tr><tr><td><b>SHALL</b></td><td><a href="http://hl7.org/fhir/R4/resource.html#search">_profile</a></td><td><code>uri</code></td><td><div/></td></tr><tr><td><b>SHALL</b></td><td><a href="http://hl7.org/fhir/R4/resource.html#search">_source</a></td><td><code>uri</code></td><td><div/></td></tr><tr><td><b>SHALL</b></td><td><a href="https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.meta@2026.0.0&amp;canonical=https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-medication-partof">part-of</a></td><td><code>reference</code></td><td><div/></td></tr><tr><td><b>SHALL</b></td><td>medication</td><td><code>reference</code></td><td><div/></td></tr><tr><td><b>SHALL</b></td><td><a href="https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.meta@2026.0.0&amp;canonical=https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-medication-dosage-dosequantity">dose-quantity</a></td><td><code>quantity</code></td><td><div/></td></tr></tbody></table></div><div class="col-lg-5"> </div></div></div></div></div><div class="panel panel-default"><div class="panel-heading"><h4 id="de-Medication1-5" class="panel-title"><span style="float: right;">Resource Conformance: SHALL </span>Medication</h4></div><div class="panel-body"><div class="container"><div class="row"><div class="col-lg-4"><span class="lead">Core FHIR Resource</span><br/><a href="http://hl7.org/fhir/R4/medication.html">Medication</a></div><div class="col-lg-4"><span class="lead">Reference Policy</span><br/></div><div class="col-lg-4"><span class="lead">Interaction summary</span><br/><ul><li><strong>SHALL</strong> support <code>read</code>, <code>search-type</code>.</li></ul></div></div><p/><div class="row"><div class="col-6"><span class="lead">Supported Profiles</span><p><a href="StructureDefinition-mii-pr-lungenfunktion-methacholine.html">MII PR Lungenfunktion Methacholineversion: 2027.0.0-ballot.rc1)</a></p></div></div><p/><div class="row"><div class="col-lg-7"><span class="lead">Search Parameters</span><table class="table table-condensed table-hover"><thead><tr><th>Conformance</th><th>Parameter</th><th>Type</th><th>Documentation</th></tr></thead><tbody><tr><td><b>SHALL</b></td><td><a href="http://hl7.org/fhir/R4/resource.html#search">_id</a></td><td><code>token</code></td><td><div/></td></tr><tr><td><b>SHALL</b></td><td><a href="http://hl7.org/fhir/R4/resource.html#search">_lastUpdated</a></td><td><code>date</code></td><td><div/></td></tr><tr><td><b>SHALL</b></td><td><a href="http://hl7.org/fhir/R4/resource.html#search">_profile</a></td><td><code>uri</code></td><td><div/></td></tr><tr><td><b>SHALL</b></td><td><a href="http://hl7.org/fhir/R4/resource.html#search">_source</a></td><td><code>uri</code></td><td><div/></td></tr><tr><td><b>SHALL</b></td><td>code</td><td><code>token</code></td><td><div/></td></tr><tr><td><b>SHALL</b></td><td><a href="http://hl7.org/fhir/R4/medication.html#search">ingredient-code</a></td><td><code>token</code></td><td><div/></td></tr><tr><td><b>SHALL</b></td><td><a href="https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.meta@2026.0.0&amp;canonical=https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-medication-ingredient-strength">ingredient-strength</a></td><td><code>composite</code></td><td><div/></td></tr><tr><td><b>SHALL</b></td><td><a href="https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.meta@2026.0.0&amp;canonical=https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-medication-ingredient-strength-numerator">ingredient-strength-numerator</a></td><td><code>quantity</code></td><td><div/></td></tr><tr><td><b>SHALL</b></td><td><a href="https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.meta@2026.0.0&amp;canonical=https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-medication-ingredient-strength-denominator">ingredient-strength-denominator</a></td><td><code>quantity</code></td><td><div/></td></tr></tbody></table></div><div class="col-lg-5"> </div></div></div></div></div><div class="panel panel-default"><div class="panel-heading"><h4 id="de-Location1-6" class="panel-title"><span style="float: right;">Resource Conformance: SHALL </span>Location</h4></div><div class="panel-body"><div class="container"><div class="row"><div class="col-lg-4"><span class="lead">Core FHIR Resource</span><br/><a href="http://hl7.org/fhir/R4/location.html">Location</a></div><div class="col-lg-4"><span class="lead">Reference Policy</span><br/></div><div class="col-lg-4"><span class="lead">Interaction summary</span><br/><ul><li><strong>SHALL</strong> support <code>read</code>, <code>search-type</code>.</li></ul></div></div><p/><div class="row"><div class="col-6"><span class="lead">Supported Profiles</span><p><a href="StructureDefinition-mii-pr-lungenfunktion-umgebung.html">MII PR Lungenfunktion Umgebungversion: 2027.0.0-ballot.rc1)</a></p></div></div><p/><div class="row"><div class="col-lg-7"><span class="lead">Search Parameters</span><table class="table table-condensed table-hover"><thead><tr><th>Conformance</th><th>Parameter</th><th>Type</th><th>Documentation</th></tr></thead><tbody><tr><td><b>SHALL</b></td><td><a href="http://hl7.org/fhir/R4/resource.html#search">_id</a></td><td><code>token</code></td><td><div/></td></tr><tr><td><b>SHALL</b></td><td><a href="http://hl7.org/fhir/R4/resource.html#search">_lastUpdated</a></td><td><code>date</code></td><td><div/></td></tr><tr><td><b>SHALL</b></td><td><a href="http://hl7.org/fhir/R4/resource.html#search">_profile</a></td><td><code>uri</code></td><td><div/></td></tr><tr><td><b>SHALL</b></td><td><a href="http://hl7.org/fhir/R4/resource.html#search">_source</a></td><td><code>uri</code></td><td><div/></td></tr><tr><td><b>SHALL</b></td><td><a href="http://hl7.org/fhir/R4/location.html#search">type</a></td><td><code>token</code></td><td><div/></td></tr></tbody></table></div><div class="col-lg-5"> </div></div></div></div></div></div></div>
+  </text>
+  <extension url="https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-ex-meta-license-codeable">
+    <valueCodeableConcept>
+      <coding>
+        <system value="http://hl7.org/fhir/spdx-license"/>
+        <code value="CC-BY-4.0"/>
+        <display value="Creative Commons Attribution 4.0 International"/>
+      </coding>
+    </valueCodeableConcept>
+  </extension>
+  <url value="https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/CapabilityStatement/metadata"/>
+  <version value="2027.0.0-ballot.rc1"/>
+  <name value="MII_CPS_Lungenfunktion_CapabilityStatement"/>
+  <title value="MII CPS Lungenfunktion CapabilityStatement"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2026-09-01"/>
+  <publisher value="Medizininformatik Initiative"/>
+  <contact>
+    <name value="Medizininformatik Initiative"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://www.medizininformatik-initiative.de/"/>
+    </telecom>
+  </contact>
+  <description value="Das vorliegende CapabilityStatement beschreibt alle verpflichtenden Interaktionen die ein konformes System unterstützen muss, um das Modul Lungenfunktion der Medizininformatik Initiative zu implementieren."/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="DE"/>
+      <display value="Germany"/>
+    </coding>
+  </jurisdiction>
+  <kind value="requirements"/>
+  <fhirVersion value="4.0.1"/>
+  <format value="xml"/>
+  <format value="json"/>
+  <rest>
+    <mode value="server"/>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+        <valueCode value="SHALL"/>
+      </extension>
+      <type value="DiagnosticReport"/>
+      <supportedProfile value="https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-befund|2027.0.0-ballot">
+        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+          <valueCode value="SHALL"/>
+        </extension>
+      </supportedProfile>
+      <supportedProfile value="https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-bodyplethysmographie|2027.0.0-ballot">
+        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+          <valueCode value="SHALL"/>
+        </extension>
+      </supportedProfile>
+      <supportedProfile value="https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-diffusion|2027.0.0-ballot">
+        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+          <valueCode value="SHALL"/>
+        </extension>
+      </supportedProfile>
+      <supportedProfile value="https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-spirometrie|2027.0.0-ballot">
+        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+          <valueCode value="SHALL"/>
+        </extension>
+      </supportedProfile>
+      <supportedProfile value="https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-provokationstest|2027.0.0-ballot">
+        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+          <valueCode value="SHALL"/>
+        </extension>
+      </supportedProfile>
+      <interaction>
+        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+          <valueCode value="SHALL"/>
+        </extension>
+        <code value="read"/>
+      </interaction>
+      <interaction>
+        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+          <valueCode value="SHALL"/>
+        </extension>
+        <code value="search-type"/>
+      </interaction>
+      <searchParam>
+        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+          <valueCode value="SHALL"/>
+        </extension>
+        <name value="_id"/>
+        <definition value="http://hl7.org/fhir/SearchParameter/Resource-id"/>
+        <type value="token"/>
+      </searchParam>
+      <searchParam>
+        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+          <valueCode value="SHALL"/>
+        </extension>
+        <name value="_lastUpdated"/>
+        <definition value="http://hl7.org/fhir/SearchParameter/Resource-lastUpdated"/>
+        <type value="date"/>
+      </searchParam>
+      <searchParam>
+        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+          <valueCode value="SHALL"/>
+        </extension>
+        <name value="_profile"/>
+        <definition value="http://hl7.org/fhir/SearchParameter/Resource-profile"/>
+        <type value="uri"/>
+      </searchParam>
+      <searchParam>
+        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+          <valueCode value="SHALL"/>
+        </extension>
+        <name value="_source"/>
+        <definition value="http://hl7.org/fhir/SearchParameter/Resource-source"/>
+        <type value="uri"/>
+      </searchParam>
+      <searchParam>
+        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+          <valueCode value="SHALL"/>
+        </extension>
+        <name value="status"/>
+        <definition value="http://hl7.org/fhir/SearchParameter/DiagnosticReport-status"/>
+        <type value="token"/>
+      </searchParam>
+      <searchParam>
+        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+          <valueCode value="SHALL"/>
+        </extension>
+        <name value="category"/>
+        <definition value="http://hl7.org/fhir/SearchParameter/DiagnosticReport-category"/>
+        <type value="token"/>
+      </searchParam>
+      <searchParam>
+        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+          <valueCode value="SHALL"/>
+        </extension>
+        <name value="code"/>
+        <definition value="http://hl7.org/fhir/SearchParameter/clinical-code"/>
+        <type value="token"/>
+      </searchParam>
+      <searchParam>
+        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+          <valueCode value="SHALL"/>
+        </extension>
+        <name value="patient"/>
+        <definition value="http://hl7.org/fhir/SearchParameter/clinical-patient"/>
+        <type value="reference"/>
+      </searchParam>
+      <searchParam>
+        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+          <valueCode value="SHALL"/>
+        </extension>
+        <name value="encounter"/>
+        <definition value="http://hl7.org/fhir/SearchParameter/clinical-encounter"/>
+        <type value="reference"/>
+      </searchParam>
+      <searchParam>
+        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+          <valueCode value="SHALL"/>
+        </extension>
+        <name value="date"/>
+        <definition value="http://hl7.org/fhir/SearchParameter/clinical-date"/>
+        <type value="date"/>
+      </searchParam>
+      <searchParam>
+        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+          <valueCode value="SHALL"/>
+        </extension>
+        <name value="issued"/>
+        <definition value="http://hl7.org/fhir/SearchParameter/DiagnosticReport-issued"/>
+        <type value="date"/>
+      </searchParam>
+      <searchParam>
+        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+          <valueCode value="SHALL"/>
+        </extension>
+        <name value="result"/>
+        <definition value="http://hl7.org/fhir/SearchParameter/DiagnosticReport-result"/>
+        <type value="reference"/>
+      </searchParam>
+      <searchParam>
+        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+          <valueCode value="SHALL"/>
+        </extension>
+        <name value="conclusion-text"/>
+        <definition value="https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-diagnostic-report-conclusion"/>
+        <type value="string"/>
+      </searchParam>
+      <searchParam>
+        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+          <valueCode value="SHALL"/>
+        </extension>
+        <name value="conclusion"/>
+        <definition value="http://hl7.org/fhir/SearchParameter/DiagnosticReport-conclusion"/>
+        <type value="token"/>
+      </searchParam>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+        <valueCode value="SHALL"/>
+      </extension>
+      <type value="Procedure"/>
+      <supportedProfile value="https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-spirometrie-messung|2027.0.0-ballot">
+        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+          <valueCode value="SHALL"/>
+        </extension>
+      </supportedProfile>
+      <supportedProfile value="https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-provokationstest-messung|2027.0.0-ballot">
+        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+          <valueCode value="SHALL"/>
+        </extension>
+      </supportedProfile>
+      <supportedProfile value="https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-diffusion-messung|2027.0.0-ballot">
+        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+          <valueCode value="SHALL"/>
+        </extension>
+      </supportedProfile>
+      <supportedProfile value="https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-bodyplethysmographie-messung|2027.0.0-ballot">
+        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+          <valueCode value="SHALL"/>
+        </extension>
+      </supportedProfile>
+      <interaction>
+        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+          <valueCode value="SHALL"/>
+        </extension>
+        <code value="read"/>
+      </interaction>
+      <interaction>
+        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+          <valueCode value="SHALL"/>
+        </extension>
+        <code value="search-type"/>
+      </interaction>
+      <searchParam>
+        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+          <valueCode value="SHALL"/>
+        </extension>
+        <name value="_id"/>
+        <definition value="http://hl7.org/fhir/SearchParameter/Resource-id"/>
+        <type value="token"/>
+      </searchParam>
+      <searchParam>
+        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+          <valueCode value="SHALL"/>
+        </extension>
+        <name value="_lastUpdated"/>
+        <definition value="http://hl7.org/fhir/SearchParameter/Resource-lastUpdated"/>
+        <type value="date"/>
+      </searchParam>
+      <searchParam>
+        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+          <valueCode value="SHALL"/>
+        </extension>
+        <name value="_profile"/>
+        <definition value="http://hl7.org/fhir/SearchParameter/Resource-profile"/>
+        <type value="uri"/>
+      </searchParam>
+      <searchParam>
+        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+          <valueCode value="SHALL"/>
+        </extension>
+        <name value="_source"/>
+        <definition value="http://hl7.org/fhir/SearchParameter/Resource-source"/>
+        <type value="uri"/>
+      </searchParam>
+      <searchParam>
+        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+          <valueCode value="SHALL"/>
+        </extension>
+        <name value="part-of"/>
+        <definition value="http://hl7.org/fhir/SearchParameter/Procedure-part-of"/>
+        <type value="reference"/>
+      </searchParam>
+      <searchParam>
+        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+          <valueCode value="SHALL"/>
+        </extension>
+        <name value="status"/>
+        <definition value="http://hl7.org/fhir/SearchParameter/Procedure-status"/>
+        <type value="token"/>
+      </searchParam>
+      <searchParam>
+        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+          <valueCode value="SHALL"/>
+        </extension>
+        <name value="category"/>
+        <definition value="http://hl7.org/fhir/SearchParameter/Procedure-category"/>
+        <type value="token"/>
+      </searchParam>
+      <searchParam>
+        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+          <valueCode value="SHALL"/>
+        </extension>
+        <name value="code"/>
+        <definition value="http://hl7.org/fhir/SearchParameter/clinical-code"/>
+        <type value="token"/>
+      </searchParam>
+      <searchParam>
+        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+          <valueCode value="SHALL"/>
+        </extension>
+        <name value="patient"/>
+        <definition value="http://hl7.org/fhir/SearchParameter/clinical-patient"/>
+        <type value="reference"/>
+      </searchParam>
+      <searchParam>
+        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+          <valueCode value="SHALL"/>
+        </extension>
+        <name value="date"/>
+        <definition value="http://hl7.org/fhir/SearchParameter/clinical-date"/>
+        <type value="date"/>
+      </searchParam>
+      <searchParam>
+        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+          <valueCode value="SHALL"/>
+        </extension>
+        <name value="outcome"/>
+        <definition value="https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-procedure-outcome"/>
+        <type value="token"/>
+      </searchParam>
+      <searchParam>
+        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+          <valueCode value="SHALL"/>
+        </extension>
+        <name value="report"/>
+        <definition value="https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-read-proc-report"/>
+        <type value="reference"/>
+      </searchParam>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+        <valueCode value="SHALL"/>
+      </extension>
+      <type value="Observation"/>
+      <supportedProfile value="https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-gewicht|2027.0.0-ballot">
+        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+          <valueCode value="SHALL"/>
+        </extension>
+      </supportedProfile>
+      <supportedProfile value="https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-volumen|2027.0.0-ballot">
+        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+          <valueCode value="SHALL"/>
+        </extension>
+      </supportedProfile>
+      <supportedProfile value="https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-viskositaet|2027.0.0-ballot">
+        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+          <valueCode value="SHALL"/>
+        </extension>
+      </supportedProfile>
+      <supportedProfile value="https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-transferkoeffizient|2027.0.0-ballot">
+        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+          <valueCode value="SHALL"/>
+        </extension>
+      </supportedProfile>
+      <supportedProfile value="https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-widerstand|2027.0.0-ballot">
+        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+          <valueCode value="SHALL"/>
+        </extension>
+      </supportedProfile>
+      <supportedProfile value="https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-prozent|2027.0.0-ballot">
+        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+          <valueCode value="SHALL"/>
+        </extension>
+      </supportedProfile>
+      <supportedProfile value="https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-fluss|2027.0.0-ballot">
+        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+          <valueCode value="SHALL"/>
+        </extension>
+      </supportedProfile>
+      <supportedProfile value="https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-diffusionskapazitaet|2027.0.0-ballot">
+        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+          <valueCode value="SHALL"/>
+        </extension>
+      </supportedProfile>
+      <supportedProfile value="https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-1-viskositaet|2027.0.0-ballot">
+        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+          <valueCode value="SHALL"/>
+        </extension>
+      </supportedProfile>
+      <supportedProfile value="https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-frc|2027.0.0-ballot">
+        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+          <valueCode value="SHALL"/>
+        </extension>
+      </supportedProfile>
+      <supportedProfile value="https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-r|2027.0.0-ballot">
+        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+          <valueCode value="SHALL"/>
+        </extension>
+      </supportedProfile>
+      <supportedProfile value="https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-rvl-tlc|2027.0.0-ballot">
+        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+          <valueCode value="SHALL"/>
+        </extension>
+      </supportedProfile>
+      <supportedProfile value="https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-rvl|2027.0.0-ballot">
+        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+          <valueCode value="SHALL"/>
+        </extension>
+      </supportedProfile>
+      <supportedProfile value="https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-sg-total|2027.0.0-ballot">
+        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+          <valueCode value="SHALL"/>
+        </extension>
+      </supportedProfile>
+      <supportedProfile value="https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-r-effektiv|2027.0.0-ballot">
+        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+          <valueCode value="SHALL"/>
+        </extension>
+      </supportedProfile>
+      <supportedProfile value="https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-r-spezifisch|2027.0.0-ballot">
+        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+          <valueCode value="SHALL"/>
+        </extension>
+      </supportedProfile>
+      <supportedProfile value="https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-tlc|2027.0.0-ballot">
+        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+          <valueCode value="SHALL"/>
+        </extension>
+      </supportedProfile>
+      <supportedProfile value="https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-dlco|2027.0.0-ballot">
+        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+          <valueCode value="SHALL"/>
+        </extension>
+      </supportedProfile>
+      <supportedProfile value="https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-dlcoc|2027.0.0-ballot">
+        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+          <valueCode value="SHALL"/>
+        </extension>
+      </supportedProfile>
+      <supportedProfile value="https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-hb|2027.0.0-ballot">
+        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+          <valueCode value="SHALL"/>
+        </extension>
+      </supportedProfile>
+      <supportedProfile value="https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-kco|2027.0.0-ballot">
+        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+          <valueCode value="SHALL"/>
+        </extension>
+      </supportedProfile>
+      <supportedProfile value="https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-kcoc|2027.0.0-ballot">
+        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+          <valueCode value="SHALL"/>
+        </extension>
+      </supportedProfile>
+      <supportedProfile value="https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-ta|2027.0.0-ballot">
+        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+          <valueCode value="SHALL"/>
+        </extension>
+      </supportedProfile>
+      <supportedProfile value="https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-va|2027.0.0-ballot">
+        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+          <valueCode value="SHALL"/>
+        </extension>
+      </supportedProfile>
+      <supportedProfile value="https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-dosis|2027.0.0-ballot">
+        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+          <valueCode value="SHALL"/>
+        </extension>
+      </supportedProfile>
+      <supportedProfile value="https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-bf|2027.0.0-ballot">
+        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+          <valueCode value="SHALL"/>
+        </extension>
+      </supportedProfile>
+      <supportedProfile value="https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-fev-fvc|2027.0.0-ballot">
+        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+          <valueCode value="SHALL"/>
+        </extension>
+      </supportedProfile>
+      <supportedProfile value="https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-fev|2027.0.0-ballot">
+        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+          <valueCode value="SHALL"/>
+        </extension>
+      </supportedProfile>
+      <supportedProfile value="https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-fev1-vc|2027.0.0-ballot">
+        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+          <valueCode value="SHALL"/>
+        </extension>
+      </supportedProfile>
+      <supportedProfile value="https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-fiv|2027.0.0-ballot">
+        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+          <valueCode value="SHALL"/>
+        </extension>
+      </supportedProfile>
+      <supportedProfile value="https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-fvc|2027.0.0-ballot">
+        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+          <valueCode value="SHALL"/>
+        </extension>
+      </supportedProfile>
+      <supportedProfile value="https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-ic|2027.0.0-ballot">
+        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+          <valueCode value="SHALL"/>
+        </extension>
+      </supportedProfile>
+      <supportedProfile value="https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-mef|2027.0.0-ballot">
+        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+          <valueCode value="SHALL"/>
+        </extension>
+      </supportedProfile>
+      <supportedProfile value="https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-pef|2027.0.0-ballot">
+        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+          <valueCode value="SHALL"/>
+        </extension>
+      </supportedProfile>
+      <supportedProfile value="https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-rv|2027.0.0-ballot">
+        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+          <valueCode value="SHALL"/>
+        </extension>
+      </supportedProfile>
+      <supportedProfile value="https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-vc|2027.0.0-ballot">
+        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+          <valueCode value="SHALL"/>
+        </extension>
+      </supportedProfile>
+      <supportedProfile value="https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-luftfeuchtigkeit|2027.0.0-ballot">
+        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+          <valueCode value="SHALL"/>
+        </extension>
+      </supportedProfile>
+      <supportedProfile value="https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-lufttemperatur|2027.0.0-ballot">
+        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+          <valueCode value="SHALL"/>
+        </extension>
+      </supportedProfile>
+      <supportedProfile value="https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-co2-konzentration|2027.0.0-ballot">
+        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+          <valueCode value="SHALL"/>
+        </extension>
+      </supportedProfile>
+      <interaction>
+        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+          <valueCode value="SHALL"/>
+        </extension>
+        <code value="read"/>
+      </interaction>
+      <interaction>
+        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+          <valueCode value="SHALL"/>
+        </extension>
+        <code value="search-type"/>
+      </interaction>
+      <searchParam>
+        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+          <valueCode value="SHALL"/>
+        </extension>
+        <name value="_id"/>
+        <definition value="http://hl7.org/fhir/SearchParameter/Resource-id"/>
+        <type value="token"/>
+      </searchParam>
+      <searchParam>
+        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+          <valueCode value="SHALL"/>
+        </extension>
+        <name value="_lastUpdated"/>
+        <definition value="http://hl7.org/fhir/SearchParameter/Resource-lastUpdated"/>
+        <type value="date"/>
+      </searchParam>
+      <searchParam>
+        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+          <valueCode value="SHALL"/>
+        </extension>
+        <name value="_profile"/>
+        <definition value="http://hl7.org/fhir/SearchParameter/Resource-profile"/>
+        <type value="uri"/>
+      </searchParam>
+      <searchParam>
+        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+          <valueCode value="SHALL"/>
+        </extension>
+        <name value="_source"/>
+        <definition value="http://hl7.org/fhir/SearchParameter/Resource-source"/>
+        <type value="uri"/>
+      </searchParam>
+      <searchParam>
+        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+          <valueCode value="SHALL"/>
+        </extension>
+        <name value="part-of"/>
+        <definition value="http://hl7.org/fhir/SearchParameter/Observation-part-of"/>
+        <type value="reference"/>
+      </searchParam>
+      <searchParam>
+        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+          <valueCode value="SHALL"/>
+        </extension>
+        <name value="status"/>
+        <definition value="http://hl7.org/fhir/SearchParameter/Observation-status"/>
+        <type value="token"/>
+      </searchParam>
+      <searchParam>
+        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+          <valueCode value="SHALL"/>
+        </extension>
+        <name value="category"/>
+        <definition value="http://hl7.org/fhir/SearchParameter/Observation-category"/>
+        <type value="token"/>
+      </searchParam>
+      <searchParam>
+        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+          <valueCode value="SHALL"/>
+        </extension>
+        <name value="code"/>
+        <definition value="http://hl7.org/fhir/SearchParameter/clinical-code"/>
+        <type value="token"/>
+      </searchParam>
+      <searchParam>
+        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+          <valueCode value="SHALL"/>
+        </extension>
+        <name value="patient"/>
+        <definition value="http://hl7.org/fhir/SearchParameter/clinical-patient"/>
+        <type value="reference"/>
+      </searchParam>
+      <searchParam>
+        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+          <valueCode value="SHALL"/>
+        </extension>
+        <name value="issued"/>
+        <definition value="https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-observation-issued"/>
+        <type value="date"/>
+      </searchParam>
+      <searchParam>
+        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+          <valueCode value="SHALL"/>
+        </extension>
+        <name value="value-quantity"/>
+        <definition value="http://hl7.org/fhir/SearchParameter/Observation-value-quantity"/>
+        <type value="quantity"/>
+      </searchParam>
+      <searchParam>
+        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+          <valueCode value="SHALL"/>
+        </extension>
+        <name value="interpretation"/>
+        <definition value="https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-observation-interpretation"/>
+        <type value="token"/>
+      </searchParam>
+      <searchParam>
+        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+          <valueCode value="SHALL"/>
+        </extension>
+        <name value="method"/>
+        <definition value="http://hl7.org/fhir/SearchParameter/Observation-method"/>
+        <type value="token"/>
+      </searchParam>
+      <searchParam>
+        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+          <valueCode value="SHALL"/>
+        </extension>
+        <name value="reference-range-low"/>
+        <definition value="https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-observation-referencerange-low"/>
+        <type value="quantity"/>
+      </searchParam>
+      <searchParam>
+        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+          <valueCode value="SHALL"/>
+        </extension>
+        <name value="reference-range-high"/>
+        <definition value="https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-observation-referencerange-high"/>
+        <type value="quantity"/>
+      </searchParam>
+      <searchParam>
+        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+          <valueCode value="SHALL"/>
+        </extension>
+        <name value="reference-range"/>
+        <definition value="https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-observation-referencerange"/>
+        <type value="composite"/>
+      </searchParam>
+      <searchParam>
+        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+          <valueCode value="SHALL"/>
+        </extension>
+        <name value="has-member"/>
+        <definition value="http://hl7.org/fhir/SearchParameter/Observation-has-member"/>
+        <type value="reference"/>
+      </searchParam>
+      <searchParam>
+        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+          <valueCode value="SHALL"/>
+        </extension>
+        <name value="derived-from"/>
+        <definition value="http://hl7.org/fhir/SearchParameter/Observation-derived-from"/>
+        <type value="reference"/>
+      </searchParam>
+      <searchParam>
+        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+          <valueCode value="SHALL"/>
+        </extension>
+        <name value="code-value-quantity"/>
+        <definition value="http://hl7.org/fhir/SearchParameter/Observation-code-value-quantity"/>
+        <type value="composite"/>
+      </searchParam>
+      <searchParam>
+        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+          <valueCode value="SHALL"/>
+        </extension>
+        <name value="combo-code"/>
+        <definition value="http://hl7.org/fhir/SearchParameter/Observation-combo-code"/>
+        <type value="token"/>
+      </searchParam>
+      <searchParam>
+        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+          <valueCode value="SHALL"/>
+        </extension>
+        <name value="combo-code-value-quantity"/>
+        <definition value="http://hl7.org/fhir/SearchParameter/Observation-combo-code-value-quantity"/>
+        <type value="composite"/>
+      </searchParam>
+      <searchParam>
+        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+          <valueCode value="SHALL"/>
+        </extension>
+        <name value="combo-value-quantity"/>
+        <definition value="http://hl7.org/fhir/SearchParameter/Observation-combo-value-quantity"/>
+        <type value="quantity"/>
+      </searchParam>
+      <searchParam>
+        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+          <valueCode value="SHALL"/>
+        </extension>
+        <name value="component-code"/>
+        <definition value="http://hl7.org/fhir/SearchParameter/Observation-component-code"/>
+        <type value="token"/>
+      </searchParam>
+      <searchParam>
+        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+          <valueCode value="SHALL"/>
+        </extension>
+        <name value="component-code-value-quantity"/>
+        <definition value="http://hl7.org/fhir/SearchParameter/Observation-component-code-value-quantity"/>
+        <type value="composite"/>
+      </searchParam>
+      <searchParam>
+        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+          <valueCode value="SHALL"/>
+        </extension>
+        <name value="component-value-quantity"/>
+        <definition value="http://hl7.org/fhir/SearchParameter/Observation-component-value-quantity"/>
+        <type value="quantity"/>
+      </searchParam>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+        <valueCode value="SHALL"/>
+      </extension>
+      <type value="MedicationAdministration"/>
+      <supportedProfile value="https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-dosis-gabe|2027.0.0-ballot">
+        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+          <valueCode value="SHALL"/>
+        </extension>
+      </supportedProfile>
+      <interaction>
+        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+          <valueCode value="SHALL"/>
+        </extension>
+        <code value="read"/>
+      </interaction>
+      <interaction>
+        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+          <valueCode value="SHALL"/>
+        </extension>
+        <code value="search-type"/>
+      </interaction>
+      <searchParam>
+        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+          <valueCode value="SHALL"/>
+        </extension>
+        <name value="_id"/>
+        <definition value="http://hl7.org/fhir/SearchParameter/Resource-id"/>
+        <type value="token"/>
+      </searchParam>
+      <searchParam>
+        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+          <valueCode value="SHALL"/>
+        </extension>
+        <name value="_lastUpdated"/>
+        <definition value="http://hl7.org/fhir/SearchParameter/Resource-lastUpdated"/>
+        <type value="date"/>
+      </searchParam>
+      <searchParam>
+        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+          <valueCode value="SHALL"/>
+        </extension>
+        <name value="_profile"/>
+        <definition value="http://hl7.org/fhir/SearchParameter/Resource-profile"/>
+        <type value="uri"/>
+      </searchParam>
+      <searchParam>
+        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+          <valueCode value="SHALL"/>
+        </extension>
+        <name value="_source"/>
+        <definition value="http://hl7.org/fhir/SearchParameter/Resource-source"/>
+        <type value="uri"/>
+      </searchParam>
+      <searchParam>
+        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+          <valueCode value="SHALL"/>
+        </extension>
+        <name value="part-of"/>
+        <definition value="https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-medication-partof"/>
+        <type value="reference"/>
+      </searchParam>
+      <searchParam>
+        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+          <valueCode value="SHALL"/>
+        </extension>
+        <name value="medication"/>
+        <definition value="http://hl7.org/fhir/SearchParameter/MedicationAdministration-medication"/>
+        <type value="reference"/>
+      </searchParam>
+      <searchParam>
+        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+          <valueCode value="SHALL"/>
+        </extension>
+        <name value="dose-quantity"/>
+        <definition value="https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-medication-dosage-dosequantity"/>
+        <type value="quantity"/>
+      </searchParam>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+        <valueCode value="SHALL"/>
+      </extension>
+      <type value="Medication"/>
+      <supportedProfile value="https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-methacholine|2027.0.0-ballot">
+        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+          <valueCode value="SHALL"/>
+        </extension>
+      </supportedProfile>
+      <interaction>
+        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+          <valueCode value="SHALL"/>
+        </extension>
+        <code value="read"/>
+      </interaction>
+      <interaction>
+        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+          <valueCode value="SHALL"/>
+        </extension>
+        <code value="search-type"/>
+      </interaction>
+      <searchParam>
+        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+          <valueCode value="SHALL"/>
+        </extension>
+        <name value="_id"/>
+        <definition value="http://hl7.org/fhir/SearchParameter/Resource-id"/>
+        <type value="token"/>
+      </searchParam>
+      <searchParam>
+        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+          <valueCode value="SHALL"/>
+        </extension>
+        <name value="_lastUpdated"/>
+        <definition value="http://hl7.org/fhir/SearchParameter/Resource-lastUpdated"/>
+        <type value="date"/>
+      </searchParam>
+      <searchParam>
+        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+          <valueCode value="SHALL"/>
+        </extension>
+        <name value="_profile"/>
+        <definition value="http://hl7.org/fhir/SearchParameter/Resource-profile"/>
+        <type value="uri"/>
+      </searchParam>
+      <searchParam>
+        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+          <valueCode value="SHALL"/>
+        </extension>
+        <name value="_source"/>
+        <definition value="http://hl7.org/fhir/SearchParameter/Resource-source"/>
+        <type value="uri"/>
+      </searchParam>
+      <searchParam>
+        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+          <valueCode value="SHALL"/>
+        </extension>
+        <name value="code"/>
+        <definition value="http://hl7.org/fhir/SearchParameter/Medication-code"/>
+        <type value="token"/>
+      </searchParam>
+      <searchParam>
+        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+          <valueCode value="SHALL"/>
+        </extension>
+        <name value="ingredient-code"/>
+        <definition value="http://hl7.org/fhir/SearchParameter/Medication-ingredient-code"/>
+        <type value="token"/>
+      </searchParam>
+      <searchParam>
+        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+          <valueCode value="SHALL"/>
+        </extension>
+        <name value="ingredient-strength"/>
+        <definition value="https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-medication-ingredient-strength"/>
+        <type value="composite"/>
+      </searchParam>
+      <searchParam>
+        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+          <valueCode value="SHALL"/>
+        </extension>
+        <name value="ingredient-strength-numerator"/>
+        <definition value="https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-medication-ingredient-strength-numerator"/>
+        <type value="quantity"/>
+      </searchParam>
+      <searchParam>
+        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+          <valueCode value="SHALL"/>
+        </extension>
+        <name value="ingredient-strength-denominator"/>
+        <definition value="https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-medication-ingredient-strength-denominator"/>
+        <type value="quantity"/>
+      </searchParam>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+        <valueCode value="SHALL"/>
+      </extension>
+      <type value="Location"/>
+      <supportedProfile value="https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-umgebung|2027.0.0-ballot">
+        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+          <valueCode value="SHALL"/>
+        </extension>
+      </supportedProfile>
+      <interaction>
+        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+          <valueCode value="SHALL"/>
+        </extension>
+        <code value="read"/>
+      </interaction>
+      <interaction>
+        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+          <valueCode value="SHALL"/>
+        </extension>
+        <code value="search-type"/>
+      </interaction>
+      <searchParam>
+        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+          <valueCode value="SHALL"/>
+        </extension>
+        <name value="_id"/>
+        <definition value="http://hl7.org/fhir/SearchParameter/Resource-id"/>
+        <type value="token"/>
+      </searchParam>
+      <searchParam>
+        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+          <valueCode value="SHALL"/>
+        </extension>
+        <name value="_lastUpdated"/>
+        <definition value="http://hl7.org/fhir/SearchParameter/Resource-lastUpdated"/>
+        <type value="date"/>
+      </searchParam>
+      <searchParam>
+        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+          <valueCode value="SHALL"/>
+        </extension>
+        <name value="_profile"/>
+        <definition value="http://hl7.org/fhir/SearchParameter/Resource-profile"/>
+        <type value="uri"/>
+      </searchParam>
+      <searchParam>
+        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+          <valueCode value="SHALL"/>
+        </extension>
+        <name value="_source"/>
+        <definition value="http://hl7.org/fhir/SearchParameter/Resource-source"/>
+        <type value="uri"/>
+      </searchParam>
+      <searchParam>
+        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+          <valueCode value="SHALL"/>
+        </extension>
+        <name value="type"/>
+        <definition value="http://hl7.org/fhir/SearchParameter/Location-type"/>
+        <type value="token"/>
+      </searchParam>
+    </resource>
+  </rest>
+</CapabilityStatement>

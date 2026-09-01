@@ -1,0 +1,99 @@
+{
+  "resourceType" : "Observation",
+  "id" : "mii-exa-lungenfunktion-dlco",
+  "meta" : {
+    "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-dlco"]
+  },
+  "language" : "de",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xml:lang=\"de\" lang=\"de\"><hr/><p><b>German</b></p><hr/><p class=\"res-header-id\"><b>Generated Narrative: Observation mii-exa-lungenfunktion-dlco</b></p><a name=\"de-mii-exa-lungenfunktion-dlco\"> </a><a name=\"de-hcmii-exa-lungenfunktion-dlco\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-mii-pr-lungenfunktion-dlco.html\">MII PR Lungenfunktion DLCO</a></p></div><p><b>partOf</b>: <a href=\"Procedure-mii-exa-lungenfunktion-diffusion-messung.html\">Procedure Carbon monoxide diffusing capacity measurement (procedure)</a></p><p><b>status</b>: Final</p><p><b>category</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/observation-category procedure}\">Procedure</span></p><p><b>code</b>: <span title=\"Codes:{http://loinc.org 19911-7}\">Diffusion capacity.carbon monoxide</span></p><p><b>subject</b>: <a href=\"Patient-mii-exa-person-patient-1.html\">Erika Beispielpatientin  Female, DoB: 1970-01-01</a></p><p><b>issued</b>: 2024-07-19 13:03:20+0200</p><p><b>value</b>: 8.27 mmol/(min.kPa)<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codemmol/(min.kPa) = 'mmol/(min.kPa)')</span></p><p><b>interpretation</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation N}\">Normal</span></p><p><b>method</b>: <span title=\"Codes:{http://snomed.info/sct 249862003}\">Sitting upright (finding)</span></p><h3>ReferenceRanges</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Low</b></td></tr><tr><td style=\"display: none\">*</td><td>7.29 mmol/(min.kPa)<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codemmol/(min.kPa) = 'mmol/(min.kPa)')</span></td></tr></table><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes:{http://loinc.org 19910-9}\">Diffusion capacity.carbon monoxide Predicted</span></p><p><b>value</b>: 9.5 mmol/(min.kPa)<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codemmol/(min.kPa) = 'mmol/(min.kPa)')</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes:{http://loinc.org 98130-8}\">Diffusion capacity.carbon monoxide/Predicted</span></p><p><b>value</b>: 87 %<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  code% = '%')</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 1078210003}\">Z-score calculation technique (qualifier value)</span></p><p><b>value</b>: -0.9</p></blockquote></div>"
+  },
+  "partOf" : [{
+    "reference" : "Procedure/mii-exa-lungenfunktion-diffusion-messung"
+  }],
+  "status" : "final",
+  "category" : [{
+    "coding" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
+      "code" : "procedure"
+    }]
+  }],
+  "code" : {
+    "coding" : [{
+      "system" : "http://loinc.org",
+      "code" : "19911-7",
+      "display" : "Diffusion capacity.carbon monoxide"
+    }]
+  },
+  "subject" : {
+    "reference" : "Patient/mii-exa-person-patient-1"
+  },
+  "issued" : "2024-07-19T13:03:20+02:00",
+  "valueQuantity" : {
+    "value" : 8.27,
+    "system" : "http://unitsofmeasure.org",
+    "code" : "mmol/(min.kPa)"
+  },
+  "interpretation" : [{
+    "coding" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+      "code" : "N"
+    }]
+  }],
+  "method" : {
+    "coding" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "249862003",
+      "display" : "Sitting upright (finding)"
+    }]
+  },
+  "referenceRange" : [{
+    "low" : {
+      "value" : 7.29,
+      "system" : "http://unitsofmeasure.org",
+      "code" : "mmol/(min.kPa)"
+    }
+  }],
+  "component" : [{
+    "code" : {
+      "coding" : [{
+        "system" : "http://loinc.org",
+        "code" : "19910-9",
+        "display" : "Diffusion capacity.carbon monoxide Predicted"
+      }]
+    },
+    "valueQuantity" : {
+      "value" : 9.5,
+      "system" : "http://unitsofmeasure.org",
+      "code" : "mmol/(min.kPa)"
+    }
+  },
+  {
+    "code" : {
+      "coding" : [{
+        "system" : "http://loinc.org",
+        "code" : "98130-8",
+        "display" : "Diffusion capacity.carbon monoxide/Predicted"
+      }]
+    },
+    "valueQuantity" : {
+      "value" : 87,
+      "system" : "http://unitsofmeasure.org",
+      "code" : "%"
+    }
+  },
+  {
+    "code" : {
+      "coding" : [{
+        "system" : "http://snomed.info/sct",
+        "code" : "1078210003",
+        "display" : "Z-score calculation technique (qualifier value)"
+      }]
+    },
+    "valueQuantity" : {
+      "value" : -0.9,
+      "system" : "http://unitsofmeasure.org"
+    }
+  }]
+}
