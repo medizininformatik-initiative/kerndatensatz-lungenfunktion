@@ -43,7 +43,7 @@
   },
   "report": [
     {
-      "reference": "DiagnosticReport/mii-exa-lungenfunktion-provokationstest"
+      "reference": "DiagnosticReport/mii-exa-lungenfunktion-provokationstest-befund"
     }
   ]
 }
