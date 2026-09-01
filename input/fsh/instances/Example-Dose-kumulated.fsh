@@ -3,9 +3,9 @@ InstanceOf: MII_PR_Lungenfunktion_Dosis
 Usage: #example
 Title: "MII Example Lungenfunktion Dosis kumuliert"
 * partOf = Reference(Procedure/mii-exa-lungenfunktion-provokationstest-messung)
-* partOf[+] = Reference(MedicationAdminstration/mii-exa-lungenfunktion-dosis-gabe-1)
-* partOf[+] = Reference(MedicationAdminstration/mii-exa-lungenfunktion-dosis-gabe-2)
-* partOf[+] = Reference(MedicationAdminstration/mii-exa-lungenfunktion-dosis-gabe-3)
+* partOf[+] = Reference(MedicationAdministration/mii-exa-lungenfunktion-dosis-gabe-1)
+* partOf[+] = Reference(MedicationAdministration/mii-exa-lungenfunktion-dosis-gabe-2)
+* partOf[+] = Reference(MedicationAdministration/mii-exa-lungenfunktion-dosis-gabe-3)
 * status = #final
 * category.coding = $obs-category#procedure
 * code = $SCT#1376040001 "Dose of methacholine to achieve maximal drop of forced expired volume in 1 second (observable entity)"

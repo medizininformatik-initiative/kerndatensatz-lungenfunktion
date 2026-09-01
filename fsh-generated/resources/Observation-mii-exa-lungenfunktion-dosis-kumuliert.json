@@ -21,13 +21,13 @@
       "reference": "Procedure/mii-exa-lungenfunktion-provokationstest-messung"
     },
     {
-      "reference": "MedicationAdminstration/mii-exa-lungenfunktion-dosis-gabe-1"
+      "reference": "MedicationAdministration/mii-exa-lungenfunktion-dosis-gabe-1"
     },
     {
-      "reference": "MedicationAdminstration/mii-exa-lungenfunktion-dosis-gabe-2"
+      "reference": "MedicationAdministration/mii-exa-lungenfunktion-dosis-gabe-2"
     },
     {
-      "reference": "MedicationAdminstration/mii-exa-lungenfunktion-dosis-gabe-3"
+      "reference": "MedicationAdministration/mii-exa-lungenfunktion-dosis-gabe-3"
     }
   ],
   "status": "final",

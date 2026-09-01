@@ -21,7 +21,7 @@
       "reference": "Procedure/mii-exa-lungenfunktion-spirometrie-messung"
     },
     {
-      "reference": "MedicationAdminstration/mii-exa-lungenfunktion-dosis-gabe-3"
+      "reference": "MedicationAdministration/mii-exa-lungenfunktion-dosis-gabe-3"
     }
   ],
   "status": "final",
