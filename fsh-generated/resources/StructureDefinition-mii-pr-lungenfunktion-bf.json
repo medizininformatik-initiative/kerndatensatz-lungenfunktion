@@ -1237,36 +1237,6 @@
         "mustSupport": true
       },
       {
-        "id": "Observation.component.value[x]:valueQuantity",
-        "path": "Observation.component.value[x]",
-        "sliceName": "valueQuantity",
-        "type": [
-          {
-            "code": "Quantity"
-          }
-        ]
-      },
-      {
-        "id": "Observation.component.value[x]:valueQuantity.value",
-        "path": "Observation.component.value[x].value",
-        "mustSupport": true
-      },
-      {
-        "id": "Observation.component.value[x]:valueQuantity.unit",
-        "path": "Observation.component.value[x].unit",
-        "mustSupport": true
-      },
-      {
-        "id": "Observation.component.value[x]:valueQuantity.system",
-        "path": "Observation.component.value[x].system",
-        "mustSupport": true
-      },
-      {
-        "id": "Observation.component.value[x]:valueQuantity.code",
-        "path": "Observation.component.value[x].code",
-        "mustSupport": true
-      },
-      {
         "id": "Observation.component:predicted",
         "path": "Observation.component",
         "sliceName": "predicted",
@@ -1516,14 +1486,26 @@
         ]
       },
       {
+        "id": "Observation.component:predicted.value[x]:valueQuantity.value",
+        "path": "Observation.component.value[x].value",
+        "mustSupport": true
+      },
+      {
         "id": "Observation.component:predicted.value[x]:valueQuantity.unit",
         "path": "Observation.component.value[x].unit",
-        "patternString": "L"
+        "patternString": "L",
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.component:predicted.value[x]:valueQuantity.system",
+        "path": "Observation.component.value[x].system",
+        "mustSupport": true
       },
       {
         "id": "Observation.component:predicted.value[x]:valueQuantity.code",
         "path": "Observation.component.value[x].code",
-        "patternCode": "L"
+        "patternCode": "L",
+        "mustSupport": true
       },
       {
         "id": "Observation.component:percentPredicted",
@@ -1775,14 +1757,26 @@
         ]
       },
       {
+        "id": "Observation.component:percentPredicted.value[x]:valueQuantity.value",
+        "path": "Observation.component.value[x].value",
+        "mustSupport": true
+      },
+      {
         "id": "Observation.component:percentPredicted.value[x]:valueQuantity.unit",
         "path": "Observation.component.value[x].unit",
-        "patternString": "%"
+        "patternString": "%",
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.component:percentPredicted.value[x]:valueQuantity.system",
+        "path": "Observation.component.value[x].system",
+        "mustSupport": true
       },
       {
         "id": "Observation.component:percentPredicted.value[x]:valueQuantity.code",
         "path": "Observation.component.value[x].code",
-        "patternCode": "%"
+        "patternCode": "%",
+        "mustSupport": true
       }
     ]
   }
