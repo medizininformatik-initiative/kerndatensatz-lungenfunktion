@@ -23,7 +23,7 @@
     "reference": "Medication/mii-exa-lungenfunktion-methacholine"
   },
   "subject": {
-    "reference": "Patient/mii-exa-person-patient-1"
+    "reference": "Patient/mii-exa-lungenfunktion-patient"
   },
   "effectiveDateTime": "2024-07-19T13:03:20+02:00"
 }

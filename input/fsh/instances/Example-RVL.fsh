@@ -6,7 +6,7 @@ Title: "MII Example Lungenfunktion RVL"
 * status = #final
 * category.coding = $obs-category#procedure
 * code = $loinc#20146-7 "Residual volume"
-* subject = Reference(Patient/mii-exa-person-patient-1)
+* subject = Reference(Patient/mii-exa-lungenfunktion-patient)
 * issued = "2024-07-19T13:03:20+02:00"
 * valueQuantity = 3.01 'L'
 * interpretation = $interpretation#N

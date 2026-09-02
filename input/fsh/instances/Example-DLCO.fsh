@@ -6,7 +6,7 @@ Title: "MII Example Lungenfunktion DLCO"
 * status = #final
 * category.coding = $obs-category#procedure
 * code = $loinc#19911-7 "Diffusion capacity.carbon monoxide"
-* subject = Reference(Patient/mii-exa-person-patient-1)
+* subject = Reference(Patient/mii-exa-lungenfunktion-patient)
 * issued = "2024-07-19T13:03:20+02:00"
 * valueQuantity = 8.27 'mmol/(min.kPa)'
 * interpretation = $interpretation#N

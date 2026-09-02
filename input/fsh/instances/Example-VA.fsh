@@ -6,7 +6,7 @@ Title: "MII Example Lungenfunktion VA"
 * status = #final
 * category.coding = $obs-category#procedure
 * code = $SCT#251953007 "Alveolar volume (observable entity)"
-* subject = Reference(Patient/mii-exa-person-patient-1)
+* subject = Reference(Patient/mii-exa-lungenfunktion-patient)
 * issued = "2024-07-19T13:03:20+02:00"
 * valueQuantity = 4.87 'L'
 * interpretation = $interpretation#N

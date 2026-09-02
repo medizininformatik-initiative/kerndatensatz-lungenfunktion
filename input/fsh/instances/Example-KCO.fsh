@@ -6,7 +6,7 @@ Title: "MII Example Lungenfunktion KCO"
 * status = #final
 * category.coding = $obs-category#procedure
 * code = $loinc#19916-6 "Diffusion capacity/Alveolar volume"
-* subject = Reference(Patient/mii-exa-person-patient-1)
+* subject = Reference(Patient/mii-exa-lungenfunktion-patient)
 * issued = "2024-07-19T13:03:20+02:00"
 * valueQuantity = 1.70 'mmol/(min.kPa.L)'
 * interpretation = $interpretation#N
