@@ -1,0 +1,2230 @@
+
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+
+
+<html xml:lang="de" xmlns="http://www.w3.org/1999/xhtml" lang="de" dir="ltr">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>Artefaktübersicht - MII IG Kerndatensatz-Modul Lungenfunktion v2027.0.0-ballot.rc1</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+    <link href="assets/css/project.css" rel="stylesheet"/>
+  	<link href="assets/css/cqf.css" rel="stylesheet" />
+    <!-- Branding override for the fhir2.base.template CSS placeholder
+     (base ships includes/fragment-css.html as a single comment; it is included
+     in <head> AFTER all base stylesheets, so the linked files win the
+     cascade).
+     Load model (docs/styleguide.md §1/§10): bootstrap-accessibility.css
+     (PayPal Bootstrap Accessibility Plugin v1.0.7, vendored + pinned - §8)
+     patches Bootstrap-3 component styling for accessibility (focus outlines,
+     alert contrast) and loads FIRST so the template's own rules can override;
+     then template-base.css carries the
+     brand-INDEPENDENT rule blocks and always loads; then EXACTLY ONE palette
+     file follows - num-diz.css, the DEFAULT design, unless the consuming IG
+     ships input/data/brand.json with { "design": "mii" } (read as
+     site.data.brand.design via the base's input/data -> _data pre-process),
+     which selects mii.css instead. Only the exact value 'mii' selects the
+     MII design; anything else - including no brand.json at all and unknown
+     values - renders NUM-DIZ. Both palettes declare the same variable set
+     (scripts/brand-switch.test.mjs). -->
+<link href="assets/css/bootstrap-accessibility.css" rel="stylesheet"/>
+<link href="assets/css/template-base.css" rel="stylesheet"/>
+
+<link href="assets/css/num-diz.css" rel="stylesheet"/>
+
+
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+    <script type="text/javascript" src="assets/js/direction-management.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="fhir-logo" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="fhir-logo" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="fhir-logo" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="fhir-logo" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
+    <style type="text/css">h2{--heading-prefix:"15"}
+    h3,h4,h5,h6{--heading-prefix:"15.0"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+
+        <!-- Branding override for the fhir2.base.template header placeholder
+     (base ships includes/fragment-header.html as a single comment; it is included
+     inside "#segment-header > .container", before the #ig-status block).
+     Language handling: only the asset and its descriptive alt text switch on
+     include.lang (the pattern kerndatensatz-basis uses); no translatable UI
+     strings are hard-coded.
+     Brand handling: the project logo additionally switches on
+     site.data.brand.design (input/data/brand.json in the consuming IG, see
+     docs/styleguide.md §10). Only the exact value 'mii' selects the MII
+     logos - anything else, including no brand.json at all, falls through to
+     the NUM-DIZ default.
+     Two logos, mirroring kerndatensatz-basis: the HL7 FHIR logo (links to the
+     FHIR spec) in #family-nav, and the project logo in #project-nav.
+     fhir-logo-www.png is shipped by fhir2.base.template
+     (content/assets/images/), so it resolves from the inherited assets without
+     shipping it here. -->
+<div id="family-nav">
+  <a id="family-logo" no-external="true" href="https://hl7.org/fhir">
+    <img height="50" alt="HL7 FHIR" src="assets/images/fhir-logo-www.png"/>
+  </a>
+</div>
+<div id="project-nav">
+
+  <a id="project-logo" no-external="true" href="https://www.netzwerk-universitaetsmedizin.de/forschung/num-diz">
+
+    <img height="50" alt="NUM-DIZ (Netzwerk Universitätsmedizin — Datenintegrationszentrum)" src="assets/images/logo-num-diz-de.svg"/>
+
+  </a>
+
+</div>
+<!-- Font-size control (A / A+ / A++): three reader-selectable levels; level A
+     is the untouched default. Logic in assets/js/font-size-control.js, the
+     zoom mapping + button styling in template-base.css ("font-size control"
+     block). All three buttons read "A" — the button's own font size shows the level; labels are language-neutral; only the aria texts switch
+     on include.lang. REMOVAL: delete this block, the js file and the CSS
+     block - one commit, styleguide §5a. -->
+
+<div class="ig-fontsize" role="group" aria-label="Schriftgröße">
+  <button type="button" data-level="0" aria-pressed="true" aria-label="Schriftgröße: Standard">A</button>
+  <button type="button" data-level="1" aria-pressed="false" aria-label="Schriftgröße: größer">A</button>
+  <button type="button" data-level="2" aria-pressed="false" aria-label="Schriftgröße: am größten">A</button>
+</div>
+
+<script src="assets/js/font-size-control.js" defer></script>
+<!-- PayPal Bootstrap Accessibility Plugin v1.0.7 (vendored + pinned, §8):
+     patches the Bootstrap-3 components the publisher renders - navbar
+     dropdowns gain ARIA menu semantics + arrow-key navigation, tab panels
+     (structure-tabs) the full ARIA tabs pattern, alerts live-region
+     announcements. `defer` guarantees it executes AFTER the parser-inserted
+     bootstrap.min.js at the end of the body. Vendored from
+     paypal/bootstrap-accessibility-plugin @ v1.0.7 (the admin-ch fork was
+     evaluated and rejected: 151 commits behind upstream, its 6 deltas are
+     site-specific tab tweaks). REMOVAL: delete this tag, both vendored
+     assets and the fragment-css link - guard test pins the hashes. -->
+<script src="assets/js/bootstrap-accessibility.min.js" defer></script>
+<!-- Back-to-top button: appears after one viewport of scrolling (logic in
+     assets/js/back-to-top.js, styling in template-base.css "back-to-top"
+     block). Rendered here inside #segment-header, which is OUTSIDE the
+     data-fontsize zoom regions, so the fixed button never scales. REMOVAL:
+     this block, the js file and the CSS block - one commit, styleguide §8. -->
+
+<button type="button" class="ig-back-to-top" aria-label="Zurück zum Seitenanfang">↑</button>
+
+<script src="assets/js/back-to-top.js" defer></script>
+
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">MII IG Kerndatensatz-Modul Lungenfunktion</span>
+            <br/>
+            <span style="display:inline-block;">2027.0.0-ballot.rc1 - 
+
+
+
+  <img alt="Germany Flagge" src="assets/images/deu.svg" height="16" title="Germany"/>
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <!-- German translation of input/includes/menu.xml.
+     Keep the href targets IDENTICAL to the source menu; translate only labels.
+     Structure notes (OPTIONAL entries, link-only entries, the interim
+     meta-wiki links) are documented in the source menu's header and in
+     docs/page-structure.md / docs/optional-pages.md. -->
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li><a href="index.html">Startseite</a></li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="guidance.html" class="dropdown-toggle">Anleitung<b class="caret"> </b></a>
+    <ul class="dropdown-menu">
+      <li><a href="guidance.html">Anleitung</a></li>
+      <li><a href="implementer-guidance.html">Anleitung für Implementierende</a></li>
+      <!-- Nur-Link-Eintrag: die Seite "Logische Modelle" (Begründung im Quell-Menü) -->
+      <li><a href="logical-models.html">Datensätze und Beschreibungen</a></li>
+      <li><a href="uml-diagrams.html">UML-Diagramme</a></li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <!-- Eltern-Eintrag und die ersten vier Einträge verlinken die KDS-weiten
+         Konformitätsregeln des Meta-Moduls (INTERIM: Meta-Wiki; siehe
+         Quell-Menü). -->
+    <a data-toggle="dropdown" href="https://github.com/medizininformatik-initiative/kerndatensatz-meta/wiki/Conformance" class="dropdown-toggle">Konformität<b class="caret"> </b></a>
+    <ul class="dropdown-menu">
+      <li><a href="https://github.com/medizininformatik-initiative/kerndatensatz-meta/wiki/Conformance">Konformität</a></li>
+      <li><a href="https://github.com/medizininformatik-initiative/kerndatensatz-meta/wiki/Conformance#anforderungsdokumentation">Allgemeine Anforderungen</a></li>
+      <li><a href="https://github.com/medizininformatik-initiative/kerndatensatz-meta/wiki/Conformance#must-support-ms">Must-Support</a></li>
+      <li><a href="https://github.com/medizininformatik-initiative/kerndatensatz-meta/wiki/Conformance#fehlende-daten">Umgang mit fehlenden Daten</a></li>
+      <li><a href="security-and-privacy.html">Sicherheit und Datenschutz</a></li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="artifacts.html" class="dropdown-toggle">Artefakte<b class="caret"> </b></a>
+    <ul class="dropdown-menu">
+      <li><a href="artifacts.html">Artefakt-Übersicht</a></li>
+      <li><a href="profiles.html">Profile</a></li>
+      <li><a href="capability-statements.html">CapabilityStatements</a></li>
+      <li><a href="logical-models.html">Logische Modelle</a></li>
+      <li><a href="value-sets.html">Value Sets</a></li>
+      <li><a href="examples.html">Beispiele</a></li>
+    </ul>
+  </li>
+  <li><a href="downloads.html">Downloads</a></li>
+  <li><a href="changes.html">Änderungshistorie</a></li>
+  <li class="dropdown">
+    <!-- Der Eltern-Eintrag verlinkt bewusst das PFLICHT-Kind (Versionierung):
+         die Metadaten-Übersicht ist optional. -->
+    <a data-toggle="dropdown" href="version-history.html" class="dropdown-toggle">Metadaten<b class="caret"> </b></a>
+    <ul class="dropdown-menu">
+      <li><a href="metadata.html">Metadaten-Übersicht</a></li>
+      <li><a href="version-history.html">Versionierung</a></li>
+    </ul>
+  </li>
+</ul>
+
+            </div>  <!-- /.nav-collapse -->
+
+              
+
+
+
+
+<div style="float: var(--ig-right);padding: 8px 0px;" id="language">
+  <div id="select_flg" class="flaglist" style="background-image: url(assets/images/icon_arrow_down.png);background-position: 133px 3px;">
+    <div><img class="flag" alt="flag en" src="assets/images/lang-de.png"/>Deutsch</div>
+  </div>
+  <div style="float: var(--ig-right); margin: 2px 0px; padding: 1px 0;color: var(--btn-text-color);font-size:12px">Sprache:</div>
+ 	<div id="flaglist" class="flaglist" style="display: none;position: absolute;right: 0;z-index: 100;background-image: url(assets/images/icon_arrow_up.png);background-position: 133px 3px;">
+    <div><img class="flag" alt="flag de" src="assets/images/lang-de.png"/>Deutsch</div>
+
+    <div><a href="../en/artifacts.html"><img class="flag" src="assets/images/lang-en.png" alt="flag en"/>English</a></div>
+
+  </div>
+</div>
+
+
+
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Inhaltsverzeichnis</b></a></li><li><b>Artefaktübersicht</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<style type="text/css">
+h2:before{color:silver;counter-increment:section;content:var(--heading-prefix) " ";}
+h3:before{color:silver;counter-increment:sub-section;content:var(--heading-prefix) "." counter(sub-section) " ";}
+h4:before{color:silver;counter-increment:composite;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) " ";}
+h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) " ";}
+h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
+</style>
+<div class="col-12">
+  <!--ReleaseHeader--><p id="publish-box">MII IG Kerndatensatz-Modul Lungenfunktion - Local Development build (v2027.0.0-ballot.rc1) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
+  <h2>Artefaktübersicht</h2>
+  
+  <p style="border:var(--translation-box-border);background-color:var(--translation-background-color);padding: 5px 5px 5px 5px;">
+  
+  Für die aktuelle Seite ist keine Übersetzung verfügbar, daher wurde sie in der Standardsprache dargestellt.
+  
+  </p>
+  
+  
+  
+  
+  <!--DO NOT EDIT THIS FILE - It is generated by https://github.com/HL7/ig-template-base/blob/master/scripts/createArtifactSummary.xslt and any changes made will be overwritten--><div xmlns="http://www.w3.org/1999/xhtml"
+     xmlns:f="http://hl7.org/fhir"
+     xmlns:html="http://www.w3.org/1999/xhtml"
+     class="markdown-toc">
+   <p>Inhalt:</p>
+   <ul>
+      <li>
+         <a href="#1">Verhalten: CapabilityStatements</a>
+      </li>
+      <li>
+         <a href="#2">Strukturen: Logische Modelle</a>
+      </li>
+      <li>
+         <a href="#3">Strukturen: Ressourcenprofile</a>
+      </li>
+      <li>
+         <a href="#4">Terminologie: ValueSets</a>
+      </li>
+      <li>
+         <a href="#5">Beispiel: Beispielinstanzen</a>
+      </li>
+      <li>
+         <a href="#6">Sonstige</a>
+      </li>
+   </ul>
+</div>
+<div xmlns="http://www.w3.org/1999/xhtml"
+     xmlns:f="http://hl7.org/fhir"
+     xmlns:html="http://www.w3.org/1999/xhtml">
+   <p>Diese Seite bietet eine Liste der FHIR-Artefakte, die in diesem Implementierungsleitfaden definiert sind.</p>
+   <a name="1"> </a>
+   <h3>Verhalten: CapabilityStatements </h3>
+    <p>Die folgenden Artefakte definieren die spezifischen Fähigkeiten, die verschiedene Systemtypen haben müssen, um diesem Implementierungsleitfaden zu entsprechen. Von Systemen, die mit dem Implementierungsleitfaden konform sind, wird erwartet, dass sie die Konformität mit einem oder mehreren der folgenden Capability Statements deklarieren.</p>
+<table class="grid">
+      <col style="width:20%"/>
+      <tbody>
+         <tr>
+            <td style="column-width:30%">
+               <a href="CapabilityStatement-mii-cps-lungenfunktion-capabilitystatement.html"
+                  title="CapabilityStatement/mii-cps-lungenfunktion-capabilitystatement">
+                  <span title="CapabilityStatement/mii-cps-lungenfunktion-capabilitystatement">MII CPS Lungenfunktion CapabilityStatement
+</span>
+               </a>
+            </td>
+            <td>
+<p>Das vorliegende CapabilityStatement beschreibt alle verpflichtenden Interaktionen die ein konformes System unterstützen muss, um das Modul Lungenfunktion der Medizininformatik Initiative zu implementieren.</p>
+</td>
+         </tr>
+      </tbody>
+   </table>
+   <a name="2"> </a>
+   <h3>Strukturen: Logische Modelle </h3>
+    <p>Diese definieren Datenmodelle, die den von diesem Implementierungsleitfaden abgedeckten Bereich in geschäftsfreundlicheren Begriffen darstellen als die zugrunde liegenden FHIR-Ressourcen.</p>
+<table class="grid">
+      <col style="width:20%"/>
+      <tbody>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-mii-lm-lungenfunktion.html"
+                  title="StructureDefinition/mii-lm-lungenfunktion">
+                  <span title="StructureDefinition/mii-lm-lungenfunktion">MII LM Lungenfunktion
+</span>
+               </a>
+            </td>
+            <td>
+<p>MII LogicalModel Modul Lungenfunktion</p>
+</td>
+         </tr>
+      </tbody>
+   </table>
+   <a name="3"> </a>
+   <h3>Strukturen: Ressourcenprofile </h3>
+    <p>Diese definieren Einschränkungen für FHIR-Ressourcen für Systeme, die mit dem Implementierungsleitfaden konform sind.</p>
+<table class="grid">
+      <col style="width:20%"/>
+      <tbody>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-mii-pr-lungenfunktion-1-viskositaet.html"
+                  title="StructureDefinition/mii-pr-lungenfunktion-1-viskositaet">
+                  <span title="StructureDefinition/mii-pr-lungenfunktion-1-viskositaet">MII PR Lungenfunktion 1/Viscosity
+</span>
+               </a>
+            </td>
+            <td>
+<p>Dieses Beobachtung beschreibt eine spezifische totale Atemwegsleitfähigkeit.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-mii-pr-lungenfunktion-rvl-tlc.html"
+                  title="StructureDefinition/mii-pr-lungenfunktion-rvl-tlc">
+                  <span title="StructureDefinition/mii-pr-lungenfunktion-rvl-tlc">MII PR Lungenfunktion Anteil Residualvolumen an Lungenkapazität
+</span>
+               </a>
+            </td>
+            <td>
+<p>Dieses Beobachtung beschreibt den prozentualen Anteil des Residualvolumen an der totalen Lungenkapazität.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-mii-pr-lungenfunktion-bf.html"
+                  title="StructureDefinition/mii-pr-lungenfunktion-bf">
+                  <span title="StructureDefinition/mii-pr-lungenfunktion-bf">MII PR Lungenfunktion BF
+</span>
+               </a>
+            </td>
+            <td>
+<p>Dieses Profil beschreibt die Messung der Atemfrequenz.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-mii-pr-lungenfunktion-bodyplethysmographie.html"
+                  title="StructureDefinition/mii-pr-lungenfunktion-bodyplethysmographie">
+                  <span title="StructureDefinition/mii-pr-lungenfunktion-bodyplethysmographie">MII PR Lungenfunktion Bodyplethysmographie
+</span>
+               </a>
+            </td>
+            <td>
+<p>Diese Ressource beschreibt einen Befunde der Bodyplethysmographie</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-mii-pr-lungenfunktion-bodyplethysmographie-messung.html"
+                  title="StructureDefinition/mii-pr-lungenfunktion-bodyplethysmographie-messung">
+                  <span title="StructureDefinition/mii-pr-lungenfunktion-bodyplethysmographie-messung">MII PR Lungenfunktion Bodyplethysmographie Messung
+</span>
+               </a>
+            </td>
+            <td>
+<p>Beschreibt die Tätigkeiten, wie eine Bodyplethysmographie durchgeführt wird.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-mii-pr-lungenfunktion-co2-konzentration.html"
+                  title="StructureDefinition/mii-pr-lungenfunktion-co2-konzentration">
+                  <span title="StructureDefinition/mii-pr-lungenfunktion-co2-konzentration">MII PR Lungenfunktion CO2 Konzentration
+</span>
+               </a>
+            </td>
+            <td>
+<p>Dieses Beobachtung beschreibt eine die gemessene CO2 Konzentration.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-mii-pr-lungenfunktion-dlco.html"
+                  title="StructureDefinition/mii-pr-lungenfunktion-dlco">
+                  <span title="StructureDefinition/mii-pr-lungenfunktion-dlco">MII PR Lungenfunktion DLCO
+</span>
+               </a>
+            </td>
+            <td>
+<p>Dieses Profil beschreibt die Messung der Diffusionskapazität von Kohlenstoffmonoxid.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-mii-pr-lungenfunktion-dlcoc.html"
+                  title="StructureDefinition/mii-pr-lungenfunktion-dlcoc">
+                  <span title="StructureDefinition/mii-pr-lungenfunktion-dlcoc">MII PR Lungenfunktion DLCOc
+</span>
+               </a>
+            </td>
+            <td>
+<p>Dieses Profil beschreibt die Messung der korrigierten Diffusionskapazität für Kohlenstoffmonoxid.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-mii-pr-lungenfunktion-diffusion.html"
+                  title="StructureDefinition/mii-pr-lungenfunktion-diffusion">
+                  <span title="StructureDefinition/mii-pr-lungenfunktion-diffusion">MII PR Lungenfunktion Diffusion
+</span>
+               </a>
+            </td>
+            <td>
+<p>Diese Ressource beschreibt einen Befunde der Diffusions-Messung</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-mii-pr-lungenfunktion-diffusion-messung.html"
+                  title="StructureDefinition/mii-pr-lungenfunktion-diffusion-messung">
+                  <span title="StructureDefinition/mii-pr-lungenfunktion-diffusion-messung">MII PR Lungenfunktion Diffusion Messung
+</span>
+               </a>
+            </td>
+            <td>
+<p>Beschreibt die Tätigkeiten, wie eine Diffusion durchgeführt wird</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-mii-pr-lungenfunktion-dosis.html"
+                  title="StructureDefinition/mii-pr-lungenfunktion-dosis">
+                  <span title="StructureDefinition/mii-pr-lungenfunktion-dosis">MII PR Lungenfunktion Dosis
+</span>
+               </a>
+            </td>
+            <td>
+<p>Dieses Profil beschreibt die Messung der Dosis.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-mii-pr-lungenfunktion-dosis-gabe.html"
+                  title="StructureDefinition/mii-pr-lungenfunktion-dosis-gabe">
+                  <span title="StructureDefinition/mii-pr-lungenfunktion-dosis-gabe">MII PR Lungenfunktion Dosisgabe
+</span>
+               </a>
+            </td>
+            <td>
+<p>Dieses Profil beschreibt die Gabe der Dosis.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-mii-pr-lungenfunktion-fev.html"
+                  title="StructureDefinition/mii-pr-lungenfunktion-fev">
+                  <span title="StructureDefinition/mii-pr-lungenfunktion-fev">MII PR Lungenfunktion FEV
+</span>
+               </a>
+            </td>
+            <td>
+<p>Dieses Profil beschreibt die Messung des forcierten, exspiratorischen Volumen.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-mii-pr-lungenfunktion-fev-fvc.html"
+                  title="StructureDefinition/mii-pr-lungenfunktion-fev-fvc">
+                  <span title="StructureDefinition/mii-pr-lungenfunktion-fev-fvc">MII PR Lungenfunktion FEV/FVC
+</span>
+               </a>
+            </td>
+            <td>
+<p>Dieses Profil beschreibt die Messung des Tiffeneau-Index.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-mii-pr-lungenfunktion-frc.html"
+                  title="StructureDefinition/mii-pr-lungenfunktion-frc">
+                  <span title="StructureDefinition/mii-pr-lungenfunktion-frc">MII PR Lungenfunktion FRC
+</span>
+               </a>
+            </td>
+            <td>
+<p>Dieses Profil beschreibt die Messung der funktionellen Residualkapazität.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-mii-pr-lungenfunktion-fvc.html"
+                  title="StructureDefinition/mii-pr-lungenfunktion-fvc">
+                  <span title="StructureDefinition/mii-pr-lungenfunktion-fvc">MII PR Lungenfunktion FVC
+</span>
+               </a>
+            </td>
+            <td>
+<p>Dieses Profil beschreibt die Messung der forcierten Vitalkapazität.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-mii-pr-lungenfunktion-diffusionskapazitaet.html"
+                  title="StructureDefinition/mii-pr-lungenfunktion-diffusionskapazitaet">
+                  <span title="StructureDefinition/mii-pr-lungenfunktion-diffusionskapazitaet">MII PR Lungenfunktion Fluss
+</span>
+               </a>
+            </td>
+            <td>
+<p>Dieses Beobachtung beschreibt eine Flussmessung.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-mii-pr-lungenfunktion-fluss.html"
+                  title="StructureDefinition/mii-pr-lungenfunktion-fluss">
+                  <span title="StructureDefinition/mii-pr-lungenfunktion-fluss">MII PR Lungenfunktion Fluss
+</span>
+               </a>
+            </td>
+            <td>
+<p>Dieses Beobachtung beschreibt eine Flussmessung.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-mii-pr-lungenfunktion-viskositaet.html"
+                  title="StructureDefinition/mii-pr-lungenfunktion-viskositaet">
+                  <span title="StructureDefinition/mii-pr-lungenfunktion-viskositaet">MII PR Lungenfunktion Fluss
+</span>
+               </a>
+            </td>
+            <td>
+<p>Dieses Beobachtung beschreibt eine Flussmessung.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-mii-pr-lungenfunktion-gewicht.html"
+                  title="StructureDefinition/mii-pr-lungenfunktion-gewicht">
+                  <span title="StructureDefinition/mii-pr-lungenfunktion-gewicht">MII PR Lungenfunktion Gewicht
+</span>
+               </a>
+            </td>
+            <td>
+<p>Dieses Beobachtung beschreibt eine Gewichtsressource.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-mii-pr-lungenfunktion-hb.html"
+                  title="StructureDefinition/mii-pr-lungenfunktion-hb">
+                  <span title="StructureDefinition/mii-pr-lungenfunktion-hb">MII PR Lungenfunktion Hb
+</span>
+               </a>
+            </td>
+            <td>
+<p>Dieses Profil beschreibt die Messung des Hämoglobin.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-mii-pr-lungenfunktion-ic.html"
+                  title="StructureDefinition/mii-pr-lungenfunktion-ic">
+                  <span title="StructureDefinition/mii-pr-lungenfunktion-ic">MII PR Lungenfunktion IC
+</span>
+               </a>
+            </td>
+            <td>
+<p>Dieses Profil beschreibt die Messung der inspiratorischen Kapazität.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-mii-pr-lungenfunktion-kco.html"
+                  title="StructureDefinition/mii-pr-lungenfunktion-kco">
+                  <span title="StructureDefinition/mii-pr-lungenfunktion-kco">MII PR Lungenfunktion KCO
+</span>
+               </a>
+            </td>
+            <td>
+<p>Dieses Profil beschreibt die Messung der Transferkapzität von Kohlenstoffmonoxid.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-mii-pr-lungenfunktion-kcoc.html"
+                  title="StructureDefinition/mii-pr-lungenfunktion-kcoc">
+                  <span title="StructureDefinition/mii-pr-lungenfunktion-kcoc">MII PR Lungenfunktion KCOc
+</span>
+               </a>
+            </td>
+            <td>
+<p>Dieses Profil beschreibt die Messung der korrigierten Transferkapzität von Kohlenstoffmonoxid.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-mii-pr-lungenfunktion-luftfeuchtigkeit.html"
+                  title="StructureDefinition/mii-pr-lungenfunktion-luftfeuchtigkeit">
+                  <span title="StructureDefinition/mii-pr-lungenfunktion-luftfeuchtigkeit">MII PR Lungenfunktion Luftfeuchtigkeit
+</span>
+               </a>
+            </td>
+            <td>
+<p>Dieses Beobachtung beschreibt eine relative Luftfeuchtigkeit.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-mii-pr-lungenfunktion-lufttemperatur.html"
+                  title="StructureDefinition/mii-pr-lungenfunktion-lufttemperatur">
+                  <span title="StructureDefinition/mii-pr-lungenfunktion-lufttemperatur">MII PR Lungenfunktion Lufttemperatur
+</span>
+               </a>
+            </td>
+            <td>
+<p>Dieses Beobachtung beschreibt eine Lufttemperaturmessung.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-mii-pr-lungenfunktion-mef.html"
+                  title="StructureDefinition/mii-pr-lungenfunktion-mef">
+                  <span title="StructureDefinition/mii-pr-lungenfunktion-mef">MII PR Lungenfunktion MEF
+</span>
+               </a>
+            </td>
+            <td>
+<p>Dieses Profil beschreibt die Messung des maximalen exspiratorischen Fluss bei forcierten exspiratorischen Vitalkapazität.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-mii-pr-lungenfunktion-methacholine.html"
+                  title="StructureDefinition/mii-pr-lungenfunktion-methacholine">
+                  <span title="StructureDefinition/mii-pr-lungenfunktion-methacholine">MII PR Lungenfunktion Methacholine
+</span>
+               </a>
+            </td>
+            <td>
+<p>Dieses Profil beschreibt die Angaben zu Methacholine.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-mii-pr-lungenfunktion-pef.html"
+                  title="StructureDefinition/mii-pr-lungenfunktion-pef">
+                  <span title="StructureDefinition/mii-pr-lungenfunktion-pef">MII PR Lungenfunktion PEF
+</span>
+               </a>
+            </td>
+            <td>
+<p>Dieses Profil beschreibt die Messung des exspiratorischen Spitzenfluss.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-mii-pr-lungenfunktion-provokationstest-messung.html"
+                  title="StructureDefinition/mii-pr-lungenfunktion-provokationstest-messung">
+                  <span title="StructureDefinition/mii-pr-lungenfunktion-provokationstest-messung">MII PR Lungenfunktion Provokations Messung
+</span>
+               </a>
+            </td>
+            <td>
+<p>Beschreibt die Tätigkeiten, wie eine Diffusion durchgeführt wird</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-mii-pr-lungenfunktion-provokationstest.html"
+                  title="StructureDefinition/mii-pr-lungenfunktion-provokationstest">
+                  <span title="StructureDefinition/mii-pr-lungenfunktion-provokationstest">MII PR Lungenfunktion Provokationstest
+</span>
+               </a>
+            </td>
+            <td>
+<p>Diese Ressource beschreibt einen Befunde des Provokationstest</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-mii-pr-lungenfunktion-prozent.html"
+                  title="StructureDefinition/mii-pr-lungenfunktion-prozent">
+                  <span title="StructureDefinition/mii-pr-lungenfunktion-prozent">MII PR Lungenfunktion Prozent
+</span>
+               </a>
+            </td>
+            <td>
+<p>Dieses Beobachtung beschreibt einen prozentualen Anteil.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-mii-pr-lungenfunktion-r.html"
+                  title="StructureDefinition/mii-pr-lungenfunktion-r">
+                  <span title="StructureDefinition/mii-pr-lungenfunktion-r">MII PR Lungenfunktion R
+</span>
+               </a>
+            </td>
+            <td>
+<p>Dieses Profil beschreibt die Messung des Atemwegswiderstand.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-mii-pr-lungenfunktion-r-effektiv.html"
+                  title="StructureDefinition/mii-pr-lungenfunktion-r-effektiv">
+                  <span title="StructureDefinition/mii-pr-lungenfunktion-r-effektiv">MII PR Lungenfunktion R Effektiv
+</span>
+               </a>
+            </td>
+            <td>
+<p>Dieses Profil beschreibt die Messung des effektiven, spezifischen Atemwegswiderstand.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-mii-pr-lungenfunktion-r-spezifisch.html"
+                  title="StructureDefinition/mii-pr-lungenfunktion-r-spezifisch">
+                  <span title="StructureDefinition/mii-pr-lungenfunktion-r-spezifisch">MII PR Lungenfunktion R Spezifisch
+</span>
+               </a>
+            </td>
+            <td>
+<p>Dieses Profil beschreibt die Messung des spezifischen Atemwegswiderstand</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-mii-pr-lungenfunktion-irv.html"
+                  title="StructureDefinition/mii-pr-lungenfunktion-irv">
+                  <span title="StructureDefinition/mii-pr-lungenfunktion-irv">MII PR Lungenfunktion RV
+</span>
+               </a>
+            </td>
+            <td>
+<p>Dieses Profil beschreibt die Messung des Reservevolumen.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-mii-pr-lungenfunktion-rvl.html"
+                  title="StructureDefinition/mii-pr-lungenfunktion-rvl">
+                  <span title="StructureDefinition/mii-pr-lungenfunktion-rvl">MII PR Lungenfunktion RVL
+</span>
+               </a>
+            </td>
+            <td>
+<p>Dieses Profil beschreibt die Messung des Residualvolumen.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-mii-pr-lungenfunktion-spirometrie-messung.html"
+                  title="StructureDefinition/mii-pr-lungenfunktion-spirometrie-messung">
+                  <span title="StructureDefinition/mii-pr-lungenfunktion-spirometrie-messung">MII PR Lungenfunktion Spirometire Messung
+</span>
+               </a>
+            </td>
+            <td>
+<p>Beschreibt die Tätigkeiten, wie eine Spirometrie durchgeführt wird.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-mii-pr-lungenfunktion-spirometrie.html"
+                  title="StructureDefinition/mii-pr-lungenfunktion-spirometrie">
+                  <span title="StructureDefinition/mii-pr-lungenfunktion-spirometrie">MII PR Lungenfunktion Spirometrie
+</span>
+               </a>
+            </td>
+            <td>
+<p>Diese Ressource beschreibt einen Befunde der Spirometrie</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-mii-pr-lungenfunktion-tlc.html"
+                  title="StructureDefinition/mii-pr-lungenfunktion-tlc">
+                  <span title="StructureDefinition/mii-pr-lungenfunktion-tlc">MII PR Lungenfunktion TLC
+</span>
+               </a>
+            </td>
+            <td>
+<p>Dieses Profil beschreibt die Messung der totalen Lungenkapazität.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-mii-pr-lungenfunktion-befund.html"
+                  title="StructureDefinition/mii-pr-lungenfunktion-befund">
+                  <span title="StructureDefinition/mii-pr-lungenfunktion-befund">MII PR Lungenfunktion Template
+</span>
+               </a>
+            </td>
+            <td>
+<p>Diese Ressource beschreibt einen Befunde eines Lungenfunktionstest</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-mii-pr-lungenfunktion-transferkoeffizient.html"
+                  title="StructureDefinition/mii-pr-lungenfunktion-transferkoeffizient">
+                  <span title="StructureDefinition/mii-pr-lungenfunktion-transferkoeffizient">MII PR Lungenfunktion Transferkoeffizient
+</span>
+               </a>
+            </td>
+            <td>
+<p>Dieses Beobachtung beschreibt ein Transferkoeffizient.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-mii-pr-lungenfunktion-umgebung.html"
+                  title="StructureDefinition/mii-pr-lungenfunktion-umgebung">
+                  <span title="StructureDefinition/mii-pr-lungenfunktion-umgebung">MII PR Lungenfunktion Umgebung
+</span>
+               </a>
+            </td>
+            <td>
+<p>Diese Location beschreibt die Patientenumgebung.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-mii-pr-lungenfunktion-va.html"
+                  title="StructureDefinition/mii-pr-lungenfunktion-va">
+                  <span title="StructureDefinition/mii-pr-lungenfunktion-va">MII PR Lungenfunktion VA
+</span>
+               </a>
+            </td>
+            <td>
+<p>Dieses Profil beschreibt die Messung des alveolärer Volumen.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-mii-pr-lungenfunktion-vc.html"
+                  title="StructureDefinition/mii-pr-lungenfunktion-vc">
+                  <span title="StructureDefinition/mii-pr-lungenfunktion-vc">MII PR Lungenfunktion VC
+</span>
+               </a>
+            </td>
+            <td>
+<p>Dieses Profil beschreibt die Messung der maximalen Vitalkapazität bei Ausatmung.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-mii-pr-lungenfunktion-volumen.html"
+                  title="StructureDefinition/mii-pr-lungenfunktion-volumen">
+                  <span title="StructureDefinition/mii-pr-lungenfunktion-volumen">MII PR Lungenfunktion Volumen
+</span>
+               </a>
+            </td>
+            <td>
+<p>Dieses Beobachtung beschreibt eine Volumenmessung.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-mii-pr-lungenfunktion-widerstand.html"
+                  title="StructureDefinition/mii-pr-lungenfunktion-widerstand">
+                  <span title="StructureDefinition/mii-pr-lungenfunktion-widerstand">MII PR Lungenfunktion Widerstand
+</span>
+               </a>
+            </td>
+            <td>
+<p>Dieses Beobachtung beschreibt eine Widerstandsmessung.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-mii-pr-lungenfunktion-sg-total.html"
+                  title="StructureDefinition/mii-pr-lungenfunktion-sg-total">
+                  <span title="StructureDefinition/mii-pr-lungenfunktion-sg-total">MII PR Lungenfunktion sG Total
+</span>
+               </a>
+            </td>
+            <td>
+<p>Dieses Profil beschreibt die Messung der spezifischen, totalen Atemwegsleitfähigkeit.</p>
+</td>
+         </tr>
+      </tbody>
+   </table>
+   <a name="4"> </a>
+   <h3>Terminologie: ValueSets </h3>
+    <p>Diese definieren Wertemengen, die von Systemen verwendet werden, die mit dem Implementierungsleitfaden konform sind.</p>
+<table class="grid">
+      <col style="width:20%"/>
+      <tbody>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-mii-vs-lufu-lnc-dlco.html"
+                  title="ValueSet/mii-vs-lufu-lnc-dlco">
+                  <span title="ValueSet/mii-vs-lufu-lnc-dlco">MII VS Lufu LNC DLCO
+</span>
+               </a>
+            </td>
+            <td>
+<p>Import the ValueSet for lungfunction functional residual capacity</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-mii-vs-lufu-lnc-dlcoc.html"
+                  title="ValueSet/mii-vs-lufu-lnc-dlcoc">
+                  <span title="ValueSet/mii-vs-lufu-lnc-dlcoc">MII VS Lufu LNC DLCOc
+</span>
+               </a>
+            </td>
+            <td>
+<p>Import the ValueSet for lungfunction functional residual capacity</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-mii-vs-lufu-lnc-fev.html"
+                  title="ValueSet/mii-vs-lufu-lnc-fev">
+                  <span title="ValueSet/mii-vs-lufu-lnc-fev">MII VS Lufu LNC FEV
+</span>
+               </a>
+            </td>
+            <td>
+<p>Import the ValueSet for lungfunction forced expiratory volume</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-mii-vs-lufu-lnc-fev-fvc.html"
+                  title="ValueSet/mii-vs-lufu-lnc-fev-fvc">
+                  <span title="ValueSet/mii-vs-lufu-lnc-fev-fvc">MII VS Lufu LNC FEV FVC
+</span>
+               </a>
+            </td>
+            <td>
+<p>Import the ValueSet for lungfunction Tiffeneau-Index</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-mii-vs-lufu-lnc-frc.html"
+                  title="ValueSet/mii-vs-lufu-lnc-frc">
+                  <span title="ValueSet/mii-vs-lufu-lnc-frc">MII VS Lufu LNC FRC
+</span>
+               </a>
+            </td>
+            <td>
+<p>Import the ValueSet for lungfunction functional residual capacity</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-mii-vs-lufu-lnc-fvc.html"
+                  title="ValueSet/mii-vs-lufu-lnc-fvc">
+                  <span title="ValueSet/mii-vs-lufu-lnc-fvc">MII VS Lufu LNC Forced Vital Capacity
+</span>
+               </a>
+            </td>
+            <td>
+<p>Import the ValueSet for lungfunction forced vital capacity</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-mii-vs-lufu-lnc-ic.html"
+                  title="ValueSet/mii-vs-lufu-lnc-ic">
+                  <span title="ValueSet/mii-vs-lufu-lnc-ic">MII VS Lufu LNC Inspiratory Capacity
+</span>
+               </a>
+            </td>
+            <td>
+<p>Import the ValueSet for lungfunction inspiratory capacity</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-mii-vs-lufu-lnc-kco.html"
+                  title="ValueSet/mii-vs-lufu-lnc-kco">
+                  <span title="ValueSet/mii-vs-lufu-lnc-kco">MII VS Lufu LNC KCO
+</span>
+               </a>
+            </td>
+            <td>
+<p>Import the ValueSet for lungfunction functional residual capacity</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-mii-vs-lufu-lnc-mef.html"
+                  title="ValueSet/mii-vs-lufu-lnc-mef">
+                  <span title="ValueSet/mii-vs-lufu-lnc-mef">MII VS Lufu LNC MEF
+</span>
+               </a>
+            </td>
+            <td>
+<p>Import the ValueSet for lungfunction maximum expiratory flow</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-mii-vs-lufu-lnc-pef.html"
+                  title="ValueSet/mii-vs-lufu-lnc-pef">
+                  <span title="ValueSet/mii-vs-lufu-lnc-pef">MII VS Lufu LNC PEF
+</span>
+               </a>
+            </td>
+            <td>
+<p>Import the ValueSet for lungfunction peak expiratory flow</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-mii-vs-lufu-lnc-r.html"
+                  title="ValueSet/mii-vs-lufu-lnc-r">
+                  <span title="ValueSet/mii-vs-lufu-lnc-r">MII VS Lufu LNC R
+</span>
+               </a>
+            </td>
+            <td>
+<p>Import the ValueSet for lungfunction total airway resistance</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-mii-vs-lufu-lnc-rv.html"
+                  title="ValueSet/mii-vs-lufu-lnc-rv">
+                  <span title="ValueSet/mii-vs-lufu-lnc-rv">MII VS Lufu LNC RV
+</span>
+               </a>
+            </td>
+            <td>
+<p>Import the ValueSet for lungfunction reserve volume</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-mii-vs-lufu-lnc-rvl.html"
+                  title="ValueSet/mii-vs-lufu-lnc-rvl">
+                  <span title="ValueSet/mii-vs-lufu-lnc-rvl">MII VS Lufu LNC RVL
+</span>
+               </a>
+            </td>
+            <td>
+<p>Import the ValueSet for lungfunction Residual Volume</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-mii-vs-lufu-lnc-rvl-tlc.html"
+                  title="ValueSet/mii-vs-lufu-lnc-rvl-tlc">
+                  <span title="ValueSet/mii-vs-lufu-lnc-rvl-tlc">MII VS Lufu LNC RVL TLC
+</span>
+               </a>
+            </td>
+            <td>
+<p>Import the ValueSet for lungfunction Residual Volume/Total Lung Capacity</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-mii-vs-lufu-lnc-tlc.html"
+                  title="ValueSet/mii-vs-lufu-lnc-tlc">
+                  <span title="ValueSet/mii-vs-lufu-lnc-tlc">MII VS Lufu LNC TLC
+</span>
+               </a>
+            </td>
+            <td>
+<p>Import the ValueSet for lungfunction total lung capacity</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-mii-vs-lufu-lnc-vc.html"
+                  title="ValueSet/mii-vs-lufu-lnc-vc">
+                  <span title="ValueSet/mii-vs-lufu-lnc-vc">MII VS Lufu LNC Vital Capacity
+</span>
+               </a>
+            </td>
+            <td>
+<p>Import the ValueSet for lungfunction vital capacity</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-mii-vs-lufu-lnc-sr.html"
+                  title="ValueSet/mii-vs-lufu-lnc-sr">
+                  <span title="ValueSet/mii-vs-lufu-lnc-sr">MII VS Lufu LNC sR
+</span>
+               </a>
+            </td>
+            <td>
+<p>Import the ValueSet for lungfunction specific airway resistence</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-mii-vs-lufu-lnc-sr-eff.html"
+                  title="ValueSet/mii-vs-lufu-lnc-sr-eff">
+                  <span title="ValueSet/mii-vs-lufu-lnc-sr-eff">MII VS Lufu LNC sR eff
+</span>
+               </a>
+            </td>
+            <td>
+<p>Import the ValueSet for lungfunction effective specific airway resistence</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-mii-vs-lufu-sct-fev.html"
+                  title="ValueSet/mii-vs-lufu-sct-fev">
+                  <span title="ValueSet/mii-vs-lufu-sct-fev">MII VS Lufu SCT FEV
+</span>
+               </a>
+            </td>
+            <td>
+<p>Import the ValueSet for lungfunction forced expiratory volume</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-mii-vs-lufu-sct-fev-fvc.html"
+                  title="ValueSet/mii-vs-lufu-sct-fev-fvc">
+                  <span title="ValueSet/mii-vs-lufu-sct-fev-fvc">MII VS Lufu SCT FEV FVC
+</span>
+               </a>
+            </td>
+            <td>
+<p>Import the ValueSet for lungfunction Tiffeneau-Index</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-mii-vs-lufu-sct-findings.html"
+                  title="ValueSet/mii-vs-lufu-sct-findings">
+                  <span title="ValueSet/mii-vs-lufu-sct-findings">MII VS Lufu SCT Findings
+</span>
+               </a>
+            </td>
+            <td>
+<p>Import the ValueSet for lungfunction findings</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-mii-vs-lufu-sct-fvc.html"
+                  title="ValueSet/mii-vs-lufu-sct-fvc">
+                  <span title="ValueSet/mii-vs-lufu-sct-fvc">MII VS Lufu SCT Forced Vital Capacity
+</span>
+               </a>
+            </td>
+            <td>
+<p>Import the ValueSet for lungfunction forced vital capacity</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-mii-vs-lufu-sct-location.html"
+                  title="ValueSet/mii-vs-lufu-sct-location">
+                  <span title="ValueSet/mii-vs-lufu-sct-location">MII VS Lufu SCT Location
+</span>
+               </a>
+            </td>
+            <td>
+<p>Import the ValueSet for patients location</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-mii-vs-lufu-sct-mef.html"
+                  title="ValueSet/mii-vs-lufu-sct-mef">
+                  <span title="ValueSet/mii-vs-lufu-sct-mef">MII VS Lufu SCT MEF
+</span>
+               </a>
+            </td>
+            <td>
+<p>Import the ValueSet for lungfunction maximum expiratory flow</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-mii-vs-lufu-lnc-observable.html"
+                  title="ValueSet/mii-vs-lufu-lnc-observable">
+                  <span title="ValueSet/mii-vs-lufu-lnc-observable">MII VS Lufu SCT Observable
+</span>
+               </a>
+            </td>
+            <td>
+<p>Import the ValueSet for lungfunction</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-mii-vs-lufu-sct-observable.html"
+                  title="ValueSet/mii-vs-lufu-sct-observable">
+                  <span title="ValueSet/mii-vs-lufu-sct-observable">MII VS Lufu SCT Observable
+</span>
+               </a>
+            </td>
+            <td>
+<p>Import the ValueSet for lungfunction</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-mii-vs-lufu-sct-pef.html"
+                  title="ValueSet/mii-vs-lufu-sct-pef">
+                  <span title="ValueSet/mii-vs-lufu-sct-pef">MII VS Lufu SCT PEF
+</span>
+               </a>
+            </td>
+            <td>
+<p>Import the ValueSet for lungfunction peak expiratory flow</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-mii-vs-lufu-sct-procedure.html"
+                  title="ValueSet/mii-vs-lufu-sct-procedure">
+                  <span title="ValueSet/mii-vs-lufu-sct-procedure">MII VS Lufu SCT Procedure
+</span>
+               </a>
+            </td>
+            <td>
+<p>Import the ValueSet for lungfunction</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-mii-vs-lufu-lnc-procedure.html"
+                  title="ValueSet/mii-vs-lufu-lnc-procedure">
+                  <span title="ValueSet/mii-vs-lufu-lnc-procedure">MII VS Lufu SCT Procedure Report
+</span>
+               </a>
+            </td>
+            <td>
+<p>Import the ValueSet for lungfunction</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-mii-vs-lufu-sct-rv.html"
+                  title="ValueSet/mii-vs-lufu-sct-rv">
+                  <span title="ValueSet/mii-vs-lufu-sct-rv">MII VS Lufu SCT RV
+</span>
+               </a>
+            </td>
+            <td>
+<p>Import the ValueSet for lungfunction reserve volume</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-mii-vs-lufu-sct-technique.html"
+                  title="ValueSet/mii-vs-lufu-sct-technique">
+                  <span title="ValueSet/mii-vs-lufu-sct-technique">MII VS Lufu SCT Technique
+</span>
+               </a>
+            </td>
+            <td>
+<p>Import the ValueSet for lungfunction</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-mii-vs-lufu-sct-vc.html"
+                  title="ValueSet/mii-vs-lufu-sct-vc">
+                  <span title="ValueSet/mii-vs-lufu-sct-vc">MII VS Lufu SCT Vital Capacity
+</span>
+               </a>
+            </td>
+            <td>
+<p>Import the ValueSet for lungfunction vital capacity</p>
+</td>
+         </tr>
+      </tbody>
+   </table>
+   <a name="5"> </a>
+   <h3>Beispiel: Beispielinstanzen </h3>
+    <p>Dies sind Beispielinstanzen, die zeigen, wie Daten aussehen könnten, die von Systemen produziert und konsumiert werden, die mit diesem Implementierungsleitfaden konform sind.</p>
+<table class="grid">
+      <col style="width:20%"/>
+      <tbody>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Encounter-mii-exa-lungenfunktion-kontakt.html"
+                  title="Encounter/mii-exa-lungenfunktion-kontakt">
+                  <span title="Encounter/mii-exa-lungenfunktion-kontakt">MII EXA Lungenfunktion Kontakt
+</span>
+               </a>
+            </td>
+            <td>
+<p>Synthetischer ambulanter Behandlungskontakt, in dem die Beispiel-Lungenfunktionstests dieses Moduls stattfinden. Kein normativer Bestandteil der Spezifikation — macht die encounter-Referenzen der Beispielinstanzen im gerenderten Leitfaden aufloesbar.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Patient-mii-exa-lungenfunktion-patient.html"
+                  title="Patient/mii-exa-lungenfunktion-patient">
+                  <span title="Patient/mii-exa-lungenfunktion-patient">MII EXA Lungenfunktion Patientin
+</span>
+               </a>
+            </td>
+            <td>
+<p>Synthetische Beispiel-Patientin dieses Moduls. Sie ist das Subject saemtlicher Beispielinstanzen (Befunde, Messungen, Messergebnisse) und traegt mit Geschlecht und Geburtsdatum die beiden Eingangsgroessen der Sollwertberechnung, die auf der Patient-Ressource abgebildet werden.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-mii-exa-lungenfunktion-bf.html"
+                  title="Observation/mii-exa-lungenfunktion-bf">
+                  <span title="Observation/mii-exa-lungenfunktion-bf">MII Example Lungenfunktion BF
+</span>
+               </a>
+            </td>
+            <td>
+
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="DiagnosticReport-mii-exa-lungenfunktion-bodyplethysmographie-befund.html"
+                  title="DiagnosticReport/mii-exa-lungenfunktion-bodyplethysmographie-befund">
+                  <span title="DiagnosticReport/mii-exa-lungenfunktion-bodyplethysmographie-befund">MII Example Lungenfunktion Bodyplethysmographie Befund
+</span>
+               </a>
+            </td>
+            <td>
+
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Procedure-mii-exa-lungenfunktion-bodyplethysmographie-messung.html"
+                  title="Procedure/mii-exa-lungenfunktion-bodyplethysmographie-messung">
+                  <span title="Procedure/mii-exa-lungenfunktion-bodyplethysmographie-messung">MII Example Lungenfunktion Bodyplethysmographie Messung
+</span>
+               </a>
+            </td>
+            <td>
+
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-mii-exa-lungenfunktion-co2.html"
+                  title="Observation/mii-exa-lungenfunktion-co2">
+                  <span title="Observation/mii-exa-lungenfunktion-co2">MII Example Lungenfunktion CO2-Konzentration
+</span>
+               </a>
+            </td>
+            <td>
+
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-mii-exa-lungenfunktion-dlco.html"
+                  title="Observation/mii-exa-lungenfunktion-dlco">
+                  <span title="Observation/mii-exa-lungenfunktion-dlco">MII Example Lungenfunktion DLCO
+</span>
+               </a>
+            </td>
+            <td>
+
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-mii-exa-lungenfunktion-dlcoc.html"
+                  title="Observation/mii-exa-lungenfunktion-dlcoc">
+                  <span title="Observation/mii-exa-lungenfunktion-dlcoc">MII Example Lungenfunktion DLCOc
+</span>
+               </a>
+            </td>
+            <td>
+
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="DiagnosticReport-mii-exa-lungenfunktion-diffusion-befund.html"
+                  title="DiagnosticReport/mii-exa-lungenfunktion-diffusion-befund">
+                  <span title="DiagnosticReport/mii-exa-lungenfunktion-diffusion-befund">MII Example Lungenfunktion Diffusion Befund
+</span>
+               </a>
+            </td>
+            <td>
+
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Procedure-mii-exa-lungenfunktion-diffusion-messung.html"
+                  title="Procedure/mii-exa-lungenfunktion-diffusion-messung">
+                  <span title="Procedure/mii-exa-lungenfunktion-diffusion-messung">MII Example Lungenfunktion Diffusion Messung
+</span>
+               </a>
+            </td>
+            <td>
+
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-mii-exa-lungenfunktion-dosis-kumuliert.html"
+                  title="Observation/mii-exa-lungenfunktion-dosis-kumuliert">
+                  <span title="Observation/mii-exa-lungenfunktion-dosis-kumuliert">MII Example Lungenfunktion Dosis kumuliert
+</span>
+               </a>
+            </td>
+            <td>
+
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="MedicationAdministration-mii-exa-lungenfunktion-dosis-gabe-3.html"
+                  title="MedicationAdministration/mii-exa-lungenfunktion-dosis-gabe-3">
+                  <span title="MedicationAdministration/mii-exa-lungenfunktion-dosis-gabe-3">MII Example Lungenfunktion Dosisgabe
+</span>
+               </a>
+            </td>
+            <td>
+
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="MedicationAdministration-mii-exa-lungenfunktion-dosis-gabe-1.html"
+                  title="MedicationAdministration/mii-exa-lungenfunktion-dosis-gabe-1">
+                  <span title="MedicationAdministration/mii-exa-lungenfunktion-dosis-gabe-1">MII Example Lungenfunktion Dosisgabe 1
+</span>
+               </a>
+            </td>
+            <td>
+
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="MedicationAdministration-mii-exa-lungenfunktion-dosis-gabe-2.html"
+                  title="MedicationAdministration/mii-exa-lungenfunktion-dosis-gabe-2">
+                  <span title="MedicationAdministration/mii-exa-lungenfunktion-dosis-gabe-2">MII Example Lungenfunktion Dosisgabe 2
+</span>
+               </a>
+            </td>
+            <td>
+
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-mii-exa-lungenfunktion-dosis-schwellwert.html"
+                  title="Observation/mii-exa-lungenfunktion-dosis-schwellwert">
+                  <span title="Observation/mii-exa-lungenfunktion-dosis-schwellwert">MII Example Lungenfunktion ERV
+</span>
+               </a>
+            </td>
+            <td>
+
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-mii-exa-lungenfunktion-erv.html"
+                  title="Observation/mii-exa-lungenfunktion-erv">
+                  <span title="Observation/mii-exa-lungenfunktion-erv">MII Example Lungenfunktion ERV
+</span>
+               </a>
+            </td>
+            <td>
+
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-mii-exa-lungenfunktion-fev1.html"
+                  title="Observation/mii-exa-lungenfunktion-fev1">
+                  <span title="Observation/mii-exa-lungenfunktion-fev1">MII Example Lungenfunktion FEV 1
+</span>
+               </a>
+            </td>
+            <td>
+
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-mii-exa-lungenfunktion-fev1-fvc.html"
+                  title="Observation/mii-exa-lungenfunktion-fev1-fvc">
+                  <span title="Observation/mii-exa-lungenfunktion-fev1-fvc">MII Example Lungenfunktion FEV1/FVC
+</span>
+               </a>
+            </td>
+            <td>
+
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-mii-exa-lungenfunktion-frc.html"
+                  title="Observation/mii-exa-lungenfunktion-frc">
+                  <span title="Observation/mii-exa-lungenfunktion-frc">MII Example Lungenfunktion FRC
+</span>
+               </a>
+            </td>
+            <td>
+
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-mii-exa-lungenfunktion-fvc.html"
+                  title="Observation/mii-exa-lungenfunktion-fvc">
+                  <span title="Observation/mii-exa-lungenfunktion-fvc">MII Example Lungenfunktion FVC
+</span>
+               </a>
+            </td>
+            <td>
+
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-mii-exa-lungenfunktion-hb.html"
+                  title="Observation/mii-exa-lungenfunktion-hb">
+                  <span title="Observation/mii-exa-lungenfunktion-hb">MII Example Lungenfunktion Hb
+</span>
+               </a>
+            </td>
+            <td>
+
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-mii-exa-lungenfunktion-ic.html"
+                  title="Observation/mii-exa-lungenfunktion-ic">
+                  <span title="Observation/mii-exa-lungenfunktion-ic">MII Example Lungenfunktion IC
+</span>
+               </a>
+            </td>
+            <td>
+
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-mii-exa-lungenfunktion-kco.html"
+                  title="Observation/mii-exa-lungenfunktion-kco">
+                  <span title="Observation/mii-exa-lungenfunktion-kco">MII Example Lungenfunktion KCO
+</span>
+               </a>
+            </td>
+            <td>
+
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-mii-exa-lungenfunktion-kcoc.html"
+                  title="Observation/mii-exa-lungenfunktion-kcoc">
+                  <span title="Observation/mii-exa-lungenfunktion-kcoc">MII Example Lungenfunktion KCOc
+</span>
+               </a>
+            </td>
+            <td>
+
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-mii-exa-lungenfunktion-luftfeuchtigkeit.html"
+                  title="Observation/mii-exa-lungenfunktion-luftfeuchtigkeit">
+                  <span title="Observation/mii-exa-lungenfunktion-luftfeuchtigkeit">MII Example Lungenfunktion Luftfeuchtigkeit
+</span>
+               </a>
+            </td>
+            <td>
+
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-mii-exa-lungenfunktion-lufttemperatur.html"
+                  title="Observation/mii-exa-lungenfunktion-lufttemperatur">
+                  <span title="Observation/mii-exa-lungenfunktion-lufttemperatur">MII Example Lungenfunktion Lufttemperatur
+</span>
+               </a>
+            </td>
+            <td>
+
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-mii-exa-lungenfunktion-mef25.html"
+                  title="Observation/mii-exa-lungenfunktion-mef25">
+                  <span title="Observation/mii-exa-lungenfunktion-mef25">MII Example Lungenfunktion MEF 25
+</span>
+               </a>
+            </td>
+            <td>
+
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-mii-exa-lungenfunktion-mef50.html"
+                  title="Observation/mii-exa-lungenfunktion-mef50">
+                  <span title="Observation/mii-exa-lungenfunktion-mef50">MII Example Lungenfunktion MEF 50
+</span>
+               </a>
+            </td>
+            <td>
+
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-mii-exa-lungenfunktion-mef75.html"
+                  title="Observation/mii-exa-lungenfunktion-mef75">
+                  <span title="Observation/mii-exa-lungenfunktion-mef75">MII Example Lungenfunktion MEF 75
+</span>
+               </a>
+            </td>
+            <td>
+
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Medication-mii-exa-lungenfunktion-methacholine.html"
+                  title="Medication/mii-exa-lungenfunktion-methacholine">
+                  <span title="Medication/mii-exa-lungenfunktion-methacholine">MII Example Lungenfunktion Methacholin
+</span>
+               </a>
+            </td>
+            <td>
+
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-mii-exa-lungenfunktion-pef.html"
+                  title="Observation/mii-exa-lungenfunktion-pef">
+                  <span title="Observation/mii-exa-lungenfunktion-pef">MII Example Lungenfunktion PEF
+</span>
+               </a>
+            </td>
+            <td>
+
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-mii-exa-lungenfunktion-fev1-b.html"
+                  title="Observation/mii-exa-lungenfunktion-fev1-b">
+                  <span title="Observation/mii-exa-lungenfunktion-fev1-b">MII Example Lungenfunktion Provokation FEV 1 B
+</span>
+               </a>
+            </td>
+            <td>
+
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-mii-exa-lungenfunktion-fev1-p3.html"
+                  title="Observation/mii-exa-lungenfunktion-fev1-p3">
+                  <span title="Observation/mii-exa-lungenfunktion-fev1-p3">MII Example Lungenfunktion Provokation FEV 1 P3
+</span>
+               </a>
+            </td>
+            <td>
+
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-mii-exa-lungenfunktion-fev1-p4.html"
+                  title="Observation/mii-exa-lungenfunktion-fev1-p4">
+                  <span title="Observation/mii-exa-lungenfunktion-fev1-p4">MII Example Lungenfunktion Provokation FEV 1 P4
+</span>
+               </a>
+            </td>
+            <td>
+
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-mii-exa-lungenfunktion-fev1-p5.html"
+                  title="Observation/mii-exa-lungenfunktion-fev1-p5">
+                  <span title="Observation/mii-exa-lungenfunktion-fev1-p5">MII Example Lungenfunktion Provokation FEV 1 P5
+</span>
+               </a>
+            </td>
+            <td>
+
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-mii-exa-lungenfunktion-frc-b.html"
+                  title="Observation/mii-exa-lungenfunktion-frc-b">
+                  <span title="Observation/mii-exa-lungenfunktion-frc-b">MII Example Lungenfunktion Provokation FRC B
+</span>
+               </a>
+            </td>
+            <td>
+
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-mii-exa-lungenfunktion-frc-p3.html"
+                  title="Observation/mii-exa-lungenfunktion-frc-p3">
+                  <span title="Observation/mii-exa-lungenfunktion-frc-p3">MII Example Lungenfunktion Provokation FRC P3
+</span>
+               </a>
+            </td>
+            <td>
+
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-mii-exa-lungenfunktion-frc-p4.html"
+                  title="Observation/mii-exa-lungenfunktion-frc-p4">
+                  <span title="Observation/mii-exa-lungenfunktion-frc-p4">MII Example Lungenfunktion Provokation FRC P4
+</span>
+               </a>
+            </td>
+            <td>
+
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-mii-exa-lungenfunktion-frc-p5.html"
+                  title="Observation/mii-exa-lungenfunktion-frc-p5">
+                  <span title="Observation/mii-exa-lungenfunktion-frc-p5">MII Example Lungenfunktion Provokation FRC P5
+</span>
+               </a>
+            </td>
+            <td>
+
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-mii-exa-lungenfunktion-pef-b.html"
+                  title="Observation/mii-exa-lungenfunktion-pef-b">
+                  <span title="Observation/mii-exa-lungenfunktion-pef-b">MII Example Lungenfunktion Provokation PEF B
+</span>
+               </a>
+            </td>
+            <td>
+
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-mii-exa-lungenfunktion-pef-p3.html"
+                  title="Observation/mii-exa-lungenfunktion-pef-p3">
+                  <span title="Observation/mii-exa-lungenfunktion-pef-p3">MII Example Lungenfunktion Provokation PEF P3
+</span>
+               </a>
+            </td>
+            <td>
+
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-mii-exa-lungenfunktion-pef-p4.html"
+                  title="Observation/mii-exa-lungenfunktion-pef-p4">
+                  <span title="Observation/mii-exa-lungenfunktion-pef-p4">MII Example Lungenfunktion Provokation PEF P4
+</span>
+               </a>
+            </td>
+            <td>
+
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-mii-exa-lungenfunktion-pef-p5.html"
+                  title="Observation/mii-exa-lungenfunktion-pef-p5">
+                  <span title="Observation/mii-exa-lungenfunktion-pef-p5">MII Example Lungenfunktion Provokation PEF P5
+</span>
+               </a>
+            </td>
+            <td>
+
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-mii-exa-lungenfunktion-r-b.html"
+                  title="Observation/mii-exa-lungenfunktion-r-b">
+                  <span title="Observation/mii-exa-lungenfunktion-r-b">MII Example Lungenfunktion Provokation R tot B
+</span>
+               </a>
+            </td>
+            <td>
+
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-mii-exa-lungenfunktion-sr-total-b.html"
+                  title="Observation/mii-exa-lungenfunktion-sr-total-b">
+                  <span title="Observation/mii-exa-lungenfunktion-sr-total-b">MII Example Lungenfunktion Provokation R tot Base
+</span>
+               </a>
+            </td>
+            <td>
+
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-mii-exa-lungenfunktion-r-p3.html"
+                  title="Observation/mii-exa-lungenfunktion-r-p3">
+                  <span title="Observation/mii-exa-lungenfunktion-r-p3">MII Example Lungenfunktion Provokation R tot P3
+</span>
+               </a>
+            </td>
+            <td>
+
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-mii-exa-lungenfunktion-sr-total-p3.html"
+                  title="Observation/mii-exa-lungenfunktion-sr-total-p3">
+                  <span title="Observation/mii-exa-lungenfunktion-sr-total-p3">MII Example Lungenfunktion Provokation R tot P3
+</span>
+               </a>
+            </td>
+            <td>
+
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-mii-exa-lungenfunktion-r-p4.html"
+                  title="Observation/mii-exa-lungenfunktion-r-p4">
+                  <span title="Observation/mii-exa-lungenfunktion-r-p4">MII Example Lungenfunktion Provokation R tot P4
+</span>
+               </a>
+            </td>
+            <td>
+
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-mii-exa-lungenfunktion-sr-total-p4.html"
+                  title="Observation/mii-exa-lungenfunktion-sr-total-p4">
+                  <span title="Observation/mii-exa-lungenfunktion-sr-total-p4">MII Example Lungenfunktion Provokation R tot P4
+</span>
+               </a>
+            </td>
+            <td>
+
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-mii-exa-lungenfunktion-r-p5.html"
+                  title="Observation/mii-exa-lungenfunktion-r-p5">
+                  <span title="Observation/mii-exa-lungenfunktion-r-p5">MII Example Lungenfunktion Provokation R tot P5
+</span>
+               </a>
+            </td>
+            <td>
+
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-mii-exa-lungenfunktion-sr-total-p5.html"
+                  title="Observation/mii-exa-lungenfunktion-sr-total-p5">
+                  <span title="Observation/mii-exa-lungenfunktion-sr-total-p5">MII Example Lungenfunktion Provokation R tot P5
+</span>
+               </a>
+            </td>
+            <td>
+
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="DiagnosticReport-mii-exa-lungenfunktion-provokationstest-befund.html"
+                  title="DiagnosticReport/mii-exa-lungenfunktion-provokationstest-befund">
+                  <span title="DiagnosticReport/mii-exa-lungenfunktion-provokationstest-befund">MII Example Lungenfunktion Provokationstest Befund
+</span>
+               </a>
+            </td>
+            <td>
+
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Procedure-mii-exa-lungenfunktion-provokationstest-messung.html"
+                  title="Procedure/mii-exa-lungenfunktion-provokationstest-messung">
+                  <span title="Procedure/mii-exa-lungenfunktion-provokationstest-messung">MII Example Lungenfunktion Provokationstest Messung
+</span>
+               </a>
+            </td>
+            <td>
+
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-mii-exa-lungenfunktion-r.html"
+                  title="Observation/mii-exa-lungenfunktion-r">
+                  <span title="Observation/mii-exa-lungenfunktion-r">MII Example Lungenfunktion R tot
+</span>
+               </a>
+            </td>
+            <td>
+
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-mii-exa-lungenfunktion-sr-eff.html"
+                  title="Observation/mii-exa-lungenfunktion-sr-eff">
+                  <span title="Observation/mii-exa-lungenfunktion-sr-eff">MII Example Lungenfunktion R tot
+</span>
+               </a>
+            </td>
+            <td>
+
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-mii-exa-lungenfunktion-sr-total.html"
+                  title="Observation/mii-exa-lungenfunktion-sr-total">
+                  <span title="Observation/mii-exa-lungenfunktion-sr-total">MII Example Lungenfunktion R tot
+</span>
+               </a>
+            </td>
+            <td>
+
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-mii-exa-lungenfunktion-rvl-tlc.html"
+                  title="Observation/mii-exa-lungenfunktion-rvl-tlc">
+                  <span title="Observation/mii-exa-lungenfunktion-rvl-tlc">MII Example Lungenfunktion RV/TLC
+</span>
+               </a>
+            </td>
+            <td>
+
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-mii-exa-lungenfunktion-rvl.html"
+                  title="Observation/mii-exa-lungenfunktion-rvl">
+                  <span title="Observation/mii-exa-lungenfunktion-rvl">MII Example Lungenfunktion RVL
+</span>
+               </a>
+            </td>
+            <td>
+
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="DiagnosticReport-mii-exa-lungenfunktion-spirometrie-befund.html"
+                  title="DiagnosticReport/mii-exa-lungenfunktion-spirometrie-befund">
+                  <span title="DiagnosticReport/mii-exa-lungenfunktion-spirometrie-befund">MII Example Lungenfunktion Spirometrie Befund
+</span>
+               </a>
+            </td>
+            <td>
+
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Procedure-mii-exa-lungenfunktion-spirometrie-messung.html"
+                  title="Procedure/mii-exa-lungenfunktion-spirometrie-messung">
+                  <span title="Procedure/mii-exa-lungenfunktion-spirometrie-messung">MII Example Lungenfunktion Spirometrie Messung
+</span>
+               </a>
+            </td>
+            <td>
+
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-mii-exa-lungenfunktion-tlc.html"
+                  title="Observation/mii-exa-lungenfunktion-tlc">
+                  <span title="Observation/mii-exa-lungenfunktion-tlc">MII Example Lungenfunktion TLC
+</span>
+               </a>
+            </td>
+            <td>
+
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Location-mii-exa-lungenfunktion-location.html"
+                  title="Location/mii-exa-lungenfunktion-location">
+                  <span title="Location/mii-exa-lungenfunktion-location">MII Example Lungenfunktion Umgebung
+</span>
+               </a>
+            </td>
+            <td>
+
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-mii-exa-lungenfunktion-va.html"
+                  title="Observation/mii-exa-lungenfunktion-va">
+                  <span title="Observation/mii-exa-lungenfunktion-va">MII Example Lungenfunktion VA
+</span>
+               </a>
+            </td>
+            <td>
+
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-mii-exa-lungenfunktion-vc.html"
+                  title="Observation/mii-exa-lungenfunktion-vc">
+                  <span title="Observation/mii-exa-lungenfunktion-vc">MII Example Lungenfunktion VC
+</span>
+               </a>
+            </td>
+            <td>
+
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-mii-exa-lungenfunktion-sg-total.html"
+                  title="Observation/mii-exa-lungenfunktion-sg-total">
+                  <span title="Observation/mii-exa-lungenfunktion-sg-total">MII Example Lungenfunktion sG total
+</span>
+               </a>
+            </td>
+            <td>
+
+</td>
+         </tr>
+      </tbody>
+   </table>
+   <a name="6"> </a>
+   <h3>Sonstige </h3>
+    <p>Dies sind Ressourcen, die in diesem Implementierungsleitfaden verwendet werden, die in keine der anderen Kategorien passen.</p>
+<table class="grid">
+      <col style="width:20%"/>
+      <tbody>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Parameters-mii-param-lungenfunktion-manifest.html"
+                  title="Parameters/mii-param-lungenfunktion-manifest">
+                  <span title="Parameters/mii-param-lungenfunktion-manifest">mii-param-lungenfunktion-manifest
+</span>
+               </a>
+            </td>
+         </tr>
+      </tbody>
+   </table>
+</div>
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+  <script type="text/javascript" src="assets/js/flags.js"> </script>
+
+  <script type="text/javascript" src="assets/js/window-hash.js"> </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+
+
+
+          IG © 2024+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.medizininformatik-initiative.de/">Medizininformatik Initiative</a>.  
+          Package de.medizininformatikinitiative.kerndatensatz.lungenfunktion#2027.0.0-ballot.rc1 basiert auf <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
+          Erstellt <span title="Wed, Sep 2, 2026 08:15+0000">2026-09-02</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+            <!-- Branding override for the fhir2.base.template footer fragment.
+     Unlike header/css, the base footer fragment is NOT an empty placeholder: it
+     renders "Links: Table of Contents | QA Report [| feedback dashboards]".
+     The base uses site.data.stringsBase[include.lang][...] for the labels. The
+     reason this override supplies its own is the Imprint label: the base ships no
+     stringsBase key for it and a child template cannot add one (docs/styleguide.md
+     section 6), and the same include.lang branch then has to carry the other
+     labels too. (The blank-label problem that first motivated this is separately
+     mitigated: this repo vendors the base's own German catalogs into
+     translations/ — see translations/README.md.) The override preserves the base
+     links (TOC, QA, feedback dashboards) and appends the project information links.
+     NUM-DIZ takes over IG development and maintenance when MII funding ends
+     (end-2026), so the NUM-DIZ website link renders BEFORE the MII website link —
+     in BOTH brand designs and both languages; the MII links stay because the
+     modules remain MII content. Both anchors are the SITE ROOTS with the bare
+     domain as anchor text (TF-KDS feedback 2026-08-14: aligned anchor style;
+     domains are language-neutral, styleguide §6).
+     Imprint: points at the NUM-DIZ website's legal pages since 2026-08-14
+     (TF-KDS: NUM-DIZ takes over from MII in 2027, so legal-aspect links use
+     the NUM-DIZ counterpart where one exists) - German /impressum and English
+     /en/legal-notice (both verified HTTP 200 on 2026-08-14). -->
+
+          Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Inhaltsverzeichnis</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="../qa.html">QA-Bericht</a>
+                 
+                 | <a style="color: var(--footer-hyperlink-text-color)" target="_blank" href="https://www.netzwerk-universitaetsmedizin.de/">netzwerk-universitaetsmedizin.de</a>
+                 | <a style="color: var(--footer-hyperlink-text-color)" target="_blank" href="https://www.medizininformatik-initiative.de/">medizininformatik-initiative.de</a>
+                 | <a style="color: var(--footer-hyperlink-text-color)" target="_blank" href="https://www.netzwerk-universitaetsmedizin.de/impressum">Impressum</a>
+                 <br/>
+                 <!-- HL7 trademark attribution (required wherever the FHIR flame
+                      renders - the header shows it on every page; see HL7's
+                      trademark guidelines; permission request tracked in issue #109). The sentence is
+                      HL7's prescribed formula and stays in English on every
+                      language's pages (legal wording, styleguide §6). -->
+                 <span>HL7®, FHIR® and the FHIR flame design are registered trademarks of Health Level Seven International. Their use does not constitute endorsement by HL7.</span>
+
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+

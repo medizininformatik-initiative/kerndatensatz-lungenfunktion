@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="mii-vs-lufu-sct-technique"/>
+  <meta>
+    <profile value="http://hl7.org/fhir/StructureDefinition/shareablevalueset"/>
+  </meta>
+  <language value="de"/>
+  <text>
+    <status value="generated"/><div xml:lang="de" lang="de"><hr/><p><b>German</b></p><hr/><p class="res-header-id"><b>Generated Narrative: ValueSet mii-vs-lufu-sct-technique</b></p><a name="de-mii-vs-lufu-sct-technique"> </a><a name="de-hcmii-vs-lufu-sct-technique"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="http://hl7.org/fhir/uv/crmi/STU2/StructureDefinition-shareablevalueset.html">Shareable ValueSet</a></p></div><ul><li>Include these codes as defined in <a href="http://www.snomed.org/"><code>http://snomed.info/sct</code></a><span title="Version is not explicitly stated. No matching Code System found"> version Not Stated (use latest from terminology server)</span><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href="http://snomed.info/id/264284001">264284001</a></td><td>Single-breath technique (qualifier value)</td></tr><tr><td><a href="http://snomed.info/id/264283007">264283007</a></td><td>Multiple-breath technique (qualifier value)</td></tr><tr><td><a href="http://snomed.info/id/258071007">258071007</a></td><td>Rebreathing method (qualifier value)</td></tr><tr><td><a href="http://snomed.info/id/258031002">258031002</a></td><td>Helium single breath technique (qualifier value)</td></tr><tr><td><a href="http://snomed.info/id/258033004">258033004</a></td><td>Helium steady state technique (qualifier value)</td></tr><tr><td><a href="http://snomed.info/id/246506007">246506007</a></td><td>Provocation technique (qualifier value)</td></tr><tr><td><a href="http://snomed.info/id/789733000">789733000</a></td><td>Standing unsupported (qualifier value)</td></tr><tr><td><a href="http://snomed.info/id/404926001">404926001</a></td><td>Unsupported sitting position (finding)</td></tr><tr><td><a href="http://snomed.info/id/271606005">271606005</a></td><td>Sitting propped up (finding)</td></tr><tr><td><a href="http://snomed.info/id/249862003">249862003</a></td><td>Sitting upright (finding)</td></tr><tr><td><a href="http://snomed.info/id/40199007">40199007</a></td><td>Supine body position (finding)</td></tr></table></li></ul></div>
+  </text>
+  <url value="https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/ValueSet/mii-vs-lufu-sct-technique"/>
+  <version value="2027.0.0-ballot.rc1"/>
+  <name value="MII_VS_Lufu_SCT_Technique"/>
+  <title value="MII VS Lufu SCT Technique"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2026-09-01"/>
+  <publisher value="Medizininformatik Initiative"/>
+  <contact>
+    <name value="Medizininformatik Initiative"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://www.medizininformatik-initiative.de/"/>
+    </telecom>
+  </contact>
+  <description value="Import the ValueSet for lungfunction"/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="DE"/>
+      <display value="Germany"/>
+    </coding>
+  </jurisdiction>
+  <copyright value="This value set includes content from SNOMED CT, which is copyright © 2002+ International Health Terminology Standards Development Organisation (IHTSDO), and distributed by agreement between IHTSDO and HL7. Implementer use of SNOMED CT is not covered by this agreement"/>
+  <compose>
+    <include>
+      <system value="http://snomed.info/sct"/>
+      <concept>
+        <code value="264284001"/>
+        <display value="Single-breath technique (qualifier value)"/>
+      </concept>
+      <concept>
+        <code value="264283007"/>
+        <display value="Multiple-breath technique (qualifier value)"/>
+      </concept>
+      <concept>
+        <code value="258071007"/>
+        <display value="Rebreathing method (qualifier value)"/>
+      </concept>
+      <concept>
+        <code value="258031002"/>
+        <display value="Helium single breath technique (qualifier value)"/>
+      </concept>
+      <concept>
+        <code value="258033004"/>
+        <display value="Helium steady state technique (qualifier value)"/>
+      </concept>
+      <concept>
+        <code value="246506007"/>
+        <display value="Provocation technique (qualifier value)"/>
+      </concept>
+      <concept>
+        <code value="789733000"/>
+        <display value="Standing unsupported (qualifier value)"/>
+      </concept>
+      <concept>
+        <code value="404926001"/>
+        <display value="Unsupported sitting position (finding)"/>
+      </concept>
+      <concept>
+        <code value="271606005"/>
+        <display value="Sitting propped up (finding)"/>
+      </concept>
+      <concept>
+        <code value="249862003"/>
+        <display value="Sitting upright (finding)"/>
+      </concept>
+      <concept>
+        <code value="40199007"/>
+        <display value="Supine body position (finding)"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

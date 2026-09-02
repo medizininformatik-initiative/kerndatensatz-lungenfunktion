@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="mii-vs-lufu-lnc-r"/>
+  <meta>
+    <profile value="http://hl7.org/fhir/StructureDefinition/shareablevalueset"/>
+  </meta>
+  <language value="de"/>
+  <text>
+    <status value="generated"/><div xml:lang="de" lang="de"><hr/><p><b>German</b></p><hr/><p class="res-header-id"><b>Generated Narrative: ValueSet mii-vs-lufu-lnc-r</b></p><a name="de-mii-vs-lufu-lnc-r"> </a><a name="de-hcmii-vs-lufu-lnc-r"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="http://hl7.org/fhir/uv/crmi/STU2/StructureDefinition-shareablevalueset.html">Shareable ValueSet</a></p></div><ul><li>Include these codes as defined in <a href="http://loinc.org"><code>http://loinc.org</code></a><span title="Version is not explicitly stated. No matching Code System found"> version Not Stated (use latest from terminology server)</span><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href="https://loinc.org/75946-4/">75946-4</a></td><td>Airway resistance</td></tr><tr><td><a href="https://loinc.org/20084-0/">20084-0</a></td><td>Airway resistance mean</td></tr><tr><td><a href="https://loinc.org/75947-2/">75947-2</a></td><td>Airway resistance --during expiration</td></tr><tr><td><a href="https://loinc.org/81443-4/">81443-4</a></td><td>Airway resistance --pre bronchodilation</td></tr><tr><td><a href="https://loinc.org/20085-7/">20085-7</a></td><td>Airway resistance mean Calculated</td></tr><tr><td><a href="https://loinc.org/75948-0/">75948-0</a></td><td>Airway resistance --during inspiration</td></tr><tr><td><a href="https://loinc.org/81442-6/">81442-6</a></td><td>Airway resistance --post bronchodilation</td></tr><tr><td><a href="https://loinc.org/20083-2/">20083-2</a></td><td>Airway resistance mean by Plethysmograph body box</td></tr><tr><td><a href="https://loinc.org/91981-1/">91981-1</a></td><td>Airway resistance measured/predicted by Plethysmograph body box</td></tr></table></li></ul></div>
+  </text>
+  <url value="https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/ValueSet/mii-vs-lufu-lnc-r"/>
+  <version value="2027.0.0-ballot.rc1"/>
+  <name value="MII_VS_Lufu_LNC_R"/>
+  <title value="MII VS Lufu LNC R"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2026-09-01"/>
+  <publisher value="Medizininformatik Initiative"/>
+  <contact>
+    <name value="Medizininformatik Initiative"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://www.medizininformatik-initiative.de/"/>
+    </telecom>
+  </contact>
+  <description value="Import the ValueSet for lungfunction total airway resistance"/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="DE"/>
+      <display value="Germany"/>
+    </coding>
+  </jurisdiction>
+  <copyright value="This value set includes content from SNOMED CT, which is copyright © 2002+ International Health Terminology Standards Development Organisation (IHTSDO), and distributed by agreement between IHTSDO and HL7. Implementer use of SNOMED CT is not covered by this agreement"/>
+  <compose>
+    <include>
+      <system value="http://loinc.org"/>
+      <concept>
+        <code value="75946-4"/>
+        <display value="Airway resistance"/>
+      </concept>
+      <concept>
+        <code value="20084-0"/>
+        <display value="Airway resistance mean"/>
+      </concept>
+      <concept>
+        <code value="75947-2"/>
+        <display value="Airway resistance --during expiration"/>
+      </concept>
+      <concept>
+        <code value="81443-4"/>
+        <display value="Airway resistance --pre bronchodilation"/>
+      </concept>
+      <concept>
+        <code value="20085-7"/>
+        <display value="Airway resistance mean Calculated"/>
+      </concept>
+      <concept>
+        <code value="75948-0"/>
+        <display value="Airway resistance --during inspiration"/>
+      </concept>
+      <concept>
+        <code value="81442-6"/>
+        <display value="Airway resistance --post bronchodilation"/>
+      </concept>
+      <concept>
+        <code value="20083-2"/>
+        <display value="Airway resistance mean by Plethysmograph body box"/>
+      </concept>
+      <concept>
+        <code value="91981-1"/>
+        <display value="Airway resistance measured/predicted by Plethysmograph body box"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

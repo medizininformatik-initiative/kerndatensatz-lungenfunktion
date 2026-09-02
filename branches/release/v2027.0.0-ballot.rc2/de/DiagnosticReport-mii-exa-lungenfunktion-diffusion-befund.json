@@ -1,0 +1,61 @@
+{
+  "resourceType" : "DiagnosticReport",
+  "id" : "mii-exa-lungenfunktion-diffusion-befund",
+  "meta" : {
+    "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-diffusion"]
+  },
+  "language" : "de",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xml:lang=\"de\" lang=\"de\"><hr/><p><b>German</b></p><hr/><p class=\"res-header-id\"><b>Generated Narrative: DiagnosticReport mii-exa-lungenfunktion-diffusion-befund</b></p><a name=\"de-mii-exa-lungenfunktion-diffusion-befund\"> </a><a name=\"de-hcmii-exa-lungenfunktion-diffusion-befund\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-mii-pr-lungenfunktion-diffusion.html\">MII PR Lungenfunktion Diffusion</a></p></div><h2><span title=\"Codes:{http://snomed.info/sct 36421003}\">Carbon monoxide diffusing capacity measurement (procedure)</span> (<span title=\"Codes:{http://snomed.info/sct 720449003}\">Pulmonary function report (record artifact)</span>) </h2><table class=\"grid\"><tr><td>Subject</td><td>Erika Beispielpatientin  Female, DoB: 1970-01-01</td></tr><tr><td>Relevant Time</td><td>2024-07-19 12:03:30+0200</td></tr><tr><td>Reported</td><td>2024-07-19 13:03:20+0200</td></tr></table><p><b>Report Details</b></p><table class=\"grid\"><tr><td><b>Code</b></td><td><b>Value</b></td><td><b>Reference Range</b></td><td><b>Flags</b></td></tr><tr><td><a href=\"Observation-mii-exa-lungenfunktion-dlco.html\"><span title=\"Codes:{http://loinc.org 19911-7}\">Diffusion capacity.carbon monoxide</span></a></td><td>8.27 mmol/(min.kPa)<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codemmol/(min.kPa) = 'mmol/(min.kPa)')</span></td><td>&gt;7.29 mmol/(min.kPa)<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codemmol/(min.kPa) = 'mmol/(min.kPa)')</span></td><td>Final, <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation N}\">Normal</span></td></tr><tr><td><a href=\"Observation-mii-exa-lungenfunktion-dlcoc.html\"><span title=\"Codes:{http://loinc.org 19911-7}\">Diffusion capacity.carbon monoxide</span></a></td><td>8.27 mmol/(min.kPa)<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codemmol/(min.kPa) = 'mmol/(min.kPa)')</span></td><td>&gt;7.29 mmol/(min.kPa)<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codemmol/(min.kPa) = 'mmol/(min.kPa)')</span></td><td>Final, <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation N}\">Normal</span></td></tr><tr><td><a href=\"Observation-mii-exa-lungenfunktion-kco.html\"><span title=\"Codes:{http://loinc.org 19916-6}\">Diffusion capacity/Alveolar volume</span></a></td><td>1.7 mmol/(min.kPa.L)<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codemmol/(min.kPa.L) = 'mmol/(min.kPa.L)')</span></td><td>&gt;1.18 mmol/(min.kPa.L)<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codemmol/(min.kPa.L) = 'mmol/(min.kPa.L)')</span></td><td>Final, <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation N}\">Normal</span></td></tr><tr><td><a href=\"Observation-mii-exa-lungenfunktion-kcoc.html\"><span title=\"Codes:{http://loinc.org 19916-6}\">Diffusion capacity/Alveolar volume</span></a></td><td>1.7 mmol/(min.kPa.L)<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codemmol/(min.kPa.L) = 'mmol/(min.kPa.L)')</span></td><td>&gt;1.18 mmol/(min.kPa.L)<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codemmol/(min.kPa.L) = 'mmol/(min.kPa.L)')</span></td><td>Final, <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation N}\">Normal</span></td></tr><tr><td><a href=\"Observation-mii-exa-lungenfunktion-va.html\"><span title=\"Codes:{http://snomed.info/sct 251953007}\">Alveolar volume (observable entity)</span></a></td><td>4.87 L<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codeL = 'L')</span></td><td>&gt;5.11 L<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codeL = 'L')</span></td><td>Final, <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation N}\">Normal</span></td></tr><tr><td><a href=\"Observation-mii-exa-lungenfunktion-hb.html\"><span title=\"Codes:{http://loinc.org 718-7}\">Hemoglobin [Mass/volume] in Blood</span></a></td><td>15 g{Hemoglobin}/dL<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codeg{Hemoglobin}/dL = 'g{Hemoglobin}/dL')</span></td><td>13.5 g{Hemoglobin}/dL<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codeg{Hemoglobin}/dL = 'g{Hemoglobin}/dL')</span> - 17.2 g{Hemoglobin}/dL<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codeg{Hemoglobin}/dL = 'g{Hemoglobin}/dL')</span></td><td>Final, <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation N}\">Normal</span></td></tr></table><p>Increased lung compliance</p><p><b>Coded Conclusions:</b></p><ul><li><span title=\"Codes:{http://snomed.info/sct 21368004}\">Increased lung compliance (finding)</span></li></ul></div>"
+  },
+  "status" : "final",
+  "category" : [{
+    "coding" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "720449003",
+      "display" : "Pulmonary function report (record artifact)"
+    }]
+  }],
+  "code" : {
+    "coding" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "36421003",
+      "display" : "Carbon monoxide diffusing capacity measurement (procedure)"
+    }]
+  },
+  "subject" : {
+    "reference" : "Patient/mii-exa-lungenfunktion-patient"
+  },
+  "encounter" : {
+    "reference" : "Encounter/mii-exa-lungenfunktion-kontakt"
+  },
+  "effectiveDateTime" : "2024-07-19T12:03:30+02:00",
+  "issued" : "2024-07-19T13:03:20+02:00",
+  "result" : [{
+    "reference" : "Observation/mii-exa-lungenfunktion-dlco"
+  },
+  {
+    "reference" : "Observation/mii-exa-lungenfunktion-dlcoc"
+  },
+  {
+    "reference" : "Observation/mii-exa-lungenfunktion-kco"
+  },
+  {
+    "reference" : "Observation/mii-exa-lungenfunktion-kcoc"
+  },
+  {
+    "reference" : "Observation/mii-exa-lungenfunktion-va"
+  },
+  {
+    "reference" : "Observation/mii-exa-lungenfunktion-hb"
+  }],
+  "conclusion" : "Increased lung compliance",
+  "conclusionCode" : [{
+    "coding" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "21368004",
+      "display" : "Increased lung compliance (finding)"
+    }]
+  }]
+}

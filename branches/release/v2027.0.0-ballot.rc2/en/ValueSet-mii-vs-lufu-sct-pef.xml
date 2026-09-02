@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="mii-vs-lufu-sct-pef"/>
+  <meta>
+    <profile value="http://hl7.org/fhir/StructureDefinition/shareablevalueset"/>
+  </meta>
+  <language value="en"/>
+  <text>
+    <status value="generated"/><div xml:lang="en" lang="en"><hr/><p><b>English</b></p><hr/><p class="res-header-id"><b>Generated Narrative: ValueSet mii-vs-lufu-sct-pef</b></p><a name="mii-vs-lufu-sct-pef"> </a><a name="hcmii-vs-lufu-sct-pef"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="http://hl7.org/fhir/uv/crmi/STU2/StructureDefinition-shareablevalueset.html">Shareable ValueSet</a></p></div><ul><li>Include these codes as defined in <a href="http://www.snomed.org/"><code>http://snomed.info/sct</code></a><span title="Version is not explicitly stated. No matching Code System found"> version Not Stated (use latest from terminology server)</span><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href="http://snomed.info/id/18491006">18491006</a></td><td>Peak expiratory flow rate (observable entity)</td></tr><tr><td><a href="http://snomed.info/id/251936000">251936000</a></td><td>Best ever peak expiratory flow rate (observable entity)</td></tr><tr><td><a href="http://snomed.info/id/429745009">429745009</a></td><td>Diurnal variation of peak expiratory flow rate (observable entity)</td></tr><tr><td><a href="http://snomed.info/id/313192007">313192007</a></td><td>Expected peak expiratory flow rate (observable entity)</td></tr><tr><td><a href="http://snomed.info/id/313232000">313232000</a></td><td>Peak expiratory flow rate after bronchodilation (observable entity)</td></tr><tr><td><a href="http://snomed.info/id/878870000">878870000</a></td><td>Peak expiratory flow rate after exercise (observable entity)</td></tr><tr><td><a href="http://snomed.info/id/313276007">313276007</a></td><td>Peak expiratory flow rate before bronchodilation (observable entity)</td></tr><tr><td><a href="http://snomed.info/id/401015005">401015005</a></td><td>Peak expiratory flow rate post steroids (observable entity)</td></tr><tr><td><a href="http://snomed.info/id/401014009">401014009</a></td><td>Peak expiratory flow rate pre steroids (observable entity)</td></tr><tr><td><a href="http://snomed.info/id/401163005">401163005</a></td><td>Percentage of best ever peak expiratory flow rate (observable entity)</td></tr><tr><td><a href="http://snomed.info/id/401199000">401199000</a></td><td>Percentage of peak expiratory flow rate variability (observable entity)</td></tr><tr><td><a href="http://snomed.info/id/251940009">251940009</a></td><td>Serial peak expiratory flow rate (observable entity)</td></tr><tr><td><a href="http://snomed.info/id/251939007">251939007</a></td><td>Single peak expiratory flow rate (observable entity)</td></tr></table></li></ul></div>
+  </text>
+  <url value="https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/ValueSet/mii-vs-lufu-sct-pef"/>
+  <version value="2027.0.0-ballot.rc1"/>
+  <name value="MII_VS_Lufu_SCT_PEF"/>
+  <title value="MII VS Lufu SCT PEF"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2026-09-01"/>
+  <publisher value="Medizininformatik Initiative"/>
+  <contact>
+    <name value="Medizininformatik Initiative"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://www.medizininformatik-initiative.de/"/>
+    </telecom>
+  </contact>
+  <description value="Import the ValueSet for lungfunction peak expiratory flow"/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="DE"/>
+      <display value="Germany"/>
+    </coding>
+  </jurisdiction>
+  <copyright value="This value set includes content from SNOMED CT, which is copyright © 2002+ International Health Terminology Standards Development Organisation (IHTSDO), and distributed by agreement between IHTSDO and HL7. Implementer use of SNOMED CT is not covered by this agreement"/>
+  <compose>
+    <include>
+      <system value="http://snomed.info/sct"/>
+      <concept>
+        <code value="18491006"/>
+        <display value="Peak expiratory flow rate (observable entity)"/>
+      </concept>
+      <concept>
+        <code value="251936000"/>
+        <display value="Best ever peak expiratory flow rate (observable entity)"/>
+      </concept>
+      <concept>
+        <code value="429745009"/>
+        <display value="Diurnal variation of peak expiratory flow rate (observable entity)"/>
+      </concept>
+      <concept>
+        <code value="313192007"/>
+        <display value="Expected peak expiratory flow rate (observable entity)"/>
+      </concept>
+      <concept>
+        <code value="313232000"/>
+        <display value="Peak expiratory flow rate after bronchodilation (observable entity)"/>
+      </concept>
+      <concept>
+        <code value="878870000"/>
+        <display value="Peak expiratory flow rate after exercise (observable entity)"/>
+      </concept>
+      <concept>
+        <code value="313276007"/>
+        <display value="Peak expiratory flow rate before bronchodilation (observable entity)"/>
+      </concept>
+      <concept>
+        <code value="401015005"/>
+        <display value="Peak expiratory flow rate post steroids (observable entity)"/>
+      </concept>
+      <concept>
+        <code value="401014009"/>
+        <display value="Peak expiratory flow rate pre steroids (observable entity)"/>
+      </concept>
+      <concept>
+        <code value="401163005"/>
+        <display value="Percentage of best ever peak expiratory flow rate (observable entity)"/>
+      </concept>
+      <concept>
+        <code value="401199000"/>
+        <display value="Percentage of peak expiratory flow rate variability (observable entity)"/>
+      </concept>
+      <concept>
+        <code value="251940009"/>
+        <display value="Serial peak expiratory flow rate (observable entity)"/>
+      </concept>
+      <concept>
+        <code value="251939007"/>
+        <display value="Single peak expiratory flow rate (observable entity)"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

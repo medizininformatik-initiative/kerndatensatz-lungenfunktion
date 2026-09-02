@@ -1,0 +1,52 @@
+{
+  "resourceType" : "Medication",
+  "id" : "mii-exa-lungenfunktion-methacholine",
+  "meta" : {
+    "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-methacholine"]
+  },
+  "language" : "en",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xml:lang=\"en\" lang=\"en\"><hr/><p><b>English</b></p><hr/><p class=\"res-header-id\"><b>Generated Narrative: Medication mii-exa-lungenfunktion-methacholine</b></p><a name=\"mii-exa-lungenfunktion-methacholine\"> </a><a name=\"hcmii-exa-lungenfunktion-methacholine\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-mii-pr-lungenfunktion-methacholine.html\">MII PR Lungenfunktion Methacholine</a></p></div><p><b>code</b>: <span title=\"Codes:{http://fhir.de/CodeSystem/ifa/pzn 00171345}\">Provokit® 0,33%</span></p><blockquote><p><b>ingredient</b></p><p><b>item</b>: <span title=\"Codes:{http://snomed.info/sct 109196007}\">Methacholine chloride (substance)</span></p><p><b>strength</b>: 33 mg<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codemg = 'mg')</span>/10 ml<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codeml = 'ml')</span></p></blockquote><blockquote><p><b>ingredient</b></p><p><b>item</b>: <span title=\"Codes:{http://snomed.info/sct 11713004}\">Water (substance)</span></p></blockquote></div>"
+  },
+  "code" : {
+    "coding" : [{
+      "system" : "http://fhir.de/CodeSystem/ifa/pzn",
+      "code" : "00171345",
+      "display" : "Provokit® 0,33%"
+    }]
+  },
+  "ingredient" : [{
+    "itemCodeableConcept" : {
+      "coding" : [{
+        "system" : "http://snomed.info/sct",
+        "code" : "109196007",
+        "display" : "Methacholine chloride (substance)"
+      }]
+    },
+    "strength" : {
+      "numerator" : {
+        "value" : 33,
+        "unit" : "mg",
+        "system" : "http://unitsofmeasure.org",
+        "code" : "mg"
+      },
+      "denominator" : {
+        "value" : 10,
+        "unit" : "ml",
+        "system" : "http://unitsofmeasure.org",
+        "code" : "ml"
+      }
+    }
+  },
+  {
+    "itemCodeableConcept" : {
+      "coding" : [{
+        "system" : "http://snomed.info/sct",
+        "version" : "http://snomed.info/sct/900000000000207008/version/20250701",
+        "code" : "11713004",
+        "display" : "Water (substance)"
+      }]
+    }
+  }]
+}

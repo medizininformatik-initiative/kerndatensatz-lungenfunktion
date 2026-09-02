@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Observation xmlns="http://hl7.org/fhir">
+  <id value="mii-exa-lungenfunktion-kcoc"/>
+  <meta>
+    <profile value="https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-kcoc"/>
+  </meta>
+  <language value="en"/>
+  <text>
+    <status value="generated"/><div xml:lang="en" lang="en"><hr/><p><b>English</b></p><hr/><p class="res-header-id"><b>Generated Narrative: Observation mii-exa-lungenfunktion-kcoc</b></p><a name="mii-exa-lungenfunktion-kcoc"> </a><a name="hcmii-exa-lungenfunktion-kcoc"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-mii-pr-lungenfunktion-kcoc.html">MII PR Lungenfunktion KCOc</a></p></div><p><b>partOf</b>: <a href="Procedure-mii-exa-lungenfunktion-diffusion-messung.html">Procedure Carbon monoxide diffusing capacity measurement (procedure)</a></p><p><b>status</b>: Final</p><p><b>category</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/observation-category procedure}">Procedure</span></p><p><b>code</b>: <span title="Codes:{http://loinc.org 19916-6}">Diffusion capacity/Alveolar volume</span></p><p><b>subject</b>: <a href="Patient-mii-exa-lungenfunktion-patient.html">Erika Beispielpatientin  Female, DoB: 1970-01-01</a></p><p><b>issued</b>: 2024-07-19 13:03:20+0200</p><p><b>value</b>: 1.7 mmol/(min.kPa.L)<span style="background: LightGoldenRodYellow"> (Details: UCUM  codemmol/(min.kPa.L) = 'mmol/(min.kPa.L)')</span></p><p><b>interpretation</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation N}">Normal</span></p><p><b>method</b>: <span title="Codes:{http://snomed.info/sct 249862003}">Sitting upright (finding)</span></p><h3>ReferenceRanges</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Low</b></td></tr><tr><td style="display: none">*</td><td>1.18 mmol/(min.kPa.L)<span style="background: LightGoldenRodYellow"> (Details: UCUM  codemmol/(min.kPa.L) = 'mmol/(min.kPa.L)')</span></td></tr></table><p><b>derivedFrom</b>: </p><ul><li><a href="Observation-mii-exa-lungenfunktion-dlcoc.html">Observation Diffusion capacity.carbon monoxide</a></li><li><a href="Observation-mii-exa-lungenfunktion-va.html">Observation Alveolar volume (observable entity)</a></li></ul><blockquote><p><b>component</b></p><p><b>code</b>: <span title="Codes:{http://loinc.org 19915-8}">Diffusion capacity/Alveolar volume Predicted</span></p><p><b>value</b>: 1.52 mmol/(min.kPa.L)<span style="background: LightGoldenRodYellow"> (Details: UCUM  codemmol/(min.kPa.L) = 'mmol/(min.kPa.L)')</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title="Codes:{http://loinc.org 98203-3}">(Diffusion capacity/Alveolar volume)/predicted</span></p><p><b>value</b>: 112 %<span style="background: LightGoldenRodYellow"> (Details: UCUM  code% = '%')</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title="Codes:{http://snomed.info/sct 1078210003}">Z-score calculation technique (qualifier value)</span></p><p><b>value</b>: 0.8</p></blockquote></div>
+  </text>
+  <partOf>
+    <reference value="Procedure/mii-exa-lungenfunktion-diffusion-messung"/>
+  </partOf>
+  <status value="final"/>
+  <category>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
+      <code value="procedure"/>
+    </coding>
+  </category>
+  <code>
+    <coding>
+      <system value="http://loinc.org"/>
+      <code value="19916-6"/>
+      <display value="Diffusion capacity/Alveolar volume"/>
+    </coding>
+  </code>
+  <subject>
+    <reference value="Patient/mii-exa-lungenfunktion-patient"/>
+  </subject>
+  <issued value="2024-07-19T13:03:20+02:00"/>
+  <valueQuantity>
+    <value value="1.7"/>
+    <system value="http://unitsofmeasure.org"/>
+    <code value="mmol/(min.kPa.L)"/>
+  </valueQuantity>
+  <interpretation>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation"/>
+      <code value="N"/>
+    </coding>
+  </interpretation>
+  <method>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="249862003"/>
+      <display value="Sitting upright (finding)"/>
+    </coding>
+  </method>
+  <referenceRange>
+    <low>
+      <value value="1.18"/>
+      <system value="http://unitsofmeasure.org"/>
+      <code value="mmol/(min.kPa.L)"/>
+    </low>
+  </referenceRange>
+  <derivedFrom>
+    <reference value="Observation/mii-exa-lungenfunktion-dlcoc"/>
+  </derivedFrom>
+  <derivedFrom>
+    <reference value="Observation/mii-exa-lungenfunktion-va"/>
+  </derivedFrom>
+  <component>
+    <code>
+      <coding>
+        <system value="http://loinc.org"/>
+        <code value="19915-8"/>
+        <display value="Diffusion capacity/Alveolar volume Predicted"/>
+      </coding>
+    </code>
+    <valueQuantity>
+      <value value="1.52"/>
+      <system value="http://unitsofmeasure.org"/>
+      <code value="mmol/(min.kPa.L)"/>
+    </valueQuantity>
+  </component>
+  <component>
+    <code>
+      <coding>
+        <system value="http://loinc.org"/>
+        <code value="98203-3"/>
+        <display value="(Diffusion capacity/Alveolar volume)/predicted"/>
+      </coding>
+    </code>
+    <valueQuantity>
+      <value value="112"/>
+      <system value="http://unitsofmeasure.org"/>
+      <code value="%"/>
+    </valueQuantity>
+  </component>
+  <component>
+    <code>
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <code value="1078210003"/>
+        <display value="Z-score calculation technique (qualifier value)"/>
+      </coding>
+    </code>
+    <valueQuantity>
+      <value value="0.8"/>
+      <system value="http://unitsofmeasure.org"/>
+    </valueQuantity>
+  </component>
+</Observation>

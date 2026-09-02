@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="mii-vs-lufu-lnc-ic"/>
+  <meta>
+    <profile value="http://hl7.org/fhir/StructureDefinition/shareablevalueset"/>
+  </meta>
+  <language value="de"/>
+  <text>
+    <status value="generated"/><div xml:lang="de" lang="de"><hr/><p><b>German</b></p><hr/><p class="res-header-id"><b>Generated Narrative: ValueSet mii-vs-lufu-lnc-ic</b></p><a name="de-mii-vs-lufu-lnc-ic"> </a><a name="de-hcmii-vs-lufu-lnc-ic"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="http://hl7.org/fhir/uv/crmi/STU2/StructureDefinition-shareablevalueset.html">Shareable ValueSet</a></p></div><ul><li>Include these codes as defined in <a href="http://loinc.org"><code>http://loinc.org</code></a><span title="Version is not explicitly stated. No matching Code System found"> version Not Stated (use latest from terminology server)</span><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href="https://loinc.org/19854-9/">19854-9</a></td><td>Inspiratory capacity bs/Inspiratory capacity pre-operative</td></tr><tr><td><a href="https://loinc.org/19853-1/">19853-1</a></td><td>Inspiratory capacity bs/Inspiratory capacity pre-operative by Spirometry</td></tr><tr><td><a href="https://loinc.org/19848-1/">19848-1</a></td><td>Inspiratory capacity</td></tr><tr><td><a href="https://loinc.org/19851-5/">19851-5</a></td><td>Inspiratory capacity Predicted</td></tr><tr><td><a href="https://loinc.org/19852-3/">19852-3</a></td><td>Inspiratory capacity by Spirometry</td></tr><tr><td><a href="https://loinc.org/19856-4/">19856-4</a></td><td>Inspiratory capacity measured/predicted</td></tr><tr><td><a href="https://loinc.org/19849-9/">19849-9</a></td><td>Inspiratory capacity by Helium rebreathing</td></tr><tr><td><a href="https://loinc.org/19855-6/">19855-6</a></td><td>Inspiratory capacity measured/predicted by Spirometry</td></tr><tr><td><a href="https://loinc.org/19850-7/">19850-7</a></td><td>Inspiratory capacity by Helium single breath</td></tr><tr><td><a href="https://loinc.org/98090-4/">98090-4</a></td><td>Inspiratory capacity by Spirometry --post bronchodilation</td></tr><tr><td><a href="https://loinc.org/98089-6/">98089-6</a></td><td>Inspiratory capacity by Spirometry --pre bronchodilation</td></tr></table></li></ul></div>
+  </text>
+  <url value="https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/ValueSet/mii-vs-lufu-lnc-ic"/>
+  <version value="2027.0.0-ballot.rc1"/>
+  <name value="MII_VS_Lufu_LNC_IC"/>
+  <title value="MII VS Lufu LNC Inspiratory Capacity"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2026-09-01"/>
+  <publisher value="Medizininformatik Initiative"/>
+  <contact>
+    <name value="Medizininformatik Initiative"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://www.medizininformatik-initiative.de/"/>
+    </telecom>
+  </contact>
+  <description value="Import the ValueSet for lungfunction inspiratory capacity"/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="DE"/>
+      <display value="Germany"/>
+    </coding>
+  </jurisdiction>
+  <copyright value="This value set includes content from SNOMED CT, which is copyright © 2002+ International Health Terminology Standards Development Organisation (IHTSDO), and distributed by agreement between IHTSDO and HL7. Implementer use of SNOMED CT is not covered by this agreement"/>
+  <compose>
+    <include>
+      <system value="http://loinc.org"/>
+      <concept>
+        <code value="19854-9"/>
+        <display value="Inspiratory capacity bs/Inspiratory capacity pre-operative"/>
+      </concept>
+      <concept>
+        <code value="19853-1"/>
+        <display value="Inspiratory capacity bs/Inspiratory capacity pre-operative by Spirometry"/>
+      </concept>
+      <concept>
+        <code value="19848-1"/>
+        <display value="Inspiratory capacity"/>
+      </concept>
+      <concept>
+        <code value="19851-5"/>
+        <display value="Inspiratory capacity Predicted"/>
+      </concept>
+      <concept>
+        <code value="19852-3"/>
+        <display value="Inspiratory capacity by Spirometry"/>
+      </concept>
+      <concept>
+        <code value="19856-4"/>
+        <display value="Inspiratory capacity measured/predicted"/>
+      </concept>
+      <concept>
+        <code value="19849-9"/>
+        <display value="Inspiratory capacity by Helium rebreathing"/>
+      </concept>
+      <concept>
+        <code value="19855-6"/>
+        <display value="Inspiratory capacity measured/predicted by Spirometry"/>
+      </concept>
+      <concept>
+        <code value="19850-7"/>
+        <display value="Inspiratory capacity by Helium single breath"/>
+      </concept>
+      <concept>
+        <code value="98090-4"/>
+        <display value="Inspiratory capacity by Spirometry --post bronchodilation"/>
+      </concept>
+      <concept>
+        <code value="98089-6"/>
+        <display value="Inspiratory capacity by Spirometry --pre bronchodilation"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

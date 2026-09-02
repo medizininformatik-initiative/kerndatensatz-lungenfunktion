@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Observation xmlns="http://hl7.org/fhir">
+  <id value="mii-exa-lungenfunktion-pef-b"/>
+  <meta>
+    <profile value="https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-pef"/>
+  </meta>
+  <language value="en"/>
+  <text>
+    <status value="generated"/><div xml:lang="en" lang="en"><hr/><p><b>English</b></p><hr/><p class="res-header-id"><b>Generated Narrative: Observation mii-exa-lungenfunktion-pef-b</b></p><a name="mii-exa-lungenfunktion-pef-b"> </a><a name="hcmii-exa-lungenfunktion-pef-b"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-mii-pr-lungenfunktion-pef.html">MII PR Lungenfunktion PEF</a></p></div><p><b>partOf</b>: <a href="Procedure-mii-exa-lungenfunktion-provokationstest-messung.html">Procedure Methacholine challenge (procedure)</a></p><p><b>status</b>: Final</p><p><b>category</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/observation-category procedure}">Procedure</span></p><p><b>code</b>: <span title="Codes:{http://snomed.info/sct 18491006}">Peak expiratory flow rate (observable entity)</span></p><p><b>subject</b>: <a href="Patient-mii-exa-lungenfunktion-patient.html">Erika Beispielpatientin  Female, DoB: 1970-01-01</a></p><p><b>issued</b>: 2024-07-19 13:03:20+0200</p><p><b>value</b>: 7.95 L/s<span style="background: LightGoldenRodYellow"> (Details: UCUM  codeL/s = 'L/s')</span></p><p><b>interpretation</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation N}">Normal</span></p><p><b>method</b>: <span title="Codes:{http://snomed.info/sct 249862003}">Sitting upright (finding)</span></p><h3>Components</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Code</b></td><td><b>Value[x]</b></td></tr><tr><td style="display: none">*</td><td><span title="Codes:{http://snomed.info/sct 313192007}">Expected peak expiratory flow rate (observable entity)</span></td><td>7.45 L/s<span style="background: LightGoldenRodYellow"> (Details: UCUM  codeL/s = 'L/s')</span></td></tr></table></div>
+  </text>
+  <partOf>
+    <reference value="Procedure/mii-exa-lungenfunktion-provokationstest-messung"/>
+  </partOf>
+  <status value="final"/>
+  <category>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
+      <code value="procedure"/>
+    </coding>
+  </category>
+  <code>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="18491006"/>
+      <display value="Peak expiratory flow rate (observable entity)"/>
+    </coding>
+  </code>
+  <subject>
+    <reference value="Patient/mii-exa-lungenfunktion-patient"/>
+  </subject>
+  <issued value="2024-07-19T13:03:20+02:00"/>
+  <valueQuantity>
+    <value value="7.95"/>
+    <system value="http://unitsofmeasure.org"/>
+    <code value="L/s"/>
+  </valueQuantity>
+  <interpretation>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation"/>
+      <code value="N"/>
+    </coding>
+  </interpretation>
+  <method>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="249862003"/>
+      <display value="Sitting upright (finding)"/>
+    </coding>
+  </method>
+  <component>
+    <code>
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <code value="313192007"/>
+        <display value="Expected peak expiratory flow rate (observable entity)"/>
+      </coding>
+    </code>
+    <valueQuantity>
+      <value value="7.45"/>
+      <system value="http://unitsofmeasure.org"/>
+      <code value="L/s"/>
+    </valueQuantity>
+  </component>
+</Observation>

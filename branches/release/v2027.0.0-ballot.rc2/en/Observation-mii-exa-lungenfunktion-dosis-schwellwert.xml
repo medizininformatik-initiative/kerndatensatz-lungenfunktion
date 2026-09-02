@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Observation xmlns="http://hl7.org/fhir">
+  <id value="mii-exa-lungenfunktion-dosis-schwellwert"/>
+  <meta>
+    <profile value="https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-dosis"/>
+  </meta>
+  <language value="en"/>
+  <text>
+    <status value="generated"/><div xml:lang="en" lang="en"><hr/><p><b>English</b></p><hr/><p class="res-header-id"><b>Generated Narrative: Observation mii-exa-lungenfunktion-dosis-schwellwert</b></p><a name="mii-exa-lungenfunktion-dosis-schwellwert"> </a><a name="hcmii-exa-lungenfunktion-dosis-schwellwert"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-mii-pr-lungenfunktion-dosis.html">MII PR Lungenfunktion Dosis</a></p></div><p><b>partOf</b>: </p><ul><li><a href="Procedure-mii-exa-lungenfunktion-provokationstest-messung.html">Procedure Methacholine challenge (procedure)</a></li><li><a href="https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.meta@2026.0.0&amp;canonical=https://www.medizininformatik-initiative.de/fhir/modul-meta/MedicationAdminstration/mii-exa-lungenfunktion-dosis-gabe-3">MedicationAdminstration/mii-exa-lungenfunktion-dosis-gabe-3</a></li></ul><p><b>status</b>: Final</p><p><b>category</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/observation-category procedure}">Procedure</span></p><p><b>code</b>: <span title="Codes:{http://snomed.info/sct 1376040001}">Dose of methacholine to achieve maximal drop of forced expired volume in 1 second (observable entity)</span></p><p><b>subject</b>: <a href="Patient-mii-exa-lungenfunktion-patient.html">Erika Beispielpatientin  Female, DoB: 1970-01-01</a></p><p><b>issued</b>: 2024-07-19 13:03:20+0200</p><p><b>value</b>: 0.12 mg<span style="background: LightGoldenRodYellow"> (Details: UCUM  codemg = 'mg')</span></p><p><b>interpretation</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation N}">Normal</span></p></div>
+  </text>
+  <partOf>
+    <reference value="Procedure/mii-exa-lungenfunktion-provokationstest-messung"/>
+  </partOf>
+  <partOf>
+    <reference value="MedicationAdminstration/mii-exa-lungenfunktion-dosis-gabe-3"/>
+  </partOf>
+  <status value="final"/>
+  <category>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
+      <code value="procedure"/>
+    </coding>
+  </category>
+  <code>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="1376040001"/>
+      <display value="Dose of methacholine to achieve maximal drop of forced expired volume in 1 second (observable entity)"/>
+    </coding>
+  </code>
+  <subject>
+    <reference value="Patient/mii-exa-lungenfunktion-patient"/>
+  </subject>
+  <issued value="2024-07-19T13:03:20+02:00"/>
+  <valueQuantity>
+    <value value="0.12"/>
+    <system value="http://unitsofmeasure.org"/>
+    <code value="mg"/>
+  </valueQuantity>
+  <interpretation>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation"/>
+      <code value="N"/>
+    </coding>
+  </interpretation>
+</Observation>
