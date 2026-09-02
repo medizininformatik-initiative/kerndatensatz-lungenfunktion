@@ -1,4 +1,4 @@
-# MII PR Lungenfunktion CO2 Konzentration - MII IG Kerndatensatz-Modul Lungenfunktion v2027.0.0-ballot.rc1
+# MII PR Lungenfunktion CO2 Konzentration - MII IG Kerndatensatz-Modul Lungenfunktion v2027.0.0-ballot
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-co2-konzentration | *Version*:2027.0.0-ballot.rc1 |
-| Active as of 2026-09-01 | *Computable Name*:MII_PR_Lungenfunktion_CO2_Konzentration |
+| *Official URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-co2-konzentration | *Version*:2027.0.0-ballot |
+| Active as of 2026-09-02 | *Computable Name*:MII_PR_Lungenfunktion_CO2_Konzentration |
 
  
 The profile describes a observation for co2 concentration. 
@@ -50,7 +50,7 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-lungenfunk
     }
   }],
   "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-co2-konzentration",
-  "version" : "2027.0.0-ballot.rc1",
+  "version" : "2027.0.0-ballot",
   "name" : "MII_PR_Lungenfunktion_CO2_Konzentration",
   "_name" : {
     "extension" : [{
@@ -80,7 +80,7 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-lungenfunk
     }]
   },
   "status" : "active",
-  "date" : "2026-09-01",
+  "date" : "2026-09-02",
   "publisher" : "Medizininformatik Initiative",
   "contact" : [{
     "name" : "Medizininformatik Initiative",

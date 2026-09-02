@@ -1,4 +1,4 @@
-# MII VS Lufu SCT Procedure Report - MII IG Kerndatensatz-Modul Lungenfunktion v2027.0.0-ballot.rc1
+# MII VS Lufu SCT Procedure Report - MII IG Kerndatensatz-Modul Lungenfunktion v2027.0.0-ballot
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/ValueSet/mii-vs-lufu-lnc-procedure | *Version*:2027.0.0-ballot.rc1 |
-| Active as of 2026-09-01 | *Computable Name*:MII_VS_Lufu_LNC_Procedure |
+| *Official URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/ValueSet/mii-vs-lufu-lnc-procedure | *Version*:2027.0.0-ballot |
+| Active as of 2026-09-02 | *Computable Name*:MII_VS_Lufu_LNC_Procedure |
 | **Copyright/Legal**: This material contains content from LOINC (http://loinc.org). LOINC is copyright © 1995-2020, Regenstrief Institute, Inc. and the Logical Observation Identifiers Names and Codes (LOINC) Committee and is available at no cost under the license at http://loinc.org/license. LOINC® is a registered United States trademark of Regenstrief Institute, Inc) | |
 
  
@@ -41,12 +41,12 @@ Import the ValueSet for lungfunction
     "profile" : ["http://hl7.org/fhir/StructureDefinition/shareablevalueset"]
   },
   "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/ValueSet/mii-vs-lufu-lnc-procedure",
-  "version" : "2027.0.0-ballot.rc1",
+  "version" : "2027.0.0-ballot",
   "name" : "MII_VS_Lufu_LNC_Procedure",
   "title" : "MII VS Lufu SCT Procedure Report",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-09-01",
+  "date" : "2026-09-02",
   "publisher" : "Medizininformatik Initiative",
   "contact" : [{
     "name" : "Medizininformatik Initiative",

@@ -1,4 +1,4 @@
-# Versionierung - MII IG Kerndatensatz-Modul Lungenfunktion v2027.0.0-ballot.rc1
+# Versionierung - MII IG Kerndatensatz-Modul Lungenfunktion v2027.0.0-ballot
 
 * [**Inhaltsverzeichnis**](toc.md)
 * **Versionierung**

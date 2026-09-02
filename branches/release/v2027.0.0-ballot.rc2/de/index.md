@@ -1,4 +1,4 @@
-# Startseite - MII IG Kerndatensatz-Modul Lungenfunktion v2027.0.0-ballot.rc1
+# Startseite - MII IG Kerndatensatz-Modul Lungenfunktion v2027.0.0-ballot
 
 * [**Inhaltsverzeichnis**](toc.md)
 * **Startseite**
@@ -7,7 +7,7 @@
 
 | | |
 | :--- | :--- |
-| *Offizielle URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/ImplementationGuide/mii-ig-lungenfunktion | *Version*:2027.0.0-ballot.rc1 |
+| *Offizielle URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/ImplementationGuide/mii-ig-lungenfunktion | *Version*:2027.0.0-ballot |
 | Active Stand: 2026-08-28 | *Maschinenlesbarer Name*:MII_IG_Lungenfunktion |
 
 ### Einleitung

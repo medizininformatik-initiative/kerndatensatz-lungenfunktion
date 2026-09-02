@@ -1,4 +1,4 @@
-# MII VS Lufu LNC RVL - MII IG Kerndatensatz-Modul Lungenfunktion v2027.0.0-ballot.rc1
+# MII VS Lufu LNC RVL - MII IG Kerndatensatz-Modul Lungenfunktion v2027.0.0-ballot
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/ValueSet/mii-vs-lufu-lnc-rvl | *Version*:2027.0.0-ballot.rc1 |
-| Active as of 2026-09-01 | *Computable Name*:MII_VS_Lufu_LNC_RVL |
+| *Official URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/ValueSet/mii-vs-lufu-lnc-rvl | *Version*:2027.0.0-ballot |
+| Active as of 2026-09-02 | *Computable Name*:MII_VS_Lufu_LNC_RVL |
 | **Copyright/Legal**: This value set includes content from SNOMED CT, which is copyright © 2002+ International Health Terminology Standards Development Organisation (IHTSDO), and distributed by agreement between IHTSDO and HL7. Implementer use of SNOMED CT is not covered by this agreement | |
 
  
@@ -41,12 +41,12 @@ Import the ValueSet for lungfunction Residual Volume
     "profile" : ["http://hl7.org/fhir/StructureDefinition/shareablevalueset"]
   },
   "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/ValueSet/mii-vs-lufu-lnc-rvl",
-  "version" : "2027.0.0-ballot.rc1",
+  "version" : "2027.0.0-ballot",
   "name" : "MII_VS_Lufu_LNC_RVL",
   "title" : "MII VS Lufu LNC RVL",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-09-01",
+  "date" : "2026-09-02",
   "publisher" : "Medizininformatik Initiative",
   "contact" : [{
     "name" : "Medizininformatik Initiative",

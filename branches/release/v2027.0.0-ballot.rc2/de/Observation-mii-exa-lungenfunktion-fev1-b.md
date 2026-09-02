@@ -1,4 +1,4 @@
-# MII Example Lungenfunktion Provokation FEV 1 B - MII IG Kerndatensatz-Modul Lungenfunktion v2027.0.0-ballot.rc1
+# MII Example Lungenfunktion Provokation FEV 1 B - MII IG Kerndatensatz-Modul Lungenfunktion v2027.0.0-ballot
 
 * [**Inhaltsverzeichnis**](toc.md)
 * [**Artefaktübersicht**](artifacts.md)

@@ -1,4 +1,4 @@
-# MII Example Lungenfunktion ERV - MII IG Kerndatensatz-Modul Lungenfunktion v2027.0.0-ballot.rc1
+# MII Example Lungenfunktion ERV - MII IG Kerndatensatz-Modul Lungenfunktion v2027.0.0-ballot
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)

@@ -17,11 +17,11 @@
     }
   }],
   "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-lufttemperatur",
-  "version" : "2027.0.0-ballot.rc1",
+  "version" : "2027.0.0-ballot",
   "name" : "MII_PR_Lungenfunktion_Lufttemperatur",
   "title" : "MII PR Lungenfunktion Lufttemperatur",
   "status" : "active",
-  "date" : "2026-09-01",
+  "date" : "2026-09-02",
   "publisher" : "Medizininformatik Initiative",
   "contact" : [{
     "name" : "Medizininformatik Initiative",

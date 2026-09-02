@@ -1,4 +1,4 @@
-# MII VS Lufu LNC FEV FVC - MII IG Kerndatensatz-Modul Lungenfunktion v2027.0.0-ballot.rc1
+# MII VS Lufu LNC FEV FVC - MII IG Kerndatensatz-Modul Lungenfunktion v2027.0.0-ballot
 
 * [**Inhaltsverzeichnis**](toc.md)
 * [**Artefaktübersicht**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Offizielle URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/ValueSet/mii-vs-lufu-lnc-fev-fvc | *Version*:2027.0.0-ballot.rc1 |
-| Active Stand: 2026-09-01 | *Maschinenlesbarer Name*:MII_VS_Lufu_LNC_FEV_FVC |
+| *Offizielle URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/ValueSet/mii-vs-lufu-lnc-fev-fvc | *Version*:2027.0.0-ballot |
+| Active Stand: 2026-09-02 | *Maschinenlesbarer Name*:MII_VS_Lufu_LNC_FEV_FVC |
 | **Copyright/Rechtliches**: This value set includes content from SNOMED CT, which is copyright © 2002+ International Health Terminology Standards Development Organisation (IHTSDO), and distributed by agreement between IHTSDO and HL7. Implementer use of SNOMED CT is not covered by this agreement | |
 
  
@@ -41,12 +41,12 @@ Import the ValueSet for lungfunction Tiffeneau-Index
     "profile" : ["http://hl7.org/fhir/StructureDefinition/shareablevalueset"]
   },
   "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/ValueSet/mii-vs-lufu-lnc-fev-fvc",
-  "version" : "2027.0.0-ballot.rc1",
+  "version" : "2027.0.0-ballot",
   "name" : "MII_VS_Lufu_LNC_FEV_FVC",
   "title" : "MII VS Lufu LNC FEV FVC",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-09-01",
+  "date" : "2026-09-02",
   "publisher" : "Medizininformatik Initiative",
   "contact" : [{
     "name" : "Medizininformatik Initiative",

@@ -1,4 +1,4 @@
-# MII Example Lungenfunktion Provokation FRC P3 - MII IG Kerndatensatz-Modul Lungenfunktion v2027.0.0-ballot.rc1
+# MII Example Lungenfunktion Provokation FRC P3 - MII IG Kerndatensatz-Modul Lungenfunktion v2027.0.0-ballot
 
 * [**Inhaltsverzeichnis**](toc.md)
 * [**Artefaktübersicht**](artifacts.md)

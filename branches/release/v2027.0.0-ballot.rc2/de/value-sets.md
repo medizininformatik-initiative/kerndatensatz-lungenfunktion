@@ -1,4 +1,4 @@
-# ValueSets - MII IG Kerndatensatz-Modul Lungenfunktion v2027.0.0-ballot.rc1
+# ValueSets - MII IG Kerndatensatz-Modul Lungenfunktion v2027.0.0-ballot
 
 * [**Inhaltsverzeichnis**](toc.md)
 * **ValueSets**

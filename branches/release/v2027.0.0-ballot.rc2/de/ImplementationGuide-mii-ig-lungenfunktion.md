@@ -1,4 +1,4 @@
-# MII ImplementationGuide Ressource - MII IG Kerndatensatz-Modul Lungenfunktion v2027.0.0-ballot.rc1
+# MII ImplementationGuide Ressource - MII IG Kerndatensatz-Modul Lungenfunktion v2027.0.0-ballot
 
 * [**Inhaltsverzeichnis**](toc.md)
 * **MII ImplementationGuide Ressource**
@@ -247,7 +247,7 @@ Expansionsparameter sind Query-Parameter, die an eine `ValueSet`- `$expand`-Oper
     }
   }],
   "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/ImplementationGuide/mii-ig-lungenfunktion",
-  "version" : "2027.0.0-ballot.rc1",
+  "version" : "2027.0.0-ballot",
   "name" : "MII_IG_Lungenfunktion",
   "title" : "MII IG Kerndatensatz-Modul Lungenfunktion",
   "status" : "active",

@@ -1,4 +1,4 @@
-# de.medizininformatikinitiative.kerndatensatz.lungenfunktion#2027.0.0-ballot.rc1: MII IG Kerndatensatz-Modul Lungenfunktion(de)
+# de.medizininformatikinitiative.kerndatensatz.lungenfunktion#2027.0.0-ballot: MII IG Kerndatensatz-Modul Lungenfunktion(de)
 
 ## Pages
 

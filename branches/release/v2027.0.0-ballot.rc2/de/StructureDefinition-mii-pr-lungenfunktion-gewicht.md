@@ -1,4 +1,4 @@
-# MII PR Lungenfunktion Gewicht - MII IG Kerndatensatz-Modul Lungenfunktion v2027.0.0-ballot.rc1
+# MII PR Lungenfunktion Gewicht - MII IG Kerndatensatz-Modul Lungenfunktion v2027.0.0-ballot
 
 * [**Inhaltsverzeichnis**](toc.md)
 * [**Artefaktübersicht**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Offizielle URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-gewicht | *Version*:2027.0.0-ballot.rc1 |
-| Active Stand: 2026-09-01 | *Maschinenlesbarer Name*:MII_PR_Lungenfunktion_Gewicht |
+| *Offizielle URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-gewicht | *Version*:2027.0.0-ballot |
+| Active Stand: 2026-09-02 | *Maschinenlesbarer Name*:MII_PR_Lungenfunktion_Gewicht |
 
  
 Dieses Beobachtung beschreibt eine Gewichtsressource. 
@@ -48,7 +48,7 @@ Diese Struktur ist abgeleitet von [Observation](http://hl7.org/fhir/R4/observati
 ** Summary **
 
 Mandatory: 2 elements(6 nested mandatory elements)
- Must-Support: 44 elements
+ Must-Support: 48 elements
 
 **Slices**
 
@@ -56,8 +56,8 @@ This structure defines the following [Slices](http://hl7.org/fhir/R4/profiling.h
 
 * The element 1 is sliced based on the value of Observation.code.coding
 * The element 1 is sliced based on the value of Observation.component
-* The element 1 is sliced based on the value of Observation.component.value[x]
 * The element 1 is sliced based on the value of Observation.component.code.coding
+* The element 1 is sliced based on the value of Observation.component.value[x]
 
  **Schlüsselelemente-Ansicht** 
 
@@ -82,7 +82,7 @@ Diese Struktur ist abgeleitet von [Observation](http://hl7.org/fhir/R4/observati
 ** Summary **
 
 Mandatory: 2 elements(6 nested mandatory elements)
- Must-Support: 44 elements
+ Must-Support: 48 elements
 
 **Slices**
 
@@ -90,8 +90,8 @@ This structure defines the following [Slices](http://hl7.org/fhir/R4/profiling.h
 
 * The element 1 is sliced based on the value of Observation.code.coding
 * The element 1 is sliced based on the value of Observation.component
-* The element 1 is sliced based on the value of Observation.component.value[x]
 * The element 1 is sliced based on the value of Observation.component.code.coding
+* The element 1 is sliced based on the value of Observation.component.value[x]
 
  
 
@@ -116,7 +116,7 @@ Weitere Repräsentationen des Profils: [CSV](../StructureDefinition-mii-pr-lunge
     }
   }],
   "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-gewicht",
-  "version" : "2027.0.0-ballot.rc1",
+  "version" : "2027.0.0-ballot",
   "name" : "MII_PR_Lungenfunktion_Gewicht",
   "_name" : {
     "extension" : [{
@@ -146,7 +146,7 @@ Weitere Repräsentationen des Profils: [CSV](../StructureDefinition-mii-pr-lunge
     }]
   },
   "status" : "active",
-  "date" : "2026-09-01",
+  "date" : "2026-09-02",
   "publisher" : "Medizininformatik Initiative",
   "contact" : [{
     "name" : "Medizininformatik Initiative",
@@ -1293,48 +1293,6 @@ Weitere Repräsentationen des Profils: [CSV](../StructureDefinition-mii-pr-lunge
       "mustSupport" : true
     },
     {
-      "id" : "Observation.component.value[x]",
-      "path" : "Observation.component.value[x]",
-      "slicing" : {
-        "discriminator" : [{
-          "type" : "type",
-          "path" : "$this"
-        }],
-        "ordered" : false,
-        "rules" : "open"
-      }
-    },
-    {
-      "id" : "Observation.component.value[x]:valueQuantity",
-      "path" : "Observation.component.value[x]",
-      "sliceName" : "valueQuantity",
-      "min" : 0,
-      "max" : "1",
-      "type" : [{
-        "code" : "Quantity"
-      }]
-    },
-    {
-      "id" : "Observation.component.value[x]:valueQuantity.value",
-      "path" : "Observation.component.value[x].value",
-      "mustSupport" : true
-    },
-    {
-      "id" : "Observation.component.value[x]:valueQuantity.unit",
-      "path" : "Observation.component.value[x].unit",
-      "mustSupport" : true
-    },
-    {
-      "id" : "Observation.component.value[x]:valueQuantity.system",
-      "path" : "Observation.component.value[x].system",
-      "mustSupport" : true
-    },
-    {
-      "id" : "Observation.component.value[x]:valueQuantity.code",
-      "path" : "Observation.component.value[x].code",
-      "mustSupport" : true
-    },
-    {
       "id" : "Observation.component:predicted",
       "path" : "Observation.component",
       "sliceName" : "predicted",
@@ -1536,27 +1494,49 @@ Weitere Repräsentationen des Profils: [CSV](../StructureDefinition-mii-pr-lunge
       }
     },
     {
+      "id" : "Observation.component:predicted.value[x]",
+      "path" : "Observation.component.value[x]",
+      "slicing" : {
+        "discriminator" : [{
+          "type" : "type",
+          "path" : "$this"
+        }],
+        "ordered" : false,
+        "rules" : "open"
+      }
+    },
+    {
       "id" : "Observation.component:predicted.value[x]:valueQuantity",
       "path" : "Observation.component.value[x]",
       "sliceName" : "valueQuantity",
+      "min" : 0,
+      "max" : "1",
       "type" : [{
         "code" : "Quantity"
       }]
     },
     {
+      "id" : "Observation.component:predicted.value[x]:valueQuantity.value",
+      "path" : "Observation.component.value[x].value",
+      "mustSupport" : true
+    },
+    {
       "id" : "Observation.component:predicted.value[x]:valueQuantity.unit",
       "path" : "Observation.component.value[x].unit",
-      "patternString" : "ug"
+      "patternString" : "ug",
+      "mustSupport" : true
     },
     {
       "id" : "Observation.component:predicted.value[x]:valueQuantity.system",
       "path" : "Observation.component.value[x].system",
-      "patternUri" : "http://unitsofmeasure.org"
+      "patternUri" : "http://unitsofmeasure.org",
+      "mustSupport" : true
     },
     {
       "id" : "Observation.component:predicted.value[x]:valueQuantity.code",
       "path" : "Observation.component.value[x].code",
-      "patternCode" : "ug"
+      "patternCode" : "ug",
+      "mustSupport" : true
     },
     {
       "id" : "Observation.component:percentPredicted",
@@ -1760,27 +1740,49 @@ Weitere Repräsentationen des Profils: [CSV](../StructureDefinition-mii-pr-lunge
       }
     },
     {
+      "id" : "Observation.component:percentPredicted.value[x]",
+      "path" : "Observation.component.value[x]",
+      "slicing" : {
+        "discriminator" : [{
+          "type" : "type",
+          "path" : "$this"
+        }],
+        "ordered" : false,
+        "rules" : "open"
+      }
+    },
+    {
       "id" : "Observation.component:percentPredicted.value[x]:valueQuantity",
       "path" : "Observation.component.value[x]",
       "sliceName" : "valueQuantity",
+      "min" : 0,
+      "max" : "1",
       "type" : [{
         "code" : "Quantity"
       }]
     },
     {
+      "id" : "Observation.component:percentPredicted.value[x]:valueQuantity.value",
+      "path" : "Observation.component.value[x].value",
+      "mustSupport" : true
+    },
+    {
       "id" : "Observation.component:percentPredicted.value[x]:valueQuantity.unit",
       "path" : "Observation.component.value[x].unit",
-      "patternString" : "%"
+      "patternString" : "%",
+      "mustSupport" : true
     },
     {
       "id" : "Observation.component:percentPredicted.value[x]:valueQuantity.system",
       "path" : "Observation.component.value[x].system",
-      "patternUri" : "http://unitsofmeasure.org"
+      "patternUri" : "http://unitsofmeasure.org",
+      "mustSupport" : true
     },
     {
       "id" : "Observation.component:percentPredicted.value[x]:valueQuantity.code",
       "path" : "Observation.component.value[x].code",
-      "patternCode" : "%"
+      "patternCode" : "%",
+      "mustSupport" : true
     },
     {
       "id" : "Observation.component:z-score",
