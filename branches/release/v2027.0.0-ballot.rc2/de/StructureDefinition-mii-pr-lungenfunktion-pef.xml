@@ -37,7 +37,7 @@
     </valueCodeableConcept>
   </extension>
   <url value="https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-pef"/>
-  <version value="2027.0.0-ballot"/>
+  <version value="2027.0.0-ballot.rc2"/>
   <name value="MII_PR_Lungenfunktion_PEF"/>
   <title value="MII PR Lungenfunktion PEF"/>
   <status value="active"/>
@@ -91,7 +91,7 @@
   <derivation value="constraint"/>
   <snapshot>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/snapshot-base-version">
-      <valueString value="2027.0.0-ballot"/>
+      <valueString value="2027.0.0-ballot.rc2"/>
     </extension>
     <element id="Observation">
       <path value="Observation"/>

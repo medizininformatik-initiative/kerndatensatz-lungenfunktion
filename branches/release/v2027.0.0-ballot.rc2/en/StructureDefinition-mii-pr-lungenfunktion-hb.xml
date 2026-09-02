@@ -64,7 +64,7 @@
     </valueCodeableConcept>
   </extension>
   <url value="https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-hb"/>
-  <version value="2027.0.0-ballot"/>
+  <version value="2027.0.0-ballot.rc2"/>
   <name value="MII_PR_Lungenfunktion_Hb"/>
   <title value="MII PR Lungenfunktion Hb"/>
   <status value="active"/>

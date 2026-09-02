@@ -143,7 +143,7 @@
     </valuePeriod>
   </extension>
   <url value="https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-diffusion-messung"/>
-  <version value="2027.0.0-ballot"/>
+  <version value="2027.0.0-ballot.rc2"/>
   <name value="MII_PR_Lungenfunktion_Diffusion_Messung">
     <extension url="http://hl7.org/fhir/StructureDefinition/translation">
       <extension url="lang">

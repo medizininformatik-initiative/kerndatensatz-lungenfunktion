@@ -1,4 +1,4 @@
-# MII PR Lungenfunktion Diffusion Messung - MII IG Kerndatensatz-Modul Lungenfunktion v2027.0.0-ballot
+# MII PR Lungenfunktion Diffusion Messung - MII IG Kerndatensatz-Modul Lungenfunktion v2027.0.0-ballot.rc2
 
 * [**Inhaltsverzeichnis**](toc.md)
 * [**Artefaktübersicht**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Offizielle URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-diffusion-messung | *Version*:2027.0.0-ballot |
+| *Offizielle URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-diffusion-messung | *Version*:2027.0.0-ballot.rc2 |
 | Active Stand: 2026-09-02 | *Maschinenlesbarer Name*:MII_PR_Lungenfunktion_Diffusion_Messung |
 
  
@@ -215,7 +215,7 @@ Weitere Repräsentationen des Profils: [CSV](../StructureDefinition-mii-pr-lunge
     }
   }],
   "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-diffusion-messung",
-  "version" : "2027.0.0-ballot",
+  "version" : "2027.0.0-ballot.rc2",
   "name" : "MII_PR_Lungenfunktion_Diffusion_Messung",
   "_name" : {
     "extension" : [{

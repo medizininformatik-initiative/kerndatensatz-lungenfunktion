@@ -1,4 +1,4 @@
-# MII VS Lufu LNC KCO - MII IG Kerndatensatz-Modul Lungenfunktion v2027.0.0-ballot
+# MII VS Lufu LNC KCO - MII IG Kerndatensatz-Modul Lungenfunktion v2027.0.0-ballot.rc2
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/ValueSet/mii-vs-lufu-lnc-kco | *Version*:2027.0.0-ballot |
+| *Official URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/ValueSet/mii-vs-lufu-lnc-kco | *Version*:2027.0.0-ballot.rc2 |
 | Active as of 2026-09-02 | *Computable Name*:MII_VS_Lufu_LNC_KCO |
 | **Copyright/Legal**: This value set includes content from SNOMED CT, which is copyright © 2002+ International Health Terminology Standards Development Organisation (IHTSDO), and distributed by agreement between IHTSDO and HL7. Implementer use of SNOMED CT is not covered by this agreement | |
 
@@ -41,7 +41,7 @@ Import the ValueSet for lungfunction functional residual capacity
     "profile" : ["http://hl7.org/fhir/StructureDefinition/shareablevalueset"]
   },
   "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/ValueSet/mii-vs-lufu-lnc-kco",
-  "version" : "2027.0.0-ballot",
+  "version" : "2027.0.0-ballot.rc2",
   "name" : "MII_VS_Lufu_LNC_KCO",
   "title" : "MII VS Lufu LNC KCO",
   "status" : "active",

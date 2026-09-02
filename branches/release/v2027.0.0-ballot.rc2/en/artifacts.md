@@ -1,4 +1,4 @@
-# Artifacts Summary - MII IG Kerndatensatz-Modul Lungenfunktion v2027.0.0-ballot
+# Artifacts Summary - MII IG Kerndatensatz-Modul Lungenfunktion v2027.0.0-ballot.rc2
 
 * [**Table of Contents**](toc.md)
 * **Artifacts Summary**

@@ -1,4 +1,4 @@
-# MII CPS Lungenfunktion CapabilityStatement - MII IG Kerndatensatz-Modul Lungenfunktion v2027.0.0-ballot
+# MII CPS Lungenfunktion CapabilityStatement - MII IG Kerndatensatz-Modul Lungenfunktion v2027.0.0-ballot.rc2
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/CapabilityStatement/metadata | *Version*:2027.0.0-ballot |
+| *Official URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/CapabilityStatement/metadata | *Version*:2027.0.0-ballot.rc2 |
 | Active as of 2026-09-02 | *Computable Name*:MII_CPS_Lungenfunktion_CapabilityStatement |
 
  
@@ -35,7 +35,7 @@ Das vorliegende CapabilityStatement beschreibt alle verpflichtenden Interaktione
     }
   }],
   "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/CapabilityStatement/metadata",
-  "version" : "2027.0.0-ballot",
+  "version" : "2027.0.0-ballot.rc2",
   "name" : "MII_CPS_Lungenfunktion_CapabilityStatement",
   "title" : "MII CPS Lungenfunktion CapabilityStatement",
   "status" : "active",

@@ -1,4 +1,4 @@
-# Logische Modelle - MII IG Kerndatensatz-Modul Lungenfunktion v2027.0.0-ballot
+# Logische Modelle - MII IG Kerndatensatz-Modul Lungenfunktion v2027.0.0-ballot.rc2
 
 * [**Inhaltsverzeichnis**](toc.md)
 * **Logische Modelle**

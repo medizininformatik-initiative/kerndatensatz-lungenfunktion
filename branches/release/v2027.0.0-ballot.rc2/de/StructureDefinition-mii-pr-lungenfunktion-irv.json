@@ -17,7 +17,7 @@
     }
   }],
   "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-rv",
-  "version" : "2027.0.0-ballot",
+  "version" : "2027.0.0-ballot.rc2",
   "name" : "MII_PR_Lungenfunktion_RV",
   "title" : "MII PR Lungenfunktion RV",
   "status" : "active",
@@ -72,7 +72,7 @@
   "snapshot" : {
     "extension" : [{
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/snapshot-base-version",
-      "valueString" : "2027.0.0-ballot"
+      "valueString" : "2027.0.0-ballot.rc2"
     }],
     "element" : [{
       "id" : "Observation",

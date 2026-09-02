@@ -46,7 +46,7 @@
     </valueCodeableConcept>
   </extension>
   <url value="https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-luftfeuchtigkeit"/>
-  <version value="2027.0.0-ballot"/>
+  <version value="2027.0.0-ballot.rc2"/>
   <name value="MII_PR_Lungenfunktion_Luftfeuchtigkeit"/>
   <title value="MII PR Lungenfunktion Luftfeuchtigkeit"/>
   <status value="active"/>

@@ -17,7 +17,7 @@
     }
   }],
   "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-transferkoeffizient",
-  "version" : "2027.0.0-ballot",
+  "version" : "2027.0.0-ballot.rc2",
   "name" : "MII_PR_Lungenfunktion_Transferkoeffizient",
   "title" : "MII PR Lungenfunktion Transferkoeffizient",
   "status" : "active",

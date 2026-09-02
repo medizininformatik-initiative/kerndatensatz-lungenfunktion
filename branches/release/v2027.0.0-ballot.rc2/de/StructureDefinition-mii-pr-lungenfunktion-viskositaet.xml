@@ -102,7 +102,7 @@
     </valueCodeableConcept>
   </extension>
   <url value="https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-viskositaet"/>
-  <version value="2027.0.0-ballot"/>
+  <version value="2027.0.0-ballot.rc2"/>
   <name value="MII_PR_Lungenfunktion_Viskositaet"/>
   <title value="MII PR Lungenfunktion Fluss"/>
   <status value="active"/>

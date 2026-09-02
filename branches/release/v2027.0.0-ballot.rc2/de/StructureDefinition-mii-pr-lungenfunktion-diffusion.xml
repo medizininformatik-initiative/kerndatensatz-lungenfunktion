@@ -53,7 +53,7 @@
     </valueCodeableConcept>
   </extension>
   <url value="https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-diffusion"/>
-  <version value="2027.0.0-ballot"/>
+  <version value="2027.0.0-ballot.rc2"/>
   <name value="MII_PR_Lungenfunktion_Diffusion"/>
   <title value="MII PR Lungenfunktion Diffusion"/>
   <status value="active"/>
@@ -97,7 +97,7 @@
   <derivation value="constraint"/>
   <snapshot>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/snapshot-base-version">
-      <valueString value="2027.0.0-ballot"/>
+      <valueString value="2027.0.0-ballot.rc2"/>
     </extension>
     <element id="DiagnosticReport">
       <path value="DiagnosticReport"/>

@@ -10,7 +10,7 @@
     <status value="generated"/><div xml:lang="de" lang="de"><hr/><p><b>German</b></p><hr/><p class="res-header-id"><b>Generated Narrative: ValueSet mii-vs-lufu-lnc-rvl-tlc</b></p><a name="de-mii-vs-lufu-lnc-rvl-tlc"> </a><a name="de-hcmii-vs-lufu-lnc-rvl-tlc"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="http://hl7.org/fhir/uv/crmi/STU2/StructureDefinition-shareablevalueset.html">Shareable ValueSet</a></p></div><ul><li>Include these codes as defined in <a href="http://loinc.org"><code>http://loinc.org</code></a><span title="Version is not explicitly stated. No matching Code System found"> version Not Stated (use latest from terminology server)</span><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href="https://loinc.org/43252-6/">43252-6</a></td><td>Residual volume/Total capacity Predicted</td></tr><tr><td><a href="https://loinc.org/81455-8/">81455-8</a></td><td>Residual volume/Total capacity --post bronchodilation</td></tr><tr><td><a href="https://loinc.org/81454-1/">81454-1</a></td><td>Residual volume/Total capacity --pre bronchodilation</td></tr></table></li></ul></div>
   </text>
   <url value="https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/ValueSet/mii-vs-lufu-lnc-rvl-tlc"/>
-  <version value="2027.0.0-ballot"/>
+  <version value="2027.0.0-ballot.rc2"/>
   <name value="MII_VS_Lufu_LNC_RVL_TLC"/>
   <title value="MII VS Lufu LNC RVL TLC"/>
   <status value="active"/>

@@ -1,4 +1,4 @@
-# Guidance for Implementers - MII IG Kerndatensatz-Modul Lungenfunktion v2027.0.0-ballot
+# Guidance for Implementers - MII IG Kerndatensatz-Modul Lungenfunktion v2027.0.0-ballot.rc2
 
 * [**Table of Contents**](toc.md)
 * [**Guidance**](guidance.md)

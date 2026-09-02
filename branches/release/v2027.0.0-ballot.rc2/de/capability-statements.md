@@ -1,4 +1,4 @@
-# CapabilityStatements - MII IG Kerndatensatz-Modul Lungenfunktion v2027.0.0-ballot
+# CapabilityStatements - MII IG Kerndatensatz-Modul Lungenfunktion v2027.0.0-ballot.rc2
 
 * [**Inhaltsverzeichnis**](toc.md)
 * **CapabilityStatements**

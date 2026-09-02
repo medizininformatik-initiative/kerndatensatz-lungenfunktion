@@ -1,4 +1,4 @@
-# MII VS Lufu SCT Observable - MII IG Kerndatensatz-Modul Lungenfunktion v2027.0.0-ballot
+# MII VS Lufu SCT Observable - MII IG Kerndatensatz-Modul Lungenfunktion v2027.0.0-ballot.rc2
 
 * [**Inhaltsverzeichnis**](toc.md)
 * [**Artefaktübersicht**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Offizielle URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/ValueSet/mii-vs-lufu-sct-observable | *Version*:2027.0.0-ballot |
+| *Offizielle URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/ValueSet/mii-vs-lufu-sct-observable | *Version*:2027.0.0-ballot.rc2 |
 | Active Stand: 2026-09-02 | *Maschinenlesbarer Name*:MII_VS_Lufu_SCT_Observable |
 | **Copyright/Rechtliches**: This value set includes content from SNOMED CT, which is copyright © 2002+ International Health Terminology Standards Development Organisation (IHTSDO), and distributed by agreement between IHTSDO and HL7. Implementer use of SNOMED CT is not covered by this agreement | |
 
@@ -52,7 +52,7 @@ No Expansion for this valueset (Unsupported Code System Version)
     "profile" : ["http://hl7.org/fhir/StructureDefinition/shareablevalueset"]
   },
   "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/ValueSet/mii-vs-lufu-sct-observable",
-  "version" : "2027.0.0-ballot",
+  "version" : "2027.0.0-ballot.rc2",
   "name" : "MII_VS_Lufu_SCT_Observable",
   "title" : "MII VS Lufu SCT Observable",
   "status" : "active",

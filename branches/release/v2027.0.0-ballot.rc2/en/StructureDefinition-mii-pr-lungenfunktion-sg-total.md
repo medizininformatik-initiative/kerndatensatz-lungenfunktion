@@ -1,4 +1,4 @@
-# MII PR Lungenfunktion sG Total - MII IG Kerndatensatz-Modul Lungenfunktion v2027.0.0-ballot
+# MII PR Lungenfunktion sG Total - MII IG Kerndatensatz-Modul Lungenfunktion v2027.0.0-ballot.rc2
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-sg-total | *Version*:2027.0.0-ballot |
+| *Official URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-sg-total | *Version*:2027.0.0-ballot.rc2 |
 | Active as of 2026-09-02 | *Computable Name*:MII_PR_Lungenfunktion_sG_Total |
 
  
@@ -51,7 +51,7 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-lungenfunk
     }
   }],
   "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-sg-total",
-  "version" : "2027.0.0-ballot",
+  "version" : "2027.0.0-ballot.rc2",
   "name" : "MII_PR_Lungenfunktion_sG_Total",
   "_name" : {
     "extension" : [{

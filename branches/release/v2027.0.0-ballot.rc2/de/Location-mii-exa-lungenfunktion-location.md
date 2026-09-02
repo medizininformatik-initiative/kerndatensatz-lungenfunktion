@@ -1,4 +1,4 @@
-# MII Example Lungenfunktion Umgebung - MII IG Kerndatensatz-Modul Lungenfunktion v2027.0.0-ballot
+# MII Example Lungenfunktion Umgebung - MII IG Kerndatensatz-Modul Lungenfunktion v2027.0.0-ballot.rc2
 
 * [**Inhaltsverzeichnis**](toc.md)
 * [**Artefaktübersicht**](artifacts.md)
