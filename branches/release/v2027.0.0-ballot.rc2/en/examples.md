@@ -5,8 +5,6 @@
 
 ## Examples
 
-### Examples
-
 The module ships 63 example instances representing four complete examinations. Each consists of a report (DiagnosticReport), the associated measurement (Procedure) and the referenced measured values (Observation):
 
 * **Spirometry** — [report](DiagnosticReport-mii-exa-lungenfunktion-spirometrie-befund.md) with FVC, FEV 1, FEV1/FVC, VC, IC, ERV, PEF, MEF 25/50/75 and breathing frequency.

@@ -14,7 +14,7 @@
 
 Profile: [MII PR Lungenfunktion VC](StructureDefinition-mii-pr-lungenfunktion-vc.md)
 
-**partOf**: [Procedure/mii-exa-lungenfunktion-spriometrie-messung](https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.meta@2026.0.0&canonical=https://www.medizininformatik-initiative.de/fhir/modul-meta/Procedure/mii-exa-lungenfunktion-spriometrie-messung)
+**partOf**: [Procedure Spirometry (procedure)](Procedure-mii-exa-lungenfunktion-spirometrie-messung.md)
 
 **status**: Final
 
@@ -57,7 +57,7 @@ Profile: [MII PR Lungenfunktion VC](StructureDefinition-mii-pr-lungenfunktion-vc
     "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-vc"]
   },
   "partOf" : [{
-    "reference" : "Procedure/mii-exa-lungenfunktion-spriometrie-messung"
+    "reference" : "Procedure/mii-exa-lungenfunktion-spirometrie-messung"
   }],
   "status" : "final",
   "category" : [{

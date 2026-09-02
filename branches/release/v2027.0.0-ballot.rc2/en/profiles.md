@@ -5,8 +5,6 @@
 
 ## Profiles
 
-### Profiles
-
 Wherever possible, the Core Dataset specifications build on international standards and terminologies — in particular the [International Patient Summary](http://hl7.org/fhir/uv/ips/history.html). Adaptation to the general conditions of the German healthcare system is achieved by using the [German base profiles](https://simplifier.net/basisprofil-de-r4) of HL7 Germany.
 
 All elements of the Core Dataset, adapted to the details and requirements of the use cases of the Medical Informatics Initiative, are described as FHIR StructureDefinitions. The rationale for adapting a profile is explained textually on the respective profile page.

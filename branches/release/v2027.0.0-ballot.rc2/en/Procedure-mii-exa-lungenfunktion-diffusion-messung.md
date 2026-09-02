@@ -28,7 +28,7 @@ Profile: [MII PR Lungenfunktion Diffusion Messung](StructureDefinition-mii-pr-lu
 
 **outcome**: Successful (qualifier value)
 
-**report**: [DiagnosticReport/mii-exa-lungenfunktion-diffusion](https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.meta@2026.0.0&canonical=https://www.medizininformatik-initiative.de/fhir/modul-meta/DiagnosticReport/mii-exa-lungenfunktion-diffusion)
+**report**: [Diagnostic Report for 'Carbon monoxide diffusing capacity measurement (procedure)' for '->Erika Beispielpatientin Female, DoB: 1970-01-01'](DiagnosticReport-mii-exa-lungenfunktion-diffusion-befund.md)
 
 
 
@@ -71,7 +71,7 @@ Profile: [MII PR Lungenfunktion Diffusion Messung](StructureDefinition-mii-pr-lu
     }]
   },
   "report" : [{
-    "reference" : "DiagnosticReport/mii-exa-lungenfunktion-diffusion"
+    "reference" : "DiagnosticReport/mii-exa-lungenfunktion-diffusion-befund"
   }]
 }
 

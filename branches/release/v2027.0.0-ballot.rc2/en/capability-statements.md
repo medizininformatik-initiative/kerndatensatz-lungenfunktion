@@ -5,8 +5,6 @@
 
 ## Capability Statements
 
-### Capability Statements
-
 To enable decentralized data analysis via the German Health Research Data Portal of the Medical Informatics Initiative, the [capabilities interaction](https://www.hl7.org/fhir/R4/http.html#capabilities) MUST be supported, so that the FHIR server exposes a CapabilityStatement at `[BASE-URL]/metadata`. That CapabilityStatement MUST state which profiles, including version, and which search parameters are supported.
 
 The following lists the content that MUST be stated in the CapabilityStatement. In addition, conformance to the CapabilityStatement below MUST be declared in the respective CapabilityStatement instance under [`CapabilityStatement.instantiates`](https://www.hl7.org/fhir/capabilitystatement-definitions.html#CapabilityStatement.instantiates).

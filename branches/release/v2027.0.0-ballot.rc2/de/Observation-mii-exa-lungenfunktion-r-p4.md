@@ -17,7 +17,7 @@ Profile: [MII PR Lungenfunktion R](StructureDefinition-mii-pr-lungenfunktion-r.m
 **partOf**: 
 
 * [Procedure Total body plethysmography (procedure)](Procedure-mii-exa-lungenfunktion-bodyplethysmographie-messung.md)
-* [MedicationAdminstration/mii-exa-lungenfunktion-dosis-gabe-2](https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.meta@2026.0.0&canonical=https://www.medizininformatik-initiative.de/fhir/modul-meta/MedicationAdminstration/mii-exa-lungenfunktion-dosis-gabe-2)
+* [MedicationAdministration: status = completed; medication[x] = ->Medication Provokit® 0,33%; effective[x] = 2024-07-19 13:03:20+0200](MedicationAdministration-mii-exa-lungenfunktion-dosis-gabe-2.md)
 
 **status**: Final
 
@@ -57,7 +57,7 @@ Profile: [MII PR Lungenfunktion R](StructureDefinition-mii-pr-lungenfunktion-r.m
     "reference" : "Procedure/mii-exa-lungenfunktion-bodyplethysmographie-messung"
   },
   {
-    "reference" : "MedicationAdminstration/mii-exa-lungenfunktion-dosis-gabe-2"
+    "reference" : "MedicationAdministration/mii-exa-lungenfunktion-dosis-gabe-2"
   }],
   "status" : "final",
   "category" : [{

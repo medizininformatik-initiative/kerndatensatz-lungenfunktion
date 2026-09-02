@@ -6,8 +6,6 @@
 
 ## UML Diagrams
 
-### UML diagrams
-
 The class diagram below shows the information model of the Pulmonary Function module with its domain concepts and their relationships. It serves as an overview; the normative artifacts are the [profiles](profiles.md), and the element structure is described by the [logical model](logical-models.md).
 
 ![](UML_KDS_Lufu.png)

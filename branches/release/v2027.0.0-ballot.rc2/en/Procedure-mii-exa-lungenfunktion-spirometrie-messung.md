@@ -28,7 +28,7 @@ Profile: [MII PR Lungenfunktion Spirometire Messung](StructureDefinition-mii-pr-
 
 **outcome**: Successful (qualifier value)
 
-**report**: [DiagnosticReport/mii-exa-lungenfunktion-spirometrie](https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.meta@2026.0.0&canonical=https://www.medizininformatik-initiative.de/fhir/modul-meta/DiagnosticReport/mii-exa-lungenfunktion-spirometrie)
+**report**: [Diagnostic Report for 'Open spirometry (procedure)' for '->Erika Beispielpatientin Female, DoB: 1970-01-01'](DiagnosticReport-mii-exa-lungenfunktion-spirometrie-befund.md)
 
 
 
@@ -71,7 +71,7 @@ Profile: [MII PR Lungenfunktion Spirometire Messung](StructureDefinition-mii-pr-
     }]
   },
   "report" : [{
-    "reference" : "DiagnosticReport/mii-exa-lungenfunktion-spirometrie"
+    "reference" : "DiagnosticReport/mii-exa-lungenfunktion-spirometrie-befund"
   }]
 }
 

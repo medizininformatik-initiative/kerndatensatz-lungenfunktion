@@ -17,7 +17,7 @@ Profile: [MII PR Lungenfunktion PEF](StructureDefinition-mii-pr-lungenfunktion-p
 **partOf**: 
 
 * [Procedure Spirometry (procedure)](Procedure-mii-exa-lungenfunktion-spirometrie-messung.md)
-* [MedicationAdminstration/mii-exa-lungenfunktion-dosis-gabe-1](https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.meta@2026.0.0&canonical=https://www.medizininformatik-initiative.de/fhir/modul-meta/MedicationAdminstration/mii-exa-lungenfunktion-dosis-gabe-1)
+* [MedicationAdministration: status = completed; medication[x] = ->Medication Provokit® 0,33%; effective[x] = 2024-07-19 13:03:20+0200](MedicationAdministration-mii-exa-lungenfunktion-dosis-gabe-1.md)
 
 **status**: Final
 
@@ -57,7 +57,7 @@ Profile: [MII PR Lungenfunktion PEF](StructureDefinition-mii-pr-lungenfunktion-p
     "reference" : "Procedure/mii-exa-lungenfunktion-spirometrie-messung"
   },
   {
-    "reference" : "MedicationAdminstration/mii-exa-lungenfunktion-dosis-gabe-1"
+    "reference" : "MedicationAdministration/mii-exa-lungenfunktion-dosis-gabe-1"
   }],
   "status" : "final",
   "category" : [{

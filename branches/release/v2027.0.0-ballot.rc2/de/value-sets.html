@@ -292,13 +292,16 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 
     <p><!-- white space is critical inside of capture --></p>
-<div class="markdown-toc">
-<ul id="markdown-toc">
-  <li><a href="#value-sets" id="markdown-toc-value-sets">Value Sets</a></li>
-  <li><a href="#verwendete-terminologien" id="markdown-toc-verwendete-terminologien">Verwendete Terminologien</a></li>
-</ul>
-
+<div>
+<!-- do not remove - needed to prevent Jekyll from adding a p tag to any non block level element in the markdown.-->
 </div>
+
+<p style="border:var(--translation-box-border);background-color:var(--translation-background-color);padding: 5px 5px 5px 5px;">
+
+Diese Seite enthält Übersetzungen aus der Originalsprache, in der der Leitfaden verfasst wurde.  Informationen zu diesen Übersetzungen und Anweisungen zum Abgeben von Feedback zu den Übersetzungen finden Sie <a href="translationinfo.html">hier</a>.
+
+</p>
+
 <!-- markdownlint-disable MD041 -->
 <!--
   VALUE SETS / TERMINOLOGIEN — deutsche Übersetzung der Quellseite
@@ -309,8 +312,6 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   der Quelle leer (siehe Hinweis unten). Migriert 2026-08-28.
   M9-Entscheidung: Seite BEHALTEN (32 ValueSets gemessen).
 -->
-
-<h3 id="value-sets">Value Sets</h3>
 
 <p>Diese Seite beschreibt die ValueSets des Moduls <strong>Lungenfunktion</strong>
 (Namenskonvention <code class="language-plaintext highlighter-rouge">MII_VS_&lt;Modul&gt;_&lt;Name&gt;</code>). Das Modul definiert 32 ValueSets:
@@ -393,7 +394,7 @@ fachliche Entscheidung.</p>
 
           IG © 2024+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.medizininformatik-initiative.de/">Medizininformatik Initiative</a>.  
           Package de.medizininformatikinitiative.kerndatensatz.lungenfunktion#2027.0.0-ballot.rc1 basiert auf <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
-          Erstellt <span title="Wed, Sep 2, 2026 08:15+0000">2026-09-02</span>
+          Erstellt <span title="Wed, Sep 2, 2026 08:27+0000">2026-09-02</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
             <!-- Branding override for the fhir2.base.template footer fragment.

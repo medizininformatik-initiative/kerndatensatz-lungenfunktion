@@ -5,7 +5,7 @@
 
 ## ValueSets
 
-### Value Sets
+ Diese Seite enthält Übersetzungen aus der Originalsprache, in der der Leitfaden verfasst wurde. Informationen zu diesen Übersetzungen und Anweisungen zum Abgeben von Feedback zu den Übersetzungen finden Sie [hier](translationinfo.md). 
 
 Diese Seite beschreibt die ValueSets des Moduls **Lungenfunktion** (Namenskonvention `MII_VS_<Modul>_<Name>`). Das Modul definiert 32 ValueSets: 20 über LOINC-Codes (`mii-vs-lufu-lnc-…`) für die Messgrößen und den Untersuchungstyp sowie 12 über SNOMED-CT-Codes (`mii-vs-lufu-sct-…`) für Verfahren, Technik, Ort und Befunde. Die vollständige Liste steht in der [Artefaktübersicht](artifacts.md).
 

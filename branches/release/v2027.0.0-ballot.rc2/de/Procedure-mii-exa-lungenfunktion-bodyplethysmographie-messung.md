@@ -28,7 +28,7 @@ Profile: [MII PR Lungenfunktion Bodyplethysmographie Messung](StructureDefinitio
 
 **outcome**: Successful (qualifier value)
 
-**report**: [DiagnosticReport/mii-exa-lungenfunktion-bodyplethysmographie](https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.meta@2026.0.0&canonical=https://www.medizininformatik-initiative.de/fhir/modul-meta/DiagnosticReport/mii-exa-lungenfunktion-bodyplethysmographie)
+**report**: [Diagnostic Report for 'Total body plethysmography (procedure)' for '->Erika Beispielpatientin Female, DoB: 1970-01-01'](DiagnosticReport-mii-exa-lungenfunktion-bodyplethysmographie-befund.md)
 
 
 
@@ -71,7 +71,7 @@ Profile: [MII PR Lungenfunktion Bodyplethysmographie Messung](StructureDefinitio
     }]
   },
   "report" : [{
-    "reference" : "DiagnosticReport/mii-exa-lungenfunktion-bodyplethysmographie"
+    "reference" : "DiagnosticReport/mii-exa-lungenfunktion-bodyplethysmographie-befund"
   }]
 }
 

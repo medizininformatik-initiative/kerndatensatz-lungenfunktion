@@ -17,9 +17,9 @@ Profile: [MII PR Lungenfunktion Dosis](StructureDefinition-mii-pr-lungenfunktion
 **partOf**: 
 
 * [Procedure Methacholine challenge (procedure)](Procedure-mii-exa-lungenfunktion-provokationstest-messung.md)
-* [MedicationAdminstration/mii-exa-lungenfunktion-dosis-gabe-1](https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.meta@2026.0.0&canonical=https://www.medizininformatik-initiative.de/fhir/modul-meta/MedicationAdminstration/mii-exa-lungenfunktion-dosis-gabe-1)
-* [MedicationAdminstration/mii-exa-lungenfunktion-dosis-gabe-2](https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.meta@2026.0.0&canonical=https://www.medizininformatik-initiative.de/fhir/modul-meta/MedicationAdminstration/mii-exa-lungenfunktion-dosis-gabe-2)
-* [MedicationAdminstration/mii-exa-lungenfunktion-dosis-gabe-3](https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.meta@2026.0.0&canonical=https://www.medizininformatik-initiative.de/fhir/modul-meta/MedicationAdminstration/mii-exa-lungenfunktion-dosis-gabe-3)
+* [MedicationAdministration: status = completed; medication[x] = ->Medication Provokit® 0,33%; effective[x] = 2024-07-19 13:03:20+0200](MedicationAdministration-mii-exa-lungenfunktion-dosis-gabe-1.md)
+* [MedicationAdministration: status = completed; medication[x] = ->Medication Provokit® 0,33%; effective[x] = 2024-07-19 13:03:20+0200](MedicationAdministration-mii-exa-lungenfunktion-dosis-gabe-2.md)
+* [MedicationAdministration: status = completed; medication[x] = ->Medication Provokit® 0,33%; effective[x] = 2024-07-19 13:03:20+0200](MedicationAdministration-mii-exa-lungenfunktion-dosis-gabe-3.md)
 
 **status**: Final
 
@@ -50,13 +50,13 @@ Profile: [MII PR Lungenfunktion Dosis](StructureDefinition-mii-pr-lungenfunktion
     "reference" : "Procedure/mii-exa-lungenfunktion-provokationstest-messung"
   },
   {
-    "reference" : "MedicationAdminstration/mii-exa-lungenfunktion-dosis-gabe-1"
+    "reference" : "MedicationAdministration/mii-exa-lungenfunktion-dosis-gabe-1"
   },
   {
-    "reference" : "MedicationAdminstration/mii-exa-lungenfunktion-dosis-gabe-2"
+    "reference" : "MedicationAdministration/mii-exa-lungenfunktion-dosis-gabe-2"
   },
   {
-    "reference" : "MedicationAdminstration/mii-exa-lungenfunktion-dosis-gabe-3"
+    "reference" : "MedicationAdministration/mii-exa-lungenfunktion-dosis-gabe-3"
   }],
   "status" : "final",
   "category" : [{

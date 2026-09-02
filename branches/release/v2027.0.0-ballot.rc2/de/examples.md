@@ -7,8 +7,6 @@
 
  Diese Seite enthält Übersetzungen aus der Originalsprache, in der der Leitfaden verfasst wurde. Informationen zu diesen Übersetzungen und Anweisungen zum Abgeben von Feedback zu den Übersetzungen finden Sie [hier](translationinfo.md). 
 
-### Beispiele
-
 Das Modul liefert 63 Beispielinstanzen, die vier vollständige Untersuchungen abbilden. Jede besteht aus einem Befund (DiagnosticReport), der zugehörigen Messung (Procedure) und den referenzierten Messwerten (Observation):
 
 * **Spirometrie** — [Befund](DiagnosticReport-mii-exa-lungenfunktion-spirometrie-befund.md) mit FVC, FEV 1, FEV1/FVC, VC, IC, ERV, PEF, MEF 25/50/75 und Atemfrequenz.

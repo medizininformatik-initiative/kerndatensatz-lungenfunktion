@@ -28,7 +28,7 @@ Profile: [MII PR Lungenfunktion Provokations Messung](StructureDefinition-mii-pr
 
 **outcome**: Successful (qualifier value)
 
-**report**: [DiagnosticReport/mii-exa-lungenfunktion-provokationstest](https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.meta@2026.0.0&canonical=https://www.medizininformatik-initiative.de/fhir/modul-meta/DiagnosticReport/mii-exa-lungenfunktion-provokationstest)
+**report**: [Diagnostic Report for 'Methacholine challenge (procedure)' for '->Erika Beispielpatientin Female, DoB: 1970-01-01'](DiagnosticReport-mii-exa-lungenfunktion-provokationstest-befund.md)
 
 
 
@@ -71,7 +71,7 @@ Profile: [MII PR Lungenfunktion Provokations Messung](StructureDefinition-mii-pr
     }]
   },
   "report" : [{
-    "reference" : "DiagnosticReport/mii-exa-lungenfunktion-provokationstest"
+    "reference" : "DiagnosticReport/mii-exa-lungenfunktion-provokationstest-befund"
   }]
 }
 

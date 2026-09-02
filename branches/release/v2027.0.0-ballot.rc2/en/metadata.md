@@ -7,8 +7,6 @@
 
 > **Optional page (0..1).** The KDS module menu lists this page as **optional** — keep it only when your module's profiles carry the metadata characteristics it documents (as, for example, the Base module does). Decide for your module: **keep** it — fill it in and delete this banner and the `OPTIONAL-PAGE` marker comment (in this file AND the German mirror) — or **remove** it, following the per-entry procedure in [`docs/optional-pages.md`](https://github.com/medizininformatik-initiative/kerndatensatz-lungenfunktion/blob/main/docs/optional-pages.md) of this repository. A release must not ship with this banner (convention check M9).
 
-### Metadata Overview
-
 This page documents the computable metadata of the **Lungenfunktion (Pulmonary Function)** module. The metadata exists so that the artifacts of this guide can be discovered, evaluated, validated, cited, governed and reused — by people and by software alike.
 
 The metadata model follows the [Canonical Resource Management Infrastructure Implementation Guide](https://hl7.org/fhir/uv/crmi/STU2/en/index.html) (CRMI). CRMI describes how knowledge artifacts are exchanged consistently across their whole management lifecycle, from authoring through publication and distribution to implementation. This guide applies the CRMI profiles, extensions and manifest mechanisms that are useful for publishing an MII core dataset module as a versioned FHIR implementation guide.

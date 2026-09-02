@@ -5,8 +5,6 @@
 
 ## Value Sets
 
-### Value Sets
-
 This page describes the ValueSets of the **Lungenfunktion (Pulmonary Function)** module (naming convention `MII_VS_<Module>_<Name>`). The module defines 32 ValueSets: 20 based on LOINC codes (`mii-vs-lufu-lnc-…`) for the measured quantities and the examination type, and 12 based on SNOMED CT codes (`mii-vs-lufu-sct-…`) for procedures, technique, location and findings. The complete list is available in the [artifact overview](artifacts.md).
 
 **Expansions:** ValueSet expansions in this guide are produced by a FHIR terminology server — SU-TermServ if the client certificate is configured, otherwise the public HL7 server `tx.fhir.org` (in which case some KDS-specific ValueSets may not expand completely).
