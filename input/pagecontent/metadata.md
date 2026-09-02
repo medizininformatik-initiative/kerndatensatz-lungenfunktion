@@ -13,13 +13,12 @@
      the page per docs/optional-pages.md when you don't. The convention check
      (M9) fails a release while this marker is present. -->
 
-<!--> **Optional page (0..1).** The KDS module menu lists this page as *optional* —
-> keep it only when your module's profiles carry the metadata characteristics
-> it documents (as, for example, the Base module does). Decide for your module:
-> **keep** it — fill it in and delete this banner and the `OPTIONAL-PAGE`
-> marker comment (in this file AND the German mirror) — or **remove** it,
-> following the per-entry procedure in [`docs/optional-pages.md`](https://github.com/medizininformatik-initiative/kerndatensatz-lungenfunktion/blob/main/docs/optional-pages.md) of this
-> repository. A release must not ship with this banner (convention check M9).
+<!-- **Optional page (0..1).** The KDS module menu lists this page as *optional* — keep it only when your module's profiles carry the metadata characteristics
+ it documents (as, for example, the Base module does). Decide for your module:
+ **keep** it — fill it in and delete this banner and the `OPTIONAL-PAGE`
+ marker comment (in this file AND the German mirror) — or **remove** it,
+ following the per-entry procedure in [`docs/optional-pages.md`](https://github.com/medizininformatik-initiative/kerndatensatz-lungenfunktion/blob/main/docs/optional-pages.md) of this
+ repository. A release must not ship with this banner (convention check M9).
 {: .ig-highlight .ig-highlight-grey}-->
 
 This page documents the computable metadata of the **Lungenfunktion (Pulmonary Function)** module.
