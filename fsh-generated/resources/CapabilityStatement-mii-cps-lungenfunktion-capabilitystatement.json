@@ -16,7 +16,7 @@
       }
     }
   ],
-  "version": "2027.0.0-ballot.rc1",
+  "version": "2027.0.0-ballot",
   "publisher": "Medizininformatik Initiative",
   "contact": [
     {
@@ -28,7 +28,7 @@
       ]
     }
   ],
-  "date": "2026-09-01",
+  "date": "2026-09-02",
   "name": "MII_CPS_Lungenfunktion_CapabilityStatement",
   "title": "MII CPS Lungenfunktion CapabilityStatement",
   "status": "active",
