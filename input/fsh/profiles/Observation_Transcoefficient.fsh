@@ -71,6 +71,13 @@ Description: "Dieses Beobachtung beschreibt ein Transferkoeffizient."
     loinc 0..1 MS
 * component[predicted].code.coding[loinc].code from MII_VS_Lufu_LNC_Observable (required)
 * component[predicted].code.coding[sct].code from MII_VS_Lufu_SCT_Observable (required)
+* component[predicted].valueQuantity.value MS
+* component[predicted].valueQuantity.unit MS
+* component[predicted].valueQuantity.system MS
+* component[predicted].valueQuantity.code MS
+* component[predicted].valueQuantity.unit = "mmol/(min.kPa.L)"
+* component[predicted].valueQuantity.system = $ucum
+* component[predicted].valueQuantity.code = $ucum#mmol/(min.kPa.L)
 * component[percentPredicted].code.coding ^slicing.discriminator.type = #value
 * component[percentPredicted].code.coding ^slicing.discriminator.path = "$this"
 * component[percentPredicted].code.coding ^slicing.rules = #open
@@ -79,21 +86,18 @@ Description: "Dieses Beobachtung beschreibt ein Transferkoeffizient."
     loinc 0..1 MS
 * component[percentPredicted].code.coding[loinc].code from MII_VS_Lufu_LNC_Observable (required)
 * component[percentPredicted].code.coding[sct].code from MII_VS_Lufu_SCT_Observable (required)
+* component[percentPredicted].valueQuantity.value MS
+* component[percentPredicted].valueQuantity.unit MS
+* component[percentPredicted].valueQuantity.system MS
+* component[percentPredicted].valueQuantity.code MS
+* component[percentPredicted].valueQuantity.unit = "%"
+* component[percentPredicted].valueQuantity.system = $ucum
+* component[percentPredicted].valueQuantity.code = $ucum#%
 * component[z-score].code.coding ^slicing.discriminator.type = #value
 * component[z-score].code.coding ^slicing.discriminator.path = "$this"
 * component[z-score].code.coding ^slicing.rules = #open
 * component[z-score].code.coding contains
     sct 0..1 MS
 * component[z-score].code.coding[sct].code from MII_VS_Lufu_SCT_Observable (required)
-* component.valueQuantity.value MS
-* component.valueQuantity.unit MS
-* component.valueQuantity.system MS
-* component.valueQuantity.code MS
-* component[predicted].valueQuantity.unit = "mmol/(min.kPa.L)"
-* component[predicted].valueQuantity.system = $ucum
-* component[predicted].valueQuantity.code = $ucum#mmol/(min.kPa.L)
-* component[percentPredicted].valueQuantity.unit = "%"
-* component[percentPredicted].valueQuantity.system = $ucum
-* component[percentPredicted].valueQuantity.code = $ucum#%
 * component[z-score].code.coding[sct] = $SCT-version#1078210003 "Z-score calculation technique (qualifier value)"
 * insert AddObservationTranslation

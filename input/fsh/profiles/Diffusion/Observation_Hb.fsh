@@ -91,12 +91,12 @@ Description: "Dieses Profil beschreibt die Messung des Hämoglobin."
 * component ^slicing.rules = #open
 * component contains
     predicted 0..1 MS
-* component.valueQuantity.value MS
-* component.valueQuantity.unit MS
-* component.valueQuantity.system MS
-* component.valueQuantity.code MS
 * component[predicted] ^short = "Vorhersage"
 * component[predicted] ^definition = "vorhergesagtes Messergebnis"
+* component[predicted].valueQuantity.value MS
+* component[predicted].valueQuantity.unit MS
+* component[predicted].valueQuantity.system MS
+* component[predicted].valueQuantity.code MS
 * component[predicted].valueQuantity.unit = "L"
 * component[predicted].valueQuantity.system = $ucum
 * component[predicted].valueQuantity.code = $ucum#L
