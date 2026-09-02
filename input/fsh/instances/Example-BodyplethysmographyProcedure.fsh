@@ -9,4 +9,4 @@ Title: "MII Example Lungenfunktion Bodyplethysmographie Messung"
 * encounter = Reference(Encounter/mii-exa-lungenfunktion-kontakt)
 * performedDateTime = "2024-07-19T12:03:30+02:00"
 * outcome = $SCT#385669000 "Successful (qualifier value)"
-* report = Reference(DiagnosticReport/mii-exa-lungenfunktion-bodyplethysmographie)
+* report = Reference(DiagnosticReport/mii-exa-lungenfunktion-bodyplethysmographie-befund)

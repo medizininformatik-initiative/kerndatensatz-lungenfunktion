@@ -2,7 +2,7 @@ Instance: mii-exa-lungenfunktion-vc
 InstanceOf: MII_PR_Lungenfunktion_VC
 Usage: #example
 Title: "MII Example Lungenfunktion VC"
-* partOf = Reference(Procedure/mii-exa-lungenfunktion-spriometrie-messung)
+* partOf = Reference(Procedure/mii-exa-lungenfunktion-spirometrie-messung)
 * status = #final
 * category.coding = $obs-category#procedure
 * code = $SCT#251913009 "Inspiratory vital capacity (observable entity)"

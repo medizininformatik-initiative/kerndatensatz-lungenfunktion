@@ -3,7 +3,7 @@ InstanceOf: MII_PR_Lungenfunktion_FEV
 Usage: #example
 Title: "MII Example Lungenfunktion Provokation FEV 1 P4"
 * partOf[0] = Reference(Procedure/mii-exa-lungenfunktion-provokationstest-messung)
-* partOf[+] = Reference(MedicationAdminstration/mii-exa-lungenfunktion-dosis-gabe-2)
+* partOf[+] = Reference(MedicationAdministration/mii-exa-lungenfunktion-dosis-gabe-2)
 * status = #final
 * category.coding = $obs-category#procedure
 * code = $SCT#59328004 "Forced expired volume in 1 second (observable entity)"

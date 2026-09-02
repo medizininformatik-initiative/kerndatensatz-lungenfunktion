@@ -21,7 +21,7 @@
       "reference": "Procedure/mii-exa-lungenfunktion-bodyplethysmographie-messung"
     },
     {
-      "reference": "MedicationAdminstration/mii-exa-lungenfunktion-dosis-gabe-2"
+      "reference": "MedicationAdministration/mii-exa-lungenfunktion-dosis-gabe-2"
     }
   ],
   "status": "final",

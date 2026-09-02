@@ -3,7 +3,7 @@ InstanceOf: MII_PR_Lungenfunktion_FRC
 Usage: #example
 Title: "MII Example Lungenfunktion Provokation FRC P4"
 * partOf[0] = Reference(Procedure/mii-exa-lungenfunktion-provokationstest-messung)
-* partOf[+] = Reference(MedicationAdminstration/mii-exa-lungenfunktion-dosis-gabe-2)
+* partOf[+] = Reference(MedicationAdministration/mii-exa-lungenfunktion-dosis-gabe-2)
 * status = #final
 * category.coding = $obs-category#procedure
 * code = $loinc#19843-2 "Functional residual capacity"
