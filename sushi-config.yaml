@@ -9,7 +9,7 @@ name: MII_IG_Lungenfunktion
 title: MII IG Kerndatensatz-Modul Lungenfunktion
 description: "FHIR profiles for representing pulmonary function diagnostics - spirometry, body plethysmography, diffusion capacity and associated environmental parameters - as part of the MII core dataset." # TODO:REVIEW derived (EN-Beschreibung abgeleitet aus package.json-description 'Medizininformatik Initiative - Modul Lungenfunktion')
 status: active # draft | active | retired | unknown
-version: 2027.0.0-ballot
+version: 2027.0.0-ballot.rc2
 packageId: de.medizininformatikinitiative.kerndatensatz.lungenfunktion
 fhirVersion: 4.0.1 # https://www.hl7.org/fhir/valueset-FHIR-version.html
 copyrightYear: "2024+" # Quelle gewinnt (sushi-config); Divergenz: Guide-Impressum sagt '© 2019+ TMF e. V.' — ①-Queue
