@@ -10,8 +10,6 @@
   TODO:REVIEW — translation to be confirmed at Gate C. Migrated 2026-08-28.
 -->
 
-### Profiles
-
 Wherever possible, the Core Dataset specifications build on international
 standards and terminologies — in particular the
 [International Patient Summary](http://hl7.org/fhir/uv/ips/history.html).
