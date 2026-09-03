@@ -30,11 +30,17 @@
     "include": [
       {
         "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/900000000000207008/version/20260701",
         "concept": [
           {
             "code": "310360002",
             "display": "Expected forced expiratory volume in one second/Forced vital capacity ratio (observable entity)"
-          },
+          }
+        ]
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "concept": [
           {
             "code": "1366664002",
             "display": "Forced expiratory volume in 0.75 second/forced vital capacity ratio (observable entity)"

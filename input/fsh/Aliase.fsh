@@ -13,7 +13,7 @@ Alias: $miiMedikation = https://www.medizininformatik-initiative.de/fhir/core/mo
 //Terminologien
 Alias: $icd10-gm = http://fhir.de/CodeSystem/bfarm/icd-10-gm
 Alias: $SCT = http://snomed.info/sct
-Alias: $SCT-version = http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250701
+Alias: $SCT-version = http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20260701
 Alias: $v2-0074 = http://terminology.hl7.org/CodeSystem/v2-0074
 Alias: $v2-0203 = http://terminology.hl7.org/CodeSystem/v2-0203
 Alias: $v2-0936 = http://terminology.hl7.org/CodeSystem/v2-0936	

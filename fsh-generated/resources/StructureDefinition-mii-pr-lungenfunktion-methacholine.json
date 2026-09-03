@@ -149,7 +149,7 @@
         "patternCoding": {
           "code": "109196007",
           "system": "http://snomed.info/sct",
-          "version": "http://snomed.info/sct/900000000000207008/version/20250701",
+          "version": "http://snomed.info/sct/900000000000207008/version/20260701",
           "display": "Methacholine chloride (substance)"
         }
       },
@@ -202,7 +202,7 @@
         "patternCoding": {
           "code": "11713004",
           "system": "http://snomed.info/sct",
-          "version": "http://snomed.info/sct/900000000000207008/version/20250701",
+          "version": "http://snomed.info/sct/900000000000207008/version/20260701",
           "display": "Water (substance)"
         }
       },
