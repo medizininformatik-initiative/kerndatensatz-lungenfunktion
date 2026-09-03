@@ -1,6 +1,6 @@
-ValueSet: MII_VS_Lufu_SCT-version_VC
-Id: mii-vs-lufu-SCT-version-vc
-Title: "MII VS Lufu SCT-version Vital Capacity"
+ValueSet: MII_VS_Lufu_SCT_VC
+Id: mii-vs-lufu-sct-vc
+Title: "MII VS Lufu SCT Vital Capacity"
 Description: "Import the ValueSet for lungfunction vital capacity"
 * insert Publisher
 * insert PR_CS_VS_Version

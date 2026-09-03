@@ -1,6 +1,6 @@
-ValueSet: MII_VS_Lufu_SCT-version_FEV
-Id: mii-vs-lufu-SCT-version-fev
-Title: "MII VS Lufu SCT-version FEV"
+ValueSet: MII_VS_Lufu_SCT_FEV
+Id: mii-vs-lufu-sct-fev
+Title: "MII VS Lufu SCT FEV"
 Description: "Import the ValueSet for lungfunction forced expiratory volume"
 * insert Publisher
 * insert PR_CS_VS_Version

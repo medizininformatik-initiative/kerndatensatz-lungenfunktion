@@ -1,6 +1,6 @@
-ValueSet: MII_VS_Lufu_SCT-version_Technique
-Id: mii-vs-lufu-SCT-version-technique
-Title: "MII VS Lufu SCT-version Technique"
+ValueSet: MII_VS_Lufu_SCT_Technique
+Id: mii-vs-lufu-sct-technique
+Title: "MII VS Lufu SCT Technique"
 Description: "Import the ValueSet for lungfunction"
 * insert Publisher
 * insert PR_CS_VS_Version

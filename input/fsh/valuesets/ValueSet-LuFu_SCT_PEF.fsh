@@ -1,6 +1,6 @@
-ValueSet: MII_VS_Lufu_SCT-version_PEF
-Id: mii-vs-lufu-SCT-version-pef
-Title: "MII VS Lufu SCT-version PEF"
+ValueSet: MII_VS_Lufu_SCT_PEF
+Id: mii-vs-lufu-sct-pef
+Title: "MII VS Lufu SCT PEF"
 Description: "Import the ValueSet for lungfunction peak expiratory flow"
 * insert Publisher
 * insert PR_CS_VS_Version
