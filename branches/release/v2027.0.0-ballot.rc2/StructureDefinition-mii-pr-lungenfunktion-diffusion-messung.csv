@@ -153,7 +153,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "Procedure.category.coding:sct","Procedure.category.coding","sct","","",0,1,"Y","","Y","Coding {[]} {[]}
 ","SNOMED CT Code","Ein Verweis auf einen von SNOMED CT definierten Code","Codes may be defined very casually in enumerations, or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.  Ordering of codings is undefined and SHALL NOT be used to infer meaning. Generally, at most only one of the coding values will be labeled as UserSelected = true.","Allows for alternative encodings within a code system, and translations to other code systems.","","","","<valueCoding xmlns=""http://hl7.org/fhir"">
   <system value=""http://snomed.info/sct""/>
-  <version value=""http://snomed.info/sct/900000000000207008/version/20250701""/>
+  <version value=""http://snomed.info/sct/900000000000207008/version/20260701""/>
   <code value=""23426006""/>
   <display value=""Measurement of respiratory function (procedure)""/>
 </valueCoding>","","","",,"preferred","","https://www.medizininformatik-initiative.de/fhir/core/modul-prozedur/ValueSet/procedures-category-sct","",,,,"CodeableConcept.coding",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
@@ -267,7 +267,7 @@ ops-regex:In code sind nur gültige OPS-Codes ohne Zusätze erlaubt {matches('^[
 "Procedure.code.coding:sct","Procedure.code.coding","sct","","",0,1,"Y","","Y","Coding {[]} {[]}
 ","SNOMED CT Code","Ein Verweis auf einen von SNOMED CT definierten Code","Codes may be defined very casually in enumerations, or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.  Ordering of codings is undefined and SHALL NOT be used to infer meaning. Generally, at most only one of the coding values will be labeled as UserSelected = true.","Allows for alternative encodings within a code system, and translations to other code systems.","","","","<valueCoding xmlns=""http://hl7.org/fhir"">
   <system value=""http://snomed.info/sct""/>
-  <version value=""http://snomed.info/sct/900000000000207008/version/20250701""/>
+  <version value=""http://snomed.info/sct/900000000000207008/version/20260701""/>
   <code value=""36421003""/>
   <display value=""Carbon monoxide diffusing capacity measurement (procedure)""/>
 </valueCoding>","","","",,"required","","https://www.medizininformatik-initiative.de/fhir/core/modul-prozedur/ValueSet/procedures-sct","",,,,"CodeableConcept.coding",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}

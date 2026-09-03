@@ -7957,7 +7957,7 @@
       </type>
       <patternCoding>
         <system value="http://snomed.info/sct"/>
-        <version value="http://snomed.info/sct/900000000000207008/version/20250701"/>
+        <version value="http://snomed.info/sct/900000000000207008/version/20260701"/>
         <code value="1078210003"/>
         <display value="Z-score calculation technique (qualifier value)"/>
       </patternCoding>

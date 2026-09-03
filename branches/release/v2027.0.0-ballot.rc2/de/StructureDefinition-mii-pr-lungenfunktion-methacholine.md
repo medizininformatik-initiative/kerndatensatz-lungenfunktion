@@ -226,7 +226,7 @@ Weitere Repräsentationen des Profils: [CSV](../StructureDefinition-mii-pr-lunge
       "sliceName" : "SNOMED",
       "patternCoding" : {
         "system" : "http://snomed.info/sct",
-        "version" : "http://snomed.info/sct/900000000000207008/version/20250701",
+        "version" : "http://snomed.info/sct/900000000000207008/version/20260701",
         "code" : "109196007",
         "display" : "Methacholine chloride (substance)"
       }
@@ -277,7 +277,7 @@ Weitere Repräsentationen des Profils: [CSV](../StructureDefinition-mii-pr-lunge
       "sliceName" : "SNOMED",
       "patternCoding" : {
         "system" : "http://snomed.info/sct",
-        "version" : "http://snomed.info/sct/900000000000207008/version/20250701",
+        "version" : "http://snomed.info/sct/900000000000207008/version/20260701",
         "code" : "11713004",
         "display" : "Water (substance)"
       }

@@ -60,7 +60,7 @@ Profile: [MII PR Lungenfunktion sG Total](StructureDefinition-mii-pr-lungenfunkt
   "code" : {
     "coding" : [{
       "system" : "http://snomed.info/sct",
-      "version" : "http://snomed.info/sct/900000000000207008/version/20250701",
+      "version" : "http://snomed.info/sct/900000000000207008/version/20260701",
       "code" : "79412009",
       "display" : "Specific airway conductance (observable entity)"
     }]

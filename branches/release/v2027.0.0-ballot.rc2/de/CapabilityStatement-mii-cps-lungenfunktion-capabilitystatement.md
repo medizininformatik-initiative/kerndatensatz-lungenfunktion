@@ -429,14 +429,11 @@ Das vorliegende CapabilityStatement beschreibt alle verpflichtenden Interaktione
       "https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-hb|2027.0.0-ballot",
       "https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-kco|2027.0.0-ballot",
       "https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-kcoc|2027.0.0-ballot",
-      "https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-ta|2027.0.0-ballot",
       "https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-va|2027.0.0-ballot",
       "https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-dosis|2027.0.0-ballot",
       "https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-bf|2027.0.0-ballot",
       "https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-fev-fvc|2027.0.0-ballot",
       "https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-fev|2027.0.0-ballot",
-      "https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-fev1-vc|2027.0.0-ballot",
-      "https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-fiv|2027.0.0-ballot",
       "https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-fvc|2027.0.0-ballot",
       "https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-ic|2027.0.0-ballot",
       "https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-mef|2027.0.0-ballot",
@@ -447,24 +444,6 @@ Das vorliegende CapabilityStatement beschreibt alle verpflichtenden Interaktione
       "https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-lufttemperatur|2027.0.0-ballot",
       "https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-co2-konzentration|2027.0.0-ballot"],
       "_supportedProfile" : [{
-        "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
-          "valueCode" : "SHALL"
-        }]
-      },
-      {
-        "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
-          "valueCode" : "SHALL"
-        }]
-      },
-      {
-        "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
-          "valueCode" : "SHALL"
-        }]
-      },
-      {
         "extension" : [{
           "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
           "valueCode" : "SHALL"

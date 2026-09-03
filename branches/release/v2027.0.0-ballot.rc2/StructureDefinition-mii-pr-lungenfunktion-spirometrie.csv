@@ -125,7 +125,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "DiagnosticReport.code.coding:sct","DiagnosticReport.code.coding","sct","","",0,1,"Y","","Y","Coding {[]} {[]}
 ","SNOMED CT Code","Ein Verweis auf einen von SNOMED CT definierten Code","Codes may be defined very casually in enumerations, or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.  Ordering of codings is undefined and SHALL NOT be used to infer meaning. Generally, at most only one of the coding values will be labeled as UserSelected = true.","Allows for alternative encodings within a code system, and translations to other code systems.","","","","<valueCoding xmlns=""http://hl7.org/fhir"">
   <system value=""http://snomed.info/sct""/>
-  <version value=""http://snomed.info/sct/900000000000207008/version/20250701""/>
+  <version value=""http://snomed.info/sct/900000000000207008/version/20260701""/>
   <code value=""127783003""/>
   <display value=""Spirometry (procedure)""/>
 </valueCoding>","","","",,"required","","https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/ValueSet/mii-vs-lufu-sct-procedure","",,,,"CodeableConcept.coding",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
