@@ -1,7 +1,7 @@
 Instance: mii-exa-lungenfunktion-sr-total-p5
 InstanceOf: MII_PR_Lungenfunktion_R_Spezifisch
 Usage: #example
-Title: "MII Example Lungenfunktion Provokation R tot P5"
+Title: "MII Example Lungenfunktion Provokation sR tot P5"
 * partOf[0] = Reference(Procedure/mii-exa-lungenfunktion-provokationstest-messung)
 * partOf[+] = Reference(MedicationAdministration/mii-exa-lungenfunktion-dosis-gabe-3)
 * status = #final

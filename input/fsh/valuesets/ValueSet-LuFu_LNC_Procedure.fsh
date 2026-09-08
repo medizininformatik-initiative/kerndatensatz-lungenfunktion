@@ -1,6 +1,6 @@
 ValueSet: MII_VS_Lufu_LNC_Procedure
 Id: mii-vs-lufu-lnc-procedure
-Title: "MII VS Lufu SCT Procedure Report"
+Title: "MII VS Lufu LNC Procedure Report"
 Description: "Import the ValueSet for lungfunction"
 * insert Publisher
 * insert PR_CS_VS_Version
