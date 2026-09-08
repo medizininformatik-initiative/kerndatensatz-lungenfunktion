@@ -8,8 +8,8 @@ Description: "Import the ValueSet for lungfunction forced vital capacity"
 * insert PR_CS_VS_Date
 * ^meta.profile = "http://hl7.org/fhir/StructureDefinition/shareablevalueset"
 * ^experimental = false
-* $SCT-version#50834005 "Forced vital capacity (observable entity)"
-* $SCT-version#310521000 "Expected forced vital capacity (observable entity)"
-* $SCT-version#407561008 "Forced vital capacity after bronchodilation (observable entity)"
-* $SCT-version#441857000 "Forced vital capacity before bronchodilation (observable entity)"
-* $SCT-version#445210000 "Percentage of predicted forced vital capacity (observable entity)"
+* $sct#50834005 "Forced vital capacity (observable entity)"
+* $sct#310521000 "Expected forced vital capacity (observable entity)"
+* $sct#407561008 "Forced vital capacity after bronchodilation (observable entity)"
+* $sct#441857000 "Forced vital capacity before bronchodilation (observable entity)"
+* $sct#445210000 "Percentage of predicted forced vital capacity (observable entity)"

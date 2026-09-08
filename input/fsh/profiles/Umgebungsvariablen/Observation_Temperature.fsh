@@ -21,14 +21,14 @@ Description: "Dieses Beobachtung beschreibt eine Lufttemperaturmessung."
 //Profile
 * status MS
 * category 1.. MS
-* category.coding = $obs-category#social-history
+* category.coding = $observation-category#social-history
 * code MS
 * code.coding ^slicing.discriminator.type = #value
 * code.coding ^slicing.discriminator.path = "$this"
 * code.coding ^slicing.rules = #open
 * code.coding contains
     sct 0..1
-* code.coding[sct].code = $SCT-version#250825003 "Ambient temperature (observable entity)"
+* code.coding[sct] = $sct#250825003 "Ambient temperature (observable entity)"
 * code.coding.system 1.. MS
 * code.coding.code 1.. MS
 * code.coding.display MS

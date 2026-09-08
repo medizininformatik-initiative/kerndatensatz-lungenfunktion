@@ -1,6 +1,6 @@
 //Head
 Profile: MII_PR_Lungenfunktion_Bodyplethysmographie_Messung
-Parent: $miiProcedure
+Parent: $MII-Procedure
 Id: mii-pr-lungenfunktion-bodyplethysmographie-messung
 Title: "MII PR Lungenfunktion Bodyplethysmographie Messung"
 Description: "Beschreibt die Tätigkeiten, wie eine Bodyplethysmographie durchgeführt wird."
@@ -16,8 +16,8 @@ Description: "Beschreibt die Tätigkeiten, wie eine Bodyplethysmographie durchge
 * insert LicenseCodeableCCBY40
 //Profile
 * partOf MS
-* category.coding[sct] = $SCT-version#23426006 "Measurement of respiratory function (procedure)"
-* code.coding[sct] = $SCT-version#28275007 "Total body plethysmography (procedure)"
+* category.coding[sct] = $sct#23426006 "Measurement of respiratory function (procedure)"
+* code.coding[sct] = $sct#28275007 "Total body plethysmography (procedure)"
 * subject only Reference(Patient)
 * outcome MS
 * outcome from http://hl7.org/fhir/ValueSet/procedure-outcome (preferred)

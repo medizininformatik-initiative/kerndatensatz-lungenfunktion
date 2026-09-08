@@ -29,7 +29,7 @@ Description: "Dieses Profil beschreibt die Messung der Dosis."
 * category MS
 * category ^short = "Kategorie"
 * category ^definition = "Klassifikation in diagnostischen Fachbereich und Gruppe"
-* category.coding = $obs-category#procedure
+* category.coding = $observation-category#procedure
 * code MS
 * code ^short = "Code"
 * code ^definition = "Ein Code für die zu befundende Beobachtung"
@@ -39,8 +39,8 @@ Description: "Dieses Profil beschreibt die Messung der Dosis."
 * code.coding contains
     sct 0..1 and
     loinc 0..1
-* code.coding[loinc].code = $loinc#65866-6 "Methacholine [Mass] of Dose"
-* code.coding[sct].code = $SCT-version#1376040001 "Dose of methacholine to achieve maximal drop of forced expired volume in 1 second (observable entity)"
+* code.coding[loinc] = $loinc#65866-6 "Methacholine [Mass] of Dose"
+* code.coding[sct] = $sct#1376040001 "Dose of methacholine to achieve maximal drop of forced expired volume in 1 second (observable entity)"
 * code.coding.system 1.. MS
 * code.coding.code 1.. MS
 * code.coding.display MS

@@ -28,7 +28,7 @@ Description: "Dieses Profil beschreibt die Messung des Hämoglobin."
 * category 1.. MS
 * category ^short = "Kategorie"
 * category ^definition = "Klassifikation in diagnostischen Fachbereich und Gruppe"
-* category.coding = $obs-category#procedure
+* category.coding = $observation-category#procedure
 * code MS
 * code ^short = "Code"
 * code ^definition = "Ein Code für die zu befundende Beobachtung"
@@ -38,8 +38,8 @@ Description: "Dieses Profil beschreibt die Messung des Hämoglobin."
 * code.coding contains
     sct 0..1 and
     loinc 0..1
-* code.coding[loinc].code = $loinc#718-7 "Hemoglobin [Mass/volume] in Blood"
-* code.coding[sct].code = $SCT-version#38082009 "Hemoglobin (substance)"
+* code.coding[loinc] = $loinc#718-7 "Hemoglobin [Mass/volume] in Blood"
+* code.coding[sct] = $sct#38082009 "Hemoglobin (substance)"
 * code.coding.system 1.. MS
 * code.coding.code 1.. MS
 * code.coding.display MS

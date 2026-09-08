@@ -27,6 +27,7 @@
       {
         "code": "251944000",
         "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/900000000000207008/version/20250701",
         "display": "Forced expired volume in one second/forced vital capacity ratio (observable entity)"
       }
     ]
@@ -55,6 +56,7 @@
       {
         "code": "249862003",
         "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/900000000000207008/version/20250701",
         "display": "Sitting upright (finding)"
       }
     ]
@@ -83,6 +85,7 @@
           {
             "code": "310360002",
             "system": "http://snomed.info/sct",
+            "version": "http://snomed.info/sct/900000000000207008/version/20250701",
             "display": "Expected forced expiratory volume in one second/Forced vital capacity ratio (observable entity)"
           }
         ]
@@ -99,6 +102,7 @@
           {
             "code": "1078210003",
             "system": "http://snomed.info/sct",
+            "version": "http://snomed.info/sct/900000000000207008/version/20250701",
             "display": "Z-score calculation technique (qualifier value)"
           }
         ]

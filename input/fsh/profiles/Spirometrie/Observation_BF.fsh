@@ -28,11 +28,11 @@ Description: "Dieses Profil beschreibt die Messung der Atemfrequenz."
 * category MS
 * category ^short = "Kategorie"
 * category ^definition = "Klassifikation in diagnostischen Fachbereich und Gruppe"
-* category[VSCat] = $obs-category#vital-signs
+* category[VSCat] = $observation-category#vital-signs
 * code MS
 * code ^short = "Code"
 * code ^definition = "Ein Code für die zu befundende Beobachtung"
-* code.coding[snomed] = $SCT-version#271625008 "Rate of spontaneous respiration (observable entity)"
+* code.coding[snomed] = $sct#271625008 "Rate of spontaneous respiration (observable entity)"
 * code.coding.system 1.. MS
 * code.coding.code 1.. MS
 * code.coding.display MS
@@ -89,8 +89,8 @@ Description: "Dieses Profil beschreibt die Messung der Atemfrequenz."
 * component[predicted].code.coding contains
     sct 0..1 MS and
     loinc 0..1 MS
-* component[predicted].code.coding[loinc].code from MII_VS_Lufu_LNC_Observable (required)
-* component[predicted].code.coding[sct].code from MII_VS_Lufu_SCT_Observable (required)
+* component[predicted].code.coding[loinc] from MII_VS_Lufu_LNC_Observable (required)
+* component[predicted].code.coding[sct] from MII_VS_Lufu_SCT_Observable (required)
 * component[predicted].valueQuantity.value MS
 * component[predicted].valueQuantity.unit MS
 * component[predicted].valueQuantity.system MS
@@ -106,8 +106,8 @@ Description: "Dieses Profil beschreibt die Messung der Atemfrequenz."
 * component[percentPredicted].code.coding contains
     sct 0..1 MS and
     loinc 0..1 MS
-* component[percentPredicted].code.coding[loinc].code from MII_VS_Lufu_LNC_Observable (required)
-* component[percentPredicted].code.coding[sct].code from MII_VS_Lufu_SCT_Observable (required)
+* component[percentPredicted].code.coding[loinc] from MII_VS_Lufu_LNC_Observable (required)
+* component[percentPredicted].code.coding[sct] from MII_VS_Lufu_SCT_Observable (required)
 * component[percentPredicted].valueQuantity.value MS
 * component[percentPredicted].valueQuantity.unit MS
 * component[percentPredicted].valueQuantity.system MS

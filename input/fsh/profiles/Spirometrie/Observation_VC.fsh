@@ -18,7 +18,7 @@ Description: "Dieses Profil beschreibt die Messung der maximalen Vitalkapazität
 * partOf only Reference(MII_PR_Lungenfunktion_Spirometrie_Messung)
 * code.coding[loinc] from MII_VS_Lufu_LNC_VC (required)
 * code.coding[sct] from MII_VS_Lufu_SCT_VC (required)
-* component[predicted].code.coding[sct] = $SCT-version#TODO
+* component[predicted].code.coding[sct] = $sct#TODO
 * component[predicted].code.coding[loinc] from MII_VS_Lufu_LNC_VC (required)
 * component[percentPredicted].code.coding[sct] from MII_VS_Lufu_SCT_VC (required)
 * component[percentPredicted].code.coding[loinc] from MII_VS_Lufu_LNC_VC (required)

@@ -16,7 +16,7 @@ Description: "Diese Ressource beschreibt einen Befunde des Provokationstest"
 * insert LicenseCodeableCCBY40
 //Profile
 * code.coding[loinc] = $loinc#TODO
-* code.coding[sct] = $SCT-version#252520007 "Methacholine challenge (procedure)"
+* code.coding[sct] = $sct#252520007 "Methacholine challenge (procedure)"
 * result ^slicing.discriminator.type = #type
 * result ^slicing.discriminator.path = "$this"
 * result ^slicing.rules = #open

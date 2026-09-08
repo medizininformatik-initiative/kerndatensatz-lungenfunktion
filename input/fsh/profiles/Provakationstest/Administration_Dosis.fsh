@@ -1,6 +1,6 @@
 //Head
 Profile: MII_PR_Lungenfunktion_Dosis_Gabe
-Parent: $miiAdministration
+Parent: $MII-Administration
 Id: mii-pr-lungenfunktion-dosis-gabe
 Title: "MII PR Lungenfunktion Dosisgabe"
 Description: "Dieses Profil beschreibt die Gabe der Dosis."
@@ -16,7 +16,7 @@ Description: "Dieses Profil beschreibt die Gabe der Dosis."
 * insert LicenseCodeableCCBY40
 //Profile
 * partOf only Reference(MII_PR_Lungenfunktion_Provokationstest_Messung or MII_PR_Lungenfunktion_Dosis_Gabe)
-* medicationReference only Reference(MII_PR_Lungenfunktion_Methacholine or $miiMedikation)
+* medicationReference only Reference(MII_PR_Lungenfunktion_Methacholine or $MII-Medikation)
 * dosage 1..1 MS
 * dosage.dose 1..1 MS
 * dosage.dose.unit MS

@@ -16,7 +16,7 @@ Description: "Diese Ressource beschreibt einen Befunde der Spirometrie"
 * insert LicenseCodeableCCBY40
 //Profile
 * code.coding[loinc] = $loinc#18759-1 "Spirometry study"
-* code.coding[sct] = $SCT-version#127783003 "Spirometry (procedure)"
+* code.coding[sct] = $sct#127783003 "Spirometry (procedure)"
 * result ^slicing.discriminator.type = #type
 * result ^slicing.discriminator.path = "$this"
 * result ^slicing.rules = #open

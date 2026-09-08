@@ -107,12 +107,13 @@
       {
         "id": "Observation.code.coding:sct",
         "path": "Observation.code.coding",
-        "sliceName": "sct"
-      },
-      {
-        "id": "Observation.code.coding:sct.code",
-        "path": "Observation.code.coding.code",
-        "patternCode": "29533001"
+        "sliceName": "sct",
+        "patternCoding": {
+          "code": "29533001",
+          "system": "http://snomed.info/sct",
+          "version": "http://snomed.info/sct/900000000000207008/version/20250701",
+          "display": "Inspiratory capacity (observable entity)"
+        }
       },
       {
         "id": "Observation.code.coding:loinc",
@@ -135,7 +136,7 @@
         "patternCoding": {
           "code": "TODO",
           "system": "http://snomed.info/sct",
-          "version": "http://snomed.info/sct/900000000000207008/version/20260701"
+          "version": "http://snomed.info/sct/900000000000207008/version/20250701"
         }
       },
       {
@@ -159,7 +160,7 @@
         "patternCoding": {
           "code": "TODO",
           "system": "http://snomed.info/sct",
-          "version": "http://snomed.info/sct/900000000000207008/version/20260701"
+          "version": "http://snomed.info/sct/900000000000207008/version/20250701"
         }
       },
       {

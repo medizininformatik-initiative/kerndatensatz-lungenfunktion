@@ -22,7 +22,7 @@ Description: "Dieses Beobachtung beschreibt eine spezifische totale Atemwegsleit
 * partOf MS
 * status MS
 * category 1.. MS
-* category.coding = $obs-category#procedure
+* category.coding = $observation-category#procedure
 * code MS
 * code.coding ^slicing.discriminator.type = #value
 * code.coding ^slicing.discriminator.path = "$this"
@@ -30,8 +30,8 @@ Description: "Dieses Beobachtung beschreibt eine spezifische totale Atemwegsleit
 * code.coding contains
     sct 0..1 and
     loinc 0..1
-* code.coding[loinc].code from MII_VS_Lufu_LNC_Observable (required)
-* code.coding[sct].code from MII_VS_Lufu_SCT_Observable (required)
+* code.coding[loinc] from MII_VS_Lufu_LNC_Observable (preferred)
+* code.coding[sct] from MII_VS_Lufu_SCT_Observable (preferred)
 * code.coding.system 1.. MS
 * code.coding.code 1.. MS
 * code.coding.display MS
@@ -68,8 +68,8 @@ Description: "Dieses Beobachtung beschreibt eine spezifische totale Atemwegsleit
 * component[predicted].code.coding contains
     sct 0..1 MS and
     loinc 0..1 MS
-* component[predicted].code.coding[loinc].code from MII_VS_Lufu_LNC_Observable (required)
-* component[predicted].code.coding[sct].code from MII_VS_Lufu_SCT_Observable (required)
+* component[predicted].code.coding[loinc] from MII_VS_Lufu_LNC_Observable (preferred)
+* component[predicted].code.coding[sct] from MII_VS_Lufu_SCT_Observable (preferred)
 * component[predicted].valueQuantity.value MS
 * component[predicted].valueQuantity.unit MS
 * component[predicted].valueQuantity.system MS
@@ -83,8 +83,8 @@ Description: "Dieses Beobachtung beschreibt eine spezifische totale Atemwegsleit
 * component[percentPredicted].code.coding contains
     sct 0..1 MS and
     loinc 0..1 MS
-* component[percentPredicted].code.coding[loinc].code from MII_VS_Lufu_LNC_Observable (required)
-* component[percentPredicted].code.coding[sct].code from MII_VS_Lufu_SCT_Observable (required)
+* component[percentPredicted].code.coding[loinc] from MII_VS_Lufu_LNC_Observable (preferred)
+* component[percentPredicted].code.coding[sct] from MII_VS_Lufu_SCT_Observable (preferred)
 * component[percentPredicted].valueQuantity.value MS
 * component[percentPredicted].valueQuantity.unit MS
 * component[percentPredicted].valueQuantity.system MS
@@ -97,6 +97,6 @@ Description: "Dieses Beobachtung beschreibt eine spezifische totale Atemwegsleit
 * component[z-score].code.coding ^slicing.rules = #open
 * component[z-score].code.coding contains
     sct 0..1 MS
-* component[z-score].code.coding[sct].code from MII_VS_Lufu_SCT_Observable (required)
-* component[z-score].code.coding[sct] = $SCT-version#1078210003 "Z-score calculation technique (qualifier value)"
+* component[z-score].code.coding[sct] from MII_VS_Lufu_SCT_Observable (preferred)
+* component[z-score].code.coding[sct] = $sct#1078210003 "Z-score calculation technique (qualifier value)"
 * insert AddObservationTranslation
