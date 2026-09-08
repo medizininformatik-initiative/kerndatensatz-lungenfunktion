@@ -411,6 +411,7 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-lungenfunk
       "max" : "1",
       "patternCoding" : {
         "system" : "http://snomed.info/sct",
+        "version" : "http://snomed.info/sct/900000000000207008/version/20250701",
         "code" : "720449003",
         "display" : "Pulmonary function report (record artifact)"
       },
@@ -1206,7 +1207,7 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-lungenfunk
       "min" : 0,
       "max" : "*",
       "patternCoding" : {
-        "system" : "http://snomed.info/sct"
+        "system" : "http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250701"
       },
       "mustSupport" : true,
       "binding" : {

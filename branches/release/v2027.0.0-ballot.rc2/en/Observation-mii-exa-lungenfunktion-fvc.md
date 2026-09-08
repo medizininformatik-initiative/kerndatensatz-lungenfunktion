@@ -69,6 +69,7 @@ Profile: [MII PR Lungenfunktion FVC](StructureDefinition-mii-pr-lungenfunktion-f
   "code" : {
     "coding" : [{
       "system" : "http://snomed.info/sct",
+      "version" : "http://snomed.info/sct/900000000000207008/version/20250701",
       "code" : "50834005",
       "display" : "Forced vital capacity (observable entity)"
     }]
@@ -91,6 +92,7 @@ Profile: [MII PR Lungenfunktion FVC](StructureDefinition-mii-pr-lungenfunktion-f
   "method" : {
     "coding" : [{
       "system" : "http://snomed.info/sct",
+      "version" : "http://snomed.info/sct/900000000000207008/version/20250701",
       "code" : "249862003",
       "display" : "Sitting upright (finding)"
     }]
@@ -106,6 +108,7 @@ Profile: [MII PR Lungenfunktion FVC](StructureDefinition-mii-pr-lungenfunktion-f
     "code" : {
       "coding" : [{
         "system" : "http://snomed.info/sct",
+        "version" : "http://snomed.info/sct/900000000000207008/version/20250701",
         "code" : "310521000",
         "display" : "Expected forced vital capacity (observable entity)"
       }]
@@ -120,6 +123,7 @@ Profile: [MII PR Lungenfunktion FVC](StructureDefinition-mii-pr-lungenfunktion-f
     "code" : {
       "coding" : [{
         "system" : "http://snomed.info/sct",
+        "version" : "http://snomed.info/sct/900000000000207008/version/20250701",
         "code" : "445210000",
         "display" : "Percentage of predicted forced vital capacity (observable entity)"
       }]
@@ -134,6 +138,7 @@ Profile: [MII PR Lungenfunktion FVC](StructureDefinition-mii-pr-lungenfunktion-f
     "code" : {
       "coding" : [{
         "system" : "http://snomed.info/sct",
+        "version" : "http://snomed.info/sct/900000000000207008/version/20250701",
         "code" : "1078210003",
         "display" : "Z-score calculation technique (qualifier value)"
       }]

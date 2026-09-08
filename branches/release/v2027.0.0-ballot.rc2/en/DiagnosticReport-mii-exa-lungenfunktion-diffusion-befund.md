@@ -70,6 +70,7 @@ Increased lung compliance
   "category" : [{
     "coding" : [{
       "system" : "http://snomed.info/sct",
+      "version" : "http://snomed.info/sct/900000000000207008/version/20250701",
       "code" : "720449003",
       "display" : "Pulmonary function report (record artifact)"
     }]
@@ -77,6 +78,7 @@ Increased lung compliance
   "code" : {
     "coding" : [{
       "system" : "http://snomed.info/sct",
+      "version" : "http://snomed.info/sct/900000000000207008/version/20250701",
       "code" : "36421003",
       "display" : "Carbon monoxide diffusing capacity measurement (procedure)"
     }]
@@ -111,6 +113,7 @@ Increased lung compliance
   "conclusionCode" : [{
     "coding" : [{
       "system" : "http://snomed.info/sct",
+      "version" : "http://snomed.info/sct/900000000000207008/version/20250701",
       "code" : "21368004",
       "display" : "Increased lung compliance (finding)"
     }]

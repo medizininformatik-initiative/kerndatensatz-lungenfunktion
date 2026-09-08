@@ -18,6 +18,7 @@
   <physicalType>
     <coding>
       <system value="http://snomed.info/sct"/>
+      <version value="http://snomed.info/sct/900000000000207008/version/20250701"/>
       <code value="224709006"/>
       <display value="Location inside building (environment)"/>
     </coding>

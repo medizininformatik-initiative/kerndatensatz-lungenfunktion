@@ -45,6 +45,7 @@ Profile: [MII PR Lungenfunktion Provokations Messung](StructureDefinition-mii-pr
   "category" : {
     "coding" : [{
       "system" : "http://snomed.info/sct",
+      "version" : "http://snomed.info/sct/900000000000207008/version/20250701",
       "code" : "23426006",
       "display" : "Measurement of respiratory function (procedure)"
     }]
@@ -52,6 +53,7 @@ Profile: [MII PR Lungenfunktion Provokations Messung](StructureDefinition-mii-pr
   "code" : {
     "coding" : [{
       "system" : "http://snomed.info/sct",
+      "version" : "http://snomed.info/sct/900000000000207008/version/20250701",
       "code" : "252520007",
       "display" : "Methacholine challenge (procedure)"
     }]
@@ -66,6 +68,7 @@ Profile: [MII PR Lungenfunktion Provokations Messung](StructureDefinition-mii-pr
   "outcome" : {
     "coding" : [{
       "system" : "http://snomed.info/sct",
+      "version" : "http://snomed.info/sct/900000000000207008/version/20250701",
       "code" : "385669000",
       "display" : "Successful (qualifier value)"
     }]

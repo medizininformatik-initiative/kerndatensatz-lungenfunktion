@@ -19,6 +19,7 @@
   <code>
     <coding>
       <system value="http://snomed.info/sct"/>
+      <version value="http://snomed.info/sct/900000000000207008/version/20250701"/>
       <code value="250780004"/>
       <display value="Carbon dioxide concentration (observable entity)"/>
     </coding>

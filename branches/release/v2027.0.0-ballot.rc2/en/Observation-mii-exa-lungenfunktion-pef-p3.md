@@ -69,6 +69,7 @@ Profile: [MII PR Lungenfunktion PEF](StructureDefinition-mii-pr-lungenfunktion-p
   "code" : {
     "coding" : [{
       "system" : "http://snomed.info/sct",
+      "version" : "http://snomed.info/sct/900000000000207008/version/20250701",
       "code" : "18491006",
       "display" : "Peak expiratory flow rate (observable entity)"
     }]
@@ -91,6 +92,7 @@ Profile: [MII PR Lungenfunktion PEF](StructureDefinition-mii-pr-lungenfunktion-p
   "method" : {
     "coding" : [{
       "system" : "http://snomed.info/sct",
+      "version" : "http://snomed.info/sct/900000000000207008/version/20250701",
       "code" : "249862003",
       "display" : "Sitting upright (finding)"
     }]
@@ -99,6 +101,7 @@ Profile: [MII PR Lungenfunktion PEF](StructureDefinition-mii-pr-lungenfunktion-p
     "code" : {
       "coding" : [{
         "system" : "http://snomed.info/sct",
+        "version" : "http://snomed.info/sct/900000000000207008/version/20250701",
         "code" : "313192007",
         "display" : "Expected peak expiratory flow rate (observable entity)"
       }]

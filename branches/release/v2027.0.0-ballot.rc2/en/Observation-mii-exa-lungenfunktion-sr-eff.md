@@ -82,6 +82,7 @@ Profile: [MII PR Lungenfunktion R Effektiv](StructureDefinition-mii-pr-lungenfun
   "method" : {
     "coding" : [{
       "system" : "http://snomed.info/sct",
+      "version" : "http://snomed.info/sct/900000000000207008/version/20250701",
       "code" : "249862003",
       "display" : "Sitting upright (finding)"
     }]
@@ -90,6 +91,7 @@ Profile: [MII PR Lungenfunktion R Effektiv](StructureDefinition-mii-pr-lungenfun
     "code" : {
       "coding" : [{
         "system" : "http://snomed.info/sct",
+        "version" : "http://snomed.info/sct/900000000000207008/version/20250701",
         "code" : "TODO"
       }]
     },

@@ -62,12 +62,13 @@ Fragen zu dieser Publikation können im HL7-FHIR-Zulip [chat.fhir.org](https://c
 
 * Noemi Deppenwiese, Universitätsklinikum Erlangen (UKER)
 * Thimo Andre Hölter, Charité Berlin (CHA)
-* Jakub Lidke, Universitätsklinikum Marburg (UKMR)
+* Jakub Lidke, Universitätsklinikum Marburg (UKGM)
 * Maximilian Meixner, Charité Berlin (CHA)
 * Dirk Meyer zum Büschefelde, Charité Berlin (CHA)
 * Lucas Mundo, Universitätsklinikum Erlangen (UKER)
 * Lena Raber, Universitätsklinikum Erlangen (UKER)
 * Alina Rehberg, Universitätsklinikum Hannover (MHH)
+* Barbara Weckler, Universitätsklinikum Marburg (UKGM)
 * Dirk Westhölter, Universitätsklinikum Essen (UME)
 
 ### Urheberrecht und Lizenz

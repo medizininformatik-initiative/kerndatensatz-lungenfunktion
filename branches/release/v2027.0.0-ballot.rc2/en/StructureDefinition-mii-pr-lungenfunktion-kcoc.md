@@ -158,17 +158,12 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-lungenfunk
     {
       "id" : "Observation.code.coding:sct",
       "path" : "Observation.code.coding",
-      "sliceName" : "sct"
-    },
-    {
-      "id" : "Observation.code.coding:sct.code",
-      "path" : "Observation.code.coding.code",
-      "patternCode" : "TODO"
-    },
-    {
-      "id" : "Observation.code.coding:sct.display",
-      "path" : "Observation.code.coding.display",
-      "patternString" : "TODO"
+      "sliceName" : "sct",
+      "patternCoding" : {
+        "system" : "http://snomed.info/sct",
+        "version" : "http://snomed.info/sct/900000000000207008/version/20250701",
+        "code" : "TODO"
+      }
     },
     {
       "id" : "Observation.code.coding:loinc",
@@ -209,7 +204,7 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-lungenfunk
       "sliceName" : "sct",
       "patternCoding" : {
         "system" : "http://snomed.info/sct",
-        "version" : "http://snomed.info/sct/900000000000207008/version/20260701",
+        "version" : "http://snomed.info/sct/900000000000207008/version/20250701",
         "code" : "TODO"
       }
     },
@@ -233,7 +228,7 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-lungenfunk
       "sliceName" : "sct",
       "patternCoding" : {
         "system" : "http://snomed.info/sct",
-        "version" : "http://snomed.info/sct/900000000000207008/version/20260701",
+        "version" : "http://snomed.info/sct/900000000000207008/version/20250701",
         "code" : "TODO"
       }
     },

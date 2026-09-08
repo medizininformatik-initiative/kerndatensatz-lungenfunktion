@@ -48,8 +48,8 @@ Diese Struktur ist abgeleitet von [Observation](http://hl7.org/fhir/R4/observati
 
 ** Summary **
 
-Mandatory: 2 elements(8 nested mandatory elements)
- Must-Support: 37 elements
+Mandatory: 2 elements(4 nested mandatory elements)
+ Must-Support: 31 elements
 
 **Slices**
 
@@ -79,8 +79,8 @@ Diese Struktur ist abgeleitet von [Observation](http://hl7.org/fhir/R4/observati
 
 ** Summary **
 
-Mandatory: 2 elements(8 nested mandatory elements)
- Must-Support: 37 elements
+Mandatory: 2 elements(4 nested mandatory elements)
+ Must-Support: 31 elements
 
 **Slices**
 
@@ -491,50 +491,25 @@ Weitere Repräsentationen des Profils: [CSV](../StructureDefinition-mii-pr-lunge
       "path" : "Observation.code.coding",
       "sliceName" : "sct",
       "min" : 0,
-      "max" : "1"
-    },
-    {
-      "id" : "Observation.code.coding:sct.system",
-      "path" : "Observation.code.coding.system",
-      "min" : 1,
-      "mustSupport" : true
-    },
-    {
-      "id" : "Observation.code.coding:sct.code",
-      "path" : "Observation.code.coding.code",
-      "min" : 1,
-      "patternCode" : "38082009",
-      "mustSupport" : true
-    },
-    {
-      "id" : "Observation.code.coding:sct.display",
-      "path" : "Observation.code.coding.display",
-      "mustSupport" : true
+      "max" : "1",
+      "patternCoding" : {
+        "system" : "http://snomed.info/sct",
+        "version" : "http://snomed.info/sct/900000000000207008/version/20250701",
+        "code" : "38082009",
+        "display" : "Hemoglobin (substance)"
+      }
     },
     {
       "id" : "Observation.code.coding:loinc",
       "path" : "Observation.code.coding",
       "sliceName" : "loinc",
       "min" : 0,
-      "max" : "1"
-    },
-    {
-      "id" : "Observation.code.coding:loinc.system",
-      "path" : "Observation.code.coding.system",
-      "min" : 1,
-      "mustSupport" : true
-    },
-    {
-      "id" : "Observation.code.coding:loinc.code",
-      "path" : "Observation.code.coding.code",
-      "min" : 1,
-      "patternCode" : "718-7",
-      "mustSupport" : true
-    },
-    {
-      "id" : "Observation.code.coding:loinc.display",
-      "path" : "Observation.code.coding.display",
-      "mustSupport" : true
+      "max" : "1",
+      "patternCoding" : {
+        "system" : "http://loinc.org",
+        "code" : "718-7",
+        "display" : "Hemoglobin [Mass/volume] in Blood"
+      }
     },
     {
       "id" : "Observation.subject",

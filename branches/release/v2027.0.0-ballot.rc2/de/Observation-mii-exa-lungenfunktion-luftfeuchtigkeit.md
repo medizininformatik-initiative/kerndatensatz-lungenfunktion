@@ -49,6 +49,7 @@ Profile: [MII PR Lungenfunktion Luftfeuchtigkeit](StructureDefinition-mii-pr-lun
   "code" : {
     "coding" : [{
       "system" : "http://snomed.info/sct",
+      "version" : "http://snomed.info/sct/900000000000207008/version/20250701",
       "code" : "3525006",
       "display" : "Humidity (physical force)"
     }]

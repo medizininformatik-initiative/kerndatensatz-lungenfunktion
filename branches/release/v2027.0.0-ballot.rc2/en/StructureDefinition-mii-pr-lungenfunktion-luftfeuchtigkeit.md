@@ -423,25 +423,13 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-lungenfunk
         }]
       },
       "min" : 0,
-      "max" : "1"
-    },
-    {
-      "id" : "Observation.code.coding:sct.system",
-      "path" : "Observation.code.coding.system",
-      "min" : 1,
-      "mustSupport" : true
-    },
-    {
-      "id" : "Observation.code.coding:sct.code",
-      "path" : "Observation.code.coding.code",
-      "min" : 1,
-      "patternCode" : "3525006",
-      "mustSupport" : true
-    },
-    {
-      "id" : "Observation.code.coding:sct.display",
-      "path" : "Observation.code.coding.display",
-      "mustSupport" : true
+      "max" : "1",
+      "patternCoding" : {
+        "system" : "http://snomed.info/sct",
+        "version" : "http://snomed.info/sct/900000000000207008/version/20250701",
+        "code" : "3525006",
+        "display" : "Humidity (physical force)"
+      }
     },
     {
       "id" : "Observation.subject",

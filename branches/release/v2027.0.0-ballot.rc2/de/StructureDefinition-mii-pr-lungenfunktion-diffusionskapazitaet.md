@@ -47,8 +47,8 @@ Diese Struktur ist abgeleitet von [Observation](http://hl7.org/fhir/R4/observati
 
 ** Summary **
 
-Mandatory: 2 elements(6 nested mandatory elements)
- Must-Support: 48 elements
+Mandatory: 2 elements(2 nested mandatory elements)
+ Must-Support: 42 elements
 
 **Slices**
 
@@ -81,8 +81,8 @@ Diese Struktur ist abgeleitet von [Observation](http://hl7.org/fhir/R4/observati
 
 ** Summary **
 
-Mandatory: 2 elements(6 nested mandatory elements)
- Must-Support: 48 elements
+Mandatory: 2 elements(2 nested mandatory elements)
+ Must-Support: 42 elements
 
 **Slices**
 
@@ -544,28 +544,11 @@ Weitere Repräsentationen des Profils: [CSV](../StructureDefinition-mii-pr-lunge
         }]
       },
       "min" : 0,
-      "max" : "1"
-    },
-    {
-      "id" : "Observation.code.coding:sct.system",
-      "path" : "Observation.code.coding.system",
-      "min" : 1,
-      "mustSupport" : true
-    },
-    {
-      "id" : "Observation.code.coding:sct.code",
-      "path" : "Observation.code.coding.code",
-      "min" : 1,
-      "mustSupport" : true,
+      "max" : "1",
       "binding" : {
-        "strength" : "required",
+        "strength" : "preferred",
         "valueSet" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/ValueSet/mii-vs-lufu-sct-observable"
       }
-    },
-    {
-      "id" : "Observation.code.coding:sct.display",
-      "path" : "Observation.code.coding.display",
-      "mustSupport" : true
     },
     {
       "id" : "Observation.code.coding:loinc",
@@ -622,28 +605,11 @@ Weitere Repräsentationen des Profils: [CSV](../StructureDefinition-mii-pr-lunge
         }]
       },
       "min" : 0,
-      "max" : "1"
-    },
-    {
-      "id" : "Observation.code.coding:loinc.system",
-      "path" : "Observation.code.coding.system",
-      "min" : 1,
-      "mustSupport" : true
-    },
-    {
-      "id" : "Observation.code.coding:loinc.code",
-      "path" : "Observation.code.coding.code",
-      "min" : 1,
-      "mustSupport" : true,
+      "max" : "1",
       "binding" : {
-        "strength" : "required",
+        "strength" : "preferred",
         "valueSet" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/ValueSet/mii-vs-lufu-lnc-observable"
       }
-    },
-    {
-      "id" : "Observation.code.coding:loinc.display",
-      "path" : "Observation.code.coding.display",
-      "mustSupport" : true
     },
     {
       "id" : "Observation.subject",
@@ -1417,13 +1383,9 @@ Weitere Repräsentationen des Profils: [CSV](../StructureDefinition-mii-pr-lunge
       },
       "min" : 0,
       "max" : "1",
-      "mustSupport" : true
-    },
-    {
-      "id" : "Observation.component:predicted.code.coding:sct.code",
-      "path" : "Observation.component.code.coding.code",
+      "mustSupport" : true,
       "binding" : {
-        "strength" : "required",
+        "strength" : "preferred",
         "valueSet" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/ValueSet/mii-vs-lufu-sct-observable"
       }
     },
@@ -1483,13 +1445,9 @@ Weitere Repräsentationen des Profils: [CSV](../StructureDefinition-mii-pr-lunge
       },
       "min" : 0,
       "max" : "1",
-      "mustSupport" : true
-    },
-    {
-      "id" : "Observation.component:predicted.code.coding:loinc.code",
-      "path" : "Observation.component.code.coding.code",
+      "mustSupport" : true,
       "binding" : {
-        "strength" : "required",
+        "strength" : "preferred",
         "valueSet" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/ValueSet/mii-vs-lufu-lnc-observable"
       }
     },
@@ -1663,13 +1621,9 @@ Weitere Repräsentationen des Profils: [CSV](../StructureDefinition-mii-pr-lunge
       },
       "min" : 0,
       "max" : "1",
-      "mustSupport" : true
-    },
-    {
-      "id" : "Observation.component:percentPredicted.code.coding:sct.code",
-      "path" : "Observation.component.code.coding.code",
+      "mustSupport" : true,
       "binding" : {
-        "strength" : "required",
+        "strength" : "preferred",
         "valueSet" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/ValueSet/mii-vs-lufu-sct-observable"
       }
     },
@@ -1729,13 +1683,9 @@ Weitere Repräsentationen des Profils: [CSV](../StructureDefinition-mii-pr-lunge
       },
       "min" : 0,
       "max" : "1",
-      "mustSupport" : true
-    },
-    {
-      "id" : "Observation.component:percentPredicted.code.coding:loinc.code",
-      "path" : "Observation.component.code.coding.code",
+      "mustSupport" : true,
       "binding" : {
-        "strength" : "required",
+        "strength" : "preferred",
         "valueSet" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/ValueSet/mii-vs-lufu-lnc-observable"
       }
     },
@@ -1911,17 +1861,13 @@ Weitere Repräsentationen des Profils: [CSV](../StructureDefinition-mii-pr-lunge
       "max" : "1",
       "patternCoding" : {
         "system" : "http://snomed.info/sct",
-        "version" : "http://snomed.info/sct/900000000000207008/version/20260701",
+        "version" : "http://snomed.info/sct/900000000000207008/version/20250701",
         "code" : "1078210003",
         "display" : "Z-score calculation technique (qualifier value)"
       },
-      "mustSupport" : true
-    },
-    {
-      "id" : "Observation.component:z-score.code.coding:sct.code",
-      "path" : "Observation.component.code.coding.code",
+      "mustSupport" : true,
       "binding" : {
-        "strength" : "required",
+        "strength" : "preferred",
         "valueSet" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/ValueSet/mii-vs-lufu-sct-observable"
       }
     }]

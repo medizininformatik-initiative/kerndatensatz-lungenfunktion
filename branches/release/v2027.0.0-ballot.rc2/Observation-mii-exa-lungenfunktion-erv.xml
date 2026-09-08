@@ -21,6 +21,7 @@
   <code>
     <coding>
       <system value="http://snomed.info/sct"/>
+      <version value="http://snomed.info/sct/900000000000207008/version/20250701"/>
       <code value="55532004"/>
       <display value="Expiratory reserve volume (observable entity)"/>
     </coding>
@@ -43,6 +44,7 @@
   <method>
     <coding>
       <system value="http://snomed.info/sct"/>
+      <version value="http://snomed.info/sct/900000000000207008/version/20250701"/>
       <code value="249862003"/>
       <display value="Sitting upright (finding)"/>
     </coding>
@@ -72,6 +74,7 @@
     <code>
       <coding>
         <system value="http://snomed.info/sct"/>
+        <version value="http://snomed.info/sct/900000000000207008/version/20250701"/>
         <code value="TODO"/>
       </coding>
     </code>

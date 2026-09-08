@@ -72,6 +72,7 @@ Profile: [MII PR Lungenfunktion FEV/FVC](StructureDefinition-mii-pr-lungenfunkti
   "code" : {
     "coding" : [{
       "system" : "http://snomed.info/sct",
+      "version" : "http://snomed.info/sct/900000000000207008/version/20250701",
       "code" : "251944000",
       "display" : "Forced expired volume in one second/forced vital capacity ratio (observable entity)"
     }]
@@ -94,6 +95,7 @@ Profile: [MII PR Lungenfunktion FEV/FVC](StructureDefinition-mii-pr-lungenfunkti
   "method" : {
     "coding" : [{
       "system" : "http://snomed.info/sct",
+      "version" : "http://snomed.info/sct/900000000000207008/version/20250701",
       "code" : "249862003",
       "display" : "Sitting upright (finding)"
     }]
@@ -115,6 +117,7 @@ Profile: [MII PR Lungenfunktion FEV/FVC](StructureDefinition-mii-pr-lungenfunkti
     "code" : {
       "coding" : [{
         "system" : "http://snomed.info/sct",
+        "version" : "http://snomed.info/sct/900000000000207008/version/20250701",
         "code" : "310360002",
         "display" : "Expected forced expiratory volume in one second/Forced vital capacity ratio (observable entity)"
       }]
@@ -129,6 +132,7 @@ Profile: [MII PR Lungenfunktion FEV/FVC](StructureDefinition-mii-pr-lungenfunkti
     "code" : {
       "coding" : [{
         "system" : "http://snomed.info/sct",
+        "version" : "http://snomed.info/sct/900000000000207008/version/20250701",
         "code" : "1078210003",
         "display" : "Z-score calculation technique (qualifier value)"
       }]

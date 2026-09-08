@@ -100,6 +100,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "DiagnosticReport.category.coding:sct","DiagnosticReport.category.coding","sct","","",1,1,"Y","","Y","Coding {[]} {[]}
 ","SNOMED CT Code","Ein Verweis auf einen von SNOMED CT definierten Code","Codes may be defined very casually in enumerations, or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.  Ordering of codings is undefined and SHALL NOT be used to infer meaning. Generally, at most only one of the coding values will be labeled as UserSelected = true.","Allows for alternative encodings within a code system, and translations to other code systems.","","","","<valueCoding xmlns=""http://hl7.org/fhir"">
   <system value=""http://snomed.info/sct""/>
+  <version value=""http://snomed.info/sct/900000000000207008/version/20250701""/>
   <code value=""720449003""/>
   <display value=""Pulmonary function report (record artifact)""/>
 </valueCoding>","","","",,,,,"",,,,"CodeableConcept.coding",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
@@ -125,7 +126,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "DiagnosticReport.code.coding:sct","DiagnosticReport.code.coding","sct","","",0,1,"Y","","Y","Coding {[]} {[]}
 ","SNOMED CT Code","Ein Verweis auf einen von SNOMED CT definierten Code","Codes may be defined very casually in enumerations, or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.  Ordering of codings is undefined and SHALL NOT be used to infer meaning. Generally, at most only one of the coding values will be labeled as UserSelected = true.","Allows for alternative encodings within a code system, and translations to other code systems.","","","","<valueCoding xmlns=""http://hl7.org/fhir"">
   <system value=""http://snomed.info/sct""/>
-  <version value=""http://snomed.info/sct/900000000000207008/version/20260701""/>
+  <version value=""http://snomed.info/sct/900000000000207008/version/20250701""/>
   <code value=""28275007""/>
   <display value=""Total body plethysmography (procedure)""/>
 </valueCoding>","","","",,"required","","https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/ValueSet/mii-vs-lufu-sct-procedure","",,,,"CodeableConcept.coding",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
@@ -298,7 +299,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","C*E.1-8, C*E.10-22"
 "DiagnosticReport.conclusionCode.coding:sct","DiagnosticReport.conclusionCode.coding","sct","","",0,*,"Y","","Y","Coding {[]} {[]}
 ","SNOMED CT Code","Ein Verweis auf einen von SNOMED CT definierten Code","Codes may be defined very casually in enumerations, or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.  Ordering of codings is undefined and SHALL NOT be used to infer meaning. Generally, at most only one of the coding values will be labeled as UserSelected = true.","Allows for alternative encodings within a code system, and translations to other code systems.","","","","<valueCoding xmlns=""http://hl7.org/fhir"">
-  <system value=""http://snomed.info/sct""/>
+  <system value=""http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250701""/>
 </valueCoding>","","","",,"required","","https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/ValueSet/mii-vs-lufu-sct-findings","",,,,"CodeableConcept.coding",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","C*E.1-8, C*E.10-22"
 "DiagnosticReport.conclusionCode.text","DiagnosticReport.conclusionCode.text","","","",0,1,"","","Y","string {[]} {[]}

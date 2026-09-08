@@ -38,6 +38,7 @@ Profile: [MII PR Lungenfunktion Umgebung](StructureDefinition-mii-pr-lungenfunkt
   "physicalType" : {
     "coding" : [{
       "system" : "http://snomed.info/sct",
+      "version" : "http://snomed.info/sct/900000000000207008/version/20250701",
       "code" : "224709006",
       "display" : "Location inside building (environment)"
     }]

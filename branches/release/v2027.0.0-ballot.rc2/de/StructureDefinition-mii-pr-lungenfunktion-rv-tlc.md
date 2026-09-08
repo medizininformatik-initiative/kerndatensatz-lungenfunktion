@@ -215,7 +215,7 @@ Weitere Repräsentationen des Profils: [CSV](../StructureDefinition-mii-pr-lunge
       "sliceName" : "sct",
       "patternCoding" : {
         "system" : "http://snomed.info/sct",
-        "version" : "http://snomed.info/sct/900000000000207008/version/20260701",
+        "version" : "http://snomed.info/sct/900000000000207008/version/20250701",
         "code" : "1366666000",
         "display" : "Residual volume/total lung capacity ratio (observable entity)"
       }
@@ -240,7 +240,7 @@ Weitere Repräsentationen des Profils: [CSV](../StructureDefinition-mii-pr-lunge
       "sliceName" : "sct",
       "patternCoding" : {
         "system" : "http://snomed.info/sct",
-        "version" : "http://snomed.info/sct/900000000000207008/version/20260701",
+        "version" : "http://snomed.info/sct/900000000000207008/version/20250701",
         "code" : "TODO"
       }
     },
@@ -264,7 +264,7 @@ Weitere Repräsentationen des Profils: [CSV](../StructureDefinition-mii-pr-lunge
       "sliceName" : "sct",
       "patternCoding" : {
         "system" : "http://snomed.info/sct",
-        "version" : "http://snomed.info/sct/900000000000207008/version/20260701",
+        "version" : "http://snomed.info/sct/900000000000207008/version/20250701",
         "code" : "TODO"
       }
     },

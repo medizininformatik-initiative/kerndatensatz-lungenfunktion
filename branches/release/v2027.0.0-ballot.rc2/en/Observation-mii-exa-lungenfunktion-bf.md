@@ -62,6 +62,7 @@ Profile: [MII PR Lungenfunktion BF](StructureDefinition-mii-pr-lungenfunktion-bf
     },
     {
       "system" : "http://snomed.info/sct",
+      "version" : "http://snomed.info/sct/900000000000207008/version/20250701",
       "code" : "271625008",
       "display" : "Rate of spontaneous respiration (observable entity)"
     }]
@@ -85,6 +86,7 @@ Profile: [MII PR Lungenfunktion BF](StructureDefinition-mii-pr-lungenfunktion-bf
   "method" : {
     "coding" : [{
       "system" : "http://snomed.info/sct",
+      "version" : "http://snomed.info/sct/900000000000207008/version/20250701",
       "code" : "249862003",
       "display" : "Sitting upright (finding)"
     }]
