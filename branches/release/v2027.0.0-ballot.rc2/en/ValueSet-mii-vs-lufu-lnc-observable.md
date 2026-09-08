@@ -1,10 +1,10 @@
-# MII VS Lufu SCT Observable - MII IG Kerndatensatz-Modul Lungenfunktion v2027.0.0-ballot.rc2
+# MII VS Lufu LNC Observable - MII IG Kerndatensatz-Modul Lungenfunktion v2027.0.0-ballot.rc2
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
-* **MII VS Lufu SCT Observable**
+* **MII VS Lufu LNC Observable**
 
-## ValueSet: MII VS Lufu SCT Observable 
+## ValueSet: MII VS Lufu LNC Observable 
 
 | | |
 | :--- | :--- |
@@ -19,12 +19,12 @@ Import the ValueSet for lungfunction
 
 * [MII PR Lungenfunktion 1/Viscosity](StructureDefinition-mii-pr-lungenfunktion-1-viskositaet.md)
 * [MII PR Lungenfunktion BF](StructureDefinition-mii-pr-lungenfunktion-bf.md)
-* [MII PR Lungenfunktion Fluss](StructureDefinition-mii-pr-lungenfunktion-diffusionskapazitaet.md)
+* [MII PR Lungenfunktion Diffusionskapzität](StructureDefinition-mii-pr-lungenfunktion-diffusionskapazitaet.md)
 * [MII PR Lungenfunktion Fluss](StructureDefinition-mii-pr-lungenfunktion-fluss.md)
 * [MII PR Lungenfunktion Gewicht](StructureDefinition-mii-pr-lungenfunktion-gewicht.md)
 * [MII PR Lungenfunktion Prozent](StructureDefinition-mii-pr-lungenfunktion-prozent.md)
 * [MII PR Lungenfunktion Transferkoeffizient](StructureDefinition-mii-pr-lungenfunktion-transferkoeffizient.md)
-* [MII PR Lungenfunktion Fluss](StructureDefinition-mii-pr-lungenfunktion-viskositaet.md)
+* [MII PR Lungenfunktion Viskosität](StructureDefinition-mii-pr-lungenfunktion-viskositaet.md)
 * [MII PR Lungenfunktion Volumen](StructureDefinition-mii-pr-lungenfunktion-volumen.md)
 * [MII PR Lungenfunktion Widerstand](StructureDefinition-mii-pr-lungenfunktion-widerstand.md)
 
@@ -52,7 +52,7 @@ Import the ValueSet for lungfunction
   "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/ValueSet/mii-vs-lufu-lnc-observable",
   "version" : "2027.0.0-ballot.rc2",
   "name" : "MII_VS_Lufu_LNC_Observable",
-  "title" : "MII VS Lufu SCT Observable",
+  "title" : "MII VS Lufu LNC Observable",
   "status" : "active",
   "experimental" : false,
   "date" : "2026-09-02",

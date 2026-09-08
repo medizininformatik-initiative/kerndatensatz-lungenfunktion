@@ -61,7 +61,7 @@ This structure refers to these other structures:
 * [MII PR Lungenfunktion IC (https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-ic)](StructureDefinition-mii-pr-lungenfunktion-ic.md)
 * [MII PR Lungenfunktion MEF (https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-mef)](StructureDefinition-mii-pr-lungenfunktion-mef.md)
 * [MII PR Lungenfunktion PEF (https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-pef)](StructureDefinition-mii-pr-lungenfunktion-pef.md)
-* [MII PR Lungenfunktion RV (https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-rv)](StructureDefinition-mii-pr-lungenfunktion-irv.md)
+* [MII PR Lungenfunktion Reserve Volumen (https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-irv-erv)](StructureDefinition-mii-pr-lungenfunktion-irv-erv.md)
 * [MII PR Lungenfunktion VC (https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-vc)](StructureDefinition-mii-pr-lungenfunktion-vc.md)
 
 **Slices**
@@ -103,7 +103,7 @@ This structure refers to these other structures:
 * [MII PR Lungenfunktion IC (https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-ic)](StructureDefinition-mii-pr-lungenfunktion-ic.md)
 * [MII PR Lungenfunktion MEF (https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-mef)](StructureDefinition-mii-pr-lungenfunktion-mef.md)
 * [MII PR Lungenfunktion PEF (https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-pef)](StructureDefinition-mii-pr-lungenfunktion-pef.md)
-* [MII PR Lungenfunktion RV (https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-rv)](StructureDefinition-mii-pr-lungenfunktion-irv.md)
+* [MII PR Lungenfunktion Reserve Volumen (https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-irv-erv)](StructureDefinition-mii-pr-lungenfunktion-irv-erv.md)
 * [MII PR Lungenfunktion VC (https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-vc)](StructureDefinition-mii-pr-lungenfunktion-vc.md)
 
 **Slices**
@@ -338,14 +338,14 @@ Weitere Repräsentationen des Profils: [CSV](../StructureDefinition-mii-pr-lunge
       "mustSupport" : true
     },
     {
-      "id" : "DiagnosticReport.result:RV",
+      "id" : "DiagnosticReport.result:IRV_ERV",
       "path" : "DiagnosticReport.result",
-      "sliceName" : "RV",
+      "sliceName" : "IRV_ERV",
       "min" : 0,
       "max" : "*",
       "type" : [{
         "code" : "Reference",
-        "targetProfile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-rv"]
+        "targetProfile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-irv-erv"]
       }],
       "mustSupport" : true
     },

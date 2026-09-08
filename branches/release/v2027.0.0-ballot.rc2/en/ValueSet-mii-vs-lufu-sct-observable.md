@@ -19,12 +19,12 @@ Import the ValueSet for lungfunction
 
 * [MII PR Lungenfunktion 1/Viscosity](StructureDefinition-mii-pr-lungenfunktion-1-viskositaet.md)
 * [MII PR Lungenfunktion BF](StructureDefinition-mii-pr-lungenfunktion-bf.md)
-* [MII PR Lungenfunktion Fluss](StructureDefinition-mii-pr-lungenfunktion-diffusionskapazitaet.md)
+* [MII PR Lungenfunktion Diffusionskapzität](StructureDefinition-mii-pr-lungenfunktion-diffusionskapazitaet.md)
 * [MII PR Lungenfunktion Fluss](StructureDefinition-mii-pr-lungenfunktion-fluss.md)
 * [MII PR Lungenfunktion Gewicht](StructureDefinition-mii-pr-lungenfunktion-gewicht.md)
 * [MII PR Lungenfunktion Prozent](StructureDefinition-mii-pr-lungenfunktion-prozent.md)
 * [MII PR Lungenfunktion Transferkoeffizient](StructureDefinition-mii-pr-lungenfunktion-transferkoeffizient.md)
-* [MII PR Lungenfunktion Fluss](StructureDefinition-mii-pr-lungenfunktion-viskositaet.md)
+* [MII PR Lungenfunktion Viskosität](StructureDefinition-mii-pr-lungenfunktion-viskositaet.md)
 * [MII PR Lungenfunktion Volumen](StructureDefinition-mii-pr-lungenfunktion-volumen.md)
 * [MII PR Lungenfunktion Widerstand](StructureDefinition-mii-pr-lungenfunktion-widerstand.md)
 

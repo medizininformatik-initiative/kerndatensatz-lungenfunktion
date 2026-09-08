@@ -56,6 +56,10 @@ Profile: [MII PR Lungenfunktion Spirometrie](StructureDefinition-mii-pr-lungenfu
   * **Value**: 1.98 L (Details: UCUM codeL = 'L')
   * **Reference Range**: >3.7 L (Details: UCUM codeL = 'L')
   * **Flags**: Final,Normal
+* **Code**: [Expiratory reserve volume (observable entity)](Observation-mii-exa-lungenfunktion-erv.md)
+  * **Value**: 0.23 L (Details: UCUM codeL = 'L')
+  * **Reference Range**: >1.31 L (Details: UCUM codeL = 'L')
+  * **Flags**: Final,Normal
 
 Increased lung compliance
 
@@ -120,6 +124,9 @@ Increased lung compliance
   },
   {
     "reference" : "Observation/mii-exa-lungenfunktion-vc"
+  },
+  {
+    "reference" : "Observation/mii-exa-lungenfunktion-erv"
   }],
   "conclusion" : "Increased lung compliance",
   "conclusionCode" : [{

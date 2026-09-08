@@ -1,10 +1,10 @@
-# MII VS Lufu SCT Procedure Report - MII IG Kerndatensatz-Modul Lungenfunktion v2027.0.0-ballot.rc2
+# MII VS Lufu LNC Procedure Report - MII IG Kerndatensatz-Modul Lungenfunktion v2027.0.0-ballot.rc2
 
 * [**Inhaltsverzeichnis**](toc.md)
 * [**Artefaktübersicht**](artifacts.md)
-* **MII VS Lufu SCT Procedure Report**
+* **MII VS Lufu LNC Procedure Report**
 
-## ValueSet: MII VS Lufu SCT Procedure Report 
+## ValueSet: MII VS Lufu LNC Procedure Report 
 
 | | |
 | :--- | :--- |
@@ -43,7 +43,7 @@ Import the ValueSet for lungfunction
   "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/ValueSet/mii-vs-lufu-lnc-procedure",
   "version" : "2027.0.0-ballot.rc2",
   "name" : "MII_VS_Lufu_LNC_Procedure",
-  "title" : "MII VS Lufu SCT Procedure Report",
+  "title" : "MII VS Lufu LNC Procedure Report",
   "status" : "active",
   "experimental" : false,
   "date" : "2026-09-02",

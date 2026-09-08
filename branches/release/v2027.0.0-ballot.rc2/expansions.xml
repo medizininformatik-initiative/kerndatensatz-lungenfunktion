@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <Bundle xmlns="http://hl7.org/fhir">
-  <id value="cfbc19fe-a414-4352-a09b-6743251c9865"/>
+  <id value="6b7e91a2-2621-46dd-965e-6686b128063c"/>
   <meta>
-    <lastUpdated value="2026-09-03T09:55:35.586+00:00"/>
+    <lastUpdated value="2026-09-08T07:30:30.448+00:00"/>
   </meta>
   <type value="collection"/>
   <entry>
@@ -159,8 +159,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:8d135043-2e8a-49c8-a766-f4419db08b5f"/>
-          <timestamp value="2026-09-03T09:59:27+00:00"/>
+          <identifier value="urn:uuid:14f1ad3a-dc93-4f18-9a97-3da922b17d5b"/>
+          <timestamp value="2026-09-08T07:34:33+00:00"/>
           <total value="5"/>
           <offset value="0"/>
           <parameter>
@@ -373,8 +373,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:8d135043-2e8a-49c8-a766-f4419db08b5f"/>
-          <timestamp value="2026-09-03T09:59:27+00:00"/>
+          <identifier value="urn:uuid:14f1ad3a-dc93-4f18-9a97-3da922b17d5b"/>
+          <timestamp value="2026-09-08T07:34:33+00:00"/>
           <total value="5"/>
           <offset value="0"/>
           <parameter>
@@ -587,8 +587,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:21070952-3e11-4154-b198-12d5230c4817"/>
-          <timestamp value="2026-09-03T09:59:28+00:00"/>
+          <identifier value="urn:uuid:efe14e57-8815-42f1-bb4d-52b236dd62b8"/>
+          <timestamp value="2026-09-08T07:34:34+00:00"/>
           <total value="5"/>
           <offset value="0"/>
           <parameter>
@@ -776,8 +776,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:e050e971-09df-44e0-b69a-4383efd18ab8"/>
-          <timestamp value="2026-09-03T09:59:28+00:00"/>
+          <identifier value="urn:uuid:a86afbd7-6fdd-4f38-843e-e2b4acd7f1e7"/>
+          <timestamp value="2026-09-08T07:34:35+00:00"/>
           <total value="4"/>
           <offset value="0"/>
           <parameter>
@@ -965,8 +965,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:e050e971-09df-44e0-b69a-4383efd18ab8"/>
-          <timestamp value="2026-09-03T09:59:28+00:00"/>
+          <identifier value="urn:uuid:a86afbd7-6fdd-4f38-843e-e2b4acd7f1e7"/>
+          <timestamp value="2026-09-08T07:34:35+00:00"/>
           <total value="4"/>
           <offset value="0"/>
           <parameter>
@@ -1154,8 +1154,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:4031ddcb-82c5-4c0c-a74d-2eca754cef7a"/>
-          <timestamp value="2026-09-03T09:59:30+00:00"/>
+          <identifier value="urn:uuid:22a542ae-dabf-48eb-b113-e544f732255a"/>
+          <timestamp value="2026-09-08T07:34:36+00:00"/>
           <total value="4"/>
           <offset value="0"/>
           <parameter>
@@ -1339,8 +1339,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:0b00ae54-489f-4b94-aae8-edd7fa45cdea"/>
-          <timestamp value="2026-09-03T09:59:32+00:00"/>
+          <identifier value="urn:uuid:202254ae-a676-4849-92b5-dff76438a12e"/>
+          <timestamp value="2026-09-08T07:34:38+00:00"/>
           <total value="4"/>
           <offset value="0"/>
           <parameter>
@@ -1528,8 +1528,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:0b00ae54-489f-4b94-aae8-edd7fa45cdea"/>
-          <timestamp value="2026-09-03T09:59:32+00:00"/>
+          <identifier value="urn:uuid:202254ae-a676-4849-92b5-dff76438a12e"/>
+          <timestamp value="2026-09-08T07:34:38+00:00"/>
           <total value="4"/>
           <offset value="0"/>
           <parameter>
@@ -1717,8 +1717,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:6f95d12d-1b7c-41c2-a9f4-5d4b236ff2f1"/>
-          <timestamp value="2026-09-03T09:59:33+00:00"/>
+          <identifier value="urn:uuid:234b229c-95f3-4b97-ad9a-104585bff209"/>
+          <timestamp value="2026-09-08T07:34:39+00:00"/>
           <total value="4"/>
           <offset value="0"/>
           <parameter>
@@ -2499,8 +2499,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:40132fae-3b7f-4b5c-b60d-14a5a19d97ef"/>
-          <timestamp value="2026-09-03T09:59:33+00:00"/>
+          <identifier value="urn:uuid:ef405f71-f0eb-4793-9aa2-b461bf5c0273"/>
+          <timestamp value="2026-09-08T07:34:40+00:00"/>
           <total value="32"/>
           <offset value="0"/>
           <parameter>
@@ -3437,8 +3437,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:40132fae-3b7f-4b5c-b60d-14a5a19d97ef"/>
-          <timestamp value="2026-09-03T09:59:33+00:00"/>
+          <identifier value="urn:uuid:ef405f71-f0eb-4793-9aa2-b461bf5c0273"/>
+          <timestamp value="2026-09-08T07:34:40+00:00"/>
           <total value="32"/>
           <offset value="0"/>
           <parameter>
@@ -4375,8 +4375,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:83df5850-0cb7-4e10-95a7-c312e81c94a2"/>
-          <timestamp value="2026-09-03T09:59:34+00:00"/>
+          <identifier value="urn:uuid:9e7263e2-80ce-400e-96c9-a9856112d29d"/>
+          <timestamp value="2026-09-08T07:34:40+00:00"/>
           <total value="32"/>
           <offset value="0"/>
           <parameter>
@@ -4744,8 +4744,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:af97ca1f-855f-4860-b510-f029562d74c2"/>
-          <timestamp value="2026-09-03T09:59:36+00:00"/>
+          <identifier value="urn:uuid:4deb21f5-dd2c-47c8-bc64-9ededad84b01"/>
+          <timestamp value="2026-09-08T07:34:42+00:00"/>
           <total value="7"/>
           <offset value="0"/>
           <parameter>
@@ -5008,8 +5008,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:af97ca1f-855f-4860-b510-f029562d74c2"/>
-          <timestamp value="2026-09-03T09:59:36+00:00"/>
+          <identifier value="urn:uuid:4deb21f5-dd2c-47c8-bc64-9ededad84b01"/>
+          <timestamp value="2026-09-08T07:34:42+00:00"/>
           <total value="7"/>
           <offset value="0"/>
           <parameter>
@@ -5272,8 +5272,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:0c4d2961-4461-436f-8df9-93e4d066b0b3"/>
-          <timestamp value="2026-09-03T09:59:36+00:00"/>
+          <identifier value="urn:uuid:1c455f22-0629-453a-9eaa-2f41b575d21f"/>
+          <timestamp value="2026-09-08T07:34:43+00:00"/>
           <total value="7"/>
           <offset value="0"/>
           <parameter>
@@ -5609,8 +5609,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:99a5baf1-5f34-4934-a6f8-b35afb033b37"/>
-          <timestamp value="2026-09-03T09:59:37+00:00"/>
+          <identifier value="urn:uuid:75c5870e-ae03-485b-8497-689a3f29c83c"/>
+          <timestamp value="2026-09-08T07:34:43+00:00"/>
           <total value="11"/>
           <offset value="0"/>
           <parameter>
@@ -5973,8 +5973,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:99a5baf1-5f34-4934-a6f8-b35afb033b37"/>
-          <timestamp value="2026-09-03T09:59:37+00:00"/>
+          <identifier value="urn:uuid:75c5870e-ae03-485b-8497-689a3f29c83c"/>
+          <timestamp value="2026-09-08T07:34:43+00:00"/>
           <total value="11"/>
           <offset value="0"/>
           <parameter>
@@ -6337,8 +6337,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:2f74582f-9dad-4136-adf5-40d0d9a46bca"/>
-          <timestamp value="2026-09-03T09:59:38+00:00"/>
+          <identifier value="urn:uuid:f557756a-af6b-4a92-bf31-f0a41489224c"/>
+          <timestamp value="2026-09-08T07:34:44+00:00"/>
           <total value="11"/>
           <offset value="0"/>
           <parameter>
@@ -6690,8 +6690,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:2763016e-aa5f-42a3-a67c-e97b2b5de3b2"/>
-          <timestamp value="2026-09-03T09:59:40+00:00"/>
+          <identifier value="urn:uuid:88fd16c6-47d8-4ff4-91b5-46f7774d45a5"/>
+          <timestamp value="2026-09-08T07:34:46+00:00"/>
           <total value="11"/>
           <offset value="0"/>
           <parameter>
@@ -7054,8 +7054,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:2763016e-aa5f-42a3-a67c-e97b2b5de3b2"/>
-          <timestamp value="2026-09-03T09:59:40+00:00"/>
+          <identifier value="urn:uuid:88fd16c6-47d8-4ff4-91b5-46f7774d45a5"/>
+          <timestamp value="2026-09-08T07:34:46+00:00"/>
           <total value="11"/>
           <offset value="0"/>
           <parameter>
@@ -7418,8 +7418,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:1b986e99-ab23-497b-86fd-fd001f512386"/>
-          <timestamp value="2026-09-03T09:59:41+00:00"/>
+          <identifier value="urn:uuid:8f1dd004-7c00-458e-b2d3-b8fa9e354462"/>
+          <timestamp value="2026-09-08T07:34:47+00:00"/>
           <total value="11"/>
           <offset value="0"/>
           <parameter>
@@ -7493,6 +7493,643 @@
           <contains>
             <system value="http://loinc.org"/>
             <code value="98089-6"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/ValueSet/mii-vs-lufu-lnc-irv-erv"/>
+    <resource>
+      <ValueSet>
+        <meta>
+          <profile value="http://hl7.org/fhir/StructureDefinition/shareablevalueset"/>
+        </meta>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml" data-fhir="generated">
+            <p class="res-header-id"/>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion from tx.fhir.org based on Loinc v2.82
+              <span class="copy-text-inline">
+                <button data-clipboard-text="http://loinc.org|2.82" title="Click to Copy URL" class="btn-copy"> </button>
+              </span>
+            </p>
+            <p>This value set contains 5 concepts</p>
+            <table class="codes" data-fhir="generated">
+              <tr>
+                <td>
+                  <b>System</b>
+                </td>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>Display (en)</b>
+                </td>
+                <td>
+                  <b>JSON</b>
+                </td>
+                <td>
+                  <b>XML</b>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://loinc.org-19924-0"> </a>
+                  <code>http://loinc.org</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="https://loinc.org/19924-0/">19924-0</a>
+                </td>
+                <td>Expiratory reserve</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://loinc.org&quot;, &quot;version&quot;: &quot;2.82&quot;, &quot;code&quot;: &quot;19924-0&quot;, &quot;display&quot;: &quot;Expiratory reserve&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://loinc.org&quot;&gt;&lt;version value=&quot;2.82&quot;&gt;&lt;code value=&quot;19924-0&quot;&gt;&lt;display value=&quot;Expiratory reserve&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://loinc.org-19923-2"> </a>
+                  <code>http://loinc.org</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="https://loinc.org/19923-2/">19923-2</a>
+                </td>
+                <td>Expiratory reserve Predicted</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://loinc.org&quot;, &quot;version&quot;: &quot;2.82&quot;, &quot;code&quot;: &quot;19923-2&quot;, &quot;display&quot;: &quot;Expiratory reserve Predicted&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://loinc.org&quot;&gt;&lt;version value=&quot;2.82&quot;&gt;&lt;code value=&quot;19923-2&quot;&gt;&lt;display value=&quot;Expiratory reserve Predicted&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://loinc.org-100759-0"> </a>
+                  <code>http://loinc.org</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="https://loinc.org/100759-0/">100759-0</a>
+                </td>
+                <td>Inspiratory reserve [Volume] Respiratory system by Spirometry</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://loinc.org&quot;, &quot;version&quot;: &quot;2.82&quot;, &quot;code&quot;: &quot;100759-0&quot;, &quot;display&quot;: &quot;Inspiratory reserve [Volume] Respiratory system by Spirometry&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://loinc.org&quot;&gt;&lt;version value=&quot;2.82&quot;&gt;&lt;code value=&quot;100759-0&quot;&gt;&lt;display value=&quot;Inspiratory reserve [Volume] Respiratory system by Spirometry&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://loinc.org-19921-6"> </a>
+                  <code>http://loinc.org</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="https://loinc.org/19921-6/">19921-6</a>
+                </td>
+                <td>Expiratory reserve by Helium rebreathing</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://loinc.org&quot;, &quot;version&quot;: &quot;2.82&quot;, &quot;code&quot;: &quot;19921-6&quot;, &quot;display&quot;: &quot;Expiratory reserve by Helium rebreathing&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://loinc.org&quot;&gt;&lt;version value=&quot;2.82&quot;&gt;&lt;code value=&quot;19921-6&quot;&gt;&lt;display value=&quot;Expiratory reserve by Helium rebreathing&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://loinc.org-19922-4"> </a>
+                  <code>http://loinc.org</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="https://loinc.org/19922-4/">19922-4</a>
+                </td>
+                <td>Expiratory reserve by Helium single breath</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://loinc.org&quot;, &quot;version&quot;: &quot;2.82&quot;, &quot;code&quot;: &quot;19922-4&quot;, &quot;display&quot;: &quot;Expiratory reserve by Helium single breath&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://loinc.org&quot;&gt;&lt;version value=&quot;2.82&quot;&gt;&lt;code value=&quot;19922-4&quot;&gt;&lt;display value=&quot;Expiratory reserve by Helium single breath&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/ValueSet/mii-vs-lufu-lnc-irv-erv"/>
+        <version value="2027.0.0-ballot.rc2"/>
+        <name value="MII_VS_Lufu_LNC_IRV_ERV"/>
+        <title value="MII VS Lufu LNC IRV &amp; ERV"/>
+        <status value="active"/>
+        <experimental value="false"/>
+        <date value="2026-09-02"/>
+        <jurisdiction>
+          <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="DE"/>
+            <display value="Germany"/>
+          </coding>
+        </jurisdiction>
+        <expansion>
+          <identifier value="urn:uuid:c559c58d-f9c7-4b1d-a67a-f73d77f87540"/>
+          <timestamp value="2026-09-08T07:34:47+00:00"/>
+          <total value="5"/>
+          <offset value="0"/>
+          <parameter>
+            <name value="displayLanguage"/>
+            <valueCode value="en"/>
+          </parameter>
+          <parameter>
+            <name value="count"/>
+            <valueInteger value="1000"/>
+          </parameter>
+          <parameter>
+            <name value="offset"/>
+            <valueInteger value="0"/>
+          </parameter>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="used-valueset"/>
+            <valueUri value="null"/>
+          </parameter>
+          <parameter>
+            <name value="includeDefinition"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="http://loinc.org|2.82"/>
+          </parameter>
+          <contains>
+            <system value="http://loinc.org"/>
+            <code value="19924-0"/>
+            <display value="Expiratory reserve"/>
+          </contains>
+          <contains>
+            <system value="http://loinc.org"/>
+            <code value="19923-2"/>
+            <display value="Expiratory reserve Predicted"/>
+          </contains>
+          <contains>
+            <system value="http://loinc.org"/>
+            <code value="100759-0"/>
+            <display value="Inspiratory reserve [Volume] Respiratory system by Spirometry"/>
+          </contains>
+          <contains>
+            <system value="http://loinc.org"/>
+            <code value="19921-6"/>
+            <display value="Expiratory reserve by Helium rebreathing"/>
+          </contains>
+          <contains>
+            <system value="http://loinc.org"/>
+            <code value="19922-4"/>
+            <display value="Expiratory reserve by Helium single breath"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/ValueSet/mii-vs-lufu-lnc-irv-erv"/>
+    <resource>
+      <ValueSet>
+        <meta>
+          <profile value="http://hl7.org/fhir/StructureDefinition/shareablevalueset"/>
+        </meta>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml" data-fhir="generated">
+            <p class="res-header-id"/>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion from tx.fhir.org based on Loinc v2.82
+              <span class="copy-text-inline">
+                <button data-clipboard-text="http://loinc.org|2.82" title="Click to Copy URL" class="btn-copy"> </button>
+              </span>
+            </p>
+            <p>This value set contains 5 concepts</p>
+            <table class="codes" data-fhir="generated">
+              <tr>
+                <td>
+                  <b>System</b>
+                </td>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>Display (en)</b>
+                </td>
+                <td>
+                  <b>JSON</b>
+                </td>
+                <td>
+                  <b>XML</b>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://loinc.org-19924-0"> </a>
+                  <code>http://loinc.org</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="https://loinc.org/19924-0/">19924-0</a>
+                </td>
+                <td>Expiratory reserve</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://loinc.org&quot;, &quot;version&quot;: &quot;2.82&quot;, &quot;code&quot;: &quot;19924-0&quot;, &quot;display&quot;: &quot;Expiratory reserve&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://loinc.org&quot;&gt;&lt;version value=&quot;2.82&quot;&gt;&lt;code value=&quot;19924-0&quot;&gt;&lt;display value=&quot;Expiratory reserve&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://loinc.org-19923-2"> </a>
+                  <code>http://loinc.org</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="https://loinc.org/19923-2/">19923-2</a>
+                </td>
+                <td>Expiratory reserve Predicted</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://loinc.org&quot;, &quot;version&quot;: &quot;2.82&quot;, &quot;code&quot;: &quot;19923-2&quot;, &quot;display&quot;: &quot;Expiratory reserve Predicted&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://loinc.org&quot;&gt;&lt;version value=&quot;2.82&quot;&gt;&lt;code value=&quot;19923-2&quot;&gt;&lt;display value=&quot;Expiratory reserve Predicted&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://loinc.org-100759-0"> </a>
+                  <code>http://loinc.org</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="https://loinc.org/100759-0/">100759-0</a>
+                </td>
+                <td>Inspiratory reserve [Volume] Respiratory system by Spirometry</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://loinc.org&quot;, &quot;version&quot;: &quot;2.82&quot;, &quot;code&quot;: &quot;100759-0&quot;, &quot;display&quot;: &quot;Inspiratory reserve [Volume] Respiratory system by Spirometry&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://loinc.org&quot;&gt;&lt;version value=&quot;2.82&quot;&gt;&lt;code value=&quot;100759-0&quot;&gt;&lt;display value=&quot;Inspiratory reserve [Volume] Respiratory system by Spirometry&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://loinc.org-19921-6"> </a>
+                  <code>http://loinc.org</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="https://loinc.org/19921-6/">19921-6</a>
+                </td>
+                <td>Expiratory reserve by Helium rebreathing</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://loinc.org&quot;, &quot;version&quot;: &quot;2.82&quot;, &quot;code&quot;: &quot;19921-6&quot;, &quot;display&quot;: &quot;Expiratory reserve by Helium rebreathing&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://loinc.org&quot;&gt;&lt;version value=&quot;2.82&quot;&gt;&lt;code value=&quot;19921-6&quot;&gt;&lt;display value=&quot;Expiratory reserve by Helium rebreathing&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://loinc.org-19922-4"> </a>
+                  <code>http://loinc.org</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="https://loinc.org/19922-4/">19922-4</a>
+                </td>
+                <td>Expiratory reserve by Helium single breath</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://loinc.org&quot;, &quot;version&quot;: &quot;2.82&quot;, &quot;code&quot;: &quot;19922-4&quot;, &quot;display&quot;: &quot;Expiratory reserve by Helium single breath&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://loinc.org&quot;&gt;&lt;version value=&quot;2.82&quot;&gt;&lt;code value=&quot;19922-4&quot;&gt;&lt;display value=&quot;Expiratory reserve by Helium single breath&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/ValueSet/mii-vs-lufu-lnc-irv-erv"/>
+        <version value="2027.0.0-ballot.rc2"/>
+        <name value="MII_VS_Lufu_LNC_IRV_ERV"/>
+        <title value="MII VS Lufu LNC IRV &amp; ERV"/>
+        <status value="active"/>
+        <experimental value="false"/>
+        <date value="2026-09-02"/>
+        <jurisdiction>
+          <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="DE"/>
+            <display value="Germany"/>
+          </coding>
+        </jurisdiction>
+        <expansion>
+          <identifier value="urn:uuid:c559c58d-f9c7-4b1d-a67a-f73d77f87540"/>
+          <timestamp value="2026-09-08T07:34:47+00:00"/>
+          <total value="5"/>
+          <offset value="0"/>
+          <parameter>
+            <name value="displayLanguage"/>
+            <valueCode value="en"/>
+          </parameter>
+          <parameter>
+            <name value="count"/>
+            <valueInteger value="1000"/>
+          </parameter>
+          <parameter>
+            <name value="offset"/>
+            <valueInteger value="0"/>
+          </parameter>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="used-valueset"/>
+            <valueUri value="null"/>
+          </parameter>
+          <parameter>
+            <name value="includeDefinition"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="http://loinc.org|2.82"/>
+          </parameter>
+          <contains>
+            <system value="http://loinc.org"/>
+            <code value="19924-0"/>
+            <display value="Expiratory reserve"/>
+          </contains>
+          <contains>
+            <system value="http://loinc.org"/>
+            <code value="19923-2"/>
+            <display value="Expiratory reserve Predicted"/>
+          </contains>
+          <contains>
+            <system value="http://loinc.org"/>
+            <code value="100759-0"/>
+            <display value="Inspiratory reserve [Volume] Respiratory system by Spirometry"/>
+          </contains>
+          <contains>
+            <system value="http://loinc.org"/>
+            <code value="19921-6"/>
+            <display value="Expiratory reserve by Helium rebreathing"/>
+          </contains>
+          <contains>
+            <system value="http://loinc.org"/>
+            <code value="19922-4"/>
+            <display value="Expiratory reserve by Helium single breath"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/ValueSet/mii-vs-lufu-lnc-irv-erv"/>
+    <resource>
+      <ValueSet>
+        <meta>
+          <profile value="http://hl7.org/fhir/StructureDefinition/shareablevalueset"/>
+        </meta>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml" data-fhir="generated">
+            <p class="res-header-id"/>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion from tx.fhir.org based on Loinc v2.82
+              <span class="copy-text-inline">
+                <button data-clipboard-text="http://loinc.org|2.82" title="Click to Copy URL" class="btn-copy"> </button>
+              </span>
+            </p>
+            <p>This value set contains 5 concepts</p>
+            <table class="codes" data-fhir="generated">
+              <tr>
+                <td>
+                  <b>System</b>
+                </td>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>Display (de)</b>
+                </td>
+                <td>
+                  <b>JSON</b>
+                </td>
+                <td>
+                  <b>XML</b>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://loinc.org-19924-0"> </a>
+                  <code>http://loinc.org</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="https://loinc.org/19924-0/">19924-0</a>
+                </td>
+                <td/>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://loinc.org&quot;, &quot;version&quot;: &quot;2.82&quot;, &quot;code&quot;: &quot;19924-0&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://loinc.org&quot;&gt;&lt;version value=&quot;2.82&quot;&gt;&lt;code value=&quot;19924-0&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://loinc.org-19923-2"> </a>
+                  <code>http://loinc.org</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="https://loinc.org/19923-2/">19923-2</a>
+                </td>
+                <td/>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://loinc.org&quot;, &quot;version&quot;: &quot;2.82&quot;, &quot;code&quot;: &quot;19923-2&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://loinc.org&quot;&gt;&lt;version value=&quot;2.82&quot;&gt;&lt;code value=&quot;19923-2&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://loinc.org-100759-0"> </a>
+                  <code>http://loinc.org</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="https://loinc.org/100759-0/">100759-0</a>
+                </td>
+                <td/>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://loinc.org&quot;, &quot;version&quot;: &quot;2.82&quot;, &quot;code&quot;: &quot;100759-0&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://loinc.org&quot;&gt;&lt;version value=&quot;2.82&quot;&gt;&lt;code value=&quot;100759-0&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://loinc.org-19921-6"> </a>
+                  <code>http://loinc.org</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="https://loinc.org/19921-6/">19921-6</a>
+                </td>
+                <td/>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://loinc.org&quot;, &quot;version&quot;: &quot;2.82&quot;, &quot;code&quot;: &quot;19921-6&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://loinc.org&quot;&gt;&lt;version value=&quot;2.82&quot;&gt;&lt;code value=&quot;19921-6&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://loinc.org-19922-4"> </a>
+                  <code>http://loinc.org</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="https://loinc.org/19922-4/">19922-4</a>
+                </td>
+                <td/>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://loinc.org&quot;, &quot;version&quot;: &quot;2.82&quot;, &quot;code&quot;: &quot;19922-4&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://loinc.org&quot;&gt;&lt;version value=&quot;2.82&quot;&gt;&lt;code value=&quot;19922-4&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/ValueSet/mii-vs-lufu-lnc-irv-erv"/>
+        <version value="2027.0.0-ballot.rc2"/>
+        <name value="MII_VS_Lufu_LNC_IRV_ERV"/>
+        <title value="MII VS Lufu LNC IRV &amp; ERV"/>
+        <status value="active"/>
+        <experimental value="false"/>
+        <date value="2026-09-02"/>
+        <jurisdiction>
+          <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="DE"/>
+            <display value="Germany"/>
+          </coding>
+        </jurisdiction>
+        <expansion>
+          <identifier value="urn:uuid:60dc98ae-2531-435c-9000-a432d509d777"/>
+          <timestamp value="2026-09-08T07:34:48+00:00"/>
+          <total value="5"/>
+          <offset value="0"/>
+          <parameter>
+            <name value="displayLanguage"/>
+            <valueCode value="de"/>
+          </parameter>
+          <parameter>
+            <name value="count"/>
+            <valueInteger value="1000"/>
+          </parameter>
+          <parameter>
+            <name value="offset"/>
+            <valueInteger value="0"/>
+          </parameter>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="used-valueset"/>
+            <valueUri value="null"/>
+          </parameter>
+          <parameter>
+            <name value="includeDefinition"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="http://loinc.org|2.82"/>
+          </parameter>
+          <contains>
+            <system value="http://loinc.org"/>
+            <code value="19924-0"/>
+          </contains>
+          <contains>
+            <system value="http://loinc.org"/>
+            <code value="19923-2"/>
+          </contains>
+          <contains>
+            <system value="http://loinc.org"/>
+            <code value="100759-0"/>
+          </contains>
+          <contains>
+            <system value="http://loinc.org"/>
+            <code value="19921-6"/>
+          </contains>
+          <contains>
+            <system value="http://loinc.org"/>
+            <code value="19922-4"/>
           </contains>
         </expansion>
       </ValueSet>
@@ -7671,8 +8308,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:507fe3c8-b318-4d48-8e00-eea8d77283ba"/>
-          <timestamp value="2026-09-03T09:59:42+00:00"/>
+          <identifier value="urn:uuid:1a77f42e-a079-4fd4-96ff-e0193008fee7"/>
+          <timestamp value="2026-09-08T07:34:48+00:00"/>
           <total value="6"/>
           <offset value="0"/>
           <parameter>
@@ -7910,8 +8547,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:507fe3c8-b318-4d48-8e00-eea8d77283ba"/>
-          <timestamp value="2026-09-03T09:59:42+00:00"/>
+          <identifier value="urn:uuid:1a77f42e-a079-4fd4-96ff-e0193008fee7"/>
+          <timestamp value="2026-09-08T07:34:48+00:00"/>
           <total value="6"/>
           <offset value="0"/>
           <parameter>
@@ -8149,8 +8786,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:1839915f-dbb2-497d-8bd5-86fce33ea046"/>
-          <timestamp value="2026-09-03T09:59:43+00:00"/>
+          <identifier value="urn:uuid:6ca6354c-ccf6-4de0-9bbd-5869193b6dd6"/>
+          <timestamp value="2026-09-08T07:34:49+00:00"/>
           <total value="6"/>
           <offset value="0"/>
           <parameter>
@@ -8456,8 +9093,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:96fc1093-3466-482d-8c15-09943f3dbb0b"/>
-          <timestamp value="2026-09-03T09:59:46+00:00"/>
+          <identifier value="urn:uuid:87f7ac82-8cec-4046-8843-c2b3fc69a52c"/>
+          <timestamp value="2026-09-08T07:34:52+00:00"/>
           <total value="9"/>
           <offset value="0"/>
           <parameter>
@@ -8804,8 +9441,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:96fc1093-3466-482d-8c15-09943f3dbb0b"/>
-          <timestamp value="2026-09-03T09:59:46+00:00"/>
+          <identifier value="urn:uuid:87f7ac82-8cec-4046-8843-c2b3fc69a52c"/>
+          <timestamp value="2026-09-08T07:34:52+00:00"/>
           <total value="9"/>
           <offset value="0"/>
           <parameter>
@@ -9152,8 +9789,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:133537fa-c8f8-4c64-b05f-d323664eb036"/>
-          <timestamp value="2026-09-03T09:59:46+00:00"/>
+          <identifier value="urn:uuid:20efb342-a006-406e-a022-f9027a963107"/>
+          <timestamp value="2026-09-08T07:34:53+00:00"/>
           <total value="9"/>
           <offset value="0"/>
           <parameter>
@@ -26615,7 +27252,7 @@
         <url value="https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/ValueSet/mii-vs-lufu-lnc-observable"/>
         <version value="2027.0.0-ballot.rc2"/>
         <name value="MII_VS_Lufu_LNC_Observable"/>
-        <title value="MII VS Lufu SCT Observable"/>
+        <title value="MII VS Lufu LNC Observable"/>
         <status value="active"/>
         <experimental value="false"/>
         <date value="2026-09-02"/>
@@ -26627,8 +27264,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:afbbf5f3-3964-4547-a352-0e304fa586c5"/>
-          <timestamp value="2026-09-03T10:00:08+00:00"/>
+          <identifier value="urn:uuid:47dc586b-43fd-401b-b42d-3865457f9dfc"/>
+          <timestamp value="2026-09-08T07:35:15+00:00"/>
           <total value="825"/>
           <offset value="0"/>
           <parameter>
@@ -48343,7 +48980,7 @@
         <url value="https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/ValueSet/mii-vs-lufu-lnc-observable"/>
         <version value="2027.0.0-ballot.rc2"/>
         <name value="MII_VS_Lufu_LNC_Observable"/>
-        <title value="MII VS Lufu SCT Observable"/>
+        <title value="MII VS Lufu LNC Observable"/>
         <status value="active"/>
         <experimental value="false"/>
         <date value="2026-09-02"/>
@@ -48355,8 +48992,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:afbbf5f3-3964-4547-a352-0e304fa586c5"/>
-          <timestamp value="2026-09-03T10:00:08+00:00"/>
+          <identifier value="urn:uuid:47dc586b-43fd-401b-b42d-3865457f9dfc"/>
+          <timestamp value="2026-09-08T07:35:15+00:00"/>
           <total value="825"/>
           <offset value="0"/>
           <parameter>
@@ -70071,7 +70708,7 @@
         <url value="https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/ValueSet/mii-vs-lufu-lnc-observable"/>
         <version value="2027.0.0-ballot.rc2"/>
         <name value="MII_VS_Lufu_LNC_Observable"/>
-        <title value="MII VS Lufu SCT Observable"/>
+        <title value="MII VS Lufu LNC Observable"/>
         <status value="active"/>
         <experimental value="false"/>
         <date value="2026-09-02"/>
@@ -70083,8 +70720,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:af9c5277-bd00-4433-b38c-e2da234391cc"/>
-          <timestamp value="2026-09-03T10:00:09+00:00"/>
+          <identifier value="urn:uuid:e3a95130-c062-4289-8ed6-9782a8c60745"/>
+          <timestamp value="2026-09-08T07:35:15+00:00"/>
           <total value="825"/>
           <offset value="0"/>
           <parameter>
@@ -73916,8 +74553,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:0cd6fcb5-caa3-40c7-bc1d-9a1333da1fcc"/>
-          <timestamp value="2026-09-03T09:59:48+00:00"/>
+          <identifier value="urn:uuid:6b3b9a7f-0268-4ebc-a62d-38b4f59c3d75"/>
+          <timestamp value="2026-09-08T07:34:54+00:00"/>
           <total value="13"/>
           <offset value="0"/>
           <parameter>
@@ -74330,8 +74967,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:0cd6fcb5-caa3-40c7-bc1d-9a1333da1fcc"/>
-          <timestamp value="2026-09-03T09:59:48+00:00"/>
+          <identifier value="urn:uuid:6b3b9a7f-0268-4ebc-a62d-38b4f59c3d75"/>
+          <timestamp value="2026-09-08T07:34:54+00:00"/>
           <total value="13"/>
           <offset value="0"/>
           <parameter>
@@ -74744,8 +75381,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:2186fa00-b345-4346-9421-021f5a8b89f6"/>
-          <timestamp value="2026-09-03T09:59:49+00:00"/>
+          <identifier value="urn:uuid:d3751866-9eeb-4073-a042-c957aec67fdb"/>
+          <timestamp value="2026-09-08T07:34:55+00:00"/>
           <total value="13"/>
           <offset value="0"/>
           <parameter>
@@ -74893,7 +75530,7 @@
         <url value="https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/ValueSet/mii-vs-lufu-lnc-procedure"/>
         <version value="2027.0.0-ballot.rc2"/>
         <name value="MII_VS_Lufu_LNC_Procedure"/>
-        <title value="MII VS Lufu SCT Procedure Report"/>
+        <title value="MII VS Lufu LNC Procedure Report"/>
         <status value="active"/>
         <experimental value="false"/>
         <date value="2026-09-02"/>
@@ -74905,8 +75542,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:9864e61c-2222-4294-a9a0-9fca4c0fe0fa"/>
-          <timestamp value="2026-09-03T10:00:09+00:00"/>
+          <identifier value="urn:uuid:c7a30f50-ad79-4d22-82a5-8595dc195e51"/>
+          <timestamp value="2026-09-08T07:35:15+00:00"/>
           <total value="1"/>
           <offset value="0"/>
           <parameter>
@@ -75007,7 +75644,7 @@
         <url value="https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/ValueSet/mii-vs-lufu-lnc-procedure"/>
         <version value="2027.0.0-ballot.rc2"/>
         <name value="MII_VS_Lufu_LNC_Procedure"/>
-        <title value="MII VS Lufu SCT Procedure Report"/>
+        <title value="MII VS Lufu LNC Procedure Report"/>
         <status value="active"/>
         <experimental value="false"/>
         <date value="2026-09-02"/>
@@ -75019,8 +75656,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:9864e61c-2222-4294-a9a0-9fca4c0fe0fa"/>
-          <timestamp value="2026-09-03T10:00:09+00:00"/>
+          <identifier value="urn:uuid:c7a30f50-ad79-4d22-82a5-8595dc195e51"/>
+          <timestamp value="2026-09-08T07:35:15+00:00"/>
           <total value="1"/>
           <offset value="0"/>
           <parameter>
@@ -75121,7 +75758,7 @@
         <url value="https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/ValueSet/mii-vs-lufu-lnc-procedure"/>
         <version value="2027.0.0-ballot.rc2"/>
         <name value="MII_VS_Lufu_LNC_Procedure"/>
-        <title value="MII VS Lufu SCT Procedure Report"/>
+        <title value="MII VS Lufu LNC Procedure Report"/>
         <status value="active"/>
         <experimental value="false"/>
         <date value="2026-09-02"/>
@@ -75133,8 +75770,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:cf83fd4a-2fab-443b-850d-0e486a528f4b"/>
-          <timestamp value="2026-09-03T10:00:09+00:00"/>
+          <identifier value="urn:uuid:d361b0ec-d2f3-4085-a632-a13179f8d045"/>
+          <timestamp value="2026-09-08T07:35:15+00:00"/>
           <total value="1"/>
           <offset value="0"/>
           <parameter>
@@ -75406,8 +76043,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:47eff406-3ead-45e1-815d-4ef4d0d35b19"/>
-          <timestamp value="2026-09-03T09:59:54+00:00"/>
+          <identifier value="urn:uuid:9a8d42a1-c9b2-44ee-9f64-6a45632a6483"/>
+          <timestamp value="2026-09-08T07:35:00+00:00"/>
           <total value="9"/>
           <offset value="0"/>
           <parameter>
@@ -75720,8 +76357,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:47eff406-3ead-45e1-815d-4ef4d0d35b19"/>
-          <timestamp value="2026-09-03T09:59:54+00:00"/>
+          <identifier value="urn:uuid:9a8d42a1-c9b2-44ee-9f64-6a45632a6483"/>
+          <timestamp value="2026-09-08T07:35:00+00:00"/>
           <total value="9"/>
           <offset value="0"/>
           <parameter>
@@ -76034,8 +76671,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:02a8336b-40b5-4907-871e-81ab27025fab"/>
-          <timestamp value="2026-09-03T09:59:55+00:00"/>
+          <identifier value="urn:uuid:c808cfe5-3725-4507-b6f4-35d93ce269d1"/>
+          <timestamp value="2026-09-08T07:35:01+00:00"/>
           <total value="9"/>
           <offset value="0"/>
           <parameter>
@@ -76107,644 +76744,7 @@
     </resource>
   </entry>
   <entry>
-    <fullUrl value="https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/ValueSet/mii-vs-lufu-lnc-rv"/>
-    <resource>
-      <ValueSet>
-        <meta>
-          <profile value="http://hl7.org/fhir/StructureDefinition/shareablevalueset"/>
-        </meta>
-        <text>
-          <status value="generated"/>
-          <div xmlns="http://www.w3.org/1999/xhtml" data-fhir="generated">
-            <p class="res-header-id"/>
-            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion from tx.fhir.org based on Loinc v2.82
-              <span class="copy-text-inline">
-                <button data-clipboard-text="http://loinc.org|2.82" title="Click to Copy URL" class="btn-copy"> </button>
-              </span>
-            </p>
-            <p>This value set contains 5 concepts</p>
-            <table class="codes" data-fhir="generated">
-              <tr>
-                <td>
-                  <b>System</b>
-                </td>
-                <td style="white-space:nowrap">
-                  <b>Code</b>
-                </td>
-                <td>
-                  <b>Display (en)</b>
-                </td>
-                <td>
-                  <b>JSON</b>
-                </td>
-                <td>
-                  <b>XML</b>
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <a name="x-http://loinc.org-19924-0"> </a>
-                  <code>http://loinc.org</code>
-                </td>
-                <td style="white-space:nowrap">  
-                  <a href="https://loinc.org/19924-0/">19924-0</a>
-                </td>
-                <td>Expiratory reserve</td>
-                <td>
-                  <span class="copy-text-inline">
-                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://loinc.org&quot;, &quot;version&quot;: &quot;2.82&quot;, &quot;code&quot;: &quot;19924-0&quot;, &quot;display&quot;: &quot;Expiratory reserve&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
-                  </span>
-                </td>
-                <td>
-                  <span class="copy-text-inline">
-                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://loinc.org&quot;&gt;&lt;version value=&quot;2.82&quot;&gt;&lt;code value=&quot;19924-0&quot;&gt;&lt;display value=&quot;Expiratory reserve&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
-                  </span>
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <a name="x-http://loinc.org-19923-2"> </a>
-                  <code>http://loinc.org</code>
-                </td>
-                <td style="white-space:nowrap">  
-                  <a href="https://loinc.org/19923-2/">19923-2</a>
-                </td>
-                <td>Expiratory reserve Predicted</td>
-                <td>
-                  <span class="copy-text-inline">
-                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://loinc.org&quot;, &quot;version&quot;: &quot;2.82&quot;, &quot;code&quot;: &quot;19923-2&quot;, &quot;display&quot;: &quot;Expiratory reserve Predicted&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
-                  </span>
-                </td>
-                <td>
-                  <span class="copy-text-inline">
-                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://loinc.org&quot;&gt;&lt;version value=&quot;2.82&quot;&gt;&lt;code value=&quot;19923-2&quot;&gt;&lt;display value=&quot;Expiratory reserve Predicted&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
-                  </span>
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <a name="x-http://loinc.org-100759-0"> </a>
-                  <code>http://loinc.org</code>
-                </td>
-                <td style="white-space:nowrap">  
-                  <a href="https://loinc.org/100759-0/">100759-0</a>
-                </td>
-                <td>Inspiratory reserve [Volume] Respiratory system by Spirometry</td>
-                <td>
-                  <span class="copy-text-inline">
-                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://loinc.org&quot;, &quot;version&quot;: &quot;2.82&quot;, &quot;code&quot;: &quot;100759-0&quot;, &quot;display&quot;: &quot;Inspiratory reserve [Volume] Respiratory system by Spirometry&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
-                  </span>
-                </td>
-                <td>
-                  <span class="copy-text-inline">
-                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://loinc.org&quot;&gt;&lt;version value=&quot;2.82&quot;&gt;&lt;code value=&quot;100759-0&quot;&gt;&lt;display value=&quot;Inspiratory reserve [Volume] Respiratory system by Spirometry&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
-                  </span>
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <a name="x-http://loinc.org-19921-6"> </a>
-                  <code>http://loinc.org</code>
-                </td>
-                <td style="white-space:nowrap">  
-                  <a href="https://loinc.org/19921-6/">19921-6</a>
-                </td>
-                <td>Expiratory reserve by Helium rebreathing</td>
-                <td>
-                  <span class="copy-text-inline">
-                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://loinc.org&quot;, &quot;version&quot;: &quot;2.82&quot;, &quot;code&quot;: &quot;19921-6&quot;, &quot;display&quot;: &quot;Expiratory reserve by Helium rebreathing&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
-                  </span>
-                </td>
-                <td>
-                  <span class="copy-text-inline">
-                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://loinc.org&quot;&gt;&lt;version value=&quot;2.82&quot;&gt;&lt;code value=&quot;19921-6&quot;&gt;&lt;display value=&quot;Expiratory reserve by Helium rebreathing&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
-                  </span>
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <a name="x-http://loinc.org-19922-4"> </a>
-                  <code>http://loinc.org</code>
-                </td>
-                <td style="white-space:nowrap">  
-                  <a href="https://loinc.org/19922-4/">19922-4</a>
-                </td>
-                <td>Expiratory reserve by Helium single breath</td>
-                <td>
-                  <span class="copy-text-inline">
-                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://loinc.org&quot;, &quot;version&quot;: &quot;2.82&quot;, &quot;code&quot;: &quot;19922-4&quot;, &quot;display&quot;: &quot;Expiratory reserve by Helium single breath&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
-                  </span>
-                </td>
-                <td>
-                  <span class="copy-text-inline">
-                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://loinc.org&quot;&gt;&lt;version value=&quot;2.82&quot;&gt;&lt;code value=&quot;19922-4&quot;&gt;&lt;display value=&quot;Expiratory reserve by Helium single breath&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
-                  </span>
-                </td>
-              </tr>
-            </table>
-          </div>
-        </text>
-        <url value="https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/ValueSet/mii-vs-lufu-lnc-rv"/>
-        <version value="2027.0.0-ballot.rc2"/>
-        <name value="MII_VS_Lufu_LNC_RV"/>
-        <title value="MII VS Lufu LNC RV"/>
-        <status value="active"/>
-        <experimental value="false"/>
-        <date value="2026-09-02"/>
-        <jurisdiction>
-          <coding>
-            <system value="urn:iso:std:iso:3166"/>
-            <code value="DE"/>
-            <display value="Germany"/>
-          </coding>
-        </jurisdiction>
-        <expansion>
-          <identifier value="urn:uuid:81815e68-7f9e-4fbc-af00-aa126bae18c2"/>
-          <timestamp value="2026-09-03T09:59:41+00:00"/>
-          <total value="5"/>
-          <offset value="0"/>
-          <parameter>
-            <name value="displayLanguage"/>
-            <valueCode value="en"/>
-          </parameter>
-          <parameter>
-            <name value="count"/>
-            <valueInteger value="1000"/>
-          </parameter>
-          <parameter>
-            <name value="offset"/>
-            <valueInteger value="0"/>
-          </parameter>
-          <parameter>
-            <name value="excludeNested"/>
-            <valueBoolean value="false"/>
-          </parameter>
-          <parameter>
-            <name value="used-valueset"/>
-            <valueUri value="null"/>
-          </parameter>
-          <parameter>
-            <name value="includeDefinition"/>
-            <valueBoolean value="false"/>
-          </parameter>
-          <parameter>
-            <name value="used-codesystem"/>
-            <valueUri value="http://loinc.org|2.82"/>
-          </parameter>
-          <contains>
-            <system value="http://loinc.org"/>
-            <code value="19924-0"/>
-            <display value="Expiratory reserve"/>
-          </contains>
-          <contains>
-            <system value="http://loinc.org"/>
-            <code value="19923-2"/>
-            <display value="Expiratory reserve Predicted"/>
-          </contains>
-          <contains>
-            <system value="http://loinc.org"/>
-            <code value="100759-0"/>
-            <display value="Inspiratory reserve [Volume] Respiratory system by Spirometry"/>
-          </contains>
-          <contains>
-            <system value="http://loinc.org"/>
-            <code value="19921-6"/>
-            <display value="Expiratory reserve by Helium rebreathing"/>
-          </contains>
-          <contains>
-            <system value="http://loinc.org"/>
-            <code value="19922-4"/>
-            <display value="Expiratory reserve by Helium single breath"/>
-          </contains>
-        </expansion>
-      </ValueSet>
-    </resource>
-  </entry>
-  <entry>
-    <fullUrl value="https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/ValueSet/mii-vs-lufu-lnc-rv"/>
-    <resource>
-      <ValueSet>
-        <meta>
-          <profile value="http://hl7.org/fhir/StructureDefinition/shareablevalueset"/>
-        </meta>
-        <text>
-          <status value="generated"/>
-          <div xmlns="http://www.w3.org/1999/xhtml" data-fhir="generated">
-            <p class="res-header-id"/>
-            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion from tx.fhir.org based on Loinc v2.82
-              <span class="copy-text-inline">
-                <button data-clipboard-text="http://loinc.org|2.82" title="Click to Copy URL" class="btn-copy"> </button>
-              </span>
-            </p>
-            <p>This value set contains 5 concepts</p>
-            <table class="codes" data-fhir="generated">
-              <tr>
-                <td>
-                  <b>System</b>
-                </td>
-                <td style="white-space:nowrap">
-                  <b>Code</b>
-                </td>
-                <td>
-                  <b>Display (en)</b>
-                </td>
-                <td>
-                  <b>JSON</b>
-                </td>
-                <td>
-                  <b>XML</b>
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <a name="x-http://loinc.org-19924-0"> </a>
-                  <code>http://loinc.org</code>
-                </td>
-                <td style="white-space:nowrap">  
-                  <a href="https://loinc.org/19924-0/">19924-0</a>
-                </td>
-                <td>Expiratory reserve</td>
-                <td>
-                  <span class="copy-text-inline">
-                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://loinc.org&quot;, &quot;version&quot;: &quot;2.82&quot;, &quot;code&quot;: &quot;19924-0&quot;, &quot;display&quot;: &quot;Expiratory reserve&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
-                  </span>
-                </td>
-                <td>
-                  <span class="copy-text-inline">
-                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://loinc.org&quot;&gt;&lt;version value=&quot;2.82&quot;&gt;&lt;code value=&quot;19924-0&quot;&gt;&lt;display value=&quot;Expiratory reserve&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
-                  </span>
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <a name="x-http://loinc.org-19923-2"> </a>
-                  <code>http://loinc.org</code>
-                </td>
-                <td style="white-space:nowrap">  
-                  <a href="https://loinc.org/19923-2/">19923-2</a>
-                </td>
-                <td>Expiratory reserve Predicted</td>
-                <td>
-                  <span class="copy-text-inline">
-                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://loinc.org&quot;, &quot;version&quot;: &quot;2.82&quot;, &quot;code&quot;: &quot;19923-2&quot;, &quot;display&quot;: &quot;Expiratory reserve Predicted&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
-                  </span>
-                </td>
-                <td>
-                  <span class="copy-text-inline">
-                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://loinc.org&quot;&gt;&lt;version value=&quot;2.82&quot;&gt;&lt;code value=&quot;19923-2&quot;&gt;&lt;display value=&quot;Expiratory reserve Predicted&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
-                  </span>
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <a name="x-http://loinc.org-100759-0"> </a>
-                  <code>http://loinc.org</code>
-                </td>
-                <td style="white-space:nowrap">  
-                  <a href="https://loinc.org/100759-0/">100759-0</a>
-                </td>
-                <td>Inspiratory reserve [Volume] Respiratory system by Spirometry</td>
-                <td>
-                  <span class="copy-text-inline">
-                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://loinc.org&quot;, &quot;version&quot;: &quot;2.82&quot;, &quot;code&quot;: &quot;100759-0&quot;, &quot;display&quot;: &quot;Inspiratory reserve [Volume] Respiratory system by Spirometry&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
-                  </span>
-                </td>
-                <td>
-                  <span class="copy-text-inline">
-                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://loinc.org&quot;&gt;&lt;version value=&quot;2.82&quot;&gt;&lt;code value=&quot;100759-0&quot;&gt;&lt;display value=&quot;Inspiratory reserve [Volume] Respiratory system by Spirometry&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
-                  </span>
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <a name="x-http://loinc.org-19921-6"> </a>
-                  <code>http://loinc.org</code>
-                </td>
-                <td style="white-space:nowrap">  
-                  <a href="https://loinc.org/19921-6/">19921-6</a>
-                </td>
-                <td>Expiratory reserve by Helium rebreathing</td>
-                <td>
-                  <span class="copy-text-inline">
-                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://loinc.org&quot;, &quot;version&quot;: &quot;2.82&quot;, &quot;code&quot;: &quot;19921-6&quot;, &quot;display&quot;: &quot;Expiratory reserve by Helium rebreathing&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
-                  </span>
-                </td>
-                <td>
-                  <span class="copy-text-inline">
-                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://loinc.org&quot;&gt;&lt;version value=&quot;2.82&quot;&gt;&lt;code value=&quot;19921-6&quot;&gt;&lt;display value=&quot;Expiratory reserve by Helium rebreathing&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
-                  </span>
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <a name="x-http://loinc.org-19922-4"> </a>
-                  <code>http://loinc.org</code>
-                </td>
-                <td style="white-space:nowrap">  
-                  <a href="https://loinc.org/19922-4/">19922-4</a>
-                </td>
-                <td>Expiratory reserve by Helium single breath</td>
-                <td>
-                  <span class="copy-text-inline">
-                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://loinc.org&quot;, &quot;version&quot;: &quot;2.82&quot;, &quot;code&quot;: &quot;19922-4&quot;, &quot;display&quot;: &quot;Expiratory reserve by Helium single breath&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
-                  </span>
-                </td>
-                <td>
-                  <span class="copy-text-inline">
-                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://loinc.org&quot;&gt;&lt;version value=&quot;2.82&quot;&gt;&lt;code value=&quot;19922-4&quot;&gt;&lt;display value=&quot;Expiratory reserve by Helium single breath&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
-                  </span>
-                </td>
-              </tr>
-            </table>
-          </div>
-        </text>
-        <url value="https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/ValueSet/mii-vs-lufu-lnc-rv"/>
-        <version value="2027.0.0-ballot.rc2"/>
-        <name value="MII_VS_Lufu_LNC_RV"/>
-        <title value="MII VS Lufu LNC RV"/>
-        <status value="active"/>
-        <experimental value="false"/>
-        <date value="2026-09-02"/>
-        <jurisdiction>
-          <coding>
-            <system value="urn:iso:std:iso:3166"/>
-            <code value="DE"/>
-            <display value="Germany"/>
-          </coding>
-        </jurisdiction>
-        <expansion>
-          <identifier value="urn:uuid:81815e68-7f9e-4fbc-af00-aa126bae18c2"/>
-          <timestamp value="2026-09-03T09:59:41+00:00"/>
-          <total value="5"/>
-          <offset value="0"/>
-          <parameter>
-            <name value="displayLanguage"/>
-            <valueCode value="en"/>
-          </parameter>
-          <parameter>
-            <name value="count"/>
-            <valueInteger value="1000"/>
-          </parameter>
-          <parameter>
-            <name value="offset"/>
-            <valueInteger value="0"/>
-          </parameter>
-          <parameter>
-            <name value="excludeNested"/>
-            <valueBoolean value="false"/>
-          </parameter>
-          <parameter>
-            <name value="used-valueset"/>
-            <valueUri value="null"/>
-          </parameter>
-          <parameter>
-            <name value="includeDefinition"/>
-            <valueBoolean value="false"/>
-          </parameter>
-          <parameter>
-            <name value="used-codesystem"/>
-            <valueUri value="http://loinc.org|2.82"/>
-          </parameter>
-          <contains>
-            <system value="http://loinc.org"/>
-            <code value="19924-0"/>
-            <display value="Expiratory reserve"/>
-          </contains>
-          <contains>
-            <system value="http://loinc.org"/>
-            <code value="19923-2"/>
-            <display value="Expiratory reserve Predicted"/>
-          </contains>
-          <contains>
-            <system value="http://loinc.org"/>
-            <code value="100759-0"/>
-            <display value="Inspiratory reserve [Volume] Respiratory system by Spirometry"/>
-          </contains>
-          <contains>
-            <system value="http://loinc.org"/>
-            <code value="19921-6"/>
-            <display value="Expiratory reserve by Helium rebreathing"/>
-          </contains>
-          <contains>
-            <system value="http://loinc.org"/>
-            <code value="19922-4"/>
-            <display value="Expiratory reserve by Helium single breath"/>
-          </contains>
-        </expansion>
-      </ValueSet>
-    </resource>
-  </entry>
-  <entry>
-    <fullUrl value="https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/ValueSet/mii-vs-lufu-lnc-rv"/>
-    <resource>
-      <ValueSet>
-        <meta>
-          <profile value="http://hl7.org/fhir/StructureDefinition/shareablevalueset"/>
-        </meta>
-        <text>
-          <status value="generated"/>
-          <div xmlns="http://www.w3.org/1999/xhtml" data-fhir="generated">
-            <p class="res-header-id"/>
-            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion from tx.fhir.org based on Loinc v2.82
-              <span class="copy-text-inline">
-                <button data-clipboard-text="http://loinc.org|2.82" title="Click to Copy URL" class="btn-copy"> </button>
-              </span>
-            </p>
-            <p>This value set contains 5 concepts</p>
-            <table class="codes" data-fhir="generated">
-              <tr>
-                <td>
-                  <b>System</b>
-                </td>
-                <td style="white-space:nowrap">
-                  <b>Code</b>
-                </td>
-                <td>
-                  <b>Display (de)</b>
-                </td>
-                <td>
-                  <b>JSON</b>
-                </td>
-                <td>
-                  <b>XML</b>
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <a name="x-http://loinc.org-19924-0"> </a>
-                  <code>http://loinc.org</code>
-                </td>
-                <td style="white-space:nowrap">  
-                  <a href="https://loinc.org/19924-0/">19924-0</a>
-                </td>
-                <td/>
-                <td>
-                  <span class="copy-text-inline">
-                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://loinc.org&quot;, &quot;version&quot;: &quot;2.82&quot;, &quot;code&quot;: &quot;19924-0&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
-                  </span>
-                </td>
-                <td>
-                  <span class="copy-text-inline">
-                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://loinc.org&quot;&gt;&lt;version value=&quot;2.82&quot;&gt;&lt;code value=&quot;19924-0&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
-                  </span>
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <a name="x-http://loinc.org-19923-2"> </a>
-                  <code>http://loinc.org</code>
-                </td>
-                <td style="white-space:nowrap">  
-                  <a href="https://loinc.org/19923-2/">19923-2</a>
-                </td>
-                <td/>
-                <td>
-                  <span class="copy-text-inline">
-                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://loinc.org&quot;, &quot;version&quot;: &quot;2.82&quot;, &quot;code&quot;: &quot;19923-2&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
-                  </span>
-                </td>
-                <td>
-                  <span class="copy-text-inline">
-                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://loinc.org&quot;&gt;&lt;version value=&quot;2.82&quot;&gt;&lt;code value=&quot;19923-2&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
-                  </span>
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <a name="x-http://loinc.org-100759-0"> </a>
-                  <code>http://loinc.org</code>
-                </td>
-                <td style="white-space:nowrap">  
-                  <a href="https://loinc.org/100759-0/">100759-0</a>
-                </td>
-                <td/>
-                <td>
-                  <span class="copy-text-inline">
-                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://loinc.org&quot;, &quot;version&quot;: &quot;2.82&quot;, &quot;code&quot;: &quot;100759-0&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
-                  </span>
-                </td>
-                <td>
-                  <span class="copy-text-inline">
-                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://loinc.org&quot;&gt;&lt;version value=&quot;2.82&quot;&gt;&lt;code value=&quot;100759-0&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
-                  </span>
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <a name="x-http://loinc.org-19921-6"> </a>
-                  <code>http://loinc.org</code>
-                </td>
-                <td style="white-space:nowrap">  
-                  <a href="https://loinc.org/19921-6/">19921-6</a>
-                </td>
-                <td/>
-                <td>
-                  <span class="copy-text-inline">
-                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://loinc.org&quot;, &quot;version&quot;: &quot;2.82&quot;, &quot;code&quot;: &quot;19921-6&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
-                  </span>
-                </td>
-                <td>
-                  <span class="copy-text-inline">
-                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://loinc.org&quot;&gt;&lt;version value=&quot;2.82&quot;&gt;&lt;code value=&quot;19921-6&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
-                  </span>
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <a name="x-http://loinc.org-19922-4"> </a>
-                  <code>http://loinc.org</code>
-                </td>
-                <td style="white-space:nowrap">  
-                  <a href="https://loinc.org/19922-4/">19922-4</a>
-                </td>
-                <td/>
-                <td>
-                  <span class="copy-text-inline">
-                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://loinc.org&quot;, &quot;version&quot;: &quot;2.82&quot;, &quot;code&quot;: &quot;19922-4&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
-                  </span>
-                </td>
-                <td>
-                  <span class="copy-text-inline">
-                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://loinc.org&quot;&gt;&lt;version value=&quot;2.82&quot;&gt;&lt;code value=&quot;19922-4&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
-                  </span>
-                </td>
-              </tr>
-            </table>
-          </div>
-        </text>
-        <url value="https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/ValueSet/mii-vs-lufu-lnc-rv"/>
-        <version value="2027.0.0-ballot.rc2"/>
-        <name value="MII_VS_Lufu_LNC_RV"/>
-        <title value="MII VS Lufu LNC RV"/>
-        <status value="active"/>
-        <experimental value="false"/>
-        <date value="2026-09-02"/>
-        <jurisdiction>
-          <coding>
-            <system value="urn:iso:std:iso:3166"/>
-            <code value="DE"/>
-            <display value="Germany"/>
-          </coding>
-        </jurisdiction>
-        <expansion>
-          <identifier value="urn:uuid:e181dfbb-ce18-492b-a78f-aadc54eeb536"/>
-          <timestamp value="2026-09-03T09:59:42+00:00"/>
-          <total value="5"/>
-          <offset value="0"/>
-          <parameter>
-            <name value="displayLanguage"/>
-            <valueCode value="de"/>
-          </parameter>
-          <parameter>
-            <name value="count"/>
-            <valueInteger value="1000"/>
-          </parameter>
-          <parameter>
-            <name value="offset"/>
-            <valueInteger value="0"/>
-          </parameter>
-          <parameter>
-            <name value="excludeNested"/>
-            <valueBoolean value="false"/>
-          </parameter>
-          <parameter>
-            <name value="used-valueset"/>
-            <valueUri value="null"/>
-          </parameter>
-          <parameter>
-            <name value="includeDefinition"/>
-            <valueBoolean value="false"/>
-          </parameter>
-          <parameter>
-            <name value="used-codesystem"/>
-            <valueUri value="http://loinc.org|2.82"/>
-          </parameter>
-          <contains>
-            <system value="http://loinc.org"/>
-            <code value="19924-0"/>
-          </contains>
-          <contains>
-            <system value="http://loinc.org"/>
-            <code value="19923-2"/>
-          </contains>
-          <contains>
-            <system value="http://loinc.org"/>
-            <code value="100759-0"/>
-          </contains>
-          <contains>
-            <system value="http://loinc.org"/>
-            <code value="19921-6"/>
-          </contains>
-          <contains>
-            <system value="http://loinc.org"/>
-            <code value="19922-4"/>
-          </contains>
-        </expansion>
-      </ValueSet>
-    </resource>
-  </entry>
-  <entry>
-    <fullUrl value="https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/ValueSet/mii-vs-lufu-lnc-rvl-tlc"/>
+    <fullUrl value="https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/ValueSet/mii-vs-lufu-lnc-rv-tlc"/>
     <resource>
       <ValueSet>
         <meta>
@@ -76841,10 +76841,10 @@
             </table>
           </div>
         </text>
-        <url value="https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/ValueSet/mii-vs-lufu-lnc-rvl-tlc"/>
+        <url value="https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/ValueSet/mii-vs-lufu-lnc-rv-tlc"/>
         <version value="2027.0.0-ballot.rc2"/>
-        <name value="MII_VS_Lufu_LNC_RVL_TLC"/>
-        <title value="MII VS Lufu LNC RVL TLC"/>
+        <name value="MII_VS_Lufu_LNC_RV_TLC"/>
+        <title value="MII VS Lufu LNC RV TLC"/>
         <status value="active"/>
         <experimental value="false"/>
         <date value="2026-09-02"/>
@@ -76856,8 +76856,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:4d243a39-e42d-4e0b-81c5-38df5833362e"/>
-          <timestamp value="2026-09-03T09:59:55+00:00"/>
+          <identifier value="urn:uuid:d006331a-7a30-40e4-b816-f397dc40ecb8"/>
+          <timestamp value="2026-09-08T07:35:01+00:00"/>
           <total value="3"/>
           <offset value="0"/>
           <parameter>
@@ -76908,7 +76908,7 @@
     </resource>
   </entry>
   <entry>
-    <fullUrl value="https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/ValueSet/mii-vs-lufu-lnc-rvl-tlc"/>
+    <fullUrl value="https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/ValueSet/mii-vs-lufu-lnc-rv-tlc"/>
     <resource>
       <ValueSet>
         <meta>
@@ -77005,10 +77005,10 @@
             </table>
           </div>
         </text>
-        <url value="https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/ValueSet/mii-vs-lufu-lnc-rvl-tlc"/>
+        <url value="https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/ValueSet/mii-vs-lufu-lnc-rv-tlc"/>
         <version value="2027.0.0-ballot.rc2"/>
-        <name value="MII_VS_Lufu_LNC_RVL_TLC"/>
-        <title value="MII VS Lufu LNC RVL TLC"/>
+        <name value="MII_VS_Lufu_LNC_RV_TLC"/>
+        <title value="MII VS Lufu LNC RV TLC"/>
         <status value="active"/>
         <experimental value="false"/>
         <date value="2026-09-02"/>
@@ -77020,8 +77020,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:4d243a39-e42d-4e0b-81c5-38df5833362e"/>
-          <timestamp value="2026-09-03T09:59:55+00:00"/>
+          <identifier value="urn:uuid:d006331a-7a30-40e4-b816-f397dc40ecb8"/>
+          <timestamp value="2026-09-08T07:35:01+00:00"/>
           <total value="3"/>
           <offset value="0"/>
           <parameter>
@@ -77072,7 +77072,7 @@
     </resource>
   </entry>
   <entry>
-    <fullUrl value="https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/ValueSet/mii-vs-lufu-lnc-rvl-tlc"/>
+    <fullUrl value="https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/ValueSet/mii-vs-lufu-lnc-rv-tlc"/>
     <resource>
       <ValueSet>
         <meta>
@@ -77169,10 +77169,10 @@
             </table>
           </div>
         </text>
-        <url value="https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/ValueSet/mii-vs-lufu-lnc-rvl-tlc"/>
+        <url value="https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/ValueSet/mii-vs-lufu-lnc-rv-tlc"/>
         <version value="2027.0.0-ballot.rc2"/>
-        <name value="MII_VS_Lufu_LNC_RVL_TLC"/>
-        <title value="MII VS Lufu LNC RVL TLC"/>
+        <name value="MII_VS_Lufu_LNC_RV_TLC"/>
+        <title value="MII VS Lufu LNC RV TLC"/>
         <status value="active"/>
         <experimental value="false"/>
         <date value="2026-09-02"/>
@@ -77184,8 +77184,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:33aa38f1-99b3-4401-ab81-56287e98b0fb"/>
-          <timestamp value="2026-09-03T09:59:56+00:00"/>
+          <identifier value="urn:uuid:220c3fd0-6c35-4b16-ba63-1e60289672f9"/>
+          <timestamp value="2026-09-08T07:35:02+00:00"/>
           <total value="3"/>
           <offset value="0"/>
           <parameter>
@@ -77233,7 +77233,7 @@
     </resource>
   </entry>
   <entry>
-    <fullUrl value="https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/ValueSet/mii-vs-lufu-lnc-rvl"/>
+    <fullUrl value="https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/ValueSet/mii-vs-lufu-lnc-rv"/>
     <resource>
       <ValueSet>
         <meta>
@@ -77410,10 +77410,10 @@
             </table>
           </div>
         </text>
-        <url value="https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/ValueSet/mii-vs-lufu-lnc-rvl"/>
+        <url value="https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/ValueSet/mii-vs-lufu-lnc-rv"/>
         <version value="2027.0.0-ballot.rc2"/>
-        <name value="MII_VS_Lufu_LNC_RVL"/>
-        <title value="MII VS Lufu LNC RVL"/>
+        <name value="MII_VS_Lufu_LNC_RV"/>
+        <title value="MII VS Lufu LNC RV"/>
         <status value="active"/>
         <experimental value="false"/>
         <date value="2026-09-02"/>
@@ -77425,8 +77425,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:8ec8ba23-0a11-4a05-9f82-7db440b5fe04"/>
-          <timestamp value="2026-09-03T09:59:56+00:00"/>
+          <identifier value="urn:uuid:605bcaf0-39cc-411d-b54e-4113903177ee"/>
+          <timestamp value="2026-09-08T07:35:02+00:00"/>
           <total value="7"/>
           <offset value="0"/>
           <parameter>
@@ -77497,7 +77497,7 @@
     </resource>
   </entry>
   <entry>
-    <fullUrl value="https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/ValueSet/mii-vs-lufu-lnc-rvl"/>
+    <fullUrl value="https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/ValueSet/mii-vs-lufu-lnc-rv"/>
     <resource>
       <ValueSet>
         <meta>
@@ -77674,10 +77674,10 @@
             </table>
           </div>
         </text>
-        <url value="https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/ValueSet/mii-vs-lufu-lnc-rvl"/>
+        <url value="https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/ValueSet/mii-vs-lufu-lnc-rv"/>
         <version value="2027.0.0-ballot.rc2"/>
-        <name value="MII_VS_Lufu_LNC_RVL"/>
-        <title value="MII VS Lufu LNC RVL"/>
+        <name value="MII_VS_Lufu_LNC_RV"/>
+        <title value="MII VS Lufu LNC RV"/>
         <status value="active"/>
         <experimental value="false"/>
         <date value="2026-09-02"/>
@@ -77689,8 +77689,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:8ec8ba23-0a11-4a05-9f82-7db440b5fe04"/>
-          <timestamp value="2026-09-03T09:59:56+00:00"/>
+          <identifier value="urn:uuid:605bcaf0-39cc-411d-b54e-4113903177ee"/>
+          <timestamp value="2026-09-08T07:35:02+00:00"/>
           <total value="7"/>
           <offset value="0"/>
           <parameter>
@@ -77761,7 +77761,7 @@
     </resource>
   </entry>
   <entry>
-    <fullUrl value="https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/ValueSet/mii-vs-lufu-lnc-rvl"/>
+    <fullUrl value="https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/ValueSet/mii-vs-lufu-lnc-rv"/>
     <resource>
       <ValueSet>
         <meta>
@@ -77938,10 +77938,10 @@
             </table>
           </div>
         </text>
-        <url value="https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/ValueSet/mii-vs-lufu-lnc-rvl"/>
+        <url value="https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/ValueSet/mii-vs-lufu-lnc-rv"/>
         <version value="2027.0.0-ballot.rc2"/>
-        <name value="MII_VS_Lufu_LNC_RVL"/>
-        <title value="MII VS Lufu LNC RVL"/>
+        <name value="MII_VS_Lufu_LNC_RV"/>
+        <title value="MII VS Lufu LNC RV"/>
         <status value="active"/>
         <experimental value="false"/>
         <date value="2026-09-02"/>
@@ -77953,8 +77953,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:d47b7736-7f3f-4ed6-8aa2-e4298c4e4139"/>
-          <timestamp value="2026-09-03T09:59:57+00:00"/>
+          <identifier value="urn:uuid:643e87fa-0da9-4152-a3fe-c4ff91b9a8d9"/>
+          <timestamp value="2026-09-08T07:35:03+00:00"/>
           <total value="7"/>
           <offset value="0"/>
           <parameter>
@@ -78150,8 +78150,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:15999c57-da70-4bff-8f0f-f6fc2f54b7b0"/>
-          <timestamp value="2026-09-03T09:59:52+00:00"/>
+          <identifier value="urn:uuid:abe45d49-406c-4d3e-8236-4946575f542e"/>
+          <timestamp value="2026-09-08T07:34:58+00:00"/>
           <total value="4"/>
           <offset value="0"/>
           <parameter>
@@ -78339,8 +78339,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:15999c57-da70-4bff-8f0f-f6fc2f54b7b0"/>
-          <timestamp value="2026-09-03T09:59:52+00:00"/>
+          <identifier value="urn:uuid:abe45d49-406c-4d3e-8236-4946575f542e"/>
+          <timestamp value="2026-09-08T07:34:58+00:00"/>
           <total value="4"/>
           <offset value="0"/>
           <parameter>
@@ -78528,8 +78528,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:47868fca-74cf-4b18-ac48-68699846c760"/>
-          <timestamp value="2026-09-03T09:59:52+00:00"/>
+          <identifier value="urn:uuid:57c2df20-bc63-4650-ab7f-7b4d8275af5d"/>
+          <timestamp value="2026-09-08T07:34:59+00:00"/>
           <total value="4"/>
           <offset value="0"/>
           <parameter>
@@ -78713,8 +78713,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:6c03479b-839b-493c-9dba-a07f2926cd79"/>
-          <timestamp value="2026-09-03T09:59:53+00:00"/>
+          <identifier value="urn:uuid:0d8a4e8c-8e75-423c-894f-3275dabb798c"/>
+          <timestamp value="2026-09-08T07:34:59+00:00"/>
           <total value="4"/>
           <offset value="0"/>
           <parameter>
@@ -78902,8 +78902,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:6c03479b-839b-493c-9dba-a07f2926cd79"/>
-          <timestamp value="2026-09-03T09:59:53+00:00"/>
+          <identifier value="urn:uuid:0d8a4e8c-8e75-423c-894f-3275dabb798c"/>
+          <timestamp value="2026-09-08T07:34:59+00:00"/>
           <total value="4"/>
           <offset value="0"/>
           <parameter>
@@ -79091,8 +79091,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:6f129e90-e4c8-4514-b937-b494bb67fcb0"/>
-          <timestamp value="2026-09-03T09:59:54+00:00"/>
+          <identifier value="urn:uuid:1519f9df-352e-4a80-9b2c-81a79e7e2c44"/>
+          <timestamp value="2026-09-08T07:35:00+00:00"/>
           <total value="4"/>
           <offset value="0"/>
           <parameter>
@@ -79416,8 +79416,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:40b92f7b-d15e-41ce-9ac0-9af50247fc05"/>
-          <timestamp value="2026-09-03T10:00:00+00:00"/>
+          <identifier value="urn:uuid:e9d4bbea-19fe-426f-9d5d-084f5ead6cc5"/>
+          <timestamp value="2026-09-08T07:35:06+00:00"/>
           <total value="11"/>
           <offset value="0"/>
           <parameter>
@@ -79780,8 +79780,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:40b92f7b-d15e-41ce-9ac0-9af50247fc05"/>
-          <timestamp value="2026-09-03T10:00:00+00:00"/>
+          <identifier value="urn:uuid:e9d4bbea-19fe-426f-9d5d-084f5ead6cc5"/>
+          <timestamp value="2026-09-08T07:35:06+00:00"/>
           <total value="11"/>
           <offset value="0"/>
           <parameter>
@@ -80144,8 +80144,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:ab8b343c-2d85-46ab-875c-f5f7a4125ed5"/>
-          <timestamp value="2026-09-03T10:00:00+00:00"/>
+          <identifier value="urn:uuid:1013986c-a15c-4b99-98a7-a9b2893a692f"/>
+          <timestamp value="2026-09-08T07:35:07+00:00"/>
           <total value="11"/>
           <offset value="0"/>
           <parameter>
@@ -80477,8 +80477,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:9a4b5247-5c3e-4fe7-93e3-d933037499c5"/>
-          <timestamp value="2026-09-03T10:00:03+00:00"/>
+          <identifier value="urn:uuid:b59d3563-cc43-4ff0-b898-a9ebb2f49cc0"/>
+          <timestamp value="2026-09-08T07:35:09+00:00"/>
           <total value="10"/>
           <offset value="0"/>
           <parameter>
@@ -80816,8 +80816,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:9a4b5247-5c3e-4fe7-93e3-d933037499c5"/>
-          <timestamp value="2026-09-03T10:00:03+00:00"/>
+          <identifier value="urn:uuid:b59d3563-cc43-4ff0-b898-a9ebb2f49cc0"/>
+          <timestamp value="2026-09-08T07:35:09+00:00"/>
           <total value="10"/>
           <offset value="0"/>
           <parameter>
@@ -81155,8 +81155,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:f35ba60d-e780-4f06-8a05-b75593970a72"/>
-          <timestamp value="2026-09-03T10:00:04+00:00"/>
+          <identifier value="urn:uuid:d56e1f50-77e3-4f53-91ec-30dc406433a6"/>
+          <timestamp value="2026-09-08T07:35:10+00:00"/>
           <total value="10"/>
           <offset value="0"/>
           <parameter>

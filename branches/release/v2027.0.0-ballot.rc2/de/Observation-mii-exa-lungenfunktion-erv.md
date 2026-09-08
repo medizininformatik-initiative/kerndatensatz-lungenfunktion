@@ -12,7 +12,7 @@
 
 -------
 
-Profile: [MII PR Lungenfunktion RV](StructureDefinition-mii-pr-lungenfunktion-irv.md)
+Profile: [MII PR Lungenfunktion Reserve Volumen](StructureDefinition-mii-pr-lungenfunktion-irv-erv.md)
 
 **partOf**: [Procedure Spirometry (procedure)](Procedure-mii-exa-lungenfunktion-spirometrie-messung.md)
 
@@ -52,7 +52,7 @@ Profile: [MII PR Lungenfunktion RV](StructureDefinition-mii-pr-lungenfunktion-ir
   "resourceType" : "Observation",
   "id" : "mii-exa-lungenfunktion-erv",
   "meta" : {
-    "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-rv"]
+    "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-irv-erv"]
   },
   "partOf" : [{
     "reference" : "Procedure/mii-exa-lungenfunktion-spirometrie-messung"

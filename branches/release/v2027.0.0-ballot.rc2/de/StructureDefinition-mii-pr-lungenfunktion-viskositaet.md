@@ -1,10 +1,10 @@
-# MII PR Lungenfunktion Fluss - MII IG Kerndatensatz-Modul Lungenfunktion v2027.0.0-ballot.rc2
+# MII PR Lungenfunktion Viskosität - MII IG Kerndatensatz-Modul Lungenfunktion v2027.0.0-ballot.rc2
 
 * [**Inhaltsverzeichnis**](toc.md)
 * [**Artefaktübersicht**](artifacts.md)
-* **MII PR Lungenfunktion Fluss**
+* **MII PR Lungenfunktion Viskosität**
 
-## Ressourcenprofil: MII PR Lungenfunktion Fluss 
+## Ressourcenprofil: MII PR Lungenfunktion Viskosität 
 
 | | |
 | :--- | :--- |
@@ -12,7 +12,7 @@
 | Active Stand: 2026-09-02 | *Maschinenlesbarer Name*:MII_PR_Lungenfunktion_Viskositaet |
 
  
-Dieses Beobachtung beschreibt eine Flussmessung. 
+Dieses Beobachtung beschreibt eine Viskositätsmessung. 
 
 **Usages:**
 
@@ -131,7 +131,7 @@ Weitere Repräsentationen des Profils: [CSV](../StructureDefinition-mii-pr-lunge
       "url" : "http://hl7.org/fhir/StructureDefinition/translation"
     }]
   },
-  "title" : "MII PR Lungenfunktion Fluss",
+  "title" : "MII PR Lungenfunktion Viskosität",
   "_title" : {
     "extension" : [{
       "extension" : [{
@@ -155,7 +155,7 @@ Weitere Repräsentationen des Profils: [CSV](../StructureDefinition-mii-pr-lunge
       "value" : "https://www.medizininformatik-initiative.de/"
     }]
   }],
-  "description" : "Dieses Beobachtung beschreibt eine Flussmessung.",
+  "description" : "Dieses Beobachtung beschreibt eine Viskositätsmessung.",
   "_description" : {
     "extension" : [{
       "extension" : [{

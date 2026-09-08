@@ -254,14 +254,14 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-lungenfunk
       "mustSupport" : true
     },
     {
-      "id" : "DiagnosticReport.result:RV",
+      "id" : "DiagnosticReport.result:IRV_ERV",
       "path" : "DiagnosticReport.result",
-      "sliceName" : "RV",
+      "sliceName" : "IRV_ERV",
       "min" : 0,
       "max" : "*",
       "type" : [{
         "code" : "Reference",
-        "targetProfile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-rv"]
+        "targetProfile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-irv-erv"]
       }],
       "mustSupport" : true
     },

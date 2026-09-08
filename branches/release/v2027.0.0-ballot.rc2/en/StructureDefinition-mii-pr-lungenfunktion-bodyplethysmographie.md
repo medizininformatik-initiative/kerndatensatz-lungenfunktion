@@ -253,14 +253,14 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-lungenfunk
       "mustSupport" : true
     },
     {
-      "id" : "DiagnosticReport.result:RV",
+      "id" : "DiagnosticReport.result:IRV_ERV",
       "path" : "DiagnosticReport.result",
-      "sliceName" : "RV",
+      "sliceName" : "IRV_ERV",
       "min" : 0,
       "max" : "*",
       "type" : [{
         "code" : "Reference",
-        "targetProfile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-rv"]
+        "targetProfile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-irv-erv"]
       }],
       "mustSupport" : true
     },
@@ -349,21 +349,21 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-lungenfunk
       "mustSupport" : true
     },
     {
-      "id" : "DiagnosticReport.result:RVL",
+      "id" : "DiagnosticReport.result:RV",
       "path" : "DiagnosticReport.result",
-      "sliceName" : "RVL",
+      "sliceName" : "RV",
       "min" : 0,
       "max" : "1",
       "type" : [{
         "code" : "Reference",
-        "targetProfile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-rvl"]
+        "targetProfile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-rv"]
       }],
       "mustSupport" : true
     },
     {
-      "id" : "DiagnosticReport.result:RVL_TLC",
+      "id" : "DiagnosticReport.result:RV_TLC",
       "path" : "DiagnosticReport.result",
-      "sliceName" : "RVL_TLC",
+      "sliceName" : "RV_TLC",
       "min" : 0,
       "max" : "1",
       "type" : [{

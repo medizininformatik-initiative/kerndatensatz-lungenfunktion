@@ -52,18 +52,12 @@ Profile: [MII PR Lungenfunktion Bodyplethysmographie](StructureDefinition-mii-pr
   * **Value**: 3.48 L (Details: UCUM codeL = 'L')
   * **Reference Range**: >2.43 L (Details: UCUM codeL = 'L')
   * **Flags**: Final,Normal
-* **Code**: [Residual volume](Observation-mii-exa-lungenfunktion-rvl.md)
-  * **Value**: 3.01 L (Details: UCUM codeL = 'L')
-  * **Reference Range**: >1.43 L (Details: UCUM codeL = 'L')
-  * **Flags**: Final,Normal
+* **Code**: *Observation*
 * **Code**: [Total lung capacity (observable entity)](Observation-mii-exa-lungenfunktion-tlc.md)
   * **Value**: 5 L (Details: UCUM codeL = 'L')
   * **Reference Range**: >5.67 L (Details: UCUM codeL = 'L')
   * **Flags**: Final,Normal
-* **Code**: [Residual volume/total lung capacity ratio (observable entity)](Observation-mii-exa-lungenfunktion-rvl-tlc.md)
-  * **Value**: 50.95 % (Details: UCUM code% = '%')
-  * **Reference Range**: >23.73 % (Details: UCUM code% = '%')
-  * **Flags**: Final,Normal
+* **Code**: *Observation*
 * **Code**: [Airway resistance](Observation-mii-exa-lungenfunktion-r.md)
   * **Value**: 0.45 kPa/(L/s) (Details: UCUM codekPa/(L/s) = 'kPa/(L/s)')
   * **Reference Range**: 

@@ -61,7 +61,7 @@ This structure refers to these other structures:
 * [MII PR Lungenfunktion IC (https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-ic)](StructureDefinition-mii-pr-lungenfunktion-ic.md)
 * [MII PR Lungenfunktion MEF (https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-mef)](StructureDefinition-mii-pr-lungenfunktion-mef.md)
 * [MII PR Lungenfunktion PEF (https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-pef)](StructureDefinition-mii-pr-lungenfunktion-pef.md)
-* [MII PR Lungenfunktion RV (https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-rv)](StructureDefinition-mii-pr-lungenfunktion-irv.md)
+* [MII PR Lungenfunktion Reserve Volumen (https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-irv-erv)](StructureDefinition-mii-pr-lungenfunktion-irv-erv.md)
 * [MII PR Lungenfunktion VC (https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-vc)](StructureDefinition-mii-pr-lungenfunktion-vc.md)
 * [MII PR Lungenfunktion FRC (https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-frc)](StructureDefinition-mii-pr-lungenfunktion-frc.md)
 * [MII PR Lungenfunktion R (https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-r)](StructureDefinition-mii-pr-lungenfunktion-r.md)
@@ -69,8 +69,8 @@ This structure refers to these other structures:
 * [MII PR Lungenfunktion R Effektiv (https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-r-effektiv)](StructureDefinition-mii-pr-lungenfunktion-r-effektiv.md)
 * [MII PR Lungenfunktion sG Total (https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-sg-total)](StructureDefinition-mii-pr-lungenfunktion-sg-total.md)
 * [MII PR Lungenfunktion TLC (https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-tlc)](StructureDefinition-mii-pr-lungenfunktion-tlc.md)
-* [MII PR Lungenfunktion RVL (https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-rvl)](StructureDefinition-mii-pr-lungenfunktion-rvl.md)
-* [MII PR Lungenfunktion Anteil Residualvolumen an Lungenkapazität (https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-rvl-tlc)](StructureDefinition-mii-pr-lungenfunktion-rvl-tlc.md)
+* [MII PR Lungenfunktion RV (https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-rv)](StructureDefinition-mii-pr-lungenfunktion-rv.md)
+* [MII PR Lungenfunktion Anteil Residualvolumen an Lungenkapazität (https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-rvl-tlc)](StructureDefinition-mii-pr-lungenfunktion-rv-tlc.md)
 
 **Slices**
 
@@ -111,7 +111,7 @@ This structure refers to these other structures:
 * [MII PR Lungenfunktion IC (https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-ic)](StructureDefinition-mii-pr-lungenfunktion-ic.md)
 * [MII PR Lungenfunktion MEF (https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-mef)](StructureDefinition-mii-pr-lungenfunktion-mef.md)
 * [MII PR Lungenfunktion PEF (https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-pef)](StructureDefinition-mii-pr-lungenfunktion-pef.md)
-* [MII PR Lungenfunktion RV (https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-rv)](StructureDefinition-mii-pr-lungenfunktion-irv.md)
+* [MII PR Lungenfunktion Reserve Volumen (https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-irv-erv)](StructureDefinition-mii-pr-lungenfunktion-irv-erv.md)
 * [MII PR Lungenfunktion VC (https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-vc)](StructureDefinition-mii-pr-lungenfunktion-vc.md)
 * [MII PR Lungenfunktion FRC (https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-frc)](StructureDefinition-mii-pr-lungenfunktion-frc.md)
 * [MII PR Lungenfunktion R (https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-r)](StructureDefinition-mii-pr-lungenfunktion-r.md)
@@ -119,8 +119,8 @@ This structure refers to these other structures:
 * [MII PR Lungenfunktion R Effektiv (https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-r-effektiv)](StructureDefinition-mii-pr-lungenfunktion-r-effektiv.md)
 * [MII PR Lungenfunktion sG Total (https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-sg-total)](StructureDefinition-mii-pr-lungenfunktion-sg-total.md)
 * [MII PR Lungenfunktion TLC (https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-tlc)](StructureDefinition-mii-pr-lungenfunktion-tlc.md)
-* [MII PR Lungenfunktion RVL (https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-rvl)](StructureDefinition-mii-pr-lungenfunktion-rvl.md)
-* [MII PR Lungenfunktion Anteil Residualvolumen an Lungenkapazität (https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-rvl-tlc)](StructureDefinition-mii-pr-lungenfunktion-rvl-tlc.md)
+* [MII PR Lungenfunktion RV (https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-rv)](StructureDefinition-mii-pr-lungenfunktion-rv.md)
+* [MII PR Lungenfunktion Anteil Residualvolumen an Lungenkapazität (https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-rvl-tlc)](StructureDefinition-mii-pr-lungenfunktion-rv-tlc.md)
 
 **Slices**
 
@@ -353,14 +353,14 @@ Weitere Repräsentationen des Profils: [CSV](../StructureDefinition-mii-pr-lunge
       "mustSupport" : true
     },
     {
-      "id" : "DiagnosticReport.result:RV",
+      "id" : "DiagnosticReport.result:IRV_ERV",
       "path" : "DiagnosticReport.result",
-      "sliceName" : "RV",
+      "sliceName" : "IRV_ERV",
       "min" : 0,
       "max" : "*",
       "type" : [{
         "code" : "Reference",
-        "targetProfile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-rv"]
+        "targetProfile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-irv-erv"]
       }],
       "mustSupport" : true
     },
@@ -449,21 +449,21 @@ Weitere Repräsentationen des Profils: [CSV](../StructureDefinition-mii-pr-lunge
       "mustSupport" : true
     },
     {
-      "id" : "DiagnosticReport.result:RVL",
+      "id" : "DiagnosticReport.result:RV",
       "path" : "DiagnosticReport.result",
-      "sliceName" : "RVL",
+      "sliceName" : "RV",
       "min" : 0,
       "max" : "1",
       "type" : [{
         "code" : "Reference",
-        "targetProfile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-rvl"]
+        "targetProfile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-rv"]
       }],
       "mustSupport" : true
     },
     {
-      "id" : "DiagnosticReport.result:RVL_TLC",
+      "id" : "DiagnosticReport.result:RV_TLC",
       "path" : "DiagnosticReport.result",
-      "sliceName" : "RVL_TLC",
+      "sliceName" : "RV_TLC",
       "min" : 0,
       "max" : "1",
       "type" : [{

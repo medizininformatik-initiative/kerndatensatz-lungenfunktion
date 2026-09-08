@@ -16,7 +16,7 @@ The profile describes a observation for testing of lungfunction.
 
 **Usages:**
 
-* Derived from this Profile: [MII PR Lungenfunktion FEV/FVC](StructureDefinition-mii-pr-lungenfunktion-fev-fvc.md) and [MII PR Lungenfunktion Anteil Residualvolumen an Lungenkapazität](StructureDefinition-mii-pr-lungenfunktion-rvl-tlc.md)
+* Derived from this Profile: [MII PR Lungenfunktion FEV/FVC](StructureDefinition-mii-pr-lungenfunktion-fev-fvc.md) and [MII PR Lungenfunktion Anteil Residualvolumen an Lungenkapazität](StructureDefinition-mii-pr-lungenfunktion-rv-tlc.md)
 * CapabilityStatements using this Profile: [MII CPS Lungenfunktion CapabilityStatement](CapabilityStatement-mii-cps-lungenfunktion-capabilitystatement.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/resource/de.medizininformatikinitiative.kerndatensatz.lungenfunktion|current/StructureDefinition/StructureDefinition-mii-pr-lungenfunktion-prozent.json)

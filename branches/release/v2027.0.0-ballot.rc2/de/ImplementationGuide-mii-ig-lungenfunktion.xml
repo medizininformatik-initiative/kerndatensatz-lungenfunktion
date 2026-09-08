@@ -1065,7 +1065,7 @@
         <reference value="Observation/mii-exa-lungenfunktion-erv"/>
       </reference>
       <name value="MII Example Lungenfunktion ERV"/>
-      <exampleCanonical value="https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-rv"/>
+      <exampleCanonical value="https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-irv-erv"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1352,30 +1352,10 @@
         <valueString value="Observation"/>
       </extension>
       <reference>
-        <reference value="Observation/mii-exa-lungenfunktion-sr-total-b"/>
-      </reference>
-      <name value="MII Example Lungenfunktion Provokation R tot Base"/>
-      <exampleCanonical value="https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-r-spezifisch"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Observation"/>
-      </extension>
-      <reference>
         <reference value="Observation/mii-exa-lungenfunktion-r-p3"/>
       </reference>
       <name value="MII Example Lungenfunktion Provokation R tot P3"/>
       <exampleCanonical value="https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-r"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Observation"/>
-      </extension>
-      <reference>
-        <reference value="Observation/mii-exa-lungenfunktion-sr-total-p3"/>
-      </reference>
-      <name value="MII Example Lungenfunktion Provokation R tot P3"/>
-      <exampleCanonical value="https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-r-spezifisch"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1392,16 +1372,6 @@
         <valueString value="Observation"/>
       </extension>
       <reference>
-        <reference value="Observation/mii-exa-lungenfunktion-sr-total-p4"/>
-      </reference>
-      <name value="MII Example Lungenfunktion Provokation R tot P4"/>
-      <exampleCanonical value="https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-r-spezifisch"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Observation"/>
-      </extension>
-      <reference>
         <reference value="Observation/mii-exa-lungenfunktion-r-p5"/>
       </reference>
       <name value="MII Example Lungenfunktion Provokation R tot P5"/>
@@ -1412,9 +1382,39 @@
         <valueString value="Observation"/>
       </extension>
       <reference>
+        <reference value="Observation/mii-exa-lungenfunktion-sr-total-b"/>
+      </reference>
+      <name value="MII Example Lungenfunktion Provokation sR tot Base"/>
+      <exampleCanonical value="https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-r-spezifisch"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/mii-exa-lungenfunktion-sr-total-p3"/>
+      </reference>
+      <name value="MII Example Lungenfunktion Provokation sR tot P3"/>
+      <exampleCanonical value="https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-r-spezifisch"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/mii-exa-lungenfunktion-sr-total-p4"/>
+      </reference>
+      <name value="MII Example Lungenfunktion Provokation sR tot P4"/>
+      <exampleCanonical value="https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-r-spezifisch"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
         <reference value="Observation/mii-exa-lungenfunktion-sr-total-p5"/>
       </reference>
-      <name value="MII Example Lungenfunktion Provokation R tot P5"/>
+      <name value="MII Example Lungenfunktion Provokation sR tot P5"/>
       <exampleCanonical value="https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-r-spezifisch"/>
     </resource>
     <resource>
@@ -1472,20 +1472,20 @@
         <valueString value="Observation"/>
       </extension>
       <reference>
-        <reference value="Observation/mii-exa-lungenfunktion-rvl-tlc"/>
+        <reference value="Observation/mii-exa-lungenfunktion-rv"/>
       </reference>
-      <name value="MII Example Lungenfunktion RV/TLC"/>
-      <exampleCanonical value="https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-rvl-tlc"/>
+      <name value="MII Example Lungenfunktion RV"/>
+      <exampleCanonical value="https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-rv"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="Observation"/>
       </extension>
       <reference>
-        <reference value="Observation/mii-exa-lungenfunktion-rvl"/>
+        <reference value="Observation/mii-exa-lungenfunktion-rv-tlc"/>
       </reference>
-      <name value="MII Example Lungenfunktion RVL"/>
-      <exampleCanonical value="https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-rvl"/>
+      <name value="MII Example Lungenfunktion RV/TLC"/>
+      <exampleCanonical value="https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-rvl-tlc"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1584,7 +1584,7 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/mii-pr-lungenfunktion-rvl-tlc"/>
+        <reference value="StructureDefinition/mii-pr-lungenfunktion-rv-tlc"/>
       </reference>
       <name value="MII PR Lungenfunktion Anteil Residualvolumen an Lungenkapazität"/>
       <description value="Dieses Beobachtung beschreibt den prozentualen Anteil des Residualvolumen an der totalen Lungenkapazität."/>
@@ -1661,6 +1661,17 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
+        <reference value="StructureDefinition/mii-pr-lungenfunktion-diffusionskapazitaet"/>
+      </reference>
+      <name value="MII PR Lungenfunktion Diffusionskapzität"/>
+      <description value="Dieses Beobachtung beschreibt eine Messung der Diffusionskapazität."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
         <reference value="StructureDefinition/mii-pr-lungenfunktion-dlco"/>
       </reference>
       <name value="MII PR Lungenfunktion DLCO"/>
@@ -1720,28 +1731,6 @@
       </reference>
       <name value="MII PR Lungenfunktion FEV/FVC"/>
       <description value="Dieses Profil beschreibt die Messung des Tiffeneau-Index."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/mii-pr-lungenfunktion-viskositaet"/>
-      </reference>
-      <name value="MII PR Lungenfunktion Fluss"/>
-      <description value="Dieses Beobachtung beschreibt eine Flussmessung."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/mii-pr-lungenfunktion-diffusionskapazitaet"/>
-      </reference>
-      <name value="MII PR Lungenfunktion Fluss"/>
-      <description value="Dieses Beobachtung beschreibt eine Flussmessung."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1958,9 +1947,9 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/mii-pr-lungenfunktion-irv"/>
+        <reference value="StructureDefinition/mii-pr-lungenfunktion-irv-erv"/>
       </reference>
-      <name value="MII PR Lungenfunktion RV"/>
+      <name value="MII PR Lungenfunktion Reserve Volumen"/>
       <description value="Dieses Profil beschreibt die Messung des Reservevolumen."/>
       <exampleBoolean value="false"/>
     </resource>
@@ -1969,9 +1958,9 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/mii-pr-lungenfunktion-rvl"/>
+        <reference value="StructureDefinition/mii-pr-lungenfunktion-rv"/>
       </reference>
-      <name value="MII PR Lungenfunktion RVL"/>
+      <name value="MII PR Lungenfunktion RV"/>
       <description value="Dieses Profil beschreibt die Messung des Residualvolumen."/>
       <exampleBoolean value="false"/>
     </resource>
@@ -2079,6 +2068,17 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
+        <reference value="StructureDefinition/mii-pr-lungenfunktion-viskositaet"/>
+      </reference>
+      <name value="MII PR Lungenfunktion Viskosität"/>
+      <description value="Dieses Beobachtung beschreibt eine Viskositätsmessung."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
         <reference value="StructureDefinition/mii-pr-lungenfunktion-volumen"/>
       </reference>
       <name value="MII PR Lungenfunktion Volumen"/>
@@ -2178,6 +2178,17 @@
         <valueString value="ValueSet"/>
       </extension>
       <reference>
+        <reference value="ValueSet/mii-vs-lufu-lnc-irv-erv"/>
+      </reference>
+      <name value="MII VS Lufu LNC IRV &amp; ERV"/>
+      <description value="Import the ValueSet for lungfunction reserve volume"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
         <reference value="ValueSet/mii-vs-lufu-lnc-kco"/>
       </reference>
       <name value="MII VS Lufu LNC KCO"/>
@@ -2200,10 +2211,32 @@
         <valueString value="ValueSet"/>
       </extension>
       <reference>
+        <reference value="ValueSet/mii-vs-lufu-lnc-observable"/>
+      </reference>
+      <name value="MII VS Lufu LNC Observable"/>
+      <description value="Import the ValueSet for lungfunction"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
         <reference value="ValueSet/mii-vs-lufu-lnc-pef"/>
       </reference>
       <name value="MII VS Lufu LNC PEF"/>
       <description value="Import the ValueSet for lungfunction peak expiratory flow"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/mii-vs-lufu-lnc-procedure"/>
+      </reference>
+      <name value="MII VS Lufu LNC Procedure Report"/>
+      <description value="Import the ValueSet for lungfunction"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -2225,17 +2258,6 @@
         <reference value="ValueSet/mii-vs-lufu-lnc-rv"/>
       </reference>
       <name value="MII VS Lufu LNC RV"/>
-      <description value="Import the ValueSet for lungfunction reserve volume"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ValueSet"/>
-      </extension>
-      <reference>
-        <reference value="ValueSet/mii-vs-lufu-lnc-rvl"/>
-      </reference>
-      <name value="MII VS Lufu LNC RVL"/>
       <description value="Import the ValueSet for lungfunction Residual Volume"/>
       <exampleBoolean value="false"/>
     </resource>
@@ -2244,9 +2266,9 @@
         <valueString value="ValueSet"/>
       </extension>
       <reference>
-        <reference value="ValueSet/mii-vs-lufu-lnc-rvl-tlc"/>
+        <reference value="ValueSet/mii-vs-lufu-lnc-rv-tlc"/>
       </reference>
-      <name value="MII VS Lufu LNC RVL TLC"/>
+      <name value="MII VS Lufu LNC RV TLC"/>
       <description value="Import the ValueSet for lungfunction Residual Volume/Total Lung Capacity"/>
       <exampleBoolean value="false"/>
     </resource>
@@ -2343,6 +2365,17 @@
         <valueString value="ValueSet"/>
       </extension>
       <reference>
+        <reference value="ValueSet/mii-vs-lufu-sct-irv-erv"/>
+      </reference>
+      <name value="MII VS Lufu SCT IRV &amp; ERV"/>
+      <description value="Import the ValueSet for lungfunction reserve volume"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
         <reference value="ValueSet/mii-vs-lufu-sct-location"/>
       </reference>
       <name value="MII VS Lufu SCT Location"/>
@@ -2358,17 +2391,6 @@
       </reference>
       <name value="MII VS Lufu SCT MEF"/>
       <description value="Import the ValueSet for lungfunction maximum expiratory flow"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ValueSet"/>
-      </extension>
-      <reference>
-        <reference value="ValueSet/mii-vs-lufu-lnc-observable"/>
-      </reference>
-      <name value="MII VS Lufu SCT Observable"/>
-      <description value="Import the ValueSet for lungfunction"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -2402,28 +2424,6 @@
       </reference>
       <name value="MII VS Lufu SCT Procedure"/>
       <description value="Import the ValueSet for lungfunction"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ValueSet"/>
-      </extension>
-      <reference>
-        <reference value="ValueSet/mii-vs-lufu-lnc-procedure"/>
-      </reference>
-      <name value="MII VS Lufu SCT Procedure Report"/>
-      <description value="Import the ValueSet for lungfunction"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ValueSet"/>
-      </extension>
-      <reference>
-        <reference value="ValueSet/mii-vs-lufu-sct-rv"/>
-      </reference>
-      <name value="MII VS Lufu SCT RV"/>
-      <description value="Import the ValueSet for lungfunction reserve volume"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>

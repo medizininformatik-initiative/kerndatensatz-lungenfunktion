@@ -16,7 +16,7 @@
       },
       {
         "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-viskositaet",
-        "title": "MII PR Lungenfunktion Fluss"
+        "title": "MII PR Lungenfunktion Viskosität"
       },
       {
         "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-volumen",

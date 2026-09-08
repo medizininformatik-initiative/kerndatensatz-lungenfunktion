@@ -1,10 +1,10 @@
-# MII PR Lungenfunktion Fluss - MII IG Kerndatensatz-Modul Lungenfunktion v2027.0.0-ballot.rc2
+# MII PR Lungenfunktion Diffusionskapzität - MII IG Kerndatensatz-Modul Lungenfunktion v2027.0.0-ballot.rc2
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
-* **MII PR Lungenfunktion Fluss**
+* **MII PR Lungenfunktion Diffusionskapzität**
 
-## Resource Profile: MII PR Lungenfunktion Fluss 
+## Resource Profile: MII PR Lungenfunktion Diffusionskapzität 
 
 | | |
 | :--- | :--- |
@@ -63,7 +63,7 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-lungenfunk
       "url" : "http://hl7.org/fhir/StructureDefinition/translation"
     }]
   },
-  "title" : "MII PR Lungenfunktion Fluss",
+  "title" : "MII PR Lungenfunktion Diffusionskapzität",
   "_title" : {
     "extension" : [{
       "extension" : [{
@@ -87,7 +87,7 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-lungenfunk
       "value" : "https://www.medizininformatik-initiative.de/"
     }]
   }],
-  "description" : "Dieses Beobachtung beschreibt eine Flussmessung.",
+  "description" : "Dieses Beobachtung beschreibt eine Messung der Diffusionskapazität.",
   "_description" : {
     "extension" : [{
       "extension" : [{

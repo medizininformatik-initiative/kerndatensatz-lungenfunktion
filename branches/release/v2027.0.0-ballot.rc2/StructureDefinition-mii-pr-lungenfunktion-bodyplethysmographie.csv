@@ -208,8 +208,8 @@ Atomic ValueResultAtomic resultDataTestAnalyteBatteryOrganizer","",0,*,"Y","",""
 Atomic ValueResultAtomic resultDataTestAnalyteBatteryOrganizer","",0,*,"Y","","","Reference {[]} {[CanonicalType[https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-pef]]}
 ","Ergebnis","Ergebnis einer Beobachtung","Observations can contain observations.","Need to support individual results, or  groups of results, where the result grouping is arbitrary, but meaningful.","","","","","","","",,,,,"",,,,"DiagnosticReport.result",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","OBXs"
-"DiagnosticReport.result:RV","DiagnosticReport.result","RV","Data
-Atomic ValueResultAtomic resultDataTestAnalyteBatteryOrganizer","",0,*,"Y","","","Reference {[]} {[CanonicalType[https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-rv]]}
+"DiagnosticReport.result:IRV_ERV","DiagnosticReport.result","IRV_ERV","Data
+Atomic ValueResultAtomic resultDataTestAnalyteBatteryOrganizer","",0,*,"Y","","","Reference {[]} {[CanonicalType[https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-irv-erv]]}
 ","Ergebnis","Ergebnis einer Beobachtung","Observations can contain observations.","Need to support individual results, or  groups of results, where the result grouping is arbitrary, but meaningful.","","","","","","","",,,,,"",,,,"DiagnosticReport.result",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","OBXs"
 "DiagnosticReport.result:VC","DiagnosticReport.result","VC","Data
@@ -240,11 +240,11 @@ Atomic ValueResultAtomic resultDataTestAnalyteBatteryOrganizer","",0,1,"Y","",""
 Atomic ValueResultAtomic resultDataTestAnalyteBatteryOrganizer","",0,1,"Y","","","Reference {[]} {[CanonicalType[https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-tlc]]}
 ","Ergebnis","Ergebnis einer Beobachtung","Observations can contain observations.","Need to support individual results, or  groups of results, where the result grouping is arbitrary, but meaningful.","","","","","","","",,,,,"",,,,"DiagnosticReport.result",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","OBXs"
-"DiagnosticReport.result:RVL","DiagnosticReport.result","RVL","Data
-Atomic ValueResultAtomic resultDataTestAnalyteBatteryOrganizer","",0,1,"Y","","","Reference {[]} {[CanonicalType[https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-rvl]]}
+"DiagnosticReport.result:RV","DiagnosticReport.result","RV","Data
+Atomic ValueResultAtomic resultDataTestAnalyteBatteryOrganizer","",0,1,"Y","","","Reference {[]} {[CanonicalType[https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-rv]]}
 ","Ergebnis","Ergebnis einer Beobachtung","Observations can contain observations.","Need to support individual results, or  groups of results, where the result grouping is arbitrary, but meaningful.","","","","","","","",,,,,"",,,,"DiagnosticReport.result",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","OBXs"
-"DiagnosticReport.result:RVL_TLC","DiagnosticReport.result","RVL_TLC","Data
+"DiagnosticReport.result:RV_TLC","DiagnosticReport.result","RV_TLC","Data
 Atomic ValueResultAtomic resultDataTestAnalyteBatteryOrganizer","",0,1,"Y","","","Reference {[]} {[CanonicalType[https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-rvl-tlc]]}
 ","Ergebnis","Ergebnis einer Beobachtung","Observations can contain observations.","Need to support individual results, or  groups of results, where the result grouping is arbitrary, but meaningful.","","","","","","","",,,,,"",,,,"DiagnosticReport.result",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","OBXs"

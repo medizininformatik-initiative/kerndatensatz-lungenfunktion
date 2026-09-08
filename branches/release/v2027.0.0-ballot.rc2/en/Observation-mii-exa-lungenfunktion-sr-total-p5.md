@@ -1,10 +1,10 @@
-# MII Example Lungenfunktion Provokation R tot P5 - MII IG Kerndatensatz-Modul Lungenfunktion v2027.0.0-ballot.rc2
+# MII Example Lungenfunktion Provokation sR tot P5 - MII IG Kerndatensatz-Modul Lungenfunktion v2027.0.0-ballot.rc2
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
-* **MII Example Lungenfunktion Provokation R tot P5**
+* **MII Example Lungenfunktion Provokation sR tot P5**
 
-## Example Observation: MII Example Lungenfunktion Provokation R tot P5
+## Example Observation: MII Example Lungenfunktion Provokation sR tot P5
 
 -------
 

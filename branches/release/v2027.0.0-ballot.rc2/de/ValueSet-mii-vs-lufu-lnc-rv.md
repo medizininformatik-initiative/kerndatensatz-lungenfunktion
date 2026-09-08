@@ -13,11 +13,11 @@
 | **Copyright/Rechtliches**: This value set includes content from SNOMED CT, which is copyright © 2002+ International Health Terminology Standards Development Organisation (IHTSDO), and distributed by agreement between IHTSDO and HL7. Implementer use of SNOMED CT is not covered by this agreement | |
 
  
-Import the ValueSet for lungfunction reserve volume 
+Import the ValueSet for lungfunction Residual Volume 
 
  **References** 
 
-* [MII PR Lungenfunktion RV](StructureDefinition-mii-pr-lungenfunktion-irv.md)
+* [MII PR Lungenfunktion RV](StructureDefinition-mii-pr-lungenfunktion-rv.md)
 
 ### Logical Definition (CLD)
 
@@ -55,7 +55,7 @@ Import the ValueSet for lungfunction reserve volume
       "value" : "https://www.medizininformatik-initiative.de/"
     }]
   }],
-  "description" : "Import the ValueSet for lungfunction reserve volume",
+  "description" : "Import the ValueSet for lungfunction Residual Volume",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",
@@ -68,24 +68,32 @@ Import the ValueSet for lungfunction reserve volume
     "include" : [{
       "system" : "http://loinc.org",
       "concept" : [{
-        "code" : "19924-0",
-        "display" : "Expiratory reserve"
+        "code" : "20146-7",
+        "display" : "Residual volume"
       },
       {
-        "code" : "19923-2",
-        "display" : "Expiratory reserve Predicted"
+        "code" : "20145-9",
+        "display" : "Residual volume Predicted"
       },
       {
-        "code" : "100759-0",
-        "display" : "Inspiratory reserve [Volume] Respiratory system by Spirometry"
+        "code" : "20143-4",
+        "display" : "Residual volume by Helium rebreathing"
       },
       {
-        "code" : "19921-6",
-        "display" : "Expiratory reserve by Helium rebreathing"
+        "code" : "81453-3",
+        "display" : "Residual volume --post bronchodilation"
       },
       {
-        "code" : "19922-4",
-        "display" : "Expiratory reserve by Helium single breath"
+        "code" : "81452-5",
+        "display" : "Residual volume --pre bronchodilation"
+      },
+      {
+        "code" : "20144-2",
+        "display" : "Residual volume by Helium single breath"
+      },
+      {
+        "code" : "94125-2",
+        "display" : "Residual volume/Predicted by Plethysmograph body box"
       }]
     }]
   }
