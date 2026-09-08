@@ -1,11 +1,11 @@
 {
   "resourceType": "ValueSet",
   "status": "active",
-  "name": "MII_VS_Lufu_SCT_RV",
-  "id": "mii-vs-lufu-sct-rv",
-  "title": "MII VS Lufu SCT RV",
-  "description": "Import the ValueSet for lungfunction reserve volume",
-  "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/ValueSet/mii-vs-lufu-sct-rv",
+  "name": "MII_VS_Lufu_LNC_RV_TLC",
+  "id": "mii-vs-lufu-lnc-rv-tlc",
+  "title": "MII VS Lufu LNC RV TLC",
+  "description": "Import the ValueSet for lungfunction Residual Volume/Total Lung Capacity",
+  "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/ValueSet/mii-vs-lufu-lnc-rv-tlc",
   "publisher": "Medizininformatik Initiative",
   "contact": [
     {
@@ -29,16 +29,19 @@
   "compose": {
     "include": [
       {
-        "system": "http://snomed.info/sct",
-        "version": "http://snomed.info/sct/900000000000207008/version/20260701",
+        "system": "http://loinc.org",
         "concept": [
           {
-            "code": "55532004",
-            "display": "Expiratory reserve volume (observable entity)"
+            "code": "43252-6",
+            "display": "Residual volume/Total capacity Predicted"
           },
           {
-            "code": "55562005",
-            "display": "Inspiratory reserve volume (observable entity)"
+            "code": "81455-8",
+            "display": "Residual volume/Total capacity --post bronchodilation"
+          },
+          {
+            "code": "81454-1",
+            "display": "Residual volume/Total capacity --pre bronchodilation"
           }
         ]
       }

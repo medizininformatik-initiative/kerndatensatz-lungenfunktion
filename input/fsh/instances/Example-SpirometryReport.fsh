@@ -16,5 +16,6 @@ Title: "MII Example Lungenfunktion Spirometrie Befund"
 * result[+] = Reference(Observation/mii-exa-lungenfunktion-mef75)
 * result[+] = Reference(Observation/mii-exa-lungenfunktion-pef)
 * result[+] = Reference(Observation/mii-exa-lungenfunktion-vc)
+* result[+] = Reference(Observation/mii-exa-lungenfunktion-erv)
 * conclusion = "Increased lung compliance"
 * conclusionCode = $SCT#21368004 "Increased lung compliance (finding)"

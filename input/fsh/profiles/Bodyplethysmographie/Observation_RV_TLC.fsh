@@ -1,7 +1,7 @@
 //Head
-Profile: MII_PR_Lungenfunktion_RVL_TLC
+Profile: MII_PR_Lungenfunktion_RV_TLC
 Parent: MII_PR_Lungenfunktion_Prozent
-Id: mii-pr-lungenfunktion-rvl-tlc
+Id: mii-pr-lungenfunktion-rv-tlc
 Title: "MII PR Lungenfunktion Anteil Residualvolumen an Lungenkapazität"
 Description: "Dieses Beobachtung beschreibt den prozentualen Anteil des Residualvolumen an der totalen Lungenkapazität."
 * ^url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-rvl-tlc"
@@ -16,9 +16,9 @@ Description: "Dieses Beobachtung beschreibt den prozentualen Anteil des Residual
 * insert LicenseCodeableCCBY40
 //Profile
 * partOf only Reference(MII_PR_Lungenfunktion_Bodyplethysmographie_Messung)
-* code.coding[loinc] from MII_VS_Lufu_LNC_RVL_TLC
+* code.coding[loinc] from MII_VS_Lufu_LNC_RV_TLC
 * code.coding[sct] = $SCT-version#1366666000 "Residual volume/total lung capacity ratio (observable entity)" 
 * component[predicted].code.coding[sct] = $SCT-version#TODO
-* component[predicted].code.coding[loinc] from MII_VS_Lufu_LNC_RVL_TLC
+* component[predicted].code.coding[loinc] from MII_VS_Lufu_LNC_RV_TLC
 * component[percentPredicted].code.coding[sct] = $SCT-version#TODO
 * component[percentPredicted].code.coding[loinc] = $loinc#TODO

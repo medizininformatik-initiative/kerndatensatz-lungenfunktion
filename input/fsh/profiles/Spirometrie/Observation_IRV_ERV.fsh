@@ -1,13 +1,13 @@
 //Head
-Profile: MII_PR_Lungenfunktion_RV
+Profile: MII_PR_Lungenfunktion_IRV_ERV
 Parent: MII_PR_Lungenfunktion_Volumen
-Id: mii-pr-lungenfunktion-irv
-Title: "MII PR Lungenfunktion RV"
+Id: mii-pr-lungenfunktion-irv-erv
+Title: "MII PR Lungenfunktion Reserve Volumen"
 Description: "Dieses Profil beschreibt die Messung des Reservevolumen."
-* ^url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-rv"
+* ^url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-irv-erv"
 //Translation Meta
-* insert Translation(^name, en-US, MII_PR_Lungfunction_RV)
-* insert Translation(^title, en-US, MII PR Lungfunction RV)
+* insert Translation(^name, en-US, MII_PR_Lungfunction_IRV_ERV)
+* insert Translation(^title, en-US, MII PR Lungfunction Reserve Volume)
 * insert Translation(^description, en-US, The profile describes a observation for the reserve volume.)
 //Meta
 * insert PR_CS_VS_Version
@@ -16,9 +16,9 @@ Description: "Dieses Profil beschreibt die Messung des Reservevolumen."
 * insert LicenseCodeableCCBY40
 //Profile
 * partOf only Reference(MII_PR_Lungenfunktion_Spirometrie_Messung)
-* code.coding[loinc] from MII_VS_Lufu_LNC_RV (required)
-* code.coding[sct] from MII_VS_Lufu_SCT_RV (required)
+* code.coding[loinc] from MII_VS_Lufu_LNC_IRV_ERV (required)
+* code.coding[sct] from MII_VS_Lufu_SCT_IRV_ERV (required)
 * component[predicted].code.coding[sct] = $SCT-version#TODO
-* component[predicted].code.coding[loinc] from MII_VS_Lufu_LNC_RV
+* component[predicted].code.coding[loinc] from MII_VS_Lufu_LNC_IRV_ERV
 * component[percentPredicted].code.coding[sct] = $SCT-version#TODO
 * component[percentPredicted].code.coding[loinc] = $loinc#TODO

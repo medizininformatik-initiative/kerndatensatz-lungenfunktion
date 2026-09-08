@@ -28,7 +28,7 @@ Description: "Diese Ressource beschreibt einen Befunde der Bodyplethysmographie"
     IC 0..1 MS and
     MEF 0..* MS and
     PEF 0..* MS and
-    RV 0..* MS and
+    IRV_ERV 0..* MS and
     VC 0..* MS and
     FRC 0..1 MS and
     R_tot 0..1 MS and
@@ -36,8 +36,8 @@ Description: "Diese Ressource beschreibt einen Befunde der Bodyplethysmographie"
     sR_eff 0..1 MS and
     sG_tot 0..1 MS and
     TLC 0..1 MS and
-    RVL 0..1 MS and
-    RVL_TLC 0..1 MS
+    RV 0..1 MS and
+    RV_TLC 0..1 MS
 * result[BF] only Reference(MII_PR_Lungenfunktion_BF)
 * result[FEV_FVC] only Reference(MII_PR_Lungenfunktion_FEV_FVC)
 * result[FEV] only Reference(MII_PR_Lungenfunktion_FEV)
@@ -45,7 +45,7 @@ Description: "Diese Ressource beschreibt einen Befunde der Bodyplethysmographie"
 * result[IC] only Reference(MII_PR_Lungenfunktion_IC)
 * result[MEF] only Reference(MII_PR_Lungenfunktion_MEF)
 * result[PEF] only Reference(MII_PR_Lungenfunktion_PEF)
-* result[RV] only Reference(MII_PR_Lungenfunktion_RV)
+* result[IRV_ERV] only Reference(MII_PR_Lungenfunktion_IRV_ERV)
 * result[VC] only Reference(MII_PR_Lungenfunktion_VC)
 * result[FRC] only Reference(MII_PR_Lungenfunktion_FRC)
 * result[R_tot] only Reference(MII_PR_Lungenfunktion_R)
@@ -53,5 +53,5 @@ Description: "Diese Ressource beschreibt einen Befunde der Bodyplethysmographie"
 * result[sR_eff] only Reference(MII_PR_Lungenfunktion_R_Effektiv)
 * result[sG_tot] only Reference(MII_PR_Lungenfunktion_sG_Total)
 * result[TLC] only Reference(MII_PR_Lungenfunktion_TLC)
-* result[RVL] only Reference(MII_PR_Lungenfunktion_RVL)
-* result[RVL_TLC] only Reference(MII_PR_Lungenfunktion_RVL_TLC)
+* result[RV] only Reference(MII_PR_Lungenfunktion_RV)
+* result[RV_TLC] only Reference(MII_PR_Lungenfunktion_RV_TLC)

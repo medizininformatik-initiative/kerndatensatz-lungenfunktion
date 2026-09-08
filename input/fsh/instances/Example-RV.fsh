@@ -1,7 +1,7 @@
-Instance: mii-exa-lungenfunktion-rvl
-InstanceOf: MII_PR_Lungenfunktion_RVL
+Instance: mii-exa-lungenfunktion-rv
+InstanceOf: MII_PR_Lungenfunktion_RV
 Usage: #example
-Title: "MII Example Lungenfunktion RVL"
+Title: "MII Example Lungenfunktion RV"
 * partOf = Reference(Procedure/mii-exa-lungenfunktion-bodyplethysmographie-messung)
 * status = #final
 * category.coding = $obs-category#procedure

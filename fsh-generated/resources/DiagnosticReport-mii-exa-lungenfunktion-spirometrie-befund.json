@@ -59,6 +59,9 @@
     },
     {
       "reference": "Observation/mii-exa-lungenfunktion-vc"
+    },
+    {
+      "reference": "Observation/mii-exa-lungenfunktion-erv"
     }
   ],
   "conclusion": "Increased lung compliance",

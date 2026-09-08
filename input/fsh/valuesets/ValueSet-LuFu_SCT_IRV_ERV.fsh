@@ -1,6 +1,6 @@
-ValueSet: MII_VS_Lufu_SCT_RV
-Id: mii-vs-lufu-sct-rv
-Title: "MII VS Lufu SCT RV"
+ValueSet: MII_VS_Lufu_SCT_IRV_ERV
+Id: mii-vs-lufu-sct-irv-erv
+Title: "MII VS Lufu SCT IRV & ERV"
 Description: "Import the ValueSet for lungfunction reserve volume"
 * insert Publisher
 * insert PR_CS_VS_Version

@@ -1,5 +1,5 @@
 Instance: mii-exa-lungenfunktion-erv
-InstanceOf: MII_PR_Lungenfunktion_RV
+InstanceOf: MII_PR_Lungenfunktion_IRV_ERV
 Usage: #example
 Title: "MII Example Lungenfunktion ERV"
 * partOf = Reference(Procedure/mii-exa-lungenfunktion-spirometrie-messung)

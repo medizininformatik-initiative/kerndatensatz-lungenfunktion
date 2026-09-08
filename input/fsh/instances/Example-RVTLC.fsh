@@ -1,5 +1,5 @@
-Instance: mii-exa-lungenfunktion-rvl-tlc
-InstanceOf: MII_PR_Lungenfunktion_RVL_TLC
+Instance: mii-exa-lungenfunktion-rv-tlc
+InstanceOf: MII_PR_Lungenfunktion_RV_TLC
 Usage: #example
 Title: "MII Example Lungenfunktion RV/TLC"
 * partOf = Reference(Procedure/mii-exa-lungenfunktion-bodyplethysmographie-messung)
@@ -12,7 +12,7 @@ Title: "MII Example Lungenfunktion RV/TLC"
 * interpretation = $interpretation#N
 * method = $SCT#249862003 "Sitting upright (finding)"
 * referenceRange.low = 23.73 '%'
-* derivedFrom[0] = Reference(Observation/mii-exa-lungenfunktion-rvl)
+* derivedFrom[0] = Reference(Observation/mii-exa-lungenfunktion-rv)
 * derivedFrom[+] = Reference(Observation/mii-exa-lungenfunktion-tlc)
 * component[predicted].code = $loinc#43252-6 "Residual volume/Total capacity Predicted"
 * component[percentPredicted].code = $SCT#TODO
