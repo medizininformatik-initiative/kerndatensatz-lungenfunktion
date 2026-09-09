@@ -78,8 +78,20 @@ werden können.</p>
 </div>
 
 ---
+#### Verion 2027.0.0-ballot.rc2
 
-#### Version 2027.0.0-ballot
+**Datum:** 2026-09-09
+
+* **Hinzugefügt** Patient- und Encounter-Beispile Ressourcen
+* **Geändert** Nested Slicings in Observation.component umgezogen
+* **Behoben** Typofixes in Beispielen und in Ressourcenbeschreibungen
+* **Geändert** Observation.component.value in component-Slicings eingeordnet
+* **Geändert** SCT-Version auf 2026-07-01 gesetzt
+* **Geändert** Zusammenfügen von separate Aliases-Seite und Anpassung der Ressourcen
+* **Geändert** Umbenennung Residualvolumen Ressource von RVL zu RV
+* **Geändert** Umbenennung Reservevolumen Ressource von RV zu IRV_ERV
+
+#### Version 2027.0.0-ballot.rc1
 
 **Datum:** 2026-09-01
 
