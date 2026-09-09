@@ -9,8 +9,6 @@
   M9-Entscheidung: Seite BEHALTEN (32 ValueSets gemessen).
 -->
 
-### Value Sets
-
 Diese Seite beschreibt die ValueSets des Moduls **Lungenfunktion**
 (Namenskonvention `MII_VS_<Modul>_<Name>`). Das Modul definiert 32 ValueSets:
 20 über LOINC-Codes (`mii-vs-lufu-lnc-…`) für die Messgrößen und den

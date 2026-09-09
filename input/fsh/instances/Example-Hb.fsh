@@ -4,12 +4,12 @@ Usage: #example
 Title: "MII Example Lungenfunktion Hb"
 * partOf = Reference(Procedure/mii-exa-lungenfunktion-diffusion-messung)
 * status = #final
-* category.coding = $obs-category#procedure
+* category.coding = $observation-category#procedure
 * code = $loinc#718-7 "Hemoglobin [Mass/volume] in Blood"
-* subject = Reference(Patient/mii-exa-person-patient-1)
+* subject = Reference(Patient/mii-exa-lungenfunktion-patient)
 * issued = "2024-07-19T13:03:20+02:00"
 * valueQuantity = 15 'g{Hemoglobin}/dL'
-* interpretation = $interpretation#N
-* method = $SCT#249862003 "Sitting upright (finding)"
+* interpretation = $v3-ObseravtionInterpretation#N
+* method = $sct#249862003 "Sitting upright (finding)"
 * referenceRange.low = 13.5 'g{Hemoglobin}/dL'
 * referenceRange.high = 17.2 'g{Hemoglobin}/dL'

@@ -1,6 +1,6 @@
-ValueSet: MII_VS_Lufu_SCT_RV
-Id: mii-vs-lufu-sct-rv
-Title: "MII VS Lufu SCT RV"
+ValueSet: MII_VS_Lufu_SCT_IRV_ERV
+Id: mii-vs-lufu-sct-irv-erv
+Title: "MII VS Lufu SCT IRV & ERV"
 Description: "Import the ValueSet for lungfunction reserve volume"
 * insert Publisher
 * insert PR_CS_VS_Version
@@ -8,5 +8,5 @@ Description: "Import the ValueSet for lungfunction reserve volume"
 * insert PR_CS_VS_Date
 * ^meta.profile = "http://hl7.org/fhir/StructureDefinition/shareablevalueset"
 * ^experimental = false
-* $SCT#55532004 "Expiratory reserve volume (observable entity)"
-* $SCT#55562005 "Inspiratory reserve volume (observable entity)"
+* $sct#55532004 "Expiratory reserve volume (observable entity)"
+* $sct#55562005 "Inspiratory reserve volume (observable entity)"

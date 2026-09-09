@@ -16,7 +16,7 @@
     }
   ],
   "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-kcoc",
-  "version": "2027.0.0-ballot.rc1",
+  "version": "2027.0.0-ballot",
   "name": "MII_PR_Lungenfunktion_KCOc",
   "_name": {
     "extension": [
@@ -54,7 +54,7 @@
     ]
   },
   "status": "active",
-  "date": "2026-09-01",
+  "date": "2026-09-02",
   "publisher": "Medizininformatik Initiative",
   "contact": [
     {
@@ -107,17 +107,12 @@
       {
         "id": "Observation.code.coding:sct",
         "path": "Observation.code.coding",
-        "sliceName": "sct"
-      },
-      {
-        "id": "Observation.code.coding:sct.code",
-        "path": "Observation.code.coding.code",
-        "patternCode": "TODO"
-      },
-      {
-        "id": "Observation.code.coding:sct.display",
-        "path": "Observation.code.coding.display",
-        "patternString": "TODO"
+        "sliceName": "sct",
+        "patternCoding": {
+          "code": "TODO",
+          "system": "http://snomed.info/sct",
+          "version": "http://snomed.info/sct/900000000000207008/version/20250701"
+        }
       },
       {
         "id": "Observation.code.coding:loinc",

@@ -11,8 +11,6 @@
      Release-Pull-Requests. Einen veröffentlichten Abschnitt danach nicht mehr
      ändern. -->
 
-### Änderungshistorie
-
 Diese Seite hält die Änderungen zwischen den veröffentlichten Versionen des
 Moduls **Lungenfunktion (Pulmonary Function)** fest, die neueste Version zuerst. Sie folgt
 [Keep a Changelog](https://keepachangelog.com/de/1.1.0/) und dem

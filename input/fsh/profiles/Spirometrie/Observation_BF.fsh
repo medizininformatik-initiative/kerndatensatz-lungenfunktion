@@ -28,11 +28,11 @@ Description: "Dieses Profil beschreibt die Messung der Atemfrequenz."
 * category MS
 * category ^short = "Kategorie"
 * category ^definition = "Klassifikation in diagnostischen Fachbereich und Gruppe"
-* category[VSCat] = $obs-category#vital-signs
+* category[VSCat] = $observation-category#vital-signs
 * code MS
 * code ^short = "Code"
 * code ^definition = "Ein Code für die zu befundende Beobachtung"
-* code.coding[snomed] = $SCT-version#271625008 "Rate of spontaneous respiration (observable entity)"
+* code.coding[snomed] = $sct#271625008 "Rate of spontaneous respiration (observable entity)"
 * code.coding.system 1.. MS
 * code.coding.code 1.. MS
 * code.coding.display MS
@@ -81,33 +81,37 @@ Description: "Dieses Profil beschreibt die Messung der Atemfrequenz."
 * component contains
     predicted 0..1 MS and
     percentPredicted 0..1 MS
-* component.valueQuantity.value MS
-* component.valueQuantity.unit MS
-* component.valueQuantity.system MS
-* component.valueQuantity.code MS
+* component[predicted] ^short = "Vorhersage"
+* component[predicted] ^definition = "vorhergesagtes Messergebnis"
 * component[predicted].code.coding ^slicing.discriminator.type = #value
 * component[predicted].code.coding ^slicing.discriminator.path = "$this"
 * component[predicted].code.coding ^slicing.rules = #open
 * component[predicted].code.coding contains
     sct 0..1 MS and
     loinc 0..1 MS
-* component[predicted].code.coding[loinc].code from MII_VS_Lufu_LNC_Observable (required)
-* component[predicted].code.coding[sct].code from MII_VS_Lufu_SCT_Observable (required)
+* component[predicted].code.coding[loinc] from MII_VS_Lufu_LNC_Observable (required)
+* component[predicted].code.coding[sct] from MII_VS_Lufu_SCT_Observable (required)
+* component[predicted].valueQuantity.value MS
+* component[predicted].valueQuantity.unit MS
+* component[predicted].valueQuantity.system MS
+* component[predicted].valueQuantity.code MS
+* component[predicted].valueQuantity.unit = "L"
+* component[predicted].valueQuantity.system = $ucum
+* component[predicted].valueQuantity.code = $ucum#L
+* component[percentPredicted] ^short = "Verhältnis"
+* component[percentPredicted] ^definition = "Verhältnis von Messwert zu vorhergesagtem Ergebnis"
 * component[percentPredicted].code.coding ^slicing.discriminator.type = #value
 * component[percentPredicted].code.coding ^slicing.discriminator.path = "$this"
 * component[percentPredicted].code.coding ^slicing.rules = #open
 * component[percentPredicted].code.coding contains
     sct 0..1 MS and
     loinc 0..1 MS
-* component[percentPredicted].code.coding[loinc].code from MII_VS_Lufu_LNC_Observable (required)
-* component[percentPredicted].code.coding[sct].code from MII_VS_Lufu_SCT_Observable (required)
-* component[predicted] ^short = "Vorhersage"
-* component[predicted] ^definition = "vorhergesagtes Messergebnis"
-* component[predicted].valueQuantity.unit = "L"
-* component[predicted].valueQuantity.system = $ucum
-* component[predicted].valueQuantity.code = $ucum#L
-* component[percentPredicted] ^short = "Verhältnis"
-* component[percentPredicted] ^definition = "Verhältnis von Messwert zu vorhergesagtem Ergebnis"
+* component[percentPredicted].code.coding[loinc] from MII_VS_Lufu_LNC_Observable (required)
+* component[percentPredicted].code.coding[sct] from MII_VS_Lufu_SCT_Observable (required)
+* component[percentPredicted].valueQuantity.value MS
+* component[percentPredicted].valueQuantity.unit MS
+* component[percentPredicted].valueQuantity.system MS
+* component[percentPredicted].valueQuantity.code MS
 * component[percentPredicted].valueQuantity.unit = "%"
 * component[percentPredicted].valueQuantity.system = $ucum
 * component[percentPredicted].valueQuantity.code = $ucum#%

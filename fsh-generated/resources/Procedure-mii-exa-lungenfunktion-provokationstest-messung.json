@@ -12,6 +12,7 @@
       {
         "code": "23426006",
         "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/900000000000207008/version/20250701",
         "display": "Measurement of respiratory function (procedure)"
       }
     ]
@@ -21,15 +22,16 @@
       {
         "code": "252520007",
         "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/900000000000207008/version/20250701",
         "display": "Methacholine challenge (procedure)"
       }
     ]
   },
   "subject": {
-    "reference": "Patient/mii-exa-person-patient-1"
+    "reference": "Patient/mii-exa-lungenfunktion-patient"
   },
   "encounter": {
-    "reference": "Encounter/mii-exa-fall-kontakt-gesundheitseinrichtung-11"
+    "reference": "Encounter/mii-exa-lungenfunktion-kontakt"
   },
   "performedDateTime": "2024-07-19T12:03:30+02:00",
   "outcome": {
@@ -37,13 +39,14 @@
       {
         "code": "385669000",
         "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/900000000000207008/version/20250701",
         "display": "Successful (qualifier value)"
       }
     ]
   },
   "report": [
     {
-      "reference": "DiagnosticReport/mii-exa-lungenfunktion-provokationstest"
+      "reference": "DiagnosticReport/mii-exa-lungenfunktion-provokationstest-befund"
     }
   ]
 }

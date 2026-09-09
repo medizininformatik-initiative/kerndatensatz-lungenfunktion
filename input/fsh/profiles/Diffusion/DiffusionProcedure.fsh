@@ -1,6 +1,6 @@
 //Head
 Profile: MII_PR_Lungenfunktion_Diffusion_Messung
-Parent: $miiProcedure
+Parent: $MII-Procedure
 Id: mii-pr-lungenfunktion-diffusion-messung
 Title: "MII PR Lungenfunktion Diffusion Messung"
 Description: "Beschreibt die Tätigkeiten, wie eine Diffusion durchgeführt wird"
@@ -16,8 +16,8 @@ Description: "Beschreibt die Tätigkeiten, wie eine Diffusion durchgeführt wird
 * insert LicenseCodeableCCBY40
 //Profile
 * partOf MS
-* category.coding[sct] = $SCT-version#23426006 "Measurement of respiratory function (procedure)"
-* code.coding[sct] = $SCT-version#36421003 "Carbon monoxide diffusing capacity measurement (procedure)"
+* category.coding[sct] = $sct#23426006 "Measurement of respiratory function (procedure)"
+* code.coding[sct] = $sct#36421003 "Carbon monoxide diffusing capacity measurement (procedure)"
 * subject only Reference(Patient)
 * outcome MS
 * outcome from http://hl7.org/fhir/ValueSet/procedure-outcome (preferred)

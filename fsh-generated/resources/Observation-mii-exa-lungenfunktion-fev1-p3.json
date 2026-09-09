@@ -21,7 +21,7 @@
       "reference": "Procedure/mii-exa-lungenfunktion-provokationstest-messung"
     },
     {
-      "reference": "MedicationAdminstration/mii-exa-lungenfunktion-dosis-gabe-1"
+      "reference": "MedicationAdministration/mii-exa-lungenfunktion-dosis-gabe-1"
     }
   ],
   "status": "final",
@@ -30,12 +30,13 @@
       {
         "code": "59328004",
         "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/900000000000207008/version/20250701",
         "display": "Forced expired volume in 1 second (observable entity)"
       }
     ]
   },
   "subject": {
-    "reference": "Patient/mii-exa-person-patient-1"
+    "reference": "Patient/mii-exa-lungenfunktion-patient"
   },
   "issued": "2024-07-19T13:03:20+02:00",
   "valueQuantity": {
@@ -58,6 +59,7 @@
       {
         "code": "249862003",
         "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/900000000000207008/version/20250701",
         "display": "Sitting upright (finding)"
       }
     ]
@@ -69,6 +71,7 @@
           {
             "code": "310520004",
             "system": "http://snomed.info/sct",
+            "version": "http://snomed.info/sct/900000000000207008/version/20250701",
             "display": "Expected forced expired volume in 1 second (observable entity)"
           }
         ]

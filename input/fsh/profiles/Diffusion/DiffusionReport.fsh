@@ -16,7 +16,7 @@ Description: "Diese Ressource beschreibt einen Befunde der Diffusions-Messung"
 * insert LicenseCodeableCCBY40
 //Profile
 * code.coding[loinc] = $loinc#TODO
-* code.coding[sct] = $SCT-version#36421003 "Carbon monoxide diffusing capacity measurement (procedure)"
+* code.coding[sct] = $sct#36421003 "Carbon monoxide diffusing capacity measurement (procedure)"
 * result ^slicing.discriminator.type = #type
 * result ^slicing.discriminator.path = "$this"
 * result ^slicing.rules = #open
@@ -25,10 +25,10 @@ Description: "Diese Ressource beschreibt einen Befunde der Diffusions-Messung"
     DLCOc 0..1 MS and
     KCO 0..1 MS and
     KCOc 0..1 MS and
-    RV 0..1 MS and
+    IRV_ERV 0..1 MS and
     TLC 0..1 MS and
-    RVL 0..1 MS and
-    RVL_TLC 0..1 MS and
+    RV 0..1 MS and
+    RV_TLC 0..1 MS and
     FRC 0..1 MS and
     VA 0..1 MS and
     VC 0..1 MS and
@@ -37,10 +37,10 @@ Description: "Diese Ressource beschreibt einen Befunde der Diffusions-Messung"
 * result[DLCOc] only Reference(MII_PR_Lungenfunktion_DLCOc)
 * result[KCO] only Reference(MII_PR_Lungenfunktion_KCO)
 * result[KCOc] only Reference(MII_PR_Lungenfunktion_KCOc)
-* result[RV] only Reference(MII_PR_Lungenfunktion_RV)
+* result[IRV_ERV] only Reference(MII_PR_Lungenfunktion_IRV_ERV)
 * result[TLC] only Reference(MII_PR_Lungenfunktion_TLC)
-* result[RVL] only Reference(MII_PR_Lungenfunktion_RVL)
-* result[RVL_TLC] only Reference(MII_PR_Lungenfunktion_RVL_TLC)
+* result[RV] only Reference(MII_PR_Lungenfunktion_RV)
+* result[RV_TLC] only Reference(MII_PR_Lungenfunktion_RV_TLC)
 * result[FRC] only Reference(MII_PR_Lungenfunktion_FRC)
 * result[VA] only Reference(MII_PR_Lungenfunktion_VA)
 * result[VC] only Reference(MII_PR_Lungenfunktion_VC)

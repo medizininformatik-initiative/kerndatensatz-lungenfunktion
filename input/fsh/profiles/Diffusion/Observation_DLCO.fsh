@@ -17,9 +17,9 @@ Description: "Dieses Profil beschreibt die Messung der Diffusionskapazität von 
 //Profile
 * partOf only Reference(MII_PR_Lungenfunktion_Diffusion_Messung)
 * code.coding[loinc] from MII_VS_Lufu_LNC_DLCO (required)
-* code.coding[sct] = $SCT-version#1366665001 "Single breath carbon monoxide diffusing capacity (observable entity)"
+* code.coding[sct] = $sct#1366665001 "Single breath carbon monoxide diffusing capacity (observable entity)"
 * method from MII_VS_Lufu_SCT_Technique (required)
-* component[predicted].code.coding[sct] = $SCT-version#TODO
+* component[predicted].code.coding[sct] = $sct#TODO
 * component[predicted].code.coding[loinc] from MII_VS_Lufu_LNC_DLCO (required)
-* component[percentPredicted].code.coding[sct] = $SCT-version#TODO
+* component[percentPredicted].code.coding[sct] = $sct#TODO
 * component[percentPredicted].code.coding[loinc] from MII_VS_Lufu_LNC_DLCO (required)

@@ -17,10 +17,10 @@ Description: "Dieses Profil beschreibt die Messung der korrigierten Diffusionska
 //Profile
 * partOf only Reference(MII_PR_Lungenfunktion_Diffusion_Messung)
 * code.coding[loinc] from MII_VS_Lufu_LNC_DLCOc (required)
-* code.coding[sct] = $SCT-version#TODO "TODO"
+* code.coding[sct] = $sct#TODO "TODO"
 * method from MII_VS_Lufu_SCT_Technique (required)
 * derivedFrom only Reference(MII_PR_Lungenfunktion_Hb)
-* component[predicted].code.coding[sct] = $SCT-version#TODO
+* component[predicted].code.coding[sct] = $sct#TODO
 * component[predicted].code.coding[loinc] = $loinc#TODO
-* component[percentPredicted].code.coding[sct] = $SCT-version#TODO
+* component[percentPredicted].code.coding[sct] = $sct#TODO
 * component[percentPredicted].code.coding[loinc] = $loinc#TODO

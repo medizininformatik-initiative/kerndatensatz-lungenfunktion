@@ -1,6 +1,6 @@
 //Head
 Profile: MII_PR_Lungenfunktion_Provokationstest_Messung
-Parent: $miiProcedure
+Parent: $MII-Procedure
 Id: mii-pr-lungenfunktion-provokationstest-messung
 Title: "MII PR Lungenfunktion Provokations Messung"
 Description: "Beschreibt die Tätigkeiten, wie eine Diffusion durchgeführt wird"
@@ -16,8 +16,8 @@ Description: "Beschreibt die Tätigkeiten, wie eine Diffusion durchgeführt wird
 * insert LicenseCodeableCCBY40
 //Profile
 * partOf MS
-* category.coding[sct] = $SCT#323426006 "Measurement of respiratory function (procedure)"
-* code.coding[sct] = $SCT-version#252520007 "Methacholine challenge (procedure)"
+* category.coding[sct] = $sct#323426006 "Measurement of respiratory function (procedure)"
+* code.coding[sct] = $sct#252520007 "Methacholine challenge (procedure)"
 * subject only Reference(Patient)
 * outcome MS
 * outcome from http://hl7.org/fhir/ValueSet/procedure-outcome (preferred)

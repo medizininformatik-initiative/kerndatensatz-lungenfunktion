@@ -1,9 +1,9 @@
 {
   "resourceType": "Observation",
-  "id": "mii-exa-lungenfunktion-rvl-tlc",
+  "id": "mii-exa-lungenfunktion-rv",
   "meta": {
     "profile": [
-      "https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-rvl-tlc"
+      "https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-rv"
     ]
   },
   "category": [
@@ -25,19 +25,19 @@
   "code": {
     "coding": [
       {
-        "code": "1366666000",
-        "system": "http://snomed.info/sct",
-        "display": "Residual volume/total lung capacity ratio (observable entity)"
+        "code": "20146-7",
+        "system": "http://loinc.org",
+        "display": "Residual volume"
       }
     ]
   },
   "subject": {
-    "reference": "Patient/mii-exa-person-patient-1"
+    "reference": "Patient/mii-exa-lungenfunktion-patient"
   },
   "issued": "2024-07-19T13:03:20+02:00",
   "valueQuantity": {
-    "value": 50.95,
-    "code": "%",
+    "value": 3.01,
+    "code": "L",
     "system": "http://unitsofmeasure.org"
   },
   "interpretation": [
@@ -55,6 +55,7 @@
       {
         "code": "249862003",
         "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/900000000000207008/version/20250701",
         "display": "Sitting upright (finding)"
       }
     ]
@@ -62,18 +63,10 @@
   "referenceRange": [
     {
       "low": {
-        "value": 23.73,
-        "code": "%",
+        "value": 1.43,
+        "code": "L",
         "system": "http://unitsofmeasure.org"
       }
-    }
-  ],
-  "derivedFrom": [
-    {
-      "reference": "Observation/mii-exa-lungenfunktion-rvl"
-    },
-    {
-      "reference": "Observation/mii-exa-lungenfunktion-tlc"
     }
   ],
   "component": [
@@ -81,15 +74,15 @@
       "code": {
         "coding": [
           {
-            "code": "43252-6",
+            "code": "20145-9",
             "system": "http://loinc.org",
-            "display": "Residual volume/Total capacity Predicted"
+            "display": "Residual volume Predicted"
           }
         ]
       },
       "valueQuantity": {
-        "value": 32.68,
-        "code": "%",
+        "value": 2.11,
+        "code": "L",
         "system": "http://unitsofmeasure.org"
       }
     },
@@ -97,13 +90,14 @@
       "code": {
         "coding": [
           {
-            "code": "TODO",
-            "system": "http://snomed.info/sct"
+            "code": "94125-2",
+            "system": "http://loinc.org",
+            "display": "Residual volume/Predicted by Plethysmograph body box"
           }
         ]
       },
       "valueQuantity": {
-        "value": 156,
+        "value": 143,
         "code": "%",
         "system": "http://unitsofmeasure.org"
       }
@@ -114,12 +108,13 @@
           {
             "code": "1078210003",
             "system": "http://snomed.info/sct",
+            "version": "http://snomed.info/sct/900000000000207008/version/20250701",
             "display": "Z-score calculation technique (qualifier value)"
           }
         ]
       },
       "valueQuantity": {
-        "value": 3.3,
+        "value": 2.2,
         "system": "http://unitsofmeasure.org"
       }
     }

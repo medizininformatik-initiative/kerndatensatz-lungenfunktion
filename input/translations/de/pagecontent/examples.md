@@ -6,8 +6,6 @@
   Migriert 2026-08-28.
 -->
 
-### Beispiele
-
 Das Modul liefert 63 Beispielinstanzen, die vier vollständige Untersuchungen
 abbilden. Jede besteht aus einem Befund (DiagnosticReport), der zugehörigen
 Messung (Procedure) und den referenzierten Messwerten (Observation):

@@ -27,12 +27,13 @@
       {
         "code": "251953007",
         "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/900000000000207008/version/20250701",
         "display": "Alveolar volume (observable entity)"
       }
     ]
   },
   "subject": {
-    "reference": "Patient/mii-exa-person-patient-1"
+    "reference": "Patient/mii-exa-lungenfunktion-patient"
   },
   "issued": "2024-07-19T13:03:20+02:00",
   "valueQuantity": {
@@ -55,6 +56,7 @@
       {
         "code": "249862003",
         "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/900000000000207008/version/20250701",
         "display": "Sitting upright (finding)"
       }
     ]
@@ -74,7 +76,8 @@
         "coding": [
           {
             "code": "TODO",
-            "system": "http://snomed.info/sct"
+            "system": "http://snomed.info/sct",
+            "version": "http://snomed.info/sct/900000000000207008/version/20250701"
           }
         ]
       },
@@ -89,7 +92,8 @@
         "coding": [
           {
             "code": "TODO",
-            "system": "http://snomed.info/sct"
+            "system": "http://snomed.info/sct",
+            "version": "http://snomed.info/sct/900000000000207008/version/20250701"
           }
         ]
       },
@@ -105,6 +109,7 @@
           {
             "code": "1078210003",
             "system": "http://snomed.info/sct",
+            "version": "http://snomed.info/sct/900000000000207008/version/20250701",
             "display": "Z-score calculation technique (qualifier value)"
           }
         ]

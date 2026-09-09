@@ -9,8 +9,6 @@
   Migriert 2026-08-28.
 -->
 
-### CapabilityStatements
-
 Um eine dezentrale Datenauswertung mittels des Deutschen Forschungsdatenportals
 für Gesundheit der Medizininformatik-Initiative zu ermöglichen, MUSS die
 [capabilities-Interaktion](https://www.hl7.org/fhir/R4/http.html#capabilities)

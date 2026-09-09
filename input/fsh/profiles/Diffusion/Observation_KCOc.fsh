@@ -17,11 +17,10 @@ Description: "Dieses Profil beschreibt die Messung der korrigierten Transferkapz
 //Profile
 * partOf only Reference(MII_PR_Lungenfunktion_Diffusion_Messung)
 * code.coding[loinc] = $loinc#69578-3 "Diffusion capacity.carbon monoxide/Alveolar volume adjusted for hemoglobin"
-* code.coding[sct].code = $SCT-version#TODO
-* code.coding[sct].display = "TODO"
+* code.coding[sct] = $sct#TODO
 * method from MII_VS_Lufu_SCT_Technique (required)
 * derivedFrom only Reference(MII_PR_Lungenfunktion_DLCO or MII_PR_Lungenfunktion_VA or MII_PR_Lungenfunktion_Hb)
-* component[predicted].code.coding[sct] = $SCT-version#TODO
+* component[predicted].code.coding[sct] = $sct#TODO
 * component[predicted].code.coding[loinc] = $loinc#TODO
-* component[percentPredicted].code.coding[sct] = $SCT-version#TODO
+* component[percentPredicted].code.coding[sct] = $sct#TODO
 * component[percentPredicted].code.coding[loinc] = $loinc#TODO

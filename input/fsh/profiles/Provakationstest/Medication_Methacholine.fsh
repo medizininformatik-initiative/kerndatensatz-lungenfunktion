@@ -1,6 +1,6 @@
 //Head
 Profile: MII_PR_Lungenfunktion_Methacholine
-Parent: $miiMedikation
+Parent: $MII-Medikation
 Id: mii-pr-lungenfunktion-methacholine
 Title: "MII PR Lungenfunktion Methacholine"
 Description: "Dieses Profil beschreibt die Angaben zu Methacholine."
@@ -24,8 +24,8 @@ Description: "Dieses Profil beschreibt die Angaben zu Methacholine."
     Wirkstoff 0..1 and
     Loesung 0..1
 * ingredient[Wirkstoff].isActive = true
-* ingredient[Wirkstoff].itemCodeableConcept.coding[SNOMED] = $SCT-version#109196007 "Methacholine chloride (substance)"
+* ingredient[Wirkstoff].itemCodeableConcept.coding[SNOMED] = $sct#109196007 "Methacholine chloride (substance)"
 * ingredient[Wirkstoff].strength.denominator = 10 'ml' "ml"
 * ingredient[Wirkstoff].strength.numerator = 33 'mg' "mg" 
 * ingredient[Loesung].isActive = false
-* ingredient[Loesung].itemCodeableConcept.coding[SNOMED] = $SCT-version#11713004 "Water (substance)"
+* ingredient[Loesung].itemCodeableConcept.coding[SNOMED] = $sct#11713004 "Water (substance)"

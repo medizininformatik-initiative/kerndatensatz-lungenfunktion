@@ -16,7 +16,7 @@
     }
   ],
   "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-befund",
-  "version": "2027.0.0-ballot.rc1",
+  "version": "2027.0.0-ballot",
   "name": "MII_PR_Lungenfunktion_Befund",
   "_name": {
     "extension": [
@@ -54,7 +54,7 @@
     ]
   },
   "status": "active",
-  "date": "2026-09-01",
+  "date": "2026-09-02",
   "publisher": "Medizininformatik Initiative",
   "contact": [
     {
@@ -420,6 +420,7 @@
         "patternCoding": {
           "code": "720449003",
           "system": "http://snomed.info/sct",
+          "version": "http://snomed.info/sct/900000000000207008/version/20250701",
           "display": "Pulmonary function report (record artifact)"
         },
         "mustSupport": true
@@ -1384,7 +1385,7 @@
         "min": 0,
         "max": "*",
         "patternCoding": {
-          "system": "http://snomed.info/sct"
+          "system": "http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250701"
         },
         "mustSupport": true,
         "binding": {

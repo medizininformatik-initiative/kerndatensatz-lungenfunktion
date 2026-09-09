@@ -10,8 +10,6 @@
   Artefaktseiten (input/translations/de/intro-notes/). Migriert 2026-08-28.
 -->
 
-### Profile
-
 Die Arbeiten der Kerndatensatzspezifikationen basieren, wo möglich, auf
 internationalen Standards und Terminologien. Insbesondere sei hier die
 [International Patient Summary](http://hl7.org/fhir/uv/ips/history.html)

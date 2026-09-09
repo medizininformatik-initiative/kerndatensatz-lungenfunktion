@@ -30,6 +30,7 @@
 //   MII release (CalVer) | SNOMED CT International release | version string
 //   v2025.*              | 2024-07-01 | http://snomed.info/sct/900000000000207008/version/20240701
 //   v2026.*              | 2025-07-01 | http://snomed.info/sct/900000000000207008/version/20250701
+//   v2027.*              | 2026-07-01 | http://snomed.info/sct/900000000000207008/version/20260701
 //
 // The value below is the verified v2026.* pin (this template's dependencies are
 // pinned to the 2026 line). When your module moves to a later CalVer line, look
@@ -48,11 +49,21 @@ Alias: $alpha-id = http://fhir.de/CodeSystem/bfarm/alpha-id
 Alias: $alpha-id-vs = http://fhir.de/ValueSet/bfarm/alpha-id
 Alias: $ops = http://fhir.de/CodeSystem/bfarm/ops
 Alias: $orpha = http://www.orpha.net
+Alias: $loinc = http://loinc.org
+Alias: $ucum = http://unitsofmeasure.org
+Alias: $atcDE = http://fhir.de/CodeSystem/bfarm/atc
+Alias: $pzn = http://fhir.de/CodeSystem/ifa/pzn
 
 // ── HL7 terminology ──────────────────────────────────────────────────────────
 Alias: $v3-ObservationValue = http://terminology.hl7.org/CodeSystem/v3-ObservationValue
+Alias: $v3-ObseravtionInterpretation = http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation
 Alias: $v3-ActCode = http://terminology.hl7.org/CodeSystem/v3-ActCode
 Alias: $v3-ActPriority = http://terminology.hl7.org/CodeSystem/v3-ActPriority
+Alias: $v3-RoleCode = http://terminology.hl7.org/CodeSystem/v3-RoleCode
+Alias: $v2-0074 = http://terminology.hl7.org/CodeSystem/v2-0074
+Alias: $v2-0203 = http://terminology.hl7.org/CodeSystem/v2-0203
+Alias: $v2-0936 = http://terminology.hl7.org/CodeSystem/v2-0936	
+Alias: $observation-category = http://terminology.hl7.org/CodeSystem/observation-category
 
 // ── German base profiles (de.basisprofil.r4, a pinned dependency) ────────────
 Alias: $identifier-type-de-basis = http://fhir.de/CodeSystem/identifier-type-de-basis
@@ -62,6 +73,9 @@ Alias: $ags = http://fhir.de/sid/destatis/ags
 // ── FHIR core extensions / MII cross-module ──────────────────────────────────
 Alias: $data-absent-reason = http://hl7.org/fhir/StructureDefinition/data-absent-reason
 Alias: $MII-Reference = https://www.medizininformatik-initiative.de/fhir/core/StructureDefinition/MII-Reference
+Alias: $MII-Procedure = https://www.medizininformatik-initiative.de/fhir/core/modul-prozedur/StructureDefinition/Procedure
+Alias: $MII-Administration = https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/MedicationAdministration
+Alias: $MII-Medikation = https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/Medication
 
 // ── CRMI (hl7.fhir.uv.crmi, a pinned dependency) ─────────────────────────────
 // The full basis block. The profiles are claimed via the RuleSets in

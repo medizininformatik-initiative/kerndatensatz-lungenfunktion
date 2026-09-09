@@ -31,7 +31,7 @@ Description: "Diese Ressource beschreibt einen Befunde eines Lungenfunktionstest
     sct 1..1 MS
 * category.coding[loinc] = $loinc#58477-1 "Pulmonary function study"
 * category.coding[diagnostic-service-sections] = $v2-0074#PF
-* category.coding[sct] = $SCT#720449003 "Pulmonary function report (record artifact)"
+* category.coding[sct] = $sct#720449003 "Pulmonary function report (record artifact)"
 * code MS
 * code.coding ^slicing.discriminator.type = #value
 * code.coding ^slicing.discriminator.path = "$this"
@@ -58,8 +58,8 @@ Description: "Diese Ressource beschreibt einen Befunde eines Lungenfunktionstest
 * conclusionCode.coding contains
     icd10-gm 0..* MS and
     sct 0..* MS
-* conclusionCode.coding[icd10-gm] ^patternCoding.system = $icd10-gm
-* conclusionCode.coding[sct] ^patternCoding.system = $SCT
+* conclusionCode.coding[icd10-gm] ^patternCoding.system = $icd-10-gm
+* conclusionCode.coding[sct] ^patternCoding.system = $sct
 * conclusionCode.coding[sct] from MII_VS_Lufu_SCT_Findings (required)
 * presentedForm MS
 * insert AddDiagnosticReportTranslation

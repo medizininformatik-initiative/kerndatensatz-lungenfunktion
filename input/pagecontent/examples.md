@@ -7,8 +7,6 @@
   TODO:REVIEW — translation to be confirmed at Gate C. Migrated 2026-08-28.
 -->
 
-### Examples
-
 The module ships 63 example instances representing four complete examinations.
 Each consists of a report (DiagnosticReport), the associated measurement
 (Procedure) and the referenced measured values (Observation):

@@ -1,6 +1,6 @@
 //Head
 Profile: MII_PR_Lungenfunktion_Spirometrie_Messung
-Parent: $miiProcedure
+Parent: $MII-Procedure
 Id: mii-pr-lungenfunktion-spirometrie-messung
 Title: "MII PR Lungenfunktion Spirometire Messung"
 Description: "Beschreibt die Tätigkeiten, wie eine Spirometrie durchgeführt wird."
@@ -20,8 +20,8 @@ Description: "Beschreibt die Tätigkeiten, wie eine Spirometrie durchgeführt wi
 * meta.profile MS
 //Profile
 * partOf MS
-* category.coding[sct] = $SCT-version#23426006 "Measurement of respiratory function (procedure)"
-* code.coding[sct] = $SCT-version#127783003 "Spirometry (procedure)"
+* category.coding[sct] = $sct#23426006 "Measurement of respiratory function (procedure)"
+* code.coding[sct] = $sct#127783003 "Spirometry (procedure)"
 * subject only Reference(Patient)
 * outcome MS
 * outcome from http://hl7.org/fhir/ValueSet/procedure-outcome (preferred)

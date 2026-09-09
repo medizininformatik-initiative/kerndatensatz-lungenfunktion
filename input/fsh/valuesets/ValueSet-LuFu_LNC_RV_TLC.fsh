@@ -1,6 +1,6 @@
-ValueSet: MII_VS_Lufu_LNC_RVL_TLC
-Id: mii-vs-lufu-lnc-rvl-tlc
-Title: "MII VS Lufu LNC RVL TLC"
+ValueSet: MII_VS_Lufu_LNC_RV_TLC
+Id: mii-vs-lufu-lnc-rv-tlc
+Title: "MII VS Lufu LNC RV TLC"
 Description: "Import the ValueSet for lungfunction Residual Volume/Total Lung Capacity"
 * insert Publisher
 * insert PR_CS_VS_Version

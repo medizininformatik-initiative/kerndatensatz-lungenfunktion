@@ -3,9 +3,9 @@ InstanceOf: MII_PR_Lungenfunktion_Provokationstest
 Usage: #example
 Title: "MII Example Lungenfunktion Provokationstest Befund"
 * status = #final
-* code = $SCT#252520007 "Methacholine challenge (procedure)"
-* subject = Reference(Patient/mii-exa-person-patient-1)
-* encounter = Reference(Encounter/mii-exa-fall-kontakt-gesundheitseinrichtung-11)
+* code = $sct#252520007 "Methacholine challenge (procedure)"
+* subject = Reference(Patient/mii-exa-lungenfunktion-patient)
+* encounter = Reference(Encounter/mii-exa-lungenfunktion-kontakt)
 * effectiveDateTime = "2024-07-19T12:03:30+02:00"
 * issued = "2024-07-19T13:03:20+02:00"
 * result[0] = Reference(Observation/mii-exa-lungenfunktion-fev1-b)
@@ -31,4 +31,4 @@ Title: "MII Example Lungenfunktion Provokationstest Befund"
 * result[+] = Reference(Observation/mii-exa-lungenfunktion-dosis-kumuliert)
 * result[+] = Reference(Observation/mii-exa-lungenfunktion-dosis-schwellwert)
 * conclusion = "Increased lung compliance"
-* conclusionCode = $SCT#21368004 "Increased lung compliance (finding)"
+* conclusionCode = $sct#21368004 "Increased lung compliance (finding)"

@@ -16,7 +16,7 @@
     }
   ],
   "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-gewicht",
-  "version": "2027.0.0-ballot.rc1",
+  "version": "2027.0.0-ballot",
   "name": "MII_PR_Lungenfunktion_Gewicht",
   "_name": {
     "extension": [
@@ -54,7 +54,7 @@
     ]
   },
   "status": "active",
-  "date": "2026-09-01",
+  "date": "2026-09-02",
   "publisher": "Medizininformatik Initiative",
   "contact": [
     {
@@ -486,28 +486,11 @@
           ]
         },
         "min": 0,
-        "max": "1"
-      },
-      {
-        "id": "Observation.code.coding:sct.system",
-        "path": "Observation.code.coding.system",
-        "min": 1,
-        "mustSupport": true
-      },
-      {
-        "id": "Observation.code.coding:sct.code",
-        "path": "Observation.code.coding.code",
-        "min": 1,
-        "mustSupport": true,
+        "max": "1",
         "binding": {
-          "strength": "required",
+          "strength": "preferred",
           "valueSet": "https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/ValueSet/mii-vs-lufu-sct-observable"
         }
-      },
-      {
-        "id": "Observation.code.coding:sct.display",
-        "path": "Observation.code.coding.display",
-        "mustSupport": true
       },
       {
         "id": "Observation.code.coding:loinc",
@@ -576,28 +559,11 @@
           ]
         },
         "min": 0,
-        "max": "1"
-      },
-      {
-        "id": "Observation.code.coding:loinc.system",
-        "path": "Observation.code.coding.system",
-        "min": 1,
-        "mustSupport": true
-      },
-      {
-        "id": "Observation.code.coding:loinc.code",
-        "path": "Observation.code.coding.code",
-        "min": 1,
-        "mustSupport": true,
+        "max": "1",
         "binding": {
-          "strength": "required",
+          "strength": "preferred",
           "valueSet": "https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/ValueSet/mii-vs-lufu-lnc-observable"
         }
-      },
-      {
-        "id": "Observation.code.coding:loinc.display",
-        "path": "Observation.code.coding.display",
-        "mustSupport": true
       },
       {
         "id": "Observation.subject",
@@ -1391,52 +1357,6 @@
         "mustSupport": true
       },
       {
-        "id": "Observation.component.value[x]",
-        "path": "Observation.component.value[x]",
-        "slicing": {
-          "discriminator": [
-            {
-              "type": "type",
-              "path": "$this"
-            }
-          ],
-          "ordered": false,
-          "rules": "open"
-        }
-      },
-      {
-        "id": "Observation.component.value[x]:valueQuantity",
-        "path": "Observation.component.value[x]",
-        "sliceName": "valueQuantity",
-        "min": 0,
-        "max": "1",
-        "type": [
-          {
-            "code": "Quantity"
-          }
-        ]
-      },
-      {
-        "id": "Observation.component.value[x]:valueQuantity.value",
-        "path": "Observation.component.value[x].value",
-        "mustSupport": true
-      },
-      {
-        "id": "Observation.component.value[x]:valueQuantity.unit",
-        "path": "Observation.component.value[x].unit",
-        "mustSupport": true
-      },
-      {
-        "id": "Observation.component.value[x]:valueQuantity.system",
-        "path": "Observation.component.value[x].system",
-        "mustSupport": true
-      },
-      {
-        "id": "Observation.component.value[x]:valueQuantity.code",
-        "path": "Observation.component.value[x].code",
-        "mustSupport": true
-      },
-      {
         "id": "Observation.component:predicted",
         "path": "Observation.component",
         "sliceName": "predicted",
@@ -1587,13 +1507,9 @@
         },
         "min": 0,
         "max": "1",
-        "mustSupport": true
-      },
-      {
-        "id": "Observation.component:predicted.code.coding:sct.code",
-        "path": "Observation.component.code.coding.code",
+        "mustSupport": true,
         "binding": {
-          "strength": "required",
+          "strength": "preferred",
           "valueSet": "https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/ValueSet/mii-vs-lufu-sct-observable"
         }
       },
@@ -1665,20 +1581,32 @@
         },
         "min": 0,
         "max": "1",
-        "mustSupport": true
+        "mustSupport": true,
+        "binding": {
+          "strength": "preferred",
+          "valueSet": "https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/ValueSet/mii-vs-lufu-lnc-observable"
+        }
       },
       {
-        "id": "Observation.component:predicted.code.coding:loinc.code",
-        "path": "Observation.component.code.coding.code",
-        "binding": {
-          "strength": "required",
-          "valueSet": "https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/ValueSet/mii-vs-lufu-lnc-observable"
+        "id": "Observation.component:predicted.value[x]",
+        "path": "Observation.component.value[x]",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "type",
+              "path": "$this"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
         }
       },
       {
         "id": "Observation.component:predicted.value[x]:valueQuantity",
         "path": "Observation.component.value[x]",
         "sliceName": "valueQuantity",
+        "min": 0,
+        "max": "1",
         "type": [
           {
             "code": "Quantity"
@@ -1686,19 +1614,27 @@
         ]
       },
       {
+        "id": "Observation.component:predicted.value[x]:valueQuantity.value",
+        "path": "Observation.component.value[x].value",
+        "mustSupport": true
+      },
+      {
         "id": "Observation.component:predicted.value[x]:valueQuantity.unit",
         "path": "Observation.component.value[x].unit",
-        "patternString": "ug"
+        "patternString": "ug",
+        "mustSupport": true
       },
       {
         "id": "Observation.component:predicted.value[x]:valueQuantity.system",
         "path": "Observation.component.value[x].system",
-        "patternUri": "http://unitsofmeasure.org"
+        "patternUri": "http://unitsofmeasure.org",
+        "mustSupport": true
       },
       {
         "id": "Observation.component:predicted.value[x]:valueQuantity.code",
         "path": "Observation.component.value[x].code",
-        "patternCode": "ug"
+        "patternCode": "ug",
+        "mustSupport": true
       },
       {
         "id": "Observation.component:percentPredicted",
@@ -1851,13 +1787,9 @@
         },
         "min": 0,
         "max": "1",
-        "mustSupport": true
-      },
-      {
-        "id": "Observation.component:percentPredicted.code.coding:sct.code",
-        "path": "Observation.component.code.coding.code",
+        "mustSupport": true,
         "binding": {
-          "strength": "required",
+          "strength": "preferred",
           "valueSet": "https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/ValueSet/mii-vs-lufu-sct-observable"
         }
       },
@@ -1929,20 +1861,32 @@
         },
         "min": 0,
         "max": "1",
-        "mustSupport": true
+        "mustSupport": true,
+        "binding": {
+          "strength": "preferred",
+          "valueSet": "https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/ValueSet/mii-vs-lufu-lnc-observable"
+        }
       },
       {
-        "id": "Observation.component:percentPredicted.code.coding:loinc.code",
-        "path": "Observation.component.code.coding.code",
-        "binding": {
-          "strength": "required",
-          "valueSet": "https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/ValueSet/mii-vs-lufu-lnc-observable"
+        "id": "Observation.component:percentPredicted.value[x]",
+        "path": "Observation.component.value[x]",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "type",
+              "path": "$this"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
         }
       },
       {
         "id": "Observation.component:percentPredicted.value[x]:valueQuantity",
         "path": "Observation.component.value[x]",
         "sliceName": "valueQuantity",
+        "min": 0,
+        "max": "1",
         "type": [
           {
             "code": "Quantity"
@@ -1950,19 +1894,27 @@
         ]
       },
       {
+        "id": "Observation.component:percentPredicted.value[x]:valueQuantity.value",
+        "path": "Observation.component.value[x].value",
+        "mustSupport": true
+      },
+      {
         "id": "Observation.component:percentPredicted.value[x]:valueQuantity.unit",
         "path": "Observation.component.value[x].unit",
-        "patternString": "%"
+        "patternString": "%",
+        "mustSupport": true
       },
       {
         "id": "Observation.component:percentPredicted.value[x]:valueQuantity.system",
         "path": "Observation.component.value[x].system",
-        "patternUri": "http://unitsofmeasure.org"
+        "patternUri": "http://unitsofmeasure.org",
+        "mustSupport": true
       },
       {
         "id": "Observation.component:percentPredicted.value[x]:valueQuantity.code",
         "path": "Observation.component.value[x].code",
-        "patternCode": "%"
+        "patternCode": "%",
+        "mustSupport": true
       },
       {
         "id": "Observation.component:z-score",
@@ -2121,13 +2073,9 @@
           "version": "http://snomed.info/sct/900000000000207008/version/20250701",
           "display": "Z-score calculation technique (qualifier value)"
         },
-        "mustSupport": true
-      },
-      {
-        "id": "Observation.component:z-score.code.coding:sct.code",
-        "path": "Observation.component.code.coding.code",
+        "mustSupport": true,
         "binding": {
-          "strength": "required",
+          "strength": "preferred",
           "valueSet": "https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/ValueSet/mii-vs-lufu-sct-observable"
         }
       }

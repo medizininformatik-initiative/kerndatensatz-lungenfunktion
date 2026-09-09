@@ -8,4 +8,4 @@ Description: "Import the ValueSet for lungfunction findings"
 * insert PR_CS_VS_Date
 * ^meta.profile = "http://hl7.org/fhir/StructureDefinition/shareablevalueset"
 * ^experimental = false
-* include codes from system $SCT-version where constraint = "< 106048009 |Respiratory finding (finding)|"
+* include codes from system $sct where constraint = "< 106048009 |Respiratory finding (finding)|"

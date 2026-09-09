@@ -9,8 +9,6 @@
   input/images-source/UML_Lungenfunktion.plantuml. Migriert 2026-08-28.
 -->
 
-### UML-Diagramme
-
 Das folgende Klassendiagramm zeigt das Informationsmodell des Moduls
 Lungenfunktion mit den fachlichen Konzepten und ihren Beziehungen
 untereinander. Es dient der Übersicht; verbindlich sind die

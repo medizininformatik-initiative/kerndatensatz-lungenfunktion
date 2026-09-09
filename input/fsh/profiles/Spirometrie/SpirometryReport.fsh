@@ -16,7 +16,7 @@ Description: "Diese Ressource beschreibt einen Befunde der Spirometrie"
 * insert LicenseCodeableCCBY40
 //Profile
 * code.coding[loinc] = $loinc#18759-1 "Spirometry study"
-* code.coding[sct] = $SCT-version#127783003 "Spirometry (procedure)"
+* code.coding[sct] = $sct#127783003 "Spirometry (procedure)"
 * result ^slicing.discriminator.type = #type
 * result ^slicing.discriminator.path = "$this"
 * result ^slicing.rules = #open
@@ -28,7 +28,7 @@ Description: "Diese Ressource beschreibt einen Befunde der Spirometrie"
     IC 0..1 MS and
     MEF 0..* MS and
     PEF 0..* MS and
-    RV 0..* MS and
+    IRV_ERV 0..* MS and
     VC 0..* MS
 * result[BF] only Reference(MII_PR_Lungenfunktion_BF)
 * result[FEV_FVC] only Reference(MII_PR_Lungenfunktion_FEV_FVC)
@@ -37,5 +37,5 @@ Description: "Diese Ressource beschreibt einen Befunde der Spirometrie"
 * result[IC] only Reference(MII_PR_Lungenfunktion_IC)
 * result[MEF] only Reference(MII_PR_Lungenfunktion_MEF)
 * result[PEF] only Reference(MII_PR_Lungenfunktion_PEF)
-* result[RV] only Reference(MII_PR_Lungenfunktion_RV)
+* result[IRV_ERV] only Reference(MII_PR_Lungenfunktion_IRV_ERV)
 * result[VC] only Reference(MII_PR_Lungenfunktion_VC)
