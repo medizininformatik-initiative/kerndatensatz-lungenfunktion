@@ -1,0 +1,115 @@
+# MII Example Lungenfunktion Provokation sR tot P5 - MII IG Kerndatensatz-Modul Lungenfunktion v2027.0.0-ballot.rc2
+
+* [**Table of Contents**](toc.md)
+* [**Artifacts Summary**](artifacts.md)
+* **MII Example Lungenfunktion Provokation sR tot P5**
+
+## Example Observation: MII Example Lungenfunktion Provokation sR tot P5
+
+-------
+
+**English**
+
+-------
+
+Profile: [MII PR Lungenfunktion R Spezifisch](StructureDefinition-mii-pr-lungenfunktion-r-spezifisch.md)
+
+**partOf**: 
+
+* [Procedure Methacholine challenge (procedure)](Procedure-mii-exa-lungenfunktion-provokationstest-messung.md)
+* [MedicationAdministration: status = completed; medication[x] = ->Medication Provokit® 0,33%; effective[x] = 2024-07-19 13:03:20+0200](MedicationAdministration-mii-exa-lungenfunktion-dosis-gabe-3.md)
+
+**status**: Final
+
+**category**: Procedure
+
+**code**: Airway resistance
+
+**subject**: [Erika Beispielpatientin Female, DoB: 1970-01-01](Patient-mii-exa-lungenfunktion-patient.md)
+
+**issued**: 2024-07-19 13:03:20+0200
+
+**value**: 2.4 kPa.s (Details: UCUM codekPa.s = 'kPa.s')
+
+**interpretation**: Normal
+
+**method**: Sitting upright (finding)
+
+### Components
+
+| | | |
+| :--- | :--- | :--- |
+| - | **Code** | **Value[x]** |
+| * | TODO | 1.18 kPa.s (Details: UCUM codekPa.s = 'kPa.s') |
+
+
+
+## Resource Content
+
+```json
+{
+  "resourceType" : "Observation",
+  "id" : "mii-exa-lungenfunktion-sr-total-p5",
+  "meta" : {
+    "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-r-spezifisch"]
+  },
+  "partOf" : [{
+    "reference" : "Procedure/mii-exa-lungenfunktion-provokationstest-messung"
+  },
+  {
+    "reference" : "MedicationAdministration/mii-exa-lungenfunktion-dosis-gabe-3"
+  }],
+  "status" : "final",
+  "category" : [{
+    "coding" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
+      "code" : "procedure"
+    }]
+  }],
+  "code" : {
+    "coding" : [{
+      "system" : "http://loinc.org",
+      "code" : "75946-4",
+      "display" : "Airway resistance"
+    }]
+  },
+  "subject" : {
+    "reference" : "Patient/mii-exa-lungenfunktion-patient"
+  },
+  "issued" : "2024-07-19T13:03:20+02:00",
+  "valueQuantity" : {
+    "value" : 2.4,
+    "system" : "http://unitsofmeasure.org",
+    "code" : "kPa.s"
+  },
+  "interpretation" : [{
+    "coding" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+      "code" : "N"
+    }]
+  }],
+  "method" : {
+    "coding" : [{
+      "system" : "http://snomed.info/sct",
+      "version" : "http://snomed.info/sct/900000000000207008/version/20250701",
+      "code" : "249862003",
+      "display" : "Sitting upright (finding)"
+    }]
+  },
+  "component" : [{
+    "code" : {
+      "coding" : [{
+        "system" : "http://snomed.info/sct",
+        "version" : "http://snomed.info/sct/900000000000207008/version/20250701",
+        "code" : "TODO"
+      }]
+    },
+    "valueQuantity" : {
+      "value" : 1.18,
+      "system" : "http://unitsofmeasure.org",
+      "code" : "kPa.s"
+    }
+  }]
+}
+
+```
