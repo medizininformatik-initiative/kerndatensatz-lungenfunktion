@@ -133,6 +133,16 @@
         "max": "1"
       },
       {
+        "id": "Medication.ingredient:Wirkstoff.extension:Wirkstofftyp",
+        "path": "Medication.ingredient.extension",
+        "sliceName": "Wirkstofftyp"
+      },
+      {
+        "id": "Medication.ingredient:Wirkstoff.extension:Wirkstoffrelation",
+        "path": "Medication.ingredient.extension",
+        "sliceName": "Wirkstoffrelation"
+      },
+      {
         "id": "Medication.ingredient:Wirkstoff.item[x]:itemCodeableConcept",
         "path": "Medication.ingredient.item[x]",
         "sliceName": "itemCodeableConcept",
@@ -184,6 +194,16 @@
         "sliceName": "Loesung",
         "min": 0,
         "max": "1"
+      },
+      {
+        "id": "Medication.ingredient:Loesung.extension:Wirkstofftyp",
+        "path": "Medication.ingredient.extension",
+        "sliceName": "Wirkstofftyp"
+      },
+      {
+        "id": "Medication.ingredient:Loesung.extension:Wirkstoffrelation",
+        "path": "Medication.ingredient.extension",
+        "sliceName": "Wirkstoffrelation"
       },
       {
         "id": "Medication.ingredient:Loesung.item[x]:itemCodeableConcept",
