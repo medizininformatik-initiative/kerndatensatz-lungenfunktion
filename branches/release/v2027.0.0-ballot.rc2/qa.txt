@@ -3,7 +3,7 @@ MII_IG_Lungenfunktion : Validation Results
 
 err = 854, warn = 769, info = 8535
 IG Publisher Version: 2.3.2 Out of date - current version is 2.3.4
-Generated Wed Sep 09 12:56:07 UTC 2026. FHIR version 4.0.1 for de.medizininformatikinitiative.kerndatensatz.lungenfunktion#2027.0.0-ballot.rc2 (canonical = https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion)
+Generated Wed Sep 09 13:08:50 UTC 2026. FHIR version 4.0.1 for de.medizininformatikinitiative.kerndatensatz.lungenfunktion#2027.0.0-ballot.rc2 (canonical = https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion)
  Build Errors : 8 / 66 / 0
  /home/runner/work/kerndatensatz-lungenfunktion/kerndatensatz-lungenfunktion/fsh-generated/resources/CapabilityStatement-mii-cps-lungenfunktion-capabilitystatement : 5 / 1 / 73
  /home/runner/work/kerndatensatz-lungenfunktion/kerndatensatz-lungenfunktion/fsh-generated/resources/DiagnosticReport-mii-exa-lungenfunktion-bodyplethysmographie-befund : 227 / 4 / 3
