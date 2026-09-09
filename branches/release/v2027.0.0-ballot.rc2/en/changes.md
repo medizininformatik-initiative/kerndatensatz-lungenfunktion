@@ -38,7 +38,20 @@ Mark such entries clearly (for example, prefix them with **BREAKING:**) so a rea
 
 -------
 
-#### Version 2027.0.0-ballot
+#### Version 2027.0.0-ballot.rc2
+
+**Date:** 2026-09-09
+
+* **Added** Patient- and Encounter-Example Ressources
+* **Changed** Nested Slicings in Observation.component relocated
+* **Fixed** Typofixes in Examples and Descriptions
+* **Changed** Observation.component.value relocated in component-Slicings
+* **Changed** SCT-Version set to 2026-07-01
+* **Changed** Merge seperate Aliases-pages and allign Ressources to it
+* **Changed** Rename Residualvolume Ressource from RVL to RV
+* **Changed** Rename Reservevolume Ressource from RV to IRV_ERV
+
+#### Version 2027.0.0-ballot.rc1
 
 **Date:** 2026-09-01
 
