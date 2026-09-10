@@ -82,6 +82,8 @@ werden können.</p>
 
 **Datum:** 2026-09-15
 
+* **Changed** Merge License-pages and allign ValueSets to ist
+* ****
 
 #### Version 2027.0.0-ballot.rc2
 
