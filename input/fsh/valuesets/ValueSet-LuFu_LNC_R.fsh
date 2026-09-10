@@ -4,7 +4,7 @@ Title: "MII VS Lufu LNC R"
 Description: "Import the ValueSet for lungfunction total airway resistance"
 * insert Publisher
 * insert PR_CS_VS_Version
-* insert SNOMED_Copyright
+* insert LOINCLicense
 * insert PR_CS_VS_Date
 * ^meta.profile = "http://hl7.org/fhir/StructureDefinition/shareablevalueset"
 * ^experimental = false
