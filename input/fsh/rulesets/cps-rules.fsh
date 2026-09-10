@@ -1,15 +1,16 @@
-/*Alias: $exp = http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation
+Alias: $exp = http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation
 
 RuleSet: SupportResource (resource, expectation)
 * rest.resource[+].type = #{resource}
 * rest.resource[=].extension[0].url = $exp
 * rest.resource[=].extension[0].valueCode = {expectation}
 
-
+/*
 Error @ CapabilityStatement.rest[0].resource[0].profile (line 66, col73): The extension http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation 
 is not allowed to be used at this point (this element is [CapabilityStatement.rest.resource.profile, canonical]
 
 Remove expectation from profile because it is not allowed there.
+*/
 
 RuleSet: Profile (profile)
 * rest.resource[=].profile[+] = "{profile}"
@@ -18,7 +19,7 @@ RuleSet: Profile (profile)
 
 RuleSet: SupportProfile (profile, expectation)
 // This rule set must follow a SupportResource rule set, and applies to that resource.
-* rest.resource[=].supportedProfile[+] = "{profile}|2027.0.0-ballot.rc2"
+* rest.resource[=].supportedProfile[+] = "{profile}|2027.0.0-ballot"
 * rest.resource[=].supportedProfile[=].extension[0].url = $exp
 * rest.resource[=].supportedProfile[=].extension[0].valueCode = {expectation}
 
@@ -42,4 +43,3 @@ RuleSet: SupportSpecialSearchParam (name, type, expectation)
 * rest.resource[=].searchParam[=].type = {type}
 * rest.resource[=].searchParam[=].extension[0].url = $exp
 * rest.resource[=].searchParam[=].extension[0].valueCode = {expectation}
-*/
