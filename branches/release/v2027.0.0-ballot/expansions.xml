@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <Bundle xmlns="http://hl7.org/fhir">
-  <id value="32586e93-f4a0-4995-84d6-296061b60634"/>
+  <id value="d6c86026-b3aa-4000-abf5-29e26eeab82e"/>
   <meta>
-    <lastUpdated value="2026-09-09T13:11:59.064+00:00"/>
+    <lastUpdated value="2026-09-10T10:20:53.663+00:00"/>
   </meta>
   <type value="collection"/>
   <entry>
@@ -145,12 +145,12 @@
           </div>
         </text>
         <url value="https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/ValueSet/mii-vs-lufu-lnc-dlco"/>
-        <version value="2027.0.0-ballot.rc2"/>
+        <version value="2027.0.0-ballot"/>
         <name value="MII_VS_Lufu_LNC_DLCO"/>
         <title value="MII VS Lufu LNC DLCO"/>
         <status value="active"/>
         <experimental value="false"/>
-        <date value="2026-09-02"/>
+        <date value="2026-09-15"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -159,8 +159,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:d57a8254-0a42-450d-9e50-3ba2da65030f"/>
-          <timestamp value="2026-09-09T13:15:58+00:00"/>
+          <identifier value="urn:uuid:67674347-0964-4738-a677-904c82b82d4e"/>
+          <timestamp value="2026-09-10T10:24:43+00:00"/>
           <total value="5"/>
           <offset value="0"/>
           <parameter>
@@ -359,12 +359,12 @@
           </div>
         </text>
         <url value="https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/ValueSet/mii-vs-lufu-lnc-dlco"/>
-        <version value="2027.0.0-ballot.rc2"/>
+        <version value="2027.0.0-ballot"/>
         <name value="MII_VS_Lufu_LNC_DLCO"/>
         <title value="MII VS Lufu LNC DLCO"/>
         <status value="active"/>
         <experimental value="false"/>
-        <date value="2026-09-02"/>
+        <date value="2026-09-15"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -373,8 +373,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:d57a8254-0a42-450d-9e50-3ba2da65030f"/>
-          <timestamp value="2026-09-09T13:15:58+00:00"/>
+          <identifier value="urn:uuid:67674347-0964-4738-a677-904c82b82d4e"/>
+          <timestamp value="2026-09-10T10:24:43+00:00"/>
           <total value="5"/>
           <offset value="0"/>
           <parameter>
@@ -573,12 +573,12 @@
           </div>
         </text>
         <url value="https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/ValueSet/mii-vs-lufu-lnc-dlco"/>
-        <version value="2027.0.0-ballot.rc2"/>
+        <version value="2027.0.0-ballot"/>
         <name value="MII_VS_Lufu_LNC_DLCO"/>
         <title value="MII VS Lufu LNC DLCO"/>
         <status value="active"/>
         <experimental value="false"/>
-        <date value="2026-09-02"/>
+        <date value="2026-09-15"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -587,8 +587,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:0dbf664e-3690-4564-b577-a2eb1ee7dd2c"/>
-          <timestamp value="2026-09-09T13:15:59+00:00"/>
+          <identifier value="urn:uuid:5bfbcc35-7688-4975-b99e-0f9342cfdfb5"/>
+          <timestamp value="2026-09-10T10:24:44+00:00"/>
           <total value="5"/>
           <offset value="0"/>
           <parameter>
@@ -762,12 +762,12 @@
           </div>
         </text>
         <url value="https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/ValueSet/mii-vs-lufu-lnc-dlcoc"/>
-        <version value="2027.0.0-ballot.rc2"/>
+        <version value="2027.0.0-ballot"/>
         <name value="MII_VS_Lufu_LNC_DLCOc"/>
         <title value="MII VS Lufu LNC DLCOc"/>
         <status value="active"/>
         <experimental value="false"/>
-        <date value="2026-09-02"/>
+        <date value="2026-09-15"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -776,8 +776,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:48505cce-6def-4ef8-a2af-5f6943b872cd"/>
-          <timestamp value="2026-09-09T13:15:59+00:00"/>
+          <identifier value="urn:uuid:00553be8-3c73-4b98-a57c-7dda8d602e06"/>
+          <timestamp value="2026-09-10T10:24:44+00:00"/>
           <total value="4"/>
           <offset value="0"/>
           <parameter>
@@ -951,12 +951,12 @@
           </div>
         </text>
         <url value="https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/ValueSet/mii-vs-lufu-lnc-dlcoc"/>
-        <version value="2027.0.0-ballot.rc2"/>
+        <version value="2027.0.0-ballot"/>
         <name value="MII_VS_Lufu_LNC_DLCOc"/>
         <title value="MII VS Lufu LNC DLCOc"/>
         <status value="active"/>
         <experimental value="false"/>
-        <date value="2026-09-02"/>
+        <date value="2026-09-15"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -965,8 +965,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:48505cce-6def-4ef8-a2af-5f6943b872cd"/>
-          <timestamp value="2026-09-09T13:15:59+00:00"/>
+          <identifier value="urn:uuid:00553be8-3c73-4b98-a57c-7dda8d602e06"/>
+          <timestamp value="2026-09-10T10:24:44+00:00"/>
           <total value="4"/>
           <offset value="0"/>
           <parameter>
@@ -1140,12 +1140,12 @@
           </div>
         </text>
         <url value="https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/ValueSet/mii-vs-lufu-lnc-dlcoc"/>
-        <version value="2027.0.0-ballot.rc2"/>
+        <version value="2027.0.0-ballot"/>
         <name value="MII_VS_Lufu_LNC_DLCOc"/>
         <title value="MII VS Lufu LNC DLCOc"/>
         <status value="active"/>
         <experimental value="false"/>
-        <date value="2026-09-02"/>
+        <date value="2026-09-15"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -1154,8 +1154,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:f6d646ba-8fc2-48ec-9348-95d916cda069"/>
-          <timestamp value="2026-09-09T13:16:00+00:00"/>
+          <identifier value="urn:uuid:6ae4def6-4360-490b-93e6-e56db7e17458"/>
+          <timestamp value="2026-09-10T10:24:45+00:00"/>
           <total value="4"/>
           <offset value="0"/>
           <parameter>
@@ -1325,12 +1325,12 @@
           </div>
         </text>
         <url value="https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/ValueSet/mii-vs-lufu-lnc-fev-fvc"/>
-        <version value="2027.0.0-ballot.rc2"/>
+        <version value="2027.0.0-ballot"/>
         <name value="MII_VS_Lufu_LNC_FEV_FVC"/>
         <title value="MII VS Lufu LNC FEV FVC"/>
         <status value="active"/>
         <experimental value="false"/>
-        <date value="2026-09-02"/>
+        <date value="2026-09-15"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -1339,8 +1339,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:8b6970dc-09b8-44a0-a492-553790bebea1"/>
-          <timestamp value="2026-09-09T13:16:02+00:00"/>
+          <identifier value="urn:uuid:ba464e8e-3307-4118-ac1c-d0bdbfa81d71"/>
+          <timestamp value="2026-09-10T10:24:48+00:00"/>
           <total value="4"/>
           <offset value="0"/>
           <parameter>
@@ -1514,12 +1514,12 @@
           </div>
         </text>
         <url value="https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/ValueSet/mii-vs-lufu-lnc-fev-fvc"/>
-        <version value="2027.0.0-ballot.rc2"/>
+        <version value="2027.0.0-ballot"/>
         <name value="MII_VS_Lufu_LNC_FEV_FVC"/>
         <title value="MII VS Lufu LNC FEV FVC"/>
         <status value="active"/>
         <experimental value="false"/>
-        <date value="2026-09-02"/>
+        <date value="2026-09-15"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -1528,8 +1528,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:8b6970dc-09b8-44a0-a492-553790bebea1"/>
-          <timestamp value="2026-09-09T13:16:02+00:00"/>
+          <identifier value="urn:uuid:ba464e8e-3307-4118-ac1c-d0bdbfa81d71"/>
+          <timestamp value="2026-09-10T10:24:48+00:00"/>
           <total value="4"/>
           <offset value="0"/>
           <parameter>
@@ -1703,12 +1703,12 @@
           </div>
         </text>
         <url value="https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/ValueSet/mii-vs-lufu-lnc-fev-fvc"/>
-        <version value="2027.0.0-ballot.rc2"/>
+        <version value="2027.0.0-ballot"/>
         <name value="MII_VS_Lufu_LNC_FEV_FVC"/>
         <title value="MII VS Lufu LNC FEV FVC"/>
         <status value="active"/>
         <experimental value="false"/>
-        <date value="2026-09-02"/>
+        <date value="2026-09-15"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -1717,8 +1717,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:b1232008-2ed1-40d4-be21-9f5f80b8bac3"/>
-          <timestamp value="2026-09-09T13:16:02+00:00"/>
+          <identifier value="urn:uuid:7133cc0c-04b6-48f1-a70f-0294da691ba4"/>
+          <timestamp value="2026-09-10T10:24:48+00:00"/>
           <total value="4"/>
           <offset value="0"/>
           <parameter>
@@ -2485,12 +2485,12 @@
           </div>
         </text>
         <url value="https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/ValueSet/mii-vs-lufu-lnc-fev"/>
-        <version value="2027.0.0-ballot.rc2"/>
+        <version value="2027.0.0-ballot"/>
         <name value="MII_VS_Lufu_LNC_FEV"/>
         <title value="MII VS Lufu LNC FEV"/>
         <status value="active"/>
         <experimental value="false"/>
-        <date value="2026-09-02"/>
+        <date value="2026-09-15"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -2499,8 +2499,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:0be3f99b-609a-49a4-9781-700098e4b653"/>
-          <timestamp value="2026-09-09T13:16:03+00:00"/>
+          <identifier value="urn:uuid:5d946458-c595-421f-ac3d-3a91faff008b"/>
+          <timestamp value="2026-09-10T10:24:49+00:00"/>
           <total value="32"/>
           <offset value="0"/>
           <parameter>
@@ -3423,12 +3423,12 @@
           </div>
         </text>
         <url value="https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/ValueSet/mii-vs-lufu-lnc-fev"/>
-        <version value="2027.0.0-ballot.rc2"/>
+        <version value="2027.0.0-ballot"/>
         <name value="MII_VS_Lufu_LNC_FEV"/>
         <title value="MII VS Lufu LNC FEV"/>
         <status value="active"/>
         <experimental value="false"/>
-        <date value="2026-09-02"/>
+        <date value="2026-09-15"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -3437,8 +3437,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:0be3f99b-609a-49a4-9781-700098e4b653"/>
-          <timestamp value="2026-09-09T13:16:03+00:00"/>
+          <identifier value="urn:uuid:5d946458-c595-421f-ac3d-3a91faff008b"/>
+          <timestamp value="2026-09-10T10:24:49+00:00"/>
           <total value="32"/>
           <offset value="0"/>
           <parameter>
@@ -4361,12 +4361,12 @@
           </div>
         </text>
         <url value="https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/ValueSet/mii-vs-lufu-lnc-fev"/>
-        <version value="2027.0.0-ballot.rc2"/>
+        <version value="2027.0.0-ballot"/>
         <name value="MII_VS_Lufu_LNC_FEV"/>
         <title value="MII VS Lufu LNC FEV"/>
         <status value="active"/>
         <experimental value="false"/>
-        <date value="2026-09-02"/>
+        <date value="2026-09-15"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -4375,8 +4375,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:9638213a-5839-4ab4-a542-eb8618296827"/>
-          <timestamp value="2026-09-09T13:16:03+00:00"/>
+          <identifier value="urn:uuid:990e38f6-cb8f-4664-8cec-302c5311051d"/>
+          <timestamp value="2026-09-10T10:24:50+00:00"/>
           <total value="32"/>
           <offset value="0"/>
           <parameter>
@@ -4730,12 +4730,12 @@
           </div>
         </text>
         <url value="https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/ValueSet/mii-vs-lufu-lnc-frc"/>
-        <version value="2027.0.0-ballot.rc2"/>
+        <version value="2027.0.0-ballot"/>
         <name value="MII_VS_Lufu_LNC_FRC"/>
         <title value="MII VS Lufu LNC FRC"/>
         <status value="active"/>
         <experimental value="false"/>
-        <date value="2026-09-02"/>
+        <date value="2026-09-15"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -4744,8 +4744,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:71bf8c11-1443-4f44-bec1-0a6f03e66d21"/>
-          <timestamp value="2026-09-09T13:16:05+00:00"/>
+          <identifier value="urn:uuid:c1c7b0fb-dc3a-4b45-b6d9-e8a36f7f59cf"/>
+          <timestamp value="2026-09-10T10:24:51+00:00"/>
           <total value="7"/>
           <offset value="0"/>
           <parameter>
@@ -4994,12 +4994,12 @@
           </div>
         </text>
         <url value="https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/ValueSet/mii-vs-lufu-lnc-frc"/>
-        <version value="2027.0.0-ballot.rc2"/>
+        <version value="2027.0.0-ballot"/>
         <name value="MII_VS_Lufu_LNC_FRC"/>
         <title value="MII VS Lufu LNC FRC"/>
         <status value="active"/>
         <experimental value="false"/>
-        <date value="2026-09-02"/>
+        <date value="2026-09-15"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -5008,8 +5008,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:71bf8c11-1443-4f44-bec1-0a6f03e66d21"/>
-          <timestamp value="2026-09-09T13:16:05+00:00"/>
+          <identifier value="urn:uuid:c1c7b0fb-dc3a-4b45-b6d9-e8a36f7f59cf"/>
+          <timestamp value="2026-09-10T10:24:51+00:00"/>
           <total value="7"/>
           <offset value="0"/>
           <parameter>
@@ -5258,12 +5258,12 @@
           </div>
         </text>
         <url value="https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/ValueSet/mii-vs-lufu-lnc-frc"/>
-        <version value="2027.0.0-ballot.rc2"/>
+        <version value="2027.0.0-ballot"/>
         <name value="MII_VS_Lufu_LNC_FRC"/>
         <title value="MII VS Lufu LNC FRC"/>
         <status value="active"/>
         <experimental value="false"/>
-        <date value="2026-09-02"/>
+        <date value="2026-09-15"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -5272,8 +5272,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:86ec27d9-1871-408f-8ab7-bf69b95d5b80"/>
-          <timestamp value="2026-09-09T13:16:05+00:00"/>
+          <identifier value="urn:uuid:fb7ac4e8-db73-4a5a-996c-dafa8e1809ef"/>
+          <timestamp value="2026-09-10T10:24:52+00:00"/>
           <total value="7"/>
           <offset value="0"/>
           <parameter>
@@ -5595,12 +5595,12 @@
           </div>
         </text>
         <url value="https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/ValueSet/mii-vs-lufu-lnc-fvc"/>
-        <version value="2027.0.0-ballot.rc2"/>
+        <version value="2027.0.0-ballot"/>
         <name value="MII_VS_Lufu_LNC_FVC"/>
         <title value="MII VS Lufu LNC Forced Vital Capacity"/>
         <status value="active"/>
         <experimental value="false"/>
-        <date value="2026-09-02"/>
+        <date value="2026-09-15"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -5609,8 +5609,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:320a5382-e27c-40f7-b6fd-db4f16763e28"/>
-          <timestamp value="2026-09-09T13:16:05+00:00"/>
+          <identifier value="urn:uuid:8a3d245c-ba4a-4187-837d-fe1d7d63c727"/>
+          <timestamp value="2026-09-10T10:24:53+00:00"/>
           <total value="11"/>
           <offset value="0"/>
           <parameter>
@@ -5959,12 +5959,12 @@
           </div>
         </text>
         <url value="https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/ValueSet/mii-vs-lufu-lnc-fvc"/>
-        <version value="2027.0.0-ballot.rc2"/>
+        <version value="2027.0.0-ballot"/>
         <name value="MII_VS_Lufu_LNC_FVC"/>
         <title value="MII VS Lufu LNC Forced Vital Capacity"/>
         <status value="active"/>
         <experimental value="false"/>
-        <date value="2026-09-02"/>
+        <date value="2026-09-15"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -5973,8 +5973,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:320a5382-e27c-40f7-b6fd-db4f16763e28"/>
-          <timestamp value="2026-09-09T13:16:05+00:00"/>
+          <identifier value="urn:uuid:8a3d245c-ba4a-4187-837d-fe1d7d63c727"/>
+          <timestamp value="2026-09-10T10:24:53+00:00"/>
           <total value="11"/>
           <offset value="0"/>
           <parameter>
@@ -6323,12 +6323,12 @@
           </div>
         </text>
         <url value="https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/ValueSet/mii-vs-lufu-lnc-fvc"/>
-        <version value="2027.0.0-ballot.rc2"/>
+        <version value="2027.0.0-ballot"/>
         <name value="MII_VS_Lufu_LNC_FVC"/>
         <title value="MII VS Lufu LNC Forced Vital Capacity"/>
         <status value="active"/>
         <experimental value="false"/>
-        <date value="2026-09-02"/>
+        <date value="2026-09-15"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -6337,8 +6337,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:0c675b17-db0d-486d-8d61-a3b9050f4d43"/>
-          <timestamp value="2026-09-09T13:16:06+00:00"/>
+          <identifier value="urn:uuid:ced311ec-2f43-43b3-8cbd-bcb625b1ad91"/>
+          <timestamp value="2026-09-10T10:24:53+00:00"/>
           <total value="11"/>
           <offset value="0"/>
           <parameter>
@@ -6676,12 +6676,12 @@
           </div>
         </text>
         <url value="https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/ValueSet/mii-vs-lufu-lnc-ic"/>
-        <version value="2027.0.0-ballot.rc2"/>
+        <version value="2027.0.0-ballot"/>
         <name value="MII_VS_Lufu_LNC_IC"/>
         <title value="MII VS Lufu LNC Inspiratory Capacity"/>
         <status value="active"/>
         <experimental value="false"/>
-        <date value="2026-09-02"/>
+        <date value="2026-09-15"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -6690,8 +6690,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:84d210f8-b7ae-4cbe-a0b6-bf74c5c4dba6"/>
-          <timestamp value="2026-09-09T13:16:08+00:00"/>
+          <identifier value="urn:uuid:fc0546b3-1f43-4c56-b548-a8a9df62b5dc"/>
+          <timestamp value="2026-09-10T10:24:55+00:00"/>
           <total value="11"/>
           <offset value="0"/>
           <parameter>
@@ -7040,12 +7040,12 @@
           </div>
         </text>
         <url value="https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/ValueSet/mii-vs-lufu-lnc-ic"/>
-        <version value="2027.0.0-ballot.rc2"/>
+        <version value="2027.0.0-ballot"/>
         <name value="MII_VS_Lufu_LNC_IC"/>
         <title value="MII VS Lufu LNC Inspiratory Capacity"/>
         <status value="active"/>
         <experimental value="false"/>
-        <date value="2026-09-02"/>
+        <date value="2026-09-15"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -7054,8 +7054,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:84d210f8-b7ae-4cbe-a0b6-bf74c5c4dba6"/>
-          <timestamp value="2026-09-09T13:16:08+00:00"/>
+          <identifier value="urn:uuid:fc0546b3-1f43-4c56-b548-a8a9df62b5dc"/>
+          <timestamp value="2026-09-10T10:24:55+00:00"/>
           <total value="11"/>
           <offset value="0"/>
           <parameter>
@@ -7404,12 +7404,12 @@
           </div>
         </text>
         <url value="https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/ValueSet/mii-vs-lufu-lnc-ic"/>
-        <version value="2027.0.0-ballot.rc2"/>
+        <version value="2027.0.0-ballot"/>
         <name value="MII_VS_Lufu_LNC_IC"/>
         <title value="MII VS Lufu LNC Inspiratory Capacity"/>
         <status value="active"/>
         <experimental value="false"/>
-        <date value="2026-09-02"/>
+        <date value="2026-09-15"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -7418,8 +7418,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:7c49401b-05f9-4be4-94de-9430dfd4dc58"/>
-          <timestamp value="2026-09-09T13:16:08+00:00"/>
+          <identifier value="urn:uuid:102d0612-0d91-4e98-98fd-3d4301d7b41c"/>
+          <timestamp value="2026-09-10T10:24:56+00:00"/>
           <total value="11"/>
           <offset value="0"/>
           <parameter>
@@ -7637,12 +7637,12 @@
           </div>
         </text>
         <url value="https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/ValueSet/mii-vs-lufu-lnc-irv-erv"/>
-        <version value="2027.0.0-ballot.rc2"/>
+        <version value="2027.0.0-ballot"/>
         <name value="MII_VS_Lufu_LNC_IRV_ERV"/>
         <title value="MII VS Lufu LNC IRV &amp; ERV"/>
         <status value="active"/>
         <experimental value="false"/>
-        <date value="2026-09-02"/>
+        <date value="2026-09-15"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -7651,8 +7651,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:4742948d-5ab1-4ab4-b323-d9ac024f7bdf"/>
-          <timestamp value="2026-09-09T13:16:09+00:00"/>
+          <identifier value="urn:uuid:e1310cc9-1ea9-4b61-85ac-ec740380698a"/>
+          <timestamp value="2026-09-10T10:24:57+00:00"/>
           <total value="5"/>
           <offset value="0"/>
           <parameter>
@@ -7851,12 +7851,12 @@
           </div>
         </text>
         <url value="https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/ValueSet/mii-vs-lufu-lnc-irv-erv"/>
-        <version value="2027.0.0-ballot.rc2"/>
+        <version value="2027.0.0-ballot"/>
         <name value="MII_VS_Lufu_LNC_IRV_ERV"/>
         <title value="MII VS Lufu LNC IRV &amp; ERV"/>
         <status value="active"/>
         <experimental value="false"/>
-        <date value="2026-09-02"/>
+        <date value="2026-09-15"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -7865,8 +7865,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:4742948d-5ab1-4ab4-b323-d9ac024f7bdf"/>
-          <timestamp value="2026-09-09T13:16:09+00:00"/>
+          <identifier value="urn:uuid:e1310cc9-1ea9-4b61-85ac-ec740380698a"/>
+          <timestamp value="2026-09-10T10:24:57+00:00"/>
           <total value="5"/>
           <offset value="0"/>
           <parameter>
@@ -8065,12 +8065,12 @@
           </div>
         </text>
         <url value="https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/ValueSet/mii-vs-lufu-lnc-irv-erv"/>
-        <version value="2027.0.0-ballot.rc2"/>
+        <version value="2027.0.0-ballot"/>
         <name value="MII_VS_Lufu_LNC_IRV_ERV"/>
         <title value="MII VS Lufu LNC IRV &amp; ERV"/>
         <status value="active"/>
         <experimental value="false"/>
-        <date value="2026-09-02"/>
+        <date value="2026-09-15"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -8079,8 +8079,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:d2718e5f-7412-479d-8a02-b25555a5fa93"/>
-          <timestamp value="2026-09-09T13:16:09+00:00"/>
+          <identifier value="urn:uuid:1c52ef8c-3c0e-41fb-a655-4716243f287b"/>
+          <timestamp value="2026-09-10T10:24:57+00:00"/>
           <total value="5"/>
           <offset value="0"/>
           <parameter>
@@ -8294,12 +8294,12 @@
           </div>
         </text>
         <url value="https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/ValueSet/mii-vs-lufu-lnc-kco"/>
-        <version value="2027.0.0-ballot.rc2"/>
+        <version value="2027.0.0-ballot"/>
         <name value="MII_VS_Lufu_LNC_KCO"/>
         <title value="MII VS Lufu LNC KCO"/>
         <status value="active"/>
         <experimental value="false"/>
-        <date value="2026-09-02"/>
+        <date value="2026-09-15"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -8308,8 +8308,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:eb988389-69db-4cd6-a6a2-8ff0b36ff7c0"/>
-          <timestamp value="2026-09-09T13:16:10+00:00"/>
+          <identifier value="urn:uuid:47b0aa78-a975-4af9-8384-5e7d7db3c959"/>
+          <timestamp value="2026-09-10T10:24:58+00:00"/>
           <total value="6"/>
           <offset value="0"/>
           <parameter>
@@ -8533,12 +8533,12 @@
           </div>
         </text>
         <url value="https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/ValueSet/mii-vs-lufu-lnc-kco"/>
-        <version value="2027.0.0-ballot.rc2"/>
+        <version value="2027.0.0-ballot"/>
         <name value="MII_VS_Lufu_LNC_KCO"/>
         <title value="MII VS Lufu LNC KCO"/>
         <status value="active"/>
         <experimental value="false"/>
-        <date value="2026-09-02"/>
+        <date value="2026-09-15"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -8547,8 +8547,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:eb988389-69db-4cd6-a6a2-8ff0b36ff7c0"/>
-          <timestamp value="2026-09-09T13:16:10+00:00"/>
+          <identifier value="urn:uuid:47b0aa78-a975-4af9-8384-5e7d7db3c959"/>
+          <timestamp value="2026-09-10T10:24:58+00:00"/>
           <total value="6"/>
           <offset value="0"/>
           <parameter>
@@ -8772,12 +8772,12 @@
           </div>
         </text>
         <url value="https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/ValueSet/mii-vs-lufu-lnc-kco"/>
-        <version value="2027.0.0-ballot.rc2"/>
+        <version value="2027.0.0-ballot"/>
         <name value="MII_VS_Lufu_LNC_KCO"/>
         <title value="MII VS Lufu LNC KCO"/>
         <status value="active"/>
         <experimental value="false"/>
-        <date value="2026-09-02"/>
+        <date value="2026-09-15"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -8786,8 +8786,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:e20fe556-d6cb-4405-9676-ed07df0b8e4f"/>
-          <timestamp value="2026-09-09T13:16:10+00:00"/>
+          <identifier value="urn:uuid:233fe002-5072-4cd8-9bb7-db183c6df406"/>
+          <timestamp value="2026-09-10T10:24:58+00:00"/>
           <total value="6"/>
           <offset value="0"/>
           <parameter>
@@ -9079,12 +9079,12 @@
           </div>
         </text>
         <url value="https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/ValueSet/mii-vs-lufu-lnc-mef"/>
-        <version value="2027.0.0-ballot.rc2"/>
+        <version value="2027.0.0-ballot"/>
         <name value="MII_VS_Lufu_LNC_MEF"/>
         <title value="MII VS Lufu LNC MEF"/>
         <status value="active"/>
         <experimental value="false"/>
-        <date value="2026-09-02"/>
+        <date value="2026-09-15"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -9093,8 +9093,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:c1cf1c62-af7d-436d-9e51-c0bd2b78609f"/>
-          <timestamp value="2026-09-09T13:16:12+00:00"/>
+          <identifier value="urn:uuid:f40bea78-ece3-4f45-8c35-c20e2672fef3"/>
+          <timestamp value="2026-09-10T10:25:01+00:00"/>
           <total value="9"/>
           <offset value="0"/>
           <parameter>
@@ -9427,12 +9427,12 @@
           </div>
         </text>
         <url value="https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/ValueSet/mii-vs-lufu-lnc-mef"/>
-        <version value="2027.0.0-ballot.rc2"/>
+        <version value="2027.0.0-ballot"/>
         <name value="MII_VS_Lufu_LNC_MEF"/>
         <title value="MII VS Lufu LNC MEF"/>
         <status value="active"/>
         <experimental value="false"/>
-        <date value="2026-09-02"/>
+        <date value="2026-09-15"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -9441,8 +9441,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:c1cf1c62-af7d-436d-9e51-c0bd2b78609f"/>
-          <timestamp value="2026-09-09T13:16:12+00:00"/>
+          <identifier value="urn:uuid:f40bea78-ece3-4f45-8c35-c20e2672fef3"/>
+          <timestamp value="2026-09-10T10:25:01+00:00"/>
           <total value="9"/>
           <offset value="0"/>
           <parameter>
@@ -9775,12 +9775,12 @@
           </div>
         </text>
         <url value="https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/ValueSet/mii-vs-lufu-lnc-mef"/>
-        <version value="2027.0.0-ballot.rc2"/>
+        <version value="2027.0.0-ballot"/>
         <name value="MII_VS_Lufu_LNC_MEF"/>
         <title value="MII VS Lufu LNC MEF"/>
         <status value="active"/>
         <experimental value="false"/>
-        <date value="2026-09-02"/>
+        <date value="2026-09-15"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -9789,8 +9789,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:6d36b093-d30d-48ba-a756-edb2f60a4694"/>
-          <timestamp value="2026-09-09T13:16:13+00:00"/>
+          <identifier value="urn:uuid:b77952ae-1ef8-408a-aee8-9e840185ef1d"/>
+          <timestamp value="2026-09-10T10:25:02+00:00"/>
           <total value="9"/>
           <offset value="0"/>
           <parameter>
@@ -27250,12 +27250,12 @@
           </div>
         </text>
         <url value="https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/ValueSet/mii-vs-lufu-lnc-observable"/>
-        <version value="2027.0.0-ballot.rc2"/>
+        <version value="2027.0.0-ballot"/>
         <name value="MII_VS_Lufu_LNC_Observable"/>
         <title value="MII VS Lufu LNC Observable"/>
         <status value="active"/>
         <experimental value="false"/>
-        <date value="2026-09-02"/>
+        <date value="2026-09-15"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -27264,8 +27264,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:3d6b7be6-822b-4206-bdad-413220a1b69f"/>
-          <timestamp value="2026-09-09T13:15:48+00:00"/>
+          <identifier value="urn:uuid:c02aaea3-9254-4a2a-b119-0bc91f4bda9b"/>
+          <timestamp value="2026-09-10T10:24:30+00:00"/>
           <total value="825"/>
           <offset value="0"/>
           <parameter>
@@ -48978,12 +48978,12 @@
           </div>
         </text>
         <url value="https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/ValueSet/mii-vs-lufu-lnc-observable"/>
-        <version value="2027.0.0-ballot.rc2"/>
+        <version value="2027.0.0-ballot"/>
         <name value="MII_VS_Lufu_LNC_Observable"/>
         <title value="MII VS Lufu LNC Observable"/>
         <status value="active"/>
         <experimental value="false"/>
-        <date value="2026-09-02"/>
+        <date value="2026-09-15"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -48992,8 +48992,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:3d6b7be6-822b-4206-bdad-413220a1b69f"/>
-          <timestamp value="2026-09-09T13:15:48+00:00"/>
+          <identifier value="urn:uuid:c02aaea3-9254-4a2a-b119-0bc91f4bda9b"/>
+          <timestamp value="2026-09-10T10:24:30+00:00"/>
           <total value="825"/>
           <offset value="0"/>
           <parameter>
@@ -70706,12 +70706,12 @@
           </div>
         </text>
         <url value="https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/ValueSet/mii-vs-lufu-lnc-observable"/>
-        <version value="2027.0.0-ballot.rc2"/>
+        <version value="2027.0.0-ballot"/>
         <name value="MII_VS_Lufu_LNC_Observable"/>
         <title value="MII VS Lufu LNC Observable"/>
         <status value="active"/>
         <experimental value="false"/>
-        <date value="2026-09-02"/>
+        <date value="2026-09-15"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -70720,8 +70720,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:79ea5243-48cc-4779-ab51-960e470096e3"/>
-          <timestamp value="2026-09-09T13:15:50+00:00"/>
+          <identifier value="urn:uuid:c76472a8-e5f3-409d-aaf1-c5a30cad444e"/>
+          <timestamp value="2026-09-10T10:24:32+00:00"/>
           <total value="825"/>
           <offset value="0"/>
           <parameter>
@@ -74539,12 +74539,12 @@
           </div>
         </text>
         <url value="https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/ValueSet/mii-vs-lufu-lnc-pef"/>
-        <version value="2027.0.0-ballot.rc2"/>
+        <version value="2027.0.0-ballot"/>
         <name value="MII_VS_Lufu_LNC_PEF"/>
         <title value="MII VS Lufu LNC PEF"/>
         <status value="active"/>
         <experimental value="false"/>
-        <date value="2026-09-02"/>
+        <date value="2026-09-15"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -74553,8 +74553,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:950d8ba1-9065-4049-a373-d8134e1a949d"/>
-          <timestamp value="2026-09-09T13:16:14+00:00"/>
+          <identifier value="urn:uuid:bec87c63-9918-436f-8afe-c6bfc4b76d1c"/>
+          <timestamp value="2026-09-10T10:25:04+00:00"/>
           <total value="13"/>
           <offset value="0"/>
           <parameter>
@@ -74953,12 +74953,12 @@
           </div>
         </text>
         <url value="https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/ValueSet/mii-vs-lufu-lnc-pef"/>
-        <version value="2027.0.0-ballot.rc2"/>
+        <version value="2027.0.0-ballot"/>
         <name value="MII_VS_Lufu_LNC_PEF"/>
         <title value="MII VS Lufu LNC PEF"/>
         <status value="active"/>
         <experimental value="false"/>
-        <date value="2026-09-02"/>
+        <date value="2026-09-15"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -74967,8 +74967,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:950d8ba1-9065-4049-a373-d8134e1a949d"/>
-          <timestamp value="2026-09-09T13:16:14+00:00"/>
+          <identifier value="urn:uuid:bec87c63-9918-436f-8afe-c6bfc4b76d1c"/>
+          <timestamp value="2026-09-10T10:25:04+00:00"/>
           <total value="13"/>
           <offset value="0"/>
           <parameter>
@@ -75367,12 +75367,12 @@
           </div>
         </text>
         <url value="https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/ValueSet/mii-vs-lufu-lnc-pef"/>
-        <version value="2027.0.0-ballot.rc2"/>
+        <version value="2027.0.0-ballot"/>
         <name value="MII_VS_Lufu_LNC_PEF"/>
         <title value="MII VS Lufu LNC PEF"/>
         <status value="active"/>
         <experimental value="false"/>
-        <date value="2026-09-02"/>
+        <date value="2026-09-15"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -75381,8 +75381,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:2aeec7c7-e139-40fb-ba28-90ac9f460201"/>
-          <timestamp value="2026-09-09T13:16:15+00:00"/>
+          <identifier value="urn:uuid:ebdb41a9-df97-49ae-9663-9abefe9ca7ec"/>
+          <timestamp value="2026-09-10T10:25:04+00:00"/>
           <total value="13"/>
           <offset value="0"/>
           <parameter>
@@ -75528,12 +75528,12 @@
           </div>
         </text>
         <url value="https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/ValueSet/mii-vs-lufu-lnc-procedure"/>
-        <version value="2027.0.0-ballot.rc2"/>
+        <version value="2027.0.0-ballot"/>
         <name value="MII_VS_Lufu_LNC_Procedure"/>
         <title value="MII VS Lufu LNC Procedure Report"/>
         <status value="active"/>
         <experimental value="false"/>
-        <date value="2026-09-02"/>
+        <date value="2026-09-15"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -75542,8 +75542,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:c1930044-f71b-475f-912c-be08c39eedca"/>
-          <timestamp value="2026-09-09T13:16:33+00:00"/>
+          <identifier value="urn:uuid:c2f3bbca-b4a3-43b4-9529-c1dfb4c1204c"/>
+          <timestamp value="2026-09-10T10:25:23+00:00"/>
           <total value="1"/>
           <offset value="0"/>
           <parameter>
@@ -75642,12 +75642,12 @@
           </div>
         </text>
         <url value="https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/ValueSet/mii-vs-lufu-lnc-procedure"/>
-        <version value="2027.0.0-ballot.rc2"/>
+        <version value="2027.0.0-ballot"/>
         <name value="MII_VS_Lufu_LNC_Procedure"/>
         <title value="MII VS Lufu LNC Procedure Report"/>
         <status value="active"/>
         <experimental value="false"/>
-        <date value="2026-09-02"/>
+        <date value="2026-09-15"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -75656,8 +75656,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:c1930044-f71b-475f-912c-be08c39eedca"/>
-          <timestamp value="2026-09-09T13:16:33+00:00"/>
+          <identifier value="urn:uuid:c2f3bbca-b4a3-43b4-9529-c1dfb4c1204c"/>
+          <timestamp value="2026-09-10T10:25:23+00:00"/>
           <total value="1"/>
           <offset value="0"/>
           <parameter>
@@ -75756,12 +75756,12 @@
           </div>
         </text>
         <url value="https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/ValueSet/mii-vs-lufu-lnc-procedure"/>
-        <version value="2027.0.0-ballot.rc2"/>
+        <version value="2027.0.0-ballot"/>
         <name value="MII_VS_Lufu_LNC_Procedure"/>
         <title value="MII VS Lufu LNC Procedure Report"/>
         <status value="active"/>
         <experimental value="false"/>
-        <date value="2026-09-02"/>
+        <date value="2026-09-15"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -75770,8 +75770,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:e360fb97-3add-4d7b-840c-d300b15ce792"/>
-          <timestamp value="2026-09-09T13:16:33+00:00"/>
+          <identifier value="urn:uuid:b0f4579c-38b0-40c6-b737-92b8eefd5aac"/>
+          <timestamp value="2026-09-10T10:25:23+00:00"/>
           <total value="1"/>
           <offset value="0"/>
           <parameter>
@@ -76029,12 +76029,12 @@
           </div>
         </text>
         <url value="https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/ValueSet/mii-vs-lufu-lnc-r"/>
-        <version value="2027.0.0-ballot.rc2"/>
+        <version value="2027.0.0-ballot"/>
         <name value="MII_VS_Lufu_LNC_R"/>
         <title value="MII VS Lufu LNC R"/>
         <status value="active"/>
         <experimental value="false"/>
-        <date value="2026-09-02"/>
+        <date value="2026-09-15"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -76043,8 +76043,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:87a8d3a6-6f83-4163-9c81-51db4d44a797"/>
-          <timestamp value="2026-09-09T13:16:19+00:00"/>
+          <identifier value="urn:uuid:fc7bae50-1a6d-48f0-8e32-0879bb7e48b9"/>
+          <timestamp value="2026-09-10T10:25:09+00:00"/>
           <total value="9"/>
           <offset value="0"/>
           <parameter>
@@ -76343,12 +76343,12 @@
           </div>
         </text>
         <url value="https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/ValueSet/mii-vs-lufu-lnc-r"/>
-        <version value="2027.0.0-ballot.rc2"/>
+        <version value="2027.0.0-ballot"/>
         <name value="MII_VS_Lufu_LNC_R"/>
         <title value="MII VS Lufu LNC R"/>
         <status value="active"/>
         <experimental value="false"/>
-        <date value="2026-09-02"/>
+        <date value="2026-09-15"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -76357,8 +76357,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:87a8d3a6-6f83-4163-9c81-51db4d44a797"/>
-          <timestamp value="2026-09-09T13:16:19+00:00"/>
+          <identifier value="urn:uuid:fc7bae50-1a6d-48f0-8e32-0879bb7e48b9"/>
+          <timestamp value="2026-09-10T10:25:09+00:00"/>
           <total value="9"/>
           <offset value="0"/>
           <parameter>
@@ -76657,12 +76657,12 @@
           </div>
         </text>
         <url value="https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/ValueSet/mii-vs-lufu-lnc-r"/>
-        <version value="2027.0.0-ballot.rc2"/>
+        <version value="2027.0.0-ballot"/>
         <name value="MII_VS_Lufu_LNC_R"/>
         <title value="MII VS Lufu LNC R"/>
         <status value="active"/>
         <experimental value="false"/>
-        <date value="2026-09-02"/>
+        <date value="2026-09-15"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -76671,8 +76671,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:cdc1219f-4a0d-4213-9d83-094ce098d1a8"/>
-          <timestamp value="2026-09-09T13:16:20+00:00"/>
+          <identifier value="urn:uuid:3d340825-aade-4390-9b4b-8ae0a2595e66"/>
+          <timestamp value="2026-09-10T10:25:10+00:00"/>
           <total value="9"/>
           <offset value="0"/>
           <parameter>
@@ -76842,12 +76842,12 @@
           </div>
         </text>
         <url value="https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/ValueSet/mii-vs-lufu-lnc-rv-tlc"/>
-        <version value="2027.0.0-ballot.rc2"/>
+        <version value="2027.0.0-ballot"/>
         <name value="MII_VS_Lufu_LNC_RV_TLC"/>
         <title value="MII VS Lufu LNC RV TLC"/>
         <status value="active"/>
         <experimental value="false"/>
-        <date value="2026-09-02"/>
+        <date value="2026-09-15"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -76856,8 +76856,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:fa9a564b-f780-4912-887d-a8af05fa87a0"/>
-          <timestamp value="2026-09-09T13:16:20+00:00"/>
+          <identifier value="urn:uuid:1b56ad3b-44ec-41fc-8900-b17bc187c23a"/>
+          <timestamp value="2026-09-10T10:25:10+00:00"/>
           <total value="3"/>
           <offset value="0"/>
           <parameter>
@@ -77006,12 +77006,12 @@
           </div>
         </text>
         <url value="https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/ValueSet/mii-vs-lufu-lnc-rv-tlc"/>
-        <version value="2027.0.0-ballot.rc2"/>
+        <version value="2027.0.0-ballot"/>
         <name value="MII_VS_Lufu_LNC_RV_TLC"/>
         <title value="MII VS Lufu LNC RV TLC"/>
         <status value="active"/>
         <experimental value="false"/>
-        <date value="2026-09-02"/>
+        <date value="2026-09-15"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -77020,8 +77020,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:fa9a564b-f780-4912-887d-a8af05fa87a0"/>
-          <timestamp value="2026-09-09T13:16:20+00:00"/>
+          <identifier value="urn:uuid:1b56ad3b-44ec-41fc-8900-b17bc187c23a"/>
+          <timestamp value="2026-09-10T10:25:10+00:00"/>
           <total value="3"/>
           <offset value="0"/>
           <parameter>
@@ -77170,12 +77170,12 @@
           </div>
         </text>
         <url value="https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/ValueSet/mii-vs-lufu-lnc-rv-tlc"/>
-        <version value="2027.0.0-ballot.rc2"/>
+        <version value="2027.0.0-ballot"/>
         <name value="MII_VS_Lufu_LNC_RV_TLC"/>
         <title value="MII VS Lufu LNC RV TLC"/>
         <status value="active"/>
         <experimental value="false"/>
-        <date value="2026-09-02"/>
+        <date value="2026-09-15"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -77184,8 +77184,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:2f00714e-875c-4b9a-b095-3fdecf638ca2"/>
-          <timestamp value="2026-09-09T13:16:20+00:00"/>
+          <identifier value="urn:uuid:81f8755f-c313-439a-9eba-a6b85eca03e3"/>
+          <timestamp value="2026-09-10T10:25:11+00:00"/>
           <total value="3"/>
           <offset value="0"/>
           <parameter>
@@ -77411,12 +77411,12 @@
           </div>
         </text>
         <url value="https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/ValueSet/mii-vs-lufu-lnc-rv"/>
-        <version value="2027.0.0-ballot.rc2"/>
+        <version value="2027.0.0-ballot"/>
         <name value="MII_VS_Lufu_LNC_RV"/>
         <title value="MII VS Lufu LNC RV"/>
         <status value="active"/>
         <experimental value="false"/>
-        <date value="2026-09-02"/>
+        <date value="2026-09-15"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -77425,8 +77425,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:0b4876e9-1dfb-451a-b2a2-df628443e130"/>
-          <timestamp value="2026-09-09T13:16:21+00:00"/>
+          <identifier value="urn:uuid:0e68090c-4f10-446b-ba5b-7970ea28b872"/>
+          <timestamp value="2026-09-10T10:25:11+00:00"/>
           <total value="7"/>
           <offset value="0"/>
           <parameter>
@@ -77675,12 +77675,12 @@
           </div>
         </text>
         <url value="https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/ValueSet/mii-vs-lufu-lnc-rv"/>
-        <version value="2027.0.0-ballot.rc2"/>
+        <version value="2027.0.0-ballot"/>
         <name value="MII_VS_Lufu_LNC_RV"/>
         <title value="MII VS Lufu LNC RV"/>
         <status value="active"/>
         <experimental value="false"/>
-        <date value="2026-09-02"/>
+        <date value="2026-09-15"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -77689,8 +77689,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:0b4876e9-1dfb-451a-b2a2-df628443e130"/>
-          <timestamp value="2026-09-09T13:16:21+00:00"/>
+          <identifier value="urn:uuid:0e68090c-4f10-446b-ba5b-7970ea28b872"/>
+          <timestamp value="2026-09-10T10:25:11+00:00"/>
           <total value="7"/>
           <offset value="0"/>
           <parameter>
@@ -77939,12 +77939,12 @@
           </div>
         </text>
         <url value="https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/ValueSet/mii-vs-lufu-lnc-rv"/>
-        <version value="2027.0.0-ballot.rc2"/>
+        <version value="2027.0.0-ballot"/>
         <name value="MII_VS_Lufu_LNC_RV"/>
         <title value="MII VS Lufu LNC RV"/>
         <status value="active"/>
         <experimental value="false"/>
-        <date value="2026-09-02"/>
+        <date value="2026-09-15"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -77953,8 +77953,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:96ec5ceb-7031-4065-975c-1a76b1c42349"/>
-          <timestamp value="2026-09-09T13:16:21+00:00"/>
+          <identifier value="urn:uuid:d3e6592e-6e13-44d0-816d-9e5a20ecd32a"/>
+          <timestamp value="2026-09-10T10:25:12+00:00"/>
           <total value="7"/>
           <offset value="0"/>
           <parameter>
@@ -78136,12 +78136,12 @@
           </div>
         </text>
         <url value="https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/ValueSet/mii-vs-lufu-lnc-sr-eff"/>
-        <version value="2027.0.0-ballot.rc2"/>
+        <version value="2027.0.0-ballot"/>
         <name value="MII_VS_Lufu_LNC_sR_eff"/>
         <title value="MII VS Lufu LNC sR eff"/>
         <status value="active"/>
         <experimental value="false"/>
-        <date value="2026-09-02"/>
+        <date value="2026-09-15"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -78150,8 +78150,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:49e53ef6-4b3a-4139-be42-1b9fcc7625e0"/>
-          <timestamp value="2026-09-09T13:16:17+00:00"/>
+          <identifier value="urn:uuid:3d1fbfa9-1258-45ff-9b5f-185a1ced9a61"/>
+          <timestamp value="2026-09-10T10:25:07+00:00"/>
           <total value="4"/>
           <offset value="0"/>
           <parameter>
@@ -78325,12 +78325,12 @@
           </div>
         </text>
         <url value="https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/ValueSet/mii-vs-lufu-lnc-sr-eff"/>
-        <version value="2027.0.0-ballot.rc2"/>
+        <version value="2027.0.0-ballot"/>
         <name value="MII_VS_Lufu_LNC_sR_eff"/>
         <title value="MII VS Lufu LNC sR eff"/>
         <status value="active"/>
         <experimental value="false"/>
-        <date value="2026-09-02"/>
+        <date value="2026-09-15"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -78339,8 +78339,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:49e53ef6-4b3a-4139-be42-1b9fcc7625e0"/>
-          <timestamp value="2026-09-09T13:16:17+00:00"/>
+          <identifier value="urn:uuid:3d1fbfa9-1258-45ff-9b5f-185a1ced9a61"/>
+          <timestamp value="2026-09-10T10:25:07+00:00"/>
           <total value="4"/>
           <offset value="0"/>
           <parameter>
@@ -78514,12 +78514,12 @@
           </div>
         </text>
         <url value="https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/ValueSet/mii-vs-lufu-lnc-sr-eff"/>
-        <version value="2027.0.0-ballot.rc2"/>
+        <version value="2027.0.0-ballot"/>
         <name value="MII_VS_Lufu_LNC_sR_eff"/>
         <title value="MII VS Lufu LNC sR eff"/>
         <status value="active"/>
         <experimental value="false"/>
-        <date value="2026-09-02"/>
+        <date value="2026-09-15"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -78528,8 +78528,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:943afcac-a277-434a-9b50-3c9df9d847e1"/>
-          <timestamp value="2026-09-09T13:16:18+00:00"/>
+          <identifier value="urn:uuid:8b420b4c-6e98-4887-93d7-ad038a4579fa"/>
+          <timestamp value="2026-09-10T10:25:08+00:00"/>
           <total value="4"/>
           <offset value="0"/>
           <parameter>
@@ -78699,12 +78699,12 @@
           </div>
         </text>
         <url value="https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/ValueSet/mii-vs-lufu-lnc-sr"/>
-        <version value="2027.0.0-ballot.rc2"/>
+        <version value="2027.0.0-ballot"/>
         <name value="MII_VS_Lufu_LNC_sR"/>
         <title value="MII VS Lufu LNC sR"/>
         <status value="active"/>
         <experimental value="false"/>
-        <date value="2026-09-02"/>
+        <date value="2026-09-15"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -78713,8 +78713,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:1272fc70-6c63-4637-81ad-d531a82c6542"/>
-          <timestamp value="2026-09-09T13:16:18+00:00"/>
+          <identifier value="urn:uuid:26effbbb-787a-434f-ae06-643169985b12"/>
+          <timestamp value="2026-09-10T10:25:08+00:00"/>
           <total value="4"/>
           <offset value="0"/>
           <parameter>
@@ -78888,12 +78888,12 @@
           </div>
         </text>
         <url value="https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/ValueSet/mii-vs-lufu-lnc-sr"/>
-        <version value="2027.0.0-ballot.rc2"/>
+        <version value="2027.0.0-ballot"/>
         <name value="MII_VS_Lufu_LNC_sR"/>
         <title value="MII VS Lufu LNC sR"/>
         <status value="active"/>
         <experimental value="false"/>
-        <date value="2026-09-02"/>
+        <date value="2026-09-15"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -78902,8 +78902,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:1272fc70-6c63-4637-81ad-d531a82c6542"/>
-          <timestamp value="2026-09-09T13:16:18+00:00"/>
+          <identifier value="urn:uuid:26effbbb-787a-434f-ae06-643169985b12"/>
+          <timestamp value="2026-09-10T10:25:08+00:00"/>
           <total value="4"/>
           <offset value="0"/>
           <parameter>
@@ -79077,12 +79077,12 @@
           </div>
         </text>
         <url value="https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/ValueSet/mii-vs-lufu-lnc-sr"/>
-        <version value="2027.0.0-ballot.rc2"/>
+        <version value="2027.0.0-ballot"/>
         <name value="MII_VS_Lufu_LNC_sR"/>
         <title value="MII VS Lufu LNC sR"/>
         <status value="active"/>
         <experimental value="false"/>
-        <date value="2026-09-02"/>
+        <date value="2026-09-15"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -79091,8 +79091,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:0b9618d3-43b2-4743-a70d-3c21b03f308d"/>
-          <timestamp value="2026-09-09T13:16:19+00:00"/>
+          <identifier value="urn:uuid:0e07d1e4-fdc2-48c1-a150-892d149b46e4"/>
+          <timestamp value="2026-09-10T10:25:09+00:00"/>
           <total value="4"/>
           <offset value="0"/>
           <parameter>
@@ -79402,12 +79402,12 @@
           </div>
         </text>
         <url value="https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/ValueSet/mii-vs-lufu-lnc-tlc"/>
-        <version value="2027.0.0-ballot.rc2"/>
+        <version value="2027.0.0-ballot"/>
         <name value="MII_VS_Lufu_LNC_TLC"/>
         <title value="MII VS Lufu LNC TLC"/>
         <status value="active"/>
         <experimental value="false"/>
-        <date value="2026-09-02"/>
+        <date value="2026-09-15"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -79416,8 +79416,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:d8601111-dfb0-4dfb-9c94-c739219fea69"/>
-          <timestamp value="2026-09-09T13:16:24+00:00"/>
+          <identifier value="urn:uuid:f5c488bb-1cbc-475c-b927-bb38d5259984"/>
+          <timestamp value="2026-09-10T10:25:15+00:00"/>
           <total value="11"/>
           <offset value="0"/>
           <parameter>
@@ -79766,12 +79766,12 @@
           </div>
         </text>
         <url value="https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/ValueSet/mii-vs-lufu-lnc-tlc"/>
-        <version value="2027.0.0-ballot.rc2"/>
+        <version value="2027.0.0-ballot"/>
         <name value="MII_VS_Lufu_LNC_TLC"/>
         <title value="MII VS Lufu LNC TLC"/>
         <status value="active"/>
         <experimental value="false"/>
-        <date value="2026-09-02"/>
+        <date value="2026-09-15"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -79780,8 +79780,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:d8601111-dfb0-4dfb-9c94-c739219fea69"/>
-          <timestamp value="2026-09-09T13:16:24+00:00"/>
+          <identifier value="urn:uuid:f5c488bb-1cbc-475c-b927-bb38d5259984"/>
+          <timestamp value="2026-09-10T10:25:15+00:00"/>
           <total value="11"/>
           <offset value="0"/>
           <parameter>
@@ -80130,12 +80130,12 @@
           </div>
         </text>
         <url value="https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/ValueSet/mii-vs-lufu-lnc-tlc"/>
-        <version value="2027.0.0-ballot.rc2"/>
+        <version value="2027.0.0-ballot"/>
         <name value="MII_VS_Lufu_LNC_TLC"/>
         <title value="MII VS Lufu LNC TLC"/>
         <status value="active"/>
         <experimental value="false"/>
-        <date value="2026-09-02"/>
+        <date value="2026-09-15"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -80144,8 +80144,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:d6ad9420-8029-4591-b95a-b3b1fae4fdd1"/>
-          <timestamp value="2026-09-09T13:16:24+00:00"/>
+          <identifier value="urn:uuid:d36487d1-20fa-4e71-82c9-511c825b6910"/>
+          <timestamp value="2026-09-10T10:25:15+00:00"/>
           <total value="11"/>
           <offset value="0"/>
           <parameter>
@@ -80463,12 +80463,12 @@
           </div>
         </text>
         <url value="https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/ValueSet/mii-vs-lufu-lnc-vc"/>
-        <version value="2027.0.0-ballot.rc2"/>
+        <version value="2027.0.0-ballot"/>
         <name value="MII_VS_Lufu_LNC_VC"/>
         <title value="MII VS Lufu LNC Vital Capacity"/>
         <status value="active"/>
         <experimental value="false"/>
-        <date value="2026-09-02"/>
+        <date value="2026-09-15"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -80477,8 +80477,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:2d73d725-d9a4-4768-a514-fbf6e0a08155"/>
-          <timestamp value="2026-09-09T13:16:27+00:00"/>
+          <identifier value="urn:uuid:2ed158f3-f310-4385-9ba2-3ea5e47e75cc"/>
+          <timestamp value="2026-09-10T10:25:18+00:00"/>
           <total value="10"/>
           <offset value="0"/>
           <parameter>
@@ -80802,12 +80802,12 @@
           </div>
         </text>
         <url value="https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/ValueSet/mii-vs-lufu-lnc-vc"/>
-        <version value="2027.0.0-ballot.rc2"/>
+        <version value="2027.0.0-ballot"/>
         <name value="MII_VS_Lufu_LNC_VC"/>
         <title value="MII VS Lufu LNC Vital Capacity"/>
         <status value="active"/>
         <experimental value="false"/>
-        <date value="2026-09-02"/>
+        <date value="2026-09-15"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -80816,8 +80816,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:2d73d725-d9a4-4768-a514-fbf6e0a08155"/>
-          <timestamp value="2026-09-09T13:16:27+00:00"/>
+          <identifier value="urn:uuid:2ed158f3-f310-4385-9ba2-3ea5e47e75cc"/>
+          <timestamp value="2026-09-10T10:25:18+00:00"/>
           <total value="10"/>
           <offset value="0"/>
           <parameter>
@@ -81141,12 +81141,12 @@
           </div>
         </text>
         <url value="https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/ValueSet/mii-vs-lufu-lnc-vc"/>
-        <version value="2027.0.0-ballot.rc2"/>
+        <version value="2027.0.0-ballot"/>
         <name value="MII_VS_Lufu_LNC_VC"/>
         <title value="MII VS Lufu LNC Vital Capacity"/>
         <status value="active"/>
         <experimental value="false"/>
-        <date value="2026-09-02"/>
+        <date value="2026-09-15"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -81155,8 +81155,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:bce68062-4768-4070-a28b-e282325679ae"/>
-          <timestamp value="2026-09-09T13:16:27+00:00"/>
+          <identifier value="urn:uuid:4411cccd-bf1f-4d96-92bc-5d5e887f5f80"/>
+          <timestamp value="2026-09-10T10:25:19+00:00"/>
           <total value="10"/>
           <offset value="0"/>
           <parameter>

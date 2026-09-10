@@ -1,4 +1,4 @@
-# MII VS Lufu LNC Forced Vital Capacity - MII IG Kerndatensatz-Modul Lungenfunktion v2027.0.0-ballot.rc2
+# MII VS Lufu LNC Forced Vital Capacity - MII IG Kerndatensatz-Modul Lungenfunktion v2027.0.0-ballot
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,9 +8,9 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/ValueSet/mii-vs-lufu-lnc-fvc | *Version*:2027.0.0-ballot.rc2 |
-| Active as of 2026-09-02 | *Computable Name*:MII_VS_Lufu_LNC_FVC |
-| **Copyright/Legal**: This value set includes content from SNOMED CT, which is copyright © 2002+ International Health Terminology Standards Development Organisation (IHTSDO), and distributed by agreement between IHTSDO and HL7. Implementer use of SNOMED CT is not covered by this agreement | |
+| *Official URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/ValueSet/mii-vs-lufu-lnc-fvc | *Version*:2027.0.0-ballot |
+| Active as of 2026-09-15 | *Computable Name*:MII_VS_Lufu_LNC_FVC |
+| **Copyright/Legal**: This material contains content from LOINC (http://loinc.org). LOINC is copyright © 1995-2020, Regenstrief Institute, Inc. and the Logical Observation Identifiers Names and Codes (LOINC) Committee and is available at no cost under the license at http://loinc.org/license. LOINC® is a registered United States trademark of Regenstrief Institute, Inc) | |
 
  
 Import the ValueSet for lungfunction forced vital capacity 
@@ -41,12 +41,12 @@ Import the ValueSet for lungfunction forced vital capacity
     "profile" : ["http://hl7.org/fhir/StructureDefinition/shareablevalueset"]
   },
   "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/ValueSet/mii-vs-lufu-lnc-fvc",
-  "version" : "2027.0.0-ballot.rc2",
+  "version" : "2027.0.0-ballot",
   "name" : "MII_VS_Lufu_LNC_FVC",
   "title" : "MII VS Lufu LNC Forced Vital Capacity",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-09-02",
+  "date" : "2026-09-15",
   "publisher" : "Medizininformatik Initiative",
   "contact" : [{
     "name" : "Medizininformatik Initiative",
@@ -63,7 +63,7 @@ Import the ValueSet for lungfunction forced vital capacity
       "display" : "Germany"
     }]
   }],
-  "copyright" : "This value set includes content from SNOMED CT, which is copyright © 2002+ International Health Terminology Standards Development Organisation (IHTSDO), and distributed by agreement between IHTSDO and HL7. Implementer use of SNOMED CT is not covered by this agreement",
+  "copyright" : "This material contains content from LOINC (http://loinc.org). LOINC is copyright © 1995-2020, Regenstrief Institute, Inc. and the Logical Observation Identifiers Names and Codes (LOINC) Committee and is available at no cost under the license at http://loinc.org/license. LOINC® is a registered United States trademark of Regenstrief Institute, Inc)",
   "compose" : {
     "include" : [{
       "system" : "http://loinc.org",

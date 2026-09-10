@@ -1,4 +1,4 @@
-# MII PR Lungenfunktion Hb - MII IG Kerndatensatz-Modul Lungenfunktion v2027.0.0-ballot.rc2
+# MII PR Lungenfunktion Hb - MII IG Kerndatensatz-Modul Lungenfunktion v2027.0.0-ballot
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-hb | *Version*:2027.0.0-ballot.rc2 |
-| Active as of 2026-09-02 | *Computable Name*:MII_PR_Lungenfunktion_Hb |
+| *Official URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-hb | *Version*:2027.0.0-ballot |
+| Active as of 2026-09-15 | *Computable Name*:MII_PR_Lungenfunktion_Hb |
 
  
 The profile describes the hemoglobin. 
@@ -51,7 +51,7 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-lungenfunk
     }
   }],
   "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-hb",
-  "version" : "2027.0.0-ballot.rc2",
+  "version" : "2027.0.0-ballot",
   "name" : "MII_PR_Lungenfunktion_Hb",
   "_name" : {
     "extension" : [{
@@ -81,7 +81,7 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-lungenfunk
     }]
   },
   "status" : "active",
-  "date" : "2026-09-02",
+  "date" : "2026-09-15",
   "publisher" : "Medizininformatik Initiative",
   "contact" : [{
     "name" : "Medizininformatik Initiative",

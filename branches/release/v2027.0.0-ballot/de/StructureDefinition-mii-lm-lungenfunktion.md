@@ -1,4 +1,4 @@
-# MII LM Lungenfunktion - MII IG Kerndatensatz-Modul Lungenfunktion v2027.0.0-ballot.rc2
+# MII LM Lungenfunktion - MII IG Kerndatensatz-Modul Lungenfunktion v2027.0.0-ballot
 
 * [**Inhaltsverzeichnis**](toc.md)
 * [**Artefaktübersicht**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Offizielle URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/LogicalModel/Lungenfunktion | *Version*:2027.0.0-ballot.rc2 |
-| Active Stand: 2026-09-02 | *Maschinenlesbarer Name*:MII_LM_Lungenfunktion |
+| *Offizielle URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/LogicalModel/Lungenfunktion | *Version*:2027.0.0-ballot |
+| Active Stand: 2026-09-15 | *Maschinenlesbarer Name*:MII_LM_Lungenfunktion |
 
  
 MII LogicalModel Modul Lungenfunktion 
@@ -95,7 +95,7 @@ Weitere Repräsentationen des Profils: [CSV](../StructureDefinition-mii-lm-lunge
     }
   }],
   "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/LogicalModel/Lungenfunktion",
-  "version" : "2027.0.0-ballot.rc2",
+  "version" : "2027.0.0-ballot",
   "name" : "MII_LM_Lungenfunktion",
   "_name" : {
     "extension" : [{
@@ -125,7 +125,7 @@ Weitere Repräsentationen des Profils: [CSV](../StructureDefinition-mii-lm-lunge
     }]
   },
   "status" : "active",
-  "date" : "2026-09-02",
+  "date" : "2026-09-15",
   "publisher" : "Medizininformatik Initiative",
   "contact" : [{
     "name" : "Medizininformatik Initiative",

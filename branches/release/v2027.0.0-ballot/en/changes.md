@@ -1,4 +1,4 @@
-# Changelog - MII IG Kerndatensatz-Modul Lungenfunktion v2027.0.0-ballot.rc2
+# Changelog - MII IG Kerndatensatz-Modul Lungenfunktion v2027.0.0-ballot
 
 * [**Table of Contents**](toc.md)
 * **Changelog**
@@ -37,6 +37,15 @@ A version section that contains a breaking change is not complete until it answe
 Mark such entries clearly (for example, prefix them with **BREAKING:**) so a reader scanning the section cannot miss them.
 
 -------
+
+#### Version 2027.0.0-ballot
+
+**Date:** 2026-09-15
+
+* **Changed** Merge License-pages and allign ValueSets to ist
+*  
+-------
+ 
 
 #### Version 2027.0.0-ballot.rc2
 

@@ -75,7 +75,7 @@
     </valueCodeableConcept>
   </extension>
   <url value="https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-dlco"/>
-  <version value="2027.0.0-ballot.rc2"/>
+  <version value="2027.0.0-ballot"/>
   <name value="MII_PR_Lungenfunktion_DLCO">
     <extension url="http://hl7.org/fhir/StructureDefinition/translation">
       <extension url="lang">
@@ -97,7 +97,7 @@
     </extension>
   </title>
   <status value="active"/>
-  <date value="2026-09-02"/>
+  <date value="2026-09-15"/>
   <publisher value="Medizininformatik Initiative"/>
   <contact>
     <name value="Medizininformatik Initiative"/>
@@ -156,7 +156,7 @@
   <derivation value="constraint"/>
   <snapshot>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/snapshot-base-version">
-      <valueString value="2027.0.0-ballot.rc2"/>
+      <valueString value="2027.0.0-ballot"/>
     </extension>
     <element id="Observation">
       <path value="Observation"/>

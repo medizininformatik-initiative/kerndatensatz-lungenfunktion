@@ -1,4 +1,4 @@
-# Beispiele - MII IG Kerndatensatz-Modul Lungenfunktion v2027.0.0-ballot.rc2
+# Beispiele - MII IG Kerndatensatz-Modul Lungenfunktion v2027.0.0-ballot
 
 * [**Inhaltsverzeichnis**](toc.md)
 * **Beispiele**

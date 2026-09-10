@@ -1,4 +1,4 @@
-# MII ImplementationGuide Ressource - MII IG Kerndatensatz-Modul Lungenfunktion v2027.0.0-ballot.rc2
+# MII ImplementationGuide Ressource - MII IG Kerndatensatz-Modul Lungenfunktion v2027.0.0-ballot
 
 * [**Inhaltsverzeichnis**](toc.md)
 * **MII ImplementationGuide Ressource**
@@ -17,6 +17,8 @@ This is an R4 IG. None of the features it uses are changed in R4B, so it can be 
 ### IG-Abhängigkeiten
 
 Dieser IG enthält die folgenden Abhängigkeiten von anderen IGs.
+
+
 
 
 
@@ -48,22 +50,22 @@ This publication includes IP covered under the following statements.
 
 * BfArM - Bundesinstitut für Arzneimittel und Medizinprodukte
 
-* [ATC](https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.base@2026.0.1&canonical=http://fhir.de/CodeSystem/bfarm/atc): [MII_PR_Lungenfunktion_Dosis_Gabe](StructureDefinition-mii-pr-lungenfunktion-dosis-gabe.md) and [MII_PR_Lungenfunktion_Methacholine](StructureDefinition-mii-pr-lungenfunktion-methacholine.md)
+* [ATC](https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.medikation@2026.0.1&canonical=http://fhir.de/CodeSystem/bfarm/atc): [MII_PR_Lungenfunktion_Dosis_Gabe](StructureDefinition-mii-pr-lungenfunktion-dosis-gabe.md) and [MII_PR_Lungenfunktion_Methacholine](StructureDefinition-mii-pr-lungenfunktion-methacholine.md)
 
 
 * BfArM 1994 - 2024 - Die Erstellung erfolgt unter Verwendung der maschinenlesbaren Fassung des Bundesinstituts für Arzneimittel und Medizinprodukte (BfArM)
 
-* [OPS](https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.base@2026.0.1&canonical=http://fhir.de/CodeSystem/bfarm/ops): [MII_PR_Lungenfunktion_Bodyplethysmographie_Messung](StructureDefinition-mii-pr-lungenfunktion-bodyplethysmographie-messung.md), [MII_PR_Lungenfunktion_Diffusion_Messung](StructureDefinition-mii-pr-lungenfunktion-diffusion-messung.md), [MII_PR_Lungenfunktion_Provokationstest_Messung](StructureDefinition-mii-pr-lungenfunktion-provokationstest-messung.md) and [MII_PR_Lungenfunktion_Spirometrie_Messung](StructureDefinition-mii-pr-lungenfunktion-spirometrie-messung.md)
+* [OPS](https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.medikation@2026.0.1&canonical=http://fhir.de/CodeSystem/bfarm/ops): [MII_PR_Lungenfunktion_Bodyplethysmographie_Messung](StructureDefinition-mii-pr-lungenfunktion-bodyplethysmographie-messung.md), [MII_PR_Lungenfunktion_Diffusion_Messung](StructureDefinition-mii-pr-lungenfunktion-diffusion-messung.md), [MII_PR_Lungenfunktion_Provokationstest_Messung](StructureDefinition-mii-pr-lungenfunktion-provokationstest-messung.md) and [MII_PR_Lungenfunktion_Spirometrie_Messung](StructureDefinition-mii-pr-lungenfunktion-spirometrie-messung.md)
 
 
 * HL7 Deutschland e.V.
 
-* [Arzneimittel-Stoffkatalog](https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.base@2026.0.1&canonical=http://fhir.de/CodeSystem/ask): [MII_PR_Lungenfunktion_Methacholine](StructureDefinition-mii-pr-lungenfunktion-methacholine.md)
+* [Arzneimittel-Stoffkatalog](https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.medikation@2026.0.1&canonical=http://fhir.de/CodeSystem/ask): [MII_PR_Lungenfunktion_Methacholine](StructureDefinition-mii-pr-lungenfunktion-methacholine.md)
 
 
 * IFA GmbH
 
-* [PZN](https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.base@2026.0.1&canonical=http://fhir.de/CodeSystem/ifa/pzn): [MII_PR_Lungenfunktion_Dosis_Gabe](StructureDefinition-mii-pr-lungenfunktion-dosis-gabe.md), [MII_PR_Lungenfunktion_Methacholine](StructureDefinition-mii-pr-lungenfunktion-methacholine.md) and [Medication/mii-exa-lungenfunktion-methacholine](Medication-mii-exa-lungenfunktion-methacholine.md)
+* [PZN](https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.medikation@2026.0.1&canonical=http://fhir.de/CodeSystem/ifa/pzn): [MII_PR_Lungenfunktion_Dosis_Gabe](StructureDefinition-mii-pr-lungenfunktion-dosis-gabe.md), [MII_PR_Lungenfunktion_Methacholine](StructureDefinition-mii-pr-lungenfunktion-methacholine.md) and [Medication/mii-exa-lungenfunktion-methacholine](Medication-mii-exa-lungenfunktion-methacholine.md)
 
 
 * ISO maintains the copyright on the country codes, and controls its use carefully. For further details see the ISO 3166 web page: [https://www.iso.org/iso-3166-country-codes.html](https://www.iso.org/iso-3166-country-codes.html)
@@ -102,7 +104,7 @@ This publication includes IP covered under the following statements.
 
 * WHO, BfArM 1994 - 2024 - Die Erstellung erfolgt unter Verwendung der maschinenlesbaren Fassung des Bundesinstituts für Arzneimittel und Medizinprodukte (BfArM)
 
-* [ICD-10-GM](https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.base@2026.0.1&canonical=http://fhir.de/CodeSystem/bfarm/icd-10-gm): [MII_PR_Lungenfunktion_Befund](StructureDefinition-mii-pr-lungenfunktion-befund.md), [MII_PR_Lungenfunktion_Bodyplethysmographie](StructureDefinition-mii-pr-lungenfunktion-bodyplethysmographie.md), [MII_PR_Lungenfunktion_Diffusion](StructureDefinition-mii-pr-lungenfunktion-diffusion.md), [MII_PR_Lungenfunktion_Provokationstest](StructureDefinition-mii-pr-lungenfunktion-provokationstest.md) and [MII_PR_Lungenfunktion_Spirometrie](StructureDefinition-mii-pr-lungenfunktion-spirometrie.md)
+* [ICD-10-GM](https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.medikation@2026.0.1&canonical=http://fhir.de/CodeSystem/bfarm/icd-10-gm): [MII_PR_Lungenfunktion_Befund](StructureDefinition-mii-pr-lungenfunktion-befund.md), [MII_PR_Lungenfunktion_Bodyplethysmographie](StructureDefinition-mii-pr-lungenfunktion-bodyplethysmographie.md), [MII_PR_Lungenfunktion_Diffusion](StructureDefinition-mii-pr-lungenfunktion-diffusion.md), [MII_PR_Lungenfunktion_Provokationstest](StructureDefinition-mii-pr-lungenfunktion-provokationstest.md) and [MII_PR_Lungenfunktion_Spirometrie](StructureDefinition-mii-pr-lungenfunktion-spirometrie.md)
 
 
 ### IG-Parametereinstellungen und Expansionsparameter
@@ -252,7 +254,7 @@ Expansionsparameter sind Query-Parameter, die an eine `ValueSet`- `$expand`-Oper
     }
   }],
   "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/ImplementationGuide/mii-ig-lungenfunktion",
-  "version" : "2027.0.0-ballot.rc2",
+  "version" : "2027.0.0-ballot",
   "name" : "MII_IG_Lungenfunktion",
   "title" : "MII IG Kerndatensatz-Modul Lungenfunktion",
   "status" : "active",
@@ -287,7 +289,7 @@ Expansionsparameter sind Query-Parameter, die an eine `ValueSet`- `$expand`-Oper
     "id" : "de_medizininformatikinitiative_kerndatensatz_base",
     "uri" : "https://www.medizininformatik-initiative.de/fhir/modul-base/ImplementationGuide/mii-ig-base",
     "packageId" : "de.medizininformatikinitiative.kerndatensatz.base",
-    "version" : "2026.0.1"
+    "version" : "2027.0.0-ballot.rc1"
   },
   {
     "id" : "de_medizininformatikinitiative_kerndatensatz_medikation",

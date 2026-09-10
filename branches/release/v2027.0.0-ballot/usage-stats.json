@@ -1,6 +1,6 @@
 {
   "package": "de.medizininformatikinitiative.kerndatensatz.lungenfunktion",
-  "version": "2027.0.0-ballot.rc2",
+  "version": "2027.0.0-ballot",
   "fhirVersion": "4.0.1",
   "jurisdiction": "DE",
   "extensions": [],
@@ -99,6 +99,9 @@
     "http://hl7.org/fhir/StructureDefinition/artifact-versionPolicy": [
       "ImplementationGuide",
       "StructureDefinition"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/bodySite": [
+      "Procedure.bodySite"
     ],
     "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation": [
       "CapabilityStatement.rest.resource",
