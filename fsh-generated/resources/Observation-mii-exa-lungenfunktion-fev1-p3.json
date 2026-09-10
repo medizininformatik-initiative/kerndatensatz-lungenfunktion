@@ -30,7 +30,7 @@
       {
         "code": "59328004",
         "system": "http://snomed.info/sct",
-        "version": "http://snomed.info/sct/900000000000207008/version/20250701",
+        "version": "http://snomed.info/sct/900000000000207008/version/20260701",
         "display": "Forced expired volume in 1 second (observable entity)"
       }
     ]
@@ -59,7 +59,7 @@
       {
         "code": "249862003",
         "system": "http://snomed.info/sct",
-        "version": "http://snomed.info/sct/900000000000207008/version/20250701",
+        "version": "http://snomed.info/sct/900000000000207008/version/20260701",
         "display": "Sitting upright (finding)"
       }
     ]
@@ -71,7 +71,7 @@
           {
             "code": "310520004",
             "system": "http://snomed.info/sct",
-            "version": "http://snomed.info/sct/900000000000207008/version/20250701",
+            "version": "http://snomed.info/sct/900000000000207008/version/20260701",
             "display": "Expected forced expired volume in 1 second (observable entity)"
           }
         ]

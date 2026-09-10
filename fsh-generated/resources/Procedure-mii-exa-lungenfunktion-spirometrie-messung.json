@@ -12,7 +12,7 @@
       {
         "code": "23426006",
         "system": "http://snomed.info/sct",
-        "version": "http://snomed.info/sct/900000000000207008/version/20250701",
+        "version": "http://snomed.info/sct/900000000000207008/version/20260701",
         "display": "Measurement of respiratory function (procedure)"
       }
     ]
@@ -22,7 +22,7 @@
       {
         "code": "127783003",
         "system": "http://snomed.info/sct",
-        "version": "http://snomed.info/sct/900000000000207008/version/20250701",
+        "version": "http://snomed.info/sct/900000000000207008/version/20260701",
         "display": "Spirometry (procedure)"
       }
     ]
@@ -39,7 +39,7 @@
       {
         "code": "385669000",
         "system": "http://snomed.info/sct",
-        "version": "http://snomed.info/sct/900000000000207008/version/20250701",
+        "version": "http://snomed.info/sct/900000000000207008/version/20260701",
         "display": "Successful (qualifier value)"
       }
     ]

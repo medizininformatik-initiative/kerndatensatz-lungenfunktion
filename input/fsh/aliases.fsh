@@ -38,7 +38,7 @@
 // input/resources/Parameters-expansion-manifest.json — do not guess.
 // Note the policy applies to ValueSet expansion; MII profiles do not currently
 // require Coding.version for SNOMED CT in instance data.
-Alias: $sct = http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250701
+Alias: $sct = http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20260701
 Alias: $sct-no-ver = http://snomed.info/sct
 
 // ── Further code systems used across MII modules ─────────────────────────────

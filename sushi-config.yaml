@@ -99,7 +99,7 @@ extension:
     valueCodeableConcept:
       coding:
         - system: http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl
-          code: "C38081" # Pulmonary Function Test (NCI Thesaurus) — TODO:REVIEW Gate A
+          code: "C38081" # Pulmonary Function Test (NCI Thesaurus)
 
 dependencies:
   # Quelle (main@c2fe7fe) pinnt FLOATING (2026.0.x / 1.5.x). Das Template und die

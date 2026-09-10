@@ -27,7 +27,7 @@
       {
         "code": "50834005",
         "system": "http://snomed.info/sct",
-        "version": "http://snomed.info/sct/900000000000207008/version/20250701",
+        "version": "http://snomed.info/sct/900000000000207008/version/20260701",
         "display": "Forced vital capacity (observable entity)"
       }
     ]
@@ -56,7 +56,7 @@
       {
         "code": "249862003",
         "system": "http://snomed.info/sct",
-        "version": "http://snomed.info/sct/900000000000207008/version/20250701",
+        "version": "http://snomed.info/sct/900000000000207008/version/20260701",
         "display": "Sitting upright (finding)"
       }
     ]
@@ -77,7 +77,7 @@
           {
             "code": "310521000",
             "system": "http://snomed.info/sct",
-            "version": "http://snomed.info/sct/900000000000207008/version/20250701",
+            "version": "http://snomed.info/sct/900000000000207008/version/20260701",
             "display": "Expected forced vital capacity (observable entity)"
           }
         ]
@@ -94,7 +94,7 @@
           {
             "code": "445210000",
             "system": "http://snomed.info/sct",
-            "version": "http://snomed.info/sct/900000000000207008/version/20250701",
+            "version": "http://snomed.info/sct/900000000000207008/version/20260701",
             "display": "Percentage of predicted forced vital capacity (observable entity)"
           }
         ]
@@ -111,7 +111,7 @@
           {
             "code": "1078210003",
             "system": "http://snomed.info/sct",
-            "version": "http://snomed.info/sct/900000000000207008/version/20250701",
+            "version": "http://snomed.info/sct/900000000000207008/version/20260701",
             "display": "Z-score calculation technique (qualifier value)"
           }
         ]
