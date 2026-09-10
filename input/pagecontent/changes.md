@@ -70,6 +70,13 @@ section, so the prose explanation and the technical diff sit side by side.</p>
 </div>
 
 ---
+#### Version 2027.0.0-ballot
+
+**Date:** 2026-09-15
+
+* **Changed** Merge License-pages and allign ValueSets to ist
+* ****
+
 #### Version 2027.0.0-ballot.rc2
 
 **Date:** 2026-09-09

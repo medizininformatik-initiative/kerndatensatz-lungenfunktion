@@ -78,7 +78,12 @@ werden können.</p>
 </div>
 
 ---
-#### Verion 2027.0.0-ballot.rc2
+#### Version 2027.0.0-ballot
+
+**Datum:** 2026-09-15
+
+
+#### Version 2027.0.0-ballot.rc2
 
 **Datum:** 2026-09-09
 
