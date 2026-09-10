@@ -49,7 +49,7 @@ Profile: [MII PR Lungenfunktion Lufttemperatur](StructureDefinition-mii-pr-lunge
   "code" : {
     "coding" : [{
       "system" : "http://snomed.info/sct",
-      "version" : "http://snomed.info/sct/900000000000207008/version/20250701",
+      "version" : "http://snomed.info/sct/900000000000207008/version/20260701",
       "code" : "250825003",
       "display" : "Ambient temperature (observable entity)"
     }]

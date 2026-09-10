@@ -45,7 +45,7 @@ Profile: [MII PR Lungenfunktion Diffusion Messung](StructureDefinition-mii-pr-lu
   "category" : {
     "coding" : [{
       "system" : "http://snomed.info/sct",
-      "version" : "http://snomed.info/sct/900000000000207008/version/20250701",
+      "version" : "http://snomed.info/sct/900000000000207008/version/20260701",
       "code" : "23426006",
       "display" : "Measurement of respiratory function (procedure)"
     }]
@@ -53,7 +53,7 @@ Profile: [MII PR Lungenfunktion Diffusion Messung](StructureDefinition-mii-pr-lu
   "code" : {
     "coding" : [{
       "system" : "http://snomed.info/sct",
-      "version" : "http://snomed.info/sct/900000000000207008/version/20250701",
+      "version" : "http://snomed.info/sct/900000000000207008/version/20260701",
       "code" : "36421003",
       "display" : "Carbon monoxide diffusing capacity measurement (procedure)"
     }]
@@ -68,7 +68,7 @@ Profile: [MII PR Lungenfunktion Diffusion Messung](StructureDefinition-mii-pr-lu
   "outcome" : {
     "coding" : [{
       "system" : "http://snomed.info/sct",
-      "version" : "http://snomed.info/sct/900000000000207008/version/20250701",
+      "version" : "http://snomed.info/sct/900000000000207008/version/20260701",
       "code" : "385669000",
       "display" : "Successful (qualifier value)"
     }]

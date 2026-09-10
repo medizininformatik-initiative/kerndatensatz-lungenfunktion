@@ -69,7 +69,7 @@ Profile: [MII PR Lungenfunktion FEV](StructureDefinition-mii-pr-lungenfunktion-f
   "code" : {
     "coding" : [{
       "system" : "http://snomed.info/sct",
-      "version" : "http://snomed.info/sct/900000000000207008/version/20250701",
+      "version" : "http://snomed.info/sct/900000000000207008/version/20260701",
       "code" : "59328004",
       "display" : "Forced expired volume in 1 second (observable entity)"
     }]
@@ -92,7 +92,7 @@ Profile: [MII PR Lungenfunktion FEV](StructureDefinition-mii-pr-lungenfunktion-f
   "method" : {
     "coding" : [{
       "system" : "http://snomed.info/sct",
-      "version" : "http://snomed.info/sct/900000000000207008/version/20250701",
+      "version" : "http://snomed.info/sct/900000000000207008/version/20260701",
       "code" : "249862003",
       "display" : "Sitting upright (finding)"
     }]
@@ -101,7 +101,7 @@ Profile: [MII PR Lungenfunktion FEV](StructureDefinition-mii-pr-lungenfunktion-f
     "code" : {
       "coding" : [{
         "system" : "http://snomed.info/sct",
-        "version" : "http://snomed.info/sct/900000000000207008/version/20250701",
+        "version" : "http://snomed.info/sct/900000000000207008/version/20260701",
         "code" : "310520004",
         "display" : "Expected forced expired volume in 1 second (observable entity)"
       }]

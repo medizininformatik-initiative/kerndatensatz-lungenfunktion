@@ -22,7 +22,7 @@
   <code>
     <coding>
       <system value="http://snomed.info/sct"/>
-      <version value="http://snomed.info/sct/900000000000207008/version/20250701"/>
+      <version value="http://snomed.info/sct/900000000000207008/version/20260701"/>
       <code value="18491006"/>
       <display value="Peak expiratory flow rate (observable entity)"/>
     </coding>
@@ -45,7 +45,7 @@
   <method>
     <coding>
       <system value="http://snomed.info/sct"/>
-      <version value="http://snomed.info/sct/900000000000207008/version/20250701"/>
+      <version value="http://snomed.info/sct/900000000000207008/version/20260701"/>
       <code value="249862003"/>
       <display value="Sitting upright (finding)"/>
     </coding>
@@ -61,7 +61,7 @@
     <code>
       <coding>
         <system value="http://snomed.info/sct"/>
-        <version value="http://snomed.info/sct/900000000000207008/version/20250701"/>
+        <version value="http://snomed.info/sct/900000000000207008/version/20260701"/>
         <code value="313192007"/>
         <display value="Expected peak expiratory flow rate (observable entity)"/>
       </coding>
@@ -76,7 +76,7 @@
     <code>
       <coding>
         <system value="http://snomed.info/sct"/>
-        <version value="http://snomed.info/sct/900000000000207008/version/20250701"/>
+        <version value="http://snomed.info/sct/900000000000207008/version/20260701"/>
         <code value="401163005"/>
         <display value="Percentage of best ever peak expiratory flow rate (observable entity)"/>
       </coding>
@@ -91,7 +91,7 @@
     <code>
       <coding>
         <system value="http://snomed.info/sct"/>
-        <version value="http://snomed.info/sct/900000000000207008/version/20250701"/>
+        <version value="http://snomed.info/sct/900000000000207008/version/20260701"/>
         <code value="1078210003"/>
         <display value="Z-score calculation technique (qualifier value)"/>
       </coding>

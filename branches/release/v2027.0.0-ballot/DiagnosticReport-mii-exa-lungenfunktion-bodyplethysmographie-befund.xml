@@ -12,7 +12,7 @@
   <category>
     <coding>
       <system value="http://snomed.info/sct"/>
-      <version value="http://snomed.info/sct/900000000000207008/version/20250701"/>
+      <version value="http://snomed.info/sct/900000000000207008/version/20260701"/>
       <code value="720449003"/>
       <display value="Pulmonary function report (record artifact)"/>
     </coding>
@@ -20,7 +20,7 @@
   <code>
     <coding>
       <system value="http://snomed.info/sct"/>
-      <version value="http://snomed.info/sct/900000000000207008/version/20250701"/>
+      <version value="http://snomed.info/sct/900000000000207008/version/20260701"/>
       <code value="28275007"/>
       <display value="Total body plethysmography (procedure)"/>
     </coding>
@@ -79,7 +79,7 @@
   <conclusionCode>
     <coding>
       <system value="http://snomed.info/sct"/>
-      <version value="http://snomed.info/sct/900000000000207008/version/20250701"/>
+      <version value="http://snomed.info/sct/900000000000207008/version/20260701"/>
       <code value="21368004"/>
       <display value="Increased lung compliance (finding)"/>
     </coding>

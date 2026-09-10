@@ -96,7 +96,7 @@ Profile: [MII PR Lungenfunktion KCOc](StructureDefinition-mii-pr-lungenfunktion-
   "method" : {
     "coding" : [{
       "system" : "http://snomed.info/sct",
-      "version" : "http://snomed.info/sct/900000000000207008/version/20250701",
+      "version" : "http://snomed.info/sct/900000000000207008/version/20260701",
       "code" : "249862003",
       "display" : "Sitting upright (finding)"
     }]
@@ -146,7 +146,7 @@ Profile: [MII PR Lungenfunktion KCOc](StructureDefinition-mii-pr-lungenfunktion-
     "code" : {
       "coding" : [{
         "system" : "http://snomed.info/sct",
-        "version" : "http://snomed.info/sct/900000000000207008/version/20250701",
+        "version" : "http://snomed.info/sct/900000000000207008/version/20260701",
         "code" : "1078210003",
         "display" : "Z-score calculation technique (qualifier value)"
       }]

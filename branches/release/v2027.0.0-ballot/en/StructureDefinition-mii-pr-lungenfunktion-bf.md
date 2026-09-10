@@ -407,7 +407,7 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-lungenfunk
       "sliceName" : "snomed",
       "patternCoding" : {
         "system" : "http://snomed.info/sct",
-        "version" : "http://snomed.info/sct/900000000000207008/version/20250701",
+        "version" : "http://snomed.info/sct/900000000000207008/version/20260701",
         "code" : "271625008",
         "display" : "Rate of spontaneous respiration (observable entity)"
       }

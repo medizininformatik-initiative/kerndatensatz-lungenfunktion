@@ -67,7 +67,7 @@ Import the ValueSet for lungfunction Tiffeneau-Index
   "compose" : {
     "include" : [{
       "system" : "http://snomed.info/sct",
-      "version" : "http://snomed.info/sct/900000000000207008/version/20250701",
+      "version" : "http://snomed.info/sct/900000000000207008/version/20260701",
       "concept" : [{
         "code" : "310360002",
         "display" : "Expected forced expiratory volume in one second/Forced vital capacity ratio (observable entity)"

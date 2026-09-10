@@ -13,7 +13,7 @@
   <category>
     <coding>
       <system value="http://snomed.info/sct"/>
-      <version value="http://snomed.info/sct/900000000000207008/version/20250701"/>
+      <version value="http://snomed.info/sct/900000000000207008/version/20260701"/>
       <code value="23426006"/>
       <display value="Measurement of respiratory function (procedure)"/>
     </coding>
@@ -21,7 +21,7 @@
   <code>
     <coding>
       <system value="http://snomed.info/sct"/>
-      <version value="http://snomed.info/sct/900000000000207008/version/20250701"/>
+      <version value="http://snomed.info/sct/900000000000207008/version/20260701"/>
       <code value="127783003"/>
       <display value="Spirometry (procedure)"/>
     </coding>
@@ -36,7 +36,7 @@
   <outcome>
     <coding>
       <system value="http://snomed.info/sct"/>
-      <version value="http://snomed.info/sct/900000000000207008/version/20250701"/>
+      <version value="http://snomed.info/sct/900000000000207008/version/20260701"/>
       <code value="385669000"/>
       <display value="Successful (qualifier value)"/>
     </coding>

@@ -313,7 +313,7 @@ Weitere Repräsentationen des Profils: [CSV](../StructureDefinition-mii-pr-lunge
       "max" : "1",
       "patternCoding" : {
         "system" : "http://snomed.info/sct",
-        "version" : "http://snomed.info/sct/900000000000207008/version/20250701",
+        "version" : "http://snomed.info/sct/900000000000207008/version/20260701",
         "code" : "1376040001",
         "display" : "Dose of methacholine to achieve maximal drop of forced expired volume in 1 second (observable entity)"
       }

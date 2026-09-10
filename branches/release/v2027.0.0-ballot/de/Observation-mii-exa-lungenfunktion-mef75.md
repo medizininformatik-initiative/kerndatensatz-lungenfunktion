@@ -69,7 +69,7 @@ Profile: [MII PR Lungenfunktion MEF](StructureDefinition-mii-pr-lungenfunktion-m
   "code" : {
     "coding" : [{
       "system" : "http://snomed.info/sct",
-      "version" : "http://snomed.info/sct/900000000000207008/version/20250701",
+      "version" : "http://snomed.info/sct/900000000000207008/version/20260701",
       "code" : "251921003",
       "display" : "Maximum expiratory flow rate at 75 percent of vital capacity (observable entity)"
     }]
@@ -92,7 +92,7 @@ Profile: [MII PR Lungenfunktion MEF](StructureDefinition-mii-pr-lungenfunktion-m
   "method" : {
     "coding" : [{
       "system" : "http://snomed.info/sct",
-      "version" : "http://snomed.info/sct/900000000000207008/version/20250701",
+      "version" : "http://snomed.info/sct/900000000000207008/version/20260701",
       "code" : "249862003",
       "display" : "Sitting upright (finding)"
     }]
@@ -108,7 +108,7 @@ Profile: [MII PR Lungenfunktion MEF](StructureDefinition-mii-pr-lungenfunktion-m
     "code" : {
       "coding" : [{
         "system" : "http://snomed.info/sct",
-        "version" : "http://snomed.info/sct/900000000000207008/version/20250701",
+        "version" : "http://snomed.info/sct/900000000000207008/version/20260701",
         "code" : "TODO"
       }]
     },
@@ -122,7 +122,7 @@ Profile: [MII PR Lungenfunktion MEF](StructureDefinition-mii-pr-lungenfunktion-m
     "code" : {
       "coding" : [{
         "system" : "http://snomed.info/sct",
-        "version" : "http://snomed.info/sct/900000000000207008/version/20250701",
+        "version" : "http://snomed.info/sct/900000000000207008/version/20260701",
         "code" : "TODO"
       }]
     },
@@ -136,7 +136,7 @@ Profile: [MII PR Lungenfunktion MEF](StructureDefinition-mii-pr-lungenfunktion-m
     "code" : {
       "coding" : [{
         "system" : "http://snomed.info/sct",
-        "version" : "http://snomed.info/sct/900000000000207008/version/20250701",
+        "version" : "http://snomed.info/sct/900000000000207008/version/20260701",
         "code" : "1078210003",
         "display" : "Z-score calculation technique (qualifier value)"
       }]

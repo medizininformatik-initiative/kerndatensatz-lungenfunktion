@@ -820,7 +820,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "mii-pr-lungenfunktion-1-viskositaet","Observation.component:z-score.code.coding:sct","Observation.component.code.coding","sct","","",0,1,"Y","","Y","Coding {[]} {[]}
 ","SNOMED CT Code","Ein Verweis auf einen von SNOMED CT definierten Code","Codes may be defined very casually in enumerations, or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.  Ordering of codings is undefined and SHALL NOT be used to infer meaning. Generally, at most only one of the coding values will be labeled as UserSelected = true.","Allows for alternative encodings within a code system, and translations to other code systems.","","","","<valueCoding xmlns=""http://hl7.org/fhir"">
   <system value=""http://snomed.info/sct""/>
-  <version value=""http://snomed.info/sct/900000000000207008/version/20250701""/>
+  <version value=""http://snomed.info/sct/900000000000207008/version/20260701""/>
   <code value=""1078210003""/>
   <display value=""Z-score calculation technique (qualifier value)""/>
 </valueCoding>","","","",,"preferred","","https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/ValueSet/mii-vs-lufu-sct-observable","",,,,"CodeableConcept.coding",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
@@ -945,7 +945,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "mii-pr-lungenfunktion-befund","DiagnosticReport.category.coding:sct","DiagnosticReport.category.coding","sct","","",1,1,"Y","","Y","Coding {[]} {[]}
 ","SNOMED CT Code","Ein Verweis auf einen von SNOMED CT definierten Code","Codes may be defined very casually in enumerations, or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.  Ordering of codings is undefined and SHALL NOT be used to infer meaning. Generally, at most only one of the coding values will be labeled as UserSelected = true.","Allows for alternative encodings within a code system, and translations to other code systems.","","","","<valueCoding xmlns=""http://hl7.org/fhir"">
   <system value=""http://snomed.info/sct""/>
-  <version value=""http://snomed.info/sct/900000000000207008/version/20250701""/>
+  <version value=""http://snomed.info/sct/900000000000207008/version/20260701""/>
   <code value=""720449003""/>
   <display value=""Pulmonary function report (record artifact)""/>
 </valueCoding>","","","",,,,,"",,,,"CodeableConcept.coding",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
@@ -1067,7 +1067,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "
 "mii-pr-lungenfunktion-befund","DiagnosticReport.conclusionCode.coding:sct","DiagnosticReport.conclusionCode.coding","sct","","",0,*,"Y","","Y","Coding {[]} {[]}
 ","SNOMED CT Code","Ein Verweis auf einen von SNOMED CT definierten Code","Codes may be defined very casually in enumerations, or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.  Ordering of codings is undefined and SHALL NOT be used to infer meaning. Generally, at most only one of the coding values will be labeled as UserSelected = true.","Allows for alternative encodings within a code system, and translations to other code systems.","","","","<valueCoding xmlns=""http://hl7.org/fhir"">
-  <system value=""http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250701""/>
+  <system value=""http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20260701""/>
 </valueCoding>","","","",,"required","","https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/ValueSet/mii-vs-lufu-sct-findings","",,,,"CodeableConcept.coding",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "mii-pr-lungenfunktion-befund","DiagnosticReport.conclusionCode.text","DiagnosticReport.conclusionCode.text","","","",0,1,"","","Y","string {[]} {[]}
@@ -1261,7 +1261,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "mii-pr-lungenfunktion-bf","Observation.code.coding:snomed","Observation.code.coding","snomed","","",0,*,"","","Y","Coding {[]} {[]}
 ","Code defined by a terminology system","A reference to a code defined by a terminology system.","Codes may be defined very casually in enumerations, or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.  Ordering of codings is undefined and SHALL NOT be used to infer meaning. Generally, at most only one of the coding values will be labeled as UserSelected = true.","Allows for alternative encodings within a code system, and translations to other code systems.","","","","<valueCoding xmlns=""http://hl7.org/fhir"">
   <system value=""http://snomed.info/sct""/>
-  <version value=""http://snomed.info/sct/900000000000207008/version/20250701""/>
+  <version value=""http://snomed.info/sct/900000000000207008/version/20260701""/>
   <code value=""271625008""/>
   <display value=""Rate of spontaneous respiration (observable entity)""/>
 </valueCoding>","","","",,"required","","http://fhir.de/ValueSet/VitalSignDE-Atemfrequenz-SNOMED-CT","",,,,"CodeableConcept.coding",0,*,"ele-1
@@ -1865,7 +1865,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "mii-pr-lungenfunktion-bodyplethysmographie-messung","Procedure.category.coding:sct","Procedure.category.coding","sct","","",0,1,"Y","","Y","Coding {[]} {[]}
 ","SNOMED CT Code","Ein Verweis auf einen von SNOMED CT definierten Code","Codes may be defined very casually in enumerations, or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.  Ordering of codings is undefined and SHALL NOT be used to infer meaning. Generally, at most only one of the coding values will be labeled as UserSelected = true.","Allows for alternative encodings within a code system, and translations to other code systems.","","","","<valueCoding xmlns=""http://hl7.org/fhir"">
   <system value=""http://snomed.info/sct""/>
-  <version value=""http://snomed.info/sct/900000000000207008/version/20250701""/>
+  <version value=""http://snomed.info/sct/900000000000207008/version/20260701""/>
   <code value=""23426006""/>
   <display value=""Measurement of respiratory function (procedure)""/>
 </valueCoding>","","","",,"preferred","","https://www.medizininformatik-initiative.de/fhir/core/modul-prozedur/ValueSet/procedures-category-sct","",,,,"CodeableConcept.coding",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
@@ -1993,7 +1993,7 @@ ops-regex:In code sind nur gültige OPS-Codes ohne Zusätze erlaubt {matches('^[
 "mii-pr-lungenfunktion-bodyplethysmographie-messung","Procedure.code.coding:sct","Procedure.code.coding","sct","","",0,1,"Y","","Y","Coding {[]} {[]}
 ","SNOMED CT Code","Ein Verweis auf einen von SNOMED CT definierten Code","Codes may be defined very casually in enumerations, or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.  Ordering of codings is undefined and SHALL NOT be used to infer meaning. Generally, at most only one of the coding values will be labeled as UserSelected = true.","Allows for alternative encodings within a code system, and translations to other code systems.","","","","<valueCoding xmlns=""http://hl7.org/fhir"">
   <system value=""http://snomed.info/sct""/>
-  <version value=""http://snomed.info/sct/900000000000207008/version/20250701""/>
+  <version value=""http://snomed.info/sct/900000000000207008/version/20260701""/>
   <code value=""28275007""/>
   <display value=""Total body plethysmography (procedure)""/>
 </valueCoding>","","","",,"required","","https://www.medizininformatik-initiative.de/fhir/core/modul-prozedur/ValueSet/procedures-sct","",,,,"CodeableConcept.coding",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
@@ -2327,7 +2327,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "mii-pr-lungenfunktion-bodyplethysmographie","DiagnosticReport.category.coding:sct","DiagnosticReport.category.coding","sct","","",1,1,"Y","","Y","Coding {[]} {[]}
 ","SNOMED CT Code","Ein Verweis auf einen von SNOMED CT definierten Code","Codes may be defined very casually in enumerations, or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.  Ordering of codings is undefined and SHALL NOT be used to infer meaning. Generally, at most only one of the coding values will be labeled as UserSelected = true.","Allows for alternative encodings within a code system, and translations to other code systems.","","","","<valueCoding xmlns=""http://hl7.org/fhir"">
   <system value=""http://snomed.info/sct""/>
-  <version value=""http://snomed.info/sct/900000000000207008/version/20250701""/>
+  <version value=""http://snomed.info/sct/900000000000207008/version/20260701""/>
   <code value=""720449003""/>
   <display value=""Pulmonary function report (record artifact)""/>
 </valueCoding>","","","",,,,,"",,,,"CodeableConcept.coding",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
@@ -2353,7 +2353,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "mii-pr-lungenfunktion-bodyplethysmographie","DiagnosticReport.code.coding:sct","DiagnosticReport.code.coding","sct","","",0,1,"Y","","Y","Coding {[]} {[]}
 ","SNOMED CT Code","Ein Verweis auf einen von SNOMED CT definierten Code","Codes may be defined very casually in enumerations, or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.  Ordering of codings is undefined and SHALL NOT be used to infer meaning. Generally, at most only one of the coding values will be labeled as UserSelected = true.","Allows for alternative encodings within a code system, and translations to other code systems.","","","","<valueCoding xmlns=""http://hl7.org/fhir"">
   <system value=""http://snomed.info/sct""/>
-  <version value=""http://snomed.info/sct/900000000000207008/version/20250701""/>
+  <version value=""http://snomed.info/sct/900000000000207008/version/20260701""/>
   <code value=""28275007""/>
   <display value=""Total body plethysmography (procedure)""/>
 </valueCoding>","","","",,"required","","https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/ValueSet/mii-vs-lufu-sct-procedure","",,,,"CodeableConcept.coding",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
@@ -2526,7 +2526,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "
 "mii-pr-lungenfunktion-bodyplethysmographie","DiagnosticReport.conclusionCode.coding:sct","DiagnosticReport.conclusionCode.coding","sct","","",0,*,"Y","","Y","Coding {[]} {[]}
 ","SNOMED CT Code","Ein Verweis auf einen von SNOMED CT definierten Code","Codes may be defined very casually in enumerations, or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.  Ordering of codings is undefined and SHALL NOT be used to infer meaning. Generally, at most only one of the coding values will be labeled as UserSelected = true.","Allows for alternative encodings within a code system, and translations to other code systems.","","","","<valueCoding xmlns=""http://hl7.org/fhir"">
-  <system value=""http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250701""/>
+  <system value=""http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20260701""/>
 </valueCoding>","","","",,"required","","https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/ValueSet/mii-vs-lufu-sct-findings","",,,,"CodeableConcept.coding",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "mii-pr-lungenfunktion-bodyplethysmographie","DiagnosticReport.conclusionCode.text","DiagnosticReport.conclusionCode.text","","","",0,1,"","","Y","string {[]} {[]}
@@ -2667,7 +2667,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "mii-pr-lungenfunktion-co2-konzentration","Observation.code.coding:sct","Observation.code.coding","sct","","",0,1,"","","Y","Coding {[]} {[]}
 ","SNOMED CT Code","Ein Verweis auf einen von SNOMED CT definierten Code","Codes may be defined very casually in enumerations, or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.  Ordering of codings is undefined and SHALL NOT be used to infer meaning. Generally, at most only one of the coding values will be labeled as UserSelected = true.","Allows for alternative encodings within a code system, and translations to other code systems.","","","","<valueCoding xmlns=""http://hl7.org/fhir"">
   <system value=""http://snomed.info/sct""/>
-  <version value=""http://snomed.info/sct/900000000000207008/version/20250701""/>
+  <version value=""http://snomed.info/sct/900000000000207008/version/20260701""/>
   <code value=""250780004""/>
   <display value=""Carbon dioxide concentration (observable entity)""/>
 </valueCoding>","","","",,,,,"",,,,"CodeableConcept.coding",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
@@ -3002,7 +3002,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "mii-pr-lungenfunktion-diffusion-messung","Procedure.category.coding:sct","Procedure.category.coding","sct","","",0,1,"Y","","Y","Coding {[]} {[]}
 ","SNOMED CT Code","Ein Verweis auf einen von SNOMED CT definierten Code","Codes may be defined very casually in enumerations, or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.  Ordering of codings is undefined and SHALL NOT be used to infer meaning. Generally, at most only one of the coding values will be labeled as UserSelected = true.","Allows for alternative encodings within a code system, and translations to other code systems.","","","","<valueCoding xmlns=""http://hl7.org/fhir"">
   <system value=""http://snomed.info/sct""/>
-  <version value=""http://snomed.info/sct/900000000000207008/version/20250701""/>
+  <version value=""http://snomed.info/sct/900000000000207008/version/20260701""/>
   <code value=""23426006""/>
   <display value=""Measurement of respiratory function (procedure)""/>
 </valueCoding>","","","",,"preferred","","https://www.medizininformatik-initiative.de/fhir/core/modul-prozedur/ValueSet/procedures-category-sct","",,,,"CodeableConcept.coding",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
@@ -3130,7 +3130,7 @@ ops-regex:In code sind nur gültige OPS-Codes ohne Zusätze erlaubt {matches('^[
 "mii-pr-lungenfunktion-diffusion-messung","Procedure.code.coding:sct","Procedure.code.coding","sct","","",0,1,"Y","","Y","Coding {[]} {[]}
 ","SNOMED CT Code","Ein Verweis auf einen von SNOMED CT definierten Code","Codes may be defined very casually in enumerations, or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.  Ordering of codings is undefined and SHALL NOT be used to infer meaning. Generally, at most only one of the coding values will be labeled as UserSelected = true.","Allows for alternative encodings within a code system, and translations to other code systems.","","","","<valueCoding xmlns=""http://hl7.org/fhir"">
   <system value=""http://snomed.info/sct""/>
-  <version value=""http://snomed.info/sct/900000000000207008/version/20250701""/>
+  <version value=""http://snomed.info/sct/900000000000207008/version/20260701""/>
   <code value=""36421003""/>
   <display value=""Carbon monoxide diffusing capacity measurement (procedure)""/>
 </valueCoding>","","","",,"required","","https://www.medizininformatik-initiative.de/fhir/core/modul-prozedur/ValueSet/procedures-sct","",,,,"CodeableConcept.coding",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
@@ -3464,7 +3464,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "mii-pr-lungenfunktion-diffusion","DiagnosticReport.category.coding:sct","DiagnosticReport.category.coding","sct","","",1,1,"Y","","Y","Coding {[]} {[]}
 ","SNOMED CT Code","Ein Verweis auf einen von SNOMED CT definierten Code","Codes may be defined very casually in enumerations, or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.  Ordering of codings is undefined and SHALL NOT be used to infer meaning. Generally, at most only one of the coding values will be labeled as UserSelected = true.","Allows for alternative encodings within a code system, and translations to other code systems.","","","","<valueCoding xmlns=""http://hl7.org/fhir"">
   <system value=""http://snomed.info/sct""/>
-  <version value=""http://snomed.info/sct/900000000000207008/version/20250701""/>
+  <version value=""http://snomed.info/sct/900000000000207008/version/20260701""/>
   <code value=""720449003""/>
   <display value=""Pulmonary function report (record artifact)""/>
 </valueCoding>","","","",,,,,"",,,,"CodeableConcept.coding",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
@@ -3490,7 +3490,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "mii-pr-lungenfunktion-diffusion","DiagnosticReport.code.coding:sct","DiagnosticReport.code.coding","sct","","",0,1,"Y","","Y","Coding {[]} {[]}
 ","SNOMED CT Code","Ein Verweis auf einen von SNOMED CT definierten Code","Codes may be defined very casually in enumerations, or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.  Ordering of codings is undefined and SHALL NOT be used to infer meaning. Generally, at most only one of the coding values will be labeled as UserSelected = true.","Allows for alternative encodings within a code system, and translations to other code systems.","","","","<valueCoding xmlns=""http://hl7.org/fhir"">
   <system value=""http://snomed.info/sct""/>
-  <version value=""http://snomed.info/sct/900000000000207008/version/20250701""/>
+  <version value=""http://snomed.info/sct/900000000000207008/version/20260701""/>
   <code value=""36421003""/>
   <display value=""Carbon monoxide diffusing capacity measurement (procedure)""/>
 </valueCoding>","","","",,"required","","https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/ValueSet/mii-vs-lufu-sct-procedure","",,,,"CodeableConcept.coding",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
@@ -3643,7 +3643,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "
 "mii-pr-lungenfunktion-diffusion","DiagnosticReport.conclusionCode.coding:sct","DiagnosticReport.conclusionCode.coding","sct","","",0,*,"Y","","Y","Coding {[]} {[]}
 ","SNOMED CT Code","Ein Verweis auf einen von SNOMED CT definierten Code","Codes may be defined very casually in enumerations, or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.  Ordering of codings is undefined and SHALL NOT be used to infer meaning. Generally, at most only one of the coding values will be labeled as UserSelected = true.","Allows for alternative encodings within a code system, and translations to other code systems.","","","","<valueCoding xmlns=""http://hl7.org/fhir"">
-  <system value=""http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250701""/>
+  <system value=""http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20260701""/>
 </valueCoding>","","","",,"required","","https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/ValueSet/mii-vs-lufu-sct-findings","",,,,"CodeableConcept.coding",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "mii-pr-lungenfunktion-diffusion","DiagnosticReport.conclusionCode.text","DiagnosticReport.conclusionCode.text","","","",0,1,"","","Y","string {[]} {[]}
@@ -4178,7 +4178,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "mii-pr-lungenfunktion-diffusionskapazitaet","Observation.component:z-score.code.coding:sct","Observation.component.code.coding","sct","","",0,1,"Y","","Y","Coding {[]} {[]}
 ","SNOMED CT Code","Ein Verweis auf einen von SNOMED CT definierten Code","Codes may be defined very casually in enumerations, or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.  Ordering of codings is undefined and SHALL NOT be used to infer meaning. Generally, at most only one of the coding values will be labeled as UserSelected = true.","Allows for alternative encodings within a code system, and translations to other code systems.","","","","<valueCoding xmlns=""http://hl7.org/fhir"">
   <system value=""http://snomed.info/sct""/>
-  <version value=""http://snomed.info/sct/900000000000207008/version/20250701""/>
+  <version value=""http://snomed.info/sct/900000000000207008/version/20260701""/>
   <code value=""1078210003""/>
   <display value=""Z-score calculation technique (qualifier value)""/>
 </valueCoding>","","","",,"preferred","","https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/ValueSet/mii-vs-lufu-sct-observable","",,,,"CodeableConcept.coding",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
@@ -4312,7 +4312,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "mii-pr-lungenfunktion-dlco","Observation.code.coding:sct","Observation.code.coding","sct","","",0,1,"","","Y","Coding {[]} {[]}
 ","SNOMED CT Code","Ein Verweis auf einen von SNOMED CT definierten Code","Codes may be defined very casually in enumerations, or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.  Ordering of codings is undefined and SHALL NOT be used to infer meaning. Generally, at most only one of the coding values will be labeled as UserSelected = true.","Allows for alternative encodings within a code system, and translations to other code systems.","","","","<valueCoding xmlns=""http://hl7.org/fhir"">
   <system value=""http://snomed.info/sct""/>
-  <version value=""http://snomed.info/sct/900000000000207008/version/20250701""/>
+  <version value=""http://snomed.info/sct/900000000000207008/version/20260701""/>
   <code value=""1366665001""/>
   <display value=""Single breath carbon monoxide diffusing capacity (observable entity)""/>
 </valueCoding>","","","",,"preferred","","https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/ValueSet/mii-vs-lufu-sct-observable","",,,,"CodeableConcept.coding",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
@@ -4549,7 +4549,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "mii-pr-lungenfunktion-dlco","Observation.component:predicted.code.coding:sct","Observation.component.code.coding","sct","","",0,1,"Y","","Y","Coding {[]} {[]}
 ","SNOMED CT Code","Ein Verweis auf einen von SNOMED CT definierten Code","Codes may be defined very casually in enumerations, or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.  Ordering of codings is undefined and SHALL NOT be used to infer meaning. Generally, at most only one of the coding values will be labeled as UserSelected = true.","Allows for alternative encodings within a code system, and translations to other code systems.","","","","<valueCoding xmlns=""http://hl7.org/fhir"">
   <system value=""http://snomed.info/sct""/>
-  <version value=""http://snomed.info/sct/900000000000207008/version/20250701""/>
+  <version value=""http://snomed.info/sct/900000000000207008/version/20260701""/>
   <code value=""TODO""/>
 </valueCoding>","","","",,"preferred","","https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/ValueSet/mii-vs-lufu-sct-observable","",,,,"CodeableConcept.coding",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
@@ -4634,7 +4634,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "mii-pr-lungenfunktion-dlco","Observation.component:percentPredicted.code.coding:sct","Observation.component.code.coding","sct","","",0,1,"Y","","Y","Coding {[]} {[]}
 ","SNOMED CT Code","Ein Verweis auf einen von SNOMED CT definierten Code","Codes may be defined very casually in enumerations, or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.  Ordering of codings is undefined and SHALL NOT be used to infer meaning. Generally, at most only one of the coding values will be labeled as UserSelected = true.","Allows for alternative encodings within a code system, and translations to other code systems.","","","","<valueCoding xmlns=""http://hl7.org/fhir"">
   <system value=""http://snomed.info/sct""/>
-  <version value=""http://snomed.info/sct/900000000000207008/version/20250701""/>
+  <version value=""http://snomed.info/sct/900000000000207008/version/20260701""/>
   <code value=""TODO""/>
 </valueCoding>","","","",,"preferred","","https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/ValueSet/mii-vs-lufu-sct-observable","",,,,"CodeableConcept.coding",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
@@ -4719,7 +4719,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "mii-pr-lungenfunktion-dlco","Observation.component:z-score.code.coding:sct","Observation.component.code.coding","sct","","",0,1,"Y","","Y","Coding {[]} {[]}
 ","SNOMED CT Code","Ein Verweis auf einen von SNOMED CT definierten Code","Codes may be defined very casually in enumerations, or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.  Ordering of codings is undefined and SHALL NOT be used to infer meaning. Generally, at most only one of the coding values will be labeled as UserSelected = true.","Allows for alternative encodings within a code system, and translations to other code systems.","","","","<valueCoding xmlns=""http://hl7.org/fhir"">
   <system value=""http://snomed.info/sct""/>
-  <version value=""http://snomed.info/sct/900000000000207008/version/20250701""/>
+  <version value=""http://snomed.info/sct/900000000000207008/version/20260701""/>
   <code value=""1078210003""/>
   <display value=""Z-score calculation technique (qualifier value)""/>
 </valueCoding>","","","",,"preferred","","https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/ValueSet/mii-vs-lufu-sct-observable","",,,,"CodeableConcept.coding",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
@@ -4853,7 +4853,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "mii-pr-lungenfunktion-dlcoc","Observation.code.coding:sct","Observation.code.coding","sct","","",0,1,"","","Y","Coding {[]} {[]}
 ","SNOMED CT Code","Ein Verweis auf einen von SNOMED CT definierten Code","Codes may be defined very casually in enumerations, or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.  Ordering of codings is undefined and SHALL NOT be used to infer meaning. Generally, at most only one of the coding values will be labeled as UserSelected = true.","Allows for alternative encodings within a code system, and translations to other code systems.","","","","<valueCoding xmlns=""http://hl7.org/fhir"">
   <system value=""http://snomed.info/sct""/>
-  <version value=""http://snomed.info/sct/900000000000207008/version/20250701""/>
+  <version value=""http://snomed.info/sct/900000000000207008/version/20260701""/>
   <code value=""TODO""/>
   <display value=""TODO""/>
 </valueCoding>","","","",,"preferred","","https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/ValueSet/mii-vs-lufu-sct-observable","",,,,"CodeableConcept.coding",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
@@ -5090,7 +5090,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "mii-pr-lungenfunktion-dlcoc","Observation.component:predicted.code.coding:sct","Observation.component.code.coding","sct","","",0,1,"Y","","Y","Coding {[]} {[]}
 ","SNOMED CT Code","Ein Verweis auf einen von SNOMED CT definierten Code","Codes may be defined very casually in enumerations, or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.  Ordering of codings is undefined and SHALL NOT be used to infer meaning. Generally, at most only one of the coding values will be labeled as UserSelected = true.","Allows for alternative encodings within a code system, and translations to other code systems.","","","","<valueCoding xmlns=""http://hl7.org/fhir"">
   <system value=""http://snomed.info/sct""/>
-  <version value=""http://snomed.info/sct/900000000000207008/version/20250701""/>
+  <version value=""http://snomed.info/sct/900000000000207008/version/20260701""/>
   <code value=""TODO""/>
 </valueCoding>","","","",,"preferred","","https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/ValueSet/mii-vs-lufu-sct-observable","",,,,"CodeableConcept.coding",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
@@ -5178,7 +5178,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "mii-pr-lungenfunktion-dlcoc","Observation.component:percentPredicted.code.coding:sct","Observation.component.code.coding","sct","","",0,1,"Y","","Y","Coding {[]} {[]}
 ","SNOMED CT Code","Ein Verweis auf einen von SNOMED CT definierten Code","Codes may be defined very casually in enumerations, or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.  Ordering of codings is undefined and SHALL NOT be used to infer meaning. Generally, at most only one of the coding values will be labeled as UserSelected = true.","Allows for alternative encodings within a code system, and translations to other code systems.","","","","<valueCoding xmlns=""http://hl7.org/fhir"">
   <system value=""http://snomed.info/sct""/>
-  <version value=""http://snomed.info/sct/900000000000207008/version/20250701""/>
+  <version value=""http://snomed.info/sct/900000000000207008/version/20260701""/>
   <code value=""TODO""/>
 </valueCoding>","","","",,"preferred","","https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/ValueSet/mii-vs-lufu-sct-observable","",,,,"CodeableConcept.coding",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
@@ -5266,7 +5266,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "mii-pr-lungenfunktion-dlcoc","Observation.component:z-score.code.coding:sct","Observation.component.code.coding","sct","","",0,1,"Y","","Y","Coding {[]} {[]}
 ","SNOMED CT Code","Ein Verweis auf einen von SNOMED CT definierten Code","Codes may be defined very casually in enumerations, or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.  Ordering of codings is undefined and SHALL NOT be used to infer meaning. Generally, at most only one of the coding values will be labeled as UserSelected = true.","Allows for alternative encodings within a code system, and translations to other code systems.","","","","<valueCoding xmlns=""http://hl7.org/fhir"">
   <system value=""http://snomed.info/sct""/>
-  <version value=""http://snomed.info/sct/900000000000207008/version/20250701""/>
+  <version value=""http://snomed.info/sct/900000000000207008/version/20260701""/>
   <code value=""1078210003""/>
   <display value=""Z-score calculation technique (qualifier value)""/>
 </valueCoding>","","","",,"preferred","","https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/ValueSet/mii-vs-lufu-sct-observable","",,,,"CodeableConcept.coding",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
@@ -6077,7 +6077,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "mii-pr-lungenfunktion-dosis","Observation.code.coding:sct","Observation.code.coding","sct","","",0,1,"","","Y","Coding {[]} {[]}
 ","Code defined by a terminology system","A reference to a code defined by a terminology system.","Codes may be defined very casually in enumerations, or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.  Ordering of codings is undefined and SHALL NOT be used to infer meaning. Generally, at most only one of the coding values will be labeled as UserSelected = true.","Allows for alternative encodings within a code system, and translations to other code systems.","","","","<valueCoding xmlns=""http://hl7.org/fhir"">
   <system value=""http://snomed.info/sct""/>
-  <version value=""http://snomed.info/sct/900000000000207008/version/20250701""/>
+  <version value=""http://snomed.info/sct/900000000000207008/version/20260701""/>
   <code value=""1376040001""/>
   <display value=""Dose of methacholine to achieve maximal drop of forced expired volume in 1 second (observable entity)""/>
 </valueCoding>","","","",,,,,"",,,,"CodeableConcept.coding",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
@@ -6789,7 +6789,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "mii-pr-lungenfunktion-fev-fvc","Observation.component:z-score.code.coding:sct","Observation.component.code.coding","sct","","",0,1,"Y","","Y","Coding {[]} {[]}
 ","SNOMED CT Code","Ein Verweis auf einen von SNOMED CT definierten Code","Codes may be defined very casually in enumerations, or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.  Ordering of codings is undefined and SHALL NOT be used to infer meaning. Generally, at most only one of the coding values will be labeled as UserSelected = true.","Allows for alternative encodings within a code system, and translations to other code systems.","","","","<valueCoding xmlns=""http://hl7.org/fhir"">
   <system value=""http://snomed.info/sct""/>
-  <version value=""http://snomed.info/sct/900000000000207008/version/20250701""/>
+  <version value=""http://snomed.info/sct/900000000000207008/version/20260701""/>
   <code value=""1078210003""/>
   <display value=""Z-score calculation technique (qualifier value)""/>
 </valueCoding>","","","",,"preferred","","https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/ValueSet/mii-vs-lufu-sct-observable","",,,,"CodeableConcept.coding",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
@@ -7317,7 +7317,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "mii-pr-lungenfunktion-fev","Observation.component:z-score.code.coding:sct","Observation.component.code.coding","sct","","",0,1,"Y","","Y","Coding {[]} {[]}
 ","SNOMED CT Code","Ein Verweis auf einen von SNOMED CT definierten Code","Codes may be defined very casually in enumerations, or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.  Ordering of codings is undefined and SHALL NOT be used to infer meaning. Generally, at most only one of the coding values will be labeled as UserSelected = true.","Allows for alternative encodings within a code system, and translations to other code systems.","","","","<valueCoding xmlns=""http://hl7.org/fhir"">
   <system value=""http://snomed.info/sct""/>
-  <version value=""http://snomed.info/sct/900000000000207008/version/20250701""/>
+  <version value=""http://snomed.info/sct/900000000000207008/version/20260701""/>
   <code value=""1078210003""/>
   <display value=""Z-score calculation technique (qualifier value)""/>
 </valueCoding>","","","",,"preferred","","https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/ValueSet/mii-vs-lufu-sct-observable","",,,,"CodeableConcept.coding",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
@@ -7867,7 +7867,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "mii-pr-lungenfunktion-fluss","Observation.component:z-score.code.coding:sct","Observation.component.code.coding","sct","","",0,1,"Y","","Y","Coding {[]} {[]}
 ","SNOMED CT Code","Ein Verweis auf einen von SNOMED CT definierten Code","Codes may be defined very casually in enumerations, or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.  Ordering of codings is undefined and SHALL NOT be used to infer meaning. Generally, at most only one of the coding values will be labeled as UserSelected = true.","Allows for alternative encodings within a code system, and translations to other code systems.","","","","<valueCoding xmlns=""http://hl7.org/fhir"">
   <system value=""http://snomed.info/sct""/>
-  <version value=""http://snomed.info/sct/900000000000207008/version/20250701""/>
+  <version value=""http://snomed.info/sct/900000000000207008/version/20260701""/>
   <code value=""1078210003""/>
   <display value=""Z-score calculation technique (qualifier value)""/>
 </valueCoding>","","","",,"preferred","","https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/ValueSet/mii-vs-lufu-sct-observable","",,,,"CodeableConcept.coding",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
@@ -8001,7 +8001,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "mii-pr-lungenfunktion-frc","Observation.code.coding:sct","Observation.code.coding","sct","","",0,1,"","","Y","Coding {[]} {[]}
 ","SNOMED CT Code","Ein Verweis auf einen von SNOMED CT definierten Code","Codes may be defined very casually in enumerations, or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.  Ordering of codings is undefined and SHALL NOT be used to infer meaning. Generally, at most only one of the coding values will be labeled as UserSelected = true.","Allows for alternative encodings within a code system, and translations to other code systems.","","","","<valueCoding xmlns=""http://hl7.org/fhir"">
   <system value=""http://snomed.info/sct""/>
-  <version value=""http://snomed.info/sct/900000000000207008/version/20250701""/>
+  <version value=""http://snomed.info/sct/900000000000207008/version/20260701""/>
   <code value=""65825000""/>
   <display value=""Functional residual capacity (observable entity)""/>
 </valueCoding>","","","",,"preferred","","https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/ValueSet/mii-vs-lufu-sct-observable","",,,,"CodeableConcept.coding",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
@@ -8238,7 +8238,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "mii-pr-lungenfunktion-frc","Observation.component:predicted.code.coding:sct","Observation.component.code.coding","sct","","",0,1,"Y","","Y","Coding {[]} {[]}
 ","SNOMED CT Code","Ein Verweis auf einen von SNOMED CT definierten Code","Codes may be defined very casually in enumerations, or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.  Ordering of codings is undefined and SHALL NOT be used to infer meaning. Generally, at most only one of the coding values will be labeled as UserSelected = true.","Allows for alternative encodings within a code system, and translations to other code systems.","","","","<valueCoding xmlns=""http://hl7.org/fhir"">
   <system value=""http://snomed.info/sct""/>
-  <version value=""http://snomed.info/sct/900000000000207008/version/20250701""/>
+  <version value=""http://snomed.info/sct/900000000000207008/version/20260701""/>
   <code value=""TODO""/>
 </valueCoding>","","","",,"preferred","","https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/ValueSet/mii-vs-lufu-sct-observable","",,,,"CodeableConcept.coding",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
@@ -8323,7 +8323,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "mii-pr-lungenfunktion-frc","Observation.component:percentPredicted.code.coding:sct","Observation.component.code.coding","sct","","",0,1,"Y","","Y","Coding {[]} {[]}
 ","SNOMED CT Code","Ein Verweis auf einen von SNOMED CT definierten Code","Codes may be defined very casually in enumerations, or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.  Ordering of codings is undefined and SHALL NOT be used to infer meaning. Generally, at most only one of the coding values will be labeled as UserSelected = true.","Allows for alternative encodings within a code system, and translations to other code systems.","","","","<valueCoding xmlns=""http://hl7.org/fhir"">
   <system value=""http://snomed.info/sct""/>
-  <version value=""http://snomed.info/sct/900000000000207008/version/20250701""/>
+  <version value=""http://snomed.info/sct/900000000000207008/version/20260701""/>
   <code value=""TODO""/>
 </valueCoding>","","","",,"preferred","","https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/ValueSet/mii-vs-lufu-sct-observable","",,,,"CodeableConcept.coding",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
@@ -8411,7 +8411,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "mii-pr-lungenfunktion-frc","Observation.component:z-score.code.coding:sct","Observation.component.code.coding","sct","","",0,1,"Y","","Y","Coding {[]} {[]}
 ","SNOMED CT Code","Ein Verweis auf einen von SNOMED CT definierten Code","Codes may be defined very casually in enumerations, or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.  Ordering of codings is undefined and SHALL NOT be used to infer meaning. Generally, at most only one of the coding values will be labeled as UserSelected = true.","Allows for alternative encodings within a code system, and translations to other code systems.","","","","<valueCoding xmlns=""http://hl7.org/fhir"">
   <system value=""http://snomed.info/sct""/>
-  <version value=""http://snomed.info/sct/900000000000207008/version/20250701""/>
+  <version value=""http://snomed.info/sct/900000000000207008/version/20260701""/>
   <code value=""1078210003""/>
   <display value=""Z-score calculation technique (qualifier value)""/>
 </valueCoding>","","","",,"preferred","","https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/ValueSet/mii-vs-lufu-sct-observable","",,,,"CodeableConcept.coding",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
@@ -8939,7 +8939,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "mii-pr-lungenfunktion-fvc","Observation.component:z-score.code.coding:sct","Observation.component.code.coding","sct","","",0,1,"Y","","Y","Coding {[]} {[]}
 ","SNOMED CT Code","Ein Verweis auf einen von SNOMED CT definierten Code","Codes may be defined very casually in enumerations, or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.  Ordering of codings is undefined and SHALL NOT be used to infer meaning. Generally, at most only one of the coding values will be labeled as UserSelected = true.","Allows for alternative encodings within a code system, and translations to other code systems.","","","","<valueCoding xmlns=""http://hl7.org/fhir"">
   <system value=""http://snomed.info/sct""/>
-  <version value=""http://snomed.info/sct/900000000000207008/version/20250701""/>
+  <version value=""http://snomed.info/sct/900000000000207008/version/20260701""/>
   <code value=""1078210003""/>
   <display value=""Z-score calculation technique (qualifier value)""/>
 </valueCoding>","","","",,"preferred","","https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/ValueSet/mii-vs-lufu-sct-observable","",,,,"CodeableConcept.coding",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
@@ -9489,7 +9489,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "mii-pr-lungenfunktion-gewicht","Observation.component:z-score.code.coding:sct","Observation.component.code.coding","sct","","",0,1,"Y","","Y","Coding {[]} {[]}
 ","SNOMED CT Code","Ein Verweis auf einen von SNOMED CT definierten Code","Codes may be defined very casually in enumerations, or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.  Ordering of codings is undefined and SHALL NOT be used to infer meaning. Generally, at most only one of the coding values will be labeled as UserSelected = true.","Allows for alternative encodings within a code system, and translations to other code systems.","","","","<valueCoding xmlns=""http://hl7.org/fhir"">
   <system value=""http://snomed.info/sct""/>
-  <version value=""http://snomed.info/sct/900000000000207008/version/20250701""/>
+  <version value=""http://snomed.info/sct/900000000000207008/version/20260701""/>
   <code value=""1078210003""/>
   <display value=""Z-score calculation technique (qualifier value)""/>
 </valueCoding>","","","",,"preferred","","https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/ValueSet/mii-vs-lufu-sct-observable","",,,,"CodeableConcept.coding",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
@@ -9645,7 +9645,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "mii-pr-lungenfunktion-hb","Observation.code.coding:sct","Observation.code.coding","sct","","",0,1,"","","Y","Coding {[]} {[]}
 ","Code defined by a terminology system","A reference to a code defined by a terminology system.","Codes may be defined very casually in enumerations, or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.  Ordering of codings is undefined and SHALL NOT be used to infer meaning. Generally, at most only one of the coding values will be labeled as UserSelected = true.","Allows for alternative encodings within a code system, and translations to other code systems.","","","","<valueCoding xmlns=""http://hl7.org/fhir"">
   <system value=""http://snomed.info/sct""/>
-  <version value=""http://snomed.info/sct/900000000000207008/version/20250701""/>
+  <version value=""http://snomed.info/sct/900000000000207008/version/20260701""/>
   <code value=""38082009""/>
   <display value=""Hemoglobin (substance)""/>
 </valueCoding>","","","",,,,,"",,,,"CodeableConcept.coding",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
@@ -10025,7 +10025,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "mii-pr-lungenfunktion-ic","Observation.code.coding:sct","Observation.code.coding","sct","","",0,1,"","","Y","Coding {[]} {[]}
 ","SNOMED CT Code","Ein Verweis auf einen von SNOMED CT definierten Code","Codes may be defined very casually in enumerations, or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.  Ordering of codings is undefined and SHALL NOT be used to infer meaning. Generally, at most only one of the coding values will be labeled as UserSelected = true.","Allows for alternative encodings within a code system, and translations to other code systems.","","","","<valueCoding xmlns=""http://hl7.org/fhir"">
   <system value=""http://snomed.info/sct""/>
-  <version value=""http://snomed.info/sct/900000000000207008/version/20250701""/>
+  <version value=""http://snomed.info/sct/900000000000207008/version/20260701""/>
   <code value=""29533001""/>
   <display value=""Inspiratory capacity (observable entity)""/>
 </valueCoding>","","","",,"preferred","","https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/ValueSet/mii-vs-lufu-sct-observable","",,,,"CodeableConcept.coding",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
@@ -10262,7 +10262,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "mii-pr-lungenfunktion-ic","Observation.component:predicted.code.coding:sct","Observation.component.code.coding","sct","","",0,1,"Y","","Y","Coding {[]} {[]}
 ","SNOMED CT Code","Ein Verweis auf einen von SNOMED CT definierten Code","Codes may be defined very casually in enumerations, or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.  Ordering of codings is undefined and SHALL NOT be used to infer meaning. Generally, at most only one of the coding values will be labeled as UserSelected = true.","Allows for alternative encodings within a code system, and translations to other code systems.","","","","<valueCoding xmlns=""http://hl7.org/fhir"">
   <system value=""http://snomed.info/sct""/>
-  <version value=""http://snomed.info/sct/900000000000207008/version/20250701""/>
+  <version value=""http://snomed.info/sct/900000000000207008/version/20260701""/>
   <code value=""TODO""/>
 </valueCoding>","","","",,"preferred","","https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/ValueSet/mii-vs-lufu-sct-observable","",,,,"CodeableConcept.coding",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
@@ -10347,7 +10347,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "mii-pr-lungenfunktion-ic","Observation.component:percentPredicted.code.coding:sct","Observation.component.code.coding","sct","","",0,1,"Y","","Y","Coding {[]} {[]}
 ","SNOMED CT Code","Ein Verweis auf einen von SNOMED CT definierten Code","Codes may be defined very casually in enumerations, or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.  Ordering of codings is undefined and SHALL NOT be used to infer meaning. Generally, at most only one of the coding values will be labeled as UserSelected = true.","Allows for alternative encodings within a code system, and translations to other code systems.","","","","<valueCoding xmlns=""http://hl7.org/fhir"">
   <system value=""http://snomed.info/sct""/>
-  <version value=""http://snomed.info/sct/900000000000207008/version/20250701""/>
+  <version value=""http://snomed.info/sct/900000000000207008/version/20260701""/>
   <code value=""TODO""/>
 </valueCoding>","","","",,"preferred","","https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/ValueSet/mii-vs-lufu-sct-observable","",,,,"CodeableConcept.coding",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
@@ -10432,7 +10432,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "mii-pr-lungenfunktion-ic","Observation.component:z-score.code.coding:sct","Observation.component.code.coding","sct","","",0,1,"Y","","Y","Coding {[]} {[]}
 ","SNOMED CT Code","Ein Verweis auf einen von SNOMED CT definierten Code","Codes may be defined very casually in enumerations, or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.  Ordering of codings is undefined and SHALL NOT be used to infer meaning. Generally, at most only one of the coding values will be labeled as UserSelected = true.","Allows for alternative encodings within a code system, and translations to other code systems.","","","","<valueCoding xmlns=""http://hl7.org/fhir"">
   <system value=""http://snomed.info/sct""/>
-  <version value=""http://snomed.info/sct/900000000000207008/version/20250701""/>
+  <version value=""http://snomed.info/sct/900000000000207008/version/20260701""/>
   <code value=""1078210003""/>
   <display value=""Z-score calculation technique (qualifier value)""/>
 </valueCoding>","","","",,"preferred","","https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/ValueSet/mii-vs-lufu-sct-observable","",,,,"CodeableConcept.coding",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
@@ -10798,7 +10798,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "mii-pr-lungenfunktion-irv-erv","Observation.component:predicted.code.coding:sct","Observation.component.code.coding","sct","","",0,1,"Y","","Y","Coding {[]} {[]}
 ","SNOMED CT Code","Ein Verweis auf einen von SNOMED CT definierten Code","Codes may be defined very casually in enumerations, or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.  Ordering of codings is undefined and SHALL NOT be used to infer meaning. Generally, at most only one of the coding values will be labeled as UserSelected = true.","Allows for alternative encodings within a code system, and translations to other code systems.","","","","<valueCoding xmlns=""http://hl7.org/fhir"">
   <system value=""http://snomed.info/sct""/>
-  <version value=""http://snomed.info/sct/900000000000207008/version/20250701""/>
+  <version value=""http://snomed.info/sct/900000000000207008/version/20260701""/>
   <code value=""TODO""/>
 </valueCoding>","","","",,"preferred","","https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/ValueSet/mii-vs-lufu-sct-observable","",,,,"CodeableConcept.coding",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
@@ -10883,7 +10883,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "mii-pr-lungenfunktion-irv-erv","Observation.component:percentPredicted.code.coding:sct","Observation.component.code.coding","sct","","",0,1,"Y","","Y","Coding {[]} {[]}
 ","SNOMED CT Code","Ein Verweis auf einen von SNOMED CT definierten Code","Codes may be defined very casually in enumerations, or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.  Ordering of codings is undefined and SHALL NOT be used to infer meaning. Generally, at most only one of the coding values will be labeled as UserSelected = true.","Allows for alternative encodings within a code system, and translations to other code systems.","","","","<valueCoding xmlns=""http://hl7.org/fhir"">
   <system value=""http://snomed.info/sct""/>
-  <version value=""http://snomed.info/sct/900000000000207008/version/20250701""/>
+  <version value=""http://snomed.info/sct/900000000000207008/version/20260701""/>
   <code value=""TODO""/>
 </valueCoding>","","","",,"preferred","","https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/ValueSet/mii-vs-lufu-sct-observable","",,,,"CodeableConcept.coding",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
@@ -10971,7 +10971,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "mii-pr-lungenfunktion-irv-erv","Observation.component:z-score.code.coding:sct","Observation.component.code.coding","sct","","",0,1,"Y","","Y","Coding {[]} {[]}
 ","SNOMED CT Code","Ein Verweis auf einen von SNOMED CT definierten Code","Codes may be defined very casually in enumerations, or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.  Ordering of codings is undefined and SHALL NOT be used to infer meaning. Generally, at most only one of the coding values will be labeled as UserSelected = true.","Allows for alternative encodings within a code system, and translations to other code systems.","","","","<valueCoding xmlns=""http://hl7.org/fhir"">
   <system value=""http://snomed.info/sct""/>
-  <version value=""http://snomed.info/sct/900000000000207008/version/20250701""/>
+  <version value=""http://snomed.info/sct/900000000000207008/version/20260701""/>
   <code value=""1078210003""/>
   <display value=""Z-score calculation technique (qualifier value)""/>
 </valueCoding>","","","",,"preferred","","https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/ValueSet/mii-vs-lufu-sct-observable","",,,,"CodeableConcept.coding",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
@@ -11105,7 +11105,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "mii-pr-lungenfunktion-kco","Observation.code.coding:sct","Observation.code.coding","sct","","",0,1,"","","Y","Coding {[]} {[]}
 ","SNOMED CT Code","Ein Verweis auf einen von SNOMED CT definierten Code","Codes may be defined very casually in enumerations, or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.  Ordering of codings is undefined and SHALL NOT be used to infer meaning. Generally, at most only one of the coding values will be labeled as UserSelected = true.","Allows for alternative encodings within a code system, and translations to other code systems.","","","","<valueCoding xmlns=""http://hl7.org/fhir"">
   <system value=""http://snomed.info/sct""/>
-  <version value=""http://snomed.info/sct/900000000000207008/version/20250701""/>
+  <version value=""http://snomed.info/sct/900000000000207008/version/20260701""/>
   <code value=""251952002""/>
   <display value=""Transfer coefficient (respiratory measure) (observable entity)""/>
 </valueCoding>","","","",,"preferred","","https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/ValueSet/mii-vs-lufu-sct-observable","",,,,"CodeableConcept.coding",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
@@ -11342,7 +11342,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "mii-pr-lungenfunktion-kco","Observation.component:predicted.code.coding:sct","Observation.component.code.coding","sct","","",0,1,"Y","","Y","Coding {[]} {[]}
 ","SNOMED CT Code","Ein Verweis auf einen von SNOMED CT definierten Code","Codes may be defined very casually in enumerations, or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.  Ordering of codings is undefined and SHALL NOT be used to infer meaning. Generally, at most only one of the coding values will be labeled as UserSelected = true.","Allows for alternative encodings within a code system, and translations to other code systems.","","","","<valueCoding xmlns=""http://hl7.org/fhir"">
   <system value=""http://snomed.info/sct""/>
-  <version value=""http://snomed.info/sct/900000000000207008/version/20250701""/>
+  <version value=""http://snomed.info/sct/900000000000207008/version/20260701""/>
   <code value=""TODO""/>
 </valueCoding>","","","",,"preferred","","https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/ValueSet/mii-vs-lufu-sct-observable","",,,,"CodeableConcept.coding",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
@@ -11427,7 +11427,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "mii-pr-lungenfunktion-kco","Observation.component:percentPredicted.code.coding:sct","Observation.component.code.coding","sct","","",0,1,"Y","","Y","Coding {[]} {[]}
 ","SNOMED CT Code","Ein Verweis auf einen von SNOMED CT definierten Code","Codes may be defined very casually in enumerations, or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.  Ordering of codings is undefined and SHALL NOT be used to infer meaning. Generally, at most only one of the coding values will be labeled as UserSelected = true.","Allows for alternative encodings within a code system, and translations to other code systems.","","","","<valueCoding xmlns=""http://hl7.org/fhir"">
   <system value=""http://snomed.info/sct""/>
-  <version value=""http://snomed.info/sct/900000000000207008/version/20250701""/>
+  <version value=""http://snomed.info/sct/900000000000207008/version/20260701""/>
   <code value=""TODO""/>
 </valueCoding>","","","",,"preferred","","https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/ValueSet/mii-vs-lufu-sct-observable","",,,,"CodeableConcept.coding",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
@@ -11512,7 +11512,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "mii-pr-lungenfunktion-kco","Observation.component:z-score.code.coding:sct","Observation.component.code.coding","sct","","",0,1,"Y","","Y","Coding {[]} {[]}
 ","SNOMED CT Code","Ein Verweis auf einen von SNOMED CT definierten Code","Codes may be defined very casually in enumerations, or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.  Ordering of codings is undefined and SHALL NOT be used to infer meaning. Generally, at most only one of the coding values will be labeled as UserSelected = true.","Allows for alternative encodings within a code system, and translations to other code systems.","","","","<valueCoding xmlns=""http://hl7.org/fhir"">
   <system value=""http://snomed.info/sct""/>
-  <version value=""http://snomed.info/sct/900000000000207008/version/20250701""/>
+  <version value=""http://snomed.info/sct/900000000000207008/version/20260701""/>
   <code value=""1078210003""/>
   <display value=""Z-score calculation technique (qualifier value)""/>
 </valueCoding>","","","",,"preferred","","https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/ValueSet/mii-vs-lufu-sct-observable","",,,,"CodeableConcept.coding",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
@@ -11646,7 +11646,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "mii-pr-lungenfunktion-kcoc","Observation.code.coding:sct","Observation.code.coding","sct","","",0,1,"","","Y","Coding {[]} {[]}
 ","SNOMED CT Code","Ein Verweis auf einen von SNOMED CT definierten Code","Codes may be defined very casually in enumerations, or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.  Ordering of codings is undefined and SHALL NOT be used to infer meaning. Generally, at most only one of the coding values will be labeled as UserSelected = true.","Allows for alternative encodings within a code system, and translations to other code systems.","","","","<valueCoding xmlns=""http://hl7.org/fhir"">
   <system value=""http://snomed.info/sct""/>
-  <version value=""http://snomed.info/sct/900000000000207008/version/20250701""/>
+  <version value=""http://snomed.info/sct/900000000000207008/version/20260701""/>
   <code value=""TODO""/>
 </valueCoding>","","","",,"preferred","","https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/ValueSet/mii-vs-lufu-sct-observable","",,,,"CodeableConcept.coding",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
@@ -11886,7 +11886,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "mii-pr-lungenfunktion-kcoc","Observation.component:predicted.code.coding:sct","Observation.component.code.coding","sct","","",0,1,"Y","","Y","Coding {[]} {[]}
 ","SNOMED CT Code","Ein Verweis auf einen von SNOMED CT definierten Code","Codes may be defined very casually in enumerations, or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.  Ordering of codings is undefined and SHALL NOT be used to infer meaning. Generally, at most only one of the coding values will be labeled as UserSelected = true.","Allows for alternative encodings within a code system, and translations to other code systems.","","","","<valueCoding xmlns=""http://hl7.org/fhir"">
   <system value=""http://snomed.info/sct""/>
-  <version value=""http://snomed.info/sct/900000000000207008/version/20250701""/>
+  <version value=""http://snomed.info/sct/900000000000207008/version/20260701""/>
   <code value=""TODO""/>
 </valueCoding>","","","",,"preferred","","https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/ValueSet/mii-vs-lufu-sct-observable","",,,,"CodeableConcept.coding",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
@@ -11974,7 +11974,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "mii-pr-lungenfunktion-kcoc","Observation.component:percentPredicted.code.coding:sct","Observation.component.code.coding","sct","","",0,1,"Y","","Y","Coding {[]} {[]}
 ","SNOMED CT Code","Ein Verweis auf einen von SNOMED CT definierten Code","Codes may be defined very casually in enumerations, or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.  Ordering of codings is undefined and SHALL NOT be used to infer meaning. Generally, at most only one of the coding values will be labeled as UserSelected = true.","Allows for alternative encodings within a code system, and translations to other code systems.","","","","<valueCoding xmlns=""http://hl7.org/fhir"">
   <system value=""http://snomed.info/sct""/>
-  <version value=""http://snomed.info/sct/900000000000207008/version/20250701""/>
+  <version value=""http://snomed.info/sct/900000000000207008/version/20260701""/>
   <code value=""TODO""/>
 </valueCoding>","","","",,"preferred","","https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/ValueSet/mii-vs-lufu-sct-observable","",,,,"CodeableConcept.coding",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
@@ -12062,7 +12062,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "mii-pr-lungenfunktion-kcoc","Observation.component:z-score.code.coding:sct","Observation.component.code.coding","sct","","",0,1,"Y","","Y","Coding {[]} {[]}
 ","SNOMED CT Code","Ein Verweis auf einen von SNOMED CT definierten Code","Codes may be defined very casually in enumerations, or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.  Ordering of codings is undefined and SHALL NOT be used to infer meaning. Generally, at most only one of the coding values will be labeled as UserSelected = true.","Allows for alternative encodings within a code system, and translations to other code systems.","","","","<valueCoding xmlns=""http://hl7.org/fhir"">
   <system value=""http://snomed.info/sct""/>
-  <version value=""http://snomed.info/sct/900000000000207008/version/20250701""/>
+  <version value=""http://snomed.info/sct/900000000000207008/version/20260701""/>
   <code value=""1078210003""/>
   <display value=""Z-score calculation technique (qualifier value)""/>
 </valueCoding>","","","",,"preferred","","https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/ValueSet/mii-vs-lufu-sct-observable","",,,,"CodeableConcept.coding",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
@@ -12218,7 +12218,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "mii-pr-lungenfunktion-luftfeuchtigkeit","Observation.code.coding:sct","Observation.code.coding","sct","","",0,1,"","","Y","Coding {[]} {[]}
 ","SNOMED CT Code","Ein Verweis auf einen von SNOMED CT definierten Code","Codes may be defined very casually in enumerations, or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.  Ordering of codings is undefined and SHALL NOT be used to infer meaning. Generally, at most only one of the coding values will be labeled as UserSelected = true.","Allows for alternative encodings within a code system, and translations to other code systems.","","","","<valueCoding xmlns=""http://hl7.org/fhir"">
   <system value=""http://snomed.info/sct""/>
-  <version value=""http://snomed.info/sct/900000000000207008/version/20250701""/>
+  <version value=""http://snomed.info/sct/900000000000207008/version/20260701""/>
   <code value=""3525006""/>
   <display value=""Humidity (physical force)""/>
 </valueCoding>","","","",,,,,"",,,,"CodeableConcept.coding",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
@@ -12529,7 +12529,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "mii-pr-lungenfunktion-lufttemperatur","Observation.code.coding:sct","Observation.code.coding","sct","","",0,1,"","","Y","Coding {[]} {[]}
 ","SNOMED CT Code","Ein Verweis auf einen von SNOMED CT definierten Code","Codes may be defined very casually in enumerations, or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.  Ordering of codings is undefined and SHALL NOT be used to infer meaning. Generally, at most only one of the coding values will be labeled as UserSelected = true.","Allows for alternative encodings within a code system, and translations to other code systems.","","","","<valueCoding xmlns=""http://hl7.org/fhir"">
   <system value=""http://snomed.info/sct""/>
-  <version value=""http://snomed.info/sct/900000000000207008/version/20250701""/>
+  <version value=""http://snomed.info/sct/900000000000207008/version/20260701""/>
   <code value=""250825003""/>
   <display value=""Ambient temperature (observable entity)""/>
 </valueCoding>","","","",,,,,"",,,,"CodeableConcept.coding",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
@@ -13050,7 +13050,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "mii-pr-lungenfunktion-mef","Observation.component:predicted.code.coding:sct","Observation.component.code.coding","sct","","",0,1,"Y","","Y","Coding {[]} {[]}
 ","SNOMED CT Code","Ein Verweis auf einen von SNOMED CT definierten Code","Codes may be defined very casually in enumerations, or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.  Ordering of codings is undefined and SHALL NOT be used to infer meaning. Generally, at most only one of the coding values will be labeled as UserSelected = true.","Allows for alternative encodings within a code system, and translations to other code systems.","","","","<valueCoding xmlns=""http://hl7.org/fhir"">
   <system value=""http://snomed.info/sct""/>
-  <version value=""http://snomed.info/sct/900000000000207008/version/20250701""/>
+  <version value=""http://snomed.info/sct/900000000000207008/version/20260701""/>
   <code value=""TODO""/>
 </valueCoding>","","","",,"preferred","","https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/ValueSet/mii-vs-lufu-sct-observable","",,,,"CodeableConcept.coding",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
@@ -13138,7 +13138,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "mii-pr-lungenfunktion-mef","Observation.component:percentPredicted.code.coding:sct","Observation.component.code.coding","sct","","",0,1,"Y","","Y","Coding {[]} {[]}
 ","SNOMED CT Code","Ein Verweis auf einen von SNOMED CT definierten Code","Codes may be defined very casually in enumerations, or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.  Ordering of codings is undefined and SHALL NOT be used to infer meaning. Generally, at most only one of the coding values will be labeled as UserSelected = true.","Allows for alternative encodings within a code system, and translations to other code systems.","","","","<valueCoding xmlns=""http://hl7.org/fhir"">
   <system value=""http://snomed.info/sct""/>
-  <version value=""http://snomed.info/sct/900000000000207008/version/20250701""/>
+  <version value=""http://snomed.info/sct/900000000000207008/version/20260701""/>
   <code value=""TODO""/>
 </valueCoding>","","","",,"preferred","","https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/ValueSet/mii-vs-lufu-sct-observable","",,,,"CodeableConcept.coding",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
@@ -13226,7 +13226,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "mii-pr-lungenfunktion-mef","Observation.component:z-score.code.coding:sct","Observation.component.code.coding","sct","","",0,1,"Y","","Y","Coding {[]} {[]}
 ","SNOMED CT Code","Ein Verweis auf einen von SNOMED CT definierten Code","Codes may be defined very casually in enumerations, or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.  Ordering of codings is undefined and SHALL NOT be used to infer meaning. Generally, at most only one of the coding values will be labeled as UserSelected = true.","Allows for alternative encodings within a code system, and translations to other code systems.","","","","<valueCoding xmlns=""http://hl7.org/fhir"">
   <system value=""http://snomed.info/sct""/>
-  <version value=""http://snomed.info/sct/900000000000207008/version/20250701""/>
+  <version value=""http://snomed.info/sct/900000000000207008/version/20260701""/>
   <code value=""1078210003""/>
   <display value=""Z-score calculation technique (qualifier value)""/>
 </valueCoding>","","","",,"preferred","","https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/ValueSet/mii-vs-lufu-sct-observable","",,,,"CodeableConcept.coding",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
@@ -13897,7 +13897,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "mii-pr-lungenfunktion-methacholine","Medication.ingredient:Wirkstoff.item[x]:itemCodeableConcept.coding:SNOMED","Medication.ingredient.item[x].coding","SNOMED","","",0,*,"Y","","Y","Coding {[]} {[]}
 ","SNOMED CT Code","Ein Verweis auf einen von SNOMED CT definierten Code","Codes may be defined very casually in enumerations, or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.  Ordering of codings is undefined and SHALL NOT be used to infer meaning. Generally, at most only one of the coding values will be labeled as UserSelected = true.","Allows for alternative encodings within a code system, and translations to other code systems.","","","","<valueCoding xmlns=""http://hl7.org/fhir"">
   <system value=""http://snomed.info/sct""/>
-  <version value=""http://snomed.info/sct/900000000000207008/version/20250701""/>
+  <version value=""http://snomed.info/sct/900000000000207008/version/20260701""/>
   <code value=""109196007""/>
   <display value=""Methacholine chloride (substance)""/>
 </valueCoding>","","","",,,,,"",,,,"CodeableConcept.coding",0,*,"ele-1
@@ -14129,7 +14129,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "mii-pr-lungenfunktion-methacholine","Medication.ingredient:Loesung.item[x]:itemCodeableConcept.coding:SNOMED","Medication.ingredient.item[x].coding","SNOMED","","",0,*,"Y","","Y","Coding {[]} {[]}
 ","SNOMED CT Code","Ein Verweis auf einen von SNOMED CT definierten Code","Codes may be defined very casually in enumerations, or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.  Ordering of codings is undefined and SHALL NOT be used to infer meaning. Generally, at most only one of the coding values will be labeled as UserSelected = true.","Allows for alternative encodings within a code system, and translations to other code systems.","","","","<valueCoding xmlns=""http://hl7.org/fhir"">
   <system value=""http://snomed.info/sct""/>
-  <version value=""http://snomed.info/sct/900000000000207008/version/20250701""/>
+  <version value=""http://snomed.info/sct/900000000000207008/version/20260701""/>
   <code value=""11713004""/>
   <display value=""Water (substance)""/>
 </valueCoding>","","","",,,,,"",,,,"CodeableConcept.coding",0,*,"ele-1
@@ -14726,7 +14726,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "mii-pr-lungenfunktion-pef","Observation.component:z-score.code.coding:sct","Observation.component.code.coding","sct","","",0,1,"Y","","Y","Coding {[]} {[]}
 ","SNOMED CT Code","Ein Verweis auf einen von SNOMED CT definierten Code","Codes may be defined very casually in enumerations, or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.  Ordering of codings is undefined and SHALL NOT be used to infer meaning. Generally, at most only one of the coding values will be labeled as UserSelected = true.","Allows for alternative encodings within a code system, and translations to other code systems.","","","","<valueCoding xmlns=""http://hl7.org/fhir"">
   <system value=""http://snomed.info/sct""/>
-  <version value=""http://snomed.info/sct/900000000000207008/version/20250701""/>
+  <version value=""http://snomed.info/sct/900000000000207008/version/20260701""/>
   <code value=""1078210003""/>
   <display value=""Z-score calculation technique (qualifier value)""/>
 </valueCoding>","","","",,"preferred","","https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/ValueSet/mii-vs-lufu-sct-observable","",,,,"CodeableConcept.coding",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
@@ -14906,7 +14906,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "mii-pr-lungenfunktion-provokationstest-messung","Procedure.category.coding:sct","Procedure.category.coding","sct","","",0,1,"Y","","Y","Coding {[]} {[]}
 ","SNOMED CT Code","Ein Verweis auf einen von SNOMED CT definierten Code","Codes may be defined very casually in enumerations, or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.  Ordering of codings is undefined and SHALL NOT be used to infer meaning. Generally, at most only one of the coding values will be labeled as UserSelected = true.","Allows for alternative encodings within a code system, and translations to other code systems.","","","","<valueCoding xmlns=""http://hl7.org/fhir"">
   <system value=""http://snomed.info/sct""/>
-  <version value=""http://snomed.info/sct/900000000000207008/version/20250701""/>
+  <version value=""http://snomed.info/sct/900000000000207008/version/20260701""/>
   <code value=""323426006""/>
   <display value=""Measurement of respiratory function (procedure)""/>
 </valueCoding>","","","",,"preferred","","https://www.medizininformatik-initiative.de/fhir/core/modul-prozedur/ValueSet/procedures-category-sct","",,,,"CodeableConcept.coding",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
@@ -15034,7 +15034,7 @@ ops-regex:In code sind nur gültige OPS-Codes ohne Zusätze erlaubt {matches('^[
 "mii-pr-lungenfunktion-provokationstest-messung","Procedure.code.coding:sct","Procedure.code.coding","sct","","",0,1,"Y","","Y","Coding {[]} {[]}
 ","SNOMED CT Code","Ein Verweis auf einen von SNOMED CT definierten Code","Codes may be defined very casually in enumerations, or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.  Ordering of codings is undefined and SHALL NOT be used to infer meaning. Generally, at most only one of the coding values will be labeled as UserSelected = true.","Allows for alternative encodings within a code system, and translations to other code systems.","","","","<valueCoding xmlns=""http://hl7.org/fhir"">
   <system value=""http://snomed.info/sct""/>
-  <version value=""http://snomed.info/sct/900000000000207008/version/20250701""/>
+  <version value=""http://snomed.info/sct/900000000000207008/version/20260701""/>
   <code value=""252520007""/>
   <display value=""Methacholine challenge (procedure)""/>
 </valueCoding>","","","",,"required","","https://www.medizininformatik-initiative.de/fhir/core/modul-prozedur/ValueSet/procedures-sct","",,,,"CodeableConcept.coding",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
@@ -15368,7 +15368,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "mii-pr-lungenfunktion-provokationstest","DiagnosticReport.category.coding:sct","DiagnosticReport.category.coding","sct","","",1,1,"Y","","Y","Coding {[]} {[]}
 ","SNOMED CT Code","Ein Verweis auf einen von SNOMED CT definierten Code","Codes may be defined very casually in enumerations, or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.  Ordering of codings is undefined and SHALL NOT be used to infer meaning. Generally, at most only one of the coding values will be labeled as UserSelected = true.","Allows for alternative encodings within a code system, and translations to other code systems.","","","","<valueCoding xmlns=""http://hl7.org/fhir"">
   <system value=""http://snomed.info/sct""/>
-  <version value=""http://snomed.info/sct/900000000000207008/version/20250701""/>
+  <version value=""http://snomed.info/sct/900000000000207008/version/20260701""/>
   <code value=""720449003""/>
   <display value=""Pulmonary function report (record artifact)""/>
 </valueCoding>","","","",,,,,"",,,,"CodeableConcept.coding",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
@@ -15394,7 +15394,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "mii-pr-lungenfunktion-provokationstest","DiagnosticReport.code.coding:sct","DiagnosticReport.code.coding","sct","","",0,1,"Y","","Y","Coding {[]} {[]}
 ","SNOMED CT Code","Ein Verweis auf einen von SNOMED CT definierten Code","Codes may be defined very casually in enumerations, or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.  Ordering of codings is undefined and SHALL NOT be used to infer meaning. Generally, at most only one of the coding values will be labeled as UserSelected = true.","Allows for alternative encodings within a code system, and translations to other code systems.","","","","<valueCoding xmlns=""http://hl7.org/fhir"">
   <system value=""http://snomed.info/sct""/>
-  <version value=""http://snomed.info/sct/900000000000207008/version/20250701""/>
+  <version value=""http://snomed.info/sct/900000000000207008/version/20260701""/>
   <code value=""252520007""/>
   <display value=""Methacholine challenge (procedure)""/>
 </valueCoding>","","","",,"required","","https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/ValueSet/mii-vs-lufu-sct-procedure","",,,,"CodeableConcept.coding",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
@@ -15527,7 +15527,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "
 "mii-pr-lungenfunktion-provokationstest","DiagnosticReport.conclusionCode.coding:sct","DiagnosticReport.conclusionCode.coding","sct","","",0,*,"Y","","Y","Coding {[]} {[]}
 ","SNOMED CT Code","Ein Verweis auf einen von SNOMED CT definierten Code","Codes may be defined very casually in enumerations, or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.  Ordering of codings is undefined and SHALL NOT be used to infer meaning. Generally, at most only one of the coding values will be labeled as UserSelected = true.","Allows for alternative encodings within a code system, and translations to other code systems.","","","","<valueCoding xmlns=""http://hl7.org/fhir"">
-  <system value=""http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250701""/>
+  <system value=""http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20260701""/>
 </valueCoding>","","","",,"required","","https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/ValueSet/mii-vs-lufu-sct-findings","",,,,"CodeableConcept.coding",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "mii-pr-lungenfunktion-provokationstest","DiagnosticReport.conclusionCode.text","DiagnosticReport.conclusionCode.text","","","",0,1,"","","Y","string {[]} {[]}
@@ -16062,7 +16062,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "mii-pr-lungenfunktion-prozent","Observation.component:z-score.code.coding:sct","Observation.component.code.coding","sct","","",0,1,"Y","","Y","Coding {[]} {[]}
 ","SNOMED CT Code","Ein Verweis auf einen von SNOMED CT definierten Code","Codes may be defined very casually in enumerations, or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.  Ordering of codings is undefined and SHALL NOT be used to infer meaning. Generally, at most only one of the coding values will be labeled as UserSelected = true.","Allows for alternative encodings within a code system, and translations to other code systems.","","","","<valueCoding xmlns=""http://hl7.org/fhir"">
   <system value=""http://snomed.info/sct""/>
-  <version value=""http://snomed.info/sct/900000000000207008/version/20250701""/>
+  <version value=""http://snomed.info/sct/900000000000207008/version/20260701""/>
   <code value=""1078210003""/>
   <display value=""Z-score calculation technique (qualifier value)""/>
 </valueCoding>","","","",,"preferred","","https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/ValueSet/mii-vs-lufu-sct-observable","",,,,"CodeableConcept.coding",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
@@ -16196,7 +16196,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "mii-pr-lungenfunktion-r-effektiv","Observation.code.coding:sct","Observation.code.coding","sct","","",0,1,"","","Y","Coding {[]} {[]}
 ","SNOMED CT Code","Ein Verweis auf einen von SNOMED CT definierten Code","Codes may be defined very casually in enumerations, or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.  Ordering of codings is undefined and SHALL NOT be used to infer meaning. Generally, at most only one of the coding values will be labeled as UserSelected = true.","Allows for alternative encodings within a code system, and translations to other code systems.","","","","<valueCoding xmlns=""http://hl7.org/fhir"">
   <system value=""http://snomed.info/sct""/>
-  <version value=""http://snomed.info/sct/900000000000207008/version/20250701""/>
+  <version value=""http://snomed.info/sct/900000000000207008/version/20260701""/>
   <code value=""1366667009""/>
   <display value=""Specific airway resistance (observable entity)""/>
 </valueCoding>","","","",,"preferred","","https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/ValueSet/mii-vs-lufu-sct-observable","",,,,"CodeableConcept.coding",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
@@ -16433,7 +16433,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "mii-pr-lungenfunktion-r-effektiv","Observation.component:predicted.code.coding:sct","Observation.component.code.coding","sct","","",0,1,"Y","","Y","Coding {[]} {[]}
 ","SNOMED CT Code","Ein Verweis auf einen von SNOMED CT definierten Code","Codes may be defined very casually in enumerations, or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.  Ordering of codings is undefined and SHALL NOT be used to infer meaning. Generally, at most only one of the coding values will be labeled as UserSelected = true.","Allows for alternative encodings within a code system, and translations to other code systems.","","","","<valueCoding xmlns=""http://hl7.org/fhir"">
   <system value=""http://snomed.info/sct""/>
-  <version value=""http://snomed.info/sct/900000000000207008/version/20250701""/>
+  <version value=""http://snomed.info/sct/900000000000207008/version/20260701""/>
   <code value=""TODO""/>
 </valueCoding>","","","",,"preferred","","https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/ValueSet/mii-vs-lufu-sct-observable","",,,,"CodeableConcept.coding",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
@@ -16521,7 +16521,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "mii-pr-lungenfunktion-r-effektiv","Observation.component:percentPredicted.code.coding:sct","Observation.component.code.coding","sct","","",0,1,"Y","","Y","Coding {[]} {[]}
 ","SNOMED CT Code","Ein Verweis auf einen von SNOMED CT definierten Code","Codes may be defined very casually in enumerations, or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.  Ordering of codings is undefined and SHALL NOT be used to infer meaning. Generally, at most only one of the coding values will be labeled as UserSelected = true.","Allows for alternative encodings within a code system, and translations to other code systems.","","","","<valueCoding xmlns=""http://hl7.org/fhir"">
   <system value=""http://snomed.info/sct""/>
-  <version value=""http://snomed.info/sct/900000000000207008/version/20250701""/>
+  <version value=""http://snomed.info/sct/900000000000207008/version/20260701""/>
   <code value=""TODO""/>
 </valueCoding>","","","",,"preferred","","https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/ValueSet/mii-vs-lufu-sct-observable","",,,,"CodeableConcept.coding",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
@@ -16606,7 +16606,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "mii-pr-lungenfunktion-r-effektiv","Observation.component:z-score.code.coding:sct","Observation.component.code.coding","sct","","",0,1,"Y","","Y","Coding {[]} {[]}
 ","SNOMED CT Code","Ein Verweis auf einen von SNOMED CT definierten Code","Codes may be defined very casually in enumerations, or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.  Ordering of codings is undefined and SHALL NOT be used to infer meaning. Generally, at most only one of the coding values will be labeled as UserSelected = true.","Allows for alternative encodings within a code system, and translations to other code systems.","","","","<valueCoding xmlns=""http://hl7.org/fhir"">
   <system value=""http://snomed.info/sct""/>
-  <version value=""http://snomed.info/sct/900000000000207008/version/20250701""/>
+  <version value=""http://snomed.info/sct/900000000000207008/version/20260701""/>
   <code value=""1078210003""/>
   <display value=""Z-score calculation technique (qualifier value)""/>
 </valueCoding>","","","",,"preferred","","https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/ValueSet/mii-vs-lufu-sct-observable","",,,,"CodeableConcept.coding",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
@@ -16740,7 +16740,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "mii-pr-lungenfunktion-r-spezifisch","Observation.code.coding:sct","Observation.code.coding","sct","","",0,1,"","","Y","Coding {[]} {[]}
 ","SNOMED CT Code","Ein Verweis auf einen von SNOMED CT definierten Code","Codes may be defined very casually in enumerations, or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.  Ordering of codings is undefined and SHALL NOT be used to infer meaning. Generally, at most only one of the coding values will be labeled as UserSelected = true.","Allows for alternative encodings within a code system, and translations to other code systems.","","","","<valueCoding xmlns=""http://hl7.org/fhir"">
   <system value=""http://snomed.info/sct""/>
-  <version value=""http://snomed.info/sct/900000000000207008/version/20250701""/>
+  <version value=""http://snomed.info/sct/900000000000207008/version/20260701""/>
   <code value=""1366667009""/>
   <display value=""Specific airway resistance (observable entity)""/>
 </valueCoding>","","","",,"preferred","","https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/ValueSet/mii-vs-lufu-sct-observable","",,,,"CodeableConcept.coding",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
@@ -16977,7 +16977,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "mii-pr-lungenfunktion-r-spezifisch","Observation.component:predicted.code.coding:sct","Observation.component.code.coding","sct","","",0,1,"Y","","Y","Coding {[]} {[]}
 ","SNOMED CT Code","Ein Verweis auf einen von SNOMED CT definierten Code","Codes may be defined very casually in enumerations, or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.  Ordering of codings is undefined and SHALL NOT be used to infer meaning. Generally, at most only one of the coding values will be labeled as UserSelected = true.","Allows for alternative encodings within a code system, and translations to other code systems.","","","","<valueCoding xmlns=""http://hl7.org/fhir"">
   <system value=""http://snomed.info/sct""/>
-  <version value=""http://snomed.info/sct/900000000000207008/version/20250701""/>
+  <version value=""http://snomed.info/sct/900000000000207008/version/20260701""/>
   <code value=""TODO""/>
 </valueCoding>","","","",,"preferred","","https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/ValueSet/mii-vs-lufu-sct-observable","",,,,"CodeableConcept.coding",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
@@ -17065,7 +17065,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "mii-pr-lungenfunktion-r-spezifisch","Observation.component:percentPredicted.code.coding:sct","Observation.component.code.coding","sct","","",0,1,"Y","","Y","Coding {[]} {[]}
 ","SNOMED CT Code","Ein Verweis auf einen von SNOMED CT definierten Code","Codes may be defined very casually in enumerations, or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.  Ordering of codings is undefined and SHALL NOT be used to infer meaning. Generally, at most only one of the coding values will be labeled as UserSelected = true.","Allows for alternative encodings within a code system, and translations to other code systems.","","","","<valueCoding xmlns=""http://hl7.org/fhir"">
   <system value=""http://snomed.info/sct""/>
-  <version value=""http://snomed.info/sct/900000000000207008/version/20250701""/>
+  <version value=""http://snomed.info/sct/900000000000207008/version/20260701""/>
   <code value=""TODO""/>
 </valueCoding>","","","",,"preferred","","https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/ValueSet/mii-vs-lufu-sct-observable","",,,,"CodeableConcept.coding",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
@@ -17150,7 +17150,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "mii-pr-lungenfunktion-r-spezifisch","Observation.component:z-score.code.coding:sct","Observation.component.code.coding","sct","","",0,1,"Y","","Y","Coding {[]} {[]}
 ","SNOMED CT Code","Ein Verweis auf einen von SNOMED CT definierten Code","Codes may be defined very casually in enumerations, or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.  Ordering of codings is undefined and SHALL NOT be used to infer meaning. Generally, at most only one of the coding values will be labeled as UserSelected = true.","Allows for alternative encodings within a code system, and translations to other code systems.","","","","<valueCoding xmlns=""http://hl7.org/fhir"">
   <system value=""http://snomed.info/sct""/>
-  <version value=""http://snomed.info/sct/900000000000207008/version/20250701""/>
+  <version value=""http://snomed.info/sct/900000000000207008/version/20260701""/>
   <code value=""1078210003""/>
   <display value=""Z-score calculation technique (qualifier value)""/>
 </valueCoding>","","","",,"preferred","","https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/ValueSet/mii-vs-lufu-sct-observable","",,,,"CodeableConcept.coding",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
@@ -17284,7 +17284,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "mii-pr-lungenfunktion-r","Observation.code.coding:sct","Observation.code.coding","sct","","",0,1,"","","Y","Coding {[]} {[]}
 ","SNOMED CT Code","Ein Verweis auf einen von SNOMED CT definierten Code","Codes may be defined very casually in enumerations, or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.  Ordering of codings is undefined and SHALL NOT be used to infer meaning. Generally, at most only one of the coding values will be labeled as UserSelected = true.","Allows for alternative encodings within a code system, and translations to other code systems.","","","","<valueCoding xmlns=""http://hl7.org/fhir"">
   <system value=""http://snomed.info/sct""/>
-  <version value=""http://snomed.info/sct/900000000000207008/version/20250701""/>
+  <version value=""http://snomed.info/sct/900000000000207008/version/20260701""/>
   <code value=""16162007""/>
   <display value=""Total airway resistance (observable entity)""/>
 </valueCoding>","","","",,"preferred","","https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/ValueSet/mii-vs-lufu-sct-observable","",,,,"CodeableConcept.coding",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
@@ -17521,7 +17521,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "mii-pr-lungenfunktion-r","Observation.component:predicted.code.coding:sct","Observation.component.code.coding","sct","","",0,1,"Y","","Y","Coding {[]} {[]}
 ","SNOMED CT Code","Ein Verweis auf einen von SNOMED CT definierten Code","Codes may be defined very casually in enumerations, or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.  Ordering of codings is undefined and SHALL NOT be used to infer meaning. Generally, at most only one of the coding values will be labeled as UserSelected = true.","Allows for alternative encodings within a code system, and translations to other code systems.","","","","<valueCoding xmlns=""http://hl7.org/fhir"">
   <system value=""http://snomed.info/sct""/>
-  <version value=""http://snomed.info/sct/900000000000207008/version/20250701""/>
+  <version value=""http://snomed.info/sct/900000000000207008/version/20260701""/>
   <code value=""TODO""/>
 </valueCoding>","","","",,"preferred","","https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/ValueSet/mii-vs-lufu-sct-observable","",,,,"CodeableConcept.coding",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
@@ -17609,7 +17609,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "mii-pr-lungenfunktion-r","Observation.component:percentPredicted.code.coding:sct","Observation.component.code.coding","sct","","",0,1,"Y","","Y","Coding {[]} {[]}
 ","SNOMED CT Code","Ein Verweis auf einen von SNOMED CT definierten Code","Codes may be defined very casually in enumerations, or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.  Ordering of codings is undefined and SHALL NOT be used to infer meaning. Generally, at most only one of the coding values will be labeled as UserSelected = true.","Allows for alternative encodings within a code system, and translations to other code systems.","","","","<valueCoding xmlns=""http://hl7.org/fhir"">
   <system value=""http://snomed.info/sct""/>
-  <version value=""http://snomed.info/sct/900000000000207008/version/20250701""/>
+  <version value=""http://snomed.info/sct/900000000000207008/version/20260701""/>
   <code value=""TODO""/>
 </valueCoding>","","","",,"preferred","","https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/ValueSet/mii-vs-lufu-sct-observable","",,,,"CodeableConcept.coding",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
@@ -17694,7 +17694,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "mii-pr-lungenfunktion-r","Observation.component:z-score.code.coding:sct","Observation.component.code.coding","sct","","",0,1,"Y","","Y","Coding {[]} {[]}
 ","SNOMED CT Code","Ein Verweis auf einen von SNOMED CT definierten Code","Codes may be defined very casually in enumerations, or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.  Ordering of codings is undefined and SHALL NOT be used to infer meaning. Generally, at most only one of the coding values will be labeled as UserSelected = true.","Allows for alternative encodings within a code system, and translations to other code systems.","","","","<valueCoding xmlns=""http://hl7.org/fhir"">
   <system value=""http://snomed.info/sct""/>
-  <version value=""http://snomed.info/sct/900000000000207008/version/20250701""/>
+  <version value=""http://snomed.info/sct/900000000000207008/version/20260701""/>
   <code value=""1078210003""/>
   <display value=""Z-score calculation technique (qualifier value)""/>
 </valueCoding>","","","",,"preferred","","https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/ValueSet/mii-vs-lufu-sct-observable","",,,,"CodeableConcept.coding",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
@@ -17828,7 +17828,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "mii-pr-lungenfunktion-rv-tlc","Observation.code.coding:sct","Observation.code.coding","sct","","",0,1,"","","Y","Coding {[]} {[]}
 ","SNOMED CT Code","Ein Verweis auf einen von SNOMED CT definierten Code","Codes may be defined very casually in enumerations, or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.  Ordering of codings is undefined and SHALL NOT be used to infer meaning. Generally, at most only one of the coding values will be labeled as UserSelected = true.","Allows for alternative encodings within a code system, and translations to other code systems.","","","","<valueCoding xmlns=""http://hl7.org/fhir"">
   <system value=""http://snomed.info/sct""/>
-  <version value=""http://snomed.info/sct/900000000000207008/version/20250701""/>
+  <version value=""http://snomed.info/sct/900000000000207008/version/20260701""/>
   <code value=""1366666000""/>
   <display value=""Residual volume/total lung capacity ratio (observable entity)""/>
 </valueCoding>","","","",,"preferred","","https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/ValueSet/mii-vs-lufu-sct-observable","",,,,"CodeableConcept.coding",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
@@ -18065,7 +18065,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "mii-pr-lungenfunktion-rv-tlc","Observation.component:predicted.code.coding:sct","Observation.component.code.coding","sct","","",0,1,"Y","","Y","Coding {[]} {[]}
 ","SNOMED CT Code","Ein Verweis auf einen von SNOMED CT definierten Code","Codes may be defined very casually in enumerations, or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.  Ordering of codings is undefined and SHALL NOT be used to infer meaning. Generally, at most only one of the coding values will be labeled as UserSelected = true.","Allows for alternative encodings within a code system, and translations to other code systems.","","","","<valueCoding xmlns=""http://hl7.org/fhir"">
   <system value=""http://snomed.info/sct""/>
-  <version value=""http://snomed.info/sct/900000000000207008/version/20250701""/>
+  <version value=""http://snomed.info/sct/900000000000207008/version/20260701""/>
   <code value=""TODO""/>
 </valueCoding>","","","",,"preferred","","https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/ValueSet/mii-vs-lufu-sct-observable","",,,,"CodeableConcept.coding",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
@@ -18150,7 +18150,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "mii-pr-lungenfunktion-rv-tlc","Observation.component:percentPredicted.code.coding:sct","Observation.component.code.coding","sct","","",0,1,"Y","","Y","Coding {[]} {[]}
 ","SNOMED CT Code","Ein Verweis auf einen von SNOMED CT definierten Code","Codes may be defined very casually in enumerations, or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.  Ordering of codings is undefined and SHALL NOT be used to infer meaning. Generally, at most only one of the coding values will be labeled as UserSelected = true.","Allows for alternative encodings within a code system, and translations to other code systems.","","","","<valueCoding xmlns=""http://hl7.org/fhir"">
   <system value=""http://snomed.info/sct""/>
-  <version value=""http://snomed.info/sct/900000000000207008/version/20250701""/>
+  <version value=""http://snomed.info/sct/900000000000207008/version/20260701""/>
   <code value=""TODO""/>
 </valueCoding>","","","",,"preferred","","https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/ValueSet/mii-vs-lufu-sct-observable","",,,,"CodeableConcept.coding",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
@@ -18238,7 +18238,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "mii-pr-lungenfunktion-rv-tlc","Observation.component:z-score.code.coding:sct","Observation.component.code.coding","sct","","",0,1,"Y","","Y","Coding {[]} {[]}
 ","SNOMED CT Code","Ein Verweis auf einen von SNOMED CT definierten Code","Codes may be defined very casually in enumerations, or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.  Ordering of codings is undefined and SHALL NOT be used to infer meaning. Generally, at most only one of the coding values will be labeled as UserSelected = true.","Allows for alternative encodings within a code system, and translations to other code systems.","","","","<valueCoding xmlns=""http://hl7.org/fhir"">
   <system value=""http://snomed.info/sct""/>
-  <version value=""http://snomed.info/sct/900000000000207008/version/20250701""/>
+  <version value=""http://snomed.info/sct/900000000000207008/version/20260701""/>
   <code value=""1078210003""/>
   <display value=""Z-score calculation technique (qualifier value)""/>
 </valueCoding>","","","",,"preferred","","https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/ValueSet/mii-vs-lufu-sct-observable","",,,,"CodeableConcept.coding",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
@@ -18372,7 +18372,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "mii-pr-lungenfunktion-rv","Observation.code.coding:sct","Observation.code.coding","sct","","",0,1,"","","Y","Coding {[]} {[]}
 ","SNOMED CT Code","Ein Verweis auf einen von SNOMED CT definierten Code","Codes may be defined very casually in enumerations, or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.  Ordering of codings is undefined and SHALL NOT be used to infer meaning. Generally, at most only one of the coding values will be labeled as UserSelected = true.","Allows for alternative encodings within a code system, and translations to other code systems.","","","","<valueCoding xmlns=""http://hl7.org/fhir"">
   <system value=""http://snomed.info/sct""/>
-  <version value=""http://snomed.info/sct/900000000000207008/version/20250701""/>
+  <version value=""http://snomed.info/sct/900000000000207008/version/20260701""/>
   <code value=""42457008""/>
   <display value=""Residual respiratory volume (observable entity)""/>
 </valueCoding>","","","",,"preferred","","https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/ValueSet/mii-vs-lufu-sct-observable","",,,,"CodeableConcept.coding",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
@@ -18609,7 +18609,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "mii-pr-lungenfunktion-rv","Observation.component:predicted.code.coding:sct","Observation.component.code.coding","sct","","",0,1,"Y","","Y","Coding {[]} {[]}
 ","SNOMED CT Code","Ein Verweis auf einen von SNOMED CT definierten Code","Codes may be defined very casually in enumerations, or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.  Ordering of codings is undefined and SHALL NOT be used to infer meaning. Generally, at most only one of the coding values will be labeled as UserSelected = true.","Allows for alternative encodings within a code system, and translations to other code systems.","","","","<valueCoding xmlns=""http://hl7.org/fhir"">
   <system value=""http://snomed.info/sct""/>
-  <version value=""http://snomed.info/sct/900000000000207008/version/20250701""/>
+  <version value=""http://snomed.info/sct/900000000000207008/version/20260701""/>
   <code value=""TODO""/>
 </valueCoding>","","","",,"preferred","","https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/ValueSet/mii-vs-lufu-sct-observable","",,,,"CodeableConcept.coding",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
@@ -18694,7 +18694,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "mii-pr-lungenfunktion-rv","Observation.component:percentPredicted.code.coding:sct","Observation.component.code.coding","sct","","",0,1,"Y","","Y","Coding {[]} {[]}
 ","SNOMED CT Code","Ein Verweis auf einen von SNOMED CT definierten Code","Codes may be defined very casually in enumerations, or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.  Ordering of codings is undefined and SHALL NOT be used to infer meaning. Generally, at most only one of the coding values will be labeled as UserSelected = true.","Allows for alternative encodings within a code system, and translations to other code systems.","","","","<valueCoding xmlns=""http://hl7.org/fhir"">
   <system value=""http://snomed.info/sct""/>
-  <version value=""http://snomed.info/sct/900000000000207008/version/20250701""/>
+  <version value=""http://snomed.info/sct/900000000000207008/version/20260701""/>
   <code value=""TODO""/>
 </valueCoding>","","","",,"preferred","","https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/ValueSet/mii-vs-lufu-sct-observable","",,,,"CodeableConcept.coding",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
@@ -18779,7 +18779,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "mii-pr-lungenfunktion-rv","Observation.component:z-score.code.coding:sct","Observation.component.code.coding","sct","","",0,1,"Y","","Y","Coding {[]} {[]}
 ","SNOMED CT Code","Ein Verweis auf einen von SNOMED CT definierten Code","Codes may be defined very casually in enumerations, or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.  Ordering of codings is undefined and SHALL NOT be used to infer meaning. Generally, at most only one of the coding values will be labeled as UserSelected = true.","Allows for alternative encodings within a code system, and translations to other code systems.","","","","<valueCoding xmlns=""http://hl7.org/fhir"">
   <system value=""http://snomed.info/sct""/>
-  <version value=""http://snomed.info/sct/900000000000207008/version/20250701""/>
+  <version value=""http://snomed.info/sct/900000000000207008/version/20260701""/>
   <code value=""1078210003""/>
   <display value=""Z-score calculation technique (qualifier value)""/>
 </valueCoding>","","","",,"preferred","","https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/ValueSet/mii-vs-lufu-sct-observable","",,,,"CodeableConcept.coding",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
@@ -18913,7 +18913,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "mii-pr-lungenfunktion-sg-total","Observation.code.coding:sct","Observation.code.coding","sct","","",0,1,"","","Y","Coding {[]} {[]}
 ","SNOMED CT Code","Ein Verweis auf einen von SNOMED CT definierten Code","Codes may be defined very casually in enumerations, or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.  Ordering of codings is undefined and SHALL NOT be used to infer meaning. Generally, at most only one of the coding values will be labeled as UserSelected = true.","Allows for alternative encodings within a code system, and translations to other code systems.","","","","<valueCoding xmlns=""http://hl7.org/fhir"">
   <system value=""http://snomed.info/sct""/>
-  <version value=""http://snomed.info/sct/900000000000207008/version/20250701""/>
+  <version value=""http://snomed.info/sct/900000000000207008/version/20260701""/>
   <code value=""79412009""/>
   <display value=""Specific airway conductance (observable entity)""/>
 </valueCoding>","","","",,"preferred","","https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/ValueSet/mii-vs-lufu-sct-observable","",,,,"CodeableConcept.coding",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
@@ -19153,7 +19153,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "mii-pr-lungenfunktion-sg-total","Observation.component:predicted.code.coding:sct","Observation.component.code.coding","sct","","",0,1,"Y","","Y","Coding {[]} {[]}
 ","SNOMED CT Code","Ein Verweis auf einen von SNOMED CT definierten Code","Codes may be defined very casually in enumerations, or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.  Ordering of codings is undefined and SHALL NOT be used to infer meaning. Generally, at most only one of the coding values will be labeled as UserSelected = true.","Allows for alternative encodings within a code system, and translations to other code systems.","","","","<valueCoding xmlns=""http://hl7.org/fhir"">
   <system value=""http://snomed.info/sct""/>
-  <version value=""http://snomed.info/sct/900000000000207008/version/20250701""/>
+  <version value=""http://snomed.info/sct/900000000000207008/version/20260701""/>
   <code value=""TODO""/>
 </valueCoding>","","","",,"preferred","","https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/ValueSet/mii-vs-lufu-sct-observable","",,,,"CodeableConcept.coding",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
@@ -19241,7 +19241,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "mii-pr-lungenfunktion-sg-total","Observation.component:percentPredicted.code.coding:sct","Observation.component.code.coding","sct","","",0,1,"Y","","Y","Coding {[]} {[]}
 ","SNOMED CT Code","Ein Verweis auf einen von SNOMED CT definierten Code","Codes may be defined very casually in enumerations, or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.  Ordering of codings is undefined and SHALL NOT be used to infer meaning. Generally, at most only one of the coding values will be labeled as UserSelected = true.","Allows for alternative encodings within a code system, and translations to other code systems.","","","","<valueCoding xmlns=""http://hl7.org/fhir"">
   <system value=""http://snomed.info/sct""/>
-  <version value=""http://snomed.info/sct/900000000000207008/version/20250701""/>
+  <version value=""http://snomed.info/sct/900000000000207008/version/20260701""/>
   <code value=""TODO""/>
 </valueCoding>","","","",,"preferred","","https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/ValueSet/mii-vs-lufu-sct-observable","",,,,"CodeableConcept.coding",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
@@ -19329,7 +19329,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "mii-pr-lungenfunktion-sg-total","Observation.component:z-score.code.coding:sct","Observation.component.code.coding","sct","","",0,1,"Y","","Y","Coding {[]} {[]}
 ","SNOMED CT Code","Ein Verweis auf einen von SNOMED CT definierten Code","Codes may be defined very casually in enumerations, or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.  Ordering of codings is undefined and SHALL NOT be used to infer meaning. Generally, at most only one of the coding values will be labeled as UserSelected = true.","Allows for alternative encodings within a code system, and translations to other code systems.","","","","<valueCoding xmlns=""http://hl7.org/fhir"">
   <system value=""http://snomed.info/sct""/>
-  <version value=""http://snomed.info/sct/900000000000207008/version/20250701""/>
+  <version value=""http://snomed.info/sct/900000000000207008/version/20260701""/>
   <code value=""1078210003""/>
   <display value=""Z-score calculation technique (qualifier value)""/>
 </valueCoding>","","","",,"preferred","","https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/ValueSet/mii-vs-lufu-sct-observable","",,,,"CodeableConcept.coding",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
@@ -19509,7 +19509,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "mii-pr-lungenfunktion-spirometrie-messung","Procedure.category.coding:sct","Procedure.category.coding","sct","","",0,1,"Y","","Y","Coding {[]} {[]}
 ","SNOMED CT Code","Ein Verweis auf einen von SNOMED CT definierten Code","Codes may be defined very casually in enumerations, or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.  Ordering of codings is undefined and SHALL NOT be used to infer meaning. Generally, at most only one of the coding values will be labeled as UserSelected = true.","Allows for alternative encodings within a code system, and translations to other code systems.","","","","<valueCoding xmlns=""http://hl7.org/fhir"">
   <system value=""http://snomed.info/sct""/>
-  <version value=""http://snomed.info/sct/900000000000207008/version/20250701""/>
+  <version value=""http://snomed.info/sct/900000000000207008/version/20260701""/>
   <code value=""23426006""/>
   <display value=""Measurement of respiratory function (procedure)""/>
 </valueCoding>","","","",,"preferred","","https://www.medizininformatik-initiative.de/fhir/core/modul-prozedur/ValueSet/procedures-category-sct","",,,,"CodeableConcept.coding",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
@@ -19637,7 +19637,7 @@ ops-regex:In code sind nur gültige OPS-Codes ohne Zusätze erlaubt {matches('^[
 "mii-pr-lungenfunktion-spirometrie-messung","Procedure.code.coding:sct","Procedure.code.coding","sct","","",0,1,"Y","","Y","Coding {[]} {[]}
 ","SNOMED CT Code","Ein Verweis auf einen von SNOMED CT definierten Code","Codes may be defined very casually in enumerations, or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.  Ordering of codings is undefined and SHALL NOT be used to infer meaning. Generally, at most only one of the coding values will be labeled as UserSelected = true.","Allows for alternative encodings within a code system, and translations to other code systems.","","","","<valueCoding xmlns=""http://hl7.org/fhir"">
   <system value=""http://snomed.info/sct""/>
-  <version value=""http://snomed.info/sct/900000000000207008/version/20250701""/>
+  <version value=""http://snomed.info/sct/900000000000207008/version/20260701""/>
   <code value=""127783003""/>
   <display value=""Spirometry (procedure)""/>
 </valueCoding>","","","",,"required","","https://www.medizininformatik-initiative.de/fhir/core/modul-prozedur/ValueSet/procedures-sct","",,,,"CodeableConcept.coding",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
@@ -19971,7 +19971,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "mii-pr-lungenfunktion-spirometrie","DiagnosticReport.category.coding:sct","DiagnosticReport.category.coding","sct","","",1,1,"Y","","Y","Coding {[]} {[]}
 ","SNOMED CT Code","Ein Verweis auf einen von SNOMED CT definierten Code","Codes may be defined very casually in enumerations, or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.  Ordering of codings is undefined and SHALL NOT be used to infer meaning. Generally, at most only one of the coding values will be labeled as UserSelected = true.","Allows for alternative encodings within a code system, and translations to other code systems.","","","","<valueCoding xmlns=""http://hl7.org/fhir"">
   <system value=""http://snomed.info/sct""/>
-  <version value=""http://snomed.info/sct/900000000000207008/version/20250701""/>
+  <version value=""http://snomed.info/sct/900000000000207008/version/20260701""/>
   <code value=""720449003""/>
   <display value=""Pulmonary function report (record artifact)""/>
 </valueCoding>","","","",,,,,"",,,,"CodeableConcept.coding",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
@@ -19997,7 +19997,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "mii-pr-lungenfunktion-spirometrie","DiagnosticReport.code.coding:sct","DiagnosticReport.code.coding","sct","","",0,1,"Y","","Y","Coding {[]} {[]}
 ","SNOMED CT Code","Ein Verweis auf einen von SNOMED CT definierten Code","Codes may be defined very casually in enumerations, or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.  Ordering of codings is undefined and SHALL NOT be used to infer meaning. Generally, at most only one of the coding values will be labeled as UserSelected = true.","Allows for alternative encodings within a code system, and translations to other code systems.","","","","<valueCoding xmlns=""http://hl7.org/fhir"">
   <system value=""http://snomed.info/sct""/>
-  <version value=""http://snomed.info/sct/900000000000207008/version/20250701""/>
+  <version value=""http://snomed.info/sct/900000000000207008/version/20260701""/>
   <code value=""127783003""/>
   <display value=""Spirometry (procedure)""/>
 </valueCoding>","","","",,"required","","https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/ValueSet/mii-vs-lufu-sct-procedure","",,,,"CodeableConcept.coding",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
@@ -20139,7 +20139,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "
 "mii-pr-lungenfunktion-spirometrie","DiagnosticReport.conclusionCode.coding:sct","DiagnosticReport.conclusionCode.coding","sct","","",0,*,"Y","","Y","Coding {[]} {[]}
 ","SNOMED CT Code","Ein Verweis auf einen von SNOMED CT definierten Code","Codes may be defined very casually in enumerations, or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.  Ordering of codings is undefined and SHALL NOT be used to infer meaning. Generally, at most only one of the coding values will be labeled as UserSelected = true.","Allows for alternative encodings within a code system, and translations to other code systems.","","","","<valueCoding xmlns=""http://hl7.org/fhir"">
-  <system value=""http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250701""/>
+  <system value=""http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20260701""/>
 </valueCoding>","","","",,"required","","https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/ValueSet/mii-vs-lufu-sct-findings","",,,,"CodeableConcept.coding",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "mii-pr-lungenfunktion-spirometrie","DiagnosticReport.conclusionCode.text","DiagnosticReport.conclusionCode.text","","","",0,1,"","","Y","string {[]} {[]}
@@ -20258,7 +20258,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "mii-pr-lungenfunktion-tlc","Observation.code.coding:sct","Observation.code.coding","sct","","",0,1,"","","Y","Coding {[]} {[]}
 ","SNOMED CT Code","Ein Verweis auf einen von SNOMED CT definierten Code","Codes may be defined very casually in enumerations, or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.  Ordering of codings is undefined and SHALL NOT be used to infer meaning. Generally, at most only one of the coding values will be labeled as UserSelected = true.","Allows for alternative encodings within a code system, and translations to other code systems.","","","","<valueCoding xmlns=""http://hl7.org/fhir"">
   <system value=""http://snomed.info/sct""/>
-  <version value=""http://snomed.info/sct/900000000000207008/version/20250701""/>
+  <version value=""http://snomed.info/sct/900000000000207008/version/20260701""/>
   <code value=""57566009""/>
   <display value=""Total lung capacity (observable entity)""/>
 </valueCoding>","","","",,"preferred","","https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/ValueSet/mii-vs-lufu-sct-observable","",,,,"CodeableConcept.coding",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
@@ -20495,7 +20495,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "mii-pr-lungenfunktion-tlc","Observation.component:predicted.code.coding:sct","Observation.component.code.coding","sct","","",0,1,"Y","","Y","Coding {[]} {[]}
 ","SNOMED CT Code","Ein Verweis auf einen von SNOMED CT definierten Code","Codes may be defined very casually in enumerations, or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.  Ordering of codings is undefined and SHALL NOT be used to infer meaning. Generally, at most only one of the coding values will be labeled as UserSelected = true.","Allows for alternative encodings within a code system, and translations to other code systems.","","","","<valueCoding xmlns=""http://hl7.org/fhir"">
   <system value=""http://snomed.info/sct""/>
-  <version value=""http://snomed.info/sct/900000000000207008/version/20250701""/>
+  <version value=""http://snomed.info/sct/900000000000207008/version/20260701""/>
   <code value=""TODO""/>
 </valueCoding>","","","",,"preferred","","https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/ValueSet/mii-vs-lufu-sct-observable","",,,,"CodeableConcept.coding",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
@@ -20580,7 +20580,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "mii-pr-lungenfunktion-tlc","Observation.component:percentPredicted.code.coding:sct","Observation.component.code.coding","sct","","",0,1,"Y","","Y","Coding {[]} {[]}
 ","SNOMED CT Code","Ein Verweis auf einen von SNOMED CT definierten Code","Codes may be defined very casually in enumerations, or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.  Ordering of codings is undefined and SHALL NOT be used to infer meaning. Generally, at most only one of the coding values will be labeled as UserSelected = true.","Allows for alternative encodings within a code system, and translations to other code systems.","","","","<valueCoding xmlns=""http://hl7.org/fhir"">
   <system value=""http://snomed.info/sct""/>
-  <version value=""http://snomed.info/sct/900000000000207008/version/20250701""/>
+  <version value=""http://snomed.info/sct/900000000000207008/version/20260701""/>
   <code value=""TODO""/>
 </valueCoding>","","","",,"preferred","","https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/ValueSet/mii-vs-lufu-sct-observable","",,,,"CodeableConcept.coding",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
@@ -20665,7 +20665,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "mii-pr-lungenfunktion-tlc","Observation.component:z-score.code.coding:sct","Observation.component.code.coding","sct","","",0,1,"Y","","Y","Coding {[]} {[]}
 ","SNOMED CT Code","Ein Verweis auf einen von SNOMED CT definierten Code","Codes may be defined very casually in enumerations, or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.  Ordering of codings is undefined and SHALL NOT be used to infer meaning. Generally, at most only one of the coding values will be labeled as UserSelected = true.","Allows for alternative encodings within a code system, and translations to other code systems.","","","","<valueCoding xmlns=""http://hl7.org/fhir"">
   <system value=""http://snomed.info/sct""/>
-  <version value=""http://snomed.info/sct/900000000000207008/version/20250701""/>
+  <version value=""http://snomed.info/sct/900000000000207008/version/20260701""/>
   <code value=""1078210003""/>
   <display value=""Z-score calculation technique (qualifier value)""/>
 </valueCoding>","","","",,"preferred","","https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/ValueSet/mii-vs-lufu-sct-observable","",,,,"CodeableConcept.coding",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
@@ -21215,7 +21215,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "mii-pr-lungenfunktion-transferkoeffizient","Observation.component:z-score.code.coding:sct","Observation.component.code.coding","sct","","",0,1,"Y","","Y","Coding {[]} {[]}
 ","SNOMED CT Code","Ein Verweis auf einen von SNOMED CT definierten Code","Codes may be defined very casually in enumerations, or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.  Ordering of codings is undefined and SHALL NOT be used to infer meaning. Generally, at most only one of the coding values will be labeled as UserSelected = true.","Allows for alternative encodings within a code system, and translations to other code systems.","","","","<valueCoding xmlns=""http://hl7.org/fhir"">
   <system value=""http://snomed.info/sct""/>
-  <version value=""http://snomed.info/sct/900000000000207008/version/20250701""/>
+  <version value=""http://snomed.info/sct/900000000000207008/version/20260701""/>
   <code value=""1078210003""/>
   <display value=""Z-score calculation technique (qualifier value)""/>
 </valueCoding>","","","",,"preferred","","https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/ValueSet/mii-vs-lufu-sct-observable","",,,,"CodeableConcept.coding",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
@@ -21507,7 +21507,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "mii-pr-lungenfunktion-va","Observation.code.coding:sct","Observation.code.coding","sct","","",0,1,"","","Y","Coding {[]} {[]}
 ","SNOMED CT Code","Ein Verweis auf einen von SNOMED CT definierten Code","Codes may be defined very casually in enumerations, or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.  Ordering of codings is undefined and SHALL NOT be used to infer meaning. Generally, at most only one of the coding values will be labeled as UserSelected = true.","Allows for alternative encodings within a code system, and translations to other code systems.","","","","<valueCoding xmlns=""http://hl7.org/fhir"">
   <system value=""http://snomed.info/sct""/>
-  <version value=""http://snomed.info/sct/900000000000207008/version/20250701""/>
+  <version value=""http://snomed.info/sct/900000000000207008/version/20260701""/>
   <code value=""251953007""/>
   <display value=""Alveolar volume (observable entity)""/>
 </valueCoding>","","","",,"preferred","","https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/ValueSet/mii-vs-lufu-sct-observable","",,,,"CodeableConcept.coding",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
@@ -21747,7 +21747,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "mii-pr-lungenfunktion-va","Observation.component:predicted.code.coding:sct","Observation.component.code.coding","sct","","",0,1,"Y","","Y","Coding {[]} {[]}
 ","SNOMED CT Code","Ein Verweis auf einen von SNOMED CT definierten Code","Codes may be defined very casually in enumerations, or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.  Ordering of codings is undefined and SHALL NOT be used to infer meaning. Generally, at most only one of the coding values will be labeled as UserSelected = true.","Allows for alternative encodings within a code system, and translations to other code systems.","","","","<valueCoding xmlns=""http://hl7.org/fhir"">
   <system value=""http://snomed.info/sct""/>
-  <version value=""http://snomed.info/sct/900000000000207008/version/20250701""/>
+  <version value=""http://snomed.info/sct/900000000000207008/version/20260701""/>
   <code value=""TODO""/>
 </valueCoding>","","","",,"preferred","","https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/ValueSet/mii-vs-lufu-sct-observable","",,,,"CodeableConcept.coding",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
@@ -21835,7 +21835,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "mii-pr-lungenfunktion-va","Observation.component:percentPredicted.code.coding:sct","Observation.component.code.coding","sct","","",0,1,"Y","","Y","Coding {[]} {[]}
 ","SNOMED CT Code","Ein Verweis auf einen von SNOMED CT definierten Code","Codes may be defined very casually in enumerations, or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.  Ordering of codings is undefined and SHALL NOT be used to infer meaning. Generally, at most only one of the coding values will be labeled as UserSelected = true.","Allows for alternative encodings within a code system, and translations to other code systems.","","","","<valueCoding xmlns=""http://hl7.org/fhir"">
   <system value=""http://snomed.info/sct""/>
-  <version value=""http://snomed.info/sct/900000000000207008/version/20250701""/>
+  <version value=""http://snomed.info/sct/900000000000207008/version/20260701""/>
   <code value=""TODO""/>
 </valueCoding>","","","",,"preferred","","https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/ValueSet/mii-vs-lufu-sct-observable","",,,,"CodeableConcept.coding",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
@@ -21923,7 +21923,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "mii-pr-lungenfunktion-va","Observation.component:z-score.code.coding:sct","Observation.component.code.coding","sct","","",0,1,"Y","","Y","Coding {[]} {[]}
 ","SNOMED CT Code","Ein Verweis auf einen von SNOMED CT definierten Code","Codes may be defined very casually in enumerations, or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.  Ordering of codings is undefined and SHALL NOT be used to infer meaning. Generally, at most only one of the coding values will be labeled as UserSelected = true.","Allows for alternative encodings within a code system, and translations to other code systems.","","","","<valueCoding xmlns=""http://hl7.org/fhir"">
   <system value=""http://snomed.info/sct""/>
-  <version value=""http://snomed.info/sct/900000000000207008/version/20250701""/>
+  <version value=""http://snomed.info/sct/900000000000207008/version/20260701""/>
   <code value=""1078210003""/>
   <display value=""Z-score calculation technique (qualifier value)""/>
 </valueCoding>","","","",,"preferred","","https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/ValueSet/mii-vs-lufu-sct-observable","",,,,"CodeableConcept.coding",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
@@ -22289,7 +22289,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "mii-pr-lungenfunktion-vc","Observation.component:predicted.code.coding:sct","Observation.component.code.coding","sct","","",0,1,"Y","","Y","Coding {[]} {[]}
 ","SNOMED CT Code","Ein Verweis auf einen von SNOMED CT definierten Code","Codes may be defined very casually in enumerations, or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.  Ordering of codings is undefined and SHALL NOT be used to infer meaning. Generally, at most only one of the coding values will be labeled as UserSelected = true.","Allows for alternative encodings within a code system, and translations to other code systems.","","","","<valueCoding xmlns=""http://hl7.org/fhir"">
   <system value=""http://snomed.info/sct""/>
-  <version value=""http://snomed.info/sct/900000000000207008/version/20250701""/>
+  <version value=""http://snomed.info/sct/900000000000207008/version/20260701""/>
   <code value=""TODO""/>
 </valueCoding>","","","",,"preferred","","https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/ValueSet/mii-vs-lufu-sct-observable","",,,,"CodeableConcept.coding",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
@@ -22455,7 +22455,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "mii-pr-lungenfunktion-vc","Observation.component:z-score.code.coding:sct","Observation.component.code.coding","sct","","",0,1,"Y","","Y","Coding {[]} {[]}
 ","SNOMED CT Code","Ein Verweis auf einen von SNOMED CT definierten Code","Codes may be defined very casually in enumerations, or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.  Ordering of codings is undefined and SHALL NOT be used to infer meaning. Generally, at most only one of the coding values will be labeled as UserSelected = true.","Allows for alternative encodings within a code system, and translations to other code systems.","","","","<valueCoding xmlns=""http://hl7.org/fhir"">
   <system value=""http://snomed.info/sct""/>
-  <version value=""http://snomed.info/sct/900000000000207008/version/20250701""/>
+  <version value=""http://snomed.info/sct/900000000000207008/version/20260701""/>
   <code value=""1078210003""/>
   <display value=""Z-score calculation technique (qualifier value)""/>
 </valueCoding>","","","",,"preferred","","https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/ValueSet/mii-vs-lufu-sct-observable","",,,,"CodeableConcept.coding",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
@@ -23005,7 +23005,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "mii-pr-lungenfunktion-viskositaet","Observation.component:z-score.code.coding:sct","Observation.component.code.coding","sct","","",0,1,"Y","","Y","Coding {[]} {[]}
 ","SNOMED CT Code","Ein Verweis auf einen von SNOMED CT definierten Code","Codes may be defined very casually in enumerations, or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.  Ordering of codings is undefined and SHALL NOT be used to infer meaning. Generally, at most only one of the coding values will be labeled as UserSelected = true.","Allows for alternative encodings within a code system, and translations to other code systems.","","","","<valueCoding xmlns=""http://hl7.org/fhir"">
   <system value=""http://snomed.info/sct""/>
-  <version value=""http://snomed.info/sct/900000000000207008/version/20250701""/>
+  <version value=""http://snomed.info/sct/900000000000207008/version/20260701""/>
   <code value=""1078210003""/>
   <display value=""Z-score calculation technique (qualifier value)""/>
 </valueCoding>","","","",,"preferred","","https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/ValueSet/mii-vs-lufu-sct-observable","",,,,"CodeableConcept.coding",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
@@ -23555,7 +23555,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "mii-pr-lungenfunktion-volumen","Observation.component:z-score.code.coding:sct","Observation.component.code.coding","sct","","",0,1,"Y","","Y","Coding {[]} {[]}
 ","SNOMED CT Code","Ein Verweis auf einen von SNOMED CT definierten Code","Codes may be defined very casually in enumerations, or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.  Ordering of codings is undefined and SHALL NOT be used to infer meaning. Generally, at most only one of the coding values will be labeled as UserSelected = true.","Allows for alternative encodings within a code system, and translations to other code systems.","","","","<valueCoding xmlns=""http://hl7.org/fhir"">
   <system value=""http://snomed.info/sct""/>
-  <version value=""http://snomed.info/sct/900000000000207008/version/20250701""/>
+  <version value=""http://snomed.info/sct/900000000000207008/version/20260701""/>
   <code value=""1078210003""/>
   <display value=""Z-score calculation technique (qualifier value)""/>
 </valueCoding>","","","",,"preferred","","https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/ValueSet/mii-vs-lufu-sct-observable","",,,,"CodeableConcept.coding",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
@@ -24105,7 +24105,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "mii-pr-lungenfunktion-widerstand","Observation.component:z-score.code.coding:sct","Observation.component.code.coding","sct","","",0,1,"Y","","Y","Coding {[]} {[]}
 ","SNOMED CT Code","Ein Verweis auf einen von SNOMED CT definierten Code","Codes may be defined very casually in enumerations, or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.  Ordering of codings is undefined and SHALL NOT be used to infer meaning. Generally, at most only one of the coding values will be labeled as UserSelected = true.","Allows for alternative encodings within a code system, and translations to other code systems.","","","","<valueCoding xmlns=""http://hl7.org/fhir"">
   <system value=""http://snomed.info/sct""/>
-  <version value=""http://snomed.info/sct/900000000000207008/version/20250701""/>
+  <version value=""http://snomed.info/sct/900000000000207008/version/20260701""/>
   <code value=""1078210003""/>
   <display value=""Z-score calculation technique (qualifier value)""/>
 </valueCoding>","","","",,"preferred","","https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/ValueSet/mii-vs-lufu-sct-observable","",,,,"CodeableConcept.coding",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}

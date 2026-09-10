@@ -67,7 +67,7 @@ Import the ValueSet for lungfunction maximum expiratory flow
   "compose" : {
     "include" : [{
       "system" : "http://snomed.info/sct",
-      "version" : "http://snomed.info/sct/900000000000207008/version/20250701",
+      "version" : "http://snomed.info/sct/900000000000207008/version/20260701",
       "concept" : [{
         "code" : "251918000",
         "display" : "Maximum expiratory flow rate (observable entity)"

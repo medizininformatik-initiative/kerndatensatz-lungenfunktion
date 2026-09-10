@@ -253,7 +253,7 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-lungenfunk
       "sliceName" : "sct",
       "patternCoding" : {
         "system" : "http://snomed.info/sct",
-        "version" : "http://snomed.info/sct/900000000000207008/version/20250701",
+        "version" : "http://snomed.info/sct/900000000000207008/version/20260701",
         "code" : "23426006",
         "display" : "Measurement of respiratory function (procedure)"
       }
@@ -264,7 +264,7 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-lungenfunk
       "sliceName" : "sct",
       "patternCoding" : {
         "system" : "http://snomed.info/sct",
-        "version" : "http://snomed.info/sct/900000000000207008/version/20250701",
+        "version" : "http://snomed.info/sct/900000000000207008/version/20260701",
         "code" : "127783003",
         "display" : "Spirometry (procedure)"
       }

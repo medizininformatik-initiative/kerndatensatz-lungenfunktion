@@ -67,7 +67,7 @@ Import the ValueSet for lungfunction forced expiratory volume
   "compose" : {
     "include" : [{
       "system" : "http://snomed.info/sct",
-      "version" : "http://snomed.info/sct/900000000000207008/version/20250701",
+      "version" : "http://snomed.info/sct/900000000000207008/version/20260701",
       "concept" : [{
         "code" : "165041004",
         "display" : "Forced expired volume (observable entity)"
