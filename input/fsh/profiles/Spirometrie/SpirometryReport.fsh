@@ -14,6 +14,18 @@ Description: "Diese Ressource beschreibt einen Befunde der Spirometrie"
 * insert PR_CS_VS_Date
 * insert Publisher
 * insert LicenseCodeableCCBY40
+/*
+* insert CRMIShareableStructureDefinition
+* insert CRMIPublishableStructureDefinition
+* insert CRMIKnowledgeCapabilitiesStructureDefinition
+* insert CRMIVersionPolicyStrict
+* insert CRMIPackageSourceDefinitionalResource
+* insert CRMIArtifactUsageProfile
+* insert CRMIApprovalDate(2024-03-07)
+* insert CRMIResourceEffectivePeriod
+* insert CRMIArtifactTopicInstance(http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl, C38081)
+* insert CRMIArtifactContributorsInstance
+*/
 //Profile
 * code.coding[loinc] = $loinc#18759-1 "Spirometry study"
 * code.coding[sct] = $sct#127783003 "Spirometry (procedure)"
