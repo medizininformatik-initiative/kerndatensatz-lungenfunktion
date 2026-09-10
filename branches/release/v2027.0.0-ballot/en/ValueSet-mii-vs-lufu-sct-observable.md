@@ -34,8 +34,6 @@ Import the ValueSet for lungfunction
 
 ### Expansion
 
-No Expansion for this valueset (Unsupported Code System Version)
-
 -------
 
  [Description of the above table(s)](http://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#terminology). 

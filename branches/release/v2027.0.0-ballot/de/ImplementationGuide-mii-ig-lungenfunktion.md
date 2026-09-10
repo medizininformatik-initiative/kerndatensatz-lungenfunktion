@@ -43,11 +43,6 @@ Dieser IG deklariert die folgenden globalen Profile — Profile, die für jede u
 
 This publication includes IP covered under the following statements.
 
-* © 2002-2016 International Health Terminology Standards Development Organisation (IHTSDO). All rights reserved. SNOMED CT®, was originally created by The College of American Pathologists. "SNOMED" and "SNOMED CT" are registered trademarks of the IHTSDO [https://www.snomed.org/get-snomed](https://www.snomed.org/get-snomed)
-
-* [SNOMED CT core](https://tx.ontoserver.csiro.au/fhir/ValueSet/900000000000207008-20250701): [MII_PR_Lungenfunktion_Befund](StructureDefinition-mii-pr-lungenfunktion-befund.md), [MII_PR_Lungenfunktion_Bodyplethysmographie](StructureDefinition-mii-pr-lungenfunktion-bodyplethysmographie.md), [MII_PR_Lungenfunktion_Diffusion](StructureDefinition-mii-pr-lungenfunktion-diffusion.md), [MII_PR_Lungenfunktion_Provokationstest](StructureDefinition-mii-pr-lungenfunktion-provokationstest.md) and [MII_PR_Lungenfunktion_Spirometrie](StructureDefinition-mii-pr-lungenfunktion-spirometrie.md)
-
-
 * BfArM - Bundesinstitut für Arzneimittel und Medizinprodukte
 
 * [ATC](https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.medikation@2026.0.1&canonical=http://fhir.de/CodeSystem/bfarm/atc): [MII_PR_Lungenfunktion_Dosis_Gabe](StructureDefinition-mii-pr-lungenfunktion-dosis-gabe.md) and [MII_PR_Lungenfunktion_Methacholine](StructureDefinition-mii-pr-lungenfunktion-methacholine.md)

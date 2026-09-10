@@ -25,7 +25,7 @@ Import the ValueSet for lungfunction
 
 ### Expansion
 
-No Expansion for this valueset (Unsupported Code System Version)
+No Expansion for this valueset (Unknown Code System)
 
 -------
 
