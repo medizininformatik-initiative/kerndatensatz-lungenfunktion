@@ -10,7 +10,7 @@
       "de.medizininformatikinitiative.kerndatensatz.meta": "2027.0.0-ballot",
       "de.medizininformatikinitiative.kerndatensatz.base": "2027.0.0-ballot",
       "de.medizininformatikinitiative.kerndatensatz.medikation": "2027.0.0-ballot",
-      "de.basiprofil.r4": "1.5.4",
+      "de.basiprofil.r4": "1.6.0",
       "hl7.fhir.r4.core": "4.0.1"
     },
     "jurisdiction": "urn:iso:std:iso:3166#DE"

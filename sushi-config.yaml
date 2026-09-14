@@ -121,7 +121,7 @@ dependencies:
   # 2026.0.x -> hoechste:
   de.medizininformatikinitiative.kerndatensatz.medikation: 2027.0.0-ballot
   # 1.5.x -> hoechste (1.6.0 liegt ausserhalb):
-  de.basisprofil.r4: 1.5.4
+  de.basisprofil.r4: 1.6.0
   # Template-Maschinerie (CRMI-Profile in meta.profile) + Injektionsschutz:
   hl7.fhir.uv.crmi: 2.0.0
   # direkter Pin gegen silent-latest-Injektion (Template-Rationale):
