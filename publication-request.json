@@ -5,7 +5,7 @@
    "mode" : "milestone",
    "status" : "release",
    "sequence" : "2026",
-   "desc" : "TODO:REVIEW MII KDS Modul Lungenfunktion 2027.0.0-ballot",
+   "desc" : "MII KDS Modul Lungenfunktion 2027.0.0-ballot",
    "first" : true,
    "title" : "MII Implementation Guide Lungenfunktion (Pulmonary Function)",
    "ci-build" : "https://medizininformatik-initiative.github.io/kerndatensatz-lungenfunktion/branches/dev/",
