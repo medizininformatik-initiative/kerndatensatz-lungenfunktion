@@ -38,7 +38,7 @@ You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir
 
 #### Constraints
 
-Diese Struktur ist abgeleitet von [MII_PR_Prozedur_Procedure](https://medizininformatik-initiative.github.io/kerndatensatz-basis/2027.0.0-ballot.rc1/StructureDefinition-mii-pr-prozedur-procedure.html) 
+Diese Struktur ist abgeleitet von [MII_PR_Prozedur_Procedure](https://medizininformatik-initiative.github.io/kerndatensatz-basis/2027.0.0-ballot/StructureDefinition-mii-pr-prozedur-procedure.html) 
 
 #### Terminology Bindings (Differential)
 
@@ -46,7 +46,7 @@ Diese Struktur ist abgeleitet von [MII_PR_Prozedur_Procedure](https://medizininf
 
 #### Constraints
 
-Diese Struktur ist abgeleitet von [MII_PR_Prozedur_Procedure](https://medizininformatik-initiative.github.io/kerndatensatz-basis/2027.0.0-ballot.rc1/StructureDefinition-mii-pr-prozedur-procedure.html) 
+Diese Struktur ist abgeleitet von [MII_PR_Prozedur_Procedure](https://medizininformatik-initiative.github.io/kerndatensatz-basis/2027.0.0-ballot/StructureDefinition-mii-pr-prozedur-procedure.html) 
 
 ** Summary **
 
@@ -66,7 +66,7 @@ This structure refers to these other structures:
 
  **Differential-Ansicht** 
 
-Diese Struktur ist abgeleitet von [MII_PR_Prozedur_Procedure](https://medizininformatik-initiative.github.io/kerndatensatz-basis/2027.0.0-ballot.rc1/StructureDefinition-mii-pr-prozedur-procedure.html) 
+Diese Struktur ist abgeleitet von [MII_PR_Prozedur_Procedure](https://medizininformatik-initiative.github.io/kerndatensatz-basis/2027.0.0-ballot/StructureDefinition-mii-pr-prozedur-procedure.html) 
 
 #### Terminology Bindings (Differential)
 
@@ -76,7 +76,7 @@ Diese Struktur ist abgeleitet von [MII_PR_Prozedur_Procedure](https://medizininf
 
 #### Constraints
 
-Diese Struktur ist abgeleitet von [MII_PR_Prozedur_Procedure](https://medizininformatik-initiative.github.io/kerndatensatz-basis/2027.0.0-ballot.rc1/StructureDefinition-mii-pr-prozedur-procedure.html) 
+Diese Struktur ist abgeleitet von [MII_PR_Prozedur_Procedure](https://medizininformatik-initiative.github.io/kerndatensatz-basis/2027.0.0-ballot/StructureDefinition-mii-pr-prozedur-procedure.html) 
 
 ** Summary **
 

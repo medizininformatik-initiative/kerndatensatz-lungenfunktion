@@ -79,7 +79,7 @@
   },
   {
     "name" : "default-canonical-version",
-    "valueCanonical" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-diagnostic-report-conclusion|2027.0.0-ballot.rc3"
+    "valueCanonical" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-diagnostic-report-conclusion|2027.0.0-ballot"
   },
   {
     "name" : "default-canonical-version",
@@ -99,11 +99,11 @@
   },
   {
     "name" : "default-canonical-version",
-    "valueCanonical" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-procedure-outcome|2027.0.0-ballot.rc3"
+    "valueCanonical" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-procedure-outcome|2027.0.0-ballot"
   },
   {
     "name" : "default-canonical-version",
-    "valueCanonical" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-read-proc-report|2027.0.0-ballot.rc3"
+    "valueCanonical" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-read-proc-report|2027.0.0-ballot"
   },
   {
     "name" : "default-canonical-version",
@@ -119,7 +119,7 @@
   },
   {
     "name" : "default-canonical-version",
-    "valueCanonical" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-observation-issued|2027.0.0-ballot.rc3"
+    "valueCanonical" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-observation-issued|2027.0.0-ballot"
   },
   {
     "name" : "default-canonical-version",
@@ -127,7 +127,7 @@
   },
   {
     "name" : "default-canonical-version",
-    "valueCanonical" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-observation-interpretation|2027.0.0-ballot.rc3"
+    "valueCanonical" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-observation-interpretation|2027.0.0-ballot"
   },
   {
     "name" : "default-canonical-version",
@@ -135,15 +135,15 @@
   },
   {
     "name" : "default-canonical-version",
-    "valueCanonical" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-observation-referencerange-low|2027.0.0-ballot.rc3"
+    "valueCanonical" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-observation-referencerange-low|2027.0.0-ballot"
   },
   {
     "name" : "default-canonical-version",
-    "valueCanonical" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-observation-referencerange-high|2027.0.0-ballot.rc3"
+    "valueCanonical" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-observation-referencerange-high|2027.0.0-ballot"
   },
   {
     "name" : "default-canonical-version",
-    "valueCanonical" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-observation-referencerange|2027.0.0-ballot.rc3"
+    "valueCanonical" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-observation-referencerange|2027.0.0-ballot"
   },
   {
     "name" : "default-canonical-version",
@@ -183,11 +183,11 @@
   },
   {
     "name" : "default-canonical-version",
-    "valueCanonical" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-medication-partof|2027.0.0-ballot.rc3"
+    "valueCanonical" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-medication-partof|2027.0.0-ballot"
   },
   {
     "name" : "default-canonical-version",
-    "valueCanonical" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-medication-dosage-dosequantity|2027.0.0-ballot.rc3"
+    "valueCanonical" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-medication-dosage-dosequantity|2027.0.0-ballot"
   },
   {
     "name" : "default-canonical-version",
@@ -195,15 +195,15 @@
   },
   {
     "name" : "default-canonical-version",
-    "valueCanonical" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-medication-ingredient-strength|2027.0.0-ballot.rc3"
+    "valueCanonical" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-medication-ingredient-strength|2027.0.0-ballot"
   },
   {
     "name" : "default-canonical-version",
-    "valueCanonical" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-medication-ingredient-strength-numerator|2027.0.0-ballot.rc3"
+    "valueCanonical" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-medication-ingredient-strength-numerator|2027.0.0-ballot"
   },
   {
     "name" : "default-canonical-version",
-    "valueCanonical" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-medication-ingredient-strength-denominator|2027.0.0-ballot.rc3"
+    "valueCanonical" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-medication-ingredient-strength-denominator|2027.0.0-ballot"
   },
   {
     "name" : "default-canonical-version",
@@ -599,7 +599,7 @@
   },
   {
     "name" : "default-canonical-version",
-    "valueCanonical" : "https://www.medizininformatik-initiative.de/fhir/core/modul-prozedur/StructureDefinition/Procedure|2027.0.0-ballot.rc1"
+    "valueCanonical" : "https://www.medizininformatik-initiative.de/fhir/core/modul-prozedur/StructureDefinition/Procedure|2027.0.0-ballot"
   },
   {
     "name" : "default-canonical-version",
@@ -607,15 +607,15 @@
   },
   {
     "name" : "default-canonical-version",
-    "valueCanonical" : "https://www.medizininformatik-initiative.de/fhir/core/modul-prozedur/StructureDefinition/Durchfuehrungsabsicht|2027.0.0-ballot.rc1"
+    "valueCanonical" : "https://www.medizininformatik-initiative.de/fhir/core/modul-prozedur/StructureDefinition/Durchfuehrungsabsicht|2027.0.0-ballot"
   },
   {
     "name" : "default-valueset-version",
-    "valueCanonical" : "https://www.medizininformatik-initiative.de/fhir/core/modul-prozedur/ValueSet/procedures-intend|2027.0.0-ballot.rc1"
+    "valueCanonical" : "https://www.medizininformatik-initiative.de/fhir/core/modul-prozedur/ValueSet/procedures-intend|2027.0.0-ballot"
   },
   {
     "name" : "default-valueset-version",
-    "valueCanonical" : "https://www.medizininformatik-initiative.de/fhir/core/modul-prozedur/ValueSet/procedures-category-sct|2027.0.0-ballot.rc1"
+    "valueCanonical" : "https://www.medizininformatik-initiative.de/fhir/core/modul-prozedur/ValueSet/procedures-category-sct|2027.0.0-ballot"
   },
   {
     "name" : "default-canonical-version",
@@ -623,7 +623,7 @@
   },
   {
     "name" : "default-valueset-version",
-    "valueCanonical" : "https://www.medizininformatik-initiative.de/fhir/core/modul-prozedur/ValueSet/mii-vs-prozedur-ops|2027.0.0-ballot.rc1"
+    "valueCanonical" : "https://www.medizininformatik-initiative.de/fhir/core/modul-prozedur/ValueSet/mii-vs-prozedur-ops|2027.0.0-ballot"
   },
   {
     "name" : "default-canonical-version",
@@ -631,7 +631,7 @@
   },
   {
     "name" : "default-valueset-version",
-    "valueCanonical" : "https://www.medizininformatik-initiative.de/fhir/core/modul-prozedur/ValueSet/procedures-sct|2027.0.0-ballot.rc1"
+    "valueCanonical" : "https://www.medizininformatik-initiative.de/fhir/core/modul-prozedur/ValueSet/procedures-sct|2027.0.0-ballot"
   },
   {
     "name" : "default-canonical-version",
@@ -663,83 +663,23 @@
   },
   {
     "name" : "default-canonical-version",
-    "valueCanonical" : "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/MedicationAdministration|2026.0.1"
+    "valueCanonical" : "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/MedicationAdministration|2027.0.0-ballot"
   },
   {
     "name" : "default-canonical-version",
-    "valueCanonical" : "http://hl7.org/fhir/StructureDefinition/StructureDefinition|4.0.1"
+    "valueCanonical" : "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/Medication|2027.0.0-ballot"
   },
   {
     "name" : "default-valueset-version",
-    "valueCanonical" : "http://hl7.org/fhir/ValueSet/security-labels|4.0.1"
+    "valueCanonical" : "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/ValueSet/mii-vs-medikation-atc|2027.0.0-ballot"
   },
   {
     "name" : "default-valueset-version",
-    "valueCanonical" : "http://hl7.org/fhir/ValueSet/common-tags|4.0.1"
+    "valueCanonical" : "http://hl7.org/fhir/uv/ips/ValueSet/body-site-uv-ips|2.0.1"
   },
   {
     "name" : "default-valueset-version",
-    "valueCanonical" : "http://hl7.org/fhir/ValueSet/reason-medication-not-given-codes|4.0.1"
-  },
-  {
-    "name" : "default-valueset-version",
-    "valueCanonical" : "http://hl7.org/fhir/ValueSet/medication-admin-category|4.0.1"
-  },
-  {
-    "name" : "default-canonical-version",
-    "valueCanonical" : "http://hl7.org/fhir/StructureDefinition/Medication|4.0.1"
-  },
-  {
-    "name" : "default-valueset-version",
-    "valueCanonical" : "http://hl7.org/fhir/ValueSet/medication-codes|4.0.1"
-  },
-  {
-    "name" : "default-canonical-version",
-    "valueCanonical" : "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/Medication|2026.0.1"
-  },
-  {
-    "name" : "default-valueset-version",
-    "valueCanonical" : "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/ValueSet/mii-vs-medikation-atc|2026.0.1"
-  },
-  {
-    "name" : "default-canonical-version",
-    "valueCanonical" : "http://hl7.org/fhir/StructureDefinition/Group|4.0.1"
-  },
-  {
-    "name" : "default-canonical-version",
-    "valueCanonical" : "http://hl7.org/fhir/StructureDefinition/EpisodeOfCare|4.0.1"
-  },
-  {
-    "name" : "default-valueset-version",
-    "valueCanonical" : "http://hl7.org/fhir/ValueSet/med-admin-perform-function|4.0.1"
-  },
-  {
-    "name" : "default-valueset-version",
-    "valueCanonical" : "http://hl7.org/fhir/ValueSet/reason-medication-given-codes|4.0.1"
-  },
-  {
-    "name" : "default-canonical-version",
-    "valueCanonical" : "http://hl7.org/fhir/StructureDefinition/Condition|4.0.1"
-  },
-  {
-    "name" : "default-valueset-version",
-    "valueCanonical" : "http://hl7.org/fhir/ValueSet/approach-site-codes|4.0.1"
-  },
-  {
-    "name" : "default-valueset-version",
-    "valueCanonical" : "http://hl7.org/fhir/ValueSet/route-codes|4.0.1"
-  },
-  {
-    "name" : "default-valueset-version",
-    "valueCanonical" : "http://hl7.org/fhir/uv/ips/ValueSet/medicine-route-of-administration|2.0.0"
-  },
-  {
-    "name" : "default-valueset-version",
-    "valueCanonical" : "http://hl7.org/fhir/ValueSet/administration-method-codes|4.0.1"
-  },
-  {
-    "name" : "default-canonical-version",
-    "valueCanonical" : "http://hl7.org/fhir/StructureDefinition/Provenance|4.0.1"
+    "valueCanonical" : "http://hl7.org/fhir/uv/ips/ValueSet/medicine-route-of-administration|2.0.1"
   },
   {
     "name" : "default-canonical-version",
@@ -811,19 +751,15 @@
   },
   {
     "name" : "default-valueset-version",
-    "valueCanonical" : "http://hl7.org/fhir/uv/ips/ValueSet/medicine-doseform|2.0.0"
+    "valueCanonical" : "http://hl7.org/fhir/uv/ips/ValueSet/medicine-doseform|2.0.1"
   },
   {
     "name" : "default-canonical-version",
-    "valueCanonical" : "http://hl7.org/fhir/StructureDefinition/Ratio|4.0.1"
+    "valueCanonical" : "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/wirkstofftyp|2027.0.0-ballot"
   },
   {
     "name" : "default-canonical-version",
-    "valueCanonical" : "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/wirkstofftyp|2026.0.1"
-  },
-  {
-    "name" : "default-canonical-version",
-    "valueCanonical" : "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/wirkstoffrelation|2026.0.1"
+    "valueCanonical" : "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/wirkstoffrelation|2027.0.0-ballot"
   },
   {
     "name" : "default-canonical-version",
@@ -831,11 +767,11 @@
   },
   {
     "name" : "default-valueset-version",
-    "valueCanonical" : "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/ValueSet/mii-vs-medikation-ask|2026.0.1"
+    "valueCanonical" : "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/ValueSet/mii-vs-medikation-ask|2027.0.0-ballot"
   },
   {
     "name" : "default-valueset-version",
-    "valueCanonical" : "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/ValueSet/mii-vs-medikation-unii|2026.0.1"
+    "valueCanonical" : "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/ValueSet/mii-vs-medikation-unii|2027.0.0-ballot"
   },
   {
     "name" : "default-valueset-version",

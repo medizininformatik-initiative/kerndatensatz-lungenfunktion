@@ -18,7 +18,7 @@ The Pulmonary Function module covers measurements and the classification of pulm
 
 | | |
 | :--- | :--- |
-| Date | 2026-09-01 |
+| Date | 2026-09-15 |
 | Version | 2027.0.0-ballot (CalVer`YYYY.n.n`) |
 | Status | Ballot |
 | Realm | DE |

@@ -38,7 +38,7 @@ You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir
 
 #### Constraints
 
-Diese Struktur ist abgeleitet von [VitalSignDE_Atemfrequenz](https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.base@2027.0.0-ballot.rc1&canonical=http://fhir.de/StructureDefinition/observation-de-vitalsign-atemfrequenz) 
+Diese Struktur ist abgeleitet von [VitalSignDE_Atemfrequenz](https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.base@2027.0.0-ballot&canonical=http://fhir.de/StructureDefinition/observation-de-vitalsign-atemfrequenz) 
 
 #### Terminology Bindings (Differential)
 
@@ -46,7 +46,7 @@ Diese Struktur ist abgeleitet von [VitalSignDE_Atemfrequenz](https://simplifier.
 
 #### Constraints
 
-Diese Struktur ist abgeleitet von [VitalSignDE_Atemfrequenz](https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.base@2027.0.0-ballot.rc1&canonical=http://fhir.de/StructureDefinition/observation-de-vitalsign-atemfrequenz) 
+Diese Struktur ist abgeleitet von [VitalSignDE_Atemfrequenz](https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.base@2027.0.0-ballot&canonical=http://fhir.de/StructureDefinition/observation-de-vitalsign-atemfrequenz) 
 
 ** Summary **
 
@@ -68,7 +68,7 @@ This structure defines the following [Slices](http://hl7.org/fhir/R4/profiling.h
 
  **Differential-Ansicht** 
 
-Diese Struktur ist abgeleitet von [VitalSignDE_Atemfrequenz](https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.base@2027.0.0-ballot.rc1&canonical=http://fhir.de/StructureDefinition/observation-de-vitalsign-atemfrequenz) 
+Diese Struktur ist abgeleitet von [VitalSignDE_Atemfrequenz](https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.base@2027.0.0-ballot&canonical=http://fhir.de/StructureDefinition/observation-de-vitalsign-atemfrequenz) 
 
 #### Terminology Bindings (Differential)
 
@@ -78,7 +78,7 @@ Diese Struktur ist abgeleitet von [VitalSignDE_Atemfrequenz](https://simplifier.
 
 #### Constraints
 
-Diese Struktur ist abgeleitet von [VitalSignDE_Atemfrequenz](https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.base@2027.0.0-ballot.rc1&canonical=http://fhir.de/StructureDefinition/observation-de-vitalsign-atemfrequenz) 
+Diese Struktur ist abgeleitet von [VitalSignDE_Atemfrequenz](https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.base@2027.0.0-ballot&canonical=http://fhir.de/StructureDefinition/observation-de-vitalsign-atemfrequenz) 
 
 ** Summary **
 
