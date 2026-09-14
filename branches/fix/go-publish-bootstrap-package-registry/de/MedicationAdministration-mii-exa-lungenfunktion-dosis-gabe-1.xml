@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<MedicationAdministration xmlns="http://hl7.org/fhir">
+  <id value="mii-exa-lungenfunktion-dosis-gabe-1"/>
+  <meta>
+    <profile value="https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-dosis-gabe"/>
+  </meta>
+  <language value="de"/>
+  <text>
+    <status value="generated"/><div xml:lang="de" lang="de"><hr/><p><b>German</b></p><hr/><p class="res-header-id"><b>Generated Narrative: MedicationAdministration mii-exa-lungenfunktion-dosis-gabe-1</b></p><a name="de-mii-exa-lungenfunktion-dosis-gabe-1"> </a><a name="de-hcmii-exa-lungenfunktion-dosis-gabe-1"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-mii-pr-lungenfunktion-dosis-gabe.html">MII PR Lungenfunktion Dosisgabe</a></p></div><p><b>partOf</b>: <a href="Procedure-mii-exa-lungenfunktion-provokationstest-messung.html">Procedure Methacholine challenge (procedure)</a></p><p><b>status</b>: Completed</p><p><b>medication</b>: <a href="Medication-mii-exa-lungenfunktion-methacholine.html">Medication Provokit® 0,33%</a></p><p><b>subject</b>: <a href="Patient-mii-exa-lungenfunktion-patient.html">Erika Beispielpatientin  Female, DoB: 1970-01-01</a></p><p><b>effective</b>: 2024-07-19 13:03:20+0200</p><h3>Dosages</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Dose</b></td></tr><tr><td style="display: none">*</td><td>0.032 mg<span style="background: LightGoldenRodYellow"> (Details: UCUM  codemg = 'mg')</span></td></tr></table></div>
+  </text>
+  <partOf>
+    <reference value="Procedure/mii-exa-lungenfunktion-provokationstest-messung"/>
+  </partOf>
+  <status value="completed"/>
+  <medicationReference>
+    <reference value="Medication/mii-exa-lungenfunktion-methacholine"/>
+  </medicationReference>
+  <subject>
+    <reference value="Patient/mii-exa-lungenfunktion-patient"/>
+  </subject>
+  <effectiveDateTime value="2024-07-19T13:03:20+02:00"/>
+  <dosage>
+    <dose>
+      <value value="0.032"/>
+      <system value="http://unitsofmeasure.org"/>
+      <code value="mg"/>
+    </dose>
+  </dosage>
+</MedicationAdministration>
