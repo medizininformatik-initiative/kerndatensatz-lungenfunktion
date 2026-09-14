@@ -29,7 +29,6 @@ Dieser IG enthält die folgenden Abhängigkeiten von anderen IGs.
 
 
 
-
 > **Woher die Versionen kommen.** Jedes Paket der Tabelle ist direkt in [`sushi-config.yaml`](https://github.com/medizininformatik-initiative/kerndatensatz-lungenfunktion/blob/main/sushi-config.yaml) (`dependencies:`) gepinnt — auch `hl7.terminology.r4` (THO) und `hl7.fhir.uv.extensions.r4`, und diese beiden mit Bedacht: Die [Automatik des IG Publishers](https://build.fhir.org/ig/FHIR/ig-guidance/versions.html#automatic-packages) liest ausschließlich die **eigene** Abhängigkeitsliste dieses Leitfadens; ohne direkten Pin würde jeder Build stillschweigend das jeweils aktuellste THO-/Extensions-Release injizieren — eine allein im MII-Meta-Paket gepinnte Version kann den Build nicht steuern (verifiziert im Publisher-Quellcode des gepinnten Release). Eine wöchentliche Prüfung warnt, wenn diese beiden Pins von den Vorgaben des gepinnten Meta-Pakets abweichen; die von einem konkreten Build verwendeten Versionen stehen in dessen `qa-versions.json`.
 
 ### Globale Profile
@@ -41,26 +40,6 @@ Dieser IG deklariert die folgenden globalen Profile — Profile, die für jede u
 ### Urheberrechte
 
 This publication includes IP covered under the following statements.
-
-* BfArM - Bundesinstitut für Arzneimittel und Medizinprodukte
-
-* [ATC](https://simplifier.net/resolve?scope=de.basisprofil.r4@1.5.4&canonical=http://fhir.de/CodeSystem/bfarm/atc): [MII_PR_Lungenfunktion_Dosis_Gabe](StructureDefinition-mii-pr-lungenfunktion-dosis-gabe.md) and [MII_PR_Lungenfunktion_Methacholine](StructureDefinition-mii-pr-lungenfunktion-methacholine.md)
-
-
-* BfArM 1994 - 2024 - Die Erstellung erfolgt unter Verwendung der maschinenlesbaren Fassung des Bundesinstituts für Arzneimittel und Medizinprodukte (BfArM)
-
-* [OPS](https://simplifier.net/resolve?scope=de.basisprofil.r4@1.5.4&canonical=http://fhir.de/CodeSystem/bfarm/ops): [MII_PR_Lungenfunktion_Bodyplethysmographie_Messung](StructureDefinition-mii-pr-lungenfunktion-bodyplethysmographie-messung.md), [MII_PR_Lungenfunktion_Diffusion_Messung](StructureDefinition-mii-pr-lungenfunktion-diffusion-messung.md), [MII_PR_Lungenfunktion_Provokationstest_Messung](StructureDefinition-mii-pr-lungenfunktion-provokationstest-messung.md) and [MII_PR_Lungenfunktion_Spirometrie_Messung](StructureDefinition-mii-pr-lungenfunktion-spirometrie-messung.md)
-
-
-* HL7 Deutschland e.V.
-
-* [Arzneimittel-Stoffkatalog](https://simplifier.net/resolve?scope=de.basisprofil.r4@1.5.4&canonical=http://fhir.de/CodeSystem/ask): [MII_PR_Lungenfunktion_Methacholine](StructureDefinition-mii-pr-lungenfunktion-methacholine.md)
-
-
-* IFA GmbH
-
-* [PZN](https://simplifier.net/resolve?scope=de.basisprofil.r4@1.5.4&canonical=http://fhir.de/CodeSystem/ifa/pzn): [MII_PR_Lungenfunktion_Dosis_Gabe](StructureDefinition-mii-pr-lungenfunktion-dosis-gabe.md), [MII_PR_Lungenfunktion_Methacholine](StructureDefinition-mii-pr-lungenfunktion-methacholine.md) and [Medication/mii-exa-lungenfunktion-methacholine](Medication-mii-exa-lungenfunktion-methacholine.md)
-
 
 * ISO maintains the copyright on the country codes, and controls its use carefully. For further details see the ISO 3166 web page: [https://www.iso.org/iso-3166-country-codes.html](https://www.iso.org/iso-3166-country-codes.html)
 
@@ -94,11 +73,6 @@ This publication includes IP covered under the following statements.
 * Unless otherwise noted, the contents of the FDA website (www.fda.gov) — both text and graphics — are not copyrighted. They are in the public domain and may be republished, reprinted and otherwise used freely by anyone without the need to obtain permission from FDA. Credit to the U.S. Food and Drug Administration as the source is appreciated but not required.
 
 * [Unique Ingredient Identifier (UNII)](http://terminology.hl7.org/6.5.0/CodeSystem-UNII.html): [MII_PR_Lungenfunktion_Dosis_Gabe](StructureDefinition-mii-pr-lungenfunktion-dosis-gabe.md) and [MII_PR_Lungenfunktion_Methacholine](StructureDefinition-mii-pr-lungenfunktion-methacholine.md)
-
-
-* WHO, BfArM 1994 - 2024 - Die Erstellung erfolgt unter Verwendung der maschinenlesbaren Fassung des Bundesinstituts für Arzneimittel und Medizinprodukte (BfArM)
-
-* [ICD-10-GM](https://simplifier.net/resolve?scope=de.basisprofil.r4@1.5.4&canonical=http://fhir.de/CodeSystem/bfarm/icd-10-gm): [MII_PR_Lungenfunktion_Befund](StructureDefinition-mii-pr-lungenfunktion-befund.md), [MII_PR_Lungenfunktion_Bodyplethysmographie](StructureDefinition-mii-pr-lungenfunktion-bodyplethysmographie.md), [MII_PR_Lungenfunktion_Diffusion](StructureDefinition-mii-pr-lungenfunktion-diffusion.md), [MII_PR_Lungenfunktion_Provokationstest](StructureDefinition-mii-pr-lungenfunktion-provokationstest.md) and [MII_PR_Lungenfunktion_Spirometrie](StructureDefinition-mii-pr-lungenfunktion-spirometrie.md)
 
 
 ### IG-Parametereinstellungen und Expansionsparameter
@@ -295,7 +269,7 @@ Expansionsparameter sind Query-Parameter, die an eine `ValueSet`- `$expand`-Oper
     "id" : "de_basisprofil_r4",
     "uri" : "http://fhir.org/packages/de.basisprofil.r4/ImplementationGuide/de.basisprofil.r4",
     "packageId" : "de.basisprofil.r4",
-    "version" : "1.5.4"
+    "version" : "1.6.0"
   },
   {
     "id" : "hl7_fhir_uv_crmi",

@@ -164,7 +164,7 @@
   <dependsOn id="de_basisprofil_r4">
     <uri value="http://fhir.org/packages/de.basisprofil.r4/ImplementationGuide/de.basisprofil.r4"/>
     <packageId value="de.basisprofil.r4"/>
-    <version value="1.5.4"/>
+    <version value="1.6.0"/>
   </dependsOn>
   <dependsOn id="hl7_fhir_uv_crmi">
     <uri value="http://hl7.org/fhir/uv/crmi/ImplementationGuide/hl7.fhir.uv.crmi"/>
