@@ -1,0 +1,24 @@
+{
+  "list" : [{
+    "version" : "current",
+    "path" : "https://medizininformatik-initiative.github.io/kerndatensatz-lungenfunktion/branches/develop/",
+    "status" : "ci-build",
+    "sequence" : "ci-build",
+    "desc" : "Continuous Integration Build (latest in version control) - Content subject to frequent changes"
+  },
+  {
+    "version" : "2027.0.0-ballot",
+    "path" : "https://medizininformatik-initiative.github.io/kerndatensatz-lungenfunktion/2027.0.0-ballot",
+    "status" : "release",
+    "sequence" : "2026",
+    "fhirversion" : "4.0.1",
+    "date" : "2026-08-28",
+    "current" : true,
+    "desc" : "MII KDS Modul Lungenfunktion 2027.0.0-ballot"
+  }],
+  "package-id" : "de.medizininformatikinitiative.kerndatensatz.lungenfunktion",
+  "canonical" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion",
+  "title" : "MII Implementation Guide Lungenfunktion (Pulmonary Function)",
+  "category" : "Research",
+  "introduction" : "FHIR profiles for representing pulmonary function diagnostics - spirometry, body plethysmography, diffusion capacity and associated environmental parameters - as part of the MII core dataset."
+}
