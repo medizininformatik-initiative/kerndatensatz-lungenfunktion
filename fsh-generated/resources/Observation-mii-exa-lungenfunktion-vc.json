@@ -27,7 +27,7 @@
       {
         "code": "251913009",
         "system": "http://snomed.info/sct",
-        "version": "http://snomed.info/sct/900000000000207008/version/20250701",
+        "version": "http://snomed.info/sct/900000000000207008/version/20260701",
         "display": "Inspiratory vital capacity (observable entity)"
       }
     ]
@@ -56,7 +56,7 @@
       {
         "code": "249862003",
         "system": "http://snomed.info/sct",
-        "version": "http://snomed.info/sct/900000000000207008/version/20250701",
+        "version": "http://snomed.info/sct/900000000000207008/version/20260701",
         "display": "Sitting upright (finding)"
       }
     ]
@@ -93,7 +93,7 @@
           {
             "code": "445389005",
             "system": "http://snomed.info/sct",
-            "version": "http://snomed.info/sct/900000000000207008/version/20250701",
+            "version": "http://snomed.info/sct/900000000000207008/version/20260701",
             "display": "Percentage of predicted vital capacity (observable entity)"
           }
         ]
@@ -110,7 +110,7 @@
           {
             "code": "1078210003",
             "system": "http://snomed.info/sct",
-            "version": "http://snomed.info/sct/900000000000207008/version/20250701",
+            "version": "http://snomed.info/sct/900000000000207008/version/20260701",
             "display": "Z-score calculation technique (qualifier value)"
           }
         ]

@@ -14,6 +14,18 @@ Description: "Diese Ressource beschreibt einen Befunde der Diffusions-Messung"
 * insert PR_CS_VS_Date
 * insert Publisher
 * insert LicenseCodeableCCBY40
+/*
+* insert CRMIShareableStructureDefinition
+* insert CRMIPublishableStructureDefinition
+* insert CRMIKnowledgeCapabilitiesStructureDefinition
+* insert CRMIVersionPolicyStrict
+* insert CRMIPackageSourceDefinitionalResource
+* insert CRMIArtifactUsageProfile
+* insert CRMIApprovalDate(2024-03-07)
+* insert CRMIResourceEffectivePeriod
+* insert CRMIArtifactTopicInstance(http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl, C38081)
+* insert CRMIArtifactContributorsInstance
+*/
 //Profile
 * code.coding[loinc] = $loinc#TODO
 * code.coding[sct] = $sct#36421003 "Carbon monoxide diffusing capacity measurement (procedure)"

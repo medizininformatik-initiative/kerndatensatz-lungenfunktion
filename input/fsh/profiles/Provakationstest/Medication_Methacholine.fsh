@@ -14,6 +14,18 @@ Description: "Dieses Profil beschreibt die Angaben zu Methacholine."
 * insert PR_CS_VS_Date
 * insert Publisher
 * insert LicenseCodeableCCBY40
+/*
+* insert CRMIShareableStructureDefinition
+* insert CRMIPublishableStructureDefinition
+* insert CRMIKnowledgeCapabilitiesStructureDefinition
+* insert CRMIVersionPolicyStrict
+* insert CRMIPackageSourceDefinitionalResource
+* insert CRMIArtifactUsageProfile
+* insert CRMIApprovalDate(2024-03-07)
+* insert CRMIResourceEffectivePeriod
+* insert CRMIArtifactTopicInstance(http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl, C38081)
+* insert CRMIArtifactContributorsInstance
+*/
 //Profile
 * code.coding[Pharmazentralnummer] = $pzn#00171345 "Provokit® 0,33%"
 * code.coding[atcClassDe] = $atcDE#V04CX03 "Methacholin"

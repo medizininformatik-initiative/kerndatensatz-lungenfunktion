@@ -1,22 +1,24 @@
+
 RuleSet: Version
 * version = "2027.0.0-ballot"
 
 RuleSet: PR_CS_VS_Version
 * ^version = "2027.0.0-ballot"
+/*
+Alias: $artifact-versionAlgorithm = http://hl7.org/fhir/StructureDefinition/artifact-versionAlgorithm
+Alias: $version-algorithm = http://hl7.org/fhir/version-algorithm
 
-/*// switch version of all conformance resources here
+// switch version of all conformance resources here
 RuleSet: Version
-* version = "2027.0.0-ballot.rc2"
+* version = "2027.0.0-ballot"
 * extension[+].url = $artifact-versionAlgorithm
 * extension[=].valueCoding = $version-algorithm#semver "SemVer"
 
 RuleSet: PR_CS_VS_Version
-* ^version = "2027.0.0-ballot.rc2"
+* ^version = "2027.0.0-ballot"
 * ^extension[+].url = $artifact-versionAlgorithm
 * ^extension[=].valueCoding = $version-algorithm#semver "SemVer"
-
-Alias: $artifact-versionAlgorithm = http://hl7.org/fhir/StructureDefinition/artifact-versionAlgorithm
-Alias: $version-algorithm = http://hl7.org/fhir/version-algorithm
+*/
 
 // switch version inside Package Source Extension for all resources in this IG
 RuleSet: CRMIPackageSource
@@ -24,7 +26,7 @@ RuleSet: CRMIPackageSource
 * meta.extension[=].extension[+].url = "packageId"
 * meta.extension[=].extension[=].valueId = "de.medizininformatikinitiative.kerndatensatz.lungenfunktion"
 * meta.extension[=].extension[+].url = "version"
-* meta.extension[=].extension[=].valueString = "2027.0.0-ballot.rc2"
+* meta.extension[=].extension[=].valueString = "2027.0.0-ballot"
 * meta.extension[=].extension[+].url = "uri"
 * meta.extension[=].extension[=].valueUri = "https://www.medizininformatik-initiative.de/fhir/modul-lungenfunktion"
 
@@ -33,7 +35,7 @@ RuleSet: CRMIPackageSourceDefinitionalResource
 * ^meta.extension[=].extension[+].url = "packageId"
 * ^meta.extension[=].extension[=].valueId = "de.medizininformatikinitiative.kerndatensatz.lungenfunktion"
 * ^meta.extension[=].extension[+].url = "version"
-* ^meta.extension[=].extension[=].valueString = "2027.0.0-ballot.rc2"
+* ^meta.extension[=].extension[=].valueString = "2027.0.0-ballot"
 * ^meta.extension[=].extension[+].url = "uri"
 * ^meta.extension[=].extension[=].valueUri = "https://www.medizininformatik-initiative.de/fhir/modul-lungenfunktion"
 
@@ -45,4 +47,4 @@ RuleSet: CRMIResourceEffectivePeriod
 
 RuleSet: CRMIResourceEffectivePeriodInstance
 * extension[+].url = "http://hl7.org/fhir/StructureDefinition/resource-effectivePeriod"
-* extension[=].valuePeriod.start = "2027"*/
+* extension[=].valuePeriod.start = "2027"

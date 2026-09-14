@@ -97,9 +97,8 @@ concurrency:
   queue: max
 
 env:
-  # The module's FHIR canonical. Lungenfunktion publishes in the ext canonical
-  # space (see sushi-config.yaml: "Quelle gewinnt: publizierter Canonical
-  # (ext-Raum), NICHT das Template-Muster").
+  # The module's FHIR canonical (MII convention — for example,
+  # kerndatensatz-basis uses .../fhir/modul-base).
   EXPECTED_CANONICAL: "https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion"
   # The publication website: GitHub Pages under the creating org. Deliberately
   # different from the canonical ("canonical-mismatch").

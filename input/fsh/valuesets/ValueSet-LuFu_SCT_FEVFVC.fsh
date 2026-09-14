@@ -4,7 +4,7 @@ Title: "MII VS Lufu SCT FEV FVC"
 Description: "Import the ValueSet for lungfunction Tiffeneau-Index"
 * insert Publisher
 * insert PR_CS_VS_Version
-* insert SNOMED_Copyright
+* insert SnomedLicense
 * insert PR_CS_VS_Date
 * ^meta.profile = "http://hl7.org/fhir/StructureDefinition/shareablevalueset"
 * ^experimental = false

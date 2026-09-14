@@ -4,7 +4,7 @@ Title: "MII VS Lufu SCT Location"
 Description: "Import the ValueSet for patients location"
 * insert Publisher
 * insert PR_CS_VS_Version
-* insert SNOMED_Copyright
+* insert SnomedLicense
 * insert PR_CS_VS_Date
 * ^meta.profile = "http://hl7.org/fhir/StructureDefinition/shareablevalueset"
 * ^experimental = false

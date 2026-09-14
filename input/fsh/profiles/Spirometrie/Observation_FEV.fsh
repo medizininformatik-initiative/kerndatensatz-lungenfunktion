@@ -14,6 +14,18 @@ Description: "Dieses Profil beschreibt die Messung des forcierten, exspiratorisc
 * insert PR_CS_VS_Date
 * insert Publisher
 * insert LicenseCodeableCCBY40
+/*
+* insert CRMIShareableStructureDefinition
+* insert CRMIPublishableStructureDefinition
+* insert CRMIKnowledgeCapabilitiesStructureDefinition
+* insert CRMIVersionPolicyStrict
+* insert CRMIPackageSourceDefinitionalResource
+* insert CRMIArtifactUsageProfile
+* insert CRMIApprovalDate(2024-03-07)
+* insert CRMIResourceEffectivePeriod
+* insert CRMIArtifactTopicInstance(http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl, C38081)
+* insert CRMIArtifactContributorsInstance
+*/
 //Profile
 * partOf only Reference(MII_PR_Lungenfunktion_Spirometrie_Messung)
 * code.coding[loinc] from MII_VS_Lufu_LNC_FEV (required)
