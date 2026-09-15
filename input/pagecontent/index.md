@@ -28,7 +28,7 @@ detailed domain introduction is given under [Guidance](guidance.html).
 | Publication |               |
 |-------------|---------------|
 | Date        | 2026-09-15    |
-| Version     | 2027.0.0-ballot (CalVer `YYYY.n.n`) |
+| Version     | 2027.0.0-ballot.1 (CalVer `YYYY.n.n`) |
 | Status      | Ballot        |
 | Realm       | DE            |
 

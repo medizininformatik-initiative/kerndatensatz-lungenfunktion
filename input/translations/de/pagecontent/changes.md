@@ -78,12 +78,17 @@ werden können.</p>
 </div>
 
 ---
+#### Version 2027.0.0-ballot.1
+
+**Datum:** 2026-09-15
+
+* **Geändert:** Abhängigkeiten zu anderen Profilen angepasst auf ballot-Stand
+
 #### Version 2027.0.0-ballot
 
 **Datum:** 2026-09-15
 
-* **Changed** Merge License-pages and allign ValueSets to ist
-* ****
+* **Geändert** Merge License-pages and allign ValueSets to ist
 
 #### Version 2027.0.0-ballot.rc2
 
