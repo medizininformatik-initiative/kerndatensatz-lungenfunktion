@@ -1,0 +1,95 @@
+# MII VS Lufu SCT Forced Vital Capacity - MII IG Kerndatensatz-Modul Lungenfunktion v2027.0.0-ballot.1
+
+* [**Inhaltsverzeichnis**](toc.md)
+* [**Artefaktübersicht**](artifacts.md)
+* **MII VS Lufu SCT Forced Vital Capacity**
+
+## ValueSet: MII VS Lufu SCT Forced Vital Capacity 
+
+| | |
+| :--- | :--- |
+| *Offizielle URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/ValueSet/mii-vs-lufu-sct-fvc | *Version*:2027.0.0-ballot.1 |
+| Active Stand: 2026-09-15 | *Maschinenlesbarer Name*:MII_VS_Lufu_SCT_FVC |
+| **Copyright/Rechtliches**: This material includes SNOMED Clinical Terms® (SNOMED CT®) which is used by permission of SNOMED International. All rights reserved. SNOMED CT®, was originally created by The College of American Pathologists. SNOMED and SNOMED CT are registered trademarks of SNOMED International. Implementers of these artefacts must have the appropriate SNOMED CT Affiliate license. | |
+
+ 
+Import the ValueSet for lungfunction forced vital capacity 
+
+ **References** 
+
+* [MII PR Lungenfunktion FVC](StructureDefinition-mii-pr-lungenfunktion-fvc.md)
+
+### Logical Definition (CLD)
+
+ 
+
+### Expansion
+
+-------
+
+ [Beschreibung der obigen Tabelle(n)](http://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#terminology). 
+
+
+
+## Resource Content
+
+```json
+{
+  "resourceType" : "ValueSet",
+  "id" : "mii-vs-lufu-sct-fvc",
+  "meta" : {
+    "profile" : ["http://hl7.org/fhir/StructureDefinition/shareablevalueset"]
+  },
+  "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/ValueSet/mii-vs-lufu-sct-fvc",
+  "version" : "2027.0.0-ballot.1",
+  "name" : "MII_VS_Lufu_SCT_FVC",
+  "title" : "MII VS Lufu SCT Forced Vital Capacity",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2026-09-15",
+  "publisher" : "Medizininformatik Initiative",
+  "contact" : [{
+    "name" : "Medizininformatik Initiative",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://www.medizininformatik-initiative.de/"
+    }]
+  }],
+  "description" : "Import the ValueSet for lungfunction forced vital capacity",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "DE",
+      "display" : "Germany"
+    }]
+  }],
+  "copyright" : "This material includes SNOMED Clinical Terms® (SNOMED CT®) which is used by permission of SNOMED International. All rights reserved. SNOMED CT®, was originally created by The College of American Pathologists. SNOMED and SNOMED CT are registered trademarks of SNOMED International. Implementers of these artefacts must have the appropriate SNOMED CT Affiliate license.",
+  "compose" : {
+    "include" : [{
+      "system" : "http://snomed.info/sct",
+      "version" : "http://snomed.info/sct/900000000000207008/version/20260701",
+      "concept" : [{
+        "code" : "50834005",
+        "display" : "Forced vital capacity (observable entity)"
+      },
+      {
+        "code" : "310521000",
+        "display" : "Expected forced vital capacity (observable entity)"
+      },
+      {
+        "code" : "407561008",
+        "display" : "Forced vital capacity after bronchodilation (observable entity)"
+      },
+      {
+        "code" : "441857000",
+        "display" : "Forced vital capacity before bronchodilation (observable entity)"
+      },
+      {
+        "code" : "445210000",
+        "display" : "Percentage of predicted forced vital capacity (observable entity)"
+      }]
+    }]
+  }
+}
+
+```
