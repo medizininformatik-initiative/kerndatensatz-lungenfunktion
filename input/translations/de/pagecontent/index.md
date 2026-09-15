@@ -30,7 +30,7 @@ ausführliche fachliche Einordnung steht unter
 | Veröffentlichung |               |
 |------------------|---------------|
 | Datum            | 2026-09-15    |
-| Version          | 2027.0.0-ballot (CalVer `JJJJ.n.n`) |
+| Version          | 2027.0.0-ballot.1 (CalVer `JJJJ.n.n`) |
 | Status           | Ballot        |
 | Realm            | DE            |
 
