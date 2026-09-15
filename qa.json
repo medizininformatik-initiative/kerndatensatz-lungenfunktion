@@ -3,12 +3,12 @@
   "name" : "MII_IG_Lungenfunktion",
   "title" : "MII IG Kerndatensatz-Modul Lungenfunktion",
   "description" : "FHIR profiles for representing pulmonary function diagnostics - spirometry, body plethysmography, diffusion capacity and associated environmental parameters - as part of the MII core dataset.",
-  "ig-date" : "2026-08-28",
+  "ig-date" : "2026-09-15",
   "status" : "active",
   "package-id" : "de.medizininformatikinitiative.kerndatensatz.lungenfunktion",
-  "ig-ver" : "2027.0.0-ballot",
-  "date" : "Mon, 14 Sep, 2026 21:25:10 +0000",
-  "dateISO8601" : "2026-09-14T21:25:10+00:00",
+  "ig-ver" : "2027.0.0-ballot.1",
+  "date" : "Tue, 15 Sep, 2026 09:16:32 +0000",
+  "dateISO8601" : "2026-09-15T09:16:32+00:00",
   "errs" : 1147,
   "warnings" : 637,
   "hints" : 8469,
@@ -16,5 +16,5 @@
   "suppressed-warnings" : 0,
   "version" : "4.0.1",
   "tool" : "5.0.0 (3)",
-  "maxMemory" : 5268471368
+  "maxMemory" : 5907481312
 }
