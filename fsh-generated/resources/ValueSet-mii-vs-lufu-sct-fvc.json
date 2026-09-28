@@ -5,7 +5,7 @@
   "id": "mii-vs-lufu-sct-fvc",
   "title": "MII VS Lufu SCT Forced Vital Capacity",
   "description": "Import the ValueSet for lungfunction forced vital capacity",
-  "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/ValueSet/mii-vs-lufu-sct-fvc",
+  "url": "https://www.medizininformatik-initiative.de/fhir/modul-lungenfunktion/ValueSet/mii-vs-lufu-sct-fvc",
   "publisher": "Medizininformatik Initiative",
   "contact": [
     {

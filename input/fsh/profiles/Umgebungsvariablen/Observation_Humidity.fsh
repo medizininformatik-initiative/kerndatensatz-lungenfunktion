@@ -4,7 +4,7 @@ Parent: Observation
 Id: mii-pr-lungenfunktion-luftfeuchtigkeit
 Title: "MII PR Lungenfunktion Luftfeuchtigkeit"
 Description: "Dieses Beobachtung beschreibt eine relative Luftfeuchtigkeit."
-* ^url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-luftfeuchtigkeit"
+* ^url = "https://www.medizininformatik-initiative.de/fhir/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-luftfeuchtigkeit"
 //Translation Meta
 * insert Translation(^name, en-US, MII_PR_Lungfunction_Humidity)
 * insert Translation(^title, en-US, MII PR Lungfunction Humidity)

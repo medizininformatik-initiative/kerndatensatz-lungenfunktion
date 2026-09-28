@@ -4,7 +4,7 @@ Parent: MII_PR_Lungenfunktion_Prozent
 Id: mii-pr-lungenfunktion-fev-fvc
 Title: "MII PR Lungenfunktion FEV/FVC"
 Description: "Dieses Profil beschreibt die Messung des Tiffeneau-Index."
-* ^url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-fev-fvc"
+* ^url = "https://www.medizininformatik-initiative.de/fhir/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-fev-fvc"
 //Translation Meta
 * insert Translation(^name, en-US, MII_PR_Lungfunction_Tiffeneau)
 * insert Translation(^title, en-US, MII PR Lungfunction Tiffeneau)

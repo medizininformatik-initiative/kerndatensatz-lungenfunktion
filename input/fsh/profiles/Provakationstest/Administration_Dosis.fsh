@@ -4,7 +4,7 @@ Parent: $MII-Administration
 Id: mii-pr-lungenfunktion-dosis-gabe
 Title: "MII PR Lungenfunktion Dosisgabe"
 Description: "Dieses Profil beschreibt die Gabe der Dosis."
-* ^url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-dosis-gabe"
+* ^url = "https://www.medizininformatik-initiative.de/fhir/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-dosis-gabe"
 //Translation Meta
 * insert Translation(^name, en-US, MII_PR_Lungfunction_Dose_Administration)
 * insert Translation(^title, en-US, MII PR Lungfunction Dose Administration)

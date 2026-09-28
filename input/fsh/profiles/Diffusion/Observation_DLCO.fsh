@@ -4,7 +4,7 @@ Parent: MII_PR_Lungenfunktion_Diffusionskapzitaet
 Id: mii-pr-lungenfunktion-dlco
 Title: "MII PR Lungenfunktion DLCO"
 Description: "Dieses Profil beschreibt die Messung der Diffusionskapazität von Kohlenstoffmonoxid."
-* ^url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-dlco"
+* ^url = "https://www.medizininformatik-initiative.de/fhir/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-dlco"
 //Translation Meta
 * insert Translation(^name, en-US, MII PR Lung function DLCO)
 * insert Translation(^title, en-US, MII PR Lungenfunktion DLCO)

@@ -4,7 +4,7 @@ Parent: Observation
 Id: mii-pr-lungenfunktion-diffusionskapazitaet
 Title: "MII PR Lungenfunktion Diffusionskapzität"
 Description: "Dieses Beobachtung beschreibt eine Messung der Diffusionskapazität."
-* ^url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-diffusionskapazitaet"
+* ^url = "https://www.medizininformatik-initiative.de/fhir/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-diffusionskapazitaet"
 //Translation Meta
 * insert Translation(^name, en-US, MII_PR_Lungfunction_Diffusioncapacity)
 * insert Translation(^title, en-US, MII PR Lungfunction Diffusioncapacity)

@@ -4,7 +4,7 @@ Parent: Observation
 Id: mii-pr-lungenfunktion-co2-konzentration
 Title: "MII PR Lungenfunktion CO2 Konzentration"
 Description: "Dieses Beobachtung beschreibt eine die gemessene CO2 Konzentration."
-* ^url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-co2-konzentration"
+* ^url = "https://www.medizininformatik-initiative.de/fhir/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-co2-konzentration"
 //Translation Meta
 * insert Translation(^name, en-US, MII_PR_Lungfunction_CO2_Concentration)
 * insert Translation(^title, en-US, MII PR Lungfunction CO2 Concentration)

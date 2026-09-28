@@ -4,7 +4,7 @@ Parent: MII_PR_Lungenfunktion_Volumen
 Id: mii-pr-lungenfunktion-va
 Title: "MII PR Lungenfunktion VA"
 Description: "Dieses Profil beschreibt die Messung des alveolärer Volumen."
-* ^url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-va"
+* ^url = "https://www.medizininformatik-initiative.de/fhir/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-va"
 
 //Translation Meta
 * insert Translation(^name, en-US, MII PR Lung function_VA)

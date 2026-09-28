@@ -4,7 +4,7 @@ Parent: Observation
 Id: mii-pr-lungenfunktion-transferkoeffizient
 Title: "MII PR Lungenfunktion Transferkoeffizient"
 Description: "Dieses Beobachtung beschreibt ein Transferkoeffizient."
-* ^url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-transferkoeffizient"
+* ^url = "https://www.medizininformatik-initiative.de/fhir/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-transferkoeffizient"
 //Translation Meta
 * insert Translation(^name, en-US, MII_PR_Lungfunction_Transfercoefficient)
 * insert Translation(^title, en-US, MII PR Lungfunction Transfercoefficient)

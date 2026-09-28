@@ -4,7 +4,7 @@ Parent: MII_PR_Lungenfunktion_Volumen
 Id: mii-pr-lungenfunktion-frc
 Title: "MII PR Lungenfunktion FRC"
 Description: "Dieses Profil beschreibt die Messung der funktionellen Residualkapazität."
-* ^url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-frc"
+* ^url = "https://www.medizininformatik-initiative.de/fhir/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-frc"
 //Translation Meta
 * insert Translation(^name, en-US, MII_PR_Lungfunction_FRC)
 * insert Translation(^title, en-US, MII PR Lungfunction FRC)

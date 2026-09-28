@@ -4,7 +4,7 @@ Parent: MII_PR_Lungenfunktion_Befund
 Id: mii-pr-lungenfunktion-provokationstest
 Title: "MII PR Lungenfunktion Provokationstest"
 Description: "Diese Ressource beschreibt einen Befunde des Provokationstest"
-* ^url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-provokationstest"
+* ^url = "https://www.medizininformatik-initiative.de/fhir/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-provokationstest"
 //Translation Meta
 * insert Translation(^name, en-US, MII_PR_Lungfunction_Provocationtest)
 * insert Translation(^title, en-US, MII PR Lungfunction Provocationtest)

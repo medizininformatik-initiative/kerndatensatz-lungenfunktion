@@ -4,7 +4,7 @@ Parent: Observation
 Id: mii-pr-lungenfunktion-volumen
 Title: "MII PR Lungenfunktion Volumen"
 Description: "Dieses Beobachtung beschreibt eine Volumenmessung."
-* ^url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-volumen"
+* ^url = "https://www.medizininformatik-initiative.de/fhir/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-volumen"
 //Translation Meta
 * insert Translation(^name, en-US, MII_PR_Lungfunction_Volume)
 * insert Translation(^title, en-US, MII PR Lungfunction Volume)

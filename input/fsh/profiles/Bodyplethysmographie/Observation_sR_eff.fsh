@@ -4,7 +4,7 @@ Parent: MII_PR_Lungenfunktion_Viskositaet
 Id: mii-pr-lungenfunktion-r-effektiv
 Title: "MII PR Lungenfunktion R Effektiv"
 Description: "Dieses Profil beschreibt die Messung des effektiven, spezifischen Atemwegswiderstand."
-* ^url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-r-effektiv"
+* ^url = "https://www.medizininformatik-initiative.de/fhir/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-r-effektiv"
 //Translation Meta
 * insert Translation(^name, en-US, MII_PR_Lungfunction_R_Effective)
 * insert Translation(^title, en-US, MII PR Lungfunction R Effective)

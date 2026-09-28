@@ -4,7 +4,7 @@ Parent: MII_PR_Lungenfunktion_Befund
 Id: mii-pr-lungenfunktion-diffusion
 Title: "MII PR Lungenfunktion Diffusion"
 Description: "Diese Ressource beschreibt einen Befunde der Diffusions-Messung"
-* ^url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-diffusion"
+* ^url = "https://www.medizininformatik-initiative.de/fhir/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-diffusion"
 //Translation Meta
 * insert Translation(^name, en-US, MII PR Lung function Diffusion)
 * insert Translation(^title, en-US, MII PR Lung function Diffusion)

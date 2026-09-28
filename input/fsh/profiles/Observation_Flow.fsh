@@ -4,7 +4,7 @@ Parent: Observation
 Id: mii-pr-lungenfunktion-fluss
 Title: "MII PR Lungenfunktion Fluss"
 Description: "Dieses Beobachtung beschreibt eine Flussmessung."
-* ^url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-fluss"
+* ^url = "https://www.medizininformatik-initiative.de/fhir/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-fluss"
 //Translation Meta
 * insert Translation(^name, en-US, MII_PR_Lungfunction_Flow)
 * insert Translation(^title, en-US, MII PR Lungfunction Flow)

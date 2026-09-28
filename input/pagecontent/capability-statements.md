@@ -23,7 +23,7 @@ the respective CapabilityStatement instance under
 [`CapabilityStatement.instantiates`](https://www.hl7.org/fhir/capabilitystatement-definitions.html#CapabilityStatement.instantiates).
 
 Canonical:
-`https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/CapabilityStatement/metadata`
+`https://www.medizininformatik-initiative.de/fhir/modul-lungenfunktion/CapabilityStatement/metadata`
 
 <!-- Corrected during transfer: at this point the source page named the
      canonical of the BILDGEBUNG module

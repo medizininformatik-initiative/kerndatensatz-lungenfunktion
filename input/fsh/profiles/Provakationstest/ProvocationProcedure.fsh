@@ -4,7 +4,7 @@ Parent: $MII-Procedure
 Id: mii-pr-lungenfunktion-provokationstest-messung
 Title: "MII PR Lungenfunktion Provokations Messung"
 Description: "Beschreibt die Tätigkeiten, wie eine Diffusion durchgeführt wird"
-* ^url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-provokationstest-messung"
+* ^url = "https://www.medizininformatik-initiative.de/fhir/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-provokationstest-messung"
 //Translation Meta
 * insert Translation(^name, en-US, MII_PR_Lungfunction_Provocationstest_Measurement)
 * insert Translation(^title, en-US, MII PR Lungfunction Provocationstest Measurement)

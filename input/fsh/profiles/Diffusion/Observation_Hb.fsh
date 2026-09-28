@@ -4,7 +4,7 @@ Parent: Observation
 Id: mii-pr-lungenfunktion-hb
 Title: "MII PR Lungenfunktion Hb"
 Description: "Dieses Profil beschreibt die Messung des Hämoglobin."
-* ^url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-hb"
+* ^url = "https://www.medizininformatik-initiative.de/fhir/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-hb"
 //Translation Meta
 * insert Translation(^name, en-US, MII PR Lungfunction Hb)
 * insert Translation(^title, en-US, MII PR Lungfunction Hb)

@@ -4,7 +4,7 @@ Parent: MII_PR_Lungenfunktion_Befund
 Id: mii-pr-lungenfunktion-bodyplethysmographie
 Title: "MII PR Lungenfunktion Bodyplethysmographie"
 Description: "Diese Ressource beschreibt einen Befunde der Bodyplethysmographie"
-* ^url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-bodyplethysmographie"
+* ^url = "https://www.medizininformatik-initiative.de/fhir/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-bodyplethysmographie"
 //Translation Meta
 * insert Translation(^name, en-US, MII_PR_Lungfunction_Bodyplethysmography)
 * insert Translation(^title, en-US, MII PR Lungfunction Bodyplethysmography)

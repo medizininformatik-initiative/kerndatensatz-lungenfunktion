@@ -4,7 +4,7 @@ Parent: MII_PR_Lungenfunktion_Volumen
 Id: mii-pr-lungenfunktion-fev
 Title: "MII PR Lungenfunktion FEV"
 Description: "Dieses Profil beschreibt die Messung des forcierten, exspiratorischen Volumen."
-* ^url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-fev"
+* ^url = "https://www.medizininformatik-initiative.de/fhir/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-fev"
 //Translation Meta
 * insert Translation(^name, en-US, MII_PR_Lungfunction_FEV)
 * insert Translation(^title, en-US, MII PR Lungfunction FEV)

@@ -3,7 +3,7 @@
   "id": "mii-exa-lungenfunktion-sr-total-p3",
   "meta": {
     "profile": [
-      "https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-r-spezifisch"
+      "https://www.medizininformatik-initiative.de/fhir/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-r-spezifisch"
     ]
   },
   "category": [

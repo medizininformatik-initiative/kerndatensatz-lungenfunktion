@@ -4,7 +4,7 @@ Parent: MII_PR_Lungenfunktion_Prozent
 Id: mii-pr-lungenfunktion-rv-tlc
 Title: "MII PR Lungenfunktion Anteil Residualvolumen an Lungenkapazität"
 Description: "Dieses Beobachtung beschreibt den prozentualen Anteil des Residualvolumen an der totalen Lungenkapazität."
-* ^url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-rvl-tlc"
+* ^url = "https://www.medizininformatik-initiative.de/fhir/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-rvl-tlc"
 //Translation Meta
 * insert Translation(^name, en-US, MII_PR_Lungfunction_RV_TLC)
 * insert Translation(^title, en-US, MII PR Lungfunction RV TLC)

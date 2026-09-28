@@ -4,7 +4,7 @@ Parent: MII_PR_Lungenfunktion_Fluss
 Id: mii-pr-lungenfunktion-mef
 Title: "MII PR Lungenfunktion MEF"
 Description: "Dieses Profil beschreibt die Messung des maximalen exspiratorischen Fluss bei forcierten exspiratorischen Vitalkapazität."
-* ^url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-mef"
+* ^url = "https://www.medizininformatik-initiative.de/fhir/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-mef"
 //Translation Meta
 * insert Translation(^name, en-US, MII_PR_Lungfunction_MEF)
 * insert Translation(^title, en-US, MII PR Lungfunction MEF)

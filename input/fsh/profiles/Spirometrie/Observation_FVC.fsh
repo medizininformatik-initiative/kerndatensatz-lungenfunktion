@@ -4,7 +4,7 @@ Parent: MII_PR_Lungenfunktion_Volumen
 Id: mii-pr-lungenfunktion-fvc
 Title: "MII PR Lungenfunktion FVC"
 Description: "Dieses Profil beschreibt die Messung der forcierten Vitalkapazität."
-* ^url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-fvc"
+* ^url = "https://www.medizininformatik-initiative.de/fhir/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-fvc"
 //Translation Meta
 * insert Translation(^name, en-US, MII_PR_Lungfunction_FVC)
 * insert Translation(^title, en-US, MII PR Lungfunction FVC)

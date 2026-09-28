@@ -3,7 +3,7 @@
   "id": "mii-exa-lungenfunktion-dosis-schwellwert",
   "meta": {
     "profile": [
-      "https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-dosis"
+      "https://www.medizininformatik-initiative.de/fhir/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-dosis"
     ]
   },
   "category": [

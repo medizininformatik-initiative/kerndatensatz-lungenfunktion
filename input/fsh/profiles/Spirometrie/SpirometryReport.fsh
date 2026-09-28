@@ -4,7 +4,7 @@ Parent: MII_PR_Lungenfunktion_Befund
 Id: mii-pr-lungenfunktion-spirometrie
 Title: "MII PR Lungenfunktion Spirometrie"
 Description: "Diese Ressource beschreibt einen Befunde der Spirometrie"
-* ^url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-spirometrie"
+* ^url = "https://www.medizininformatik-initiative.de/fhir/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-spirometrie"
 //Translation Meta
 * insert Translation(^name, en-US, MII_PR_Lungfunction_Spirometry)
 * insert Translation(^title, en-US, MII PR Lungfunction Spirometry)

@@ -4,7 +4,7 @@ Parent: $MII-Procedure
 Id: mii-pr-lungenfunktion-bodyplethysmographie-messung
 Title: "MII PR Lungenfunktion Bodyplethysmographie Messung"
 Description: "Beschreibt die Tätigkeiten, wie eine Bodyplethysmographie durchgeführt wird."
-* ^url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-bodyplethysmographie-messung"
+* ^url = "https://www.medizininformatik-initiative.de/fhir/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-bodyplethysmographie-messung"
 //Translation Meta
 * insert Translation(^name, en-US, MII_PR_Lungfunction_Bodyplethysmography_Measurement)
 * insert Translation(^title, en-US, MII PR Lungfunction Bodyplethysmography Measurement)

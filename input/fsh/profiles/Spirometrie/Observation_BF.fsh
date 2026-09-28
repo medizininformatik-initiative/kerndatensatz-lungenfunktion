@@ -4,7 +4,7 @@ Parent: http://fhir.de/StructureDefinition/observation-de-vitalsign-atemfrequenz
 Id: mii-pr-lungenfunktion-bf
 Title: "MII PR Lungenfunktion BF"
 Description: "Dieses Profil beschreibt die Messung der Atemfrequenz."
-* ^url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-bf"
+* ^url = "https://www.medizininformatik-initiative.de/fhir/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-bf"
 //Translation Meta
 * insert Translation(^name, en-US, MII_PR_Lungfunction_BF)
 * insert Translation(^title, en-US, MII PR Lungfunction BF)

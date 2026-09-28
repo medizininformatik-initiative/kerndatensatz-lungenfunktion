@@ -4,7 +4,7 @@ Parent: $MII-Medikation
 Id: mii-pr-lungenfunktion-methacholine
 Title: "MII PR Lungenfunktion Methacholine"
 Description: "Dieses Profil beschreibt die Angaben zu Methacholine."
-* ^url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-methacholine"
+* ^url = "https://www.medizininformatik-initiative.de/fhir/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-methacholine"
 //Translation Meta
 * insert Translation(^name, en-US, MII_PR_Lungfunction_Methacholine)
 * insert Translation(^title, en-US, MII PR Lungfunction Methacholine)

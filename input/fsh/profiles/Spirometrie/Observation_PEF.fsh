@@ -4,7 +4,7 @@ Parent: MII_PR_Lungenfunktion_Fluss
 Id: mii-pr-lungenfunktion-pef
 Title: "MII PR Lungenfunktion PEF"
 Description: "Dieses Profil beschreibt die Messung des exspiratorischen Spitzenfluss."
-* ^url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-pef"
+* ^url = "https://www.medizininformatik-initiative.de/fhir/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-pef"
 //Translation Meta
 * insert Translation(^name, en-US, MII_PR_Lungfunction_PEF)
 * insert Translation(^title, en-US, MII PR Lungfunction PEF)

@@ -4,7 +4,7 @@
 # wo die Quelle nichts deklariert (jeweils kommentiert, Entscheidungen in
 # migration-log/migration-report.md, ①-Queue).
 id: mii-ig-lungenfunktion
-canonical: https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion # Quelle gewinnt: publizierter Canonical (ext-Raum), NICHT das Template-Muster (§2 Skill)
+canonical: https://www.medizininformatik-initiative.de/fhir/modul-lungenfunktion # Quelle gewinnt: publizierter Canonical (ext-Raum), NICHT das Template-Muster (§2 Skill)
 name: MII_IG_Lungenfunktion
 title: MII IG Kerndatensatz-Modul Lungenfunktion
 description: "FHIR profiles for representing pulmonary function diagnostics - spirometry, body plethysmography, diffusion capacity and associated environmental parameters - as part of the MII core dataset." # TODO:REVIEW derived (EN-Beschreibung abgeleitet aus package.json-description 'Medizininformatik Initiative - Modul Lungenfunktion')
@@ -48,7 +48,7 @@ extension:
       - url: version
         valueString: "2027.0.0-ballot.1"
       - url: uri
-        valueUri: https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion
+        valueUri: https://www.medizininformatik-initiative.de/fhir/modul-lungenfunktion
   - url: http://hl7.org/fhir/StructureDefinition/resource-effectivePeriod
     valuePeriod:
       start: "2027"

@@ -4,7 +4,7 @@ Parent: MII_PR_Lungenfunktion_Volumen
 Id: mii-pr-lungenfunktion-vc
 Title: "MII PR Lungenfunktion VC"
 Description: "Dieses Profil beschreibt die Messung der maximalen Vitalkapazität bei Ausatmung."
-* ^url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-vc"
+* ^url = "https://www.medizininformatik-initiative.de/fhir/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-vc"
 //Translation Meta
 * insert Translation(^name, en-US, MII_PR_Lungfunction_VC)
 * insert Translation(^title, en-US, MII PR Lungfunction VC)

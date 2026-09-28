@@ -4,7 +4,7 @@ Parent: MII_PR_Lungenfunktion_Volumen
 Id: mii-pr-lungenfunktion-rv
 Title: "MII PR Lungenfunktion RV"
 Description: "Dieses Profil beschreibt die Messung des Residualvolumen."
-* ^url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-rv"
+* ^url = "https://www.medizininformatik-initiative.de/fhir/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-rv"
 //Translation Meta
 * insert Translation(^name, en-US, MII_PR_Lungfunction_RV)
 * insert Translation(^title, en-US, MII PR Lungfunction RV)

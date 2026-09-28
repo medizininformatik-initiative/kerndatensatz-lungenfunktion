@@ -4,7 +4,7 @@ Parent: MII_PR_Lungenfunktion_Volumen
 Id: mii-pr-lungenfunktion-ic
 Title: "MII PR Lungenfunktion IC"
 Description: "Dieses Profil beschreibt die Messung der inspiratorischen Kapazität."
-* ^url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-ic"
+* ^url = "https://www.medizininformatik-initiative.de/fhir/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-ic"
 //Translation Meta
 * insert Translation(^name, en-US, MII_PR_Lungfunction_IC)
 * insert Translation(^title, en-US, MII PR Lungfunction IC)

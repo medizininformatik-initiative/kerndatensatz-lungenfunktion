@@ -25,7 +25,7 @@ CapabilityStatement-Instanz unter
 angegeben werden.
 
 Canonical:
-`https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/CapabilityStatement/metadata`
+`https://www.medizininformatik-initiative.de/fhir/modul-lungenfunktion/CapabilityStatement/metadata`
 
 <!-- Korrektur beim Transfer: die Quellseite nannte an dieser Stelle den
      Canonical des Moduls BILDGEBUNG (…/modul-bildgebung/CapabilityStatement/metadata).

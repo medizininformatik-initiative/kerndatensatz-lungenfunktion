@@ -4,7 +4,7 @@ Parent: MII_PR_Lungenfunktion_Widerstand
 Id: mii-pr-lungenfunktion-r
 Title: "MII PR Lungenfunktion R"
 Description: "Dieses Profil beschreibt die Messung des Atemwegswiderstand."
-* ^url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-r"
+* ^url = "https://www.medizininformatik-initiative.de/fhir/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-r"
 //Translation Meta
 * insert Translation(^name, en-US, MII_PR_Lungfunction_R)
 * insert Translation(^title, en-US, MII PR Lungfunction R)

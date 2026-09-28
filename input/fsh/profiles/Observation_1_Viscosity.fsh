@@ -4,7 +4,7 @@ Parent: Observation
 Id: mii-pr-lungenfunktion-1-viskositaet
 Title: "MII PR Lungenfunktion 1/Viscosity"
 Description: "Dieses Beobachtung beschreibt eine spezifische totale Atemwegsleitfähigkeit."
-* ^url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-1-viskositaet"
+* ^url = "https://www.medizininformatik-initiative.de/fhir/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-1-viskositaet"
 //Translation Meta
 * insert Translation(^name, en-US, MII_PR_Lungfunction_1_Viscosity)
 * insert Translation(^title, en-US, MII PR Lungfunction 1/Viscosity)

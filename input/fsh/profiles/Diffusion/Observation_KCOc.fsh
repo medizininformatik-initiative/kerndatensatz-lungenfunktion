@@ -4,7 +4,7 @@ Parent: MII_PR_Lungenfunktion_Transferkoeffizient
 Id: mii-pr-lungenfunktion-kcoc
 Title: "MII PR Lungenfunktion KCOc"
 Description: "Dieses Profil beschreibt die Messung der korrigierten Transferkapzität von Kohlenstoffmonoxid."
-* ^url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-kcoc"
+* ^url = "https://www.medizininformatik-initiative.de/fhir/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-kcoc"
 //Translation Meta
 * insert Translation(^name, en-US, MII PR Lung function_KCOc)
 * insert Translation(^title, en-US, MII PR Lung function KCOc)

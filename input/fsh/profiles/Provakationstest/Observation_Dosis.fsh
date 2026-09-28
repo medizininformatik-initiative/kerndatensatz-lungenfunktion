@@ -4,7 +4,7 @@ Parent: Observation
 Id: mii-pr-lungenfunktion-dosis
 Title: "MII PR Lungenfunktion Dosis"
 Description: "Dieses Profil beschreibt die Messung der Dosis."
-* ^url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-dosis"
+* ^url = "https://www.medizininformatik-initiative.de/fhir/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-dosis"
 //Translation Meta
 * insert Translation(^name, en-US, MII_PR_Lungfunction_Dose)
 * insert Translation(^title, en-US, MII PR Lungfunction Dose)

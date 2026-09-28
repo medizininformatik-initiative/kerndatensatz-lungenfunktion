@@ -4,7 +4,7 @@ Parent: Observation
 Id: mii-pr-lungenfunktion-prozent
 Title: "MII PR Lungenfunktion Prozent"
 Description: "Dieses Beobachtung beschreibt einen prozentualen Anteil."
-* ^url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-prozent"
+* ^url = "https://www.medizininformatik-initiative.de/fhir/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-prozent"
 //Translation Meta
 * insert Translation(^name, en-US, MII_PR_Lungfunction_Percent)
 * insert Translation(^title, en-US, MII PR Lungfunction Percent)

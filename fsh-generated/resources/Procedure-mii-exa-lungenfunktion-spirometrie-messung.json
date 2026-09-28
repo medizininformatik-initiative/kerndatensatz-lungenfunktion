@@ -3,7 +3,7 @@
   "id": "mii-exa-lungenfunktion-spirometrie-messung",
   "meta": {
     "profile": [
-      "https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-spirometrie-messung"
+      "https://www.medizininformatik-initiative.de/fhir/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-spirometrie-messung"
     ]
   },
   "status": "completed",

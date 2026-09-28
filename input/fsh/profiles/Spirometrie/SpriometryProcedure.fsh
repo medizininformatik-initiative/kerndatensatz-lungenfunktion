@@ -4,7 +4,7 @@ Parent: $MII-Procedure
 Id: mii-pr-lungenfunktion-spirometrie-messung
 Title: "MII PR Lungenfunktion Spirometire Messung"
 Description: "Beschreibt die Tätigkeiten, wie eine Spirometrie durchgeführt wird."
-* ^url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-spirometrie-messung"
+* ^url = "https://www.medizininformatik-initiative.de/fhir/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-spirometrie-messung"
 //Translation Meta
 * insert Translation(^name, en-US, MII_PR_Lungfunction_Spirometry_Measurement)
 * insert Translation(^title, en-US, MII PR Lungfunction Spirometry Measurement)

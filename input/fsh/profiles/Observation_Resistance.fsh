@@ -4,7 +4,7 @@ Parent: Observation
 Id: mii-pr-lungenfunktion-widerstand
 Title: "MII PR Lungenfunktion Widerstand"
 Description: "Dieses Beobachtung beschreibt eine Widerstandsmessung."
-* ^url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-widerstand"
+* ^url = "https://www.medizininformatik-initiative.de/fhir/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-widerstand"
 //Translation Meta
 * insert Translation(^name, en-US, MII_PR_Lungfunction_Resistence)
 * insert Translation(^title, en-US, MII PR Lungfunction Resistence)

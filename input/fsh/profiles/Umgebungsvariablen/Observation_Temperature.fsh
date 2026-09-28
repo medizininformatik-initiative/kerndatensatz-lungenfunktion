@@ -4,7 +4,7 @@ Parent: Observation
 Id: mii-pr-lungenfunktion-lufttemperatur
 Title: "MII PR Lungenfunktion Lufttemperatur"
 Description: "Dieses Beobachtung beschreibt eine Lufttemperaturmessung."
-* ^url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-lufttemperatur"
+* ^url = "https://www.medizininformatik-initiative.de/fhir/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-lufttemperatur"
 //Translation Meta
 * insert Translation(^name, en-US, MII_PR_Lungfunction_Airtemperature)
 * insert Translation(^title, en-US, MII PR Lungfunction Airtemperature)

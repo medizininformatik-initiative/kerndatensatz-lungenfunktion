@@ -4,7 +4,7 @@ Parent: MII_PR_Lungenfunktion_Volumen
 Id: mii-pr-lungenfunktion-tlc
 Title: "MII PR Lungenfunktion TLC"
 Description: "Dieses Profil beschreibt die Messung der totalen Lungenkapazität."
-* ^url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-tlc"
+* ^url = "https://www.medizininformatik-initiative.de/fhir/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-tlc"
 //Translation Meta
 * insert Translation(^name, en-US, MII_PR_Lungfunction_TLC)
 * insert Translation(^title, en-US, MII PR Lungfunction TLC)

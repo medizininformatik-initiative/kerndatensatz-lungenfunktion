@@ -4,7 +4,7 @@ Parent: Observation
 Id: mii-pr-lungenfunktion-viskositaet
 Title: "MII PR Lungenfunktion Viskosität"
 Description: "Dieses Beobachtung beschreibt eine Viskositätsmessung."
-* ^url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-viskositaet"
+* ^url = "https://www.medizininformatik-initiative.de/fhir/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-viskositaet"
 //Translation Meta
 * insert Translation(^name, en-US, MII_PR_Lungfunction_Viscosity)
 * insert Translation(^title, en-US, MII PR Lungfunction Viscosity)

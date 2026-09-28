@@ -4,7 +4,7 @@ Parent: DiagnosticReport
 Id: mii-pr-lungenfunktion-befund
 Title: "MII PR Lungenfunktion Template"
 Description: "Diese Ressource beschreibt einen Befunde eines Lungenfunktionstest"
-* ^url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-befund"
+* ^url = "https://www.medizininformatik-initiative.de/fhir/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-befund"
 //Translation Meta
 * insert Translation(^name, en-US, MII_PR_Lungfunction_Report)
 * insert Translation(^title, en-US, MII PR Lungfunction Report)

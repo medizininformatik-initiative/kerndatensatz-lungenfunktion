@@ -4,7 +4,7 @@ Parent: MII_PR_Lungenfunktion_Volumen
 Id: mii-pr-lungenfunktion-irv-erv
 Title: "MII PR Lungenfunktion Reserve Volumen"
 Description: "Dieses Profil beschreibt die Messung des Reservevolumen."
-* ^url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-irv-erv"
+* ^url = "https://www.medizininformatik-initiative.de/fhir/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-irv-erv"
 //Translation Meta
 * insert Translation(^name, en-US, MII_PR_Lungfunction_IRV_ERV)
 * insert Translation(^title, en-US, MII PR Lungfunction Reserve Volume)

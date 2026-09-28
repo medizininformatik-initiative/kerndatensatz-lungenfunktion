@@ -14,7 +14,7 @@ Description: "MII LogicalModel Modul Lungenfunktion"
 * insert PR_CS_VS_Version
 * insert LicenseCodeableCCBY40
 * insert PR_CS_VS_Date
-* ^url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/LogicalModel/Lungenfunktion"
+* ^url = "https://www.medizininformatik-initiative.de/fhir/modul-lungenfunktion/StructureDefinition/LogicalModel/Lungenfunktion"
 * . ^short = "Das Erweiterungsmodul Lungenfunktion enthält Datenelemente zur Dokumentation von Lungenfunktionsuntersuchungen (Spirometrie, Bodyplethysmographie, Diffusionskapazität, Provokationstestung) und zugehörigen Befundberichten."
 //LM
 * Lungenfunktionsprozedur 0..1 BackboneElement "Lungenfunktionsprozedur" "Generische Prozedur einer Lungenfunktionmessung. Hier soll das MII KDS-Profil Prozedur verwendet werden."
