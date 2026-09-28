@@ -36,8 +36,8 @@ Description: "Dieses Beobachtung beschreibt eine Flussmessung."
 * category 1.. MS
 * category.coding = $observation-category#procedure
 * code MS
-* code.coding ^slicing.discriminator.type = #value
-* code.coding ^slicing.discriminator.path = "$this"
+* code.coding ^slicing.discriminator.type = #pattern
+* code.coding ^slicing.discriminator.path = "code"
 * code.coding ^slicing.rules = #open
 * code.coding contains
     sct 0..1 and
@@ -68,9 +68,10 @@ Description: "Dieses Beobachtung beschreibt eine Flussmessung."
 * hasMember only Reference(Observation)
 * derivedFrom MS
 * component MS
-* component ^slicing.discriminator.type = #value
-* component ^slicing.discriminator.path = "$this"
+* component ^slicing.discriminator.type = #pattern
+* component ^slicing.discriminator.path = "code"
 * component ^slicing.rules = #open
+* component ^patternCodeableConcept = #component:<slice>.code
 * component contains
     predicted 0..1 MS and
     percentPredicted 0..1 MS and

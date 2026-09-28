@@ -1167,7 +1167,7 @@
           "discriminator": [
             {
               "type": "pattern",
-              "path": "$this"
+              "path": "code"
             }
           ],
           "rules": "open"
@@ -1231,6 +1231,13 @@
                   "valueString": "detailed components of this observation"
                 }
               ]
+            }
+          ]
+        },
+        "patternCodeableConcept": {
+          "coding": [
+            {
+              "code": "component:<slice>.code"
             }
           ]
         },

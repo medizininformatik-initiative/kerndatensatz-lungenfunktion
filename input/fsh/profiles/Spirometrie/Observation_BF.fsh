@@ -88,8 +88,9 @@ Description: "Dieses Profil beschreibt die Messung der Atemfrequenz."
 * component ^short = "Bestandteile"
 * component ^definition = "detailierte Bestandteile der Beobachtung"
 * component ^slicing.discriminator.type = #pattern
-* component ^slicing.discriminator.path = "$this"
+* component ^slicing.discriminator.path = "code"
 * component ^slicing.rules = #open
+* component ^patternCodeableConcept = #component:<slice>.code
 * component contains
     predicted 0..1 MS and
     percentPredicted 0..1 MS

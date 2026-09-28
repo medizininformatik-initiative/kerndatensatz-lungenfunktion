@@ -29,8 +29,8 @@ Description: "Diese Ressource beschreibt einen Befunde der Spirometrie"
 //Profile
 * code.coding[loinc] = $loinc#18759-1 "Spirometry study"
 * code.coding[sct] = $sct#127783003 "Spirometry (procedure)"
-* result ^slicing.discriminator.type = #type
-* result ^slicing.discriminator.path = "$this"
+* result ^slicing.discriminator.type = #profile
+* result ^slicing.discriminator.path = "$this.resolve()"
 * result ^slicing.rules = #open
 * result contains
     BF 0..1 MS and

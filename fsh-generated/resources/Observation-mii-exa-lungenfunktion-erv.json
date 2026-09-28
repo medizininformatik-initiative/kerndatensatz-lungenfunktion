@@ -16,6 +16,50 @@
       ]
     }
   ],
+  "component": [
+    {
+      "coding": [
+        {
+          "code": "component:<slice>.code"
+        }
+      ],
+      "code": {
+        "coding": [
+          {
+            "code": "19923-2",
+            "system": "http://loinc.org",
+            "display": "Expiratory reserve Predicted"
+          }
+        ]
+      },
+      "valueQuantity": {
+        "value": 1.31,
+        "code": "L",
+        "system": "http://unitsofmeasure.org"
+      }
+    },
+    {
+      "coding": [
+        {
+          "code": "component:<slice>.code"
+        }
+      ],
+      "code": {
+        "coding": [
+          {
+            "code": "TODO",
+            "system": "http://snomed.info/sct",
+            "version": "http://snomed.info/sct/900000000000207008/version/20260701"
+          }
+        ]
+      },
+      "valueQuantity": {
+        "value": 18,
+        "code": "%",
+        "system": "http://unitsofmeasure.org"
+      }
+    }
+  ],
   "partOf": [
     {
       "reference": "Procedure/mii-exa-lungenfunktion-spirometrie-messung"
@@ -66,40 +110,6 @@
       "low": {
         "value": 1.31,
         "code": "L",
-        "system": "http://unitsofmeasure.org"
-      }
-    }
-  ],
-  "component": [
-    {
-      "code": {
-        "coding": [
-          {
-            "code": "19923-2",
-            "system": "http://loinc.org",
-            "display": "Expiratory reserve Predicted"
-          }
-        ]
-      },
-      "valueQuantity": {
-        "value": 1.31,
-        "code": "L",
-        "system": "http://unitsofmeasure.org"
-      }
-    },
-    {
-      "code": {
-        "coding": [
-          {
-            "code": "TODO",
-            "system": "http://snomed.info/sct",
-            "version": "http://snomed.info/sct/900000000000207008/version/20260701"
-          }
-        ]
-      },
-      "valueQuantity": {
-        "value": 18,
-        "code": "%",
         "system": "http://unitsofmeasure.org"
       }
     }

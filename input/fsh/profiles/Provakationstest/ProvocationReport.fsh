@@ -29,8 +29,8 @@ Description: "Diese Ressource beschreibt einen Befunde des Provokationstest"
 //Profile
 * code.coding[loinc] = $loinc#TODO
 * code.coding[sct] = $sct#252520007 "Methacholine challenge (procedure)"
-* result ^slicing.discriminator.type = #type
-* result ^slicing.discriminator.path = "$this"
+* result ^slicing.discriminator.type = #profile
+* result ^slicing.discriminator.path = "$this.resolve().code"
 * result ^slicing.rules = #open
 * result contains
     Dosis_Schwellwert 1..1 MS and

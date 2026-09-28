@@ -16,6 +16,50 @@
       ]
     }
   ],
+  "component": [
+    {
+      "coding": [
+        {
+          "code": "component:<slice>.code"
+        }
+      ],
+      "code": {
+        "coding": [
+          {
+            "code": "19851-5",
+            "system": "http://loinc.org",
+            "display": "Inspiratory capacity Predicted"
+          }
+        ]
+      },
+      "valueQuantity": {
+        "value": 3.31,
+        "code": "L",
+        "system": "http://unitsofmeasure.org"
+      }
+    },
+    {
+      "coding": [
+        {
+          "code": "component:<slice>.code"
+        }
+      ],
+      "code": {
+        "coding": [
+          {
+            "code": "19856-4",
+            "system": "http://loinc.org",
+            "display": "Inspiratory capacity measured/predicted"
+          }
+        ]
+      },
+      "valueQuantity": {
+        "value": 73,
+        "code": "%",
+        "system": "http://unitsofmeasure.org"
+      }
+    }
+  ],
   "partOf": [
     {
       "reference": "Procedure/mii-exa-lungenfunktion-spirometrie-messung"
@@ -66,40 +110,6 @@
       "low": {
         "value": 3.31,
         "code": "L",
-        "system": "http://unitsofmeasure.org"
-      }
-    }
-  ],
-  "component": [
-    {
-      "code": {
-        "coding": [
-          {
-            "code": "19851-5",
-            "system": "http://loinc.org",
-            "display": "Inspiratory capacity Predicted"
-          }
-        ]
-      },
-      "valueQuantity": {
-        "value": 3.31,
-        "code": "L",
-        "system": "http://unitsofmeasure.org"
-      }
-    },
-    {
-      "code": {
-        "coding": [
-          {
-            "code": "19856-4",
-            "system": "http://loinc.org",
-            "display": "Inspiratory capacity measured/predicted"
-          }
-        ]
-      },
-      "valueQuantity": {
-        "value": 73,
-        "code": "%",
         "system": "http://unitsofmeasure.org"
       }
     }

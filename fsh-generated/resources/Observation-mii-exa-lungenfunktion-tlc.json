@@ -16,6 +16,71 @@
       ]
     }
   ],
+  "component": [
+    {
+      "coding": [
+        {
+          "code": "component:<slice>.code"
+        }
+      ],
+      "code": {
+        "coding": [
+          {
+            "code": "19861-4",
+            "system": "http://loinc.org",
+            "display": "Total lung capacity Predicted"
+          }
+        ]
+      },
+      "valueQuantity": {
+        "value": 6.82,
+        "code": "L",
+        "system": "http://unitsofmeasure.org"
+      }
+    },
+    {
+      "coding": [
+        {
+          "code": "component:<slice>.code"
+        }
+      ],
+      "code": {
+        "coding": [
+          {
+            "code": "89085-5",
+            "system": "http://loinc.org",
+            "display": "Total lung capacity measured/predicted by Plethysmograph body box"
+          }
+        ]
+      },
+      "valueQuantity": {
+        "value": 73,
+        "code": "%",
+        "system": "http://unitsofmeasure.org"
+      }
+    },
+    {
+      "coding": [
+        {
+          "code": "component:<slice>.code"
+        }
+      ],
+      "code": {
+        "coding": [
+          {
+            "code": "1078210003",
+            "system": "http://snomed.info/sct",
+            "version": "http://snomed.info/sct/900000000000207008/version/20260701",
+            "display": "Z-score calculation technique (qualifier value)"
+          }
+        ]
+      },
+      "valueQuantity": {
+        "value": -2.6,
+        "system": "http://unitsofmeasure.org"
+      }
+    }
+  ],
   "partOf": [
     {
       "reference": "Procedure/mii-exa-lungenfunktion-bodyplethysmographie-messung"
@@ -66,56 +131,6 @@
       "low": {
         "value": 5.67,
         "code": "L",
-        "system": "http://unitsofmeasure.org"
-      }
-    }
-  ],
-  "component": [
-    {
-      "code": {
-        "coding": [
-          {
-            "code": "19861-4",
-            "system": "http://loinc.org",
-            "display": "Total lung capacity Predicted"
-          }
-        ]
-      },
-      "valueQuantity": {
-        "value": 6.82,
-        "code": "L",
-        "system": "http://unitsofmeasure.org"
-      }
-    },
-    {
-      "code": {
-        "coding": [
-          {
-            "code": "89085-5",
-            "system": "http://loinc.org",
-            "display": "Total lung capacity measured/predicted by Plethysmograph body box"
-          }
-        ]
-      },
-      "valueQuantity": {
-        "value": 73,
-        "code": "%",
-        "system": "http://unitsofmeasure.org"
-      }
-    },
-    {
-      "code": {
-        "coding": [
-          {
-            "code": "1078210003",
-            "system": "http://snomed.info/sct",
-            "version": "http://snomed.info/sct/900000000000207008/version/20260701",
-            "display": "Z-score calculation technique (qualifier value)"
-          }
-        ]
-      },
-      "valueQuantity": {
-        "value": -2.6,
         "system": "http://unitsofmeasure.org"
       }
     }

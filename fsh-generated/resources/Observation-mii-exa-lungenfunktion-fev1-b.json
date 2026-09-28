@@ -16,6 +16,30 @@
       ]
     }
   ],
+  "component": [
+    {
+      "coding": [
+        {
+          "code": "component:<slice>.code"
+        }
+      ],
+      "code": {
+        "coding": [
+          {
+            "code": "310520004",
+            "system": "http://snomed.info/sct",
+            "version": "http://snomed.info/sct/900000000000207008/version/20260701",
+            "display": "Expected forced expired volume in 1 second (observable entity)"
+          }
+        ]
+      },
+      "valueQuantity": {
+        "value": 2.71,
+        "code": "L",
+        "system": "http://unitsofmeasure.org"
+      }
+    }
+  ],
   "partOf": [
     {
       "reference": "Procedure/mii-exa-lungenfunktion-provokationstest-messung"
@@ -60,24 +84,5 @@
         "display": "Sitting upright (finding)"
       }
     ]
-  },
-  "component": [
-    {
-      "code": {
-        "coding": [
-          {
-            "code": "310520004",
-            "system": "http://snomed.info/sct",
-            "version": "http://snomed.info/sct/900000000000207008/version/20260701",
-            "display": "Expected forced expired volume in 1 second (observable entity)"
-          }
-        ]
-      },
-      "valueQuantity": {
-        "value": 2.71,
-        "code": "L",
-        "system": "http://unitsofmeasure.org"
-      }
-    }
-  ]
+  }
 }

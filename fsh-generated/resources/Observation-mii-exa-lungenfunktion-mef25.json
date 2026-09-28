@@ -16,6 +16,71 @@
       ]
     }
   ],
+  "component": [
+    {
+      "coding": [
+        {
+          "code": "component:<slice>.code"
+        }
+      ],
+      "code": {
+        "coding": [
+          {
+            "code": "TODO",
+            "system": "http://snomed.info/sct",
+            "version": "http://snomed.info/sct/900000000000207008/version/20260701"
+          }
+        ]
+      },
+      "valueQuantity": {
+        "value": 1.25,
+        "code": "L/s",
+        "system": "http://unitsofmeasure.org"
+      }
+    },
+    {
+      "coding": [
+        {
+          "code": "component:<slice>.code"
+        }
+      ],
+      "code": {
+        "coding": [
+          {
+            "code": "TODO",
+            "system": "http://snomed.info/sct",
+            "version": "http://snomed.info/sct/900000000000207008/version/20260701"
+          }
+        ]
+      },
+      "valueQuantity": {
+        "value": 97,
+        "code": "%",
+        "system": "http://unitsofmeasure.org"
+      }
+    },
+    {
+      "coding": [
+        {
+          "code": "component:<slice>.code"
+        }
+      ],
+      "code": {
+        "coding": [
+          {
+            "code": "1078210003",
+            "system": "http://snomed.info/sct",
+            "version": "http://snomed.info/sct/900000000000207008/version/20260701",
+            "display": "Z-score calculation technique (qualifier value)"
+          }
+        ]
+      },
+      "valueQuantity": {
+        "value": -0.1,
+        "system": "http://unitsofmeasure.org"
+      }
+    }
+  ],
   "partOf": [
     {
       "reference": "Procedure/mii-exa-lungenfunktion-spirometrie-messung"
@@ -66,56 +131,6 @@
       "low": {
         "value": 0.57,
         "code": "L/s",
-        "system": "http://unitsofmeasure.org"
-      }
-    }
-  ],
-  "component": [
-    {
-      "code": {
-        "coding": [
-          {
-            "code": "TODO",
-            "system": "http://snomed.info/sct",
-            "version": "http://snomed.info/sct/900000000000207008/version/20260701"
-          }
-        ]
-      },
-      "valueQuantity": {
-        "value": 1.25,
-        "code": "L/s",
-        "system": "http://unitsofmeasure.org"
-      }
-    },
-    {
-      "code": {
-        "coding": [
-          {
-            "code": "TODO",
-            "system": "http://snomed.info/sct",
-            "version": "http://snomed.info/sct/900000000000207008/version/20260701"
-          }
-        ]
-      },
-      "valueQuantity": {
-        "value": 97,
-        "code": "%",
-        "system": "http://unitsofmeasure.org"
-      }
-    },
-    {
-      "code": {
-        "coding": [
-          {
-            "code": "1078210003",
-            "system": "http://snomed.info/sct",
-            "version": "http://snomed.info/sct/900000000000207008/version/20260701",
-            "display": "Z-score calculation technique (qualifier value)"
-          }
-        ]
-      },
-      "valueQuantity": {
-        "value": -0.1,
         "system": "http://unitsofmeasure.org"
       }
     }

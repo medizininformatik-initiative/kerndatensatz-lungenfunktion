@@ -16,6 +16,71 @@
       ]
     }
   ],
+  "component": [
+    {
+      "coding": [
+        {
+          "code": "component:<slice>.code"
+        }
+      ],
+      "code": {
+        "coding": [
+          {
+            "code": "19910-9",
+            "system": "http://loinc.org",
+            "display": "Diffusion capacity.carbon monoxide Predicted"
+          }
+        ]
+      },
+      "valueQuantity": {
+        "value": 9.5,
+        "code": "mmol/(min.kPa)",
+        "system": "http://unitsofmeasure.org"
+      }
+    },
+    {
+      "coding": [
+        {
+          "code": "component:<slice>.code"
+        }
+      ],
+      "code": {
+        "coding": [
+          {
+            "code": "98130-8",
+            "system": "http://loinc.org",
+            "display": "Diffusion capacity.carbon monoxide/Predicted"
+          }
+        ]
+      },
+      "valueQuantity": {
+        "value": 87,
+        "code": "%",
+        "system": "http://unitsofmeasure.org"
+      }
+    },
+    {
+      "coding": [
+        {
+          "code": "component:<slice>.code"
+        }
+      ],
+      "code": {
+        "coding": [
+          {
+            "code": "1078210003",
+            "system": "http://snomed.info/sct",
+            "version": "http://snomed.info/sct/900000000000207008/version/20260701",
+            "display": "Z-score calculation technique (qualifier value)"
+          }
+        ]
+      },
+      "valueQuantity": {
+        "value": -0.9,
+        "system": "http://unitsofmeasure.org"
+      }
+    }
+  ],
   "partOf": [
     {
       "reference": "Procedure/mii-exa-lungenfunktion-diffusion-messung"
@@ -75,56 +140,6 @@
     },
     {
       "reference": "Observation/mii-exa-lungenfunktion-dlco"
-    }
-  ],
-  "component": [
-    {
-      "code": {
-        "coding": [
-          {
-            "code": "19910-9",
-            "system": "http://loinc.org",
-            "display": "Diffusion capacity.carbon monoxide Predicted"
-          }
-        ]
-      },
-      "valueQuantity": {
-        "value": 9.5,
-        "code": "mmol/(min.kPa)",
-        "system": "http://unitsofmeasure.org"
-      }
-    },
-    {
-      "code": {
-        "coding": [
-          {
-            "code": "98130-8",
-            "system": "http://loinc.org",
-            "display": "Diffusion capacity.carbon monoxide/Predicted"
-          }
-        ]
-      },
-      "valueQuantity": {
-        "value": 87,
-        "code": "%",
-        "system": "http://unitsofmeasure.org"
-      }
-    },
-    {
-      "code": {
-        "coding": [
-          {
-            "code": "1078210003",
-            "system": "http://snomed.info/sct",
-            "version": "http://snomed.info/sct/900000000000207008/version/20260701",
-            "display": "Z-score calculation technique (qualifier value)"
-          }
-        ]
-      },
-      "valueQuantity": {
-        "value": -0.9,
-        "system": "http://unitsofmeasure.org"
-      }
     }
   ]
 }

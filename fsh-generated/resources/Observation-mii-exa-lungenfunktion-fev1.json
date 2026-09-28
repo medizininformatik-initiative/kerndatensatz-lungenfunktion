@@ -16,6 +16,73 @@
       ]
     }
   ],
+  "component": [
+    {
+      "coding": [
+        {
+          "code": "component:<slice>.code"
+        }
+      ],
+      "code": {
+        "coding": [
+          {
+            "code": "310520004",
+            "system": "http://snomed.info/sct",
+            "version": "http://snomed.info/sct/900000000000207008/version/20260701",
+            "display": "Expected forced expired volume in 1 second (observable entity)"
+          }
+        ]
+      },
+      "valueQuantity": {
+        "value": 3.8,
+        "code": "L",
+        "system": "http://unitsofmeasure.org"
+      }
+    },
+    {
+      "coding": [
+        {
+          "code": "component:<slice>.code"
+        }
+      ],
+      "code": {
+        "coding": [
+          {
+            "code": "313223002",
+            "system": "http://snomed.info/sct",
+            "version": "http://snomed.info/sct/900000000000207008/version/20260701",
+            "display": "Percent predicted forced expired volume in one second (observable entity)"
+          }
+        ]
+      },
+      "valueQuantity": {
+        "value": 59,
+        "code": "%",
+        "system": "http://unitsofmeasure.org"
+      }
+    },
+    {
+      "coding": [
+        {
+          "code": "component:<slice>.code"
+        }
+      ],
+      "code": {
+        "coding": [
+          {
+            "code": "1078210003",
+            "system": "http://snomed.info/sct",
+            "version": "http://snomed.info/sct/900000000000207008/version/20260701",
+            "display": "Z-score calculation technique (qualifier value)"
+          }
+        ]
+      },
+      "valueQuantity": {
+        "value": -3.1,
+        "system": "http://unitsofmeasure.org"
+      }
+    }
+  ],
   "partOf": [
     {
       "reference": "Procedure/mii-exa-lungenfunktion-spirometrie-messung"
@@ -66,58 +133,6 @@
       "low": {
         "value": 2.98,
         "code": "L",
-        "system": "http://unitsofmeasure.org"
-      }
-    }
-  ],
-  "component": [
-    {
-      "code": {
-        "coding": [
-          {
-            "code": "310520004",
-            "system": "http://snomed.info/sct",
-            "version": "http://snomed.info/sct/900000000000207008/version/20260701",
-            "display": "Expected forced expired volume in 1 second (observable entity)"
-          }
-        ]
-      },
-      "valueQuantity": {
-        "value": 3.8,
-        "code": "L",
-        "system": "http://unitsofmeasure.org"
-      }
-    },
-    {
-      "code": {
-        "coding": [
-          {
-            "code": "313223002",
-            "system": "http://snomed.info/sct",
-            "version": "http://snomed.info/sct/900000000000207008/version/20260701",
-            "display": "Percent predicted forced expired volume in one second (observable entity)"
-          }
-        ]
-      },
-      "valueQuantity": {
-        "value": 59,
-        "code": "%",
-        "system": "http://unitsofmeasure.org"
-      }
-    },
-    {
-      "code": {
-        "coding": [
-          {
-            "code": "1078210003",
-            "system": "http://snomed.info/sct",
-            "version": "http://snomed.info/sct/900000000000207008/version/20260701",
-            "display": "Z-score calculation technique (qualifier value)"
-          }
-        ]
-      },
-      "valueQuantity": {
-        "value": -3.1,
         "system": "http://unitsofmeasure.org"
       }
     }

@@ -16,6 +16,71 @@
       ]
     }
   ],
+  "component": [
+    {
+      "coding": [
+        {
+          "code": "component:<slice>.code"
+        }
+      ],
+      "code": {
+        "coding": [
+          {
+            "code": "20145-9",
+            "system": "http://loinc.org",
+            "display": "Residual volume Predicted"
+          }
+        ]
+      },
+      "valueQuantity": {
+        "value": 2.11,
+        "code": "L",
+        "system": "http://unitsofmeasure.org"
+      }
+    },
+    {
+      "coding": [
+        {
+          "code": "component:<slice>.code"
+        }
+      ],
+      "code": {
+        "coding": [
+          {
+            "code": "94125-2",
+            "system": "http://loinc.org",
+            "display": "Residual volume/Predicted by Plethysmograph body box"
+          }
+        ]
+      },
+      "valueQuantity": {
+        "value": 143,
+        "code": "%",
+        "system": "http://unitsofmeasure.org"
+      }
+    },
+    {
+      "coding": [
+        {
+          "code": "component:<slice>.code"
+        }
+      ],
+      "code": {
+        "coding": [
+          {
+            "code": "1078210003",
+            "system": "http://snomed.info/sct",
+            "version": "http://snomed.info/sct/900000000000207008/version/20260701",
+            "display": "Z-score calculation technique (qualifier value)"
+          }
+        ]
+      },
+      "valueQuantity": {
+        "value": 2.2,
+        "system": "http://unitsofmeasure.org"
+      }
+    }
+  ],
   "partOf": [
     {
       "reference": "Procedure/mii-exa-lungenfunktion-bodyplethysmographie-messung"
@@ -65,56 +130,6 @@
       "low": {
         "value": 1.43,
         "code": "L",
-        "system": "http://unitsofmeasure.org"
-      }
-    }
-  ],
-  "component": [
-    {
-      "code": {
-        "coding": [
-          {
-            "code": "20145-9",
-            "system": "http://loinc.org",
-            "display": "Residual volume Predicted"
-          }
-        ]
-      },
-      "valueQuantity": {
-        "value": 2.11,
-        "code": "L",
-        "system": "http://unitsofmeasure.org"
-      }
-    },
-    {
-      "code": {
-        "coding": [
-          {
-            "code": "94125-2",
-            "system": "http://loinc.org",
-            "display": "Residual volume/Predicted by Plethysmograph body box"
-          }
-        ]
-      },
-      "valueQuantity": {
-        "value": 143,
-        "code": "%",
-        "system": "http://unitsofmeasure.org"
-      }
-    },
-    {
-      "code": {
-        "coding": [
-          {
-            "code": "1078210003",
-            "system": "http://snomed.info/sct",
-            "version": "http://snomed.info/sct/900000000000207008/version/20260701",
-            "display": "Z-score calculation technique (qualifier value)"
-          }
-        ]
-      },
-      "valueQuantity": {
-        "value": 2.2,
         "system": "http://unitsofmeasure.org"
       }
     }

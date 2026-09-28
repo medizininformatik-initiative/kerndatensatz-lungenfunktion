@@ -29,8 +29,8 @@ Description: "Diese Ressource beschreibt einen Befunde der Bodyplethysmographie"
 //Profile
 * code.coding[loinc] = $loinc#TODO
 * code.coding[sct] = $sct#28275007 "Total body plethysmography (procedure)"
-* result ^slicing.discriminator.type = #type
-* result ^slicing.discriminator.path = "$this"
+* result ^slicing.discriminator.type = #profile
+* result ^slicing.discriminator.path = "$this.resolve"
 * result ^slicing.rules = #open
 * result contains
     BF 0..1 MS and

@@ -16,6 +16,50 @@
       ]
     }
   ],
+  "component": [
+    {
+      "coding": [
+        {
+          "code": "component:<slice>.code"
+        }
+      ],
+      "code": {
+        "coding": [
+          {
+            "code": "TODO",
+            "system": "http://snomed.info/sct",
+            "version": "http://snomed.info/sct/900000000000207008/version/20260701"
+          }
+        ]
+      },
+      "valueQuantity": {
+        "value": 0.85,
+        "code": "/kPA.s",
+        "system": "http://unitsofmeasure.org"
+      }
+    },
+    {
+      "coding": [
+        {
+          "code": "component:<slice>.code"
+        }
+      ],
+      "code": {
+        "coding": [
+          {
+            "code": "TODO",
+            "system": "http://snomed.info/sct",
+            "version": "http://snomed.info/sct/900000000000207008/version/20260701"
+          }
+        ]
+      },
+      "valueQuantity": {
+        "value": 108,
+        "code": "%",
+        "system": "http://unitsofmeasure.org"
+      }
+    }
+  ],
   "partOf": [
     {
       "reference": "Procedure/mii-exa-lungenfunktion-bodyplethysmographie-messung"
@@ -60,39 +104,5 @@
         "display": "Sitting upright (finding)"
       }
     ]
-  },
-  "component": [
-    {
-      "code": {
-        "coding": [
-          {
-            "code": "TODO",
-            "system": "http://snomed.info/sct",
-            "version": "http://snomed.info/sct/900000000000207008/version/20260701"
-          }
-        ]
-      },
-      "valueQuantity": {
-        "value": 0.85,
-        "code": "/kPA.s",
-        "system": "http://unitsofmeasure.org"
-      }
-    },
-    {
-      "code": {
-        "coding": [
-          {
-            "code": "TODO",
-            "system": "http://snomed.info/sct",
-            "version": "http://snomed.info/sct/900000000000207008/version/20260701"
-          }
-        ]
-      },
-      "valueQuantity": {
-        "value": 108,
-        "code": "%",
-        "system": "http://unitsofmeasure.org"
-      }
-    }
-  ]
+  }
 }
