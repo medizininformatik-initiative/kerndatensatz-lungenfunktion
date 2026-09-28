@@ -1235,8 +1235,8 @@
       <path value="Observation.code.coding"/>
       <slicing>
         <discriminator>
-          <type value="value"/>
-          <path value="$this"/>
+          <type value="pattern"/>
+          <path value="code"/>
         </discriminator>
         <rules value="open"/>
       </slicing>
@@ -3310,8 +3310,8 @@
       <path value="Observation.component"/>
       <slicing>
         <discriminator>
-          <type value="value"/>
-          <path value="$this"/>
+          <type value="pattern"/>
+          <path value="code"/>
         </discriminator>
         <rules value="open"/>
       </slicing>
@@ -3329,6 +3329,11 @@
       <type>
         <code value="BackboneElement"/>
       </type>
+      <patternCodeableConcept>
+        <coding>
+          <code value="component:&lt;slice&gt;.code"/>
+        </coding>
+      </patternCodeableConcept>
       <constraint>
         <key value="ele-1"/>
         <severity value="error"/>

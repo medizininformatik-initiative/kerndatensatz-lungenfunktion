@@ -179,7 +179,7 @@ Reported by","",0,*,"","","Y","Reference {[]} {[CanonicalType[http://hl7.org/fhi
 ","SPM"
 "DiagnosticReport.result","DiagnosticReport.result","","Data
 Atomic ValueResultAtomic resultDataTestAnalyteBatteryOrganizer","",0,*,"Y","","","Reference {[]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/Observation|4.0.1]]}
-","Ergebnis","Ergebnis einer Beobachtung","Observations can contain observations.","Need to support individual results, or  groups of results, where the result grouping is arbitrary, but meaningful.","","","","","","","",,,,,"","type:$this}
+","Ergebnis","Ergebnis einer Beobachtung","Observations can contain observations.","Need to support individual results, or  groups of results, where the result grouping is arbitrary, but meaningful.","","","","","","","",,,,,"","profile:$this.resolve()}
 ","",,"open","DiagnosticReport.result",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","OBXs"
 "DiagnosticReport.result:BF","DiagnosticReport.result","BF","Data

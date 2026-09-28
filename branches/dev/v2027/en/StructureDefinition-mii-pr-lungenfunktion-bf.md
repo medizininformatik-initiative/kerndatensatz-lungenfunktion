@@ -1020,7 +1020,7 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-lungenfunk
       "slicing" : {
         "discriminator" : [{
           "type" : "pattern",
-          "path" : "$this"
+          "path" : "code"
         }],
         "rules" : "open"
       },
@@ -1072,6 +1072,11 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-lungenfunk
             "valueString" : "detailed components of this observation"
           }],
           "url" : "http://hl7.org/fhir/StructureDefinition/translation"
+        }]
+      },
+      "patternCodeableConcept" : {
+        "coding" : [{
+          "code" : "component:<slice>.code"
         }]
       },
       "mustSupport" : true

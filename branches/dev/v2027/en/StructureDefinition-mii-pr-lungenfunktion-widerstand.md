@@ -398,8 +398,8 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-lungenfunk
       "path" : "Observation.code.coding",
       "slicing" : {
         "discriminator" : [{
-          "type" : "value",
-          "path" : "$this"
+          "type" : "pattern",
+          "path" : "code"
         }],
         "rules" : "open"
       }
@@ -1133,8 +1133,8 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-lungenfunk
       "path" : "Observation.component",
       "slicing" : {
         "discriminator" : [{
-          "type" : "value",
-          "path" : "$this"
+          "type" : "pattern",
+          "path" : "code"
         }],
         "rules" : "open"
       },
@@ -1186,6 +1186,11 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-lungenfunk
             "valueString" : "detailed components of this observation"
           }],
           "url" : "http://hl7.org/fhir/StructureDefinition/translation"
+        }]
+      },
+      "patternCodeableConcept" : {
+        "coding" : [{
+          "code" : "component:<slice>.code"
         }]
       },
       "mustSupport" : true

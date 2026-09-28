@@ -162,8 +162,8 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-lungenfunk
       "path" : "DiagnosticReport.result",
       "slicing" : {
         "discriminator" : [{
-          "type" : "type",
-          "path" : "$this"
+          "type" : "profile",
+          "path" : "$this.resolve"
         }],
         "rules" : "open"
       }

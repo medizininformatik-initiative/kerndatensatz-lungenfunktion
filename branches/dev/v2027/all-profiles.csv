@@ -398,7 +398,7 @@ user content","",0,*,"","","","Extension {[]} {[]}
 ","Extensions are always sliced by (at least) url",,"open","Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "mii-pr-lungenfunktion-1-viskositaet","Observation.code.coding","Observation.code.coding","","","",0,*,"","","Y","Coding {[]} {[]}
-","Code defined by a terminology system","A reference to a code defined by a terminology system.","Codes may be defined very casually in enumerations, or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.  Ordering of codings is undefined and SHALL NOT be used to infer meaning. Generally, at most only one of the coding values will be labeled as UserSelected = true.","Allows for alternative encodings within a code system, and translations to other code systems.","","","","","","","",,,,,"","value:$this}
+","Code defined by a terminology system","A reference to a code defined by a terminology system.","Codes may be defined very casually in enumerations, or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.  Ordering of codings is undefined and SHALL NOT be used to infer meaning. Generally, at most only one of the coding values will be labeled as UserSelected = true.","Allows for alternative encodings within a code system, and translations to other code systems.","","","","","","","",,,,,"","pattern:code}
 ","",,"open","CodeableConcept.coding",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "mii-pr-lungenfunktion-1-viskositaet","Observation.code.coding.id","Observation.code.coding.id","","","",0,1,"","","","string {[]} {[]}
@@ -592,7 +592,11 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","abgeleitet","Abgeleitet von Messwerten, ect.","All the reference choices that are listed in this element can represent clinical observations and other measurements that may be the source for a derived value.  The most common reference will be another Observation.  For a discussion on the ways Observations can assembled in groups together, see [Notes](http://hl7.org/fhir/R4/observation.html#obsgrouping) below.","","","","","","","","",,,,,"",,,,"Observation.derivedFrom",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "mii-pr-lungenfunktion-1-viskositaet","Observation.component","Observation.component","","","",0,*,"Y","","Y","BackboneElement {[]} {[]}
-","Bestandteile","detailierte Bestandteile der Beobachtung","For a discussion on the ways Observations can be assembled in groups together see [Notes](http://hl7.org/fhir/R4/observation.html#notes) below.","Component observations share the same attributes in the Observation resource as the primary observation and are always treated a part of a single observation (they are not separable).   However, the reference range for the primary observation value is not inherited by the component values and is required when appropriate for each component observation.","","","","","","","",,,,,"","value:$this}
+","Bestandteile","detailierte Bestandteile der Beobachtung","For a discussion on the ways Observations can be assembled in groups together see [Notes](http://hl7.org/fhir/R4/observation.html#notes) below.","Component observations share the same attributes in the Observation resource as the primary observation and are always treated a part of a single observation (they are not separable).   However, the reference range for the primary observation value is not inherited by the component values and is required when appropriate for each component observation.","","","","<valueCodeableConcept xmlns=""http://hl7.org/fhir"">
+  <coding>
+    <code value=""component:&lt;slice&gt;.code""/>
+  </coding>
+</valueCodeableConcept>","","","",,,,,"","pattern:code}
 ","",,"open","Observation.component",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "mii-pr-lungenfunktion-1-viskositaet","Observation.component.id","Observation.component.id","","","",0,1,"","","","string {[]} {[]}
@@ -1450,7 +1454,11 @@ ref-1:SHALL have a contained resource if a local reference is provided {referenc
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ref-1:SHALL have a contained resource if a local reference is provided {reference.exists() implies (reference.startsWith('#').not() or (reference.substring(1).trace('url') in %rootResource.contained.id.trace('ids')) or (reference='#' and %rootResource!=%resource))}"
 "mii-pr-lungenfunktion-bf","Observation.component","Observation.component","","","",0,*,"Y","","Y","BackboneElement {[]} {[]}
-","Bestandteile","detailierte Bestandteile der Beobachtung","For a discussion on the ways Observations can be assembled in groups together see [Notes](http://hl7.org/fhir/R4/observation.html#notes) below.","Component observations share the same attributes in the Observation resource as the primary observation and are always treated a part of a single observation (they are not separable).   However, the reference range for the primary observation value is not inherited by the component values and is required when appropriate for each component observation.","","","","","","","",,,,,"","pattern:$this}
+","Bestandteile","detailierte Bestandteile der Beobachtung","For a discussion on the ways Observations can be assembled in groups together see [Notes](http://hl7.org/fhir/R4/observation.html#notes) below.","Component observations share the same attributes in the Observation resource as the primary observation and are always treated a part of a single observation (they are not separable).   However, the reference range for the primary observation value is not inherited by the component values and is required when appropriate for each component observation.","","","","<valueCodeableConcept xmlns=""http://hl7.org/fhir"">
+  <coding>
+    <code value=""component:&lt;slice&gt;.code""/>
+  </coding>
+</valueCodeableConcept>","","","",,,,,"","pattern:code}
 ","",,"open","Observation.component",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 vs-de-3:If there is no a value a data absent reason must be present {value.exists() xor dataAbsentReason.exists()}"
@@ -2405,7 +2413,7 @@ Reported by","",0,*,"","","Y","Reference {[]} {[CanonicalType[http://hl7.org/fhi
 "
 "mii-pr-lungenfunktion-bodyplethysmographie","DiagnosticReport.result","DiagnosticReport.result","","Data
 Atomic ValueResultAtomic resultDataTestAnalyteBatteryOrganizer","",0,*,"Y","","","Reference {[]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/Observation|4.0.1]]}
-","Ergebnis","Ergebnis einer Beobachtung","Observations can contain observations.","Need to support individual results, or  groups of results, where the result grouping is arbitrary, but meaningful.","","","","","","","",,,,,"","type:$this}
+","Ergebnis","Ergebnis einer Beobachtung","Observations can contain observations.","Need to support individual results, or  groups of results, where the result grouping is arbitrary, but meaningful.","","","","","","","",,,,,"","profile:$this.resolve}
 ","",,"open","DiagnosticReport.result",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "mii-pr-lungenfunktion-bodyplethysmographie","DiagnosticReport.result:BF","DiagnosticReport.result","BF","Data
@@ -3542,7 +3550,7 @@ Reported by","",0,*,"","","Y","Reference {[]} {[CanonicalType[http://hl7.org/fhi
 "
 "mii-pr-lungenfunktion-diffusion","DiagnosticReport.result","DiagnosticReport.result","","Data
 Atomic ValueResultAtomic resultDataTestAnalyteBatteryOrganizer","",0,*,"Y","","","Reference {[]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/Observation|4.0.1]]}
-","Ergebnis","Ergebnis einer Beobachtung","Observations can contain observations.","Need to support individual results, or  groups of results, where the result grouping is arbitrary, but meaningful.","","","","","","","",,,,,"","type:$this}
+","Ergebnis","Ergebnis einer Beobachtung","Observations can contain observations.","Need to support individual results, or  groups of results, where the result grouping is arbitrary, but meaningful.","","","","","","","",,,,,"","profile:$this.resolve()}
 ","",,"open","DiagnosticReport.result",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "mii-pr-lungenfunktion-diffusion","DiagnosticReport.result:DLCO","DiagnosticReport.result","DLCO","Data
@@ -3756,7 +3764,7 @@ user content","",0,*,"","","","Extension {[]} {[]}
 ","Extensions are always sliced by (at least) url",,"open","Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "mii-pr-lungenfunktion-diffusionskapazitaet","Observation.code.coding","Observation.code.coding","","","",0,*,"","","Y","Coding {[]} {[]}
-","Code defined by a terminology system","A reference to a code defined by a terminology system.","Codes may be defined very casually in enumerations, or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.  Ordering of codings is undefined and SHALL NOT be used to infer meaning. Generally, at most only one of the coding values will be labeled as UserSelected = true.","Allows for alternative encodings within a code system, and translations to other code systems.","","","","","","","",,,,,"","value:$this}
+","Code defined by a terminology system","A reference to a code defined by a terminology system.","Codes may be defined very casually in enumerations, or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.  Ordering of codings is undefined and SHALL NOT be used to infer meaning. Generally, at most only one of the coding values will be labeled as UserSelected = true.","Allows for alternative encodings within a code system, and translations to other code systems.","","","","","","","",,,,,"","pattern:code}
 ","",,"open","CodeableConcept.coding",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "mii-pr-lungenfunktion-diffusionskapazitaet","Observation.code.coding.id","Observation.code.coding.id","","","",0,1,"","","","string {[]} {[]}
@@ -3950,7 +3958,11 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","abgeleitet","Abgeleitet von Messwerten, ect.","All the reference choices that are listed in this element can represent clinical observations and other measurements that may be the source for a derived value.  The most common reference will be another Observation.  For a discussion on the ways Observations can assembled in groups together, see [Notes](http://hl7.org/fhir/R4/observation.html#obsgrouping) below.","","","","","","","","",,,,,"",,,,"Observation.derivedFrom",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "mii-pr-lungenfunktion-diffusionskapazitaet","Observation.component","Observation.component","","","",0,*,"Y","","Y","BackboneElement {[]} {[]}
-","Bestandteile","detailierte Bestandteile der Beobachtung","For a discussion on the ways Observations can be assembled in groups together see [Notes](http://hl7.org/fhir/R4/observation.html#notes) below.","Component observations share the same attributes in the Observation resource as the primary observation and are always treated a part of a single observation (they are not separable).   However, the reference range for the primary observation value is not inherited by the component values and is required when appropriate for each component observation.","","","","","","","",,,,,"","value:$this}
+","Bestandteile","detailierte Bestandteile der Beobachtung","For a discussion on the ways Observations can be assembled in groups together see [Notes](http://hl7.org/fhir/R4/observation.html#notes) below.","Component observations share the same attributes in the Observation resource as the primary observation and are always treated a part of a single observation (they are not separable).   However, the reference range for the primary observation value is not inherited by the component values and is required when appropriate for each component observation.","","","","<valueCodeableConcept xmlns=""http://hl7.org/fhir"">
+  <coding>
+    <code value=""component:&lt;slice&gt;.code""/>
+  </coding>
+</valueCodeableConcept>","","","",,,,,"","pattern:code}
 ","",,"open","Observation.component",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "mii-pr-lungenfunktion-diffusionskapazitaet","Observation.component.id","Observation.component.id","","","",0,1,"","","","string {[]} {[]}
@@ -4306,7 +4318,7 @@ user content","",0,*,"","","","Extension {[]} {[]}
 ","Extensions are always sliced by (at least) url",,"open","Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "mii-pr-lungenfunktion-dlco","Observation.code.coding","Observation.code.coding","","","",0,*,"","","Y","Coding {[]} {[]}
-","Code defined by a terminology system","A reference to a code defined by a terminology system.","Codes may be defined very casually in enumerations, or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.  Ordering of codings is undefined and SHALL NOT be used to infer meaning. Generally, at most only one of the coding values will be labeled as UserSelected = true.","Allows for alternative encodings within a code system, and translations to other code systems.","","","","","","","",,,,,"","value:$this}
+","Code defined by a terminology system","A reference to a code defined by a terminology system.","Codes may be defined very casually in enumerations, or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.  Ordering of codings is undefined and SHALL NOT be used to infer meaning. Generally, at most only one of the coding values will be labeled as UserSelected = true.","Allows for alternative encodings within a code system, and translations to other code systems.","","","","","","","",,,,,"","pattern:code}
 ","",,"open","CodeableConcept.coding",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "mii-pr-lungenfunktion-dlco","Observation.code.coding:sct","Observation.code.coding","sct","","",0,1,"","","Y","Coding {[]} {[]}
@@ -4483,7 +4495,11 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","abgeleitet","Abgeleitet von Messwerten, ect.","All the reference choices that are listed in this element can represent clinical observations and other measurements that may be the source for a derived value.  The most common reference will be another Observation.  For a discussion on the ways Observations can assembled in groups together, see [Notes](http://hl7.org/fhir/R4/observation.html#obsgrouping) below.","","","","","","","","",,,,,"",,,,"Observation.derivedFrom",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "mii-pr-lungenfunktion-dlco","Observation.component","Observation.component","","","",0,*,"Y","","Y","BackboneElement {[]} {[]}
-","Bestandteile","detailierte Bestandteile der Beobachtung","For a discussion on the ways Observations can be assembled in groups together see [Notes](http://hl7.org/fhir/R4/observation.html#notes) below.","Component observations share the same attributes in the Observation resource as the primary observation and are always treated a part of a single observation (they are not separable).   However, the reference range for the primary observation value is not inherited by the component values and is required when appropriate for each component observation.","","","","","","","",,,,,"","value:$this}
+","Bestandteile","detailierte Bestandteile der Beobachtung","For a discussion on the ways Observations can be assembled in groups together see [Notes](http://hl7.org/fhir/R4/observation.html#notes) below.","Component observations share the same attributes in the Observation resource as the primary observation and are always treated a part of a single observation (they are not separable).   However, the reference range for the primary observation value is not inherited by the component values and is required when appropriate for each component observation.","","","","<valueCodeableConcept xmlns=""http://hl7.org/fhir"">
+  <coding>
+    <code value=""component:&lt;slice&gt;.code""/>
+  </coding>
+</valueCodeableConcept>","","","",,,,,"","pattern:code}
 ","",,"open","Observation.component",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "mii-pr-lungenfunktion-dlco","Observation.component.id","Observation.component.id","","","",0,1,"","","","string {[]} {[]}
@@ -4847,7 +4863,7 @@ user content","",0,*,"","","","Extension {[]} {[]}
 ","Extensions are always sliced by (at least) url",,"open","Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "mii-pr-lungenfunktion-dlcoc","Observation.code.coding","Observation.code.coding","","","",0,*,"","","Y","Coding {[]} {[]}
-","Code defined by a terminology system","A reference to a code defined by a terminology system.","Codes may be defined very casually in enumerations, or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.  Ordering of codings is undefined and SHALL NOT be used to infer meaning. Generally, at most only one of the coding values will be labeled as UserSelected = true.","Allows for alternative encodings within a code system, and translations to other code systems.","","","","","","","",,,,,"","value:$this}
+","Code defined by a terminology system","A reference to a code defined by a terminology system.","Codes may be defined very casually in enumerations, or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.  Ordering of codings is undefined and SHALL NOT be used to infer meaning. Generally, at most only one of the coding values will be labeled as UserSelected = true.","Allows for alternative encodings within a code system, and translations to other code systems.","","","","","","","",,,,,"","pattern:code}
 ","",,"open","CodeableConcept.coding",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "mii-pr-lungenfunktion-dlcoc","Observation.code.coding:sct","Observation.code.coding","sct","","",0,1,"","","Y","Coding {[]} {[]}
@@ -5024,7 +5040,11 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","abgeleitet","Abgeleitet von Messwerten, ect.","All the reference choices that are listed in this element can represent clinical observations and other measurements that may be the source for a derived value.  The most common reference will be another Observation.  For a discussion on the ways Observations can assembled in groups together, see [Notes](http://hl7.org/fhir/R4/observation.html#obsgrouping) below.","","","","","","","","",,,,,"",,,,"Observation.derivedFrom",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "mii-pr-lungenfunktion-dlcoc","Observation.component","Observation.component","","","",0,*,"Y","","Y","BackboneElement {[]} {[]}
-","Bestandteile","detailierte Bestandteile der Beobachtung","For a discussion on the ways Observations can be assembled in groups together see [Notes](http://hl7.org/fhir/R4/observation.html#notes) below.","Component observations share the same attributes in the Observation resource as the primary observation and are always treated a part of a single observation (they are not separable).   However, the reference range for the primary observation value is not inherited by the component values and is required when appropriate for each component observation.","","","","","","","",,,,,"","value:$this}
+","Bestandteile","detailierte Bestandteile der Beobachtung","For a discussion on the ways Observations can be assembled in groups together see [Notes](http://hl7.org/fhir/R4/observation.html#notes) below.","Component observations share the same attributes in the Observation resource as the primary observation and are always treated a part of a single observation (they are not separable).   However, the reference range for the primary observation value is not inherited by the component values and is required when appropriate for each component observation.","","","","<valueCodeableConcept xmlns=""http://hl7.org/fhir"">
+  <coding>
+    <code value=""component:&lt;slice&gt;.code""/>
+  </coding>
+</valueCodeableConcept>","","","",,,,,"","pattern:code}
 ","",,"open","Observation.component",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "mii-pr-lungenfunktion-dlcoc","Observation.component.id","Observation.component.id","","","",0,1,"","","","string {[]} {[]}
@@ -6254,7 +6274,7 @@ user content","",0,*,"","","","Extension {[]} {[]}
 ","Extensions are always sliced by (at least) url",,"open","Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "mii-pr-lungenfunktion-fev-fvc","Observation.code.coding","Observation.code.coding","","","",0,*,"","","Y","Coding {[]} {[]}
-","Code defined by a terminology system","A reference to a code defined by a terminology system.","Codes may be defined very casually in enumerations, or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.  Ordering of codings is undefined and SHALL NOT be used to infer meaning. Generally, at most only one of the coding values will be labeled as UserSelected = true.","Allows for alternative encodings within a code system, and translations to other code systems.","","","","","","","",,,,,"","value:$this}
+","Code defined by a terminology system","A reference to a code defined by a terminology system.","Codes may be defined very casually in enumerations, or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.  Ordering of codings is undefined and SHALL NOT be used to infer meaning. Generally, at most only one of the coding values will be labeled as UserSelected = true.","Allows for alternative encodings within a code system, and translations to other code systems.","","","","","","","",,,,,"","pattern:code}
 ","",,"open","CodeableConcept.coding",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "mii-pr-lungenfunktion-fev-fvc","Observation.code.coding:sct","Observation.code.coding","sct","","",0,1,"","","Y","Coding {[]} {[]}
@@ -6426,7 +6446,11 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","abgeleitet","Abgeleitet von Messwerten, ect.","All the reference choices that are listed in this element can represent clinical observations and other measurements that may be the source for a derived value.  The most common reference will be another Observation.  For a discussion on the ways Observations can assembled in groups together, see [Notes](http://hl7.org/fhir/R4/observation.html#obsgrouping) below.","","","","","","","","",,,,,"",,,,"Observation.derivedFrom",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "mii-pr-lungenfunktion-fev-fvc","Observation.component","Observation.component","","","",0,*,"Y","","Y","BackboneElement {[]} {[]}
-","Bestandteile","detailierte Bestandteile der Beobachtung","For a discussion on the ways Observations can be assembled in groups together see [Notes](http://hl7.org/fhir/R4/observation.html#notes) below.","Component observations share the same attributes in the Observation resource as the primary observation and are always treated a part of a single observation (they are not separable).   However, the reference range for the primary observation value is not inherited by the component values and is required when appropriate for each component observation.","","","","","","","",,,,,"","value:$this}
+","Bestandteile","detailierte Bestandteile der Beobachtung","For a discussion on the ways Observations can be assembled in groups together see [Notes](http://hl7.org/fhir/R4/observation.html#notes) below.","Component observations share the same attributes in the Observation resource as the primary observation and are always treated a part of a single observation (they are not separable).   However, the reference range for the primary observation value is not inherited by the component values and is required when appropriate for each component observation.","","","","<valueCodeableConcept xmlns=""http://hl7.org/fhir"">
+  <coding>
+    <code value=""component:&lt;slice&gt;.code""/>
+  </coding>
+</valueCodeableConcept>","","","",,,,,"","pattern:code}
 ","",,"open","Observation.component",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "mii-pr-lungenfunktion-fev-fvc","Observation.component.id","Observation.component.id","","","",0,1,"","","","string {[]} {[]}
@@ -6782,7 +6806,7 @@ user content","",0,*,"","","","Extension {[]} {[]}
 ","Extensions are always sliced by (at least) url",,"open","Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "mii-pr-lungenfunktion-fev","Observation.code.coding","Observation.code.coding","","","",0,*,"","","Y","Coding {[]} {[]}
-","Code defined by a terminology system","A reference to a code defined by a terminology system.","Codes may be defined very casually in enumerations, or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.  Ordering of codings is undefined and SHALL NOT be used to infer meaning. Generally, at most only one of the coding values will be labeled as UserSelected = true.","Allows for alternative encodings within a code system, and translations to other code systems.","","","","","","","",,,,,"","value:$this}
+","Code defined by a terminology system","A reference to a code defined by a terminology system.","Codes may be defined very casually in enumerations, or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.  Ordering of codings is undefined and SHALL NOT be used to infer meaning. Generally, at most only one of the coding values will be labeled as UserSelected = true.","Allows for alternative encodings within a code system, and translations to other code systems.","","","","","","","",,,,,"","pattern:code}
 ","",,"open","CodeableConcept.coding",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "mii-pr-lungenfunktion-fev","Observation.code.coding:sct","Observation.code.coding","sct","","",0,1,"","","Y","Coding {[]} {[]}
@@ -6954,7 +6978,11 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","abgeleitet","Abgeleitet von Messwerten, ect.","All the reference choices that are listed in this element can represent clinical observations and other measurements that may be the source for a derived value.  The most common reference will be another Observation.  For a discussion on the ways Observations can assembled in groups together, see [Notes](http://hl7.org/fhir/R4/observation.html#obsgrouping) below.","","","","","","","","",,,,,"",,,,"Observation.derivedFrom",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "mii-pr-lungenfunktion-fev","Observation.component","Observation.component","","","",0,*,"Y","","Y","BackboneElement {[]} {[]}
-","Bestandteile","detailierte Bestandteile der Beobachtung","For a discussion on the ways Observations can be assembled in groups together see [Notes](http://hl7.org/fhir/R4/observation.html#notes) below.","Component observations share the same attributes in the Observation resource as the primary observation and are always treated a part of a single observation (they are not separable).   However, the reference range for the primary observation value is not inherited by the component values and is required when appropriate for each component observation.","","","","","","","",,,,,"","value:$this}
+","Bestandteile","detailierte Bestandteile der Beobachtung","For a discussion on the ways Observations can be assembled in groups together see [Notes](http://hl7.org/fhir/R4/observation.html#notes) below.","Component observations share the same attributes in the Observation resource as the primary observation and are always treated a part of a single observation (they are not separable).   However, the reference range for the primary observation value is not inherited by the component values and is required when appropriate for each component observation.","","","","<valueCodeableConcept xmlns=""http://hl7.org/fhir"">
+  <coding>
+    <code value=""component:&lt;slice&gt;.code""/>
+  </coding>
+</valueCodeableConcept>","","","",,,,,"","pattern:code}
 ","",,"open","Observation.component",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "mii-pr-lungenfunktion-fev","Observation.component.id","Observation.component.id","","","",0,1,"","","","string {[]} {[]}
@@ -7310,7 +7338,7 @@ user content","",0,*,"","","","Extension {[]} {[]}
 ","Extensions are always sliced by (at least) url",,"open","Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "mii-pr-lungenfunktion-fluss","Observation.code.coding","Observation.code.coding","","","",0,*,"","","Y","Coding {[]} {[]}
-","Code defined by a terminology system","A reference to a code defined by a terminology system.","Codes may be defined very casually in enumerations, or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.  Ordering of codings is undefined and SHALL NOT be used to infer meaning. Generally, at most only one of the coding values will be labeled as UserSelected = true.","Allows for alternative encodings within a code system, and translations to other code systems.","","","","","","","",,,,,"","value:$this}
+","Code defined by a terminology system","A reference to a code defined by a terminology system.","Codes may be defined very casually in enumerations, or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.  Ordering of codings is undefined and SHALL NOT be used to infer meaning. Generally, at most only one of the coding values will be labeled as UserSelected = true.","Allows for alternative encodings within a code system, and translations to other code systems.","","","","","","","",,,,,"","pattern:code}
 ","",,"open","CodeableConcept.coding",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "mii-pr-lungenfunktion-fluss","Observation.code.coding.id","Observation.code.coding.id","","","",0,1,"","","","string {[]} {[]}
@@ -7504,7 +7532,11 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","abgeleitet","Abgeleitet von Messwerten, ect.","All the reference choices that are listed in this element can represent clinical observations and other measurements that may be the source for a derived value.  The most common reference will be another Observation.  For a discussion on the ways Observations can assembled in groups together, see [Notes](http://hl7.org/fhir/R4/observation.html#obsgrouping) below.","","","","","","","","",,,,,"",,,,"Observation.derivedFrom",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "mii-pr-lungenfunktion-fluss","Observation.component","Observation.component","","","",0,*,"Y","","Y","BackboneElement {[]} {[]}
-","Bestandteile","detailierte Bestandteile der Beobachtung","For a discussion on the ways Observations can be assembled in groups together see [Notes](http://hl7.org/fhir/R4/observation.html#notes) below.","Component observations share the same attributes in the Observation resource as the primary observation and are always treated a part of a single observation (they are not separable).   However, the reference range for the primary observation value is not inherited by the component values and is required when appropriate for each component observation.","","","","","","","",,,,,"","value:$this}
+","Bestandteile","detailierte Bestandteile der Beobachtung","For a discussion on the ways Observations can be assembled in groups together see [Notes](http://hl7.org/fhir/R4/observation.html#notes) below.","Component observations share the same attributes in the Observation resource as the primary observation and are always treated a part of a single observation (they are not separable).   However, the reference range for the primary observation value is not inherited by the component values and is required when appropriate for each component observation.","","","","<valueCodeableConcept xmlns=""http://hl7.org/fhir"">
+  <coding>
+    <code value=""component:&lt;slice&gt;.code""/>
+  </coding>
+</valueCodeableConcept>","","","",,,,,"","pattern:code}
 ","",,"open","Observation.component",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "mii-pr-lungenfunktion-fluss","Observation.component.id","Observation.component.id","","","",0,1,"","","","string {[]} {[]}
@@ -7860,7 +7892,7 @@ user content","",0,*,"","","","Extension {[]} {[]}
 ","Extensions are always sliced by (at least) url",,"open","Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "mii-pr-lungenfunktion-frc","Observation.code.coding","Observation.code.coding","","","",0,*,"","","Y","Coding {[]} {[]}
-","Code defined by a terminology system","A reference to a code defined by a terminology system.","Codes may be defined very casually in enumerations, or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.  Ordering of codings is undefined and SHALL NOT be used to infer meaning. Generally, at most only one of the coding values will be labeled as UserSelected = true.","Allows for alternative encodings within a code system, and translations to other code systems.","","","","","","","",,,,,"","value:$this}
+","Code defined by a terminology system","A reference to a code defined by a terminology system.","Codes may be defined very casually in enumerations, or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.  Ordering of codings is undefined and SHALL NOT be used to infer meaning. Generally, at most only one of the coding values will be labeled as UserSelected = true.","Allows for alternative encodings within a code system, and translations to other code systems.","","","","","","","",,,,,"","pattern:code}
 ","",,"open","CodeableConcept.coding",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "mii-pr-lungenfunktion-frc","Observation.code.coding:sct","Observation.code.coding","sct","","",0,1,"","","Y","Coding {[]} {[]}
@@ -8037,7 +8069,11 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","abgeleitet","Abgeleitet von Messwerten, ect.","All the reference choices that are listed in this element can represent clinical observations and other measurements that may be the source for a derived value.  The most common reference will be another Observation.  For a discussion on the ways Observations can assembled in groups together, see [Notes](http://hl7.org/fhir/R4/observation.html#obsgrouping) below.","","","","","","","","",,,,,"",,,,"Observation.derivedFrom",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "mii-pr-lungenfunktion-frc","Observation.component","Observation.component","","","",0,*,"Y","","Y","BackboneElement {[]} {[]}
-","Bestandteile","detailierte Bestandteile der Beobachtung","For a discussion on the ways Observations can be assembled in groups together see [Notes](http://hl7.org/fhir/R4/observation.html#notes) below.","Component observations share the same attributes in the Observation resource as the primary observation and are always treated a part of a single observation (they are not separable).   However, the reference range for the primary observation value is not inherited by the component values and is required when appropriate for each component observation.","","","","","","","",,,,,"","value:$this}
+","Bestandteile","detailierte Bestandteile der Beobachtung","For a discussion on the ways Observations can be assembled in groups together see [Notes](http://hl7.org/fhir/R4/observation.html#notes) below.","Component observations share the same attributes in the Observation resource as the primary observation and are always treated a part of a single observation (they are not separable).   However, the reference range for the primary observation value is not inherited by the component values and is required when appropriate for each component observation.","","","","<valueCodeableConcept xmlns=""http://hl7.org/fhir"">
+  <coding>
+    <code value=""component:&lt;slice&gt;.code""/>
+  </coding>
+</valueCodeableConcept>","","","",,,,,"","pattern:code}
 ","",,"open","Observation.component",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "mii-pr-lungenfunktion-frc","Observation.component.id","Observation.component.id","","","",0,1,"","","","string {[]} {[]}
@@ -8404,7 +8440,7 @@ user content","",0,*,"","","","Extension {[]} {[]}
 ","Extensions are always sliced by (at least) url",,"open","Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "mii-pr-lungenfunktion-fvc","Observation.code.coding","Observation.code.coding","","","",0,*,"","","Y","Coding {[]} {[]}
-","Code defined by a terminology system","A reference to a code defined by a terminology system.","Codes may be defined very casually in enumerations, or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.  Ordering of codings is undefined and SHALL NOT be used to infer meaning. Generally, at most only one of the coding values will be labeled as UserSelected = true.","Allows for alternative encodings within a code system, and translations to other code systems.","","","","","","","",,,,,"","value:$this}
+","Code defined by a terminology system","A reference to a code defined by a terminology system.","Codes may be defined very casually in enumerations, or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.  Ordering of codings is undefined and SHALL NOT be used to infer meaning. Generally, at most only one of the coding values will be labeled as UserSelected = true.","Allows for alternative encodings within a code system, and translations to other code systems.","","","","","","","",,,,,"","pattern:code}
 ","",,"open","CodeableConcept.coding",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "mii-pr-lungenfunktion-fvc","Observation.code.coding:sct","Observation.code.coding","sct","","",0,1,"","","Y","Coding {[]} {[]}
@@ -8576,7 +8612,11 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","abgeleitet","Abgeleitet von Messwerten, ect.","All the reference choices that are listed in this element can represent clinical observations and other measurements that may be the source for a derived value.  The most common reference will be another Observation.  For a discussion on the ways Observations can assembled in groups together, see [Notes](http://hl7.org/fhir/R4/observation.html#obsgrouping) below.","","","","","","","","",,,,,"",,,,"Observation.derivedFrom",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "mii-pr-lungenfunktion-fvc","Observation.component","Observation.component","","","",0,*,"Y","","Y","BackboneElement {[]} {[]}
-","Bestandteile","detailierte Bestandteile der Beobachtung","For a discussion on the ways Observations can be assembled in groups together see [Notes](http://hl7.org/fhir/R4/observation.html#notes) below.","Component observations share the same attributes in the Observation resource as the primary observation and are always treated a part of a single observation (they are not separable).   However, the reference range for the primary observation value is not inherited by the component values and is required when appropriate for each component observation.","","","","","","","",,,,,"","value:$this}
+","Bestandteile","detailierte Bestandteile der Beobachtung","For a discussion on the ways Observations can be assembled in groups together see [Notes](http://hl7.org/fhir/R4/observation.html#notes) below.","Component observations share the same attributes in the Observation resource as the primary observation and are always treated a part of a single observation (they are not separable).   However, the reference range for the primary observation value is not inherited by the component values and is required when appropriate for each component observation.","","","","<valueCodeableConcept xmlns=""http://hl7.org/fhir"">
+  <coding>
+    <code value=""component:&lt;slice&gt;.code""/>
+  </coding>
+</valueCodeableConcept>","","","",,,,,"","pattern:code}
 ","",,"open","Observation.component",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "mii-pr-lungenfunktion-fvc","Observation.component.id","Observation.component.id","","","",0,1,"","","","string {[]} {[]}
@@ -9334,7 +9374,7 @@ user content","",0,*,"","","","Extension {[]} {[]}
 ","Extensions are always sliced by (at least) url",,"open","Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "mii-pr-lungenfunktion-ic","Observation.code.coding","Observation.code.coding","","","",0,*,"","","Y","Coding {[]} {[]}
-","Code defined by a terminology system","A reference to a code defined by a terminology system.","Codes may be defined very casually in enumerations, or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.  Ordering of codings is undefined and SHALL NOT be used to infer meaning. Generally, at most only one of the coding values will be labeled as UserSelected = true.","Allows for alternative encodings within a code system, and translations to other code systems.","","","","","","","",,,,,"","value:$this}
+","Code defined by a terminology system","A reference to a code defined by a terminology system.","Codes may be defined very casually in enumerations, or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.  Ordering of codings is undefined and SHALL NOT be used to infer meaning. Generally, at most only one of the coding values will be labeled as UserSelected = true.","Allows for alternative encodings within a code system, and translations to other code systems.","","","","","","","",,,,,"","pattern:code}
 ","",,"open","CodeableConcept.coding",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "mii-pr-lungenfunktion-ic","Observation.code.coding:sct","Observation.code.coding","sct","","",0,1,"","","Y","Coding {[]} {[]}
@@ -9511,7 +9551,11 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","abgeleitet","Abgeleitet von Messwerten, ect.","All the reference choices that are listed in this element can represent clinical observations and other measurements that may be the source for a derived value.  The most common reference will be another Observation.  For a discussion on the ways Observations can assembled in groups together, see [Notes](http://hl7.org/fhir/R4/observation.html#obsgrouping) below.","","","","","","","","",,,,,"",,,,"Observation.derivedFrom",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "mii-pr-lungenfunktion-ic","Observation.component","Observation.component","","","",0,*,"Y","","Y","BackboneElement {[]} {[]}
-","Bestandteile","detailierte Bestandteile der Beobachtung","For a discussion on the ways Observations can be assembled in groups together see [Notes](http://hl7.org/fhir/R4/observation.html#notes) below.","Component observations share the same attributes in the Observation resource as the primary observation and are always treated a part of a single observation (they are not separable).   However, the reference range for the primary observation value is not inherited by the component values and is required when appropriate for each component observation.","","","","","","","",,,,,"","value:$this}
+","Bestandteile","detailierte Bestandteile der Beobachtung","For a discussion on the ways Observations can be assembled in groups together see [Notes](http://hl7.org/fhir/R4/observation.html#notes) below.","Component observations share the same attributes in the Observation resource as the primary observation and are always treated a part of a single observation (they are not separable).   However, the reference range for the primary observation value is not inherited by the component values and is required when appropriate for each component observation.","","","","<valueCodeableConcept xmlns=""http://hl7.org/fhir"">
+  <coding>
+    <code value=""component:&lt;slice&gt;.code""/>
+  </coding>
+</valueCodeableConcept>","","","",,,,,"","pattern:code}
 ","",,"open","Observation.component",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "mii-pr-lungenfunktion-ic","Observation.component.id","Observation.component.id","","","",0,1,"","","","string {[]} {[]}
@@ -9875,7 +9919,7 @@ user content","",0,*,"","","","Extension {[]} {[]}
 ","Extensions are always sliced by (at least) url",,"open","Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "mii-pr-lungenfunktion-irv-erv","Observation.code.coding","Observation.code.coding","","","",0,*,"","","Y","Coding {[]} {[]}
-","Code defined by a terminology system","A reference to a code defined by a terminology system.","Codes may be defined very casually in enumerations, or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.  Ordering of codings is undefined and SHALL NOT be used to infer meaning. Generally, at most only one of the coding values will be labeled as UserSelected = true.","Allows for alternative encodings within a code system, and translations to other code systems.","","","","","","","",,,,,"","value:$this}
+","Code defined by a terminology system","A reference to a code defined by a terminology system.","Codes may be defined very casually in enumerations, or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.  Ordering of codings is undefined and SHALL NOT be used to infer meaning. Generally, at most only one of the coding values will be labeled as UserSelected = true.","Allows for alternative encodings within a code system, and translations to other code systems.","","","","","","","",,,,,"","pattern:code}
 ","",,"open","CodeableConcept.coding",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "mii-pr-lungenfunktion-irv-erv","Observation.code.coding:sct","Observation.code.coding","sct","","",0,1,"","","Y","Coding {[]} {[]}
@@ -10047,7 +10091,11 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","abgeleitet","Abgeleitet von Messwerten, ect.","All the reference choices that are listed in this element can represent clinical observations and other measurements that may be the source for a derived value.  The most common reference will be another Observation.  For a discussion on the ways Observations can assembled in groups together, see [Notes](http://hl7.org/fhir/R4/observation.html#obsgrouping) below.","","","","","","","","",,,,,"",,,,"Observation.derivedFrom",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "mii-pr-lungenfunktion-irv-erv","Observation.component","Observation.component","","","",0,*,"Y","","Y","BackboneElement {[]} {[]}
-","Bestandteile","detailierte Bestandteile der Beobachtung","For a discussion on the ways Observations can be assembled in groups together see [Notes](http://hl7.org/fhir/R4/observation.html#notes) below.","Component observations share the same attributes in the Observation resource as the primary observation and are always treated a part of a single observation (they are not separable).   However, the reference range for the primary observation value is not inherited by the component values and is required when appropriate for each component observation.","","","","","","","",,,,,"","value:$this}
+","Bestandteile","detailierte Bestandteile der Beobachtung","For a discussion on the ways Observations can be assembled in groups together see [Notes](http://hl7.org/fhir/R4/observation.html#notes) below.","Component observations share the same attributes in the Observation resource as the primary observation and are always treated a part of a single observation (they are not separable).   However, the reference range for the primary observation value is not inherited by the component values and is required when appropriate for each component observation.","","","","<valueCodeableConcept xmlns=""http://hl7.org/fhir"">
+  <coding>
+    <code value=""component:&lt;slice&gt;.code""/>
+  </coding>
+</valueCodeableConcept>","","","",,,,,"","pattern:code}
 ","",,"open","Observation.component",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "mii-pr-lungenfunktion-irv-erv","Observation.component.id","Observation.component.id","","","",0,1,"","","","string {[]} {[]}
@@ -10414,7 +10462,7 @@ user content","",0,*,"","","","Extension {[]} {[]}
 ","Extensions are always sliced by (at least) url",,"open","Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "mii-pr-lungenfunktion-kco","Observation.code.coding","Observation.code.coding","","","",0,*,"","","Y","Coding {[]} {[]}
-","Code defined by a terminology system","A reference to a code defined by a terminology system.","Codes may be defined very casually in enumerations, or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.  Ordering of codings is undefined and SHALL NOT be used to infer meaning. Generally, at most only one of the coding values will be labeled as UserSelected = true.","Allows for alternative encodings within a code system, and translations to other code systems.","","","","","","","",,,,,"","value:$this}
+","Code defined by a terminology system","A reference to a code defined by a terminology system.","Codes may be defined very casually in enumerations, or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.  Ordering of codings is undefined and SHALL NOT be used to infer meaning. Generally, at most only one of the coding values will be labeled as UserSelected = true.","Allows for alternative encodings within a code system, and translations to other code systems.","","","","","","","",,,,,"","pattern:code}
 ","",,"open","CodeableConcept.coding",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "mii-pr-lungenfunktion-kco","Observation.code.coding:sct","Observation.code.coding","sct","","",0,1,"","","Y","Coding {[]} {[]}
@@ -10591,7 +10639,11 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","abgeleitet","Abgeleitet von Messwerten, ect.","All the reference choices that are listed in this element can represent clinical observations and other measurements that may be the source for a derived value.  The most common reference will be another Observation.  For a discussion on the ways Observations can assembled in groups together, see [Notes](http://hl7.org/fhir/R4/observation.html#obsgrouping) below.","","","","","","","","",,,,,"",,,,"Observation.derivedFrom",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "mii-pr-lungenfunktion-kco","Observation.component","Observation.component","","","",0,*,"Y","","Y","BackboneElement {[]} {[]}
-","Bestandteile","detailierte Bestandteile der Beobachtung","For a discussion on the ways Observations can be assembled in groups together see [Notes](http://hl7.org/fhir/R4/observation.html#notes) below.","Component observations share the same attributes in the Observation resource as the primary observation and are always treated a part of a single observation (they are not separable).   However, the reference range for the primary observation value is not inherited by the component values and is required when appropriate for each component observation.","","","","","","","",,,,,"","value:$this}
+","Bestandteile","detailierte Bestandteile der Beobachtung","For a discussion on the ways Observations can be assembled in groups together see [Notes](http://hl7.org/fhir/R4/observation.html#notes) below.","Component observations share the same attributes in the Observation resource as the primary observation and are always treated a part of a single observation (they are not separable).   However, the reference range for the primary observation value is not inherited by the component values and is required when appropriate for each component observation.","","","","<valueCodeableConcept xmlns=""http://hl7.org/fhir"">
+  <coding>
+    <code value=""component:&lt;slice&gt;.code""/>
+  </coding>
+</valueCodeableConcept>","","","",,,,,"","pattern:code}
 ","",,"open","Observation.component",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "mii-pr-lungenfunktion-kco","Observation.component.id","Observation.component.id","","","",0,1,"","","","string {[]} {[]}
@@ -10955,7 +11007,7 @@ user content","",0,*,"","","","Extension {[]} {[]}
 ","Extensions are always sliced by (at least) url",,"open","Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "mii-pr-lungenfunktion-kcoc","Observation.code.coding","Observation.code.coding","","","",0,*,"","","Y","Coding {[]} {[]}
-","Code defined by a terminology system","A reference to a code defined by a terminology system.","Codes may be defined very casually in enumerations, or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.  Ordering of codings is undefined and SHALL NOT be used to infer meaning. Generally, at most only one of the coding values will be labeled as UserSelected = true.","Allows for alternative encodings within a code system, and translations to other code systems.","","","","","","","",,,,,"","value:$this}
+","Code defined by a terminology system","A reference to a code defined by a terminology system.","Codes may be defined very casually in enumerations, or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.  Ordering of codings is undefined and SHALL NOT be used to infer meaning. Generally, at most only one of the coding values will be labeled as UserSelected = true.","Allows for alternative encodings within a code system, and translations to other code systems.","","","","","","","",,,,,"","pattern:code}
 ","",,"open","CodeableConcept.coding",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "mii-pr-lungenfunktion-kcoc","Observation.code.coding:sct","Observation.code.coding","sct","","",0,1,"","","Y","Coding {[]} {[]}
@@ -11135,7 +11187,11 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","abgeleitet","Abgeleitet von Messwerten, ect.","All the reference choices that are listed in this element can represent clinical observations and other measurements that may be the source for a derived value.  The most common reference will be another Observation.  For a discussion on the ways Observations can assembled in groups together, see [Notes](http://hl7.org/fhir/R4/observation.html#obsgrouping) below.","","","","","","","","",,,,,"",,,,"Observation.derivedFrom",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "mii-pr-lungenfunktion-kcoc","Observation.component","Observation.component","","","",0,*,"Y","","Y","BackboneElement {[]} {[]}
-","Bestandteile","detailierte Bestandteile der Beobachtung","For a discussion on the ways Observations can be assembled in groups together see [Notes](http://hl7.org/fhir/R4/observation.html#notes) below.","Component observations share the same attributes in the Observation resource as the primary observation and are always treated a part of a single observation (they are not separable).   However, the reference range for the primary observation value is not inherited by the component values and is required when appropriate for each component observation.","","","","","","","",,,,,"","value:$this}
+","Bestandteile","detailierte Bestandteile der Beobachtung","For a discussion on the ways Observations can be assembled in groups together see [Notes](http://hl7.org/fhir/R4/observation.html#notes) below.","Component observations share the same attributes in the Observation resource as the primary observation and are always treated a part of a single observation (they are not separable).   However, the reference range for the primary observation value is not inherited by the component values and is required when appropriate for each component observation.","","","","<valueCodeableConcept xmlns=""http://hl7.org/fhir"">
+  <coding>
+    <code value=""component:&lt;slice&gt;.code""/>
+  </coding>
+</valueCodeableConcept>","","","",,,,,"","pattern:code}
 ","",,"open","Observation.component",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "mii-pr-lungenfunktion-kcoc","Observation.component.id","Observation.component.id","","","",0,1,"","","","string {[]} {[]}
@@ -12127,7 +12183,7 @@ user content","",0,*,"","","","Extension {[]} {[]}
 ","Extensions are always sliced by (at least) url",,"open","Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "mii-pr-lungenfunktion-mef","Observation.code.coding","Observation.code.coding","","","",0,*,"","","Y","Coding {[]} {[]}
-","Code defined by a terminology system","A reference to a code defined by a terminology system.","Codes may be defined very casually in enumerations, or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.  Ordering of codings is undefined and SHALL NOT be used to infer meaning. Generally, at most only one of the coding values will be labeled as UserSelected = true.","Allows for alternative encodings within a code system, and translations to other code systems.","","","","","","","",,,,,"","value:$this}
+","Code defined by a terminology system","A reference to a code defined by a terminology system.","Codes may be defined very casually in enumerations, or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.  Ordering of codings is undefined and SHALL NOT be used to infer meaning. Generally, at most only one of the coding values will be labeled as UserSelected = true.","Allows for alternative encodings within a code system, and translations to other code systems.","","","","","","","",,,,,"","pattern:code}
 ","",,"open","CodeableConcept.coding",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "mii-pr-lungenfunktion-mef","Observation.code.coding:sct","Observation.code.coding","sct","","",0,1,"","","Y","Coding {[]} {[]}
@@ -12299,7 +12355,11 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","abgeleitet","Abgeleitet von Messwerten, ect.","All the reference choices that are listed in this element can represent clinical observations and other measurements that may be the source for a derived value.  The most common reference will be another Observation.  For a discussion on the ways Observations can assembled in groups together, see [Notes](http://hl7.org/fhir/R4/observation.html#obsgrouping) below.","","","","","","","","",,,,,"",,,,"Observation.derivedFrom",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "mii-pr-lungenfunktion-mef","Observation.component","Observation.component","","","",0,*,"Y","","Y","BackboneElement {[]} {[]}
-","Bestandteile","detailierte Bestandteile der Beobachtung","For a discussion on the ways Observations can be assembled in groups together see [Notes](http://hl7.org/fhir/R4/observation.html#notes) below.","Component observations share the same attributes in the Observation resource as the primary observation and are always treated a part of a single observation (they are not separable).   However, the reference range for the primary observation value is not inherited by the component values and is required when appropriate for each component observation.","","","","","","","",,,,,"","value:$this}
+","Bestandteile","detailierte Bestandteile der Beobachtung","For a discussion on the ways Observations can be assembled in groups together see [Notes](http://hl7.org/fhir/R4/observation.html#notes) below.","Component observations share the same attributes in the Observation resource as the primary observation and are always treated a part of a single observation (they are not separable).   However, the reference range for the primary observation value is not inherited by the component values and is required when appropriate for each component observation.","","","","<valueCodeableConcept xmlns=""http://hl7.org/fhir"">
+  <coding>
+    <code value=""component:&lt;slice&gt;.code""/>
+  </coding>
+</valueCodeableConcept>","","","",,,,,"","pattern:code}
 ","",,"open","Observation.component",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "mii-pr-lungenfunktion-mef","Observation.component.id","Observation.component.id","","","",0,1,"","","","string {[]} {[]}
@@ -13445,7 +13505,7 @@ user content","",0,*,"","","","Extension {[]} {[]}
 ","Extensions are always sliced by (at least) url",,"open","Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "mii-pr-lungenfunktion-pef","Observation.code.coding","Observation.code.coding","","","",0,*,"","","Y","Coding {[]} {[]}
-","Code defined by a terminology system","A reference to a code defined by a terminology system.","Codes may be defined very casually in enumerations, or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.  Ordering of codings is undefined and SHALL NOT be used to infer meaning. Generally, at most only one of the coding values will be labeled as UserSelected = true.","Allows for alternative encodings within a code system, and translations to other code systems.","","","","","","","",,,,,"","value:$this}
+","Code defined by a terminology system","A reference to a code defined by a terminology system.","Codes may be defined very casually in enumerations, or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.  Ordering of codings is undefined and SHALL NOT be used to infer meaning. Generally, at most only one of the coding values will be labeled as UserSelected = true.","Allows for alternative encodings within a code system, and translations to other code systems.","","","","","","","",,,,,"","pattern:code}
 ","",,"open","CodeableConcept.coding",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "mii-pr-lungenfunktion-pef","Observation.code.coding:sct","Observation.code.coding","sct","","",0,1,"","","Y","Coding {[]} {[]}
@@ -13617,7 +13677,11 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","abgeleitet","Abgeleitet von Messwerten, ect.","All the reference choices that are listed in this element can represent clinical observations and other measurements that may be the source for a derived value.  The most common reference will be another Observation.  For a discussion on the ways Observations can assembled in groups together, see [Notes](http://hl7.org/fhir/R4/observation.html#obsgrouping) below.","","","","","","","","",,,,,"",,,,"Observation.derivedFrom",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "mii-pr-lungenfunktion-pef","Observation.component","Observation.component","","","",0,*,"Y","","Y","BackboneElement {[]} {[]}
-","Bestandteile","detailierte Bestandteile der Beobachtung","For a discussion on the ways Observations can be assembled in groups together see [Notes](http://hl7.org/fhir/R4/observation.html#notes) below.","Component observations share the same attributes in the Observation resource as the primary observation and are always treated a part of a single observation (they are not separable).   However, the reference range for the primary observation value is not inherited by the component values and is required when appropriate for each component observation.","","","","","","","",,,,,"","value:$this}
+","Bestandteile","detailierte Bestandteile der Beobachtung","For a discussion on the ways Observations can be assembled in groups together see [Notes](http://hl7.org/fhir/R4/observation.html#notes) below.","Component observations share the same attributes in the Observation resource as the primary observation and are always treated a part of a single observation (they are not separable).   However, the reference range for the primary observation value is not inherited by the component values and is required when appropriate for each component observation.","","","","<valueCodeableConcept xmlns=""http://hl7.org/fhir"">
+  <coding>
+    <code value=""component:&lt;slice&gt;.code""/>
+  </coding>
+</valueCodeableConcept>","","","",,,,,"","pattern:code}
 ","",,"open","Observation.component",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "mii-pr-lungenfunktion-pef","Observation.component.id","Observation.component.id","","","",0,1,"","","","string {[]} {[]}
@@ -14565,7 +14629,7 @@ Reported by","",0,*,"","","Y","Reference {[]} {[CanonicalType[http://hl7.org/fhi
 "
 "mii-pr-lungenfunktion-provokationstest","DiagnosticReport.result","DiagnosticReport.result","","Data
 Atomic ValueResultAtomic resultDataTestAnalyteBatteryOrganizer","",7,*,"Y","","","Reference {[]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/Observation|4.0.1]]}
-","Ergebnis","Ergebnis einer Beobachtung","Observations can contain observations.","Need to support individual results, or  groups of results, where the result grouping is arbitrary, but meaningful.","","","","","","","",,,,,"","type:$this}
+","Ergebnis","Ergebnis einer Beobachtung","Observations can contain observations.","Need to support individual results, or  groups of results, where the result grouping is arbitrary, but meaningful.","","","","","","","",,,,,"","profile:$this.resolve().code}
 ","",,"open","DiagnosticReport.result",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "mii-pr-lungenfunktion-provokationstest","DiagnosticReport.result:Dosis_Schwellwert","DiagnosticReport.result","Dosis_Schwellwert","Data
@@ -14759,7 +14823,7 @@ user content","",0,*,"","","","Extension {[]} {[]}
 ","Extensions are always sliced by (at least) url",,"open","Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "mii-pr-lungenfunktion-prozent","Observation.code.coding","Observation.code.coding","","","",0,*,"","","Y","Coding {[]} {[]}
-","Code defined by a terminology system","A reference to a code defined by a terminology system.","Codes may be defined very casually in enumerations, or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.  Ordering of codings is undefined and SHALL NOT be used to infer meaning. Generally, at most only one of the coding values will be labeled as UserSelected = true.","Allows for alternative encodings within a code system, and translations to other code systems.","","","","","","","",,,,,"","value:$this}
+","Code defined by a terminology system","A reference to a code defined by a terminology system.","Codes may be defined very casually in enumerations, or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.  Ordering of codings is undefined and SHALL NOT be used to infer meaning. Generally, at most only one of the coding values will be labeled as UserSelected = true.","Allows for alternative encodings within a code system, and translations to other code systems.","","","","","","","",,,,,"","pattern:code}
 ","",,"open","CodeableConcept.coding",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "mii-pr-lungenfunktion-prozent","Observation.code.coding.id","Observation.code.coding.id","","","",0,1,"","","","string {[]} {[]}
@@ -14953,7 +15017,11 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","abgeleitet","Abgeleitet von Messwerten, ect.","All the reference choices that are listed in this element can represent clinical observations and other measurements that may be the source for a derived value.  The most common reference will be another Observation.  For a discussion on the ways Observations can assembled in groups together, see [Notes](http://hl7.org/fhir/R4/observation.html#obsgrouping) below.","","","","","","","","",,,,,"",,,,"Observation.derivedFrom",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "mii-pr-lungenfunktion-prozent","Observation.component","Observation.component","","","",0,*,"Y","","Y","BackboneElement {[]} {[]}
-","Bestandteile","detailierte Bestandteile der Beobachtung","For a discussion on the ways Observations can be assembled in groups together see [Notes](http://hl7.org/fhir/R4/observation.html#notes) below.","Component observations share the same attributes in the Observation resource as the primary observation and are always treated a part of a single observation (they are not separable).   However, the reference range for the primary observation value is not inherited by the component values and is required when appropriate for each component observation.","","","","","","","",,,,,"","value:$this}
+","Bestandteile","detailierte Bestandteile der Beobachtung","For a discussion on the ways Observations can be assembled in groups together see [Notes](http://hl7.org/fhir/R4/observation.html#notes) below.","Component observations share the same attributes in the Observation resource as the primary observation and are always treated a part of a single observation (they are not separable).   However, the reference range for the primary observation value is not inherited by the component values and is required when appropriate for each component observation.","","","","<valueCodeableConcept xmlns=""http://hl7.org/fhir"">
+  <coding>
+    <code value=""component:&lt;slice&gt;.code""/>
+  </coding>
+</valueCodeableConcept>","","","",,,,,"","pattern:code}
 ","",,"open","Observation.component",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "mii-pr-lungenfunktion-prozent","Observation.component.id","Observation.component.id","","","",0,1,"","","","string {[]} {[]}
@@ -15309,7 +15377,7 @@ user content","",0,*,"","","","Extension {[]} {[]}
 ","Extensions are always sliced by (at least) url",,"open","Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "mii-pr-lungenfunktion-r-effektiv","Observation.code.coding","Observation.code.coding","","","",0,*,"","","Y","Coding {[]} {[]}
-","Code defined by a terminology system","A reference to a code defined by a terminology system.","Codes may be defined very casually in enumerations, or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.  Ordering of codings is undefined and SHALL NOT be used to infer meaning. Generally, at most only one of the coding values will be labeled as UserSelected = true.","Allows for alternative encodings within a code system, and translations to other code systems.","","","","","","","",,,,,"","value:$this}
+","Code defined by a terminology system","A reference to a code defined by a terminology system.","Codes may be defined very casually in enumerations, or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.  Ordering of codings is undefined and SHALL NOT be used to infer meaning. Generally, at most only one of the coding values will be labeled as UserSelected = true.","Allows for alternative encodings within a code system, and translations to other code systems.","","","","","","","",,,,,"","pattern:code}
 ","",,"open","CodeableConcept.coding",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "mii-pr-lungenfunktion-r-effektiv","Observation.code.coding:sct","Observation.code.coding","sct","","",0,1,"","","Y","Coding {[]} {[]}
@@ -15486,7 +15554,11 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","abgeleitet","Abgeleitet von Messwerten, ect.","All the reference choices that are listed in this element can represent clinical observations and other measurements that may be the source for a derived value.  The most common reference will be another Observation.  For a discussion on the ways Observations can assembled in groups together, see [Notes](http://hl7.org/fhir/R4/observation.html#obsgrouping) below.","","","","","","","","",,,,,"",,,,"Observation.derivedFrom",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "mii-pr-lungenfunktion-r-effektiv","Observation.component","Observation.component","","","",0,*,"Y","","Y","BackboneElement {[]} {[]}
-","Bestandteile","detailierte Bestandteile der Beobachtung","For a discussion on the ways Observations can be assembled in groups together see [Notes](http://hl7.org/fhir/R4/observation.html#notes) below.","Component observations share the same attributes in the Observation resource as the primary observation and are always treated a part of a single observation (they are not separable).   However, the reference range for the primary observation value is not inherited by the component values and is required when appropriate for each component observation.","","","","","","","",,,,,"","value:$this}
+","Bestandteile","detailierte Bestandteile der Beobachtung","For a discussion on the ways Observations can be assembled in groups together see [Notes](http://hl7.org/fhir/R4/observation.html#notes) below.","Component observations share the same attributes in the Observation resource as the primary observation and are always treated a part of a single observation (they are not separable).   However, the reference range for the primary observation value is not inherited by the component values and is required when appropriate for each component observation.","","","","<valueCodeableConcept xmlns=""http://hl7.org/fhir"">
+  <coding>
+    <code value=""component:&lt;slice&gt;.code""/>
+  </coding>
+</valueCodeableConcept>","","","",,,,,"","pattern:code}
 ","",,"open","Observation.component",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "mii-pr-lungenfunktion-r-effektiv","Observation.component.id","Observation.component.id","","","",0,1,"","","","string {[]} {[]}
@@ -15853,7 +15925,7 @@ user content","",0,*,"","","","Extension {[]} {[]}
 ","Extensions are always sliced by (at least) url",,"open","Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "mii-pr-lungenfunktion-r-spezifisch","Observation.code.coding","Observation.code.coding","","","",0,*,"","","Y","Coding {[]} {[]}
-","Code defined by a terminology system","A reference to a code defined by a terminology system.","Codes may be defined very casually in enumerations, or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.  Ordering of codings is undefined and SHALL NOT be used to infer meaning. Generally, at most only one of the coding values will be labeled as UserSelected = true.","Allows for alternative encodings within a code system, and translations to other code systems.","","","","","","","",,,,,"","value:$this}
+","Code defined by a terminology system","A reference to a code defined by a terminology system.","Codes may be defined very casually in enumerations, or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.  Ordering of codings is undefined and SHALL NOT be used to infer meaning. Generally, at most only one of the coding values will be labeled as UserSelected = true.","Allows for alternative encodings within a code system, and translations to other code systems.","","","","","","","",,,,,"","pattern:code}
 ","",,"open","CodeableConcept.coding",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "mii-pr-lungenfunktion-r-spezifisch","Observation.code.coding:sct","Observation.code.coding","sct","","",0,1,"","","Y","Coding {[]} {[]}
@@ -16030,7 +16102,11 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","abgeleitet","Abgeleitet von Messwerten, ect.","All the reference choices that are listed in this element can represent clinical observations and other measurements that may be the source for a derived value.  The most common reference will be another Observation.  For a discussion on the ways Observations can assembled in groups together, see [Notes](http://hl7.org/fhir/R4/observation.html#obsgrouping) below.","","","","","","","","",,,,,"",,,,"Observation.derivedFrom",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "mii-pr-lungenfunktion-r-spezifisch","Observation.component","Observation.component","","","",0,*,"Y","","Y","BackboneElement {[]} {[]}
-","Bestandteile","detailierte Bestandteile der Beobachtung","For a discussion on the ways Observations can be assembled in groups together see [Notes](http://hl7.org/fhir/R4/observation.html#notes) below.","Component observations share the same attributes in the Observation resource as the primary observation and are always treated a part of a single observation (they are not separable).   However, the reference range for the primary observation value is not inherited by the component values and is required when appropriate for each component observation.","","","","","","","",,,,,"","value:$this}
+","Bestandteile","detailierte Bestandteile der Beobachtung","For a discussion on the ways Observations can be assembled in groups together see [Notes](http://hl7.org/fhir/R4/observation.html#notes) below.","Component observations share the same attributes in the Observation resource as the primary observation and are always treated a part of a single observation (they are not separable).   However, the reference range for the primary observation value is not inherited by the component values and is required when appropriate for each component observation.","","","","<valueCodeableConcept xmlns=""http://hl7.org/fhir"">
+  <coding>
+    <code value=""component:&lt;slice&gt;.code""/>
+  </coding>
+</valueCodeableConcept>","","","",,,,,"","pattern:code}
 ","",,"open","Observation.component",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "mii-pr-lungenfunktion-r-spezifisch","Observation.component.id","Observation.component.id","","","",0,1,"","","","string {[]} {[]}
@@ -16397,7 +16473,7 @@ user content","",0,*,"","","","Extension {[]} {[]}
 ","Extensions are always sliced by (at least) url",,"open","Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "mii-pr-lungenfunktion-r","Observation.code.coding","Observation.code.coding","","","",0,*,"","","Y","Coding {[]} {[]}
-","Code defined by a terminology system","A reference to a code defined by a terminology system.","Codes may be defined very casually in enumerations, or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.  Ordering of codings is undefined and SHALL NOT be used to infer meaning. Generally, at most only one of the coding values will be labeled as UserSelected = true.","Allows for alternative encodings within a code system, and translations to other code systems.","","","","","","","",,,,,"","value:$this}
+","Code defined by a terminology system","A reference to a code defined by a terminology system.","Codes may be defined very casually in enumerations, or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.  Ordering of codings is undefined and SHALL NOT be used to infer meaning. Generally, at most only one of the coding values will be labeled as UserSelected = true.","Allows for alternative encodings within a code system, and translations to other code systems.","","","","","","","",,,,,"","pattern:code}
 ","",,"open","CodeableConcept.coding",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "mii-pr-lungenfunktion-r","Observation.code.coding:sct","Observation.code.coding","sct","","",0,1,"","","Y","Coding {[]} {[]}
@@ -16574,7 +16650,11 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","abgeleitet","Abgeleitet von Messwerten, ect.","All the reference choices that are listed in this element can represent clinical observations and other measurements that may be the source for a derived value.  The most common reference will be another Observation.  For a discussion on the ways Observations can assembled in groups together, see [Notes](http://hl7.org/fhir/R4/observation.html#obsgrouping) below.","","","","","","","","",,,,,"",,,,"Observation.derivedFrom",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "mii-pr-lungenfunktion-r","Observation.component","Observation.component","","","",0,*,"Y","","Y","BackboneElement {[]} {[]}
-","Bestandteile","detailierte Bestandteile der Beobachtung","For a discussion on the ways Observations can be assembled in groups together see [Notes](http://hl7.org/fhir/R4/observation.html#notes) below.","Component observations share the same attributes in the Observation resource as the primary observation and are always treated a part of a single observation (they are not separable).   However, the reference range for the primary observation value is not inherited by the component values and is required when appropriate for each component observation.","","","","","","","",,,,,"","value:$this}
+","Bestandteile","detailierte Bestandteile der Beobachtung","For a discussion on the ways Observations can be assembled in groups together see [Notes](http://hl7.org/fhir/R4/observation.html#notes) below.","Component observations share the same attributes in the Observation resource as the primary observation and are always treated a part of a single observation (they are not separable).   However, the reference range for the primary observation value is not inherited by the component values and is required when appropriate for each component observation.","","","","<valueCodeableConcept xmlns=""http://hl7.org/fhir"">
+  <coding>
+    <code value=""component:&lt;slice&gt;.code""/>
+  </coding>
+</valueCodeableConcept>","","","",,,,,"","pattern:code}
 ","",,"open","Observation.component",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "mii-pr-lungenfunktion-r","Observation.component.id","Observation.component.id","","","",0,1,"","","","string {[]} {[]}
@@ -16941,7 +17021,7 @@ user content","",0,*,"","","","Extension {[]} {[]}
 ","Extensions are always sliced by (at least) url",,"open","Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "mii-pr-lungenfunktion-rv-tlc","Observation.code.coding","Observation.code.coding","","","",0,*,"","","Y","Coding {[]} {[]}
-","Code defined by a terminology system","A reference to a code defined by a terminology system.","Codes may be defined very casually in enumerations, or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.  Ordering of codings is undefined and SHALL NOT be used to infer meaning. Generally, at most only one of the coding values will be labeled as UserSelected = true.","Allows for alternative encodings within a code system, and translations to other code systems.","","","","","","","",,,,,"","value:$this}
+","Code defined by a terminology system","A reference to a code defined by a terminology system.","Codes may be defined very casually in enumerations, or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.  Ordering of codings is undefined and SHALL NOT be used to infer meaning. Generally, at most only one of the coding values will be labeled as UserSelected = true.","Allows for alternative encodings within a code system, and translations to other code systems.","","","","","","","",,,,,"","pattern:code}
 ","",,"open","CodeableConcept.coding",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "mii-pr-lungenfunktion-rv-tlc","Observation.code.coding:sct","Observation.code.coding","sct","","",0,1,"","","Y","Coding {[]} {[]}
@@ -17118,7 +17198,11 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","abgeleitet","Abgeleitet von Messwerten, ect.","All the reference choices that are listed in this element can represent clinical observations and other measurements that may be the source for a derived value.  The most common reference will be another Observation.  For a discussion on the ways Observations can assembled in groups together, see [Notes](http://hl7.org/fhir/R4/observation.html#obsgrouping) below.","","","","","","","","",,,,,"",,,,"Observation.derivedFrom",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "mii-pr-lungenfunktion-rv-tlc","Observation.component","Observation.component","","","",0,*,"Y","","Y","BackboneElement {[]} {[]}
-","Bestandteile","detailierte Bestandteile der Beobachtung","For a discussion on the ways Observations can be assembled in groups together see [Notes](http://hl7.org/fhir/R4/observation.html#notes) below.","Component observations share the same attributes in the Observation resource as the primary observation and are always treated a part of a single observation (they are not separable).   However, the reference range for the primary observation value is not inherited by the component values and is required when appropriate for each component observation.","","","","","","","",,,,,"","value:$this}
+","Bestandteile","detailierte Bestandteile der Beobachtung","For a discussion on the ways Observations can be assembled in groups together see [Notes](http://hl7.org/fhir/R4/observation.html#notes) below.","Component observations share the same attributes in the Observation resource as the primary observation and are always treated a part of a single observation (they are not separable).   However, the reference range for the primary observation value is not inherited by the component values and is required when appropriate for each component observation.","","","","<valueCodeableConcept xmlns=""http://hl7.org/fhir"">
+  <coding>
+    <code value=""component:&lt;slice&gt;.code""/>
+  </coding>
+</valueCodeableConcept>","","","",,,,,"","pattern:code}
 ","",,"open","Observation.component",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "mii-pr-lungenfunktion-rv-tlc","Observation.component.id","Observation.component.id","","","",0,1,"","","","string {[]} {[]}
@@ -17485,7 +17569,7 @@ user content","",0,*,"","","","Extension {[]} {[]}
 ","Extensions are always sliced by (at least) url",,"open","Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "mii-pr-lungenfunktion-rv","Observation.code.coding","Observation.code.coding","","","",0,*,"","","Y","Coding {[]} {[]}
-","Code defined by a terminology system","A reference to a code defined by a terminology system.","Codes may be defined very casually in enumerations, or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.  Ordering of codings is undefined and SHALL NOT be used to infer meaning. Generally, at most only one of the coding values will be labeled as UserSelected = true.","Allows for alternative encodings within a code system, and translations to other code systems.","","","","","","","",,,,,"","value:$this}
+","Code defined by a terminology system","A reference to a code defined by a terminology system.","Codes may be defined very casually in enumerations, or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.  Ordering of codings is undefined and SHALL NOT be used to infer meaning. Generally, at most only one of the coding values will be labeled as UserSelected = true.","Allows for alternative encodings within a code system, and translations to other code systems.","","","","","","","",,,,,"","pattern:code}
 ","",,"open","CodeableConcept.coding",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "mii-pr-lungenfunktion-rv","Observation.code.coding:sct","Observation.code.coding","sct","","",0,1,"","","Y","Coding {[]} {[]}
@@ -17662,7 +17746,11 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","abgeleitet","Abgeleitet von Messwerten, ect.","All the reference choices that are listed in this element can represent clinical observations and other measurements that may be the source for a derived value.  The most common reference will be another Observation.  For a discussion on the ways Observations can assembled in groups together, see [Notes](http://hl7.org/fhir/R4/observation.html#obsgrouping) below.","","","","","","","","",,,,,"",,,,"Observation.derivedFrom",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "mii-pr-lungenfunktion-rv","Observation.component","Observation.component","","","",0,*,"Y","","Y","BackboneElement {[]} {[]}
-","Bestandteile","detailierte Bestandteile der Beobachtung","For a discussion on the ways Observations can be assembled in groups together see [Notes](http://hl7.org/fhir/R4/observation.html#notes) below.","Component observations share the same attributes in the Observation resource as the primary observation and are always treated a part of a single observation (they are not separable).   However, the reference range for the primary observation value is not inherited by the component values and is required when appropriate for each component observation.","","","","","","","",,,,,"","value:$this}
+","Bestandteile","detailierte Bestandteile der Beobachtung","For a discussion on the ways Observations can be assembled in groups together see [Notes](http://hl7.org/fhir/R4/observation.html#notes) below.","Component observations share the same attributes in the Observation resource as the primary observation and are always treated a part of a single observation (they are not separable).   However, the reference range for the primary observation value is not inherited by the component values and is required when appropriate for each component observation.","","","","<valueCodeableConcept xmlns=""http://hl7.org/fhir"">
+  <coding>
+    <code value=""component:&lt;slice&gt;.code""/>
+  </coding>
+</valueCodeableConcept>","","","",,,,,"","pattern:code}
 ","",,"open","Observation.component",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "mii-pr-lungenfunktion-rv","Observation.component.id","Observation.component.id","","","",0,1,"","","","string {[]} {[]}
@@ -18026,7 +18114,7 @@ user content","",0,*,"","","","Extension {[]} {[]}
 ","Extensions are always sliced by (at least) url",,"open","Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "mii-pr-lungenfunktion-sg-total","Observation.code.coding","Observation.code.coding","","","",0,*,"","","Y","Coding {[]} {[]}
-","Code defined by a terminology system","A reference to a code defined by a terminology system.","Codes may be defined very casually in enumerations, or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.  Ordering of codings is undefined and SHALL NOT be used to infer meaning. Generally, at most only one of the coding values will be labeled as UserSelected = true.","Allows for alternative encodings within a code system, and translations to other code systems.","","","","","","","",,,,,"","value:$this}
+","Code defined by a terminology system","A reference to a code defined by a terminology system.","Codes may be defined very casually in enumerations, or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.  Ordering of codings is undefined and SHALL NOT be used to infer meaning. Generally, at most only one of the coding values will be labeled as UserSelected = true.","Allows for alternative encodings within a code system, and translations to other code systems.","","","","","","","",,,,,"","pattern:code}
 ","",,"open","CodeableConcept.coding",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "mii-pr-lungenfunktion-sg-total","Observation.code.coding:sct","Observation.code.coding","sct","","",0,1,"","","Y","Coding {[]} {[]}
@@ -18206,7 +18294,11 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","abgeleitet","Abgeleitet von Messwerten, ect.","All the reference choices that are listed in this element can represent clinical observations and other measurements that may be the source for a derived value.  The most common reference will be another Observation.  For a discussion on the ways Observations can assembled in groups together, see [Notes](http://hl7.org/fhir/R4/observation.html#obsgrouping) below.","","","","","","","","",,,,,"",,,,"Observation.derivedFrom",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "mii-pr-lungenfunktion-sg-total","Observation.component","Observation.component","","","",0,*,"Y","","Y","BackboneElement {[]} {[]}
-","Bestandteile","detailierte Bestandteile der Beobachtung","For a discussion on the ways Observations can be assembled in groups together see [Notes](http://hl7.org/fhir/R4/observation.html#notes) below.","Component observations share the same attributes in the Observation resource as the primary observation and are always treated a part of a single observation (they are not separable).   However, the reference range for the primary observation value is not inherited by the component values and is required when appropriate for each component observation.","","","","","","","",,,,,"","value:$this}
+","Bestandteile","detailierte Bestandteile der Beobachtung","For a discussion on the ways Observations can be assembled in groups together see [Notes](http://hl7.org/fhir/R4/observation.html#notes) below.","Component observations share the same attributes in the Observation resource as the primary observation and are always treated a part of a single observation (they are not separable).   However, the reference range for the primary observation value is not inherited by the component values and is required when appropriate for each component observation.","","","","<valueCodeableConcept xmlns=""http://hl7.org/fhir"">
+  <coding>
+    <code value=""component:&lt;slice&gt;.code""/>
+  </coding>
+</valueCodeableConcept>","","","",,,,,"","pattern:code}
 ","",,"open","Observation.component",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "mii-pr-lungenfunktion-sg-total","Observation.component.id","Observation.component.id","","","",0,1,"","","","string {[]} {[]}
@@ -19169,7 +19261,7 @@ Reported by","",0,*,"","","Y","Reference {[]} {[CanonicalType[http://hl7.org/fhi
 "
 "mii-pr-lungenfunktion-spirometrie","DiagnosticReport.result","DiagnosticReport.result","","Data
 Atomic ValueResultAtomic resultDataTestAnalyteBatteryOrganizer","",0,*,"Y","","","Reference {[]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/Observation|4.0.1]]}
-","Ergebnis","Ergebnis einer Beobachtung","Observations can contain observations.","Need to support individual results, or  groups of results, where the result grouping is arbitrary, but meaningful.","","","","","","","",,,,,"","type:$this}
+","Ergebnis","Ergebnis einer Beobachtung","Observations can contain observations.","Need to support individual results, or  groups of results, where the result grouping is arbitrary, but meaningful.","","","","","","","",,,,,"","profile:$this.resolve()}
 ","",,"open","DiagnosticReport.result",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "mii-pr-lungenfunktion-spirometrie","DiagnosticReport.result:BF","DiagnosticReport.result","BF","Data
@@ -19371,7 +19463,7 @@ user content","",0,*,"","","","Extension {[]} {[]}
 ","Extensions are always sliced by (at least) url",,"open","Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "mii-pr-lungenfunktion-tlc","Observation.code.coding","Observation.code.coding","","","",0,*,"","","Y","Coding {[]} {[]}
-","Code defined by a terminology system","A reference to a code defined by a terminology system.","Codes may be defined very casually in enumerations, or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.  Ordering of codings is undefined and SHALL NOT be used to infer meaning. Generally, at most only one of the coding values will be labeled as UserSelected = true.","Allows for alternative encodings within a code system, and translations to other code systems.","","","","","","","",,,,,"","value:$this}
+","Code defined by a terminology system","A reference to a code defined by a terminology system.","Codes may be defined very casually in enumerations, or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.  Ordering of codings is undefined and SHALL NOT be used to infer meaning. Generally, at most only one of the coding values will be labeled as UserSelected = true.","Allows for alternative encodings within a code system, and translations to other code systems.","","","","","","","",,,,,"","pattern:code}
 ","",,"open","CodeableConcept.coding",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "mii-pr-lungenfunktion-tlc","Observation.code.coding:sct","Observation.code.coding","sct","","",0,1,"","","Y","Coding {[]} {[]}
@@ -19548,7 +19640,11 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","abgeleitet","Abgeleitet von Messwerten, ect.","All the reference choices that are listed in this element can represent clinical observations and other measurements that may be the source for a derived value.  The most common reference will be another Observation.  For a discussion on the ways Observations can assembled in groups together, see [Notes](http://hl7.org/fhir/R4/observation.html#obsgrouping) below.","","","","","","","","",,,,,"",,,,"Observation.derivedFrom",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "mii-pr-lungenfunktion-tlc","Observation.component","Observation.component","","","",0,*,"Y","","Y","BackboneElement {[]} {[]}
-","Bestandteile","detailierte Bestandteile der Beobachtung","For a discussion on the ways Observations can be assembled in groups together see [Notes](http://hl7.org/fhir/R4/observation.html#notes) below.","Component observations share the same attributes in the Observation resource as the primary observation and are always treated a part of a single observation (they are not separable).   However, the reference range for the primary observation value is not inherited by the component values and is required when appropriate for each component observation.","","","","","","","",,,,,"","value:$this}
+","Bestandteile","detailierte Bestandteile der Beobachtung","For a discussion on the ways Observations can be assembled in groups together see [Notes](http://hl7.org/fhir/R4/observation.html#notes) below.","Component observations share the same attributes in the Observation resource as the primary observation and are always treated a part of a single observation (they are not separable).   However, the reference range for the primary observation value is not inherited by the component values and is required when appropriate for each component observation.","","","","<valueCodeableConcept xmlns=""http://hl7.org/fhir"">
+  <coding>
+    <code value=""component:&lt;slice&gt;.code""/>
+  </coding>
+</valueCodeableConcept>","","","",,,,,"","pattern:code}
 ","",,"open","Observation.component",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "mii-pr-lungenfunktion-tlc","Observation.component.id","Observation.component.id","","","",0,1,"","","","string {[]} {[]}
@@ -19912,7 +20008,7 @@ user content","",0,*,"","","","Extension {[]} {[]}
 ","Extensions are always sliced by (at least) url",,"open","Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "mii-pr-lungenfunktion-transferkoeffizient","Observation.code.coding","Observation.code.coding","","","",0,*,"","","Y","Coding {[]} {[]}
-","Code defined by a terminology system","A reference to a code defined by a terminology system.","Codes may be defined very casually in enumerations, or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.  Ordering of codings is undefined and SHALL NOT be used to infer meaning. Generally, at most only one of the coding values will be labeled as UserSelected = true.","Allows for alternative encodings within a code system, and translations to other code systems.","","","","","","","",,,,,"","value:$this}
+","Code defined by a terminology system","A reference to a code defined by a terminology system.","Codes may be defined very casually in enumerations, or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.  Ordering of codings is undefined and SHALL NOT be used to infer meaning. Generally, at most only one of the coding values will be labeled as UserSelected = true.","Allows for alternative encodings within a code system, and translations to other code systems.","","","","","","","",,,,,"","pattern:code}
 ","",,"open","CodeableConcept.coding",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "mii-pr-lungenfunktion-transferkoeffizient","Observation.code.coding.id","Observation.code.coding.id","","","",0,1,"","","","string {[]} {[]}
@@ -20106,7 +20202,11 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","abgeleitet","Abgeleitet von Messwerten, ect.","All the reference choices that are listed in this element can represent clinical observations and other measurements that may be the source for a derived value.  The most common reference will be another Observation.  For a discussion on the ways Observations can assembled in groups together, see [Notes](http://hl7.org/fhir/R4/observation.html#obsgrouping) below.","","","","","","","","",,,,,"",,,,"Observation.derivedFrom",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "mii-pr-lungenfunktion-transferkoeffizient","Observation.component","Observation.component","","","",0,*,"Y","","Y","BackboneElement {[]} {[]}
-","Bestandteile","detailierte Bestandteile der Beobachtung","For a discussion on the ways Observations can be assembled in groups together see [Notes](http://hl7.org/fhir/R4/observation.html#notes) below.","Component observations share the same attributes in the Observation resource as the primary observation and are always treated a part of a single observation (they are not separable).   However, the reference range for the primary observation value is not inherited by the component values and is required when appropriate for each component observation.","","","","","","","",,,,,"","value:$this}
+","Bestandteile","detailierte Bestandteile der Beobachtung","For a discussion on the ways Observations can be assembled in groups together see [Notes](http://hl7.org/fhir/R4/observation.html#notes) below.","Component observations share the same attributes in the Observation resource as the primary observation and are always treated a part of a single observation (they are not separable).   However, the reference range for the primary observation value is not inherited by the component values and is required when appropriate for each component observation.","","","","<valueCodeableConcept xmlns=""http://hl7.org/fhir"">
+  <coding>
+    <code value=""component:&lt;slice&gt;.code""/>
+  </coding>
+</valueCodeableConcept>","","","",,,,,"","pattern:code}
 ","",,"open","Observation.component",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "mii-pr-lungenfunktion-transferkoeffizient","Observation.component.id","Observation.component.id","","","",0,1,"","","","string {[]} {[]}
@@ -20620,7 +20720,7 @@ user content","",0,*,"","","","Extension {[]} {[]}
 ","Extensions are always sliced by (at least) url",,"open","Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "mii-pr-lungenfunktion-va","Observation.code.coding","Observation.code.coding","","","",0,*,"","","Y","Coding {[]} {[]}
-","Code defined by a terminology system","A reference to a code defined by a terminology system.","Codes may be defined very casually in enumerations, or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.  Ordering of codings is undefined and SHALL NOT be used to infer meaning. Generally, at most only one of the coding values will be labeled as UserSelected = true.","Allows for alternative encodings within a code system, and translations to other code systems.","","","","","","","",,,,,"","value:$this}
+","Code defined by a terminology system","A reference to a code defined by a terminology system.","Codes may be defined very casually in enumerations, or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.  Ordering of codings is undefined and SHALL NOT be used to infer meaning. Generally, at most only one of the coding values will be labeled as UserSelected = true.","Allows for alternative encodings within a code system, and translations to other code systems.","","","","","","","",,,,,"","pattern:code}
 ","",,"open","CodeableConcept.coding",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "mii-pr-lungenfunktion-va","Observation.code.coding:sct","Observation.code.coding","sct","","",0,1,"","","Y","Coding {[]} {[]}
@@ -20800,7 +20900,11 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","abgeleitet","Abgeleitet von Messwerten, ect.","All the reference choices that are listed in this element can represent clinical observations and other measurements that may be the source for a derived value.  The most common reference will be another Observation.  For a discussion on the ways Observations can assembled in groups together, see [Notes](http://hl7.org/fhir/R4/observation.html#obsgrouping) below.","","","","","","","","",,,,,"",,,,"Observation.derivedFrom",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "mii-pr-lungenfunktion-va","Observation.component","Observation.component","","","",0,*,"Y","","Y","BackboneElement {[]} {[]}
-","Bestandteile","detailierte Bestandteile der Beobachtung","For a discussion on the ways Observations can be assembled in groups together see [Notes](http://hl7.org/fhir/R4/observation.html#notes) below.","Component observations share the same attributes in the Observation resource as the primary observation and are always treated a part of a single observation (they are not separable).   However, the reference range for the primary observation value is not inherited by the component values and is required when appropriate for each component observation.","","","","","","","",,,,,"","value:$this}
+","Bestandteile","detailierte Bestandteile der Beobachtung","For a discussion on the ways Observations can be assembled in groups together see [Notes](http://hl7.org/fhir/R4/observation.html#notes) below.","Component observations share the same attributes in the Observation resource as the primary observation and are always treated a part of a single observation (they are not separable).   However, the reference range for the primary observation value is not inherited by the component values and is required when appropriate for each component observation.","","","","<valueCodeableConcept xmlns=""http://hl7.org/fhir"">
+  <coding>
+    <code value=""component:&lt;slice&gt;.code""/>
+  </coding>
+</valueCodeableConcept>","","","",,,,,"","pattern:code}
 ","",,"open","Observation.component",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "mii-pr-lungenfunktion-va","Observation.component.id","Observation.component.id","","","",0,1,"","","","string {[]} {[]}
@@ -21170,7 +21274,7 @@ user content","",0,*,"","","","Extension {[]} {[]}
 ","Extensions are always sliced by (at least) url",,"open","Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "mii-pr-lungenfunktion-vc","Observation.code.coding","Observation.code.coding","","","",0,*,"","","Y","Coding {[]} {[]}
-","Code defined by a terminology system","A reference to a code defined by a terminology system.","Codes may be defined very casually in enumerations, or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.  Ordering of codings is undefined and SHALL NOT be used to infer meaning. Generally, at most only one of the coding values will be labeled as UserSelected = true.","Allows for alternative encodings within a code system, and translations to other code systems.","","","","","","","",,,,,"","value:$this}
+","Code defined by a terminology system","A reference to a code defined by a terminology system.","Codes may be defined very casually in enumerations, or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.  Ordering of codings is undefined and SHALL NOT be used to infer meaning. Generally, at most only one of the coding values will be labeled as UserSelected = true.","Allows for alternative encodings within a code system, and translations to other code systems.","","","","","","","",,,,,"","pattern:code}
 ","",,"open","CodeableConcept.coding",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "mii-pr-lungenfunktion-vc","Observation.code.coding:sct","Observation.code.coding","sct","","",0,1,"","","Y","Coding {[]} {[]}
@@ -21342,7 +21446,11 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","abgeleitet","Abgeleitet von Messwerten, ect.","All the reference choices that are listed in this element can represent clinical observations and other measurements that may be the source for a derived value.  The most common reference will be another Observation.  For a discussion on the ways Observations can assembled in groups together, see [Notes](http://hl7.org/fhir/R4/observation.html#obsgrouping) below.","","","","","","","","",,,,,"",,,,"Observation.derivedFrom",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "mii-pr-lungenfunktion-vc","Observation.component","Observation.component","","","",0,*,"Y","","Y","BackboneElement {[]} {[]}
-","Bestandteile","detailierte Bestandteile der Beobachtung","For a discussion on the ways Observations can be assembled in groups together see [Notes](http://hl7.org/fhir/R4/observation.html#notes) below.","Component observations share the same attributes in the Observation resource as the primary observation and are always treated a part of a single observation (they are not separable).   However, the reference range for the primary observation value is not inherited by the component values and is required when appropriate for each component observation.","","","","","","","",,,,,"","value:$this}
+","Bestandteile","detailierte Bestandteile der Beobachtung","For a discussion on the ways Observations can be assembled in groups together see [Notes](http://hl7.org/fhir/R4/observation.html#notes) below.","Component observations share the same attributes in the Observation resource as the primary observation and are always treated a part of a single observation (they are not separable).   However, the reference range for the primary observation value is not inherited by the component values and is required when appropriate for each component observation.","","","","<valueCodeableConcept xmlns=""http://hl7.org/fhir"">
+  <coding>
+    <code value=""component:&lt;slice&gt;.code""/>
+  </coding>
+</valueCodeableConcept>","","","",,,,,"","pattern:code}
 ","",,"open","Observation.component",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "mii-pr-lungenfunktion-vc","Observation.component.id","Observation.component.id","","","",0,1,"","","","string {[]} {[]}
@@ -21702,7 +21810,7 @@ user content","",0,*,"","","","Extension {[]} {[]}
 ","Extensions are always sliced by (at least) url",,"open","Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "mii-pr-lungenfunktion-viskositaet","Observation.code.coding","Observation.code.coding","","","",0,*,"","","Y","Coding {[]} {[]}
-","Code defined by a terminology system","A reference to a code defined by a terminology system.","Codes may be defined very casually in enumerations, or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.  Ordering of codings is undefined and SHALL NOT be used to infer meaning. Generally, at most only one of the coding values will be labeled as UserSelected = true.","Allows for alternative encodings within a code system, and translations to other code systems.","","","","","","","",,,,,"","value:$this}
+","Code defined by a terminology system","A reference to a code defined by a terminology system.","Codes may be defined very casually in enumerations, or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.  Ordering of codings is undefined and SHALL NOT be used to infer meaning. Generally, at most only one of the coding values will be labeled as UserSelected = true.","Allows for alternative encodings within a code system, and translations to other code systems.","","","","","","","",,,,,"","pattern:code}
 ","",,"open","CodeableConcept.coding",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "mii-pr-lungenfunktion-viskositaet","Observation.code.coding.id","Observation.code.coding.id","","","",0,1,"","","","string {[]} {[]}
@@ -21896,7 +22004,11 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","abgeleitet","Abgeleitet von Messwerten, ect.","All the reference choices that are listed in this element can represent clinical observations and other measurements that may be the source for a derived value.  The most common reference will be another Observation.  For a discussion on the ways Observations can assembled in groups together, see [Notes](http://hl7.org/fhir/R4/observation.html#obsgrouping) below.","","","","","","","","",,,,,"",,,,"Observation.derivedFrom",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "mii-pr-lungenfunktion-viskositaet","Observation.component","Observation.component","","","",0,*,"Y","","Y","BackboneElement {[]} {[]}
-","Bestandteile","detailierte Bestandteile der Beobachtung","For a discussion on the ways Observations can be assembled in groups together see [Notes](http://hl7.org/fhir/R4/observation.html#notes) below.","Component observations share the same attributes in the Observation resource as the primary observation and are always treated a part of a single observation (they are not separable).   However, the reference range for the primary observation value is not inherited by the component values and is required when appropriate for each component observation.","","","","","","","",,,,,"","value:$this}
+","Bestandteile","detailierte Bestandteile der Beobachtung","For a discussion on the ways Observations can be assembled in groups together see [Notes](http://hl7.org/fhir/R4/observation.html#notes) below.","Component observations share the same attributes in the Observation resource as the primary observation and are always treated a part of a single observation (they are not separable).   However, the reference range for the primary observation value is not inherited by the component values and is required when appropriate for each component observation.","","","","<valueCodeableConcept xmlns=""http://hl7.org/fhir"">
+  <coding>
+    <code value=""component:&lt;slice&gt;.code""/>
+  </coding>
+</valueCodeableConcept>","","","",,,,,"","pattern:code}
 ","",,"open","Observation.component",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "mii-pr-lungenfunktion-viskositaet","Observation.component.id","Observation.component.id","","","",0,1,"","","","string {[]} {[]}
@@ -22252,7 +22364,7 @@ user content","",0,*,"","","","Extension {[]} {[]}
 ","Extensions are always sliced by (at least) url",,"open","Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "mii-pr-lungenfunktion-volumen","Observation.code.coding","Observation.code.coding","","","",0,*,"","","Y","Coding {[]} {[]}
-","Code defined by a terminology system","A reference to a code defined by a terminology system.","Codes may be defined very casually in enumerations, or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.  Ordering of codings is undefined and SHALL NOT be used to infer meaning. Generally, at most only one of the coding values will be labeled as UserSelected = true.","Allows for alternative encodings within a code system, and translations to other code systems.","","","","","","","",,,,,"","value:$this}
+","Code defined by a terminology system","A reference to a code defined by a terminology system.","Codes may be defined very casually in enumerations, or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.  Ordering of codings is undefined and SHALL NOT be used to infer meaning. Generally, at most only one of the coding values will be labeled as UserSelected = true.","Allows for alternative encodings within a code system, and translations to other code systems.","","","","","","","",,,,,"","pattern:code}
 ","",,"open","CodeableConcept.coding",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "mii-pr-lungenfunktion-volumen","Observation.code.coding.id","Observation.code.coding.id","","","",0,1,"","","","string {[]} {[]}
@@ -22446,7 +22558,11 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","abgeleitet","Abgeleitet von Messwerten, ect.","All the reference choices that are listed in this element can represent clinical observations and other measurements that may be the source for a derived value.  The most common reference will be another Observation.  For a discussion on the ways Observations can assembled in groups together, see [Notes](http://hl7.org/fhir/R4/observation.html#obsgrouping) below.","","","","","","","","",,,,,"",,,,"Observation.derivedFrom",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "mii-pr-lungenfunktion-volumen","Observation.component","Observation.component","","","",0,*,"Y","","Y","BackboneElement {[]} {[]}
-","Bestandteile","detailierte Bestandteile der Beobachtung","For a discussion on the ways Observations can be assembled in groups together see [Notes](http://hl7.org/fhir/R4/observation.html#notes) below.","Component observations share the same attributes in the Observation resource as the primary observation and are always treated a part of a single observation (they are not separable).   However, the reference range for the primary observation value is not inherited by the component values and is required when appropriate for each component observation.","","","","","","","",,,,,"","value:$this}
+","Bestandteile","detailierte Bestandteile der Beobachtung","For a discussion on the ways Observations can be assembled in groups together see [Notes](http://hl7.org/fhir/R4/observation.html#notes) below.","Component observations share the same attributes in the Observation resource as the primary observation and are always treated a part of a single observation (they are not separable).   However, the reference range for the primary observation value is not inherited by the component values and is required when appropriate for each component observation.","","","","<valueCodeableConcept xmlns=""http://hl7.org/fhir"">
+  <coding>
+    <code value=""component:&lt;slice&gt;.code""/>
+  </coding>
+</valueCodeableConcept>","","","",,,,,"","pattern:code}
 ","",,"open","Observation.component",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "mii-pr-lungenfunktion-volumen","Observation.component.id","Observation.component.id","","","",0,1,"","","","string {[]} {[]}
@@ -22802,7 +22918,7 @@ user content","",0,*,"","","","Extension {[]} {[]}
 ","Extensions are always sliced by (at least) url",,"open","Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "mii-pr-lungenfunktion-widerstand","Observation.code.coding","Observation.code.coding","","","",0,*,"","","Y","Coding {[]} {[]}
-","Code defined by a terminology system","A reference to a code defined by a terminology system.","Codes may be defined very casually in enumerations, or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.  Ordering of codings is undefined and SHALL NOT be used to infer meaning. Generally, at most only one of the coding values will be labeled as UserSelected = true.","Allows for alternative encodings within a code system, and translations to other code systems.","","","","","","","",,,,,"","value:$this}
+","Code defined by a terminology system","A reference to a code defined by a terminology system.","Codes may be defined very casually in enumerations, or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.  Ordering of codings is undefined and SHALL NOT be used to infer meaning. Generally, at most only one of the coding values will be labeled as UserSelected = true.","Allows for alternative encodings within a code system, and translations to other code systems.","","","","","","","",,,,,"","pattern:code}
 ","",,"open","CodeableConcept.coding",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "mii-pr-lungenfunktion-widerstand","Observation.code.coding.id","Observation.code.coding.id","","","",0,1,"","","","string {[]} {[]}
@@ -22996,7 +23112,11 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","abgeleitet","Abgeleitet von Messwerten, ect.","All the reference choices that are listed in this element can represent clinical observations and other measurements that may be the source for a derived value.  The most common reference will be another Observation.  For a discussion on the ways Observations can assembled in groups together, see [Notes](http://hl7.org/fhir/R4/observation.html#obsgrouping) below.","","","","","","","","",,,,,"",,,,"Observation.derivedFrom",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "mii-pr-lungenfunktion-widerstand","Observation.component","Observation.component","","","",0,*,"Y","","Y","BackboneElement {[]} {[]}
-","Bestandteile","detailierte Bestandteile der Beobachtung","For a discussion on the ways Observations can be assembled in groups together see [Notes](http://hl7.org/fhir/R4/observation.html#notes) below.","Component observations share the same attributes in the Observation resource as the primary observation and are always treated a part of a single observation (they are not separable).   However, the reference range for the primary observation value is not inherited by the component values and is required when appropriate for each component observation.","","","","","","","",,,,,"","value:$this}
+","Bestandteile","detailierte Bestandteile der Beobachtung","For a discussion on the ways Observations can be assembled in groups together see [Notes](http://hl7.org/fhir/R4/observation.html#notes) below.","Component observations share the same attributes in the Observation resource as the primary observation and are always treated a part of a single observation (they are not separable).   However, the reference range for the primary observation value is not inherited by the component values and is required when appropriate for each component observation.","","","","<valueCodeableConcept xmlns=""http://hl7.org/fhir"">
+  <coding>
+    <code value=""component:&lt;slice&gt;.code""/>
+  </coding>
+</valueCodeableConcept>","","","",,,,,"","pattern:code}
 ","",,"open","Observation.component",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "mii-pr-lungenfunktion-widerstand","Observation.component.id","Observation.component.id","","","",0,1,"","","","string {[]} {[]}

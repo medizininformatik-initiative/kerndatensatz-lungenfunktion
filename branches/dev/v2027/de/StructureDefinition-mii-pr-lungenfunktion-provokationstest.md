@@ -242,8 +242,8 @@ Weitere Repräsentationen des Profils: [CSV](../StructureDefinition-mii-pr-lunge
       "path" : "DiagnosticReport.result",
       "slicing" : {
         "discriminator" : [{
-          "type" : "type",
-          "path" : "$this"
+          "type" : "profile",
+          "path" : "$this.resolve().code"
         }],
         "rules" : "open"
       },

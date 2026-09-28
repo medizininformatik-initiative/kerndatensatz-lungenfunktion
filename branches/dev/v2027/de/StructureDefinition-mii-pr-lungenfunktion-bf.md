@@ -1084,7 +1084,7 @@ Weitere Repräsentationen des Profils: [CSV](../StructureDefinition-mii-pr-lunge
       "slicing" : {
         "discriminator" : [{
           "type" : "pattern",
-          "path" : "$this"
+          "path" : "code"
         }],
         "rules" : "open"
       },
@@ -1136,6 +1136,11 @@ Weitere Repräsentationen des Profils: [CSV](../StructureDefinition-mii-pr-lunge
             "valueString" : "detailed components of this observation"
           }],
           "url" : "http://hl7.org/fhir/StructureDefinition/translation"
+        }]
+      },
+      "patternCodeableConcept" : {
+        "coding" : [{
+          "code" : "component:<slice>.code"
         }]
       },
       "mustSupport" : true
