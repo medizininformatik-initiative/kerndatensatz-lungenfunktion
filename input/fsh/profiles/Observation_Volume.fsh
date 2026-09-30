@@ -14,18 +14,16 @@ Description: "Dieses Beobachtung beschreibt eine Volumenmessung."
 * insert PR_CS_VS_Date
 * insert Publisher
 * insert LicenseCodeableCCBY40
-/*
 * insert CRMIShareableStructureDefinition
 * insert CRMIPublishableStructureDefinition
-* insert CRMIKnowledgeCapabilitiesStructureDefinition
+//* insert CRMIKnowledgeCapabilitiesStructureDefinition
 * insert CRMIVersionPolicyStrict
 * insert CRMIPackageSourceDefinitionalResource
 * insert CRMIArtifactUsageProfile
-* insert CRMIApprovalDate(2024-03-07)
+* insert CRMIApprovalDate(2026-09-15)
 * insert CRMIResourceEffectivePeriod
-* insert CRMIArtifactTopicInstance(http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl, C38081)
-* insert CRMIArtifactContributorsInstance
-*/
+* insert CRMIArtifactTopic(http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl, C38081)
+* insert CRMIArtifactContributors
 * id MS
 * meta MS
 * meta.source MS

@@ -14,6 +14,16 @@ Description: "MII LogicalModel Modul Lungenfunktion"
 * insert PR_CS_VS_Version
 * insert LicenseCodeableCCBY40
 * insert PR_CS_VS_Date
+* insert CRMIShareableStructureDefinition
+* insert CRMIPublishableStructureDefinition
+//* insert CRMIKnowledgeCapabilitiesStructureDefinition
+* insert CRMIVersionPolicyStrict
+* insert CRMIPackageSourceDefinitionalResource
+* insert CRMIArtifactUsageProfile
+* insert CRMIApprovalDate(2026-09-15)
+* insert CRMIResourceEffectivePeriod
+* insert CRMIArtifactTopic(http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl, C38081)
+* insert CRMIArtifactContributors
 * ^url = "https://www.medizininformatik-initiative.de/fhir/modul-lungenfunktion/StructureDefinition/LogicalModel/Lungenfunktion"
 * . ^short = "Das Erweiterungsmodul Lungenfunktion enthält Datenelemente zur Dokumentation von Lungenfunktionsuntersuchungen (Spirometrie, Bodyplethysmographie, Diffusionskapazität, Provokationstestung) und zugehörigen Befundberichten."
 //LM

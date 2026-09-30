@@ -5,18 +5,16 @@ Usage: #definition
 * insert SP_Publisher
 * insert Date
 * insert LicenseCodeableCCBY40Instance
-/*
 * insert CRMIShareableCapabilityStatement
 * insert CRMIPublishableCapabilityStatement
-* insert CRMIKnowledgeCapabilitiesCapabilityStatement
+//* insert CRMIKnowledgeCapabilitiesCapabilityStatement
 * insert CRMIVersionPolicyStrictInstance
 * insert CRMIPackageSource
 * insert CRMIArtifactUsageCapabilityStatement
-* insert CRMIApprovalDateInstance(2024-03-07)
+* insert CRMIApprovalDateInstance(2026-09-15)
 * insert CRMIResourceEffectivePeriodInstance
 * insert CRMIArtifactTopicInstance(http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl, C38081)
 * insert CRMIArtifactContributorsInstance
-*/
 * url = "https://www.medizininformatik-initiative.de/fhir/modul-lungenfunktion/CapabilityStatement/metadata"
 * name = "MII_CPS_Lungenfunktion_CapabilityStatement"
 * title = "MII CPS Lungenfunktion CapabilityStatement"
@@ -31,7 +29,7 @@ Usage: #definition
 * rest.mode = #server
 //DiagnosticReport
 * insert SupportResource(DiagnosticReport, #SHALL)
-* insert SupportProfile(https://www.medizininformatik-initiative.de/fhirmodul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-befund, #SHALL)
+* insert SupportProfile(https://www.medizininformatik-initiative.de/fhir/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-befund, #SHALL)
 * insert SupportProfile(https://www.medizininformatik-initiative.de/fhir/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-bodyplethysmographie, #SHALL)
 * insert SupportProfile(https://www.medizininformatik-initiative.de/fhir/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-diffusion, #SHALL)
 * insert SupportProfile(https://www.medizininformatik-initiative.de/fhir/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-spirometrie, #SHALL)

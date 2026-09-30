@@ -26,6 +26,7 @@ Description: "Diese Ressource beschreibt einen Befunde der Spirometrie"
 * insert CRMIArtifactTopicInstance(http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl, C38081)
 * insert CRMIArtifactContributorsInstance
 */
+
 //Profile
 * code.coding[loinc] = $loinc#18759-1 "Spirometry study"
 * code.coding[sct] = $sct#127783003 "Spirometry (procedure)"
