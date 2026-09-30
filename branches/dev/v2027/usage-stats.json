@@ -66,14 +66,17 @@
       "Procedure.code.coding"
     ],
     "http://hl7.org/fhir/StructureDefinition/artifact-author": [
+      "CapabilityStatement",
       "ImplementationGuide",
       "StructureDefinition"
     ],
     "http://hl7.org/fhir/StructureDefinition/artifact-editor": [
+      "CapabilityStatement",
       "ImplementationGuide",
       "StructureDefinition"
     ],
     "http://hl7.org/fhir/StructureDefinition/artifact-endorser": [
+      "CapabilityStatement",
       "ImplementationGuide",
       "StructureDefinition"
     ],
@@ -81,14 +84,17 @@
       "ImplementationGuide"
     ],
     "http://hl7.org/fhir/StructureDefinition/artifact-reviewer": [
+      "CapabilityStatement",
       "ImplementationGuide",
       "StructureDefinition"
     ],
     "http://hl7.org/fhir/StructureDefinition/artifact-topic": [
+      "CapabilityStatement",
       "ImplementationGuide",
       "StructureDefinition"
     ],
     "http://hl7.org/fhir/StructureDefinition/artifact-usage": [
+      "CapabilityStatement",
       "ImplementationGuide",
       "StructureDefinition"
     ],
@@ -97,6 +103,7 @@
       "StructureDefinition"
     ],
     "http://hl7.org/fhir/StructureDefinition/artifact-versionPolicy": [
+      "CapabilityStatement",
       "ImplementationGuide",
       "StructureDefinition"
     ],
@@ -132,13 +139,17 @@
       "StructureDefinition.snapshot.element"
     ],
     "http://hl7.org/fhir/StructureDefinition/package-source": [
-      "ImplementationGuide"
+      "CapabilityStatement.meta",
+      "ImplementationGuide",
+      "StructureDefinition.meta"
     ],
     "http://hl7.org/fhir/StructureDefinition/resource-approvalDate": [
+      "CapabilityStatement",
       "ImplementationGuide",
       "StructureDefinition"
     ],
     "http://hl7.org/fhir/StructureDefinition/resource-effectivePeriod": [
+      "CapabilityStatement",
       "ImplementationGuide",
       "StructureDefinition"
     ],
@@ -193,7 +204,6 @@
       "Procedure"
     ],
     "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-ex-meta-license-codeable": [
-      "CapabilityStatement",
       "StructureDefinition"
     ]
   }
