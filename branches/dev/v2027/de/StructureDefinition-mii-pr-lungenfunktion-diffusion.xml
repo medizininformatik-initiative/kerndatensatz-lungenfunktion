@@ -3117,7 +3117,7 @@
         <code value="Coding"/>
       </type>
       <patternCoding>
-        <system value="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20260701"/>
+        <system value="http://snomed.info/sct"/>
       </patternCoding>
       <constraint>
         <key value="ele-1"/>

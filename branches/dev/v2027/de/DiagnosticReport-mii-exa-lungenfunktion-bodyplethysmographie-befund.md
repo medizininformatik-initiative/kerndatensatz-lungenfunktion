@@ -63,7 +63,7 @@ Profile: [MII PR Lungenfunktion Bodyplethysmographie](StructureDefinition-mii-pr
   * **Reference Range**: 
   * **Flags**: Final,Normal
 * **Code**: [Specific airway conductance (observable entity)](Observation-mii-exa-lungenfunktion-sg-total.md)
-  * **Value**: 0.92 /kPA.s (Details: UCUM code/kPA.s = '/kPA.s')
+  * **Value**: 0.92 /(kPa.s) (Details: UCUM code/(kPa.s) = '/(kPa.s)')
   * **Reference Range**: 
   * **Flags**: Final,Normal
 * **Code**: [Airway resistance](Observation-mii-exa-lungenfunktion-sr-eff.md)

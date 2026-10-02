@@ -48,6 +48,8 @@ Diese Struktur ist abgeleitet von [MII_PR_Medikation_Medication](https://medizin
 
 ** Summary **
 
+Mandatory: 0 element(2 nested mandatory elements)
+
 **Slices**
 
 This structure defines the following [Slices](http://hl7.org/fhir/R4/profiling.html#slices):
@@ -73,6 +75,8 @@ Diese Struktur ist abgeleitet von [MII_PR_Medikation_Medication](https://medizin
 Diese Struktur ist abgeleitet von [MII_PR_Medikation_Medication](https://medizininformatik-initiative.github.io/kerndatensatzmodul-medikation/2027.0.0-ballot/StructureDefinition-mii-pr-medikation-medication.html) 
 
 ** Summary **
+
+Mandatory: 0 element(2 nested mandatory elements)
 
 **Slices**
 
@@ -328,8 +332,8 @@ Weitere Repräsentationen des Profils: [CSV](../StructureDefinition-mii-pr-lunge
       "path" : "Medication.ingredient",
       "slicing" : {
         "discriminator" : [{
-          "type" : "type",
-          "path" : "$this"
+          "type" : "pattern",
+          "path" : "isActive"
         }],
         "rules" : "open"
       }
@@ -363,6 +367,7 @@ Weitere Repräsentationen des Profils: [CSV](../StructureDefinition-mii-pr-lunge
     {
       "id" : "Medication.ingredient:Wirkstoff.isActive",
       "path" : "Medication.ingredient.isActive",
+      "min" : 1,
       "patternBoolean" : true
     },
     {
@@ -414,6 +419,7 @@ Weitere Repräsentationen des Profils: [CSV](../StructureDefinition-mii-pr-lunge
     {
       "id" : "Medication.ingredient:Loesung.isActive",
       "path" : "Medication.ingredient.isActive",
+      "min" : 1,
       "patternBoolean" : false
     }]
   }

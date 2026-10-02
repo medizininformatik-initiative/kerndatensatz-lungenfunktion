@@ -26,13 +26,13 @@ Profile: [MII PR Lungenfunktion sG Total](StructureDefinition-mii-pr-lungenfunkt
 
 **issued**: 2024-07-19 13:03:20+0200
 
-**value**: 0.92 /kPA.s (Details: UCUM code/kPA.s = '/kPA.s')
+**value**: 0.92 /(kPa.s) (Details: UCUM code/(kPa.s) = '/(kPa.s)')
 
 **interpretation**: Normal
 
 **method**: Sitting upright (finding)
 
-> **component****code**: TODO**value**: 0.85 /kPA.s (Details: UCUM code/kPA.s = '/kPA.s')
+> **component****code**: TODO**value**: 0.85 /(kPa.s) (Details: UCUM code/(kPa.s) = '/(kPa.s)')
 
 > **component****code**: TODO**value**: 108 % (Details: UCUM code% = '%')
 
@@ -72,7 +72,7 @@ Profile: [MII PR Lungenfunktion sG Total](StructureDefinition-mii-pr-lungenfunkt
   "valueQuantity" : {
     "value" : 0.92,
     "system" : "http://unitsofmeasure.org",
-    "code" : "/kPA.s"
+    "code" : "/(kPa.s)"
   },
   "interpretation" : [{
     "coding" : [{
@@ -99,7 +99,7 @@ Profile: [MII PR Lungenfunktion sG Total](StructureDefinition-mii-pr-lungenfunkt
     "valueQuantity" : {
       "value" : 0.85,
       "system" : "http://unitsofmeasure.org",
-      "code" : "/kPA.s"
+      "code" : "/(kPa.s)"
     }
   },
   {

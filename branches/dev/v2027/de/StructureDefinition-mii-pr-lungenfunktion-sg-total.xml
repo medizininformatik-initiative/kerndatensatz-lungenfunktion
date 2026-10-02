@@ -2539,7 +2539,7 @@
       <type>
         <code value="string"/>
       </type>
-      <patternString value="/kPA*s"/>
+      <patternString value="/(kPa.s)"/>
       <constraint>
         <key value="ele-1"/>
         <severity value="error"/>
@@ -2612,7 +2612,7 @@
       <type>
         <code value="code"/>
       </type>
-      <patternCode value="/kPA.s"/>
+      <patternCode value="/(kPa.s)"/>
       <constraint>
         <key value="ele-1"/>
         <severity value="error"/>
@@ -4565,7 +4565,7 @@
       <type>
         <code value="string"/>
       </type>
-      <patternString value="/kPA.s"/>
+      <patternString value="/(kPa.s)"/>
       <constraint>
         <key value="ele-1"/>
         <severity value="error"/>
@@ -4639,7 +4639,7 @@
       <type>
         <code value="code"/>
       </type>
-      <patternCode value="/kPA.s"/>
+      <patternCode value="/(kPa.s)"/>
       <constraint>
         <key value="ele-1"/>
         <severity value="error"/>

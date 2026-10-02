@@ -1351,7 +1351,7 @@ Weitere Repräsentationen des Profils: [CSV](../StructureDefinition-mii-pr-lunge
     {
       "id" : "Observation.component:predicted.value[x]:valueQuantity.unit",
       "path" : "Observation.component.value[x].unit",
-      "patternString" : "L",
+      "patternString" : "g{Hemoglobin}/dL",
       "mustSupport" : true
     },
     {
@@ -1363,7 +1363,7 @@ Weitere Repräsentationen des Profils: [CSV](../StructureDefinition-mii-pr-lunge
     {
       "id" : "Observation.component:predicted.value[x]:valueQuantity.code",
       "path" : "Observation.component.value[x].code",
-      "patternCode" : "L",
+      "patternCode" : "g{Hemoglobin}/dL",
       "mustSupport" : true
     }]
   }

@@ -276,8 +276,8 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-lungenfunk
       "path" : "Medication.ingredient",
       "slicing" : {
         "discriminator" : [{
-          "type" : "type",
-          "path" : "$this"
+          "type" : "pattern",
+          "path" : "isActive"
         }],
         "rules" : "open"
       }
@@ -311,6 +311,7 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-lungenfunk
     {
       "id" : "Medication.ingredient:Wirkstoff.isActive",
       "path" : "Medication.ingredient.isActive",
+      "min" : 1,
       "patternBoolean" : true
     },
     {
@@ -362,6 +363,7 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-lungenfunk
     {
       "id" : "Medication.ingredient:Loesung.isActive",
       "path" : "Medication.ingredient.isActive",
+      "min" : 1,
       "patternBoolean" : false
     }]
   }

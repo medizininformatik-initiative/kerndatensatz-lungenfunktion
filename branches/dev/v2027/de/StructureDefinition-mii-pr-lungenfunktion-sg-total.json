@@ -2597,7 +2597,7 @@
       "type" : [{
         "code" : "string"
       }],
-      "patternString" : "/kPA*s",
+      "patternString" : "/(kPa.s)",
       "constraint" : [{
         "key" : "ele-1",
         "severity" : "error",
@@ -2672,7 +2672,7 @@
       "type" : [{
         "code" : "code"
       }],
-      "patternCode" : "/kPA.s",
+      "patternCode" : "/(kPa.s)",
       "constraint" : [{
         "key" : "ele-1",
         "severity" : "error",
@@ -4689,7 +4689,7 @@
       "type" : [{
         "code" : "string"
       }],
-      "patternString" : "/kPA.s",
+      "patternString" : "/(kPa.s)",
       "constraint" : [{
         "key" : "ele-1",
         "severity" : "error",
@@ -4765,7 +4765,7 @@
       "type" : [{
         "code" : "code"
       }],
-      "patternCode" : "/kPA.s",
+      "patternCode" : "/(kPa.s)",
       "constraint" : [{
         "key" : "ele-1",
         "severity" : "error",

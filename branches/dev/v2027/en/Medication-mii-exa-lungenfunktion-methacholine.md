@@ -16,9 +16,9 @@ Profile: [MII PR Lungenfunktion Methacholine](StructureDefinition-mii-pr-lungenf
 
 **code**: Provokit® 0,33%
 
-> **ingredient****item**: Methacholine chloride (substance)**strength**: 33 mg (Details: UCUM codemg = 'mg')/10 ml (Details: UCUM codeml = 'ml')
+> **ingredient****item**: Methacholine chloride (substance)**isActive**: true**strength**: 33 mg (Details: UCUM codemg = 'mg')/10 ml (Details: UCUM codeml = 'ml')
 
-> **ingredient****item**: Water (substance)
+> **ingredient****item**: Water (substance)**isActive**: false
 
 
 
@@ -47,6 +47,7 @@ Profile: [MII PR Lungenfunktion Methacholine](StructureDefinition-mii-pr-lungenf
         "display" : "Methacholine chloride (substance)"
       }]
     },
+    "isActive" : true,
     "strength" : {
       "numerator" : {
         "value" : 33,
@@ -70,7 +71,8 @@ Profile: [MII PR Lungenfunktion Methacholine](StructureDefinition-mii-pr-lungenf
         "code" : "11713004",
         "display" : "Water (substance)"
       }]
-    }
+    },
+    "isActive" : false
   }]
 }
 

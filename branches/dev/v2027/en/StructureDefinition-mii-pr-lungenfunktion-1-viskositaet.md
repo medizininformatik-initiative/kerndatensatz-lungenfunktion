@@ -827,7 +827,7 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-lungenfunk
     {
       "id" : "Observation.value[x].unit",
       "path" : "Observation.value[x].unit",
-      "patternString" : "/kPA*s"
+      "patternString" : "/(kPa.s)"
     },
     {
       "id" : "Observation.value[x].system",
@@ -838,7 +838,7 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-lungenfunk
     {
       "id" : "Observation.value[x].code",
       "path" : "Observation.value[x].code",
-      "patternCode" : "/kPA.s",
+      "patternCode" : "/(kPa.s)",
       "mustSupport" : true
     },
     {
@@ -1520,7 +1520,7 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-lungenfunk
     {
       "id" : "Observation.component:predicted.value[x]:valueQuantity.unit",
       "path" : "Observation.component.value[x].unit",
-      "patternString" : "/kPA.s",
+      "patternString" : "/(kPa.s)",
       "mustSupport" : true
     },
     {
@@ -1532,7 +1532,7 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-lungenfunk
     {
       "id" : "Observation.component:predicted.value[x]:valueQuantity.code",
       "path" : "Observation.component.value[x].code",
-      "patternCode" : "/kPA.s",
+      "patternCode" : "/(kPa.s)",
       "mustSupport" : true
     },
     {

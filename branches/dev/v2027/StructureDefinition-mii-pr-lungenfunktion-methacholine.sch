@@ -21,7 +21,9 @@
     <sch:rule context="f:Medication/f:ingredient">
       <sch:assert test="count(f:extension[@url = 'https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/wirkstofftyp']) &lt;= 1">extension with URL = 'https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/wirkstofftyp': maximum cardinality of 'extension' is 1</sch:assert>
       <sch:assert test="count(f:extension[@url = 'https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/wirkstofftyp']) &lt;= 1">extension with URL = 'https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/wirkstofftyp': maximum cardinality of 'extension' is 1</sch:assert>
+      <sch:assert test="count(f:isActive) &gt;= 1">isActive: minimum cardinality of 'isActive' is 1</sch:assert>
       <sch:assert test="count(f:extension[@url = 'https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/wirkstofftyp']) &lt;= 1">extension with URL = 'https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/wirkstofftyp': maximum cardinality of 'extension' is 1</sch:assert>
+      <sch:assert test="count(f:isActive) &gt;= 1">isActive: minimum cardinality of 'isActive' is 1</sch:assert>
     </sch:rule>
   </sch:pattern>
 </sch:schema>

@@ -895,7 +895,7 @@ Weitere Repräsentationen des Profils: [CSV](../StructureDefinition-mii-pr-lunge
     {
       "id" : "Observation.value[x].unit",
       "path" : "Observation.value[x].unit",
-      "patternString" : "/kPA*s"
+      "patternString" : "/(kPa.s)"
     },
     {
       "id" : "Observation.value[x].system",
@@ -906,7 +906,7 @@ Weitere Repräsentationen des Profils: [CSV](../StructureDefinition-mii-pr-lunge
     {
       "id" : "Observation.value[x].code",
       "path" : "Observation.value[x].code",
-      "patternCode" : "/kPA.s",
+      "patternCode" : "/(kPa.s)",
       "mustSupport" : true
     },
     {
@@ -1588,7 +1588,7 @@ Weitere Repräsentationen des Profils: [CSV](../StructureDefinition-mii-pr-lunge
     {
       "id" : "Observation.component:predicted.value[x]:valueQuantity.unit",
       "path" : "Observation.component.value[x].unit",
-      "patternString" : "/kPA.s",
+      "patternString" : "/(kPa.s)",
       "mustSupport" : true
     },
     {
@@ -1600,7 +1600,7 @@ Weitere Repräsentationen des Profils: [CSV](../StructureDefinition-mii-pr-lunge
     {
       "id" : "Observation.component:predicted.value[x]:valueQuantity.code",
       "path" : "Observation.component.value[x].code",
-      "patternCode" : "/kPA.s",
+      "patternCode" : "/(kPa.s)",
       "mustSupport" : true
     },
     {
