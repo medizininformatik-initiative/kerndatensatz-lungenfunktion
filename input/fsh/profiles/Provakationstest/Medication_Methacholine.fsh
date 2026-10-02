@@ -29,8 +29,8 @@ Description: "Dieses Profil beschreibt die Angaben zu Methacholine."
 //Profile
 * code.coding[Pharmazentralnummer] = $pzn#00171345 "Provokit® 0,33%"
 * code.coding[atcClassDe] = $atcDE#V04CX03 "Methacholin"
-* ingredient ^slicing.discriminator.type = #type
-* ingredient ^slicing.discriminator.path = "$this"
+* ingredient ^slicing.discriminator.type = #pattern
+* ingredient ^slicing.discriminator.path = "isActive"
 * ingredient ^slicing.rules = #open
 * ingredient contains
     Wirkstoff 0..1 and

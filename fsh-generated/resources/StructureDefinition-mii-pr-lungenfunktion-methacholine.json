@@ -238,8 +238,8 @@
         "slicing": {
           "discriminator": [
             {
-              "type": "type",
-              "path": "$this"
+              "type": "pattern",
+              "path": "isActive"
             }
           ],
           "rules": "open"
@@ -276,6 +276,7 @@
       {
         "id": "Medication.ingredient:Wirkstoff.isActive",
         "path": "Medication.ingredient.isActive",
+        "min": 1,
         "patternBoolean": true
       },
       {
@@ -329,6 +330,7 @@
       {
         "id": "Medication.ingredient:Loesung.isActive",
         "path": "Medication.ingredient.isActive",
+        "min": 1,
         "patternBoolean": false
       }
     ]

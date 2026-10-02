@@ -17,6 +17,7 @@
   },
   "ingredient": [
     {
+      "isActive": true,
       "strength": {
         "denominator": {
           "value": 10,
@@ -43,6 +44,7 @@
       }
     },
     {
+      "isActive": false,
       "itemCodeableConcept": {
         "coding": [
           {
