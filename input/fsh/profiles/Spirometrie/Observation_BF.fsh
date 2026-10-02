@@ -106,9 +106,9 @@ Description: "Dieses Profil beschreibt die Messung der Atemfrequenz."
 * component[predicted].valueQuantity.unit MS
 * component[predicted].valueQuantity.system MS
 * component[predicted].valueQuantity.code MS
-* component[predicted].valueQuantity.unit = "L"
+* component[predicted].valueQuantity.unit = "/min"
 * component[predicted].valueQuantity.system = $ucum
-* component[predicted].valueQuantity.code = $ucum#L
+* component[predicted].valueQuantity.code = $ucum#/min
 * component[percentPredicted] ^short = "Verhältnis"
 * component[percentPredicted] ^definition = "Verhältnis von Messwert zu vorhergesagtem Ergebnis"
 * component[percentPredicted].code.coding ^slicing.discriminator.type = #value
