@@ -69,7 +69,7 @@ Description: "Diese Ressource beschreibt einen Befunde eines Lungenfunktionstest
     icd10-gm 0..* MS and
     sct 0..* MS
 * conclusionCode.coding[icd10-gm] ^patternCoding.system = $icd-10-gm
-* conclusionCode.coding[sct] ^patternCoding.system = $sct
+* conclusionCode.coding[sct] ^patternCoding.system = $sct-no-ver
 * conclusionCode.coding[sct] from MII_VS_Lufu_SCT_Findings (required)
 * presentedForm MS
 * insert AddDiagnosticReportTranslation
