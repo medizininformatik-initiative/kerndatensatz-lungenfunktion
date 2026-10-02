@@ -107,9 +107,9 @@ Description: "Dieses Profil beschreibt die Messung des Hämoglobin."
 * component[predicted].valueQuantity.unit MS
 * component[predicted].valueQuantity.system MS
 * component[predicted].valueQuantity.code MS
-* component[predicted].valueQuantity.unit = "L"
+* component[predicted].valueQuantity.unit = "g{Hemoglobin}/dL"
 * component[predicted].valueQuantity.system = $ucum
-* component[predicted].valueQuantity.code = $ucum#L
+* component[predicted].valueQuantity.code = $ucum#g{Hemoglobin}/dL
 
 //Translation Profile
 * insert Translation(partOf ^short, de-DE, Teil von)
