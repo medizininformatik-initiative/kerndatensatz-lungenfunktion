@@ -8,10 +8,10 @@ Title: "MII Example Lungenfunktion sG total"
 * code = $sct#79412009 "Specific airway conductance (observable entity)"
 * subject = Reference(Patient/mii-exa-lungenfunktion-patient)
 * issued = "2024-07-19T13:03:20+02:00"
-* valueQuantity = 0.92 '/kPA.s'
+* valueQuantity = 0.92 '/(kPa.s)'
 * interpretation = $v3-ObseravtionInterpretation#N
 * method = $sct#249862003 "Sitting upright (finding)"
 * component[predicted].code = $sct#TODO
 * component[percentPredicted].code = $sct#TODO
-* component[predicted].valueQuantity = 0.85 '/kPA.s'
+* component[predicted].valueQuantity = 0.85 '/(kPa.s)'
 * component[percentPredicted].valueQuantity = 108 '%'

@@ -34,7 +34,7 @@
       },
       "valueQuantity": {
         "value": 0.85,
-        "code": "/kPA.s",
+        "code": "/(kPa.s)",
         "system": "http://unitsofmeasure.org"
       }
     },
@@ -82,7 +82,7 @@
   "issued": "2024-07-19T13:03:20+02:00",
   "valueQuantity": {
     "value": 0.92,
-    "code": "/kPA.s",
+    "code": "/(kPa.s)",
     "system": "http://unitsofmeasure.org"
   },
   "interpretation": [

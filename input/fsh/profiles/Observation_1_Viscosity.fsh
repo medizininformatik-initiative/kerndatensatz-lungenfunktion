@@ -51,11 +51,11 @@ Description: "Dieses Beobachtung beschreibt eine spezifische totale Atemwegsleit
 * value[x] MS
 * value[x] only Quantity
 * valueQuantity.value MS
-* valueQuantity.unit = "/kPA*s"
+* valueQuantity.unit = "/(kPa.s)"
 * valueQuantity.system MS
 * valueQuantity.system = $ucum
 * valueQuantity.code MS
-* valueQuantity.code = $ucum#/kPA.s
+* valueQuantity.code = $ucum#/(kPa.s)
 * interpretation MS
 * method MS
 * referenceRange MS
@@ -85,9 +85,9 @@ Description: "Dieses Beobachtung beschreibt eine spezifische totale Atemwegsleit
 * component[predicted].valueQuantity.unit MS
 * component[predicted].valueQuantity.system MS
 * component[predicted].valueQuantity.code MS
-* component[predicted].valueQuantity.unit = "/kPA.s"
+* component[predicted].valueQuantity.unit = "/(kPa.s)"
 * component[predicted].valueQuantity.system = $ucum
-* component[predicted].valueQuantity.code = $ucum#/kPA.s
+* component[predicted].valueQuantity.code = $ucum#/(kPa.s)
 * component[percentPredicted].code.coding ^slicing.discriminator.type = #value
 * component[percentPredicted].code.coding ^slicing.discriminator.path = "$this"
 * component[percentPredicted].code.coding ^slicing.rules = #open
