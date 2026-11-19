@@ -44,7 +44,7 @@ Other representations of profile: [CSV](../StructureDefinition-mii-lm-lungenfunk
       },
       {
         "url" : "version",
-        "valueString" : "2027.0.0-ballot.1"
+        "valueString" : "2027.0.0-ballot"
       },
       {
         "url" : "uri",
@@ -56,14 +56,31 @@ Other representations of profile: [CSV](../StructureDefinition-mii-lm-lungenfunk
     "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-publishablestructuredefinition"]
   },
   "extension" : [{
-    "url" : "http://hl7.org/fhir/StructureDefinition/artifact-versionPolicy",
+    "url" : "http://hl7.org/fhir/StructureDefinition/artifact-versionAlgorithm",
+    "valueCoding" : {
+      "system" : "http://hl7.org/fhir/version-algorithm",
+      "code" : "semver",
+      "display" : "SemVer"
+    }
+  },
+  {
+    "url" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-ex-meta-license-codeable",
     "valueCodeableConcept" : {
       "coding" : [{
         "system" : "http://hl7.org/fhir/spdx-license",
         "code" : "CC-BY-4.0",
         "display" : "Creative Commons Attribution 4.0 International"
-      },
-      {
+      }]
+    }
+  },
+  {
+    "url" : "http://hl7.org/fhir/StructureDefinition/cqf-knowledgeCapability",
+    "valueCode" : "publishable"
+  },
+  {
+    "url" : "http://hl7.org/fhir/StructureDefinition/artifact-versionPolicy",
+    "valueCodeableConcept" : {
+      "coding" : [{
         "system" : "http://terminology.hl7.org/CodeSystem/artifact-version-policy-codes",
         "version" : "3.0.0",
         "code" : "package",
@@ -112,18 +129,12 @@ Other representations of profile: [CSV](../StructureDefinition-mii-lm-lungenfunk
   {
     "url" : "http://hl7.org/fhir/StructureDefinition/artifact-reviewer",
     "valueContactDetail" : {
-      "name" : "Interoperability Working Group",
+      "name" : "National Steering Committee",
       "telecom" : [{
         "system" : "url",
         "value" : "https://www.medizininformatik-initiative.de/en/collaboration/interoperability-working-group"
-      }]
-    }
-  },
-  {
-    "url" : "http://hl7.org/fhir/StructureDefinition/artifact-reviewer",
-    "valueContactDetail" : {
-      "name" : "National Steering Committee",
-      "telecom" : [{
+      },
+      {
         "system" : "url",
         "value" : "https://www.medizininformatik-initiative.de/en/collaboration/national-steering-committee"
       }]
@@ -132,18 +143,12 @@ Other representations of profile: [CSV](../StructureDefinition-mii-lm-lungenfunk
   {
     "url" : "http://hl7.org/fhir/StructureDefinition/artifact-endorser",
     "valueContactDetail" : {
-      "name" : "Interoperability Working Group",
+      "name" : "National Steering Committee",
       "telecom" : [{
         "system" : "url",
         "value" : "https://www.medizininformatik-initiative.de/en/collaboration/interoperability-working-group"
-      }]
-    }
-  },
-  {
-    "url" : "http://hl7.org/fhir/StructureDefinition/artifact-endorser",
-    "valueContactDetail" : {
-      "name" : "National Steering Committee",
-      "telecom" : [{
+      },
+      {
         "system" : "url",
         "value" : "https://www.medizininformatik-initiative.de/en/collaboration/national-steering-committee"
       }]

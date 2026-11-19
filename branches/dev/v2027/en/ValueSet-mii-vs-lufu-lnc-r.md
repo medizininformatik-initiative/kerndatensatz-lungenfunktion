@@ -40,6 +40,14 @@ Import the ValueSet for lungfunction total airway resistance
   "meta" : {
     "profile" : ["http://hl7.org/fhir/StructureDefinition/shareablevalueset"]
   },
+  "extension" : [{
+    "url" : "http://hl7.org/fhir/StructureDefinition/artifact-versionAlgorithm",
+    "valueCoding" : {
+      "system" : "http://hl7.org/fhir/version-algorithm",
+      "code" : "semver",
+      "display" : "SemVer"
+    }
+  }],
   "url" : "https://www.medizininformatik-initiative.de/fhir/modul-lungenfunktion/ValueSet/mii-vs-lufu-lnc-r",
   "version" : "2027.0.0-ballot.1",
   "name" : "MII_VS_Lufu_LNC_R",

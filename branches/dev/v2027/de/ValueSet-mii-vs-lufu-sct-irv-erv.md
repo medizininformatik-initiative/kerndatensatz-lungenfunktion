@@ -40,6 +40,14 @@ Import the ValueSet for lungfunction reserve volume
   "meta" : {
     "profile" : ["http://hl7.org/fhir/StructureDefinition/shareablevalueset"]
   },
+  "extension" : [{
+    "url" : "http://hl7.org/fhir/StructureDefinition/artifact-versionAlgorithm",
+    "valueCoding" : {
+      "system" : "http://hl7.org/fhir/version-algorithm",
+      "code" : "semver",
+      "display" : "SemVer"
+    }
+  }],
   "url" : "https://www.medizininformatik-initiative.de/fhir/modul-lungenfunktion/ValueSet/mii-vs-lufu-sct-irv-erv",
   "version" : "2027.0.0-ballot.1",
   "name" : "MII_VS_Lufu_SCT_IRV_ERV",

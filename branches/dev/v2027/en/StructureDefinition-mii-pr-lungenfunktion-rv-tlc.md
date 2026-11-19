@@ -39,14 +39,31 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-lungenfunk
   "resourceType" : "StructureDefinition",
   "id" : "mii-pr-lungenfunktion-rv-tlc",
   "extension" : [{
-    "url" : "http://hl7.org/fhir/StructureDefinition/artifact-versionPolicy",
+    "url" : "http://hl7.org/fhir/StructureDefinition/artifact-versionAlgorithm",
+    "valueCoding" : {
+      "system" : "http://hl7.org/fhir/version-algorithm",
+      "code" : "semver",
+      "display" : "SemVer"
+    }
+  },
+  {
+    "url" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-ex-meta-license-codeable",
     "valueCodeableConcept" : {
       "coding" : [{
         "system" : "http://hl7.org/fhir/spdx-license",
         "code" : "CC-BY-4.0",
         "display" : "Creative Commons Attribution 4.0 International"
-      },
-      {
+      }]
+    }
+  },
+  {
+    "url" : "http://hl7.org/fhir/StructureDefinition/cqf-knowledgeCapability",
+    "valueCode" : "publishable"
+  },
+  {
+    "url" : "http://hl7.org/fhir/StructureDefinition/artifact-versionPolicy",
+    "valueCodeableConcept" : {
+      "coding" : [{
         "system" : "http://terminology.hl7.org/CodeSystem/artifact-version-policy-codes",
         "version" : "3.0.0",
         "code" : "package",
@@ -85,30 +102,14 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-lungenfunk
   {
     "url" : "http://hl7.org/fhir/StructureDefinition/artifact-reviewer",
     "valueContactDetail" : {
-      "name" : "Interoperability Working Group",
-      "telecom" : [{
-        "system" : "url",
-        "value" : "https://www.medizininformatik-initiative.de/en/collaboration/interoperability-working-group"
-      }]
-    }
-  },
-  {
-    "url" : "http://hl7.org/fhir/StructureDefinition/artifact-reviewer",
-    "valueContactDetail" : {
       "name" : "National Steering Committee",
       "telecom" : [{
         "system" : "url",
-        "value" : "https://www.medizininformatik-initiative.de/en/collaboration/national-steering-committee"
-      }]
-    }
-  },
-  {
-    "url" : "http://hl7.org/fhir/StructureDefinition/artifact-endorser",
-    "valueContactDetail" : {
-      "name" : "Interoperability Working Group",
-      "telecom" : [{
-        "system" : "url",
         "value" : "https://www.medizininformatik-initiative.de/en/collaboration/interoperability-working-group"
+      },
+      {
+        "system" : "url",
+        "value" : "https://www.medizininformatik-initiative.de/en/collaboration/national-steering-committee"
       }]
     }
   },
@@ -118,17 +119,11 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-lungenfunk
       "name" : "National Steering Committee",
       "telecom" : [{
         "system" : "url",
+        "value" : "https://www.medizininformatik-initiative.de/en/collaboration/interoperability-working-group"
+      },
+      {
+        "system" : "url",
         "value" : "https://www.medizininformatik-initiative.de/en/collaboration/national-steering-committee"
-      }]
-    }
-  },
-  {
-    "url" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-ex-meta-license-codeable",
-    "valueCodeableConcept" : {
-      "coding" : [{
-        "system" : "http://hl7.org/fhir/spdx-license",
-        "code" : "CC-BY-4.0",
-        "display" : "Creative Commons Attribution 4.0 International"
       }]
     }
   },

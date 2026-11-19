@@ -41,6 +41,14 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-lungenfunk
   "resourceType" : "StructureDefinition",
   "id" : "mii-pr-lungenfunktion-dosis",
   "extension" : [{
+    "url" : "http://hl7.org/fhir/StructureDefinition/artifact-versionAlgorithm",
+    "valueCoding" : {
+      "system" : "http://hl7.org/fhir/version-algorithm",
+      "code" : "semver",
+      "display" : "SemVer"
+    }
+  },
+  {
     "url" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-ex-meta-license-codeable",
     "valueCodeableConcept" : {
       "coding" : [{
