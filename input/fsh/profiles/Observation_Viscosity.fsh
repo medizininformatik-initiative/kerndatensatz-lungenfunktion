@@ -16,7 +16,7 @@ Description: "Dieses Beobachtung beschreibt eine Viskositätsmessung."
 * insert LicenseCodeableCCBY40
 * insert CRMIShareableStructureDefinition
 * insert CRMIPublishableStructureDefinition
-//* insert CRMIKnowledgeCapabilitiesStructureDefinition
+* insert CRMIKnowledgeCapabilitiesStructureDefinition
 * insert CRMIVersionPolicyStrict
 * insert CRMIPackageSourceDefinitionalResource
 * insert CRMIArtifactUsageProfile

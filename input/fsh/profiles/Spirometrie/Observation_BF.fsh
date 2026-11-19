@@ -16,7 +16,7 @@ Description: "Dieses Profil beschreibt die Messung der Atemfrequenz."
 * insert LicenseCodeableCCBY40
 * insert CRMIShareableStructureDefinition
 * insert CRMIPublishableStructureDefinition
-//* insert CRMIKnowledgeCapabilitiesStructureDefinition
+* insert CRMIKnowledgeCapabilitiesStructureDefinition
 * insert CRMIVersionPolicyStrict
 * insert CRMIPackageSourceDefinitionalResource
 * insert CRMIArtifactUsageProfile

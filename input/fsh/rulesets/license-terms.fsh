@@ -7,4 +7,3 @@ RuleSet: LicenseCodeableCCBY40
 RuleSet: LicenseCodeableCCBY40Instance
 //* extension[+].url = "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-ex-meta-license-codeable"
 * extension[https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-ex-meta-license-codeable].valueCodeableConcept = $spdx-license#CC-BY-4.0 "Creative Commons Attribution 4.0 International"
-

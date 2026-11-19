@@ -16,7 +16,7 @@ Description: "MII LogicalModel Modul Lungenfunktion"
 * insert PR_CS_VS_Date
 * insert CRMIShareableStructureDefinition
 * insert CRMIPublishableStructureDefinition
-//* insert CRMIKnowledgeCapabilitiesStructureDefinition
+* insert CRMIKnowledgeCapabilitiesStructureDefinition
 * insert CRMIVersionPolicyStrict
 * insert CRMIPackageSourceDefinitionalResource
 * insert CRMIArtifactUsageProfile

@@ -13,10 +13,10 @@ Description: "Dieses Beobachtung beschreibt eine Lufttemperaturmessung."
 * insert PR_CS_VS_Version
 * insert PR_CS_VS_Date
 * insert Publisher
-* insert LicenseCodeableCCBY40
+//* insert LicenseCodeableCCBY40
 * insert CRMIShareableStructureDefinition
 * insert CRMIPublishableStructureDefinition
-//* insert CRMIKnowledgeCapabilitiesStructureDefinition
+* insert CRMIKnowledgeCapabilitiesStructureDefinition
 * insert CRMIVersionPolicyStrict
 * insert CRMIPackageSourceDefinitionalResource
 * insert CRMIArtifactUsageProfile

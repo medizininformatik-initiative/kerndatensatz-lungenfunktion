@@ -16,7 +16,7 @@ Description: "Diese Ressource beschreibt einen Befunde eines Lungenfunktionstest
 * insert LicenseCodeableCCBY40
 * insert CRMIShareableStructureDefinition
 * insert CRMIPublishableStructureDefinition
-//* insert CRMIKnowledgeCapabilitiesStructureDefinition
+* insert CRMIKnowledgeCapabilitiesStructureDefinition
 * insert CRMIVersionPolicyStrict
 * insert CRMIPackageSourceDefinitionalResource
 * insert CRMIArtifactUsageProfile

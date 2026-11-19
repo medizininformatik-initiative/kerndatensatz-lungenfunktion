@@ -7,7 +7,7 @@ Usage: #definition
 * insert LicenseCodeableCCBY40Instance
 * insert CRMIShareableCapabilityStatement
 * insert CRMIPublishableCapabilityStatement
-//* insert CRMIKnowledgeCapabilitiesCapabilityStatement
+* insert CRMIKnowledgeCapabilitiesCapabilityStatement
 * insert CRMIVersionPolicyStrictInstance
 * insert CRMIPackageSource
 * insert CRMIArtifactUsageCapabilityStatement
