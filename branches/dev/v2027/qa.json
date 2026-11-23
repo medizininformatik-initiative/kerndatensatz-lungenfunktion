@@ -7,14 +7,14 @@
   "status" : "active",
   "package-id" : "de.medizininformatikinitiative.kerndatensatz.lungenfunktion",
   "ig-ver" : "2027.0.0-ballot.1",
-  "date" : "Thu, 19 Nov, 2026 13:11:50 +0000",
-  "dateISO8601" : "2026-11-19T13:11:50+00:00",
-  "errs" : 1383,
-  "warnings" : 547,
-  "hints" : 8801,
+  "date" : "Mon, 23 Nov, 2026 14:10:44 +0000",
+  "dateISO8601" : "2026-11-23T14:10:44+00:00",
+  "errs" : 1373,
+  "warnings" : 544,
+  "hints" : 8789,
   "suppressed-hints" : 0,
   "suppressed-warnings" : 0,
   "version" : "4.0.1",
   "tool" : "5.0.0 (3)",
-  "maxMemory" : 2486686104
+  "maxMemory" : 2610236328
 }

@@ -48,7 +48,7 @@ Diese Struktur ist abgeleitet von [DiagnosticReport](http://hl7.org/fhir/R4/diag
 ** Summary **
 
 Mandatory: 4 elements
- Must-Support: 26 elements
+ Must-Support: 25 elements
 
 **Slices**
 
@@ -82,7 +82,7 @@ Diese Struktur ist abgeleitet von [DiagnosticReport](http://hl7.org/fhir/R4/diag
 ** Summary **
 
 Mandatory: 4 elements
- Must-Support: 26 elements
+ Must-Support: 25 elements
 
 **Slices**
 
@@ -719,68 +719,6 @@ Weitere Repräsentationen des Profils: [CSV](../StructureDefinition-mii-pr-lunge
       "binding" : {
         "strength" : "required",
         "valueSet" : "https://www.medizininformatik-initiative.de/fhir/modul-lungenfunktion/ValueSet/mii-vs-lufu-sct-procedure"
-      }
-    },
-    {
-      "id" : "DiagnosticReport.code.coding:loinc",
-      "path" : "DiagnosticReport.code.coding",
-      "sliceName" : "loinc",
-      "short" : "LOINC Code",
-      "_short" : {
-        "extension" : [{
-          "extension" : [{
-            "url" : "lang",
-            "valueCode" : "de-DE"
-          },
-          {
-            "url" : "content",
-            "valueString" : "LOINC Code"
-          }],
-          "url" : "http://hl7.org/fhir/StructureDefinition/translation"
-        },
-        {
-          "extension" : [{
-            "url" : "lang",
-            "valueCode" : "en-US"
-          },
-          {
-            "url" : "content",
-            "valueString" : "LOINC code"
-          }],
-          "url" : "http://hl7.org/fhir/StructureDefinition/translation"
-        }]
-      },
-      "definition" : "Ein Verweis auf einen vom LOINC definierten Code",
-      "_definition" : {
-        "extension" : [{
-          "extension" : [{
-            "url" : "lang",
-            "valueCode" : "de-DE"
-          },
-          {
-            "url" : "content",
-            "valueString" : "Ein Verweis auf einen von LOINC definierten Code"
-          }],
-          "url" : "http://hl7.org/fhir/StructureDefinition/translation"
-        },
-        {
-          "extension" : [{
-            "url" : "lang",
-            "valueCode" : "en-US"
-          },
-          {
-            "url" : "content",
-            "valueString" : "A reference to a code defined by LOINC"
-          }],
-          "url" : "http://hl7.org/fhir/StructureDefinition/translation"
-        }]
-      },
-      "min" : 0,
-      "max" : "1",
-      "mustSupport" : true,
-      "binding" : {
-        "strength" : "required",
-        "valueSet" : "https://www.medizininformatik-initiative.de/fhir/modul-lungenfunktion/ValueSet/mii-vs-lufu-lnc-procedure"
       }
     },
     {

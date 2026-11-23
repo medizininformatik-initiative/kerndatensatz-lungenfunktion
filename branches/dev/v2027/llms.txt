@@ -35,7 +35,6 @@
 * [MII VS Lufu LNC MEF](en/ValueSet-mii-vs-lufu-lnc-mef.md)
 * [MII VS Lufu LNC Observable](en/ValueSet-mii-vs-lufu-lnc-observable.md)
 * [MII VS Lufu LNC PEF](en/ValueSet-mii-vs-lufu-lnc-pef.md)
-* [MII VS Lufu LNC Procedure Report](en/ValueSet-mii-vs-lufu-lnc-procedure.md)
 * [MII VS Lufu LNC R](en/ValueSet-mii-vs-lufu-lnc-r.md)
 * [MII VS Lufu LNC RV TLC](en/ValueSet-mii-vs-lufu-lnc-rv-tlc.md)
 * [MII VS Lufu LNC RV](en/ValueSet-mii-vs-lufu-lnc-rv.md)

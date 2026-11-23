@@ -97,7 +97,6 @@ Diese definieren Wertemengen, die von Systemen verwendet werden, die mit dem Imp
 | [ MII VS Lufu LNC MEF  ](ValueSet-mii-vs-lufu-lnc-mef.md) | Import the ValueSet for lungfunction maximum expiratory flow |
 | [ MII VS Lufu LNC Observable  ](ValueSet-mii-vs-lufu-lnc-observable.md) | Import the ValueSet for lungfunction |
 | [ MII VS Lufu LNC PEF  ](ValueSet-mii-vs-lufu-lnc-pef.md) | Import the ValueSet for lungfunction peak expiratory flow |
-| [ MII VS Lufu LNC Procedure Report  ](ValueSet-mii-vs-lufu-lnc-procedure.md) | Import the ValueSet for lungfunction |
 | [ MII VS Lufu LNC R  ](ValueSet-mii-vs-lufu-lnc-r.md) | Import the ValueSet for lungfunction total airway resistance |
 | [ MII VS Lufu LNC RV  ](ValueSet-mii-vs-lufu-lnc-rv.md) | Import the ValueSet for lungfunction Residual Volume |
 | [ MII VS Lufu LNC RV TLC  ](ValueSet-mii-vs-lufu-lnc-rv-tlc.md) | Import the ValueSet for lungfunction Residual Volume/Total Lung Capacity |

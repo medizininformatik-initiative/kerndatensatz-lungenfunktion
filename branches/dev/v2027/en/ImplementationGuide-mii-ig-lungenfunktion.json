@@ -2641,18 +2641,6 @@
         "valueString" : "ValueSet"
       }],
       "reference" : {
-        "reference" : "ValueSet/mii-vs-lufu-lnc-procedure"
-      },
-      "name" : "MII VS Lufu LNC Procedure Report",
-      "description" : "Import the ValueSet for lungfunction",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ValueSet"
-      }],
-      "reference" : {
         "reference" : "ValueSet/mii-vs-lufu-lnc-r"
       },
       "name" : "MII VS Lufu LNC R",

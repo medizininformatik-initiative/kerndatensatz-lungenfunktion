@@ -654,68 +654,6 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-lungenfunk
       }
     },
     {
-      "id" : "DiagnosticReport.code.coding:loinc",
-      "path" : "DiagnosticReport.code.coding",
-      "sliceName" : "loinc",
-      "short" : "LOINC Code",
-      "_short" : {
-        "extension" : [{
-          "extension" : [{
-            "url" : "lang",
-            "valueCode" : "de-DE"
-          },
-          {
-            "url" : "content",
-            "valueString" : "LOINC Code"
-          }],
-          "url" : "http://hl7.org/fhir/StructureDefinition/translation"
-        },
-        {
-          "extension" : [{
-            "url" : "lang",
-            "valueCode" : "en-US"
-          },
-          {
-            "url" : "content",
-            "valueString" : "LOINC code"
-          }],
-          "url" : "http://hl7.org/fhir/StructureDefinition/translation"
-        }]
-      },
-      "definition" : "Ein Verweis auf einen vom LOINC definierten Code",
-      "_definition" : {
-        "extension" : [{
-          "extension" : [{
-            "url" : "lang",
-            "valueCode" : "de-DE"
-          },
-          {
-            "url" : "content",
-            "valueString" : "Ein Verweis auf einen von LOINC definierten Code"
-          }],
-          "url" : "http://hl7.org/fhir/StructureDefinition/translation"
-        },
-        {
-          "extension" : [{
-            "url" : "lang",
-            "valueCode" : "en-US"
-          },
-          {
-            "url" : "content",
-            "valueString" : "A reference to a code defined by LOINC"
-          }],
-          "url" : "http://hl7.org/fhir/StructureDefinition/translation"
-        }]
-      },
-      "min" : 0,
-      "max" : "1",
-      "mustSupport" : true,
-      "binding" : {
-        "strength" : "required",
-        "valueSet" : "https://www.medizininformatik-initiative.de/fhir/modul-lungenfunktion/ValueSet/mii-vs-lufu-lnc-procedure"
-      }
-    },
-    {
       "id" : "DiagnosticReport.subject",
       "path" : "DiagnosticReport.subject",
       "short" : "Person",

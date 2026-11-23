@@ -2222,17 +2222,6 @@
         <valueString value="ValueSet"/>
       </extension>
       <reference>
-        <reference value="ValueSet/mii-vs-lufu-lnc-procedure"/>
-      </reference>
-      <name value="MII VS Lufu LNC Procedure Report"/>
-      <description value="Import the ValueSet for lungfunction"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ValueSet"/>
-      </extension>
-      <reference>
         <reference value="ValueSet/mii-vs-lufu-lnc-r"/>
       </reference>
       <name value="MII VS Lufu LNC R"/>

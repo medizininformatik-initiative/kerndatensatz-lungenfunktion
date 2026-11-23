@@ -318,15 +318,6 @@ Weitere Repräsentationen des Profils: [CSV](../StructureDefinition-mii-pr-lunge
       }
     },
     {
-      "id" : "DiagnosticReport.code.coding:loinc",
-      "path" : "DiagnosticReport.code.coding",
-      "sliceName" : "loinc",
-      "patternCoding" : {
-        "system" : "http://loinc.org",
-        "code" : "TODO"
-      }
-    },
-    {
       "id" : "DiagnosticReport.result",
       "path" : "DiagnosticReport.result",
       "slicing" : {
