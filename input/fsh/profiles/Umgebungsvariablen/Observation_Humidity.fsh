@@ -13,7 +13,7 @@ Description: "Dieses Beobachtung beschreibt eine relative Luftfeuchtigkeit."
 * insert PR_CS_VS_Version
 * insert PR_CS_VS_Date
 * insert Publisher
-//* insert LicenseCodeableCCBY40
+* insert LicenseCodeableCCBY40
 * insert CRMIShareableStructureDefinition
 * insert CRMIPublishableStructureDefinition
 * insert CRMIKnowledgeCapabilitiesStructureDefinition

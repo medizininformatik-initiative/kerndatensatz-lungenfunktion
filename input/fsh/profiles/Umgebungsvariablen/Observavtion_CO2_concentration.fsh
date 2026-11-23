@@ -13,7 +13,7 @@ Description: "Dieses Beobachtung beschreibt eine die gemessene CO2 Konzentration
 * insert PR_CS_VS_Version
 * insert PR_CS_VS_Date
 * insert Publisher
-//* insert LicenseCodeableCCBY40
+* insert LicenseCodeableCCBY40
 * insert CRMIShareableStructureDefinition
 * insert CRMIPublishableStructureDefinition
 * insert CRMIKnowledgeCapabilitiesStructureDefinition
