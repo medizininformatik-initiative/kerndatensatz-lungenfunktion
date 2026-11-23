@@ -47,9 +47,7 @@ Description: "Diese Ressource beschreibt einen Befunde eines Lungenfunktionstest
 * code.coding ^slicing.discriminator.path = "$this"
 * code.coding ^slicing.rules = #open
 * code.coding contains
-    sct 0..1 MS and
-    loinc 0..1 MS
-* code.coding[loinc] from MII_VS_Lufu_LNC_Procedure
+    sct 0..1 MS
 * code.coding[sct] from MII_VS_Lufu_SCT_Procedure
 * subject 1..1 MS
 * subject only Reference(Patient)

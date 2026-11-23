@@ -193,15 +193,6 @@
         }
       },
       {
-        "id": "DiagnosticReport.code.coding:loinc",
-        "path": "DiagnosticReport.code.coding",
-        "sliceName": "loinc",
-        "patternCoding": {
-          "code": "TODO",
-          "system": "http://loinc.org"
-        }
-      },
-      {
         "id": "DiagnosticReport.result",
         "path": "DiagnosticReport.result",
         "slicing": {

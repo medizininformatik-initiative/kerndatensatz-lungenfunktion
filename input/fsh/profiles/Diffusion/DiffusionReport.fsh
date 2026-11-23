@@ -15,7 +15,6 @@ Description: "Diese Ressource beschreibt einen Befunde der Diffusions-Messung"
 * insert Publisher
 * insert LicenseCodeableCCBY40
 //Profile
-* code.coding[loinc] = $loinc#TODO
 * code.coding[sct] = $sct#36421003 "Carbon monoxide diffusing capacity measurement (procedure)"
 * result ^slicing.discriminator.type = #profile
 * result ^slicing.discriminator.path = "$this.resolve()"

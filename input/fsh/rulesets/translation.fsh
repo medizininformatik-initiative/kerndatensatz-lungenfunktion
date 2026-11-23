@@ -179,7 +179,6 @@ RuleSet: AddDiagnosticReportTranslation
 * insert Translation(code ^short, en-US, code)
 * insert Translation(code ^definition, de-DE, Code des Berichts)
 * insert Translation(code ^definition, en-US, code of the diagnostic report)
-* insert AddLoincCodingTranslation(code.coding[loinc])
 * insert AddSnomedCodingTranslation(code.coding[sct])
 * insert Translation(subject ^short, de-DE, Person)
 * insert Translation(subject ^short, en-US, person)

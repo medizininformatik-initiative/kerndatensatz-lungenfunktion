@@ -193,16 +193,6 @@
         }
       },
       {
-        "id": "DiagnosticReport.code.coding:loinc",
-        "path": "DiagnosticReport.code.coding",
-        "sliceName": "loinc",
-        "patternCoding": {
-          "code": "18759-1",
-          "system": "http://loinc.org",
-          "display": "Spirometry study"
-        }
-      },
-      {
         "id": "DiagnosticReport.result",
         "path": "DiagnosticReport.result",
         "slicing": {
