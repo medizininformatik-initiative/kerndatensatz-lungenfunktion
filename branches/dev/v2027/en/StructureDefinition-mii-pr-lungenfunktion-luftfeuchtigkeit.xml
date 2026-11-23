@@ -58,6 +58,15 @@
       <display value="SemVer"/>
     </valueCoding>
   </extension>
+  <extension url="https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-ex-meta-license-codeable">
+    <valueCodeableConcept>
+      <coding>
+        <system value="http://hl7.org/fhir/spdx-license"/>
+        <code value="CC-BY-4.0"/>
+        <display value="Creative Commons Attribution 4.0 International"/>
+      </coding>
+    </valueCodeableConcept>
+  </extension>
   <extension url="http://hl7.org/fhir/StructureDefinition/cqf-knowledgeCapability">
     <valueCode value="publishable"/>
   </extension>

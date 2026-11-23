@@ -125,6 +125,16 @@ Weitere Repräsentationen des Profils: [CSV](../StructureDefinition-mii-pr-lunge
     }
   },
   {
+    "url" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-ex-meta-license-codeable",
+    "valueCodeableConcept" : {
+      "coding" : [{
+        "system" : "http://hl7.org/fhir/spdx-license",
+        "code" : "CC-BY-4.0",
+        "display" : "Creative Commons Attribution 4.0 International"
+      }]
+    }
+  },
+  {
     "url" : "http://hl7.org/fhir/StructureDefinition/cqf-knowledgeCapability",
     "valueCode" : "publishable"
   },
