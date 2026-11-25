@@ -18,7 +18,7 @@ Description: "Dieses Profil beschreibt die Messung des Residualvolumen."
 * partOf only Reference(MII_PR_Lungenfunktion_Bodyplethysmographie_Messung)
 * code.coding[loinc] from MII_VS_Lufu_LNC_RV
 * code.coding[sct] = $sct#42457008 "Residual respiratory volume (observable entity)"
-* component[predicted].code.coding[sct] = $sct#TODO
+//* component[predicted].code.coding[sct] = $sct#TODO
 * component[predicted].code.coding[loinc] from MII_VS_Lufu_LNC_RV
-* component[percentPredicted].code.coding[sct] = $sct#TODO
+//* component[percentPredicted].code.coding[sct] = $sct#TODO
 * component[percentPredicted].code.coding[loinc] from MII_VS_Lufu_LNC_RV

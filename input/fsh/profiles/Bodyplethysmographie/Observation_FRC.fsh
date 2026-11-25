@@ -18,7 +18,7 @@ Description: "Dieses Profil beschreibt die Messung der funktionellen Residualkap
 * partOf only Reference(MII_PR_Lungenfunktion_Bodyplethysmographie_Messung)
 * code.coding[loinc] from MII_VS_Lufu_LNC_FRC (required)
 * code.coding[sct] = $sct#65825000 "Functional residual capacity (observable entity)"
-* component[predicted].code.coding[sct] = $sct#TODO
+//* component[predicted].code.coding[sct] = $sct#TODO
 * component[predicted].code.coding[loinc] from MII_VS_Lufu_LNC_FRC (required)
-* component[percentPredicted].code.coding[sct] = $sct#TODO
-* component[percentPredicted].code.coding[loinc] = $loinc#TODO
+//* component[percentPredicted].code.coding[sct] = $sct#TODO
+//* component[percentPredicted].code.coding[loinc] = $loinc#TODO

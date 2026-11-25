@@ -20,7 +20,7 @@ Description: "Dieses Profil beschreibt die Messung der Transferkapzität von Koh
 * code.coding[sct] = $sct#251952002 "Transfer coefficient (respiratory measure) (observable entity)"
 * method from MII_VS_Lufu_SCT_Technique (required)
 * derivedFrom only Reference(MII_PR_Lungenfunktion_DLCO or MII_PR_Lungenfunktion_VA)
-* component[predicted].code.coding[sct] = $sct#TODO
+//* component[predicted].code.coding[sct] = $sct#TODO
 * component[predicted].code.coding[loinc] from MII_VS_Lufu_LNC_KCO (required)
-* component[percentPredicted].code.coding[sct] = $sct#TODO
+//* component[percentPredicted].code.coding[sct] = $sct#TODO
 * component[percentPredicted].code.coding[loinc] from MII_VS_Lufu_LNC_KCO (required)

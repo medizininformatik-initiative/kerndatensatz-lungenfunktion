@@ -18,10 +18,10 @@ Description: "Dieses Profil beschreibt die Messung des alveolärer Volumen."
 * insert LicenseCodeableCCBY40
 //Profile
 * partOf only Reference(MII_PR_Lungenfunktion_Diffusion_Messung)
-* code.coding[loinc] = $loinc#TODO
+//* code.coding[loinc] = $loinc#TODO
 * code.coding[sct] = $sct#251953007 "Alveolar volume (observable entity)"
 * method from MII_VS_Lufu_SCT_Technique (required)
-* component[predicted].code.coding[sct] = $sct#TODO
-* component[predicted].code.coding[loinc] = $loinc#TODO
-* component[percentPredicted].code.coding[sct] = $sct#TODO
-* component[percentPredicted].code.coding[loinc] = $loinc#TODO
+//* component[predicted].code.coding[sct] = $sct#TODO
+//* component[predicted].code.coding[loinc] = $loinc#TODO
+//* component[percentPredicted].code.coding[sct] = $sct#TODO
+//* component[percentPredicted].code.coding[loinc] = $loinc#TODO

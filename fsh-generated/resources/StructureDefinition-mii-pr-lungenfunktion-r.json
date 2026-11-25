@@ -214,43 +214,9 @@
         }
       },
       {
-        "id": "Observation.component:predicted",
-        "path": "Observation.component",
-        "sliceName": "predicted"
-      },
-      {
-        "id": "Observation.component:predicted.code.coding:sct",
-        "path": "Observation.component.code.coding",
-        "sliceName": "sct",
-        "patternCoding": {
-          "code": "TODO",
-          "system": "http://snomed.info/sct",
-          "version": "http://snomed.info/sct/900000000000207008/version/20260701"
-        }
-      },
-      {
-        "id": "Observation.component:predicted.code.coding:loinc",
-        "path": "Observation.component.code.coding",
-        "sliceName": "loinc",
-        "patternCoding": {
-          "code": "TODO",
-          "system": "http://loinc.org"
-        }
-      },
-      {
         "id": "Observation.component:percentPredicted",
         "path": "Observation.component",
         "sliceName": "percentPredicted"
-      },
-      {
-        "id": "Observation.component:percentPredicted.code.coding:sct",
-        "path": "Observation.component.code.coding",
-        "sliceName": "sct",
-        "patternCoding": {
-          "code": "TODO",
-          "system": "http://snomed.info/sct",
-          "version": "http://snomed.info/sct/900000000000207008/version/20260701"
-        }
       },
       {
         "id": "Observation.component:percentPredicted.code.coding:loinc",

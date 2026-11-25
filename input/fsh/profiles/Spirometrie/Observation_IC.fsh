@@ -18,7 +18,7 @@ Description: "Dieses Profil beschreibt die Messung der inspiratorischen Kapazit√
 * partOf only Reference(MII_PR_Lungenfunktion_Spirometrie_Messung)
 * code.coding[loinc] from MII_VS_Lufu_LNC_IC (required)
 * code.coding[sct] = $sct#29533001 "Inspiratory capacity (observable entity)"
-* component[predicted].code.coding[sct] = $sct#TODO
+//* component[predicted].code.coding[sct] = $sct#TODO
 * component[predicted].code.coding[loinc] from MII_VS_Lufu_LNC_IC (required)
-* component[percentPredicted].code.coding[sct] = $sct#TODO
+//* component[percentPredicted].code.coding[sct] = $sct#TODO
 * component[percentPredicted].code.coding[loinc] from MII_VS_Lufu_LNC_IC (required)

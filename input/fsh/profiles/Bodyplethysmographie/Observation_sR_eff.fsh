@@ -18,7 +18,7 @@ Description: "Dieses Profil beschreibt die Messung des effektiven, spezifischen 
 * partOf only Reference(MII_PR_Lungenfunktion_Bodyplethysmographie_Messung)
 * code.coding[loinc] from MII_VS_Lufu_LNC_sR_eff (required)
 * code.coding[sct] = $sct#1366667009 "Specific airway resistance (observable entity)"
-* component[predicted].code.coding[sct] = $sct#TODO
-* component[predicted].code.coding[loinc] = $loinc#TODO
-* component[percentPredicted].code.coding[sct] = $sct#TODO
+//* component[predicted].code.coding[sct] = $sct#TODO
+//* component[predicted].code.coding[loinc] = $loinc#TODO
+//* component[percentPredicted].code.coding[sct] = $sct#TODO
 * component[percentPredicted].code.coding[loinc] from MII_VS_Lufu_LNC_sR_eff (required)
