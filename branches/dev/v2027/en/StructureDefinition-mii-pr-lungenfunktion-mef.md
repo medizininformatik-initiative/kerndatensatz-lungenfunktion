@@ -261,54 +261,6 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-lungenfunk
         "strength" : "required",
         "valueSet" : "https://www.medizininformatik-initiative.de/fhir/modul-lungenfunktion/ValueSet/mii-vs-lufu-lnc-mef"
       }
-    },
-    {
-      "id" : "Observation.component:predicted",
-      "path" : "Observation.component",
-      "sliceName" : "predicted"
-    },
-    {
-      "id" : "Observation.component:predicted.code.coding:sct",
-      "path" : "Observation.component.code.coding",
-      "sliceName" : "sct",
-      "patternCoding" : {
-        "system" : "http://snomed.info/sct",
-        "version" : "http://snomed.info/sct/900000000000207008/version/20260701",
-        "code" : "TODO"
-      }
-    },
-    {
-      "id" : "Observation.component:predicted.code.coding:loinc",
-      "path" : "Observation.component.code.coding",
-      "sliceName" : "loinc",
-      "patternCoding" : {
-        "system" : "http://loinc.org",
-        "code" : "TODO"
-      }
-    },
-    {
-      "id" : "Observation.component:percentPredicted",
-      "path" : "Observation.component",
-      "sliceName" : "percentPredicted"
-    },
-    {
-      "id" : "Observation.component:percentPredicted.code.coding:sct",
-      "path" : "Observation.component.code.coding",
-      "sliceName" : "sct",
-      "patternCoding" : {
-        "system" : "http://snomed.info/sct",
-        "version" : "http://snomed.info/sct/900000000000207008/version/20260701",
-        "code" : "TODO"
-      }
-    },
-    {
-      "id" : "Observation.component:percentPredicted.code.coding:loinc",
-      "path" : "Observation.component.code.coding",
-      "sliceName" : "loinc",
-      "patternCoding" : {
-        "system" : "http://loinc.org",
-        "code" : "TODO"
-      }
     }]
   }
 }
